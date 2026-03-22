@@ -16,20 +16,21 @@ Modern AI development is plagued by "fuzzy context" and hallucinations. **The Ut
 
 ---
 
-## 🏛️ Ecosystem Overview
-
-- [**/docs**](./docs) — Manifesto, Strategic vision, and Navigation logic.
-- [**/specification**](./specification) — Standard rules for module certification.
-- [**/registry**](./registry) — 4 Volumes of industrial indices.
-- [**/src**](./src) — **The DevKit:** A JavaScript tool for real-time Index inspection.
-
----
-
 ## 🔗 The Universal Socket: Cross-Stack Interoperability
 The Utyansky Index is **Language-Agnostic**. It acts as a "Universal Translator" for the digital world:
 - **Bridges Different Stacks:** Connects Legacy C++, modern Rust, Python AI-scripts, and JavaScript UIs into a single logical map.
 - **System-to-System Link:** It doesn't matter what language a module is written in; if it has a Utyansky IDX, it can be addressed and controlled by any other part of the ecosystem.
 - **No Native Integration Needed:** Using the Index, AI agents can build "logic bridges" between systems that were never meant to work together.
+
+---
+
+## 🏛️ Ecosystem Overview
+
+- [**/docs**](./docs) — Manifesto, Strategic vision, and Navigation logic.
+- [**Integration Guide**](./docs/7_INTEGRATION_GUIDE.md) — **Quick 5-minute setup.** 🛠️
+- [**/specification**](./specification) — Standard rules for module certification.
+- [**/registry**](./registry) — 4 Volumes of industrial indices.
+- [**/src**](./src) — **The DevKit:** A JavaScript tool for real-time Index inspection.
 
 ---
 
