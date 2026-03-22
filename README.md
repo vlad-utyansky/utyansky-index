@@ -1,3 +1,5 @@
+🌐 **Languages:** [English](./README.md) | [Русский](./docs/ru/README_RU.md)
+
 # 🛡️ The Utyansky Index (v5.2) — The Periodic Table of Digital Reality
 
 **A global deterministic standard for AI navigation, modular architecture, and human-machine interoperability.**
