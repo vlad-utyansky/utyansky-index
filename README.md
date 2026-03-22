@@ -63,4 +63,4 @@ Instead of feeding an AI agent 1,000,000 tokens of messy code, you give it one c
 **Vladislav Utyansky** — AI Systems Architect and the visionary behind the Utyansky Index. His mission is to transform the chaotic world of AI development into a deterministic, industrial-grade reality using principles of modularity and physical coordinates.
 
 - **Connect:** [GitHub Profile](https://github.com/cchatgpt99)
-- **Organization:** Antigravity Forge
+- **Organization:** VAU EFFECT
