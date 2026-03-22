@@ -62,5 +62,5 @@ Like the Mendeleev Table, empty slots are reserved for technologies that **have 
 This is the world's first attempt to create a **Unified Language of Coordinates between Human and Artificial Intelligence**. We give the AI a map, not raw code, allowing it to see all system connections instantly.
 
 ---
-© **ANTIGRAVITY FORGE** | Developed by: **UTYANSKY**  
+© **VAU EFFECT** | Developed by: **UTYANSKY**  
 `KALASHNIKOV_READY: YES` | `GLOBAL_ACCESS: ENABLED`
