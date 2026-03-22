@@ -1,0 +1,13 @@
+{
+  "INFO": "UTYANSKY REGISTRY V3: INDUSTRIAL STANDARD",
+  "VERSION": "3.0.0",
+  "1.C.1": "Security Sentinel Hub",
+  "1.C.2": "Operational Mission Log",
+  "1.C.3": "Resource Monitor",
+  "2.B.1": "System Logging Kernel",
+  "M.7.DEVKIT": "Universal Developer Toolkit (X/Y/IDX)",
+  "IDX.DOC.REG": "Standard Module Certification Rule",
+  "SAFE.001": "Absolute UI integrity restriction",
+  "SAFE.002": "Millisecond precision time sync",
+  "SAFE.003": "Visual Status Indicators (Ready/Warn)"
+}
