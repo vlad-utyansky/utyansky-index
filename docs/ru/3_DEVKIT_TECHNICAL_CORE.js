@@ -1,19 +1,20 @@
-(function() {
-    class UtyanskDevKit {
-        constructor() {
-            this.activeMode = null; // 'dev', 'idx', 'mntr'
-            this.registry = {};
-            this.initialized = false;
-            console.log("🎯 [UTYANSKY DEVKIT] V4.1.4 Initialized. Principle: Kalashnikov.");
-        }
+export class UtyanskDevKit {
+    constructor() {
+        this.activeMode = null; 
+        this.registry = {};
+        this.initialized = false;
+        console.log("🎯 [UTYANSKY DEVKIT] V5.2 Russian Edition Initialized.");
+    }
 
-        async init() {
-            await this.loadRegistry();
-            this.createUI();
-            this.injectStyles();
-            this.bindEvents();
-            console.log(">>> [M.4.DEV.KIT] v4.1.4 HYBRID STABLE++ READY");
-        }
+    async init() {
+        if (this.initialized) return;
+        console.log(">>> [M.4.DEV.KIT] v5.2 HYBRID STABLE++ READY");
+        await this.loadRegistry();
+        this.createUI();
+        this.injectStyles();
+        this.bindEvents();
+        this.initialized = true;
+    }
 
         async loadRegistry() {
             try {
@@ -242,7 +243,13 @@
                 el.classList.remove('highlight-idx', 'highlight-mntr');
             });
         }
-    }
+}
 
-    if (!window.alexDevKit) window.alexDevKit = new AlexDevKit();
-})();
+// АВТО-ИНИЦИАЛИЗАЦИЯ (Для тех, кто не использует import)
+if (typeof window !== 'undefined') {
+    if (!window.utyanskDevKit) {
+        window.utyanskDevKit = new UtyanskDevKit();
+        // Авто-старт при загрузке страницы
+        window.addEventListener('load', () => window.utyanskDevKit.init());
+    }
+}
