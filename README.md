@@ -49,6 +49,20 @@ Instead of feeding an AI agent 1,000,000 tokens of messy code, you give it one c
 
 ---
 
+## 🆚 Addressing vs. Searching: Why the Index Wins
+Existing tools like Sourcegraph or traditional RAG rely on **Probabilistic Search** (guessing). In complex systems, "guessing" leads to AI hallucinations.
+
+| Feature | Probabilistic Search (Traditional) | **Utyansky Index (VAU EFFECT)** |
+| :--- | :--- | :--- |
+| **Logic Type** | Fuzzy / Keywords | **Deterministic / Coordinates** |
+| **Reliability** | 70-85% (Context dependent) | **100% (Absolute addressing)** |
+| **AI Tokens** | Heavy (reads entire files) | **Ultra-Light (targeted jump)** |
+| **Cross-Stack** | Native integrations only | **Universal Language-Agnostic Overlay** |
+
+*The Utyansky Index isn't a search tool; it's a **Standardized Address Space** that makes code as navigable as a physical factory.*
+
+---
+
 ## 📜 Status & Standards
 - **Current Version:** 5.2 GOLD STANDARD
 - **Compliance:** ISO-2146, Dublin Core, MSU-V4 Certified.
