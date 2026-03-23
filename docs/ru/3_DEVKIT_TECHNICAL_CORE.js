@@ -9,8 +9,6 @@ export class UtyanskyDevKit {
         this.activeMode = null; 
         this.registry = { "M.7.DEVKIT": "Utyansky DevKit Core Engine" };
         this.initialized = false;
-        this.mousePos = { x: 0, y: 0 };
-        this.gridPos = { col: '', row: 0 };
         console.log("🎯 [UTYANSKY DEVKIT] V5.2 Standard Initialized.");
     }
 
@@ -27,14 +25,10 @@ export class UtyanskyDevKit {
     calculateCoordinates(e) {
         const colWidth = window.innerWidth / 40;
         const rowHeight = window.innerHeight / 40;
-        
         const colNum = Math.floor(e.clientX / colWidth);
         const rowNum = Math.floor(e.clientY / rowHeight) + 1;
-        
-        // Превращаем число в буквы (0 -> A, 1 -> B, ...)
         const colLetter = String.fromCharCode(65 + (colNum % 26));
         const prefix = colNum >= 26 ? String.fromCharCode(65 + Math.floor(colNum / 26) - 1) : '';
-        
         return { coord: `${prefix}${colLetter}${rowNum}`, x: e.clientX, y: e.clientY };
     }
 
