@@ -31,6 +31,8 @@
 
 ---
 
+> 📦 **Standard Versions:** **[🚀 Version 2.0 (Current / State Registered)](https://github.com/vlad-utyansky/utyansky-index)** | **[📜 Version 1.0 (March 2026 / Alpha)](https://github.com/vlad-utyansky/utyansky-index/tree/v1.0.0)**
+
 ## 💡 What is the Utyansky Index?
 
 The **Utyansky Index** is an industrial, deterministic coordinate addressing standard ($10000$ – $99999$) designed for **Vibe Coding, Multi-Agent AI Orchestration, React DOM Trees, and Isolated Vector Memory**.
