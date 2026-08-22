@@ -3,11 +3,11 @@
 [![English](https://img.shields.io/badge/Language-English%20(EN)-blue?style=for-the-badge)](README.md)
 [![Русский](https://img.shields.io/badge/Язык-Русский%20(RU)-red?style=for-the-badge)](README_RU.md)
 [![Version 2.0 (Current Standard)](https://img.shields.io/badge/Version-2.0%20(Official%20Standard)-emerald?style=for-the-badge)](https://github.com/vlad-utyansky/utyansky-index)
-[![Version 1.0 (March 2026 Archive)](https://img.shields.io/badge/Version-1.0%20(March%202026%20Alpha)-orange?style=for-the-badge)](https://github.com/vlad-utyansky/utyansky-index/tree/v1.0.0)
+[![Version 1.0 (March 2026 Archive)](https://img.shields.io/badge/Version-1.0%20(March%202026%20Alpha)-orange?style=for-the-badge)](https://github.com/vlad-utyansky/utyansky-index/tree/v1.0-legacy)
 
 <br/>
 
-**[ 🇷🇺 Читать на русском ➔ ](README_RU.md)** &nbsp;&nbsp;|&nbsp;&nbsp; **[ 📜 Switch to Version 1.0 (March 2026 Archive) ➔ ](https://github.com/vlad-utyansky/utyansky-index/tree/v1.0.0)**
+**[ 🇷🇺 Читать на русском ➔ ](README_RU.md)** &nbsp;&nbsp;|&nbsp;&nbsp; **[ 📜 Switch to Version 1.0 (March 2026 Archive) ➔ ](https://github.com/vlad-utyansky/utyansky-index/tree/v1.0-legacy)**
 
 </div>
 
@@ -35,7 +35,7 @@
 
 ---
 
-> 📦 **Standard Versions:** **[🚀 Version 2.0 (Current / State Registered)](https://github.com/vlad-utyansky/utyansky-index)** | **[📜 Version 1.0 (March 2026 / Alpha)](https://github.com/vlad-utyansky/utyansky-index/tree/v1.0.0)**
+> 📦 **Standard Versions:** **[🚀 Version 2.0 (Current / State Registered)](https://github.com/vlad-utyansky/utyansky-index)** | **[📜 Version 1.0 (March 2026 / Alpha)](https://github.com/vlad-utyansky/utyansky-index/tree/v1.0-legacy)**
 
 ## 💡 What is the Utyansky Index?
 
