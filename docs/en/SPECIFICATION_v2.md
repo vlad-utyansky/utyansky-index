@@ -103,18 +103,6 @@ Mathematical evaluation of emotional ROI and authentic brand sentiment.
 
 ---
 
-
-## ⚖️ Licensing & Access Model
-
-The **Utyansky Index** operates under a hybrid **Open-Core** architecture:
-
-| Tier | Access Model | Target Audience | Features |
-| :--- | :---: | :--- | :--- |
-| 🆓 **Community Edition** | **100% Free** (MIT) | Independent Developers, Vibe Coders, Open-Source projects, Academic Research | 5-digit coordinate table (10000–99999), React DOM tagging (`data-idx`), rules for Cursor/Claude/Windsurf. |
-| 🏢 **Commercial & Enterprise** | **Upon Request** (Commercial License) | Banks, Fintech, Closed CRM/ERP Systems, Telecom, Enterprise Brands | High-speed API access for UVWI scoring `[IDX: 85010]`, Official AI Precision Brand-Certificate, custom coordinate bus integration, SLA & direct author architecture audit. |
-
-*For Enterprise Licensing & Custom Adapters: contact [vlad@utyanskiy.ru](mailto:vlad@utyanskiy.ru) or Telegram [@vau_amoCRM](https://t.me/vau_amoCRM).*
-
 ## 👤 Author & Inventor
 
 * **Author:** Vladislav Anatolyevich Utyansky (*Утянский Владислав Анатольевич*)
