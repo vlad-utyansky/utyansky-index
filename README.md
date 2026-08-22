@@ -19,11 +19,15 @@
 
 ---
 
-> ### 🏛️ Official State Registration (Rospatent RF)
+> ### 🏛️ Official State Registration & Proven Authorship Timeline
 > * **Intellectual Property Object:** Computer Software *«Deterministic Coordinate Navigation & Routing System for Artificial Intelligence "Utyansky Index v2.0"»*
 > * **Patent Authority:** Federal Service for Intellectual Property (**Rospatent RF / FIPS**)
 > * **Official State Application Docket:** [**№ 7927650015**](https://index.utyanskiy.ru) *(Priority Date: **August 22, 2026**)*
 > * **Author & Sole Rights Holder:** Vladislav Anatolyevich Utyansky
+> 
+> 📅 **Public Priority Timeline:**
+> * **March 2026** — Initial public disclosure and worldwide release of v1.0 architecture on GitHub.
+> * **August 22, 2026** — Official state registration of industrial standard v2.0 in Rospatent RF (Docket № 7927650015).
 
 ---
 
