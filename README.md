@@ -133,6 +133,17 @@ Mathematical evaluation of emotional ROI and authentic brand sentiment.
 ---
 
 
+## ❓ Frequently Asked Questions (FAQ)
+
+Got questions about RAG vs Index, MCP, AST, or prompt safety?  
+👉 **[Read the Full Engineering FAQ (English) ➔](docs/en/FAQ.md)** | **[Часто задаваемые вопросы (Русский) ➔](docs/ru/FAQ.md)**
+
+* **Q: How does the model know the slot number without hallucinating?** → [See Answer](docs/en/FAQ.md#1-how-does-the-model-know-the-slot-number)
+* **Q: Why use the Index if RAG, embeddings, and context compression exist?** → [See Answer](docs/en/FAQ.md#2-why-use-the-index-if-rag-embeddings-and-context-compression-exist)
+* **Q: How is this different from AST, Hashline, and MCP?** → [See Answer](docs/en/FAQ.md#3-how-does-the-index-differ-from-ast-symbol-parsers-and-codebase-indexing)
+* **Q: Does it work with Graph RAG and Knowledge Graphs?** → [See Answer](docs/en/FAQ.md#5-how-does-the-index-integrate-with-graph-rag-and-knowledge-graphs)
+* **Q: Which models were tested (Claude, GPT-4o, Gemini)?** → [See Answer](docs/en/FAQ.md#6-which-models-were-tested-and-is-there-real-token-savings-on-frontier-llms)
+
 ---
 
 ## 🏭 Battle-Tested: 120+ Production Sessions & Hundreds of Stress-Test Hours
