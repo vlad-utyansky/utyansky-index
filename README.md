@@ -1,3 +1,14 @@
+<div align="center">
+
+[![English](https://img.shields.io/badge/Language-English%20(EN)-blue?style=for-the-badge)](README.md)
+[![Русский](https://img.shields.io/badge/Язык-Русская%20версия%20(RU)-red?style=for-the-badge)](README_RU.md)
+
+**[ 🇷🇺 Читать документацию на русском языке ➔ ](README_RU.md)**
+
+</div>
+
+---
+
 # 🛡️ Utyansky Index Architecture (v2.0)
 ### The Periodic Table of Coordinates for Code, Artificial Intelligence & Vector Memory
 

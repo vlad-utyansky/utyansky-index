@@ -1,3 +1,14 @@
+<div align="center">
+
+[![Русский](https://img.shields.io/badge/Язык-Русский%20(RU)-red?style=for-the-badge)](README_RU.md)
+[![English](https://img.shields.io/badge/Language-English%20(EN)-blue?style=for-the-badge)](README.md)
+
+**[ 🇬🇧 Read documentation in English ➔ ](README.md)**
+
+</div>
+
+---
+
 # 🛡️ Архитектура «Индекс Утянского» (Версия 2.0)
 ### Периодическая таблица цифровых координат для кода, Искусственного Интеллекта и векторной памяти
 
