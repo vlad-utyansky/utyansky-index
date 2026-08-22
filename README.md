@@ -19,7 +19,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![Standard](https://img.shields.io/badge/Standard-Utyansky%20Index%20v2.0-0ea5e9.svg)](https://index.utyanskiy.ru)
 [![Accuracy](https://img.shields.io/badge/Comprehension-99.9%25-10b981.svg)](https://index.utyanskiy.ru)
-[![Author](https://img.shields.io/badge/Author-Vladislav%20Anatolyevich%20Utyansky-6366f1.svg)](https://utyanskiy.ru)
+[![Author](https://img.shields.io/badge/Author-Vladislav%20Utyansky-6366f1.svg)](https://utyanskiy.ru)
 
 ---
 
@@ -159,7 +159,7 @@ The **Utyansky Index** operates under a hybrid **Open-Core** architecture:
 
 ## 👤 Author & Inventor
 
-* **Author:** Vladislav Anatolyevich Utyansky (*Утянский Владислав Анатольевич*)
+* **Author:** Vladislav Utyansky (*Утянский Владислав Анатольевич*)
 * **Official Standard Portal:** [https://index.utyanskiy.ru](https://index.utyanskiy.ru)
 * **Company & Services:** [https://utyanskiy.ru](https://utyanskiy.ru)
 * **Telegram:** [@vau_amoCRM](https://t.me/vau_amoCRM)
