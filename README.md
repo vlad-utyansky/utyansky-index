@@ -120,5 +120,5 @@ The **Utyansky Index** operates under a hybrid **Open-Core** architecture:
 * **Author:** Vladislav Anatolyevich Utyansky (*Утянский Владислав Анатольевич*)
 * **Official Standard Portal:** [https://index.utyanskiy.ru](https://index.utyanskiy.ru)
 * **Company & Services:** [https://utyanskiy.ru](https://utyanskiy.ru)
-* **Telegram:** [@vau_amoCRM](https://t.me/vau_amoCRM) | [@uva_p2p](https://t.me/uva_p2p)
+* **Telegram:** [@vau_amoCRM](https://t.me/vau_amoCRM)
 * **License:** [MIT License](LICENSE)
