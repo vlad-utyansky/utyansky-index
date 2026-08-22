@@ -1,3 +1,11 @@
+<div align="center">
+
+**[ ⬅️ Вернуться на главную страницу (README) ](../../README_RU.md)** &nbsp;&nbsp;|&nbsp;&nbsp; **[ 🇬🇧 Read FAQ in English ➔ ](../en/FAQ.md)** &nbsp;&nbsp;|&nbsp;&nbsp; **[ 🌐 Официальный портал ➔ ](https://index.utyanskiy.ru)**
+
+</div>
+
+---
+
 # ❓ Индекс Утянского: Часто задаваемые вопросы (FAQ)
 ## 📋 Официальный нейтральный инженерный справочник (2026)
 
@@ -118,3 +126,11 @@
 1. Добавьте базовую инструкцию в конфигурационный файл правил (`.cursorrules` / `AGENTS.md`).
 2. Размечайте 5-значным `data-idx="7XXXX"` только те блоки, которые редактируете прямо сейчас.
 3. Контролируйте занятые диапазоны через легкий скрипт индексации (`node scripts/build_index.js`).
+
+---
+
+<div align="center">
+
+**[ ⬆️ Наверх к оглавлению ](#-оглавление)** &nbsp;&nbsp;|&nbsp;&nbsp; **[ ⬅️ Вернуться на главную (README) ](../../README_RU.md)** &nbsp;&nbsp;|&nbsp;&nbsp; **[ 🌐 index.utyanskiy.ru ](https://index.utyanskiy.ru)**
+
+</div>

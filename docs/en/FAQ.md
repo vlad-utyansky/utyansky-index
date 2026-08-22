@@ -1,3 +1,11 @@
+<div align="center">
+
+**[ ⬅️ Back to Main Page (README) ](../../README.md)** &nbsp;&nbsp;|&nbsp;&nbsp; **[ 🇷🇺 Читать FAQ на русском ➔ ](../ru/FAQ.md)** &nbsp;&nbsp;|&nbsp;&nbsp; **[ 🌐 Official Portal ➔ ](https://index.utyanskiy.ru)**
+
+</div>
+
+---
+
 # ❓ Utyansky Index: Frequently Asked Questions (FAQ)
 ## 📋 Official Model-Agnostic Engineering Reference (2026)
 
@@ -118,3 +126,11 @@ You do not need to rewrite your project from scratch — adoption is incremental
 1. Add the baseline rule into `.cursorrules` or `AGENTS.md`.
 2. Tag active UI components with 5-digit `data-idx="7XXXX"` as you edit them.
 3. Run the lightweight registry builder (`node scripts/build_index.js`) to track occupied coordinate ranges.
+
+---
+
+<div align="center">
+
+**[ ⬆️ Back to Table of Contents ](#-table-of-contents)** &nbsp;&nbsp;|&nbsp;&nbsp; **[ ⬅️ Back to Main Page (README) ](../../README.md)** &nbsp;&nbsp;|&nbsp;&nbsp; **[ 🌐 index.utyanskiy.ru ](https://index.utyanskiy.ru)**
+
+</div>
