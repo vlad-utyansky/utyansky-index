@@ -1,3 +1,8 @@
+> ⚠️ **ARCHIVE NOTICE:** You are viewing the historical **Version 1.0 (March 2026 Alpha)**.  
+> 👉 **[🚀 CLICK HERE TO GO TO CURRENT OFFICIAL VERSION 2.0 (August 2026 / Rospatent Registered) ➔](https://github.com/vlad-utyansky/utyansky-index)**
+
+---
+
 🌐 **Languages:** [English](./README.md) | [Русский](./docs/ru/README_RU.md)
 
 # 🛡️ The Utyansky Index (v5.2) — The Periodic Table of Digital Reality
