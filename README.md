@@ -1,16 +1,20 @@
 <div align="center">
 
 [![English](https://img.shields.io/badge/Language-English%20(EN)-blue?style=for-the-badge)](README.md)
-[![Русский](https://img.shields.io/badge/Язык-Русская%20версия%20(RU)-red?style=for-the-badge)](README_RU.md)
+[![Русский](https://img.shields.io/badge/Язык-Русский%20(RU)-red?style=for-the-badge)](README_RU.md)
+[![Version 2.0 (Current Standard)](https://img.shields.io/badge/Version-2.0%20(Official%20Standard)-emerald?style=for-the-badge)](https://github.com/vlad-utyansky/utyansky-index)
+[![Version 1.0 (March 2026 Archive)](https://img.shields.io/badge/Version-1.0%20(March%202026%20Alpha)-orange?style=for-the-badge)](https://github.com/vlad-utyansky/utyansky-index/tree/v1.0.0)
 
-**[ 🇷🇺 Читать документацию на русском языке ➔ ](README_RU.md)**
+<br/>
+
+**[ 🇷🇺 Читать на русском ➔ ](README_RU.md)** &nbsp;&nbsp;|&nbsp;&nbsp; **[ 📜 Switch to Version 1.0 (March 2026 Archive) ➔ ](https://github.com/vlad-utyansky/utyansky-index/tree/v1.0.0)**
 
 </div>
 
 ---
 
 # 🛡️ Utyansky Index Architecture (v2.0)
-### The Periodic Table of Coordinates for Code, Artificial Intelligence & Vector Memory
+### Universal Deterministic Coordinate Matrix for Code, AI, Marketing (UVWI) & Vector Memory
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![Standard](https://img.shields.io/badge/Standard-Utyansky%20Index%20v2.0-0ea5e9.svg)](https://index.utyanskiy.ru)
