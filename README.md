@@ -19,6 +19,14 @@
 
 ---
 
+> ### 🏛️ Official State Registration (Rospatent RF)
+> * **Intellectual Property Object:** Computer Software *«Deterministic Coordinate Navigation & Routing System for Artificial Intelligence "Utyansky Index v2.0"»*
+> * **Patent Authority:** Federal Service for Intellectual Property (**Rospatent RF / FIPS**)
+> * **Official State Application Docket:** [**№ 7927650015**](https://index.utyanskiy.ru) *(Priority Date: **August 22, 2026**)*
+> * **Author & Sole Rights Holder:** Vladislav Anatolyevich Utyansky
+
+---
+
 ## 💡 What is the Utyansky Index?
 
 The **Utyansky Index** is an industrial, deterministic coordinate addressing standard ($10000$ – $99999$) designed for **Vibe Coding, Multi-Agent AI Orchestration, React DOM Trees, and Isolated Vector Memory**.
