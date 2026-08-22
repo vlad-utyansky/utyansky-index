@@ -25,9 +25,9 @@
 > * **Official State Application Docket:** [**№ 7927650015**](https://index.utyanskiy.ru) *(Priority Date: **August 22, 2026**)*
 > * **Author & Sole Rights Holder:** Vladislav Anatolyevich Utyansky
 > 
-> 📅 **Public Priority Timeline:**
-> * **March 2026** — Initial public disclosure and worldwide release of v1.0 architecture on GitHub.
-> * **August 22, 2026** — Official state registration of industrial standard v2.0 in Rospatent RF (Docket № 7927650015).
+> 📅 **Public Priority & Proven Authorship Timeline:**
+> * **March 22, 2026 (19:17 MSK)** — Initial public disclosure and worldwide release of v1.0 architecture on GitHub (commit `51584ac`).
+> * **August 22, 2026 (16:42 MSK)** — Official state registration of industrial standard v2.0 in Rospatent RF (Application Docket № 7927650015).
 
 ---
 
