@@ -1,0 +1,44 @@
+{
+  "project": "UtyanskyIndexShowcase",
+  "version": "2.0.0",
+  "author": "Vladislav Utyansky",
+  "rospatentDocket": "7927650015",
+  "registry": {
+    "10000": {
+      "domain": "CORE",
+      "type": "ORCHESTRATOR",
+      "desc": "Utyansky Core Orchestrator & Signal Router",
+      "file": "examples/orchestrator-core.js"
+    },
+    "40101": {
+      "domain": "ERROR_MATRIX",
+      "type": "ERROR",
+      "desc": "INVALID_INDEX_FORMAT Error Code",
+      "file": "examples/error-matrix-handler.js"
+    },
+    "71000": {
+      "domain": "UI_DOM",
+      "type": "CONTAINER",
+      "desc": "Coordinate Search Widget Container",
+      "file": "examples/react-dom-indexing.jsx"
+    },
+    "71080": {
+      "domain": "UI_DOM",
+      "type": "BTN",
+      "desc": "Market Scan Action Trigger Button",
+      "file": "examples/react-dom-indexing.jsx"
+    },
+    "85010": {
+      "domain": "METRICS_ROI",
+      "type": "CALC",
+      "desc": "UVWI Viral Wow Formula Calculator",
+      "file": "examples/uvwi-calculator.js"
+    },
+    "98000": {
+      "domain": "VECTOR_VAULT",
+      "type": "STORAGE",
+      "desc": "Scalable Vector Knowledge Memory Vault (1B+)",
+      "file": "examples/orchestrator-core.js"
+    }
+  }
+}
