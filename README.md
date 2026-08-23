@@ -35,6 +35,31 @@
 
 ---
 
+## 🚀 QUICK START: WHERE & HOW TO APPLY (30-Second Guide)
+
+### 📌 Step 1: Where to place the configuration file in your project
+* **If using Cursor AI:** Create a file named **`.cursorrules`** at the root of your project and paste the prompt.
+* **If using Antigravity, Claude Code, Windsurf, or ChatGPT:** Create a file named **`AGENTS.md`** at the root (or paste into your custom system instructions).
+
+### 📋 Step 2: Choose your setup method:
+* 📥 **Method A (Copy ready-made prompt):**  
+  Open the ready file 👉 **[AI_SYSTEM_PROMPT.md](./AI_SYSTEM_PROMPT.md)** (or **[Russian Version](./AI_SYSTEM_PROMPT_RU.md)**), copy the entire content and paste into your `.cursorrules` or `AGENTS.md`.
+* 🔗 **Method B (Direct Raw Link for AI in 1 click):**  
+  Send this direct link to your AI agent:  
+  `https://raw.githubusercontent.com/vlad-utyansky/utyansky-index/main/AI_SYSTEM_PROMPT.md`  
+  *(and prompt: "Enforce Utyansky Index architecture strictly across this codebase")*.
+
+---
+
+### 💬 How AI models will label components, interact, and report errors:
+1. **Component Tagging:** AI must tag and refer to every UI component with its exact coordinate passport:  
+   👉 *`[IDX: 71080] [BTN] Trigger market scan`*, *`[IDX: 72100] [FORM] Admin dashboard panel`*.
+2. **Error Diagnosis:** When failures occur, AI diagnoses in $O(1)$ constant time with exact matrix codes:  
+   👉 *`[ERR: 40101] Invalid index format`*, *`[ERR: 40102] Coordinate collision`*, *`[ERR: 50010] LLM drift`*.
+3. **Zero-Regression Safety:** When you say "fix button 71080", AI modifies **strictly lines inside block 71080**, leaving surrounding UI 100% intact!
+
+---
+
 > 📦 **Standard Versions:** **[🚀 Version 2.0 (Current / State Registered)](https://github.com/vlad-utyansky/utyansky-index)** | **[📜 Version 1.0 (March 2026 / Alpha)](https://github.com/vlad-utyansky/utyansky-index/tree/v1.0-legacy)**
 
 ## 💡 What is the Utyansky Index?
