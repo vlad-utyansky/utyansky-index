@@ -290,7 +290,7 @@ The **Utyansky Index** standard follows a hybrid **Open-Core** architecture:
 ## 👤 Author & Inventor
 
 * **Standard Author:** Vladislav Anatolyevich Utyansky
-* **Professional Track Record:** In IT & media production since 1996 (30 years continuous experience) | 25+ years in strategic marketing & sales | 8+ years in amoCRM automation (100+ projects).
+* **Professional Track Record:** Websites & Web Development since 1996 (30 years) | Strategic Marketing since 2002 (24+ years) | Artificial Intelligence & Generative AI since 2022 | CRM Systems (amoCRM) 2+ years (100+ projects).
 * **Official Portal:** [https://index.utyanskiy.ru](https://index.utyanskiy.ru)
 * **Founder Website:** [https://utyanskiy.ru](https://utyanskiy.ru)
 * **Telegram:** [@vau_amoCRM](https://t.me/vau_amoCRM)
