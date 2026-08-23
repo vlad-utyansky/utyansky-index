@@ -37,21 +37,26 @@
 
 ## 🚀 QUICK START: WHERE & HOW TO APPLY (30-Second Guide)
 
-### 📌 Step 1: Where to place the configuration file in your project
-* **If using Cursor AI:** Create a file named **`.cursorrules`** at the root of your project and paste the prompt.
-* **If using Antigravity, Claude Code, Windsurf, or ChatGPT:** Create a file named **`AGENTS.md`** at the root (or paste into your custom system instructions).
+### 📦 1. Starter Kit Package (3 Ready-to-Use Files):
+* 📜 **[AI_SYSTEM_PROMPT.md](./AI_SYSTEM_PROMPT.md)** *(or [Russian Version](./AI_SYSTEM_PROMPT_RU.md))* — complete AI system prompt with all rules.
+* 🗄️ **[`examples/UTYANSKY_INDEX_REGISTRY.json`](./examples/UTYANSKY_INDEX_REGISTRY.json)** — master project coordinate registry template.
+* 🛠️ **[`examples/validate-index.js`](./examples/validate-index.js)** — 0.1-sec automated index uniqueness and collision validator.
 
-### 📋 Step 2: Choose your setup method:
-* 📥 **Method A (Copy ready-made prompt):**  
-  Open the ready file 👉 **[AI_SYSTEM_PROMPT.md](./AI_SYSTEM_PROMPT.md)** (or **[Russian Version](./AI_SYSTEM_PROMPT_RU.md)**), copy the entire content and paste into your `.cursorrules` or `AGENTS.md`.
-* 🔗 **Method B (Direct Raw Link for AI in 1 click):**  
+---
+
+### 📌 2. 2-Step Project Integration:
+* **If using Cursor AI:**  
+  Create a file named **`.cursorrules`** at your project root and paste the text from **[AI_SYSTEM_PROMPT.md](./AI_SYSTEM_PROMPT.md)**.
+* **If using Antigravity, Claude Code, Windsurf, or ChatGPT:**  
+  Create a file named **`AGENTS.md`** (or paste into your custom instructions / chat).
+* **For 1-Click Direct URL Loading:**  
   Send this direct link to your AI agent:  
   `https://raw.githubusercontent.com/vlad-utyansky/utyansky-index/main/AI_SYSTEM_PROMPT.md`  
   *(and prompt: "Enforce Utyansky Index architecture strictly across this codebase")*.
 
 ---
 
-### 💬 How AI models will label components, interact, and report errors:
+### 💬 3. How AI models will label components, interact, and report errors:
 1. **Component Tagging:** AI must tag and refer to every UI component with its exact coordinate passport:  
    👉 *`[IDX: 71080] [BTN] Trigger market scan`*, *`[IDX: 72100] [FORM] Admin dashboard panel`*.
 2. **Error Diagnosis:** When failures occur, AI diagnoses in $O(1)$ constant time with exact matrix codes:  
