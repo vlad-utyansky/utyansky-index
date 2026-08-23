@@ -345,3 +345,18 @@ AST видит структуру классов, но абсолютно сле
 * **Коммерческий сайт:** [https://utyanskiy.ru](https://utyanskiy.ru)
 * **Деловой Telegram:** [@vau_amoCRM](https://t.me/vau_amoCRM)
 * **Лицензия:** [MIT License](LICENSE)
+
+---
+
+### 🏷️ Архитектурные Теги и Ключевые Темы (Repository Topics & Keywords)
+
+[![Индекс Утянского](https://img.shields.io/badge/Стандарт-Индекс%20Утянского%20v2.0-blue?style=flat-square)](https://index.utyanskiy.ru)
+[![Вайбкодинг](https://img.shields.io/badge/AI-Вайбкодинг%202026-emerald?style=flat-square)](https://github.com/vlad-utyansky/utyansky-index)
+[![Cursor Rules](https://img.shields.io/badge/Интеграция-.cursorrules%20%7C%20AGENTS.md-violet?style=flat-square)](https://github.com/vlad-utyansky/utyansky-index/blob/main/AI_SYSTEM_PROMPT_RU.md)
+[![Детерминизм](https://img.shields.io/badge/Навигация-Детерминизм%20O(1)-cyan?style=flat-square)](https://github.com/vlad-utyansky/utyansky-index)
+[![React DOM](https://img.shields.io/badge/DOM-data--idx%20%26%20data--desc-indigo?style=flat-square)](https://github.com/vlad-utyansky/utyansky-index/blob/main/examples/react-dom-indexing.jsx)
+[![Роспатент РФ](https://img.shields.io/badge/Патент-Роспатент%20№%207927650015-gold?style=flat-square)](https://index.utyanskiy.ru)
+[![Векторная память](https://img.shields.io/badge/Память-pgvector%20HNSW%20(1B%2B)-orange?style=flat-square)](https://github.com/vlad-utyansky/utyansky-index)
+[![Метрика UVWI](https://img.shields.io/badge/Маркетинг-Формула%20UVWI%20%5B85010%5D-pink?style=flat-square)](https://github.com/vlad-utyansky/utyansky-index/blob/main/examples/uvwi-calculator.js)
+[![Zero Regressions](https://img.shields.io/badge/Надежность-0%25%20Поломок%20Кода-success?style=flat-square)](https://github.com/vlad-utyansky/utyansky-index)
+[![Token Savings](https://img.shields.io/badge/Экономия-85%25%20API%20Токенов-red?style=flat-square)](https://github.com/vlad-utyansky/utyansky-index)

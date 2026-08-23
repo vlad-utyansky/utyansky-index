@@ -316,3 +316,18 @@ The **Utyansky Index** operates under a hybrid **Open-Core** architecture:
 * **Company & Services:** [https://utyanskiy.ru](https://utyanskiy.ru)
 * **Telegram:** [@vau_amoCRM](https://t.me/vau_amoCRM)
 * **License:** [MIT License](LICENSE)
+
+---
+
+### 🏷️ Architectural Tags & Keywords (Repository Topics)
+
+[![Utyansky Index](https://img.shields.io/badge/Standard-Utyansky%20Index%20v2.0-blue?style=flat-square)](https://index.utyanskiy.ru)
+[![Vibe Coding](https://img.shields.io/badge/AI-Vibe%20Coding%202026-emerald?style=flat-square)](https://github.com/vlad-utyansky/utyansky-index)
+[![Cursor Rules](https://img.shields.io/badge/Integration-.cursorrules%20%7C%20AGENTS.md-violet?style=flat-square)](https://github.com/vlad-utyansky/utyansky-index/blob/main/AI_SYSTEM_PROMPT.md)
+[![Determinism](https://img.shields.io/badge/Routing-Deterministic%20O(1)-cyan?style=flat-square)](https://github.com/vlad-utyansky/utyansky-index)
+[![React DOM](https://img.shields.io/badge/DOM-data--idx%20%26%20data--desc-indigo?style=flat-square)](https://github.com/vlad-utyansky/utyansky-index/blob/main/examples/react-dom-indexing.jsx)
+[![State Patent](https://img.shields.io/badge/Patent-Rospatent%20Docket%207927650015-gold?style=flat-square)](https://index.utyanskiy.ru)
+[![Vector Vault](https://img.shields.io/badge/Memory-pgvector%20HNSW%20(1B%2B)-orange?style=flat-square)](https://github.com/vlad-utyansky/utyansky-index)
+[![UVWI Metric](https://img.shields.io/badge/Marketing-UVWI%20Score%20%5B85010%5D-pink?style=flat-square)](https://github.com/vlad-utyansky/utyansky-index/blob/main/examples/uvwi-calculator.js)
+[![Zero Regressions](https://img.shields.io/badge/Resilience-0%25%20Code%20Regressions-success?style=flat-square)](https://github.com/vlad-utyansky/utyansky-index)
+[![Token Efficiency](https://img.shields.io/badge/Cost%20Saving-85%25%20API%20Tokens-red?style=flat-square)](https://github.com/vlad-utyansky/utyansky-index)
