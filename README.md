@@ -322,6 +322,21 @@ The **Utyansky Index** operates under a hybrid **Open-Core** architecture:
 
 ---
 
+---
+
+### 🥊 Comparison with Existing Frameworks: Solving Real Industry Pains
+
+| Existing Tech / Market Pain | ❌ Vulnerability Without Utyansky Index | 🛡️ Utyansky Index v2.0 Solution |
+| :--- | :--- | :--- |
+| **Graph RAG / LlamaIndex** | Builds semantic graphs but is blind inside 1000-line files. AI hallucinates component boundaries. | **Deterministic Node ID:** Rigid 5-digit coordinate cage (`10000–99999`) acting as an "apartment number on the door". |
+| **"// rest of code unchanged"** | Extended context causes LLMs to delete code and replace it with lazy placeholder comments. | **Rigid Slot Isolation:** AI operates strictly within `data-idx` boundary (0% code deletion). |
+| **Hashline (Line Hashing)** | Line hashes break instantly upon a single whitespace mutation or line shift. | **Immutable Semantic Coordinates:** `data-idx` remains persistent regardless of code refactoring. |
+| **AST Symbol Parsers** | AST sees class symbols but is blind to UI components where 15 identical `<button>` tags exist. | **Cross-Stack DOM Passthrough:** `data-idx="71080"` links visual button directly to CRM webhooks and logs. |
+| **MCP (Model Context Protocol)** | MCP is purely a tool-calling transport protocol without a unified deterministic address bus. | **Unified Architectural Highway:** Connects UI DOM, backend services, SQL, and memory into one deterministic bus. |
+| **HNSW OOM on Billions of Vectors** | Flat HNSW graph on billions of embeddings consumes terabytes of RAM and triggers OOM. | **Hierarchical Coordinate Sharding:** Partitions memory across 5-digit slots (`98000–99999`), slashing RAM by 70%. |
+
+---
+
 ### 🔍 Search Keywords & Solved AI Engineering Pain Points (SEO & Indexing Tags)
 
 > **The Utyansky Index architectural standard is designed to eliminate the following critical LLM failures:**
