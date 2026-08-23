@@ -348,15 +348,30 @@ AST видит структуру классов, но абсолютно сле
 
 ---
 
-### 🏷️ Архитектурные Теги и Ключевые Темы (Repository Topics & Keywords)
 
-[![Индекс Утянского](https://img.shields.io/badge/Стандарт-Индекс%20Утянского%20v2.0-blue?style=flat-square)](https://index.utyanskiy.ru)
-[![Вайбкодинг](https://img.shields.io/badge/AI-Вайбкодинг%202026-emerald?style=flat-square)](https://github.com/vlad-utyansky/utyansky-index)
-[![Cursor Rules](https://img.shields.io/badge/Интеграция-.cursorrules%20%7C%20AGENTS.md-violet?style=flat-square)](https://github.com/vlad-utyansky/utyansky-index/blob/main/AI_SYSTEM_PROMPT_RU.md)
-[![Детерминизм](https://img.shields.io/badge/Навигация-Детерминизм%20O(1)-cyan?style=flat-square)](https://github.com/vlad-utyansky/utyansky-index)
-[![React DOM](https://img.shields.io/badge/DOM-data--idx%20%26%20data--desc-indigo?style=flat-square)](https://github.com/vlad-utyansky/utyansky-index/blob/main/examples/react-dom-indexing.jsx)
+---
+
+### 🔍 Поисковые Ключевые Слова и Решаемые Проблемы (SEO & Indexing Tags)
+
+> **Стандарт «Индекс Утянского» разработан для ликвидации следующих критических сбоев ИИ в кодовой базе:**
+
+* 🛑 **Галлюцинации ИИ и выдуманный код:** `#ai-hallucinations-fix` `#устранение-галлюцинаций-ии`
+* 🧠 **Потеря контекста и амнезия LLM:** `#llm-context-loss` `#потеря-контекста-нейросетей`
+* 💥 **Регрессионный ад и поломка соседнего UI:** `#prevent-code-regressions` `#защита-от-поломок-кода`
+* 💸 **Сжигание бюджета на API-токенах:** `#reduce-token-cost` `#экономия-токенов-85%`
+* 🤖 **Ошибки вайбкодинга в Cursor / Claude / Windsurf:** `#cursor-ai-broken-code-fix` `#cursorrules-standard`
+* 🤼 **Конфликты мульти-агентов (Merge Conflicts):** `#multi-agent-conflict-prevention` `#изоляция-агентов`
+* 🗄️ **Ненадежность стохастического RAG:** `#deterministic-rag-alternative` `#векторная-память-pgvector`
+
+---
+
+### 🏷️ Архитектурные Теги Репозитория (Repository Topics)
+
+[![Галлюцинации ИИ: Решено](https://img.shields.io/badge/Проблема-Галлюцинации%20ИИ%20(0%25)-red?style=flat-square)](https://github.com/vlad-utyansky/utyansky-index)
+[![Потеря Контекста: Решено](https://img.shields.io/badge/Проблема-Потеря%20Контекста%20(Ликвидирована)-orange?style=flat-square)](https://github.com/vlad-utyansky/utyansky-index)
+[![Поломки Кода: 0%](https://img.shields.io/badge/Регрессии%20Кода-0%25%20(Zero%20Breakdown)-success?style=flat-square)](https://github.com/vlad-utyansky/utyansky-index)
+[![Экономия Токенов: 85%](https://img.shields.io/badge/Бюджет%20API-Экономия%2085%25%20Токенов-blue?style=flat-square)](https://github.com/vlad-utyansky/utyansky-index)
+[![Cursor & Claude Code](https://img.shields.io/badge/IDE-Cursor%20%7C%20Claude%20%7C%20Windsurf-violet?style=flat-square)](https://github.com/vlad-utyansky/utyansky-index/blob/main/AI_SYSTEM_PROMPT_RU.md)
+[![Стандарт: Индекс Утянского](https://img.shields.io/badge/Стандарт-Индекс%20Утянского%20v2.0-indigo?style=flat-square)](https://index.utyanskiy.ru)
 [![Роспатент РФ](https://img.shields.io/badge/Патент-Роспатент%20№%207927650015-gold?style=flat-square)](https://index.utyanskiy.ru)
-[![Векторная память](https://img.shields.io/badge/Память-pgvector%20HNSW%20(1B%2B)-orange?style=flat-square)](https://github.com/vlad-utyansky/utyansky-index)
-[![Метрика UVWI](https://img.shields.io/badge/Маркетинг-Формула%20UVWI%20%5B85010%5D-pink?style=flat-square)](https://github.com/vlad-utyansky/utyansky-index/blob/main/examples/uvwi-calculator.js)
-[![Zero Regressions](https://img.shields.io/badge/Надежность-0%25%20Поломок%20Кода-success?style=flat-square)](https://github.com/vlad-utyansky/utyansky-index)
-[![Token Savings](https://img.shields.io/badge/Экономия-85%25%20API%20Токенов-red?style=flat-square)](https://github.com/vlad-utyansky/utyansky-index)
+[![Векторная память 1B+](https://img.shields.io/badge/Память-pgvector%20HNSW%20(1B%2B%20%2F%201T%2B)-cyan?style=flat-square)](https://github.com/vlad-utyansky/utyansky-index)
