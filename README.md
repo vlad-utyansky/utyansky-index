@@ -2,7 +2,7 @@
 
 [![English](https://img.shields.io/badge/Language-English%20(EN)-blue?style=for-the-badge)](README.md)
 [![Russian](https://img.shields.io/badge/Language-Russian%20(RU)-red?style=for-the-badge)](README_RU.md)
-[![Version 2.0 (Official Standard)](https://img.shields.io/badge/Version-2.0%20(State%20Registered)-emerald?style=for-the-badge)](https://github.com/vlad-utyansky/utyansky-index)
+[![Version 2.0 (Author Specification)](https://img.shields.io/badge/Version-2.0%20(Specification)-emerald?style=for-the-badge)](https://github.com/vlad-utyansky/utyansky-index)
 [![Version 1.0 (March 2026 Archive)](https://img.shields.io/badge/Version-1.0%20(March%202026%20Alpha)-orange?style=for-the-badge)](https://github.com/vlad-utyansky/utyansky-index/tree/v1.0-legacy)
 
 <br/>
@@ -17,7 +17,7 @@
 ### Universal Deterministic Coordinate Matrix for Code, AI Agents, Marketing Quantification (UVWI) & Vector Memory
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
-[![State Registration](https://img.shields.io/badge/Rospatent%20RF-Application%20№%207927650015-emerald.svg)](https://index.utyanskiy.ru)
+[![Rospatent RF Application](https://img.shields.io/badge/Rospatent%20RF-Software%20App%20№%207927650015-emerald.svg)](https://index.utyanskiy.ru)
 [![Official Portal](https://img.shields.io/badge/Portal-index.utyanskiy.ru-0ea5e9.svg)](https://index.utyanskiy.ru)
 [![Accuracy](https://img.shields.io/badge/Understanding%20Accuracy-99.9%25-10b981.svg)](https://index.utyanskiy.ru)
 [![Author](https://img.shields.io/badge/Author-Vladislav%20Anatolyevich%20Utyansky-6366f1.svg)](https://utyanskiy.ru)
@@ -32,7 +32,7 @@
 
 ---
 
-> ### 🏛️ State Registration and Priority Timeline
+> ### 🏛️ Rospatent RF Application and Priority Timeline
 > * **Copyright Object:** Computer Software *«Deterministic Coordinate Navigation and Data Routing System for Artificial Intelligence and Software "Utyansky Index" (Utyansky Index v2.0)»*
 > * **Intellectual Property Office:** Federal Service for Intellectual Property (**Rospatent RF / FIPS**)
 > * **Official Application Number:** [**№ 7927650015**](https://index.utyanskiy.ru) *(Priority Date: **22.08.2026**)*
@@ -40,7 +40,7 @@
 > 
 > 📅 **Timeline of Verified Priority:**
 > * **March 22, 2026 (19:17 MSK)** — Initial worldwide public disclosure of the architecture (Public Release v1.0 on GitHub, commit `51584ac`).
-> * **August 22, 2026 (16:42 MSK)** — Official state registration of industrial Version 2.0 at Rospatent RF (Application № 7927650015).
+> * **August 22, 2026 (16:42 MSK)** — Official software registration application filed at Rospatent RF (Application № 7927650015).
 
 ---
 
@@ -51,7 +51,7 @@ The **Utyansky Index** is an end-to-end 5-digit coordinate industrial standard (
 Instead of forcing AI to "guess" functions via imprecise keywords in stochastic RAG searches, the Utyansky Index assigns every UI element, backend module, and function a **rigid, deterministic 5-digit coordinate passport**.
 
 > **Standard Philosophy:** *«Stop Searching. Start Addressing.»*  
-> *Just as an electrical socket during building construction is placed at an exact 30 cm height according to state engineering codes rather than "somewhere visually nice", code elements must possess rigid numeric coordinates so AI never breaks working systems again.*
+> *Just as an electrical socket during building construction is placed at an exact 30 cm height according to engineering building codes rather than "somewhere visually nice", code elements must possess rigid numeric coordinates so AI never breaks working systems again.*
 
 ### 🎯 Three Fundamental Principles:
 | Principle | Description | Without Index (Stochastic Chaos) | With Utyansky Index (Determinism) |
@@ -82,7 +82,7 @@ Instead of forcing AI to "guess" functions via imprecise keywords in stochastic 
 
 > ### 🏠 Executive Analogy: Home Renovation & Marketplace Fulfillment Center
 > * **Vibe Coding without Index (Chaos):** Like a construction crew renovating an apartment without architectural blueprints. You ask to "hang a wall picture", and the worker drills directly into hidden electrical wiring, blacking out the entire building. Or like a massive Amazon/Wildberries fulfillment center with 1,000,000 items piled into one chaotic mountain in the center of the warehouse — locating a single box requires 20 workers to tear the whole warehouse apart.
-> * **Engineering with the Utyansky Index (Determinism):** Every electrical outlet and plumbing pipe has strict numerical coordinates compliant with state engineering standards. In the warehouse, every item has an exact coordinate bin (Aisle 7, Rack 10, Shelf 80). The automated robot glides over in 1 second, picks the exact item, and leaves adjacent inventory 100% undisturbed.
+> * **Engineering with the Utyansky Index (Determinism):** Every electrical outlet and plumbing pipe has strict numerical coordinates compliant with engineering building standards. In the warehouse, every item has an exact coordinate bin (Aisle 7, Rack 10, Shelf 80). The automated robot glides over in 1 second, picks the exact item, and leaves adjacent inventory 100% undisturbed.
 
 ---
 
@@ -395,5 +395,5 @@ The **«Utyansky Index»** standard is distributed under a transparent hybrid **
 [![Token Savings: 85%](https://img.shields.io/badge/API%20Budget-85%25%20Token%20Savings-blue?style=flat-square)](https://github.com/vlad-utyansky/utyansky-index)
 [![Cursor & Claude Code](https://img.shields.io/badge/IDE-Cursor%20%7C%20Claude%20%7C%20Windsurf-violet?style=flat-square)](https://github.com/vlad-utyansky/utyansky-index/blob/main/AI_SYSTEM_PROMPT.md)
 [![Standard: Utyansky Index](https://img.shields.io/badge/Standard-Utyansky%20Index%20v2.0-indigo?style=flat-square)](https://index.utyanskiy.ru)
-[![Rospatent RF](https://img.shields.io/badge/Patent-Rospatent%20№%207927650015-gold?style=flat-square)](https://index.utyanskiy.ru)
+[![Rospatent RF](https://img.shields.io/badge/Rospatent%20RF-App%20№%207927650015-emerald?style=flat-square)](https://index.utyanskiy.ru)
 [![Vector Memory 1B+](https://img.shields.io/badge/Memory-pgvector%20HNSW%20(1B%2B%20%2F%201T%2B)-cyan?style=flat-square)](https://github.com/vlad-utyansky/utyansky-index)
