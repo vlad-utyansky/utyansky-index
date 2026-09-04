@@ -24,6 +24,14 @@
 
 ---
 
+> ### 🧭 Choose Your Track for Fast Navigation:
+> * 💼 **[For Executives, Founders & Business (Business Value, ROI, 7 Sins) ➔](#-21-for-executives-and-business-solving-7-deadly-vibe-coding-sins--roi-calculation)**
+>   *(Real-world analogies, 85% token cost reduction, regression immunity, financial ROI, and Engineering Center plans)*
+> * ⚙️ **[For Architects, CTOs & Lead Engineers (Technical Specification) ➔](#-3-engineering-matrix-and-standard-ranges-9-domains-1000099999)**
+>   *(Periodic matrix of 9 domains 10000–99999, AST parsing, pgvector 1.5M+ coordinate sharding, UVWI math, and TOP-20 technical FAQ)*
+
+---
+
 > ### 🏛️ State Registration and Priority Timeline
 > * **Copyright Object:** Computer Software *«Deterministic Coordinate Navigation and Data Routing System for Artificial Intelligence and Software "Utyansky Index" (Utyansky Index v2.0)»*
 > * **Intellectual Property Office:** Federal Service for Intellectual Property (**Rospatent RF / FIPS**)
