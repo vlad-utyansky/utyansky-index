@@ -176,6 +176,19 @@ Instead of forcing AI to "guess" functions via imprecise keywords in stochastic 
 
 ---
 
+### 📊 4.1. Marketing Viral Weight Calculation (UVWI) & 3 Real-World Cases:
+
+The standard translates subjective "likes and vanity views" into exact mathematical ROI predictions:
+
+$\text{UVWI [85010]} = \frac{\text{Verified Positive WOW Responses [21303]}}{\text{Total Audience Reach [92020]}} \times 100\%$
+
+#### 🏢 3 Enterprise Use Cases:
+1. **🏗️ Construction & Luxury Renovation:** A video walkthrough reached 10,000 views. AI identified 3,500 confirmed quote requests. **UVWI = 35.0%** — 1 in every 3 viewers is a qualified multi-million deal lead.
+2. **🛡️ Influencer Fraud Detection Before Ad Spend:** An influencer with 100,000 views asks $1,500. UVWI scan shows only 50 genuine buyer inquiries (**UVWI = 0.05%** — bot fraud). A niche creator with 10,000 views has 2,000 inquiries (**UVWI = 20.0%** — 10x ROI).
+3. **🍔 Restaurant & Local Hospitality Business:** A food reel reached 50,000 views. 6,000 users shared with friends saying "Let's go tonight!" and clicked reservations (**UVWI = 12.0%**). The chef forecasts a packed house 2 days ahead.
+
+---
+
 ## 🗄️ 5. Project Index Registry (`UTYANSKY_INDEX_REGISTRY.json`)
 
 ```json
