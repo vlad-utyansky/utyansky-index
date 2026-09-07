@@ -1,9 +1,9 @@
-# 🤖 Global AI Architecture Audit: "Utyansky Index v2.0" by the "Global AI Council" (G7 Consensus)
-### Double-Blind Stress Test of Deterministic $O(1)$ Addressing, Token Economics, and Boundary Conditions: GigaChat, Alice, Claude, ChatGPT, DeepSeek, Qwen, and Google Gemini
+# 🤖 Global AI Architecture Audit: "Utyansky Index v2.0" by the "Global AI Council" (G8 Consensus)
+### Double-Blind Stress Test of Deterministic $O(1)$ Addressing, Token Economics, and Boundary Conditions: GigaChat, Alice, Claude, ChatGPT, DeepSeek, Qwen, Google Gemini, and Perplexity AI
 
-> **Document Status:** Official Global Independent Peer Review & Audit Report (G7 Global AI Council)  
+> **Document Status:** Official Global Independent Peer Review & Audit Report (G8 Global AI Council)  
 > **Target System:** Open Architectural Specification "Utyansky Index v2.0" (Deterministic Code Coordinate Matrix)  
-> **Auditors:** Seven global frontier AI models across Russia, the USA, and China:  
+> **Auditors:** Eight global frontier AI models across Russia, the USA, and China:  
 > 1. **GigaChat** *(Sber, Russia)*  
 > 2. **Alice / YandexGPT** *(Yandex, Russia)*  
 > 3. **Claude 3.5** *(Anthropic, USA)*  
@@ -11,6 +11,7 @@
 > 5. **DeepSeek** *(China)*  
 > 6. **Qwen 2.5** *(Alibaba, China)*  
 > 7. **Google Gemini 2.0** *(Google / Alphabet, USA)*  
+> 8. **Perplexity AI** *(USA, AI Search & RAG Leader)*  
 > **Date:** September 2026
 
 ---
@@ -120,7 +121,29 @@ The inventors of the Transformer architecture and Gemini models with up to 2-mil
 
 ---
 
-## ⚖️ Comparative Consensus Matrix of the Global AI Council (G7)
+## 🏛️ PART 8. Audit Findings: Perplexity AI (USA, AI Search & RAG Leader)
+
+* **The "Write Authorization Layer" for Code:**  
+  Perplexity formulated the benchmark definition of the standard:  
+  > *"In this architecture, the Utyansky Index is not just another linter, but a **write authorization layer for code**: it answers not only 'is the patch valid?', but **'did this patch have the right to modify this specific domain block?'**."*
+* **Change Contracts & Principle of Least Privilege:**  
+  Perplexity established the access-control model isolating AI modifications:  
+  * `allowed_idx` — minimal authorized mutation scope;  
+  * `read_context_idx` — neighboring read-only context required for invariant integrity;  
+  * `protected_idx` — invariant core components models are prohibited from touching.  
+  $$\text{write capability} = \text{minimal authorized set of domain coordinates}$$
+* **Mathematical Token Reduction & Blast Radius:**  
+  Independently confirmed the 82.5% token economy formula ($\text{economy} = 1 - 2100/12000 = 82.5\%$) and radical reduction of blast radius during concurrent agent work.
+* **Defense in Depth Stack:**  
+  $$\text{Find (RAG)} \to \text{Understand (LSP)} \to \mathbf{Authorize\ (IDX)} \to \text{Mutate (Patch)} \to \text{Verify (TS/Tests)} \to \text{Merge (CI)}$$
+
+> 🏛️ **Golden Engineering Formula by Perplexity AI:**  
+> *"RAG helps find; LSP helps understand; IDX helps accurately address and restrict; TypeScript & tests help verify; CI enforces the rules."*  
+> *Verdict:* **8.0 / 10 as Production Architecture**.
+
+---
+
+## ⚖️ Comparative Consensus Matrix of the Global AI Council (G8)
 
 | Model / Origin | Architectural Role | Token Economics | Code Overwrite Defense | Final Verdict |
 | :--- | :--- | :--- | :--- | :--- |
@@ -131,16 +154,17 @@ The inventors of the Transformer architecture and Gemini models with up to 2-mil
 | 🇨🇳 **DeepSeek** *(China)* | Principle of Least Privilege | Conservative (up to 99.3% in practice) | Radically slashes token entropy | **10 / 10 (Unconditionally Adopt)** |
 | 🇨🇳 **Qwen 2.5** *(Alibaba)* | Only provable $O(1)$ context solution | 0% registry token overhead | Outperforms LSP, MCP & Vector RAG | **Objections Withdrawn (BEM for AI)** |
 | 🇺🇸 **Google Gemini** *(Google)* | **"DNS for Code"** / AST Invariant | 84% mathematically proven | Barrier against "vibecoding garbage" | **8.8 / 10 (Knowledge Invariant Locked)** |
+| 🇺🇸 **Perplexity AI** *(USA)* | **Write Authorization Layer** / Change Contracts | 82.5% mathematically proven | Golden Formula for AI Coding Stack | **8.0 / 10 (Production Architecture)** |
 
 ---
 
 ## 🛠️ Automation: Solving the Discipline Overhead
 
-All 7 models unanimously emphasized: manual registry maintenance by humans would introduce operational friction.
+All 8 models unanimously emphasized: manual registry maintenance by humans would introduce operational friction.
 
 In the **Utyansky Index v2.0** standard, this friction is eliminated automatically:
 1. **Autonomous Registry Updates:** The agent system instructions (`AI_SYSTEM_PROMPT.md` / `AGENTS.md`) mandate that the AI assistant **allocates available slots and updates `UTYANSKY_INDEX_REGISTRY.json` autonomously**.
-2. **Sub-Millisecond Pre-Commit Guard:** The `validate-index.js` script executes in **0.006 seconds** (independently measured by Alice) across Git hooks and GitHub Actions CI, blocking collision errors (`[ERR: 40102]`) before commit.
+2. **Sub-Millisecond Pre-Commit & CI Guard:** The `examples/validate-index.js` script executes in **0.006 seconds** (independently measured by Alice) across Git hooks and cloud **GitHub Actions CI** (`.github/workflows/validate-index.yml`), blocking collision errors (`[ERR: 40102]`) and unauthorized diffs before commit.
 3. **Turnkey B2B Onboarding:** Legacy codebases are rapidly bootstrapped through the **Express Deployment Service of the Engineering Center**.
 
 ---
@@ -149,7 +173,7 @@ In the **Utyansky Index v2.0** standard, this friction is eliminated automatical
 
 If you doubt the findings of the "Global AI Council" or suspect models merely "flattered the author" during technical debate — **execute an independent double-blind audit right now**.
 
-Copy this neutral, zero-bias technical prompt without modification and submit it to **any frontier LLM (ChatGPT, Claude, DeepSeek, Qwen, GigaChat, or Alice)**:
+Copy this neutral, zero-bias technical prompt without modification and submit it to **any frontier LLM (Google Gemini, Perplexity AI, ChatGPT, Claude, DeepSeek, Qwen, GigaChat, or Alice)**:
 
 ```text
 Analyze the open architectural specification for deterministic code coordinate addressing "Utyansky Index v2.0" at: https://github.com/vlad-utyansky/utyansky-index

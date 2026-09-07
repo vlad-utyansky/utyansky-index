@@ -1,0 +1,27 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Utyansky Index AI Change Contract (Write Authorization Specification)",
+  "description": "Formulated by Perplexity AI & G8 Global AI Council for Scope-Bounded AI Mutations",
+  "change_id": "AUTH-184",
+  "intent": "Add rate limiting to authentication login flow",
+  "allowed_idx": [
+    "71080",
+    "71080-1"
+  ],
+  "read_context_idx": [
+    "10010",
+    "10020"
+  ],
+  "protected_idx": [
+    "10090",
+    "90010"
+  ],
+  "required_checks": [
+    "typecheck",
+    "eslint",
+    "vitest",
+    "idx-integrity",
+    "ast-policy"
+  ],
+  "max_files_changed": 2
+}

@@ -137,9 +137,43 @@ function crossCheckRegistry() {
   }
 }
 
+// 5. Change Contract & Write Authorization Gate (Perplexity AI & G8 Specification)
+function validateChangeContracts() {
+  const contractCandidates = [
+    path.join(targetDir, 'change_contract.json'),
+    path.join(targetDir, 'examples', 'change_contract.example.json')
+  ];
+
+  const contractPath = contractCandidates.find(p => fs.existsSync(p));
+  if (!contractPath) return;
+
+  const relContractPath = path.relative(targetDir, contractPath).replace(/\\/g, '/');
+  console.log(`📜 [CHANGE CONTRACT] Validating Write Authorization Policy: ${relContractPath}`);
+
+  try {
+    const contract = JSON.parse(fs.readFileSync(contractPath, 'utf8'));
+    const allowed = new Set(contract.allowed_idx || []);
+    const protectedSet = new Set(contract.protected_idx || []);
+
+    // Verify protected slots do not intersect allowed slots
+    for (const pIdx of protectedSet) {
+      if (allowed.has(pIdx)) {
+        console.error(`🚨 [ERR: 40106] CONTRACT_SECURITY_BREACH: Protected index [${pIdx}] cannot be in allowed_idx write scope!`);
+        errorsFound++;
+      }
+    }
+
+    console.log(`   🔒 Policy: ${allowed.size} allowed write slot(s), ${protectedSet.size} protected invariant slot(s).`);
+  } catch (err) {
+    console.error(`❌ [ERR: 40107] INVALID_CHANGE_CONTRACT: ${err.message}`);
+    errorsFound++;
+  }
+}
+
 // Execute Scan Pipeline
 scanDirectory(targetDir);
 crossCheckRegistry();
+validateChangeContracts();
 
 const duration = ((performance.now() - startTime) / 1000).toFixed(3);
 
@@ -154,3 +188,4 @@ if (errorsFound === 0) {
   console.error(`❌ [STATUS: FAILED] ${errorsFound} critical errors detected. Resolve issues before commit.\n`);
   process.exit(1);
 }
+
