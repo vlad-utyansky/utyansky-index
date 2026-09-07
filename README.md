@@ -155,8 +155,7 @@ All 4 independent systems converged on the same engineering consensus:
 * **Mid-to-Large Codebases:** Maximum ROI is achieved in scaling applications by replacing stochastic guessing with deterministic $O(1)$ navigation.
 * **Zero Human Overhead:** To prevent manual registry drift, the standard obligates AI assistants to update the registry autonomously (`AI_SYSTEM_PROMPT.md`) and guards commits with a sub-0.05s pre-commit gate (`validate-index.js`).
 
-👉 **[Read the Official G4 Peer Review Report (docs/en/LLM_INDEPENDENT_AUDIT_EN.md) ➔](./docs/en/LLM_INDEPENDENT_AUDIT_EN.md)**  
-📜 **[Read the Full Unedited Dialogue Transcripts (ДИАЛОГИ_И_ВОПРОСЫ_4_ГИГАНТАМ_ИИ_ПОЛНАЯ_ВЕРСИЯ.md) ➔](./ДИАЛОГИ_И_ВОПРОСЫ_4_ГИГАНТАМ_ИИ_ПОЛНАЯ_ВЕРСИЯ.md)**
+👉 **[Read the Official G4 Peer Review Report (docs/en/LLM_INDEPENDENT_AUDIT_EN.md) ➔](./docs/en/LLM_INDEPENDENT_AUDIT_EN.md)**
 
 ---
 
