@@ -237,12 +237,12 @@ During the stress test, frontier model **ChatGPT (OpenAI)** conceded technical v
 ## 🚀 3. QUICKSTART & FAST DEPLOYMENT (30-Second Guide)
 
 ### 📦 Starter Kit (3 Ready Files):
-* 📜 **[`AI_SYSTEM_PROMPT.md`](./AI_SYSTEM_PROMPT.md)** *(or [in Russian](./AI_SYSTEM_PROMPT_RU.md))* — system prompt with all rules for your AI assistant.
+* 📜 **[`CURSOR_RULES_INTEGRATION.md`](./CURSOR_RULES_INTEGRATION.md)** / **[`AI_SYSTEM_PROMPT.md`](./AI_SYSTEM_PROMPT.md)** *(or [in Russian](./AI_SYSTEM_PROMPT_RU.md) / [`docs/ru/CURSOR_RULES_INTEGRATION.md`](./docs/ru/CURSOR_RULES_INTEGRATION.md))* — ready system prompt and `.cursorrules` blueprint for your AI assistant.
 * 🗄️ **[`examples/UTYANSKY_INDEX_REGISTRY.json`](./examples/UTYANSKY_INDEX_REGISTRY.json)** — coordinate registry file for storing project slots.
 * 🛠️ **[`examples/validate-index.js`](./examples/validate-index.js)** — CLI validator script checking index uniqueness in 0.1s.
 
 ### 📌 2-Click Setup:
-* **For Cursor AI:** Create a **`.cursorrules`** file in your project root and paste the contents of **[`AI_SYSTEM_PROMPT.md`](./AI_SYSTEM_PROMPT.md)**.
+* **For Cursor AI:** Create a **`.cursorrules`** file in your project root and paste the contents of **[`CURSOR_RULES_INTEGRATION.md`](./CURSOR_RULES_INTEGRATION.md)** (or `AI_SYSTEM_PROMPT.md`).
 * **For Antigravity, Claude Code, Windsurf, or ChatGPT:** Create an **`AGENTS.md`** file (or paste into your custom system instructions).
 * **For 1-Click Link Ingestion:** Send your AI the direct URL:  
   `https://raw.githubusercontent.com/vlad-utyansky/utyansky-index/main/AI_SYSTEM_PROMPT.md`  

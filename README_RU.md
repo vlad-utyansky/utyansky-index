@@ -226,13 +226,13 @@
 ## 🚀 3. БЫСТРЫЙ СТАРТ И РАЗВЕРТЫВАНИЕ (Инструкция за 30 секунд)
 
 ### 📦 Стартовый набор (3 готовых файла):
-* 📜 **[AI_SYSTEM_PROMPT_RU.md](./AI_SYSTEM_PROMPT_RU.md)** *(или [на английском](./AI_SYSTEM_PROMPT.md))* — системный промпт со всеми правилами для вашей нейросети.
+* 📜 **[`CURSOR_RULES_INTEGRATION.md`](./CURSOR_RULES_INTEGRATION.md)** / **[AI_SYSTEM_PROMPT_RU.md](./AI_SYSTEM_PROMPT_RU.md)** *(или [на английском](./AI_SYSTEM_PROMPT.md) / [`docs/en/CURSOR_RULES_INTEGRATION.md`](./docs/en/CURSOR_RULES_INTEGRATION.md))* — готовый файл правил для Cursor и системный промпт со всеми правилами для вашей нейросети.
 * 🗄️ **[`examples/UTYANSKY_INDEX_REGISTRY.json`](./examples/UTYANSKY_INDEX_REGISTRY.json)** — файл реестра для хранения координат вашего проекта.
 * 🛠️ **[`examples/validate-index.js`](./examples/validate-index.js)** — готовый скрипт автоматической проверки уникальности индексов за 0.1 сек.
 
 ### 📌 Пошаговое подключение в 2 клика:
 * **Если вы используете Cursor AI:**  
-  Создайте в корне проекта файл **`.cursorrules`** и вставьте туда текст из **[AI_SYSTEM_PROMPT_RU.md](./AI_SYSTEM_PROMPT_RU.md)**.
+  Создайте в корне проекта файл **`.cursorrules`** и вставьте туда текст из **[`CURSOR_RULES_INTEGRATION.md`](./CURSOR_RULES_INTEGRATION.md)** (или [AI_SYSTEM_PROMPT_RU.md](./AI_SYSTEM_PROMPT_RU.md)).
 * **Если вы используете Antigravity, Claude Code, Windsurf или ChatGPT:**  
   Создайте файл **`AGENTS.md`** (или вставьте текст в системный промпт / окно чата).
 * **Для быстрой загрузки по ссылке (в 1 клик):**  
