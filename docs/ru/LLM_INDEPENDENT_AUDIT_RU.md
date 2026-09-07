@@ -138,17 +138,19 @@
   $$\text{write capability} = \text{минимальный разрешённый набор доменных объектов}$$
 * **Математика экономии и уменьшение Blast Radius:**  
   Подтвердила математическую модель экономии в 82.5% ($\text{economy} = 1 - 2100/12000 = 82.5\%$) и кардинальное снижение зоны поражения при параллельной работе агентов.
-* **Теоретико-Множественная Формула Допуска Патча (Write Authorization Policy):**  
-  $$\text{Patch allowed} \iff \begin{cases} 
-  \text{modified IDX} \subseteq \text{allowed\_idx} & \text{(мутация только в разрешённых слотах)} \\ 
-  \text{modified IDX} \cap \text{protected\_idx} = \emptyset & \text{(критичные зоны физически неприкосновенны)} \\ 
-  \text{integrity checks pass} & \text{(zero-drift валидация координат за 0.006 с)} \\ 
-  \text{required checks pass} & \text{(типизация TypeScript, линтинг и тесты)} 
-  \end{cases}$$
+* **Формальный Предикат Допуска Патча (Write Authorization Policy):**  
+  $$\text{PatchAllowed}(P, C) \iff (\text{ModifiedIDX}(P) \subseteq \text{AllowedIDX}(C)) \land (\text{ModifiedIDX}(P) \cap \text{ProtectedIDX}(C) = \emptyset) \land \text{IntegrityPass}(P, C) \land \text{RequiredChecksPass}(P, C)$$
+* **Формула Защищаемой Поверхности Enterprise (Protected Surface):**  
+  $$\text{ProtectedSurface} = \text{ProductCode} \cup \text{IDXRegistry} \cup \text{ChangeContracts} \cup \text{ValidatorCode} \cup \text{CIWorkflow} \cup \text{RepositoryRules}$$
+* **Три критерия зрелости Production-Grade:**  
+  1. **Addressability:** каждый критичный объект имеет стабильный, однозначный координатный идентификатор.  
+  2. **Enforceability:** CI реально валидирует diff и физически блокирует несанкционированные мутации.  
+  3. **Non-bypassability:** изменить контракт и правила валидации сложнее, чем изменить сам продуктовый код.
 
 > 🏛️ **Золотая Формула Безопасного AI-Кодинга от Perplexity AI:**  
 > *«RAG помогает найти; LSP помогает понять; IDX помогает точно адресовать и ограничить; TypeScript и тесты помогают проверить; CI не даёт обойти правила.»*  
-> *Официальный вердикт:* **Архитектура Write Authorization Layer и Change Contracts подтверждена на уровне кода и CI (8 / 10 как Production-Архитектура)**.
+> *Финальная Аксиома:* **«Ограничивать не интеллект модели, а её доступную поверхность модификации».**  
+> *Официальный вердикт:* **Архитектура Write Authorization Layer и Change Contracts подтверждена на уровне кода и CI (8.0 / 10 как Production-Архитектура)**.
 
 ---
 
