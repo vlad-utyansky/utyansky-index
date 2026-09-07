@@ -472,6 +472,25 @@ The **«Utyansky Index»** standard is distributed under a transparent hybrid **
 
 ---
 
+## 🗺️ Versioning & Engineering Roadmap
+
+* 📦 **v1.0 (Archived):** Foundational 5-digit DOM coordinate navigation (`data-idx="7XXXX"`), CSS style isolation, and BEM architectural mapping.
+* 🚀 **v2.0 (Current Stable Release):**
+  * Deterministic coordinate addressing ($O(1)$) and the Reliability Triad (*TypeScript + ESLint + Utyansky Index*).
+  * Specification of **Change Contracts** (`allowed_idx`, `read_context_idx`, `protected_idx`).
+  * **WAL (Write Authorization Layer)** for safe vibecoding and AI agent mutation gating.
+  * Sub-millisecond pre-commit validator and cloud **GitHub Actions CI** (0.006–0.010s collision detection).
+  * Official consensus of the **G8 Global AI Council** (8 world frontier AI models).
+* 🔮 **v3.0 (Under Active R&D / Preview):**
+  * **Autonomous Multi-Agent Swarms:** Zero-conflict concurrent code engineering for swarms of 10–20 autonomous AI agents in monorepos.
+  * **DSL (Distributed Slot Locking):** Write-intent coordination via lease-based domain coordinate reservations.
+  * **MFT (Monotonic Fencing Tokens):** Mathematical elimination of race conditions and protection against stale "woken-up" agents during parallel PR merges.
+  * **CCG (Cryptographic Capability Grants):** Tamper-proof code mutation tokens powered by **Ed25519** cryptographic signatures.
+  * **HVS (Hierarchical Vector Sharding):** Pre-routing of embedding vector spaces for **pgvector / HNSW** ($1.5\text{M}+$ vectors) with 15x retrieval noise compression.
+  * **Non-Bypassable Enterprise Protected Surface:** Kernel protection of the policy envelope (`ProtectedSurface`) via CODEOWNERS and GitHub Rulesets.
+
+---
+
 ## 👤 Author & Inventor
 
 * **Standard Author:** Vladislav Anatolyevich Utyansky
