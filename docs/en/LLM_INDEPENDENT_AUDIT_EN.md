@@ -18,7 +18,7 @@
 
 In the era of rapid vibecoding and autonomous multi-agent systems, software teams face severe roadblocks: **LLM context degradation, accidental code erasing (`// rest of code unchanged`), and exponential API billing inflation**.
 
-To obtain an impartial, rigorous evaluation of the Utyansky Index standard, the full repository specification was submitted for double-blind audit to the four leading frontier AI powerhouses.
+To obtain an impartial, rigorous evaluation of the Utyansky Index standard, the full repository specification was submitted for double-blind audit to the six leading frontier AI powerhouses (Global AI Council G6 across Russia, the USA, and China).
 
 ---
 
@@ -108,3 +108,12 @@ Upon inspecting the production runtime context (bidirectional pre-commit verific
 | 🇨🇳 **Qwen 2.5** *(Alibaba)* | Only provable $O(1)$ context solution | 0% registry token overhead | Outperforms LSP, MCP & Vector RAG | **Objections Withdrawn (BEM for AI)** |
 
 ---
+
+## 🛠️ Automation: Solving the Discipline Overhead
+
+All 6 models unanimously emphasized: manual registry maintenance by humans would introduce operational friction.
+
+In the **Utyansky Index v2.0** standard, this friction is eliminated automatically:
+1. **Autonomous Registry Updates:** The agent system instructions (`AI_SYSTEM_PROMPT.md` / `AGENTS.md`) mandate that the AI assistant **allocates available slots and updates `UTYANSKY_INDEX_REGISTRY.json` autonomously**.
+2. **Sub-Millisecond Pre-Commit Guard:** The `validate-index.js` script executes in **0.006 seconds** (independently measured by Alice) across Git hooks and GitHub Actions CI, blocking collision errors (`[ERR: 40102]`) before commit.
+3. **Turnkey B2B Onboarding:** Legacy codebases are rapidly bootstrapped through the **Express Deployment Service of the Engineering Center**.
