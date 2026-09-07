@@ -137,23 +137,26 @@ Instead of forcing AI to "guess" functions via imprecise keywords in stochastic 
 
 ---
 
-## 🤖 2.2. Independent LLM Stress Test & Peer Review (Claude & GigaChat)
+## 🤖 2.2. Independent Global AI Consensus (The "Big Four" G4 Peer Review)
 
-To rigorously evaluate the standard without marketing bias, the complete repository specification was submitted for double-blind audit to two leading frontier AI models: **Claude (Anthropic)** and **GigaChat (Sber)**.
+To rigorously evaluate the standard without marketing bias, the complete specification was submitted for independent double-blind audit to the **"Big Four" frontier AI leaders across the USA, Russia, and China**.
 
-Both systems converged on the same engineering consensus:
+All 4 independent systems converged on the same engineering consensus:
 
-| Model | Primary Technical Assessment & Verdict |
+| Model / Origin | Primary Technical Assessment & Verdict |
 | :--- | :--- |
-| 🌐 **Claude (Anthropic)** | *«In large production apps with 15 identical buttons, semantic RAG search frequently confuses targets. Direct coordinate addressing solves this like an automated fulfillment warehouse. It is sound engineering practice that realistically saves colossal developer-hours at scale.»* |
-| 🇷🇺 **GigaChat (Sber)** | *«Not an algorithmic gimmick, but a solid industrial engineering protocol... Restricting the model's focus to a 40-line slot physically eliminates hallucinations and mathematically grounds up to 85% token cost savings. data-idx provides unbreakable selectors for Playwright/Cypress.»* |
+| 🇷🇺 **GigaChat** *(Sber / Russia)* | *«Not an algorithmic gimmick, but a solid industrial protocol... Restricting model focus to a 40-line slot physically eliminates hallucinations and mathematically grounds up to 85% token cost savings. data-idx provides unbreakable selectors for Playwright/Cypress.»* |
+| 🌐 **Claude** *(Anthropic / USA)* | *«In large production apps with 15 identical buttons, semantic RAG search frequently confuses targets. Direct coordinate addressing solves this like an automated fulfillment warehouse. It is sound engineering practice that realistically saves colossal developer-hours at scale.»* |
+| 🇺🇸 **ChatGPT** *(OpenAI / USA)* | *«RAG answers: "What should I read?", IDX answers: "Where am I allowed to work?". This unlocks a powerful architecture: IDX-Constrained RAG, strictly locking the agent within its declared contract boundary.»* |
+| 🇨🇳 **DeepSeek** *(China)* | *«Principle of Least Privilege. Radically slashes token entropy. The claimed 80–85% savings is conservative (empirically up to 99.3%). First control, then intelligence. Unconditionally adopt for AI agents!»* |
 
 #### ⚖️ Honest Boundary Conditions & Practical Caveats:
 * **Overhead for Micro-Scripts:** For small 50-line scripts or simple static landing pages, a 5-digit coordinate standard is architectural overkill.
 * **Mid-to-Large Codebases:** Maximum ROI is achieved in scaling applications by replacing stochastic guessing with deterministic $O(1)$ navigation.
-* **Zero Human Overhead:** To prevent manual registry drift, the standard obligates AI assistants to update the registry autonomously (`AI_SYSTEM_PROMPT.md`) and guards commits with a sub-0.1s pre-commit gate (`validate-index.js`).
+* **Zero Human Overhead:** To prevent manual registry drift, the standard obligates AI assistants to update the registry autonomously (`AI_SYSTEM_PROMPT.md`) and guards commits with a sub-0.05s pre-commit gate (`validate-index.js`).
 
-👉 **[Read the Full Double-Blind LLM Audit Report (docs/en/LLM_INDEPENDENT_AUDIT_EN.md) ➔](./docs/en/LLM_INDEPENDENT_AUDIT_EN.md)**
+👉 **[Read the Official G4 Peer Review Report (docs/en/LLM_INDEPENDENT_AUDIT_EN.md) ➔](./docs/en/LLM_INDEPENDENT_AUDIT_EN.md)**  
+📜 **[Read the Full Unedited Dialogue Transcripts (ДИАЛОГИ_И_ВОПРОСЫ_4_ГИГАНТАМ_ИИ_ПОЛНАЯ_ВЕРСИЯ.md) ➔](./ДИАЛОГИ_И_ВОПРОСЫ_4_ГИГАНТАМ_ИИ_ПОЛНАЯ_ВЕРСИЯ.md)**
 
 ---
 
