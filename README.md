@@ -35,6 +35,8 @@
 [![Official Portal](https://img.shields.io/badge/Portal-index.utyanskiy.ru-0ea5e9.svg)](https://index.utyanskiy.ru)
 [![Accuracy](https://img.shields.io/badge/Understanding%20Accuracy-99.9%25-10b981.svg)](https://index.utyanskiy.ru)
 [![Paradigm: IDX-Constrained RAG](https://img.shields.io/badge/Paradigm-IDX--Constrained%20RAG-8b5cf6.svg)](docs/en/LLM_INDEPENDENT_AUDIT_EN.md)
+[![CI Validation](https://github.com/vlad-utyansky/utyansky-index/actions/workflows/validate-index.yml/badge.svg)](https://github.com/vlad-utyansky/utyansky-index/actions)
+[![CI Speed](https://img.shields.io/badge/CI_Speed-0.006s-10b981.svg)](examples/validate-index.js)
 [![Author](https://img.shields.io/badge/Author-Vladislav%20Anatolyevich%20Utyansky-6366f1.svg)](https://utyanskiy.ru)
 
 ---
@@ -181,7 +183,45 @@ During the stress test, frontier model **ChatGPT (OpenAI)** conceded technical v
 * **Standard RAG (Stochastic Search):** Scours entire repositories, balloons context windows to 150,000 tokens, confuses similar components, and triggers cascading refactor regressions.
 * **IDX-Constrained RAG:** The 5-digit coordinate creates an unbreachable scope boundary (`[IDX: 71080]`), forcing RAG to retrieve context **strictly inside this authorized perimeter**, delivering 0% unintended edits and up to 85–99% token cost reduction.
 
-👉 **[Read the Official G4 Peer Review Report (docs/en/LLM_INDEPENDENT_AUDIT_EN.md) ➔](./docs/en/LLM_INDEPENDENT_AUDIT_EN.md)**
+👉 **[Read the Official Global AI Peer Review Report (docs/en/LLM_INDEPENDENT_AUDIT_EN.md) ➔](./docs/en/LLM_INDEPENDENT_AUDIT_EN.md)**
+
+---
+
+### ⚖️ 2.3. Position in Modern Stack: How the Index Complements TypeScript & ESLint
+
+| Tool | Defense Layer | What It Verifies |
+| :--- | :--- | :--- |
+| **TypeScript** | Type Safety | Type compatibility, interface signatures, null-safety |
+| **ESLint** | Code Style & Patterns | Linting rules, anti-patterns, hygiene and best practices |
+| **Utyansky Index** | **AI Scope Boundaries** | **Coordinate slot isolation, collision defense, physical slot registry** |
+
+> **Separation of Concerns Principle:**  
+> TypeScript and ESLint verify code *quality*. The Utyansky Index governs *authorized modification boundaries for AI agents*. Their responsibilities do not overlap: TypeScript cannot prevent an LLM from wiping an adjacent component, and ESLint cannot detect when an agent mutates an unregistered slot. Each layer mitigates distinct systemic risks.
+
+#### 🔍 Stochastic RAG vs. IDX-Constrained (Utyansky Index)
+
+| Parameter | Stochastic RAG | IDX-Constrained (Utyansky Index) |
+| :--- | :--- | :--- |
+| **Context Ingestion** | Top-K by cosine similarity (pulls up to 30 files with similar tokens) | **Single target file via exact coordinate $O(1)$** |
+| **Editing Boundaries** | Undefined — model rewrites entire file | **`data-idx` establishes an unbreachable slot boundary** |
+| **Code Overwrite Defense** | None (`// rest of code unchanged`) | **Exact coordinate isolates specific sub-block** |
+| **Multi-Agent Collisions** | Undetected (race conditions) | **Pre-commit and CI block duplicate slot collisions** |
+| **Infrastructure Overhead** | Vector DB, embeddings, chunking, Top-K calibration | **Single lightweight JSON registry + 0.006s validator** |
+
+> **The Synergy Formula:** RAG answers *«What is relevant?»*. Coordinate addressing answers *«What is permitted to touch?»*. They are complementary layers that multiply developer velocity.
+
+#### 📋 Practical 5-Minute Implementation Checklist:
+1. **Initialize `UTYANSKY_INDEX_REGISTRY.json`** in repo root with domain ranges (CORE `10000`, ANALYTICS `20000`, UI `70000`, DATA `90000`).
+2. **Tag `data-idx` on key components** — start with high-traffic AI editing touchpoints (buttons, forms, cards).
+3. **Attach `validate-index.js` to pre-commit hook** (Husky / Git hook) for bidirectional cross-checking: registry ↔ source code ↔ disk.
+4. **Enable GitHub Actions CI** (`.github/workflows/validate-index.yml`) — automated cloud verification in 0.006s.
+5. **Add AI Agent System Prompt Rule:** *«Modify only elements with the specified `data-idx`. Never rewrite whole files — output only modified lines»*.
+6. **For critical architecture blocks, set `"status": "LOCKED"`** in the registry — readable by LLMs, but mutation forbidden.
+
+#### 🧭 Practical Boundary Conditions:
+* **Targeted Local Edits:** The standard provides absolute determinism — single component, single service, single function without regressions.
+* **Cascading Refactorings:** For global prop renames or API contract migrations across an entire AST, coordinates work seamlessly alongside graph-based dependency tools.
+* **Structural Value:** Adopt the standard first for structural integrity (clear scopes, slot isolation, zero code overwrites) — token savings follow automatically.
 
 ---
 
