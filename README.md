@@ -154,11 +154,11 @@ Instead of forcing AI to "guess" functions via imprecise keywords in stochastic 
 
 ---
 
-## 🤖 2.2. Independent Global AI Consensus (The "Global AI Council" G6 Peer Review)
+## 🤖 2.2. Independent Global AI Consensus (The "Global AI Council" G7 Peer Review)
 
-To rigorously evaluate the standard without marketing bias, the complete specification was submitted for independent double-blind audit to **six frontier AI leaders across Russia, the USA, and China**.
+To rigorously evaluate the standard without marketing bias, the complete specification was submitted for independent double-blind audit to **seven frontier AI leaders across Russia, the USA, and China**.
 
-All 6 independent systems converged on the same engineering consensus:
+All 7 independent systems converged on the same engineering consensus:
 
 | Model / Origin | Primary Technical Assessment & Verdict |
 | :--- | :--- |
@@ -168,6 +168,7 @@ All 6 independent systems converged on the same engineering consensus:
 | 🇺🇸 **ChatGPT** *(OpenAI / USA)* | *«RAG answers: "What should I read?", IDX answers: "Where am I allowed to work?". This unlocks a powerful architecture: IDX-Constrained RAG, strictly locking the agent within its declared contract boundary.»* |
 | 🇨🇳 **DeepSeek** *(China)* | *«Principle of Least Privilege. Radically slashes token entropy. The claimed 80–85% savings is conservative (empirically up to 99.3%). First control, then intelligence. Unconditionally adopt for AI agents!»* |
 | 🇨🇳 **Qwen 2.5** *(Alibaba / China)* | *«The only mathematically provable solution for O(1) context isolation in AI agent systems. Conclusively outperforms LSP, MCP edit_file, and metadata-filtered vector search. BEM for the LLM Era. Audit complete, objections withdrawn!»* |
+| 🇺🇸 **Google Gemini** *(Google / USA)* | *«DNS for code: cross-stack addressing from UI to backend. Token economy mathematically proven at 84% via formal context profiling. data-idx stability is absolute and immune to physical line shifts (persistent AST node UUID). Barrier against vibecoding garbage.»* |
 
 #### ⚖️ Honest Boundary Conditions & Practical Caveats:
 * **Overhead for Micro-Scripts:** For small 50-line scripts or simple static landing pages, a 5-digit coordinate standard is architectural overkill.
