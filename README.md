@@ -12,6 +12,20 @@
 </div>
 
 ---
+<div align="center">
+
+[![English](https://img.shields.io/badge/Language-English%20(EN)-blue?style=for-the-badge)](README.md)
+[![Russian](https://img.shields.io/badge/Language-Russian%20(RU)-red?style=for-the-badge)](README_RU.md)
+[![Version 2.0 (Author Specification)](https://img.shields.io/badge/Version-2.0%20(Specification)-emerald?style=for-the-badge)](https://github.com/vlad-utyansky/utyansky-index)
+[![Version 1.0 (March 2026 Archive)](https://img.shields.io/badge/Version-1.0%20(March%202026%20Alpha)-orange?style=for-the-badge)](https://github.com/vlad-utyansky/utyansky-index/tree/v1.0-legacy)
+
+<br/>
+
+**[ 🇷🇺 Читать на русском ➔ ](README_RU.md)** &nbsp;&nbsp;|&nbsp;&nbsp; **[ 📜 Open Version 1.0 Archive (March 2026) ➔ ](https://github.com/vlad-utyansky/utyansky-index/tree/v1.0-legacy)**
+
+</div>
+
+---
 
 # 🛡️ Utyansky Index Architecture (Version 2.0)
 ### Universal Deterministic Coordinate Matrix for Code, AI Agents, Marketing Quantification (UVWI) & Vector Memory
@@ -20,6 +34,7 @@
 [![Rospatent RF Application](https://img.shields.io/badge/Rospatent%20RF-Software%20App%20№%207927650015-emerald.svg)](https://index.utyanskiy.ru)
 [![Official Portal](https://img.shields.io/badge/Portal-index.utyanskiy.ru-0ea5e9.svg)](https://index.utyanskiy.ru)
 [![Accuracy](https://img.shields.io/badge/Understanding%20Accuracy-99.9%25-10b981.svg)](https://index.utyanskiy.ru)
+[![Paradigm: IDX-Constrained RAG](https://img.shields.io/badge/Paradigm-IDX--Constrained%20RAG-8b5cf6.svg)](docs/en/LLM_INDEPENDENT_AUDIT_EN.md)
 [![Author](https://img.shields.io/badge/Author-Vladislav%20Anatolyevich%20Utyansky-6366f1.svg)](https://utyanskiy.ru)
 
 ---
@@ -154,6 +169,17 @@ All 4 independent systems converged on the same engineering consensus:
 * **Overhead for Micro-Scripts:** For small 50-line scripts or simple static landing pages, a 5-digit coordinate standard is architectural overkill.
 * **Mid-to-Large Codebases:** Maximum ROI is achieved in scaling applications by replacing stochastic guessing with deterministic $O(1)$ navigation.
 * **Zero Human Overhead:** To prevent manual registry drift, the standard obligates AI assistants to update the registry autonomously (`AI_SYSTEM_PROMPT.md`) and guards commits with a sub-0.05s pre-commit gate (`validate-index.js`).
+
+### ⚡ Birth of a New Architectural Paradigm: `IDX-Constrained RAG`
+
+During the stress test, frontier model **ChatGPT (OpenAI)** conceded technical victory to the standard and coined a foundational new principle: **`IDX-Constrained RAG`** *(Scope-Bounded Retrieval)*.
+
+> 🔥 **The Core Axiom of the Paradigm:**  
+> *«RAG answers: "What should I read?"  
+> IDX answers: "Where am I allowed to work?"»*
+
+* **Standard RAG (Stochastic Search):** Scours entire repositories, balloons context windows to 150,000 tokens, confuses similar components, and triggers cascading refactor regressions.
+* **IDX-Constrained RAG:** The 5-digit coordinate creates an unbreachable scope boundary (`[IDX: 71080]`), forcing RAG to retrieve context **strictly inside this authorized perimeter**, delivering 0% unintended edits and up to 85–99% token cost reduction.
 
 👉 **[Read the Official G4 Peer Review Report (docs/en/LLM_INDEPENDENT_AUDIT_EN.md) ➔](./docs/en/LLM_INDEPENDENT_AUDIT_EN.md)**
 
