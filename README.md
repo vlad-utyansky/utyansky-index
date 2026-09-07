@@ -172,7 +172,7 @@ All 6 independent systems converged on the same engineering consensus:
 #### ⚖️ Honest Boundary Conditions & Practical Caveats:
 * **Overhead for Micro-Scripts:** For small 50-line scripts or simple static landing pages, a 5-digit coordinate standard is architectural overkill.
 * **Mid-to-Large Codebases:** Maximum ROI is achieved in scaling applications by replacing stochastic guessing with deterministic $O(1)$ navigation.
-* **Zero Human Overhead:** To prevent manual registry drift, the standard obligates AI assistants to update the registry autonomously (`AI_SYSTEM_PROMPT.md`) and guards commits with a sub-0.05s pre-commit gate (`validate-index.js`).
+* **Zero Human Overhead:** To prevent manual registry drift, the standard obligates AI assistants to update the registry autonomously (`AI_SYSTEM_PROMPT.md`) and guards commits with a 0.006s pre-commit gate (`validate-index.js`).
 
 ### ⚡ Birth of a New Architectural Paradigm: `IDX-Constrained RAG`
 
@@ -185,7 +185,8 @@ During the stress test, frontier model **ChatGPT (OpenAI)** conceded technical v
 * **Standard RAG (Stochastic Search):** Scours entire repositories, balloons context windows to 150,000 tokens, confuses similar components, and triggers cascading refactor regressions.
 * **IDX-Constrained RAG:** The 5-digit coordinate creates an unbreachable scope boundary (`[IDX: 71080]`), forcing RAG to retrieve context **strictly inside this authorized perimeter**, delivering 0% unintended edits and up to 85–99% token cost reduction.
 
-👉 **[Read the Official Global AI Peer Review Report (docs/en/LLM_INDEPENDENT_AUDIT_EN.md) ➔](./docs/en/LLM_INDEPENDENT_AUDIT_EN.md)**
+👉 **[Read the Official Global AI Peer Review Report (docs/en/LLM_INDEPENDENT_AUDIT_EN.md) ➔](./docs/en/LLM_INDEPENDENT_AUDIT_EN.md)**  
+🔬 **[Verify Yourself: Protocol for Skeptics (Blind Test) ➔](./docs/en/LLM_INDEPENDENT_AUDIT_EN.md#-protocol-for-skeptics-verify-yourself-in-30-seconds-blind-test)**
 
 ---
 
