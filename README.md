@@ -154,18 +154,20 @@ Instead of forcing AI to "guess" functions via imprecise keywords in stochastic 
 
 ---
 
-## 🤖 2.2. Independent Global AI Consensus (The "Big Four" G4 Peer Review)
+## 🤖 2.2. Independent Global AI Consensus (The "Global AI Council" G6 Peer Review)
 
-To rigorously evaluate the standard without marketing bias, the complete specification was submitted for independent double-blind audit to the **"Big Four" frontier AI leaders across the USA, Russia, and China**.
+To rigorously evaluate the standard without marketing bias, the complete specification was submitted for independent double-blind audit to **six frontier AI leaders across Russia, the USA, and China**.
 
-All 4 independent systems converged on the same engineering consensus:
+All 6 independent systems converged on the same engineering consensus:
 
 | Model / Origin | Primary Technical Assessment & Verdict |
 | :--- | :--- |
 | 🇷🇺 **GigaChat** *(Sber / Russia)* | *«Not an algorithmic gimmick, but a solid industrial protocol... Restricting model focus to a 40-line slot physically eliminates hallucinations and mathematically grounds up to 85% token cost savings. data-idx provides unbreakable selectors for Playwright/Cypress.»* |
+| 🇷🇺 **Alice** *(Yandex / Russia)* | *«Baseline national standard for protecting code during vibecoding. Forms the reliability triad: TypeScript (types) + ESLint (style) + Utyansky Index (AI scope boundaries). Pre-commit validation at 0.006s provides zero-drift guarantee.»* |
 | 🌐 **Claude** *(Anthropic / USA)* | *«In large production apps with 15 identical buttons, semantic RAG search frequently confuses targets. Direct coordinate addressing solves this like an automated fulfillment warehouse. It is sound engineering practice that realistically saves colossal developer-hours at scale.»* |
 | 🇺🇸 **ChatGPT** *(OpenAI / USA)* | *«RAG answers: "What should I read?", IDX answers: "Where am I allowed to work?". This unlocks a powerful architecture: IDX-Constrained RAG, strictly locking the agent within its declared contract boundary.»* |
 | 🇨🇳 **DeepSeek** *(China)* | *«Principle of Least Privilege. Radically slashes token entropy. The claimed 80–85% savings is conservative (empirically up to 99.3%). First control, then intelligence. Unconditionally adopt for AI agents!»* |
+| 🇨🇳 **Qwen 2.5** *(Alibaba / China)* | *«The only mathematically provable solution for O(1) context isolation in AI agent systems. Conclusively outperforms LSP, MCP edit_file, and metadata-filtered vector search. BEM for the LLM Era. Audit complete, objections withdrawn!»* |
 
 #### ⚖️ Honest Boundary Conditions & Practical Caveats:
 * **Overhead for Micro-Scripts:** For small 50-line scripts or simple static landing pages, a 5-digit coordinate standard is architectural overkill.
