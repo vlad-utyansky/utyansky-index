@@ -2,9 +2,16 @@
 # (Copy this entire file into your .cursorrules, AGENTS.md, or AI chat window)
 
 ## 📌 1. MANDATORY DIRECTIVES FOR AI CODING AGENTS:
-1. Every visual React DOM / HTML interactive element MUST have `data-idx="7XXXX"` (strict 5-digit integer, no string characters) and bilingual `data-desc={isRu ? '[TYPE] Описание...' : '[TYPE] Description...'}`.
-2. When diagnosing errors or refactoring code, reference strictly by 5-digit coordinates.
-3. NEVER modify or rewrite components outside the specified coordinate boundary (zero-regression guarantee).
+1. **Component Naming & Identification:** When creating, explaining, or editing any UI element, AI MUST label it with its exact 5-digit index and type:
+   - Example: `[IDX: 71080] [BTN] Launch Analysis Button`
+   - Example: `[IDX: 72100] [FORM] Auth Form`
+2. **React DOM Tagging:** Every interactive element MUST have `data-idx="7XXXX"` (strict 5-digit integer, no letters) and bilingual description `data-desc={isRu ? '[TYPE] Описание...' : '[TYPE] Description...'}`.
+3. **Surgical Slot Isolation (Zero-Regression Guarantee):** When asked to modify a component with index X, AI modifies STRICTLY the lines within container X. Modifying surrounding components, routes, or global state is FORBIDDEN.
+4. **Deterministic Error Code Matrix (40000–59999):** On any issue or failure, AI outputs standard $O(1)$ error codes:
+   - `[ERR: 40101] INVALID_INDEX_FORMAT` — invalid coordinate format (requires strict 5 digits).
+   - `[ERR: 40102] INDEX_COLLISION_DUPLICATE` — coordinate collision detected.
+   - `[ERR: 40404] COORDINATE_NODE_NOT_FOUND` — coordinate node not found in registry.
+   - `[ERR: 50010] LLM_STOCHASTIC_DEVIATION` — LLM drift from architectural constraints.
 
 ## 🗺️ 2. UNIVERSAL 9-DOMAIN ARCHITECTURAL MAP (10000–99999):
 - 10000–19999: Core, system routing, event bus & orchestrator
