@@ -57,7 +57,8 @@
 > 
 > 📅 **Timeline of Verified Priority:**
 > * **March 22, 2026 (19:17 MSK)** — Initial worldwide public disclosure of the architecture (Public Release v1.0 on GitHub, commit `51584ac`).
-> * **August 22, 2026 (16:42 MSK)** — Official software registration application filed at Rospatent RF (Application № 2026603415).
+> * **August 22, 2026 (16:42 MSK)** — Official software registration filed at Rospatent RF (Application № 2026603415, Gosuslugi docket 7927650015).
+> * **September 11, 2026 (11:20 MSK)** — **v2.1 Industrial Edition Release**: implementation of deterministic AST slot isolation engine `utyansky_ast_engine.js` (Babel AST context lock O(1), defensive coordinate validation `[ERR: 10451]`, and dependency tracking `ImportDeclaration`).
 
 ---
 
