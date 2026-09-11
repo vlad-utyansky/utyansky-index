@@ -31,7 +31,7 @@
 ### Universal Deterministic Coordinate Matrix for Code, AI Agents, Marketing Quantification (UVWI) & Vector Memory
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
-[![Rospatent RF Application](https://img.shields.io/badge/Rospatent%20RF-Software%20App%20№%207927650015-emerald.svg)](https://index.utyanskiy.ru)
+[![Rospatent RF Application](https://img.shields.io/badge/Rospatent%20RF-Software%20App%20№%202026603415-emerald.svg)](https://index.utyanskiy.ru)
 [![Official Portal](https://img.shields.io/badge/Portal-index.utyanskiy.ru-0ea5e9.svg)](https://index.utyanskiy.ru)
 [![Accuracy](https://img.shields.io/badge/Understanding%20Accuracy-99.9%25-10b981.svg)](https://index.utyanskiy.ru)
 [![Paradigm: IDX-Constrained RAG](https://img.shields.io/badge/Paradigm-IDX--Constrained%20RAG-8b5cf6.svg)](docs/en/LLM_INDEPENDENT_AUDIT_EN.md)
@@ -52,12 +52,12 @@
 > ### 🏛️ Rospatent RF Application and Priority Timeline
 > * **Copyright Object:** Computer Software *«Deterministic Coordinate Navigation and Data Routing System for Artificial Intelligence and Software "Utyansky Index" (Utyansky Index v2.0)»*
 > * **Intellectual Property Office:** Federal Service for Intellectual Property (**Rospatent RF / FIPS**)
-> * **Official Application Number:** [**№ 7927650015**](https://index.utyanskiy.ru) *(Priority Date: **22.08.2026**)*
+> * **Official Application Number:** [**№ 2026603415**](https://index.utyanskiy.ru) *(Priority Date: **22.08.2026**)*
 > * **Author & Copyright Holder:** Vladislav Anatolyevich Utyansky
 > 
 > 📅 **Timeline of Verified Priority:**
 > * **March 22, 2026 (19:17 MSK)** — Initial worldwide public disclosure of the architecture (Public Release v1.0 on GitHub, commit `51584ac`).
-> * **August 22, 2026 (16:42 MSK)** — Official software registration application filed at Rospatent RF (Application № 7927650015).
+> * **August 22, 2026 (16:42 MSK)** — Official software registration application filed at Rospatent RF (Application № 2026603415).
 
 ---
 
@@ -511,5 +511,5 @@ The **«Utyansky Index»** standard is distributed under a transparent hybrid **
 [![Token Savings: 85%](https://img.shields.io/badge/API%20Budget-85%25%20Token%20Savings-blue?style=flat-square)](https://github.com/vlad-utyansky/utyansky-index)
 [![Cursor & Claude Code](https://img.shields.io/badge/IDE-Cursor%20%7C%20Claude%20%7C%20Windsurf-violet?style=flat-square)](https://github.com/vlad-utyansky/utyansky-index/blob/main/AI_SYSTEM_PROMPT.md)
 [![Standard: Utyansky Index](https://img.shields.io/badge/Standard-Utyansky%20Index%20v2.0-indigo?style=flat-square)](https://index.utyanskiy.ru)
-[![Rospatent RF](https://img.shields.io/badge/Rospatent%20RF-App%20№%207927650015-emerald?style=flat-square)](https://index.utyanskiy.ru)
+[![Rospatent RF](https://img.shields.io/badge/Rospatent%20RF-App%20№%202026603415-emerald?style=flat-square)](https://index.utyanskiy.ru)
 [![Vector Memory 1B+](https://img.shields.io/badge/Memory-pgvector%20HNSW%20(1B%2B%20%2F%201T%2B)-cyan?style=flat-square)](https://github.com/vlad-utyansky/utyansky-index)

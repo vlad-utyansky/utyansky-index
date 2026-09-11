@@ -17,7 +17,7 @@
 ### Универсальная детерминированная координатная матрица для кода, ИИ, оцифровки маркетинга (UVWI) и векторной памяти
 
 [![Лицензия: MIT](https://img.shields.io/badge/Лицензия-MIT-blue.svg)](LICENSE)
-[![Роспатент РФ](https://img.shields.io/badge/Роспатент%20РФ-Заявка%20на%20ЭВМ%20№%207927650015-emerald.svg)](https://index.utyanskiy.ru)
+[![Роспатент РФ](https://img.shields.io/badge/Роспатент%20РФ-Заявка%20на%20ЭВМ%20№%202026603415-emerald.svg)](https://index.utyanskiy.ru)
 [![Официальный портал](https://img.shields.io/badge/Портал-index.utyanskiy.ru-0ea5e9.svg)](https://index.utyanskiy.ru)
 [![Точность](https://img.shields.io/badge/Точность%20понимания-99.9%25-10b981.svg)](https://index.utyanskiy.ru)
 [![Парадигма: IDX-Constrained RAG](https://img.shields.io/badge/Парадигма-IDX--Constrained%20RAG-8b5cf6.svg)](docs/ru/LLM_INDEPENDENT_AUDIT_RU.md)
@@ -40,12 +40,12 @@
 > ### 🏛️ Регистрация в Роспатенте и Хронология Авторства
 > * **Объект авторского права:** Программа для ЭВМ *«Система детерминированной координатной навигации и маршрутизации данных для искусственного интеллекта и программного обеспечения «Индекс Утянского» (Utyansky Index v2.0)»*
 > * **Ведомство:** Федеральная служба по интеллектуальной собственности (**Роспатент РФ / ФИПС**)
-> * **Официальный номер заявки:** [**№ 7927650015**](https://index.utyanskiy.ru) *(Дата приоритета: **22.08.2026**)*
+> * **Официальный номер заявки:** [**№ 2026603415**](https://index.utyanskiy.ru) *(Дата приоритета: **22.08.2026**)*
 > * **Автор и Правообладатель:** Утянский Владислав Анатольевич
 > 
 > 📅 **Хронология подтвержденного авторского первенства:**
 > * **22 Марта 2026 г. (19:17 МСК)** — Первичное мировое обнародование архитектуры стандарта (Публичный релиз v1.0 на GitHub, коммит `51584ac`).
-> * **22 Августа 2026 г. (16:42 МСК)** — Подача заявки на регистрацию программы для ЭВМ v2.0 в Роспатенте РФ (Заявка № 7927650015).
+> * **22 Августа 2026 г. (16:42 МСК)** — Подача заявки на регистрацию программы для ЭВМ v2.0 в Роспатенте РФ (Заявка № 2026603415).
 
 ---
 
@@ -504,5 +504,5 @@ MCP является транспортной шиной вызова инстр
 [![Экономия Токенов: 85%](https://img.shields.io/badge/Бюджет%20API-Экономия%2085%25%20Токенов-blue?style=flat-square)](https://github.com/vlad-utyansky/utyansky-index)
 [![Cursor & Claude Code](https://img.shields.io/badge/IDE-Cursor%20%7C%20Claude%20%7C%20Windsurf-violet?style=flat-square)](https://github.com/vlad-utyansky/utyansky-index/blob/main/AI_SYSTEM_PROMPT_RU.md)
 [![Стандарт: Индекс Утянского](https://img.shields.io/badge/Стандарт-Индекс%20Утянского%20v2.0-indigo?style=flat-square)](https://index.utyanskiy.ru)
-[![Роспатент РФ](https://img.shields.io/badge/Роспатент%20РФ-Заявка%20№%207927650015-emerald?style=flat-square)](https://index.utyanskiy.ru)
+[![Роспатент РФ](https://img.shields.io/badge/Роспатент%20РФ-Заявка%20№%202026603415-emerald?style=flat-square)](https://index.utyanskiy.ru)
 [![Векторная память 1B+](https://img.shields.io/badge/Память-pgvector%20HNSW%20(1B%2B%20%2F%201T%2B)-cyan?style=flat-square)](https://github.com/vlad-utyansky/utyansky-index)
