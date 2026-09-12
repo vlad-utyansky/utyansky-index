@@ -52,6 +52,8 @@
 ---
 
 > ### 🧭 Choose Your Track for Fast Navigation:
+> * 🌐 **[For Frontend, Web Developers & AI Layouts (Web Indexing & AI Vision) ➔](docs/en/WEB_SITE_COORDINATE_INDEXING.md)**
+>   *(HTML/React DOM 70000–79999 markup, eliminating AI blindness, 0% layout regressions, live HTML demo & HUD inspector)*
 > * 💼 **[For Executives, Founders & Business (Business Value, ROI, 7 Sins) ➔](#-21-for-executives-and-business-solving-7-deadly-vibe-coding-sins--roi-calculation)**
 >   *(Real-world analogies, 85% token cost reduction, regression immunity, financial ROI, and Engineering Center plans)*
 > * ⚙️ **[For Architects, CTOs & Lead Engineers (Technical Specification) ➔](#-3-engineering-matrix-and-standard-ranges-9-domains-1000099999)**
@@ -69,7 +71,8 @@
 > * **March 22, 2026 (19:17 MSK)** — Initial worldwide public disclosure of the architecture (Public Release v1.0 on GitHub, commit `51584ac`).
 > * **August 22, 2026 (16:42 MSK)** — Official software registration filed at Rospatent RF (Application № 2026603415, Gosuslugi docket 7927650015).
 > * **September 11, 2026 (11:20 MSK)** — **v2.1 Industrial Edition Release**: implementation of deterministic AST slot isolation engine `utyansky_ast_engine.js` (Babel AST context lock O(1), defensive coordinate validation `[ERR: 10451]`, and dependency tracking `ImportDeclaration`).
-> * **September 12, 2026 (21:55 MSK)** — **v2.2 Web Coordinate Standard & AI Vision Release**: open web coordinate indexing standard (`70000–79999`), interactive DOM HUD inspector ("AI Vision") for instant LLM/agent website orientation, eliminating code erasure, and deterministic layout refactoring.
+> * **September 12, 2026 (21:55 MSK)** — **v2.2 Web Coordinate Standard & AI Vision Release**: open web coordinate indexing standard (`70000–79999`), interactive DOM HUD inspector ("AI Vision") for instant LLM/agent website orientation, eliminating code erasure, and deterministic layout refactoring.  
+>   👉 **[ 📖 Read Dedicated Web Coordinate Indexing Guide (EN) ➔ ](docs/en/WEB_SITE_COORDINATE_INDEXING.md)** &nbsp;|&nbsp; **[ 💻 Live HTML Demo ➔ ](examples/website-coordinate-markup.html)**
 
 ---
 
