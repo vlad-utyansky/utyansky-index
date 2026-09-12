@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Демонстрация Индекса Утянского: Координатная разметка веб-сайта</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
+  </style>
+</head>
+<body class="bg-slate-950 text-slate-100 min-h-screen">
+
+  <!-- [IDX: 74000] Header / Навигация сайта -->
+  <header data-idx="74000" data-desc="[HEADER] Главная навигационная панель сайта" class="sticky top-0 z-40 bg-slate-900/90 border-b border-slate-800 backdrop-blur-md px-6 py-4 flex items-center justify-between">
+    <div data-idx="74001" data-desc="[LOGO] Логотип и название компании" class="flex items-center gap-2 font-bold text-lg">
+      <span class="text-blue-500 font-mono">[IDX]</span> ВАУ ЭФФЕКТ
+    </div>
+    
+    <nav data-idx="74010" data-desc="[NAV] Ссылки основного меню" class="hidden md:flex items-center gap-6 text-sm text-slate-400">
+      <a data-idx="74011" data-desc="[LINK] Переход к разделу преимуществ" href="#features" class="hover:text-white transition">Преимущества</a>
+      <a data-idx="74012" data-desc="[LINK] Переход к калькулятору стоимости" href="#pricing" class="hover:text-white transition">Стоимость</a>
+      <a data-idx="74013" data-desc="[LINK] Переход к форме заказа" href="#contact" class="hover:text-white transition">Контакты</a>
+    </nav>
+
+    <!-- [IDX: 74020] Кнопка включения режима Взгляд ИИ -->
+    <button data-idx="74020" data-desc="[BUTTON] Переключатель режима Взгляд ИИ (Рентген индексов)" onclick="UtyanskyInspector.toggle()" class="px-4 py-2 bg-blue-600 hover:bg-blue-500 text-white rounded-xl text-xs font-mono font-bold transition shadow-lg flex items-center gap-2">
+      <span>👁️</span>
+      <span>Взгляд ИИ (Рентген)</span>
+    </button>
+  </header>
+
+  <!-- [IDX: 74100] Hero Секция (Главный экран) -->
+  <section data-idx="74100" data-desc="[HERO] Главный первый экран лендинга с оффером" class="max-w-5xl mx-auto px-6 py-20 text-center">
+    <div data-idx="74101" data-desc="[BADGE] Бейдж координатного стандарта" class="inline-block px-3 py-1 bg-blue-500/10 border border-blue-500/30 rounded-full text-blue-400 font-mono text-xs mb-6">
+      🛡️ Архитектурный стандарт Индекса Утянского v2.2
+    </div>
+    
+    <h1 data-idx="74102" data-desc="[TITLE] Главный заголовок страницы (H1)" class="text-4xl md:text-6xl font-black tracking-tight mb-6">
+      Сайт, понятный нейросетям на 100%
+    </h1>
+
+    <p data-idx="74103" data-desc="[TEXT] Описание оффера и детерминированной разметки" class="text-lg text-slate-400 max-w-2xl mx-auto mb-8">
+      Разметка DOM-дерева пятизначными паспортами <code class="text-blue-400 font-mono">data-idx</code> исключает галлюцинации ИИ-агентов, затирание кода и снижает расход токенов на 85%.
+    </p>
+
+    <div data-idx="74110" data-desc="[CTA_GROUP] Группа кнопок целевого действия" class="flex flex-wrap justify-center gap-4">
+      <a data-idx="74111" data-desc="[BUTTON] Основная кнопка оформления заказа" href="#contact" class="px-6 py-3 bg-blue-600 hover:bg-blue-500 text-white font-bold rounded-xl shadow-lg transition">
+        Оставить заявку
+      </a>
+      <button data-idx="74112" data-desc="[BUTTON] Вторичная кнопка запуска инспектора" onclick="UtyanskyInspector.toggle()" class="px-6 py-3 bg-slate-800 hover:bg-slate-700 text-slate-300 font-bold rounded-xl border border-slate-700 transition">
+        👁️ Включить рентген
+      </button>
+    </div>
+  </section>
+
+  <!-- [IDX: 74200] Секция Преимуществ -->
+  <section id="features" data-idx="74200" data-desc="[CONTAINER] Секция ключевых преимуществ координатной сетки" class="max-w-5xl mx-auto px-6 py-12">
+    <div data-idx="74201" data-desc="[HEADER] Заголовок секции преимуществ" class="text-2xl font-bold mb-8 text-center">
+      Почему это работает в любом коде
+    </div>
+
+    <div data-idx="74210" data-desc="[GRID] Сетка из 3 карточек преимуществ" class="grid md:grid-cols-3 gap-6">
+      <div data-idx="74211" data-desc="[CARD] Карточка: Изоляция мутаций O(1)" class="p-6 bg-slate-900 border border-slate-800 rounded-2xl">
+        <div class="text-blue-400 font-mono text-xs mb-2">[IDX: 74211]</div>
+        <h3 class="font-bold text-lg mb-2">Изоляция O(1)</h3>
+        <p class="text-slate-400 text-sm">ИИ правит строго целевой контейнер, не трогая соседние 900 строк файла.</p>
+      </div>
+
+      <div data-idx="74212" data-desc="[CARD] Карточка: Нулевой регресс верстки" class="p-6 bg-slate-900 border border-slate-800 rounded-2xl">
+        <div class="text-blue-400 font-mono text-xs mb-2">[IDX: 74212]</div>
+        <h3 class="font-bold text-lg mb-2">0% Регрессий</h3>
+        <p class="text-slate-400 text-sm">Кнопки не съезжают, обработчики не теряются, разметка остается 100% стабильной.</p>
+      </div>
+
+      <div data-idx="74213" data-desc="[CARD] Карточка: Сквозной паспорт до CRM" class="p-6 bg-slate-900 border border-slate-800 rounded-2xl">
+        <div class="text-blue-400 font-mono text-xs mb-2">[IDX: 74213]</div>
+        <h3 class="font-bold text-lg mb-2">Сквозная связность</h3>
+        <p class="text-slate-400 text-sm">Один номер связывает элемент в браузере с вебхуком в бэкенде и сделкой в amoCRM.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- [IDX: 74300] Форма Заказа -->
+  <section id="contact" data-idx="74300" data-desc="[SECTION] Секция формы обратной связи и заказа" class="max-w-xl mx-auto px-6 py-16">
+    <div data-idx="74305" data-desc="[CARD] Карточка-контейнер формы заказа" class="p-8 bg-slate-900 border border-slate-800 rounded-3xl shadow-2xl">
+      <h2 data-idx="74306" data-desc="[TITLE] Заголовок формы заказа" class="text-2xl font-bold mb-4 text-center">Заказать разметку сайта</h2>
+      
+      <form data-idx="74310" data-desc="[FORM] Форма отправки клиентского запроса" onsubmit="event.preventDefault(); alert('Заявка принята в слот 74310!');" class="space-y-4">
+        <div data-idx="74311" data-desc="[FIELD] Поле ввода имени">
+          <label class="block text-xs font-mono text-slate-400 mb-1">Имя</label>
+          <input type="text" placeholder="Владислав" class="w-full bg-slate-950 border border-slate-800 rounded-xl px-4 py-2.5 text-sm text-white focus:outline-none focus:border-blue-500">
+        </div>
+
+        <div data-idx="74312" data-desc="[FIELD] Поле ввода телефона">
+          <label class="block text-xs font-mono text-slate-400 mb-1">Телефон</label>
+          <input type="tel" placeholder="+7 (999) 000-00-00" class="w-full bg-slate-950 border border-slate-800 rounded-xl px-4 py-2.5 text-sm text-white focus:outline-none focus:border-blue-500">
+        </div>
+
+        <button data-idx="74320" data-desc="[BUTTON] Кнопка отправки заявки" type="submit" class="w-full py-3 bg-blue-600 hover:bg-blue-500 text-white font-bold rounded-xl transition shadow-lg">
+          Отправить заявку
+        </button>
+      </form>
+    </div>
+  </section>
+
+  <!-- [IDX: 74900] Подвал Сайта -->
+  <footer data-idx="74900" data-desc="[FOOTER] Подвал сайта с авторскими реквизитами" class="border-t border-slate-800 py-8 text-center text-xs text-slate-500 font-mono">
+    <p data-idx="74901" data-desc="[TEXT] Авторские права и патентные реквизиты">
+      © 2026 Индекс Утянского. Заявка на ЭВМ Роспатент РФ № 2026603415. Автор: Владислав Утянский.
+    </p>
+  </footer>
+
+  <!-- Подключение боевого инспектора Индекса Утянского -->
+  <script src="../src/utyansky-web-inspector.js"></script>
+</body>
+</html>

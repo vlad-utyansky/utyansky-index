@@ -41,6 +41,16 @@
 
 ---
 
+> ## 🌐 NEW: Web Site Coordinate Indexing & AI Navigation ($O(1)$ Web Navigation)
+> **Transform any website layout into a deterministic coordinate matrix for LLMs and AI agents:**
+> * 🚫 **Eliminates AI Blindness:** Neural networks no longer drown in thousands of meaningless `<div>` tags and CSS classes.
+> * 🛡️ **0% UI Regressions:** AI assistants (Cursor, Claude Code, Windsurf) edit strictly the targeted node `data-idx="7XXXX"` without breaking layouts.
+> * 🤖 **100% Accuracy for AI Search:** ChatGPT Search, Perplexity, and Google Gemini extract prices, CTAs, and offers without hallucinations.
+> 
+> 👉 **[ 🌐 READ FULL WEB SITE INDEXING GUIDE (EN) ➔ ](docs/en/WEB_SITE_COORDINATE_INDEXING.md)** &nbsp;&nbsp;|&nbsp;&nbsp; **[ 🇷🇺 Читать на Русском ➔ ](docs/ru/WEB_SITE_COORDINATE_INDEXING.md)** &nbsp;&nbsp;|&nbsp;&nbsp; **[ 💻 Live HTML Example ➔ ](examples/website-coordinate-markup.html)**
+
+---
+
 > ### 🧭 Choose Your Track for Fast Navigation:
 > * 💼 **[For Executives, Founders & Business (Business Value, ROI, 7 Sins) ➔](#-21-for-executives-and-business-solving-7-deadly-vibe-coding-sins--roi-calculation)**
 >   *(Real-world analogies, 85% token cost reduction, regression immunity, financial ROI, and Engineering Center plans)*
@@ -59,6 +69,7 @@
 > * **March 22, 2026 (19:17 MSK)** — Initial worldwide public disclosure of the architecture (Public Release v1.0 on GitHub, commit `51584ac`).
 > * **August 22, 2026 (16:42 MSK)** — Official software registration filed at Rospatent RF (Application № 2026603415, Gosuslugi docket 7927650015).
 > * **September 11, 2026 (11:20 MSK)** — **v2.1 Industrial Edition Release**: implementation of deterministic AST slot isolation engine `utyansky_ast_engine.js` (Babel AST context lock O(1), defensive coordinate validation `[ERR: 10451]`, and dependency tracking `ImportDeclaration`).
+> * **September 12, 2026 (21:55 MSK)** — **v2.2 Web Coordinate Standard & AI Vision Release**: open web coordinate indexing standard (`70000–79999`), interactive DOM HUD inspector ("AI Vision") for instant LLM/agent website orientation, eliminating code erasure, and deterministic layout refactoring.
 
 ---
 
