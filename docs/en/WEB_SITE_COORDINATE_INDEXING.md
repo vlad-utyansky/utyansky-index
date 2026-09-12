@@ -2,8 +2,8 @@
 ### Architectural Standard "Utyansky Index" for Web Layout, Frontend & AI Agents ($O(1)$ Web Navigation)
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](../../LICENSE)
-[![Rospatent RF](https://img.shields.io/badge/Rospatent%20RF-Docket%20№%202026603415-emerald.svg)](https://index.utyanskiy.ru)
-[![Author](https://img.shields.io/badge/Author-Vladislav%20Utyansky-6366f1.svg)](https://utyanskiy.ru)
+<a href="https://index.utyanskiy.ru" target="_blank" rel="noopener noreferrer"><img src="https://img.shields.io/badge/Rospatent%20RF-Docket%20№%202026603415-emerald.svg" alt="Rospatent RF"></a>
+<a href="https://utyanskiy.ru" target="_blank" rel="noopener noreferrer"><img src="https://img.shields.io/badge/Author-Vladislav%20Utyansky-6366f1.svg" alt="Author"></a>
 [![Russian Version](https://img.shields.io/badge/Читать%20на-Русском-red)](../ru/WEB_SITE_COORDINATE_INDEXING.md)
 
 ---

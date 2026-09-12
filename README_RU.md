@@ -17,13 +17,13 @@
 ### Универсальная детерминированная координатная матрица для кода, ИИ, оцифровки маркетинга (UVWI) и векторной памяти
 
 [![Лицензия: MIT](https://img.shields.io/badge/Лицензия-MIT-blue.svg)](LICENSE)
-[![Роспатент РФ](https://img.shields.io/badge/Роспатент%20РФ-Заявка%20на%20ЭВМ%20№%202026603415-emerald.svg)](https://index.utyanskiy.ru)
-[![Официальный портал](https://img.shields.io/badge/Портал-index.utyanskiy.ru-0ea5e9.svg)](https://index.utyanskiy.ru)
-[![Точность](https://img.shields.io/badge/Точность%20понимания-99.9%25-10b981.svg)](https://index.utyanskiy.ru)
+<a href="https://index.utyanskiy.ru" target="_blank" rel="noopener noreferrer"><img src="https://img.shields.io/badge/Роспатент%20РФ-Заявка%20на%20ЭВМ%20№%202026603415-emerald.svg" alt="Роспатент РФ"></a>
+<a href="https://index.utyanskiy.ru" target="_blank" rel="noopener noreferrer"><img src="https://img.shields.io/badge/Портал-index.utyanskiy.ru-0ea5e9.svg" alt="Официальный портал"></a>
+<a href="https://index.utyanskiy.ru" target="_blank" rel="noopener noreferrer"><img src="https://img.shields.io/badge/Точность%20понимания-99.9%25-10b981.svg" alt="Точность понимания"></a>
 [![Парадигма: IDX-Constrained RAG](https://img.shields.io/badge/Парадигма-IDX--Constrained%20RAG-8b5cf6.svg)](docs/ru/LLM_INDEPENDENT_AUDIT_RU.md)
 [![CI Validation](https://github.com/vlad-utyansky/utyansky-index/actions/workflows/validate-index.yml/badge.svg)](https://github.com/vlad-utyansky/utyansky-index/actions)
 [![CI Speed](https://img.shields.io/badge/CI_Speed-0.006s-10b981.svg)](examples/validate-index.js)
-[![Автор](https://img.shields.io/badge/Автор-Утянский%20Владислав%20Анатольевич-6366f1.svg)](https://utyanskiy.ru)
+<a href="https://utyanskiy.ru" target="_blank" rel="noopener noreferrer"><img src="https://img.shields.io/badge/Автор-Утянский%20Владислав%20Анатольевич-6366f1.svg" alt="Автор"></a>
 
 ---
 
@@ -52,15 +52,15 @@
 > ### 🏛️ Регистрация в Роспатенте и Хронология Авторства
 > * **Объект авторского права:** Программа для ЭВМ *«Система детерминированной координатной навигации и маршрутизации данных для искусственного интеллекта и программного обеспечения «Индекс Утянского» (Utyansky Index v2.0)»*
 > * **Ведомство:** Федеральная служба по интеллектуальной собственности (**Роспатент РФ / ФИПС**)
-> * **Официальный номер заявки:** [**№ 2026603415**](https://index.utyanskiy.ru) *(Дата приоритета: **22.08.2026**)*
+> * **Официальный номер заявки:** <a href="https://index.utyanskiy.ru" target="_blank" rel="noopener noreferrer"><strong>№ 2026603415 ↗</strong></a> *(Дата приоритета: **22.08.2026**)*
 > * **Автор и Правообладатель:** Утянский Владислав Анатольевич
 > 
 > 📅 **Хронология подтвержденного авторского первенства:**
 > * **22 Марта 2026 г. (19:17 МСК)** — Первичное мировое обнародование архитектуры стандарта (Публичный релиз v1.0 на GitHub, коммит `51584ac`).
 > * **22 Августа 2026 г. (16:42 МСК)** — Государственная регистрация в Роспатенте РФ (Заявка № 2026603415, вх. Госуслуги 7927650015).
 > * **11 Сентября 2026 г. (11:20 МСК)** — **Релиз v2.1 Industrial Edition**: внедрение промышленного движка синтаксической изоляции контекста `utyansky_ast_engine.js` (Babel AST-замок O(1), защитная валидация сохранения координат `[ERR: 10451]` и сбор зависимостей `ImportDeclaration`).
-> * **12 Сентября 2026 г. (21:55 МСК)** — **Релиз v2.2 Web Coordinate Standard & AI Vision**: внедрение открытого стандарта координатной разметки веб-сайтов (`70000–79999`), интерактивного HUD-инспектора DOM («Взгляд ИИ / AI Vision») для мгновенной ориентации нейросетей, исключения галлюцинаций и предотвращения затирания верстки при вайбкодинге.  
->   👉 **[ 📖 Читать отдельное Руководство по Координатной Разметке Сайтов (RU) ➔ ](docs/ru/WEB_SITE_COORDINATE_INDEXING.md)** &nbsp;|&nbsp; **[ 💻 Пример кода ➔ ](examples/website-coordinate-markup.html)**
+> * **12 Сентября 2026 г. (21:55 МСК)** — **Релиз v2.2: Оптимизация сайтов под ИИ (AIO)**: открытый стандарт координатной разметки DOM (`70000–79999`), интерактивный HUD-инспектор («Взгляд ИИ») и навигация $O(1)$ без затирания верстки.  
+>   👉 **[ 📖 Руководство по Оптимизации Сайтов под ИИ (AIO) ➔ ](docs/ru/WEB_SITE_COORDINATE_INDEXING.md)** &nbsp;|&nbsp; **[ 💻 Пример кода ➔ ](examples/website-coordinate-markup.html)**
 
 ---
 
@@ -503,8 +503,8 @@ MCP является транспортной шиной вызова инстр
 ---
 
 ### 📞 Контакты для подключения и аудита:
-* 🌐 **Официальный портал:** [https://index.utyanskiy.ru](https://index.utyanskiy.ru)
-* 💬 **Прямой Telegram автора:** [@vau_amoCRM](https://t.me/vau_amoCRM)
+* 🌐 **Официальный портал:** <a href="https://index.utyanskiy.ru" target="_blank" rel="noopener noreferrer">https://index.utyanskiy.ru ↗</a>
+* 💬 **Прямой Telegram автора:** <a href="https://t.me/vau_amoCRM" target="_blank" rel="noopener noreferrer">@vau_amoCRM ↗</a>
 * 📧 **Email:** [vlad@utyanskiy.ru](mailto:vlad@utyanskiy.ru)
 
 ---
@@ -532,10 +532,10 @@ MCP является транспортной шиной вызова инстр
 
 * **Автор стандарта:** Утянский Владислав Анатольевич
 * **Профессиональный опыт:** Сайты и веб-разработка — с 1996 года (30 лет в IT) | Маркетинг — с 2002 года (24+ года) | Искусственный Интеллект и нейросети — с 2022 года | CRM-системы (amoCRM) — 2+ года (100+ проектов).
-* **Официальный портал стандарта:** [https://index.utyanskiy.ru](https://index.utyanskiy.ru)
-* **Официальный сайт автора:** [https://utyanskiy.ru](https://utyanskiy.ru)
-* **Интерактивная Биография и Хронология (14 Глав):** [**https://bio.utyanskiy.ru**](https://bio.utyanskiy.ru) *(30 лет в IT с 1996 г. | Гран-при Пьера Кардена во Франции | Проект 3D с Samsung Electronics | ТОП-28 инноваций РФ в НИУ ВШЭ)*
-* **Деловой Telegram:** [@vau_amoCRM](https://t.me/vau_amoCRM)
+* **Официальный портал стандарта:** <a href="https://index.utyanskiy.ru" target="_blank" rel="noopener noreferrer">https://index.utyanskiy.ru ↗</a>
+* **Официальный сайт автора:** <a href="https://utyanskiy.ru" target="_blank" rel="noopener noreferrer">https://utyanskiy.ru ↗</a>
+* **Интерактивная Биография и Хронология (14 Глав):** <a href="https://bio.utyanskiy.ru" target="_blank" rel="noopener noreferrer"><strong>https://bio.utyanskiy.ru ↗</strong></a> *(30 лет в IT с 1996 г. | Гран-при Пьера Кардена во Франции | Проект 3D с Samsung Electronics | ТОП-28 инноваций РФ в НИУ ВШЭ)*
+* **Деловой Telegram:** <a href="https://t.me/vau_amoCRM" target="_blank" rel="noopener noreferrer">@vau_amoCRM ↗</a>
 * **Лицензия:** [MIT License](LICENSE)
 
 ---
@@ -547,6 +547,6 @@ MCP является транспортной шиной вызова инстр
 [![Поломки Кода: 0%](https://img.shields.io/badge/Регрессии%20Кода-0%25%20(Zero%20Breakdown)-success?style=flat-square)](https://github.com/vlad-utyansky/utyansky-index)
 [![Экономия Токенов: 85%](https://img.shields.io/badge/Бюджет%20API-Экономия%2085%25%20Токенов-blue?style=flat-square)](https://github.com/vlad-utyansky/utyansky-index)
 [![Cursor & Claude Code](https://img.shields.io/badge/IDE-Cursor%20%7C%20Claude%20%7C%20Windsurf-violet?style=flat-square)](https://github.com/vlad-utyansky/utyansky-index/blob/main/AI_SYSTEM_PROMPT_RU.md)
-[![Стандарт: Индекс Утянского](https://img.shields.io/badge/Стандарт-Индекс%20Утянского%20v2.0-indigo?style=flat-square)](https://index.utyanskiy.ru)
-[![Роспатент РФ](https://img.shields.io/badge/Роспатент%20РФ-Заявка%20№%202026603415-emerald?style=flat-square)](https://index.utyanskiy.ru)
+<a href="https://index.utyanskiy.ru" target="_blank" rel="noopener noreferrer"><img src="https://img.shields.io/badge/Стандарт-Индекс%20Утянского%20v2.0-indigo?style=flat-square" alt="Стандарт: Индекс Утянского"></a>
+<a href="https://index.utyanskiy.ru" target="_blank" rel="noopener noreferrer"><img src="https://img.shields.io/badge/Роспатент%20РФ-Заявка%20№%202026603415-emerald?style=flat-square" alt="Роспатент РФ"></a>
 [![Векторная память 1B+](https://img.shields.io/badge/Память-pgvector%20HNSW%20(1B%2B%20%2F%201T%2B)-cyan?style=flat-square)](https://github.com/vlad-utyansky/utyansky-index)

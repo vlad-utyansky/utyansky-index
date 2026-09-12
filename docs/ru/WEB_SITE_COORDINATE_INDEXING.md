@@ -2,8 +2,8 @@
 ### Архитектурный стандарт «Индекс Утянского» для верстки, фронтенда и веб-агентов ($O(1)$ Web Navigation)
 
 [![Лицензия: MIT](https://img.shields.io/badge/Лицензия-MIT-blue.svg)](../../LICENSE)
-[![Роспатент РФ](https://img.shields.io/badge/Роспатент%20РФ-Заявка%20№%202026603415-emerald.svg)](https://index.utyanskiy.ru)
-[![Автор](https://img.shields.io/badge/Автор-Владислав%20Утянский-6366f1.svg)](https://utyanskiy.ru)
+<a href="https://index.utyanskiy.ru" target="_blank" rel="noopener noreferrer"><img src="https://img.shields.io/badge/Роспатент%20РФ-Заявка%20№%202026603415-emerald.svg" alt="Роспатент РФ"></a>
+<a href="https://utyanskiy.ru" target="_blank" rel="noopener noreferrer"><img src="https://img.shields.io/badge/Автор-Владислав%20Утянский-6366f1.svg" alt="Автор"></a>
 [![English Version](https://img.shields.io/badge/Read%20in-English-blue)](../en/WEB_SITE_COORDINATE_INDEXING.md)
 
 ---

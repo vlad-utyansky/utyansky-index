@@ -31,13 +31,13 @@
 ### Universal Deterministic Coordinate Matrix for Code, AI Agents, Marketing Quantification (UVWI) & Vector Memory
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
-[![Rospatent RF Application](https://img.shields.io/badge/Rospatent%20RF-Software%20App%20№%202026603415-emerald.svg)](https://index.utyanskiy.ru)
-[![Official Portal](https://img.shields.io/badge/Portal-index.utyanskiy.ru-0ea5e9.svg)](https://index.utyanskiy.ru)
-[![Accuracy](https://img.shields.io/badge/Understanding%20Accuracy-99.9%25-10b981.svg)](https://index.utyanskiy.ru)
+<a href="https://index.utyanskiy.ru" target="_blank" rel="noopener noreferrer"><img src="https://img.shields.io/badge/Rospatent%20RF-Software%20App%20№%202026603415-emerald.svg" alt="Rospatent RF"></a>
+<a href="https://index.utyanskiy.ru" target="_blank" rel="noopener noreferrer"><img src="https://img.shields.io/badge/Portal-index.utyanskiy.ru-0ea5e9.svg" alt="Official Portal"></a>
+<a href="https://index.utyanskiy.ru" target="_blank" rel="noopener noreferrer"><img src="https://img.shields.io/badge/Understanding%20Accuracy-99.9%25-10b981.svg" alt="Accuracy"></a>
 [![Paradigm: IDX-Constrained RAG](https://img.shields.io/badge/Paradigm-IDX--Constrained%20RAG-8b5cf6.svg)](docs/en/LLM_INDEPENDENT_AUDIT_EN.md)
 [![CI Validation](https://github.com/vlad-utyansky/utyansky-index/actions/workflows/validate-index.yml/badge.svg)](https://github.com/vlad-utyansky/utyansky-index/actions)
 [![CI Speed](https://img.shields.io/badge/CI_Speed-0.006s-10b981.svg)](examples/validate-index.js)
-[![Author](https://img.shields.io/badge/Author-Vladislav%20Anatolyevich%20Utyansky-6366f1.svg)](https://utyanskiy.ru)
+<a href="https://utyanskiy.ru" target="_blank" rel="noopener noreferrer"><img src="https://img.shields.io/badge/Author-Vladislav%20Anatolyevich%20Utyansky-6366f1.svg" alt="Author"></a>
 
 ---
 
@@ -64,15 +64,15 @@
 > ### 🏛️ Rospatent RF Application and Priority Timeline
 > * **Copyright Object:** Computer Software *«Deterministic Coordinate Navigation and Data Routing System for Artificial Intelligence and Software "Utyansky Index" (Utyansky Index v2.0)»*
 > * **Intellectual Property Office:** Federal Service for Intellectual Property (**Rospatent RF / FIPS**)
-> * **Official Application Number:** [**№ 2026603415**](https://index.utyanskiy.ru) *(Priority Date: **22.08.2026**)*
+> * **Official Application Number:** <a href="https://index.utyanskiy.ru" target="_blank" rel="noopener noreferrer"><strong>№ 2026603415 ↗</strong></a> *(Priority Date: **22.08.2026**)*
 > * **Author & Copyright Holder:** Vladislav Anatolyevich Utyansky
 > 
 > 📅 **Timeline of Verified Priority:**
 > * **March 22, 2026 (19:17 MSK)** — Initial worldwide public disclosure of the architecture (Public Release v1.0 on GitHub, commit `51584ac`).
 > * **August 22, 2026 (16:42 MSK)** — Official software registration filed at Rospatent RF (Application № 2026603415, Gosuslugi docket 7927650015).
 > * **September 11, 2026 (11:20 MSK)** — **v2.1 Industrial Edition Release**: implementation of deterministic AST slot isolation engine `utyansky_ast_engine.js` (Babel AST context lock O(1), defensive coordinate validation `[ERR: 10451]`, and dependency tracking `ImportDeclaration`).
-> * **September 12, 2026 (21:55 MSK)** — **v2.2 Web Coordinate Standard & AI Vision Release**: open web coordinate indexing standard (`70000–79999`), interactive DOM HUD inspector ("AI Vision") for instant LLM/agent website orientation, eliminating code erasure, and deterministic layout refactoring.  
->   👉 **[ 📖 Read Dedicated Web Coordinate Indexing Guide (EN) ➔ ](docs/en/WEB_SITE_COORDINATE_INDEXING.md)** &nbsp;|&nbsp; **[ 💻 Live HTML Demo ➔ ](examples/website-coordinate-markup.html)**
+> * **September 12, 2026 (21:55 MSK)** — **Release v2.2: Web Site Optimization for AI (AIO)**: open DOM coordinate standard (`70000–79999`), interactive HUD inspector ("AI Vision"), and $O(1)$ navigation without layout overwrites.  
+>   👉 **[ 📖 Web Site Optimization for AI (AIO) Guide ➔ ](docs/en/WEB_SITE_COORDINATE_INDEXING.md)** &nbsp;|&nbsp; **[ 💻 Live Demo ➔ ](examples/website-coordinate-markup.html)**
 
 ---
 
@@ -511,8 +511,8 @@ The **«Utyansky Index»** standard is distributed under a transparent hybrid **
 ---
 
 ### 📞 Contact for Integration & Express Audit:
-* 🌐 **Official Portal:** [https://index.utyanskiy.ru](https://index.utyanskiy.ru)
-* 💬 **Direct Telegram:** [@vau_amoCRM](https://t.me/vau_amoCRM)
+* 🌐 **Official Portal:** <a href="https://index.utyanskiy.ru" target="_blank" rel="noopener noreferrer">https://index.utyanskiy.ru ↗</a>
+* 💬 **Direct Telegram:** <a href="https://t.me/vau_amoCRM" target="_blank" rel="noopener noreferrer">@vau_amoCRM ↗</a>
 * 📧 **Email:** [vlad@utyanskiy.ru](mailto:vlad@utyanskiy.ru)
 
 ---
@@ -540,9 +540,9 @@ The **«Utyansky Index»** standard is distributed under a transparent hybrid **
 
 * **Standard Author:** Vladislav Anatolyevich Utyansky
 * **Professional Track Record:** Websites & Web Development since 1996 (30 years) | Strategic Marketing since 2002 (24+ years) | Artificial Intelligence & Generative AI since 2022 | CRM Systems (amoCRM) 2+ years (100+ projects).
-* **Official Portal:** [https://index.utyanskiy.ru](https://index.utyanskiy.ru)
-* **Founder Website:** [https://utyanskiy.ru](https://utyanskiy.ru)
-* **Telegram:** [@vau_amoCRM](https://t.me/vau_amoCRM)
+* **Official Portal:** <a href="https://index.utyanskiy.ru" target="_blank" rel="noopener noreferrer">https://index.utyanskiy.ru ↗</a>
+* **Founder Website:** <a href="https://utyanskiy.ru" target="_blank" rel="noopener noreferrer">https://utyanskiy.ru ↗</a>
+* **Telegram:** <a href="https://t.me/vau_amoCRM" target="_blank" rel="noopener noreferrer">@vau_amoCRM ↗</a>
 * **License:** [MIT License](LICENSE)
 
 ---
@@ -554,6 +554,6 @@ The **«Utyansky Index»** standard is distributed under a transparent hybrid **
 [![Code Regressions: 0%](https://img.shields.io/badge/Code%20Regressions-0%25%20(Zero%20Breakdown)-success?style=flat-square)](https://github.com/vlad-utyansky/utyansky-index)
 [![Token Savings: 85%](https://img.shields.io/badge/API%20Budget-85%25%20Token%20Savings-blue?style=flat-square)](https://github.com/vlad-utyansky/utyansky-index)
 [![Cursor & Claude Code](https://img.shields.io/badge/IDE-Cursor%20%7C%20Claude%20%7C%20Windsurf-violet?style=flat-square)](https://github.com/vlad-utyansky/utyansky-index/blob/main/AI_SYSTEM_PROMPT.md)
-[![Standard: Utyansky Index](https://img.shields.io/badge/Standard-Utyansky%20Index%20v2.0-indigo?style=flat-square)](https://index.utyanskiy.ru)
-[![Rospatent RF](https://img.shields.io/badge/Rospatent%20RF-App%20№%202026603415-emerald?style=flat-square)](https://index.utyanskiy.ru)
+<a href="https://index.utyanskiy.ru" target="_blank" rel="noopener noreferrer"><img src="https://img.shields.io/badge/Standard-Utyansky%20Index%20v2.0-indigo?style=flat-square" alt="Standard: Utyansky Index"></a>
+<a href="https://index.utyanskiy.ru" target="_blank" rel="noopener noreferrer"><img src="https://img.shields.io/badge/Rospatent%20RF-App%20№%202026603415-emerald?style=flat-square" alt="Rospatent RF"></a>
 [![Vector Memory 1B+](https://img.shields.io/badge/Memory-pgvector%20HNSW%20(1B%2B%20%2F%201T%2B)-cyan?style=flat-square)](https://github.com/vlad-utyansky/utyansky-index)
