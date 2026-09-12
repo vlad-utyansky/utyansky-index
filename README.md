@@ -39,6 +39,9 @@
 [![CI Speed](https://img.shields.io/badge/CI_Speed-0.006s-10b981.svg)](examples/validate-index.js)
 <a href="https://utyanskiy.ru" target="_blank" rel="noopener noreferrer"><img src="https://img.shields.io/badge/Author-Vladislav%20Anatolyevich%20Utyansky-6366f1.svg" alt="Author"></a>
 
+> [!TIP]
+> 💡 **Navigation Tip:** To open the [Official Portal](https://index.utyanskiy.ru), live demos, or the [Founder Biography](https://bio.utyanskiy.ru) in a separate browser tab — click external links with your **mouse wheel (middle-click)** or hold **`Ctrl` + click** (on Mac: **`Cmd` + click**).
+
 ---
 
 > ## 🌐 Web Site Optimization for AI (AIO — Artificial Intelligence Optimization)
