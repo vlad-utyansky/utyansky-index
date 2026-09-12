@@ -1,4 +1,4 @@
-# 🌐 Web Site Coordinate Indexing & AI Navigation
+# 🌐 Web Site Optimization for AI (AIO — Artificial Intelligence Optimization)
 ### Architectural Standard "Utyansky Index" for Web Layout, Frontend & AI Agents ($O(1)$ Web Navigation)
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](../../LICENSE)

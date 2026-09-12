@@ -1,4 +1,4 @@
-# 🌐 Координатная Разметка Веб-Сайтов и Ориентация ИИ
+# 🌐 Оптимизация Сайтов под ИИ (AIO — Artificial Intelligence Optimization)
 ### Архитектурный стандарт «Индекс Утянского» для верстки, фронтенда и веб-агентов ($O(1)$ Web Navigation)
 
 [![Лицензия: MIT](https://img.shields.io/badge/Лицензия-MIT-blue.svg)](../../LICENSE)

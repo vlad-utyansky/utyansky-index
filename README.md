@@ -41,19 +41,19 @@
 
 ---
 
-> ## 🌐 NEW: Web Site Coordinate Indexing & AI Navigation ($O(1)$ Web Navigation)
-> **Transform any website layout into a deterministic coordinate matrix for LLMs and AI agents:**
+> ## 🌐 Web Site Optimization for AI (AIO — Artificial Intelligence Optimization)
+> **Transform any website layout into a deterministic coordinate matrix for LLMs and AI agents via Utyansky Index:**
 > * 🚫 **Eliminates AI Blindness:** Neural networks no longer drown in thousands of meaningless `<div>` tags and CSS classes.
 > * 🛡️ **0% UI Regressions:** AI assistants (Cursor, Claude Code, Windsurf) edit strictly the targeted node `data-idx="7XXXX"` without breaking layouts.
 > * 🤖 **100% Accuracy for AI Search:** ChatGPT Search, Perplexity, and Google Gemini extract prices, CTAs, and offers without hallucinations.
 > 
-> 👉 **[ 🌐 READ FULL WEB SITE INDEXING GUIDE (EN) ➔ ](docs/en/WEB_SITE_COORDINATE_INDEXING.md)** &nbsp;&nbsp;|&nbsp;&nbsp; **[ 🇷🇺 Читать на Русском ➔ ](docs/ru/WEB_SITE_COORDINATE_INDEXING.md)** &nbsp;&nbsp;|&nbsp;&nbsp; **[ 💻 Live HTML Example ➔ ](examples/website-coordinate-markup.html)**
+> 👉 **[ 🌐 READ FULL AIO WEB SITE OPTIMIZATION GUIDE (EN) ➔ ](docs/en/WEB_SITE_COORDINATE_INDEXING.md)** &nbsp;&nbsp;|&nbsp;&nbsp; **[ 🇷🇺 Читать на Русском ➔ ](docs/ru/WEB_SITE_COORDINATE_INDEXING.md)** &nbsp;&nbsp;|&nbsp;&nbsp; **[ 💻 Live HTML Example ➔ ](examples/website-coordinate-markup.html)**
 
 ---
 
 > ### 🧭 Choose Your Track for Fast Navigation:
-> * 🌐 **[For Frontend, Web Developers & AI Layouts (Web Indexing & AI Vision) ➔](docs/en/WEB_SITE_COORDINATE_INDEXING.md)**
->   *(HTML/React DOM 70000–79999 markup, eliminating AI blindness, 0% layout regressions, live HTML demo & HUD inspector)*
+> * 🌐 **[Web Site Optimization for AI (AIO) & AI Frontend (DOM 70000–79999) ➔](docs/en/WEB_SITE_COORDINATE_INDEXING.md)**
+>   *(AIO standard, HTML/React DOM markup, eliminating AI blindness, 0% layout regressions, live HTML demo & HUD inspector)*
 > * 💼 **[For Executives, Founders & Business (Business Value, ROI, 7 Sins) ➔](#-21-for-executives-and-business-solving-7-deadly-vibe-coding-sins--roi-calculation)**
 >   *(Real-world analogies, 85% token cost reduction, regression immunity, financial ROI, and Engineering Center plans)*
 > * ⚙️ **[For Architects, CTOs & Lead Engineers (Technical Specification) ➔](#-3-engineering-matrix-and-standard-ranges-9-domains-1000099999)**
@@ -249,9 +249,9 @@ During the stress test, frontier model **ChatGPT (OpenAI)** conceded technical v
 
 ---
 
-## 🌐 2.4. Web Site Coordinate Indexing & AI Navigation (DOM 70000–79999)
+## 🌐 2.4. Web Site Optimization for AI (AIO — Artificial Intelligence Optimization) via Utyansky Index
 
-> ### 📌 10-Point Technical Summary:
+> ### 📌 10-Point Technical Summary on AIO:
 > 1. **AI Blindness in Traditional Code:** Standard HTML with thousands of nested `<div>` and utility CSS classes (Tailwind) encodes visual layout, but contains zero semantic clues for LLMs.
 > 2. **Multi-Component Ambiguity:** When 15 identical buttons ("Order", "Submit", "Learn More") coexist on a single page, AI confuses context and breaks adjacent code.
 > 3. **Indelible Coordinate Passport:** Each functional node receives a strict 5-digit coordinate `data-idx="7XXXX"` (range `70000–79999`) and bilingual semantic role `data-desc="..."`.
