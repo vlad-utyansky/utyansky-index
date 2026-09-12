@@ -249,6 +249,35 @@ During the stress test, frontier model **ChatGPT (OpenAI)** conceded technical v
 
 ---
 
+## 🌐 2.4. Web Site Coordinate Indexing & AI Navigation (DOM 70000–79999)
+
+> ### 📌 10-Point Technical Summary:
+> 1. **AI Blindness in Traditional Code:** Standard HTML with thousands of nested `<div>` and utility CSS classes (Tailwind) encodes visual layout, but contains zero semantic clues for LLMs.
+> 2. **Multi-Component Ambiguity:** When 15 identical buttons ("Order", "Submit", "Learn More") coexist on a single page, AI confuses context and breaks adjacent code.
+> 3. **Indelible Coordinate Passport:** Each functional node receives a strict 5-digit coordinate `data-idx="7XXXX"` (range `70000–79999`) and bilingual semantic role `data-desc="..."`.
+> 4. **Surgical $O(1)$ Slot Isolation:** AI assistants (Cursor, Claude Code, Windsurf) edit strictly the targeted 40-line container without touching the surrounding 1,000 lines.
+> 5. **0% Code Overwrites & Regressions:** LLMs are physically prevented from leaving `// rest of code unchanged` placeholders that break pages into blank crash screens.
+> 6. **Clarity for Next-Gen AI Search:** ChatGPT Search, Perplexity, and Google Gemini accurately extract prices, CTAs, and offers without hallucinations.
+> 7. **End-to-End Traceability to CRM:** One coordinate links a browser button, analytics goal, backend API handler, and amoCRM deal pipeline.
+> 8. **Unbreakable E2E Test Locators:** Playwright and Cypress selectors (`page.locator('[data-idx="74010"]')`) never break upon visual redesigns.
+> 9. **Interactive DOM Inspector:** The lightweight client script `src/utyansky-web-inspector.js` enables instant coordinate X-Ray ("AI Vision") on any site via a single script tag.
+> 10. **Ready-to-Use Reference Template:** A complete, interactive production landing page layout is published at `examples/website-coordinate-markup.html`.
+
+```html
+<!-- Example of coordinate markup on a primary conversion button -->
+<div 
+  data-idx="74010" 
+  data-desc="[BUTTON] Primary commercial checkout button triggering CRM pipeline"
+  class="relative flex items-center justify-between p-4 bg-slate-800 rounded-2xl">
+  <span>Order Now</span>
+</div>
+```
+
+👉 **[ 📖 READ FULL WEB SITE INDEXING GUIDE (EN) ➔ ](docs/en/WEB_SITE_COORDINATE_INDEXING.md)**  
+👉 **[ 🇷🇺 Читать на Русском ➔ ](docs/ru/WEB_SITE_COORDINATE_INDEXING.md)** &nbsp;|&nbsp; **[ 💻 Live HTML Demo ➔ ](examples/website-coordinate-markup.html)** &nbsp;|&nbsp; **[ 🛠️ utyansky-web-inspector.js ➔ ](src/utyansky-web-inspector.js)**
+
+---
+
 ## 🚀 3. QUICKSTART & FAST DEPLOYMENT (30-Second Guide)
 
 ### 📦 Starter Kit (3 Ready Files):
