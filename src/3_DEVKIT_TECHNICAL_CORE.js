@@ -1,7 +1,7 @@
 /**
  * Utyansky Index DevKit v5.2 Standard
  * Professional Edition | VAU EFFECT 🛡️
- * Principle: Kalashnikov | Grid: 40x40 Deterministic Mapping
+ * Principle: Aerospace Reliability | Grid: 40x40 Deterministic Mapping
  */
 
 export class UtyanskyDevKit {

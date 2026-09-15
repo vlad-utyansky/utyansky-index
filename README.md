@@ -93,7 +93,7 @@ Instead of forcing AI to "guess" functions via imprecise keywords in stochastic 
 | :--- | :--- | :--- | :--- |
 | 🧱 **LEGO Compatibility** | Modules snap together automatically via identical 5-digit coordinate slots. | Integration hell: fragile custom glue breaks on every API update. | 100% component compatibility by pin numbers. |
 | 🌐 **Cross-Stack Address Bus** | Universal highway connecting React DOM, Python, Rust, amoCRM, and SQL. | AI blurs stack boundaries and generates incompatible interfaces. | AI generates precise glue code in <1s for slot `[IDX: 98100]`. |
-| 🛡️ **Kalashnikov Reliability** | Modular invulnerability and hot-swapping blocks with Zero Downtime. | Spaghetti code: fixing a scraper breaks auth and crashes prod. | Isolation: swap node `20100` on the fly with zero system downtime. |
+| 🛡️ **Aerospace Reliability** | Modular invulnerability and hot-swapping blocks with Zero Downtime. | Spaghetti code: fixing a scraper breaks auth and crashes prod. | Isolation: swap node `20100` on the fly with zero system downtime. |
 
 ---
 
@@ -103,7 +103,7 @@ Instead of forcing AI to "guess" functions via imprecise keywords in stochastic 
 | 🔍 Search Query / Real Pain Point | 💥 Root Cause of AI Failure | 🛡️ Solution via «Utyansky Index v2.0» |
 | :--- | :--- | :--- |
 | **«Cursor deletes functions and replaces code»** (`// rest of code unchanged`) | Context compression causes LLMs to become lazy, substituting code with comments. | **Isolated slot `data-idx="7XXXX"`:** AI sees and edits strictly 40 lines of the target container. **0% code overwrite.** |
-| **«AI agents burn 80-90% of tokens on search»** (Token Burn Rate) | Agents query dozens of files blindly, burning up to 150,000 tokens just locating code. | **Deterministic $O(1)$ Navigation:** Instant direct jump to coordinate `[IDX: 80104]` without scanning files. **85% token savings.** |
+| **«AI agents burn 80-90% of tokens on search»** (Token Burn Rate) | Agents query dozens of files blindly, burning up to 150,000 tokens just locating code. | **Deterministic Slot Targeting:** Instant direct jump to coordinate `[IDX: 80104]` without scanning files. **85% token savings.** |
 | **«Vibe coding breaks working features»** (Code Regression) | Lack of hard boundaries across React DOM, backend, and hooks (`useEffect`, routes). | **«Iron Dome» Coordinate Cage:** Complete mutation protection and domain isolation across 9 classes. |
 | **«Multiple AI agents overwrite each other»** (Merge Conflict) | Autonomous workers edit overlapping modules, creating merge collisions. | **Channelized Range Allocation:** Analytics writes in `20000–29999`, Media in `30000–39999`, UI in `70000–79999`. |
 | **«Graph RAG blindness in large repositories»** | Graphs map semantic concepts but are blind inside physical 1000-line files. | **Physical Node ID:** Rigid coordinates `10000–99999` like "door apartment numbers". 99.9% precision. |
