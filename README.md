@@ -43,7 +43,7 @@
 
 > [!TIP]
 > ### ⭐ Support & Feedback
-> I’d be genuinely grateful for your feedback! If the Utyansky Index helped you tame AI hallucinations, save tokens, or streamline your architecture — please consider **giving this repo a Star on GitHub ⭐**.  
+> I’d be genuinely grateful for your feedback! If the Utyansky Index helped you tame AI hallucinations, save tokens, or streamline your architecture — please consider **supporting this project with a ⭐ Star (click the Star button in the top-right corner of this page)**.  
 > As an independent author, your star is the greatest motivation to keep advancing this open standard!
 
 ---
