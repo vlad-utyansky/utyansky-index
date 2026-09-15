@@ -48,24 +48,6 @@
 
 ---
 
-> ## 🌐 NEW: Web Coordinate Standard & AI Vision ($O(1)$ DOM Navigation)
-> **Turn any website layout into a deterministic coordinate map for AI agents:**
-> * 🚫 **Eliminate AI Blindness:** Neural networks no longer drown in chaotic Tailwind `<div>` structures.
-> * 🛡️ **Zero Regression:** AI assistants (Cursor, Claude Code, Windsurf) target the exact node `data-idx="7XXXX"` without corrupting adjacent markup.
-> * 🤖 **100% Search Accuracy:** Yandex Neuro, Perplexity, and ChatGPT Search extract prices, offers, and buttons without hallucinating.
-> 
-> 👉 **[ 🌐 READ FULL WEB INDEXING GUIDE (EN) ➔ ](docs/en/WEB_SITE_COORDINATE_INDEXING.md)** &nbsp;&nbsp;|&nbsp;&nbsp; **[ 🇷🇺 Читать на русском ➔ ](docs/ru/WEB_SITE_COORDINATE_INDEXING.md)** &nbsp;&nbsp;|&nbsp;&nbsp; **[ 💻 Live HTML Example ➔ ](examples/website-coordinate-markup.html)**
-
----
-
-> ### 🧭 Choose Your Track for Fast Navigation:
-> * 💼 **[For Executives, Founders & Business (Business Value, ROI, 7 Sins) ➔](#-21-for-executives-and-business-solving-7-deadly-vibe-coding-sins--roi-calculation)**
->   *(Real-world analogies, 85% token cost reduction, regression immunity, financial ROI, and Engineering Center plans)*
-> * ⚙️ **[For Architects, CTOs & Lead Engineers (Technical Specification) ➔](#-3-engineering-matrix-and-standard-ranges-9-domains-1000099999)**
->   *(Periodic matrix of 9 domains 10000–99999, AST parsing, pgvector 1.5M+ coordinate sharding, UVWI math, and TOP-20 technical FAQ)*
-
----
-
 > ### 🏛️ Rospatent RF Application and Priority Timeline
 > * **Copyright Object:** Computer Software *«Deterministic Coordinate Navigation and Data Routing System for Artificial Intelligence and Software "Utyansky Index" (Utyansky Index v2.0)»*
 > * **Intellectual Property Office:** Federal Service for Intellectual Property (**Rospatent RF / FIPS**)
@@ -77,6 +59,26 @@
 > * **August 22, 2026 (16:42 MSK)** — Official software registration filed at Rospatent RF (Application № 2026603415, Gosuslugi docket 7927650015).
 > * **September 11, 2026 (11:20 MSK)** — **v2.1 Industrial Edition Release**: implementation of deterministic AST slot isolation engine `utyansky_ast_engine.js` (Babel AST context lock O(1), defensive coordinate validation `[ERR: 10451]`, and dependency tracking `ImportDeclaration`).
 > * **September 12, 2026 (21:55 MSK)** — **v2.2 Web Coordinate Standard & AI Vision Release**: open standard for deterministic DOM coordinate markup (`70000–79999`), interactive HUD DOM Inspector («AI Vision») for instant agent orientation, zero hallucinations, and regression prevention.
+
+---
+
+> ## 🌐 NEW: Web Coordinate Standard & AI Vision ($O(1)$ DOM Navigation)
+> **Turn any website layout into a deterministic coordinate map for AI agents:**
+> * 🚫 **Eliminate AI Blindness:** Neural networks no longer drown in chaotic Tailwind `<div>` structures.
+> * 🛡️ **Zero Regression:** AI assistants (Cursor, Claude Code, Windsurf) target the exact node `data-idx="7XXXX"` without corrupting adjacent markup.
+> * 🤖 **100% Search Accuracy:** Yandex Neuro, Perplexity, and ChatGPT Search extract prices, offers, and buttons without hallucinating.
+> 
+> 👉 **[ 🌐 READ FULL WEB INDEXING GUIDE (EN) ➔ ](docs/en/WEB_SITE_COORDINATE_INDEXING.md)** &nbsp;&nbsp;|&nbsp;&nbsp; **[ 🇷🇺 Читать на русском ➔ ](docs/ru/WEB_SITE_COORDINATE_INDEXING.md)** &nbsp;&nbsp;|&nbsp;&nbsp; **[ 💻 Live HTML Example ➔ ](examples/website-coordinate-markup.html)**
+
+---
+
+> ### 🧭 Choose Your Track for Fast Navigation:
+> * 🌐 **[Web Site AI Optimization (AIO) & DOM Markup (70000–79999) ➔](docs/en/WEB_SITE_COORDINATE_INDEXING.md)**
+>   *(AIO specification, HTML/React DOM tagging, zero AI blindness, 0% markup regressions, live demo and HUD inspector)*
+> * 💼 **[For Executives, Founders & Business (Business Value, ROI, 7 Sins) ➔](#-21-for-executives-and-business-solving-7-deadly-vibe-coding-sins--roi-calculation)**
+>   *(Real-world analogies, 85% token cost reduction, regression immunity, financial ROI, and Engineering Center plans)*
+> * ⚙️ **[For Architects, CTOs & Lead Engineers (Technical Specification) ➔](#-3-engineering-matrix-and-standard-ranges-9-domains-1000099999)**
+>   *(Periodic matrix of 9 domains 10000–99999, AST parsing, pgvector 1.5M+ coordinate sharding, UVWI math, and TOP-20 technical FAQ)*
 
 ---
 
@@ -257,6 +259,35 @@ During the stress test, frontier model **ChatGPT (OpenAI)** conceded technical v
 * **Targeted Local Edits:** The standard provides absolute determinism — single component, single service, single function without regressions.
 * **Cascading Refactorings:** For global prop renames or API contract migrations across an entire AST, coordinates work seamlessly alongside graph-based dependency tools.
 * **Structural Value:** Adopt the standard first for structural integrity (clear scopes, slot isolation, zero code overwrites) — token savings follow automatically.
+
+---
+
+## 🌐 2.4. Web Site Optimization for AI (AIO — Artificial Intelligence Optimization) via Utyansky Index
+
+> ### 📌 10-Point Technical Summary on AIO:
+> 1. **AI Blindness in Traditional Code:** Standard HTML with thousands of nested `<div>` and utility CSS classes (Tailwind) encodes visual layout, but contains zero semantic clues for LLMs.
+> 2. **Multi-Component Ambiguity:** When 15 identical buttons ("Order", "Submit", "Learn More") coexist on a single page, AI confuses context and breaks adjacent code.
+> 3. **Indelible Coordinate Passport:** Each functional node receives a strict 5-digit coordinate `data-idx="7XXXX"` (range `70000–79999`) and bilingual semantic role `data-desc="..."`.
+> 4. **Surgical $O(1)$ Slot Isolation:** AI assistants (Cursor, Claude Code, Windsurf) edit strictly the targeted 40-line container without touching the surrounding 1,000 lines.
+> 5. **0% Code Overwrites & Regressions:** LLMs are physically prevented from leaving `// rest of code unchanged` placeholders that break pages into blank crash screens.
+> 6. **Clarity for Next-Gen AI Search:** ChatGPT Search, Perplexity, and Google Gemini accurately extract prices, CTAs, and offers without hallucinations.
+> 7. **End-to-End Traceability to CRM:** One coordinate links a browser button, analytics goal, backend API handler, and amoCRM deal pipeline.
+> 8. **Unbreakable E2E Test Locators:** Playwright and Cypress selectors (`page.locator('[data-idx="74010"]')`) never break upon visual redesigns.
+> 9. **Interactive DOM Inspector:** The lightweight client script `src/utyansky-web-inspector.js` enables instant coordinate X-Ray ("AI Vision") on any site via a single script tag.
+> 10. **Ready-to-Use Reference Template:** A complete, interactive production landing page layout is published at `examples/website-coordinate-markup.html`.
+
+```html
+<!-- Example of coordinate markup on a primary conversion button -->
+<div 
+  data-idx="74010" 
+  data-desc="[BUTTON] Primary commercial checkout button triggering CRM pipeline"
+  class="relative flex items-center justify-between p-4 bg-slate-800 rounded-2xl">
+  <span>Order Now</span>
+</div>
+```
+
+👉 **[ 📖 READ FULL WEB SITE INDEXING GUIDE (EN) ➔ ](docs/en/WEB_SITE_COORDINATE_INDEXING.md)**  
+👉 **[ 🇷🇺 Читать на Русском ➔ ](docs/ru/WEB_SITE_COORDINATE_INDEXING.md)** &nbsp;|&nbsp; **[ 💻 Live HTML Demo ➔ ](examples/website-coordinate-markup.html)** &nbsp;|&nbsp; **[ 🛠️ utyansky-web-inspector.js ➔ ](src/utyansky-web-inspector.js)**
 
 ---
 
