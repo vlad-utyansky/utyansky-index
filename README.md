@@ -48,6 +48,16 @@
 
 ---
 
+> ## 🌐 NEW: Web Coordinate Standard & AI Vision ($O(1)$ DOM Navigation)
+> **Turn any website layout into a deterministic coordinate map for AI agents:**
+> * 🚫 **Eliminate AI Blindness:** Neural networks no longer drown in chaotic Tailwind `<div>` structures.
+> * 🛡️ **Zero Regression:** AI assistants (Cursor, Claude Code, Windsurf) target the exact node `data-idx="7XXXX"` without corrupting adjacent markup.
+> * 🤖 **100% Search Accuracy:** Yandex Neuro, Perplexity, and ChatGPT Search extract prices, offers, and buttons without hallucinating.
+> 
+> 👉 **[ 🌐 READ FULL WEB INDEXING GUIDE (EN) ➔ ](docs/en/WEB_SITE_COORDINATE_INDEXING.md)** &nbsp;&nbsp;|&nbsp;&nbsp; **[ 🇷🇺 Читать на русском ➔ ](docs/ru/WEB_SITE_COORDINATE_INDEXING.md)** &nbsp;&nbsp;|&nbsp;&nbsp; **[ 💻 Live HTML Example ➔ ](examples/website-coordinate-markup.html)**
+
+---
+
 > ### 🧭 Choose Your Track for Fast Navigation:
 > * 💼 **[For Executives, Founders & Business (Business Value, ROI, 7 Sins) ➔](#-21-for-executives-and-business-solving-7-deadly-vibe-coding-sins--roi-calculation)**
 >   *(Real-world analogies, 85% token cost reduction, regression immunity, financial ROI, and Engineering Center plans)*
@@ -66,6 +76,7 @@
 > * **March 22, 2026 (19:17 MSK)** — Initial worldwide public disclosure of the architecture (Public Release v1.0 on GitHub, commit `51584ac`).
 > * **August 22, 2026 (16:42 MSK)** — Official software registration filed at Rospatent RF (Application № 2026603415, Gosuslugi docket 7927650015).
 > * **September 11, 2026 (11:20 MSK)** — **v2.1 Industrial Edition Release**: implementation of deterministic AST slot isolation engine `utyansky_ast_engine.js` (Babel AST context lock O(1), defensive coordinate validation `[ERR: 10451]`, and dependency tracking `ImportDeclaration`).
+> * **September 12, 2026 (21:55 MSK)** — **v2.2 Web Coordinate Standard & AI Vision Release**: open standard for deterministic DOM coordinate markup (`70000–79999`), interactive HUD DOM Inspector («AI Vision») for instant agent orientation, zero hallucinations, and regression prevention.
 
 ---
 
