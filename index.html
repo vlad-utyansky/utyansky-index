@@ -1,0 +1,1941 @@
+<!DOCTYPE html>
+<html lang="ru" class="dark scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Индекс Утянского (Utyansky Index v2.0) | Официальный Архитектурный Портал</title>
+  <meta name="description" content="Официальный архитектурный портал стандарта «Индекс Утянского» (Заявка Роспатент РФ № 2026603415). Детерминированная координатная навигация для вайбкодинга, мульти-агентных ИИ-систем, React DOM и векторной памяти.">
+  <meta name="author" content="Утянский Владислав Анатольевич">
+  <link rel="canonical" href="https://index.utyanskiy.ru/">
+  
+  <link rel="icon" type="image/svg+xml" href="./favicon.svg">
+  <link rel="alternate icon" href="./favicon.svg">
+  
+  <meta property="og:title" content="Индекс Утянского — Не искать. Адресовать.">
+  <meta property="og:description" content="Как ремонт по строительным нормам и 5-значные координаты делают ИИ точным на 100% и экономят 40% рабочего времени.">
+  <meta property="og:url" content="https://index.utyanskiy.ru/">
+  <meta property="og:image" content="https://index.utyanskiy.ru/picture/utyansky_index_architecture_poster.png">
+  <meta property="og:type" content="website">
+
+  <meta name="keywords" content="Индекс Утянского, Utyansky Index, Владислав Утянский, Vladislav Utyansky, вайбкодинг, вайб-кодинг, vibe coding, периодическая таблица кодов, координатная навигация для ИИ, детерминированная маршрутизация, O(1) отладка, устранение галлюцинаций нейросетей, мультиагентные системы, архитектура ИИ, Роспатент РФ, UVWI, индекс вирусного восторга, Cursor AI, Claude Code, Windsurf, amoCRM, VAU EFFECT, pgvector, prompt engineering, AI development standard, software registration rospatent">
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+  <meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+  <meta name="yandex" content="index, follow">
+
+  <link rel="alternate" type="text/plain" href="./llms.txt" title="LLM Context Specification">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      background-color: #06080d;
+      color: #f8fafc;
+      overflow-x: hidden;
+    }
+    .font-mono {
+      font-family: 'JetBrains Mono', monospace;
+    }
+    header {
+      position: fixed !important;
+      top: 0 !important;
+      left: 0 !important;
+      right: 0 !important;
+      width: 100% !important;
+      z-index: 50 !important;
+    }
+    .glow-bg {
+      background: radial-gradient(circle at 50% 0%, rgba(37, 99, 235, 0.15) 0%, rgba(6, 8, 13, 0) 70%);
+    }
+    .card-glass {
+      background: rgba(15, 23, 42, 0.65);
+      backdrop-filter: blur(12px);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+    }
+    .card-glass:hover {
+      border-color: rgba(59, 130, 246, 0.4);
+    }
+  </style>
+</head>
+<body class="antialiased selection:bg-blue-600 selection:text-white">
+
+  <div id="app"></div>
+
+  <!-- Cookie Banner -->
+  <div id="cookie-banner" style="display: none;" class="fixed bottom-4 left-4 right-4 sm:left-auto sm:right-4 sm:max-w-md z-50 p-4 rounded-2xl bg-slate-900/95 border border-white/10 shadow-2xl backdrop-blur-md">
+    <div class="flex flex-col gap-3">
+      <p id="cookie-text" class="text-xs text-slate-300 leading-relaxed">
+        Мы используем cookie для персонализации и анализа трафика. Продолжая использовать сайт, вы соглашаетесь с политикой конфиденциальности.
+      </p>
+      <div class="flex items-center justify-between gap-2">
+        <a id="cookie-policy-link" href="#" class="text-xs text-blue-400 hover:underline">Политика конфиденциальности</a>
+        <button id="cookie-btn" onclick="acceptCookies()" class="px-4 py-1.5 rounded-lg bg-blue-600 hover:bg-blue-500 text-white font-bold text-xs transition">
+          Принять
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+
+const I18N = {
+  ru: {
+    badge: '🛡️ АВТОРСКИЙ СТАНДАРТ: ЗАЯВКА НА ПРОГРАММУ ДЛЯ ЭВМ РОСПАТЕНТ № 2026603415',
+    heroTitle1: 'Не искать. ',
+    heroTitle2: 'Адресовать.',
+    heroDesc: 'Индекс Утянского — сквозной промышленный координатный стандарт пятизначной адресации (10000–99999), объединяющий разработку софта, React DOM, мульти-агентный ИИ, видеопроизводство, векторную память pgvector и точный маркетинг (UVWI) в единое детерминированное пространство.',
+    
+    navTrackTitle: '🧭 ВЫБЕРИТЕ ВАШ ТРЕК ДЛЯ БЫСТРОГО ИЗУЧЕНИЯ:',
+    navBusinessBtn: '💼 Для Руководителей (7 Болей, ROI) ➔',
+    navTechBtn: '⚙️ Для Разработчиков (9 Доменов, Код) ➔',
+    navTrackSub: '⚡ Нажмите для моментального перехода к интересующему вас разделу архитектуры',
+
+    newTgBadge: '🚀 НОВОЕ: ТЕЛЕГРАМ-БОТЫ И ВАЙБКОДИНГ (20.09.2026)',
+    newTgTitle: 'Архитектура Telegram-Ботов: Обход Лимита 64 Байт и 0% Поломок',
+    newTgDesc: 'Как строить многоэкранные отказоустойчивые Telegram-боты силами одного человека и нейросетей. Компактная адресация слотов (12–22 байта), обход BUTTON_DATA_INVALID и встроенный аналитический модуль «Микроскоп» (360° досье клиента).',
+    newTgBtn: '📖 Читать исследование и руководство (RU) ➔',
+    newTgRepoBtn: '💻 Открытый стандарт на GitHub ➔',
+    
+    videoTitle: 'ОФИЦИАЛЬНАЯ ВИДЕОПРЕЗЕНТАЦИЯ СТАНДАРТА (5 МИНУТ)',
+    btnRu: 'Русская озвучка (RU)',
+    btnEn: 'English voiceover (EN)',
+    videoHint: '💡 Включите звук. Автор стандарта Владислав Утянский наглядно объясняет принципы координатной навигации.',
+
+    missionTag: '💡 НАША МИССИЯ',
+    missionTitle: 'Зачем создан Индекс Утянского?',
+    missionSubtitle: 'Устранить стохастический хаос в ИИ-разработке и дать разработчикам и автономным агентам общий точный язык взаимодействия.',
+    m1Title: '1. Детерминизм вместо догадок',
+    m1Desc: 'Никаких размытых промптов вида «найди ту синюю кнопку снизу». Только жесткие пятизначные координаты.',
+    m2Title: '2. Сквозная связность',
+    m2Desc: 'Один номер связывает кнопку в DOM-дереве, серверный обработчик, цель аналитики и сделку в CRM.',
+    m3Title: '3. Экономия бюджета токенов',
+    m3Desc: 'Снижение расхода токенов на 85% за счет скармливания точечных изолированных слотов вместо сотен файлов.',
+    m4Title: '4. Стабильность продакшна',
+    m4Desc: '0% регрессионных поломок. ИИ физически не может испортить код за пределами выделенного слота.',
+    missionResult: 'Результат: Ускорение разработки, правок и онбординга новых разработчиков в 10–20 раз.',
+
+    problemTitle: 'Стохастический Хаос vs Детерминированные Координаты',
+    problemSub: 'Сравнение классического вайбкодинга «на ощупь» и стандартизированной архитектуры Индекса Утянского',
+    tradTag: 'ТРАДИЦИОННЫЙ ВАЙБКОДИНГ (БЕЗ ИНДЕКСА)',
+    tradTitle: '❌ Стохастический поиск и размытый контекст',
+    tradDesc: 'Разработчик пишет промпт обычными словами: «Сделай кнопку шире». ИИ перечитывает весь проект, сжигает 150 000 токенов, случайно стирает соседние функции и оставляет заглушки // rest of code unchanged.',
+    tradBullet1: '• Гниение контекста по мере роста репозитория',
+    tradBullet2: '• Случайные поломки работающего функционала',
+    tradBullet3: '• Раздувание счетов за API-токены',
+    utyTag: 'СТАНДАРТ «ИНДЕКС УТЯНСКОГО» v2.0',
+    utyTitle: '✅ Адресация за 1 шаг (O(1)) и изоляция слота',
+    utyDesc: 'Элемент имеет координатный паспорт data-idx="71080". Вы даете команду: «В слоте 71080 измени ширину». ИИ меняет ровно 2 строчки внутри изолированного блока. 0% поломок соседнего кода.',
+    utyBullet1: '• Прямой прыжок к нужным строкам за 1 действие (O(1))',
+    utyBullet2: '• 100% изоляция: соседний код защищен от мутаций',
+    utyBullet3: '• Снижение расхода токенов на 85%',
+
+    bizAnalogyBadge: '🏠 АНАЛОГИЯ ДЛЯ РУКОВОДИТЕЛЯ',
+    bizAnalogyTitle: 'Почему вайбкодинг без Индекса ломает бизнес?',
+    bizAnalogyChaosTitle: '❌ Вайбкодинг без Индекса (Слепой Хаос):',
+    bizAnalogyChaosText: 'Это как бригада строителей, делающая ремонт квартиры без чертежей на глазок. Вы просите «повесить картину», а рабочий вбивает дюбель прямо в скрытую проводку и обесточивает весь дом. Или как гигантский склад Wildberries/Ozon, где 1 000 000 товаров свалены в одну кучу посреди ангара — чтобы найти одну коробку, 20 кладовщиков перерывают весь склад заново, сжигая бюджет.',
+    bizAnalogyIndexTitle: '✅ Разработка с Индексом Утянского (Детерминизм):',
+    bizAnalogyIndexText: 'Каждая розетка и труба имеют строгую координату по строительным нормам. На складе у каждого товара есть жесткий пятизначный номер ячейки (Ряд 7, Стеллаж 10, Полка 80). Робот подъезжает за 1 секунду и берет нужный предмет, не трогая соседние коробки. ИИ правит ровно 2 строчки кода, не ломая экран.',
+
+    painsBadge: '💥 7 СМЕРТНЫХ ГРЕХОВ ВАЙБКОДИНГА',
+    painsTitle: '7 Главных Болей ИИ-Разработки и Как их Решает Индекс',
+    painsSub: 'Реальные цитаты фаундеров и разработчиков из сообществ Reddit, Хабр и VC.ru с расчетом финансовых потерь',
+
+    pain1Title: '1. 🏚️ «Эффект карточного домика» (Over-editing & Затирание кода)',
+    pain1Quote: '«Первые 3 промпта — восторг, магия! Но как только проект чуть сложнее одного экрана, начинается ад. Просишь ИИ: "Поменяй цвет кнопки", а он переписывает весь файл на 1000 строк, удаляет половину функций и вставляет // rest of code unchanged. В итоге экран белый, всё сломано!»',
+    pain1Loss: 'Потери: Сеньор тратит 20–40 оплачиваемых часов на ручной откат коммитов и поиск вырезанных кусков.',
+    pain1Solve: 'Решение: Изолированный слот data-idx="71080". ИИ видит и правит строго 40 строк компонента. 0% затирания соседнего кода.',
+
+    pain2Title: '2. 🧠 «Гниение контекста и склероз ИИ» (Context Rot & Lost in Middle)',
+    pain2Quote: '«Через 10-15 итераций чата модель начинает тупить, забывает, какие базы данных мы используем, путает названия переменных и предлагает решения, которые мы уже отвергли час назад.»',
+    pain2Loss: 'Потери: Накопление технического долга, потеря архитектурного контроля и перезапуск чатов с нуля каждые полдня.',
+    pain2Solve: 'Решение: Координатная карта UTYANSKY_INDEX_REGISTRY.json. Прямой доступ к числовым ячейкам O(1) без перегрузки контекста.',
+
+    pain3Title: '3. 💸 «Сжигание бюджетов на токены» (Token Bleed)',
+    pain3Quote: '«Вайбкодинг оказался дико дорогим! Чтобы поправить 2 строчки, ассистент каждый раз сканирует 50 файлов, сжигает по 150 000 токенов за запрос, и наш месячный счет за API Claude/OpenAI улетел в $1,500 за две недели.»',
+    pain3Loss: 'Потери: Прямой перерасход бюджета на API в 5–10 раз без прироста скорости.',
+    pain3Solve: 'Решение: Передача изолированного слота (30–50 строк) вместо сотен файлов. Экономия до 85% токенов и ответ за 2 секунды.',
+
+    pain4Title: '4. 🍝 «Спагетти-архитектура и иллюзия всесилия»',
+    pain4Quote: '«Не-программист собрал работающий прототип за 2 дня. Но когда пришли первые 100 реальных клиентов, всё зависло. Открыли код — а там каша из стилей, запросов и хуков в одном файле. Программисты отказываются чинить: "Проще с нуля переписать".»',
+    pain4Loss: 'Потери: Полная потеря инвестиций в первый MVP и срыв запуска бизнеса.',
+    pain4Solve: 'Решение: Стандарт «Железный Купол» — 9 жестких доменов (10000–99999) и 10 независимых SQL-колонок. Промышленный порядок с 1-го дня.',
+
+    pain5Title: '5. 🔄 «Бесконечный пинг-понг правок» (Loop of Death)',
+    pain5Quote: '«Пишешь ИИ: "Кнопка съехала влево". Он чинит кнопку, но ломает модальное окно. Пишешь: "Почини модалку" — кнопка снова съезжает. И так 30 итераций по кругу, пока не кончатся нервы.»',
+    pain5Loss: 'Потери: Срыв сроков релиза, выгорание фаундера и паралич команды.',
+    pain5Solve: 'Решение: Иммунный статус STATUS: OK и авто-аудит активного блока. Защита от паразитных мутаций соседних стилей.',
+
+    pain6Title: '6. 👻 «Галлюцинации и выдуманные базы данных»',
+    pain6Quote: '«ИИ радостно отрапортовал, что сохранил заказы клиентов, а через неделю выяснилось, что он сохранял всё во временный массив в оперативной памяти, который стирался при перезагрузке сервера. База данных оказалась фикцией!»',
+    pain6Loss: 'Потери: Утрата клиентской базы, потерянных заказов и ущерб репутации.',
+    pain6Solve: 'Решение: 10 физических SQL-слотов в таблицах Supabase/PostgreSQL вместо неструктурированных JSON.',
+
+    pain7Title: '7. 🔒 «Смерть проекта при смене инструмента или разработчика»',
+    pain7Quote: '«Создали проект в одном AI-редакторе. Открыли в другом — он ничего не понимает и начинает переписывать всё по-своему. Наняли живого фрилансера — тот в шоке от AI-кода и требует удвоить ставку.»',
+    pain7Loss: 'Потери: Критическая зависимость от одной платформы или человека, остановка развития проекта.',
+    pain7Solve: 'Решение: Универсальный открытый протокол .cursorrules / AGENTS.md. Любой ИИ и живой программист читают карту проекта за 5 минут.',
+
+    roiBadge: '📊 ЭКОНОМИЧЕСКИЙ ЭФФЕКТ',
+    roiTitle: 'Сравнение окупаемости: До и После внедрения Индекса',
+    roiSub: 'Конкретные измеримые показатели скорости разработки и экономии бюджета',
+    roiColMetric: 'Показатель',
+    roiColBefore: '❌ Без Индекса (Хаос)',
+    roiColAfter: '✅ С Индексом Утянского',
+    roiColBenefit: '💰 Выгода для бизнеса',
+    roiRow1M: 'Время точечной правки',
+    roiRow1B: '30–60 минут (с багами)',
+    roiRow1A: '2–3 минуты',
+    roiRow1E: 'Ускорение в 10–20 раз',
+    roiRow2M: 'Счета за токены AI API',
+    roiRow2B: '100% (до $1,500 / мес)',
+    roiRow2A: '15–20% (до $200 / мес)',
+    roiRow2E: 'Экономия до 85% бюджета',
+    roiRow3M: 'Регрессионные поломки UI',
+    roiRow3B: '35–50% правок ломают экран',
+    roiRow3A: '0% поломок',
+    roiRow3E: '100% стабильность продакшна',
+    roiRow4M: 'Онбординг нового спеца / ИИ',
+    roiRow4B: '3–5 рабочих дней',
+    roiRow4A: '15 минут (по реестру)',
+    roiRow4E: 'Экономия 40 ч сеньора',
+
+    g9Badge: '🤖 НЕЗАВИСИМЫЙ СТРЕСС-ТЕСТ: БОЛЬШАЯ ДЕВЯТКА ИИ (G9)',
+    g9Title: '9 Ведущих Мировых ИИ Подтвердили Работоспособность Индекса',
+    g9Sub: 'Был проведён масштабный двусторонний стресс-тест в 9 самых мощных нейросетях планеты (США, Китай, Россия). Без рекламы и подыгрывания: чистая математика токенов, изоляция 40-строчных слотов и строгая проверка кода.',
+    g9BannerTitle: '🎯 100% ЕДИНОГЛАСНЫЙ КОНСЕНСУС 9 МИРОВЫХ ЛАБОРАТОРИЙ ИИ:',
+    g9BannerText: 'Все 9 независимых систем единогласно признали: пятизначные координаты физически исключают затирание кода (// rest of code unchanged), блокируют галлюцинации и математически обосновывают экономию до 85% бюджетов на разработку.',
+    g9FormulaTitle: '🏛️ ЗОЛОТАЯ ФОРМУЛА БЕЗОПАСНОГО AI-КОДИНГА (СИНТЕЗ G9):',
+    g9FormulaText: '«RAG помогает найти; LSP помогает понять; IDX помогает точно адресовать и ограничить; TypeScript и тесты помогают проверить; CI не даёт обойти правила.»',
+    g9FormulaSub: 'Фундаментальный вывод Perplexity AI и Grok: «Ограничивайте не интеллект модели, а поверхность её разрешенных мутаций (Write-Authorization Layer)».',
+    g9BlindBadge: '🔬 ПРОВЕРЬТЕ САМИ ЗА 30 СЕКУНД',
+    g9BlindTitle: 'Тест для Скептиков: Проверьте в любой нейросети прямо сейчас',
+    g9BlindDesc: 'Не верьте нам на слово! Ниже подготовлен абсолютно нейтральный технический запрос без прикрас. Скопируйте его в один клик и отправьте в любую нейросеть (Grok Илона Маска, ChatGPT, Claude, DeepSeek, Google Gemini или Алису), чтобы лично подтвердить или попытаться опровергнуть работоспособность системы:',
+    g9BlindCopyBtn: '📋 Скопировать нейтральный запрос для проверки',
+    g9BlindCopied: '✅ Запрос скопирован в буфер обмена! Вставьте в любую нейросеть',
+    g9RepoBtn: '🐙 Открыть официальный протокол аудита на GitHub ➔',
+
+    principlesTitle: 'Три Фундаментальных Архитектурных Принципа',
+    principlesSub: 'Инженерная основа для модульной неубиваемости и масштабирования систем',
+    p1Title: 'LEGO-Совместимость',
+    p1Desc: 'Модули стыкуются автоматически через совпадающие пятизначные слоты.',
+    p1BadTitle: 'Без Индекса:',
+    p1BadText: 'Хрупкий самописный клей ломается при каждом изменении схемы API.',
+    p1Solve: '✓ 100% совместимость компонентов по номерам пинов.',
+    p2Title: 'Кросс-Стек Адресная Шина',
+    p2Desc: 'Единая магистраль, связывающая React DOM, Python, Rust, amoCRM и SQL.',
+    p2BadTitle: 'Без Индекса:',
+    p2BadText: 'ИИ путает границы стеков и генерирует несовместимые интерфейсы.',
+    p2Solve: '✓ Точный связующий код генерируется за <1 сек для слота [IDX: 98100].',
+    p3Title: 'Принцип Калашникова',
+    p3Desc: 'Модульная неубиваемость и горячая замена блоков без простоя (Zero Downtime). Адресация O(1) — мгновенное попадание в нужный узел ровно за 1 действие.',
+    p3BadTitle: 'Без Индекса:',
+    p3BadText: 'Правка парсера ломает авторизацию и роняет продакшн.',
+    p3Solve: '✓ Адресация O(1): горячая замена узла 20100 на лету за 1 шаг без простоя.',
+
+    benefitsTitle: 'Измеримые Производственные Результаты',
+    benefitsSub: 'Конкретные бизнес- и инженерные метрики, подтвержденные в боевом продакшне',
+    b1Num: '5–7x',
+    b1Title: 'Экономия бюджета API-токенов',
+    b1Desc: 'AI-ассистент не перечитывает весь проект заново, а прыгает напрямую к нужным строкам.',
+    b1Analogy: '📖 На пальцах: Вместо того чтобы перечитывать всю 1000-страничную книгу ради одного предложения, ИИ сразу открывает 42 страницу.',
+    b2Num: '40%',
+    b2Title: 'Экономия ФОТ и времени разработки',
+    b2Desc: 'Программисты больше не тратят оплачиваемые часы на объяснение визуального контекста нейросети.',
+    b2Analogy: '⏱️ На пальцах: Разработчик не пишет длинные промпты по 30 минут. Команда по индексу выполняется за 3 минуты.',
+    b3Num: 'O(1)',
+    b3Title: 'Адресация O(1) — правка багов за 1 шаг (3 сек)',
+    b3Desc: 'Каждый стек-трейс ошибки содержит пятизначный индекс. ИИ не ищет ошибку вслепую, а мгновенно открывает точную строку за 1 действие.',
+    b3Analogy: '🧥 На пальцах (Гардероб): По номерку #405 вам выдают пальто за 1 секунду вместо 15 минут поисков вслепую.',
+    b4Num: '100%',
+    b4Title: 'Нулевой уровень галлюцинаций',
+    b4Desc: 'Поабзацная микроиндексация исключает пропуск требований ТЗ и генерацию фантомного кода.',
+    b4Analogy: '🔒 На пальцах: ИИ физически не может «забыть» логику — он обязан заполнить жесткие номерные ячейки [21101, 21102...].',
+
+    casesTitle: 'Реальные Продакшн-Кейсы',
+    casesSub: 'Документированные примеры из разработки комплекса VAU-OS Контент-Завод',
+
+    tableTitle: 'Периодическая Таблица Доменов (10000 – 99999)',
+    tableSub: '1557+ физических слотов, зарегистрированных в боевой системе',
+    tableSearch: 'Поиск по номеру индекса, названию или описанию...',
+
+    techCodeTag: '🧩 ПРАКТИЧЕСКАЯ РЕАЛИЗАЦИЯ В КОДЕ',
+    techCodeTitle: 'Примеры Интеграции: React, Babel AST, Python и Playwright',
+    techCodeSub: 'Готовые сниппеты для мгновенного внедрения детерминированного стандарта в ваш стек',
+
+    codeTab1: 'React DOM (JSX)',
+    codeTab2: 'Babel AST Plugin',
+    codeTab3: 'Python FastAPI',
+    codeTab4: 'Playwright E2E',
+
+    marketingSectionTag: '📊 ПРИКЛАДНЫЕ ДОМЕНЫ И КЕЙСЫ',
+    marketingSectionTitle: 'Применение Индекса Утянского в Маркетинге',
+    marketingSectionSub: 'Как 5-значный координатный стандарт переводит эмоции аудитории в точный математический ROI',
+    mPainTitle: '❌ Боль классического маркетинга (Субъективные догадки):',
+    mPainText: 'Маркетологи говорят: «Наш ролик вызвал бурю восторга в соцсетях!». Но когда руководитель спрашивает: «Какова конкретная оцифровка? Какой Emotional ROI?», никто не может ответить. Лайки накручиваются, а реальная лояльность остается неизмеримой.',
+    mSolutionTitle: '✅ Решение Индекса Утянского (Детерминированный Sentiment-скоринг):',
+    mSolutionText: 'Через единую координатную сетку ИИ распределяет тысячи комментариев по строгим 5-значным слотам. Позитив и намерение купить фиксируются в ячейке [IDX: 21303], критика — в [21304], а общий охват — в [92020]. Маркетинг получает точную математическую формулу вирусного WOW-резонанса.',
+    
+    mCasesTitle: '🏢 3 Живых Примера Применения UVWI в Реальном Бизнесе:',
+    mCase1Title: '1. 🏗️ Строительство домов и ремонт премиум-класса',
+    mCase1Desc: 'Видеоролик о готовом доме набрал 10 000 просмотров. Обычный отчет показал бы просто «10k просмотров». Индекс Утянского выявил 3 500 целевых запросов сметы и восторгов. Формула UVWI = 35.0% доказала, что каждый третий зритель — потенциальный клиент на миллионный контракт.',
+    mCase2Title: '2. 🛡️ Проверка блогеров на накрутки перед покупкой рекламы',
+    mCase2Desc: 'Блогер со 100 000 просмотров просит 100 000 ₽. Считаем UVWI: реальных комментариев о покупке всего 50 (UVWI = 0.05% — накрученная пустышка). А у нишевого эксперта при 10 000 просмотров — 2 000 запросов (UVWI = 20.0% — окупаемость рекламы x10).',
+    mCase3Title: '3. 🍔 Ресторанный бизнес и доставка авторской кухни',
+    mCase3Desc: 'Аппетитное видео сочного блюда набрало 50 000 охвата. 6 000 человек переслали ролик друзьям с текстом «Идем сегодня!» и перешли к брони столика. UVWI = 12.0% — ресторатор заранее знает, что в пятницу будет полный зал и закупает свежие продукты.',
+    presetBtn1: '🏗️ Пример 1: Строительство (10k / 3.5k)',
+    presetBtn2: '🛡️ Пример 2: Блогер-пустышка (100k / 50)',
+    presetBtn3: '🍔 Пример 3: Ресторан (50k / 6k)',
+
+    calcTag: '[IDX: 85010] ИНТЕРАКТИВНЫЙ ИНСТРУМЕНТ',
+    calcTitle: 'Калькулятор Индекса Вирусного Веса (UVWI)',
+    calcSub: 'Рассчитайте детерминированный показатель вирусного WOW-резонанса для вашей кампании или бренда:',
+    calcReach: 'Общий охват аудитории (Просмотры / Показы / Охват):',
+    calcWow: 'Количество подтвержденных WOW-реакций (Лиды / Восторги / Запросы):',
+    calcRes: 'Расчётный показатель UVWI:',
+    calcFormula: 'Математическая формула: UVWI [85010] = (Позитивные_Реакции [21303] / Общий_Охват [92020]) * 100%',
+    calcVerdict: 'Индекс вирусного WOW-резонанса',
+
+    pricingBadge: '⚖️ ПРОЗРАЧНЫЕ ТАРИФЫ И ВНЕДРЕНИЕ',
+    pricingTitle: 'Интеграция Индекса Утянского в Ваш Проект',
+    pricingSub: 'Выберите подходящий формат сотрудничества — от бесплатного Open-Source до аудита под ключ',
+
+    tier1Title: 'Community Edition',
+    tier1Price: '0 ₽ (Бесплатно)',
+    tier1For: 'Для независимых разработчиков, студентов, открытых проектов и стартапов ранних стадий',
+    tier1F1: 'Открытая 5-значная координатная сетка (10000–99999)',
+    tier1F2: 'Разметка React DOM компонентов (data-idx="7XXXX")',
+    tier1F3: 'Шаблоны правил для Cursor, Claude Code, Windsurf',
+    tier1F4: 'Лицензия MIT: свободное использование',
+    tier1Btn: 'Открыть на GitHub',
+
+    tier2Title: 'Экспресс-Внедрение под ключ',
+    tier2Price: 'от 120 000 ₽',
+    tier2Period: 'единоразово',
+    tier2For: 'Для стартапов и компаний с готовым MVP на вайбкодинге',
+    tier2F1: 'Экспресс-аудит кодовой базы на скрытые поломки и утечки',
+    tier2F2: 'Полная разметка интерфейса и бэкенда пятизначными индексами',
+    tier2F3: 'Генерация мастер-файла реестра UTYANSKY_INDEX_REGISTRY.json',
+    tier2F4: 'Настройка Pre-commit валидации и персональный регламент для ИИ',
+    tier2Btn: 'Заказать экспресс-аудит',
+
+    tier3Title: 'Ежемесячное Сопровождение',
+    tier3Price: 'от 5 000 ₽ / мес',
+    tier3For: 'Малый бизнес (5-10k) | Средний бизнес (25-45k) | Enterprise (90-150k)',
+    tier3F1: 'Актуализация реестра координат при выпуске новых модулей',
+    tier3F2: 'Контроль чистоты контекста и предотвращение поломок ИИ',
+    tier3F3: 'Оптимизация счетов за API токены (снижение затрат до 85%)',
+    tier3F4: 'Инженерный Центр VAU EFFECT под личным руководством автора стандарта Владислава Утянского',
+    tier3Btn: 'Оформить сопровождение',
+
+    ctaAuditBtn: '📊 Получить Экспресс-Аудит Кода и Расчёт ROI в Telegram ➔',
+
+    faqTitle: 'Часто Задаваемые Вопросы (ТОП-20 FAQ)',
+    faqSub: '20 глубоких инженерных ответов по архитектуре и интеграции Индекса Утянского',
+    faqQ1: '1. Чем Индекс Утянского лучше обычного Graph RAG и векторной памяти?',
+    faqA1: 'Граф знаний показывает ЧТО с чем связано, но абсолютно слеп внутри физических файлов на 1000 строк. Индекс Утянского — это «номер квартиры на двери»: он присваивает жесткие пятизначные координаты [10000–99999] и физически изолирует область правок от случайного затирания кода соседних блоков.',
+    faqQ2: '2. Каковы измеримые результаты внедрения стандарта (ДО vs ПОСЛЕ)?',
+    faqA2: '1) Нулевой процент регрессионных поломок интерфейса. 2) Экономия на токенах API до 85% за счет скармливания изолированного слота (40 строк вместо 1500). 3) Сокращение времени точечной правки с 40 минут до 2–3 минут.',
+    faqQ3: '3. Как стандарт помогает экономить бюджеты токенов на разных моделях?',
+    faqA3: 'На легких моделях (Flash, Haiku) Индекс компенсирует слабость удержания контекста. На флагманских моделях (Claude 3.5 Sonnet, GPT-4o) передача слота вместо целого файла снижает счет за API в 5–10 раз и сокращает задержку ответа с 15 секунд до 2 секунд.',
+    faqQ4: '4. Как ИИ понимает, какой индекс какому элементу принадлежит?',
+    faqA4: 'ИИ считывает координаты напрямую из реестра UTYANSKY_INDEX_REGISTRY.json или inline-атрибутов data-idx DOM-дерева. Пятизначный индекс детерминирован и не сдвигается при редактировании соседних файлов.',
+    faqQ5: '5. Чем Индекс Утянского отличается от AST-парсеров и эмбеддингов кодовой базы?',
+    faqA5: 'AST видит объявления функций, но слеп в визуальном UI, где на экране может быть 15 одинаковых кнопок. data-idx="71080" связывает визуальный элемент напрямую с аналитикой, вебхуками amoCRM и серверными логами.',
+    faqQ6: '6. Чем Индекс отличается от Hashline и протокола MCP?',
+    faqA6: 'Хэш строки слетает от любого добавленного пробела или переноса строки. MCP — это транспорт вызова инструментов. Индекс Утянского — это сквозная шина детерминированной адресации на всем жизненном цикле софта.',
+    faqQ7: '7. «Современные LLM уже не ломают код» — правда ли это без Индекса?',
+    faqA7: 'В маленьких файлах на 50 строк это так. Но в реальных проектах на 1000+ строк модели ленятся генерировать весь файл и вставляют // rest of code unchanged. Координатный каркас Индекса Утянского физически исключает эту проблему.',
+    faqQ8: '8. Работает ли Индекс в сложных инженерных доменах (САПР, 1С, CRM)?',
+    faqA8: 'Да. Индекс Утянского изначально проектировался как кросс-стек мост: координаты связывают React DOM, воркеры Python, 1С, amoCRM, PostgreSQL pgvector и метаданные САПР в единую экосистему.',
+    faqQ9: '9. Почему файлы правил стандарта пишутся заглавными буквами (AGENTS.md, README.md)?',
+    faqA9: 'Файлы с заглавным регистром получают наивысший приоритет индексации во всех современных AI IDE (Cursor, Windsurf, Claude Code, Antigravity).',
+    faqQ10: '10. Как внедрить Индекс в уже существующий Legacy-проект?',
+    faqA10: 'Переписывать код с нуля не нужно: добавьте файл правил в .cursorrules / AGENTS.md, разметьте активный экран пятизначными data-idx="7XXXX" и проверьте уникальность через валидатор node examples/validate-index.js.',
+    faqQ11: '11. Что происходит при Git Merge Conflict, если два разработчика добавили одинаковый индекс?',
+    faqA11: 'Встроенный CLI-валидатор validate-index.js подключается в git pre-commit hook и за 0.1 секунды блокирует коммит с ошибкой [ERR: 40102] до разрешения коллизии.',
+    faqQ12: '12. Как Индекс взаимодействует с TypeScript, Tailwind CSS и CSS-in-JS?',
+    faqA12: 'Атрибуты data-idx="71080" и data-desc="..." являются официальным стандартом W3C HTML5 dataset. Они на 100% поддерживаются в TypeScript JSX и не конфликтуют с утилитарными классами Tailwind.',
+    faqQ13: '13. Увеличивает ли data-idx размер бандла и снижает ли Core Web Vitals?',
+    faqA13: 'Влияние равно 0.00%. Пятизначные текстовые атрибуты добавляют менее 0.04% к HTML и полностью сжимаются алгоритмами Gzip/Brotli.',
+    faqQ14: '14. Как связать клик кнопки [IDX: 71080] с Яндекс.Метрикой и GA4?',
+    faqA14: 'Один глобальный слушатель document.addEventListener("click", e => ...) перехватывает target.dataset.idx и автоматически отправляет цели в аналитику без сотен ручных gtag().',
+    faqQ15: '15. Защищает ли Индекс от Prompt Injection и взлома мульти-агентных систем?',
+    faqA15: 'Да. Воркеры жестко изолированы в своих диапазонах (например, Поддержка в 20000–29999). Попытка выполнить команду из системного ядра 10000 немедленно прерывается ошибкой [ERR: 40301].',
+    faqQ16: '16. Как писать E2E тесты в Playwright и Cypress по Индексу?',
+    faqA16: 'Индекс Утянского — самый надежный селектор в мире: page.locator("[data-idx=71080]").click(). Тесты не ломаются при редизайне или переименовании CSS-классов.',
+    faqQ17: '17. Можно ли использовать Индекс в чистом Backend (Go / Rust / Python FastAPI)?',
+    faqA17: 'Да. Микросервисы передают координаты через стандартные заголовки X-Utyansky-Coordinate: 20150, обеспечивая сквозную трассировку от кнопки в браузере до SQL базы данных.',
+    faqQ18: '18. Как Индекс упрощает рефакторинг монолитов на 100 000+ строк?',
+    faqA18: 'Границы легаси-блоков оборачиваются в координатные шлюзы [IDX: 95000-LEGACY-AUTH]. ИИ-агенты уважают границы легаси и не ломают скрытые зависимости.',
+    faqQ19: '19. Нужно ли индексировать абсолютно каждый <div> или только интерактивные блоки?',
+    faqA19: 'Индексируются только функциональные узлы: кнопки, формы, карточки данных и контейнеры доменов. Декоративные обертки остаются чистыми.',
+    faqQ20: '20. Как Индекс Утянского интегрируется с Model Context Protocol (MCP)?',
+    faqA20: 'MCP выступает транспортом вызова инструментов, а Индекс Утянского предоставляет детерминированную карту координат для маршрутизации MCP-инструментов.',
+
+    navVideo: '🎬 Видео',
+    navMission: '💡 Миссия',
+    navPains: '💥 7 Болей & ROI',
+    navAudit: '🤖 9 ИИ (G9)',
+    navPrinciples: '🧱 Принципы',
+    navBenefits: '⚡ Выгоды',
+    navCases: '📦 Кейсы',
+    navTable: '🗺️ 9 Доменов',
+    navCode: '🧩 Код',
+    navMarketing: '📊 Маркетинг UVWI',
+    navPricing: '⚖️ Тарифы',
+    navFaq: '❓ FAQ (20)',
+    navContacts: '📞 Контакты',
+
+    contactsTitle: 'Связь с Автором и Внедрение',
+    contactsSub: 'Обсудить интеграцию Индекса Утянского в ваши проекты, аудит кодовой базы или корпоративное обучение',
+    contactTg: '💬 Telegram (@vau_amoCRM)',
+    contactMax: '⚡ Мессенджер MAX',
+    contactSite: '🌐 Официальный сайт',
+    contactGit: '🐙 Репозиторий на GitHub',
+    
+    footerAuthorLabel: 'Автор и Разработчик стандарта:',
+    footerAuthorName: 'Утянский Владислав Анатольевич',
+    footerAuthorRole: 'Основатель VAU EFFECT | Создание сайтов с 1996 г. | Маркетинг с 2002 г. | ИИ-системы с 2022 г. | Партнер amoCRM',
+    cookieText: 'Мы используем cookie для персонализации и анализа трафика. Продолжая использовать сайт, вы соглашаетесь с политикой конфиденциальности.',
+    cookieBtn: 'Принять',
+    cookiePolicy: 'Политика конфиденциальности',
+    footerRights: '© 2026 <a href="https://vau.ru" target="_blank" class="hover:text-blue-400 underline">Инженерное бюро VAU EFFECT</a> <a href="https://bio.utyanskiy.ru" target="_blank" class="hover:text-sky-300 underline font-semibold">Владислава Утянского</a> · Архитектурный регламент <a href="https://index.utyanskiy.ru" class="text-sky-400 font-semibold hover:underline">«Индекс Утянского v2.0»</a> (Заявка Роспатент РФ № 2026603415)'
+  },
+  en: {
+    badge: '🛡️ AUTHOR SPECIFICATION: ROSPATENT RF APPLICATION № 2026603415',
+    heroTitle1: 'Stop Searching. ',
+    heroTitle2: 'Start Addressing.',
+    heroDesc: 'The Utyansky Index is an end-to-end 5-digit coordinate industrial standard (10000–99999) unifying software engineering, React DOM, multi-agent AI, video production, pgvector memory, and quantitative marketing (UVWI) into a single deterministic coordinate space.',
+
+    navTrackTitle: '🧭 CHOOSE YOUR TRACK FOR FAST NAVIGATION:',
+    navBusinessBtn: '💼 For Executives (7 Pains, ROI) ➔',
+    navTechBtn: '⚙️ For Developers & Architects (9 Domains, Code) ➔',
+    navTrackSub: '⚡ Click to immediately jump to your preferred architecture section',
+
+    newTgBadge: '🚀 NEW: TELEGRAM BOTS & VIBE-CODING (20.09.2026)',
+    newTgTitle: 'Telegram Bot Architecture: 64-Byte Bypass & Zero Regression',
+    newTgDesc: 'How to build multi-screen resilient Telegram bots with AI and 1 developer. Compact slot addressing (12–22 bytes), bypassing BUTTON_DATA_INVALID, and integrated 360° customer dossier ("Microscope").',
+    newTgBtn: '📖 Read Full Research & Case Study ➔',
+    newTgRepoBtn: '💻 Open Standard on GitHub ➔',
+
+    videoTitle: 'OFFICIAL ARCHITECTURE PRESENTATION (5 MINUTES)',
+    btnRu: 'Russian version (RU)',
+    btnEn: 'English version (EN)',
+    videoHint: '💡 Turn on audio. Standard author Vladislav Utyansky demonstrates coordinate navigation on the interactive whiteboard.',
+
+    missionTag: '💡 OUR MISSION',
+    missionTitle: 'Why Did We Create the Utyansky Index?',
+    missionSubtitle: 'To eliminate stochastic AI chaos and provide developers and autonomous agents with a shared precision language.',
+    m1Title: '1. Determinism over Guesswork',
+    m1Desc: 'No more vague prompts like "find that blue button below". Rigid 5-digit coordinates.',
+    m2Title: '2. End-to-End Connectivity',
+    m2Desc: 'One number links a DOM button, backend handler, analytics goal, and CRM deal.',
+    m3Title: '3. Token Budget Efficiency',
+    m3Desc: '85% token reduction by feeding isolated coordinate slots instead of entire files.',
+    m4Title: '4. Production Stability',
+    m4Desc: '0% regressions. AI physically cannot break code outside its assigned slot boundary.',
+    missionResult: 'Result: 10x–20x acceleration in bug fixes, feature delivery, and onboarding.',
+
+    problemTitle: 'Stochastic Chaos vs Deterministic Coordinates',
+    problemSub: 'Comparison between traditional AI coding guess-work and the Utyansky Index architecture',
+    tradTag: 'TRADITIONAL VIBE CODING (NO INDEX)',
+    tradTitle: '❌ Stochastic Search & Blurry Context',
+    tradDesc: 'Developer prompts in natural prose: "Make the button wider". AI reads the whole project, burns 150k tokens, accidentally deletes adjacent features, and leaves // rest of code.',
+    tradBullet1: '• Context rot as repository grows',
+    tradBullet2: '• Accidental code regressions and breakages',
+    tradBullet3: '• Exploding API token bills',
+    utyTag: 'UTYANSKY INDEX STANDARD v2.0',
+    utyTitle: '✅ Direct Coordinate Addressing & Isolation',
+    utyDesc: 'Element has coordinate passport data-idx="71080". You command: "In slot 71080 adjust width". AI edits strictly 2 lines inside that isolated container. 0% breakages.',
+    utyBullet1: '• Direct O(1) jump to target code lines',
+    utyBullet2: '• 100% isolation: surrounding code remains untouched',
+    utyBullet3: '• Token consumption reduced by up to 85%',
+
+    bizAnalogyBadge: '🏠 EXECUTIVE ANALOGY',
+    bizAnalogyTitle: 'Why Vibe Coding Without the Index Breaks Your Business?',
+    bizAnalogyChaosTitle: '❌ Vibe Coding Without Index (Blind Chaos):',
+    bizAnalogyChaosText: 'Like a renovation crew working without blueprints. You ask to "hang a painting", and the worker drills right into hidden electrical wires, blacking out the entire building. Or like a massive warehouse where 1,000,000 items are dumped in one pile — to find one box, 20 workers rummage through the entire warehouse, burning payroll and time.',
+    bizAnalogyIndexTitle: '✅ Engineering with Utyansky Index (Determinism):',
+    bizAnalogyIndexText: 'Every pipe and outlet has an exact coordinate blueprint. In the warehouse, every item has a strict 5-digit bin coordinate (Aisle 7, Rack 10, Shelf 80). A robot retrieves the exact box in 1 second without touching neighbors. AI edits strictly 2 target lines without breaking UI.',
+
+    painsBadge: '💥 7 DEADLY VIBE CODING SINS',
+    painsTitle: '7 Major AI Coding Pains and How the Index Resolves Them',
+    painsSub: 'Real quotes from founders and engineers across Reddit, Hacker News, and VC with calculated financial losses',
+
+    pain1Title: '1. 🏚️ House of Cards Effect (Over-editing & Accidental Deletions)',
+    pain1Quote: '«The first 3 prompts are pure magic! But once the codebase grows past a single screen, it becomes a nightmare. You ask: "Change button color", and AI rewrites the entire 1000-line file, deleting working functions and leaving // rest of code unchanged. Screen goes blank!»',
+    pain1Loss: 'Losses: Senior engineer wastes 20–40 billable hours manually rolling back commits and hunting vanished code.',
+    pain1Solve: 'Solution: Isolated slot data-idx="71080". AI sees and modifies strictly 40 lines of that component. 0% collateral damage.',
+
+    pain2Title: '2. 🧠 Context Rot & Lost in the Middle',
+    pain2Quote: '«After 10-15 chat turns, the model gets sluggish, forgets database schemas, confuses variable names, and suggests solutions we rejected hours ago.»',
+    pain2Loss: 'Losses: Architecture degradation, compounding tech debt, and restarting AI chats from scratch every half day.',
+    pain2Solve: 'Solution: Coordinate map UTYANSKY_INDEX_REGISTRY.json. Deterministic O(1) jump without bloating context.',
+
+    pain3Title: '3. 💸 Token Bleed & Exploding API Bills',
+    pain3Quote: '«Vibe coding turned out shockingly expensive! To tweak 2 lines, the assistant re-reads 50 files, burning 150k tokens per prompt. Monthly API bills hit $1,500 in 2 weeks.»',
+    pain3Loss: 'Losses: 5x–10x direct budget waste on LLM API calls with zero speed gain.',
+    pain3Solve: 'Solution: Feeding isolated coordinate slots (30–50 lines). Up to 85% token savings and 2-second response latency.',
+
+    pain4Title: '4. 🍝 Spaghetti Architecture & Fragile Illusions',
+    pain4Quote: '«A non-coder built a working prototype in 2 days. When 100 real customers arrived, everything crashed. We looked under the hood — a spaghetti soup of styles, queries, and hooks. Developers refused to touch it: "Easier to rewrite from scratch".»',
+    pain4Loss: 'Losses: 100% write-off of initial MVP investment and disrupted launch milestones.',
+    pain4Solve: 'Solution: "Iron Dome" architecture — 9 rigid domain ranges (10000–99999) and 10 independent SQL slots. Industrial order from day one.',
+
+    pain5Title: '5. 🔄 The Loop of Death (Endless Regression Ping-Pong)',
+    pain5Quote: '«You prompt: "Button shifted left". AI fixes button, but breaks modal dialog. You prompt: "Fix modal" — button shifts again. 30 iterations in circles until nerves run out.»',
+    pain5Loss: 'Losses: Slipped deadlines, founder burnout, and engineering paralysis.',
+    pain5Solve: 'Solution: STATUS: OK immune verification and active block auto-audit. Total immunity against styling regressions.',
+
+    pain6Title: '6. 👻 Phantom Databases & Data Loss Hallucinations',
+    pain6Quote: '«AI proudly announced customer orders were saved. A week later we discovered it stored orders in a temporary RAM array that wiped on server reboot. Database was a pure fiction!»',
+    pain6Loss: 'Losses: Lost customer orders, database corruption, and reputational damage.',
+    pain6Solve: 'Solution: 10 physical SQL slots in Supabase/PostgreSQL schema instead of unvalidated JSON blobs.',
+
+    pain7Title: '7. 🔒 Project Death upon Tool or Developer Handoff',
+    pain7Quote: '«Built a project in one AI tool. Opened in another — it understood nothing and started rewriting everything. Hired a freelancer — he was horrified and doubled his rate.»',
+    pain7Loss: 'Losses: Critical vendor lock-in, project freeze, and massive onboarding friction.',
+    pain7Solve: 'Solution: Open standard .cursorrules / AGENTS.md. Any AI agent or engineer reads the project coordinate map in 5 minutes.',
+
+    roiBadge: '📊 ECONOMIC ROI & PAYBACK',
+    roiTitle: 'Payback Comparison: Before vs After Utyansky Index',
+    roiSub: 'Concrete measurable speedup and budget optimization metrics',
+    roiColMetric: 'Metric',
+    roiColBefore: '❌ Without Index (Chaos)',
+    roiColAfter: '✅ With Utyansky Index',
+    roiColBenefit: '💰 Business Gain',
+    roiRow1M: 'Single Bugfix / Tweak Time',
+    roiRow1B: '30–60 mins (with bugs)',
+    roiRow1A: '2–3 mins',
+    roiRow1E: '10x–20x Acceleration',
+    roiRow2M: 'AI API Token Costs',
+    roiRow2B: '100% (up to $1,500 / mo)',
+    roiRow2A: '15–20% (up to $200 / mo)',
+    roiRow2E: 'Up to 85% Token Savings',
+    roiRow3M: 'UI Regression Breakages',
+    roiRow3B: '35–50% prompts break UI',
+    roiRow3A: '0% breakages',
+    roiRow3E: '100% Production Stability',
+    roiRow4M: 'Onboarding New Dev / AI',
+    roiRow4B: '3–5 business days',
+    roiRow4A: '15 mins (via registry)',
+    roiRow4E: '40h Senior Time Saved',
+
+    g9Badge: '🤖 INDEPENDENT STRESS TEST: GLOBAL AI COUNCIL (G9)',
+    g9Title: '9 Frontier Global AIs Confirmed Utyansky Index Architecture',
+    g9Sub: 'A rigorous double-blind stress test was executed across the 9 most powerful AI systems on Earth (USA, China, Russia). Zero marketing, zero bias: verified token economics, 40-line slot isolation, and strict codebase verification.',
+    g9BannerTitle: '🎯 100% UNANIMOUS CONSENSUS ACROSS 9 GLOBAL AI LABS:',
+    g9BannerText: 'All 9 independent frontier systems unanimously agreed: 5-digit coordinate slots physically eliminate code deletion (// rest of code unchanged), block hallucinations, and mathematically ground up to 85% token cost reduction.',
+    g9FormulaTitle: '🏛️ THE GOLDEN ENGINEERING FORMULA OF SAFE AI CODING (G9 SYNTHESIS):',
+    g9FormulaText: '«RAG helps find; LSP helps understand; IDX helps accurately address and restrict; TypeScript & tests help verify; CI enforces the rules.»',
+    g9FormulaSub: 'Perplexity AI & Grok Axiom: «Restrict not the intelligence of the model, but its mutable surface area (Write-Authorization Layer)».',
+    g9BlindBadge: '🔬 VERIFY YOURSELF IN 30 SECONDS',
+    g9BlindTitle: 'Protocol for Skeptics: Verify in any AI right now',
+    g9BlindDesc: 'Do not take our word for it! Below is a completely neutral, zero-bias technical prompt. Copy it with one click and submit to any frontier AI (Elon Musk Grok, ChatGPT, Claude, DeepSeek, Google Gemini, or Alice) to independently verify, confirm, or challenge the system:',
+    g9BlindCopyBtn: '📋 Copy neutral verification prompt',
+    g9BlindCopied: '✅ Copied to clipboard! Paste into any AI model',
+    g9RepoBtn: '🐙 View official peer-review report on GitHub ➔',
+
+    principlesTitle: 'Three Fundamental Architectural Principles',
+    principlesSub: 'Engineering foundation for industrial invulnerability and scalability',
+    p1Title: 'LEGO Compatibility',
+    p1Desc: 'Modules snap together automatically via identical 5-digit coordinate slots.',
+    p1BadTitle: 'Without Index:',
+    p1BadText: 'Fragile custom glue code breaks upon every API schema change.',
+    p1Solve: '✓ 100% component compatibility by pin numbers.',
+    p2Title: 'Cross-Stack Address Bus',
+    p2Desc: 'Universal highway connecting React DOM, Python, Rust, amoCRM, and SQL.',
+    p2BadTitle: 'Without Index:',
+    p2BadText: 'AI blurs stack boundaries and generates incompatible interfaces.',
+    p2Solve: '✓ Precise glue code generated in <1s for slot [IDX: 98100].',
+    p3Title: 'Aerospace Reliability',
+    p3Desc: 'Modular invulnerability and hot-swapping blocks with Zero Downtime. O(1) addressing — instant 1-step targeting of any node.',
+    p3BadTitle: 'Without Index:',
+    p3BadText: 'Refactoring a scraper breaks auth and crashes production.',
+    p3Solve: '✓ O(1) addressing: hot-swap node 20100 on the fly in 1 step with zero downtime.',
+
+    benefitsTitle: 'Measurable Production Results',
+    benefitsSub: 'Concrete business and engineering metrics verified in live production',
+    b1Num: '5–7x',
+    b1Title: 'API Token Cost Reduction',
+    b1Desc: 'AI assistant does not re-read the entire project; it jumps directly to target lines.',
+    b1Analogy: '📖 In simple terms: Instead of re-reading an entire 1000-page book for one sentence, AI opens page 42 directly.',
+    b2Num: '40%',
+    b2Title: 'Payroll Economy & Speed',
+    b2Desc: 'Engineers no longer waste billable hours explaining visual context to AI.',
+    b2Analogy: '⏱️ In simple terms: Developer does not write vague prompts for 30 minutes. Direct command by index delivers in 3 mins.',
+    b3Num: 'O(1)',
+    b3Title: '3-Second Direct Debugging',
+    b3Desc: 'Every error trace includes an index. AI localizes and patches bugs in 1 prompt.',
+    b3Analogy: '🧥 In simple terms (Coat Check): With ticket #405 you receive your coat in 1 second instead of waiting 15 minutes.',
+    b4Num: '100%',
+    b4Title: 'Zero Hallucinations',
+    b4Desc: 'Per-paragraph micro-indexing prevents missed requirements and phantom logic.',
+    b4Analogy: '🔒 In simple terms: AI physically cannot hallucinate — it must fulfill rigid numbered slots [21101, 21102...].',
+
+    casesTitle: 'Real Production Case Studies',
+    casesSub: 'Documented proofs from the VAU-OS Content Factory development',
+
+    tableTitle: 'Periodic Table of Domains (10000 – 99999)',
+    tableSub: '1557+ physical slots registered in the live production system',
+    tableSearch: 'Search by index or name...',
+
+    techCodeTag: '🧩 CODE IMPLEMENTATION & PATTERNS',
+    techCodeTitle: 'Integration Snippets: React, Babel AST, Python & Playwright',
+    techCodeSub: 'Production-ready code snippets for deterministic coordinate integration across your tech stack',
+
+    codeTab1: 'React DOM (JSX)',
+    codeTab2: 'Babel AST Plugin',
+    codeTab3: 'Python FastAPI',
+    codeTab4: 'Playwright E2E',
+
+    marketingSectionTag: '📊 APPLIED DOMAINS & USE CASES',
+    marketingSectionTitle: 'Applied Use of the Utyansky Index in Marketing',
+    marketingSectionSub: 'How the 5-digit coordinate standard translates audience emotions into mathematical ROI',
+    mPainTitle: '❌ Traditional Marketing Pain (Subjective Guessing):',
+    mPainText: 'Marketers often claim: "Our new video triggered massive excitement in social media!". But when executives ask: "What is the concrete financial number? What is our Emotional ROI?", nobody can answer. Likes and views are easily inflated, while authentic customer loyalty remains unmeasured.',
+    mSolutionTitle: '✅ The Utyansky Index Solution (Deterministic Sentiment Scoring):',
+    mSolutionText: 'Through a unified coordinate grid, AI parses thousands of customer comments into strict 5-digit slots. Genuine buying intent is recorded in slot [IDX: 21303], criticism in [21304], and total reach in [92020]. Marketing finally gains an exact mathematical formula for viral WOW-resonance.',
+
+    mCasesTitle: '🏢 3 Real-World Enterprise Use Cases for UVWI:',
+    mCase1Title: '1. 🏗️ Construction & Luxury Renovation',
+    mCase1Desc: 'A video walkthrough reached 10,000 views. Regular analytics say 10k views. Utyansky Index identified 3,500 confirmed quote requests and delights. UVWI = 35.0% proves 1 in every 3 viewers is a qualified multi-million deal lead.',
+    mCase2Title: '2. 🛡️ Influencer Fraud Detection Before Ad Spend',
+    mCase2Desc: 'An influencer with 100,000 views asks $1,500. UVWI scan shows only 50 genuine buyer inquiries (UVWI = 0.05% — bot fraud). A niche creator with 10,000 views has 2,000 inquiries (UVWI = 20.0% — 10x ROI).',
+    mCase3Title: '3. 🍔 Restaurant & Local Hospitality Business',
+    mCase3Desc: 'A delicious food reel reached 50,000 views. 6,000 users shared with friends saying let go tonight and clicked reservations. UVWI = 12.0% tells the chef to stock fresh supplies for an upcoming full house.',
+    presetBtn1: '🏗️ Case 1: Construction (10k / 3.5k)',
+    presetBtn2: '🛡️ Case 2: Bot Influencer (100k / 50)',
+    presetBtn3: '🍔 Case 3: Restaurant (50k / 6k)',
+
+    calcTag: '[IDX: 85010] INTERACTIVE TOOL',
+    calcTitle: 'Viral Wow Index Calculator (UVWI)',
+    calcSub: 'Calculate the deterministic viral resonance score for your campaign or brand:',
+    calcReach: 'Total Audience Reach (Impressions / Views / Readers):',
+    calcWow: 'Number of Verified Positive WOW Responses (Leads / Delights / Quote Requests):',
+    calcRes: 'Calculated UVWI Score:',
+    calcFormula: 'Mathematical Formula: UVWI [85010] = (Positive_Responses [21303] / Total_Reach [92020]) * 100%',
+    calcVerdict: 'Viral WOW Resonance Score',
+
+    pricingBadge: '⚖️ TRANSPARENT PRICING & ADOPTION',
+    pricingTitle: 'Integrate the Utyansky Index Into Your Codebase',
+    pricingSub: 'Choose your collaboration format — from free Open-Source to turnkey codebase audit and SLA',
+
+    tier1Title: 'Community Edition',
+    tier1Price: '0 ₽ (Free)',
+    tier1For: 'For independent developers, students, open-source projects & early startups',
+    tier1F1: 'Open 5-digit coordinate grid (10000–99999)',
+    tier1F2: 'React DOM component tagging (data-idx="7XXXX")',
+    tier1F3: 'Rule templates for Cursor, Claude Code, Windsurf',
+    tier1F4: 'MIT License: completely free to use',
+    tier1Btn: 'Open on GitHub',
+
+    tier2Title: 'Turnkey Express Integration',
+    tier2Price: 'from 120 000 ₽',
+    tier2Period: 'one-time',
+    tier2For: 'For startups and teams with an existing vibe coding MVP',
+    tier2F1: 'Express codebase audit for hidden regressions and leaks',
+    tier2F2: 'Full 5-digit coordinate indexing of UI and backend',
+    tier2F3: 'Generation of master UTYANSKY_INDEX_REGISTRY.json',
+    tier2F4: 'Pre-commit validation setup and tailored AI rulebook',
+    tier2Btn: 'Order Express Audit',
+
+    tier3Title: 'Monthly SLA & Engineering Center',
+    tier3Price: 'from 5 000 ₽ / mo',
+    tier3For: 'Small Business (5-10k) | Mid-Market (25-45k) | Enterprise (90-150k)',
+    tier3F1: 'Continuous registry maintenance for new feature releases',
+    tier3F2: 'Context hygiene enforcement & AI regression prevention',
+    tier3F3: 'API token optimization (cutting token bills by up to 85%)',
+    tier3F4: 'VAU EFFECT Engineering Center supervised directly by standard author Vladislav Utyansky',
+    tier3Btn: 'Subscribe to SLA',
+
+    ctaAuditBtn: '📊 Get Express Codebase Audit & ROI Calculation in Telegram ➔',
+
+    faqTitle: 'Frequently Asked Questions (TOP-20 FAQ)',
+    faqSub: '20 comprehensive engineering answers on Utyansky Index architecture',
+    faqQ1: '1. Why is the Utyansky Index better than Graph RAG and Long-Term Memory?',
+    faqA1: 'Knowledge graphs show WHAT is connected, but are blind inside 1000-line files. The Utyansky Index is the "apartment number on the door": it assigns rigid 5-digit coordinates [10000–99999] and protects surrounding code from accidental AI overwrites.',
+    faqQ2: '2. What are the measurable results of adopting the Utyansky Index (BEFORE vs AFTER)?',
+    faqA2: '1) Zero code regressions: 0% accidental UI breakage. 2) Token efficiency: up to 85% savings via isolated 5-digit coordinate slots. 3) Prompt simplicity: 1-line commands instead of lengthy position descriptions.',
+    faqQ3: '3. How does the Utyansky Index save token budgets across different LLM tiers?',
+    faqA3: 'On fast models (Flash, Haiku), the Utyansky Index eliminates hallucinations for top quality. On frontier models (Claude 3.5, GPT-4o), sending a 40-line slot instead of 1500 lines cuts API bills by 5–10x and reduces latency from 15s to 2s.',
+    faqQ4: '4. How does AI know the Utyansky Index slot without hallucinating?',
+    faqA4: 'AI reads coordinates directly from UTYANSKY_INDEX_REGISTRY.json or in-place data-idx DOM tags. In the Utyansky Index standard, coordinates are deterministic integers that never shift randomly.',
+    faqQ5: '5. How does the Utyansky Index differ from AST symbol parsers and Codebase Indexing?',
+    faqA5: 'AST sees class definitions but is blind in visual UI where 15 identical buttons exist. Utyansky Index data-idx="71080" gives a physical coordinate passport linking UI directly to CRM webhooks and backend logs.',
+    faqQ6: '6. How does the Utyansky Index differ from Hashline and MCP protocol?',
+    faqA6: 'Line hashes break upon any whitespace change. MCP is a tool calling transport protocol. The Utyansky Index is a system-wide deterministic coordinate address bus across the full software lifecycle.',
+    faqQ7: '7. "Modern LLMs do not break code anymore" — is that true without Utyansky Index?',
+    faqA7: 'In tiny 50-line files LLMs are reliable. But in 1000+ line production files, models truncate code as "// rest of code unchanged". The Utyansky Index coordinate cage physically eliminates this flaw.',
+    faqQ8: '8. Does the Utyansky Index work in complex engineering domains (CAD, 1C, CRM)?',
+    faqA8: 'Yes. The Utyansky Index was designed as a cross-stack highway connecting React DOM, Python workers, 1C, amoCRM, PostgreSQL pgvector, and CAD metadata.',
+    faqQ9: '9. Why are Utyansky Index rule files capitalized (AGENTS.md, README.md)?',
+    faqA9: 'Uppercase filenames receive highest priority indexing across major AI IDE parsers (Cursor, Windsurf, Claude Code, Antigravity).',
+    faqQ10: '10. How to adopt the Utyansky Index in an existing codebase?',
+    faqA10: 'Zero rewrite needed: paste AI_SYSTEM_PROMPT.md into .cursorrules / AGENTS.md, tag active components with data-idx="7XXXX", and validate uniqueness via node examples/validate-index.js.',
+    faqQ11: '11. What happens during a Git Merge Conflict if duplicate data-idx coordinates are added?',
+    faqA11: 'The built-in CLI validator validate-index.js integrates into your pre-commit pipeline (Husky/Git hooks) to halt commits with [ERR: 40102] in 0.1s upon coordinate collisions.',
+    faqQ12: '12. How does the Index interact with TypeScript, Tailwind CSS, and CSS-in-JS?',
+    faqA12: 'data-idx="71080" and data-desc="..." are official W3C HTML5 standard dataset attributes. They are 100% native in TypeScript JSX and never conflict with Tailwind utility classes.',
+    faqQ13: '13. Does data-idx degrade Core Web Vitals, page speed, or bundle size?',
+    faqA13: 'Impact is exactly 0.00%. 5-digit dataset attributes add less than 0.04% to raw HTML, compressing to virtually zero under Gzip/Brotli.',
+    faqQ14: '14. How to link button click [IDX: 71080] directly to Yandex Metrika & GA4 analytics?',
+    faqA14: 'One single event listener document.addEventListener("click", e => ...) captures target.dataset.idx and triggers analytics goals seamlessly.',
+    faqQ15: '15. Does the Index protect against Prompt Injection and Rogue Multi-Agents?',
+    faqA15: 'Yes. Multi-agent workers are locked inside bounded numerical ranges (e.g. Support in 20000–29999), instantly aborting cross-domain injection attempts with [ERR: 40301].',
+    faqQ16: '16. How to write E2E tests for Indexed components in Playwright and Cypress?',
+    faqA16: 'The Utyansky Index is the world most resilient E2E selector: page.locator("[data-idx=71080]").click(). Tests never break during redesigns or CSS renaming.',
+    faqQ17: '17. Can the Index be used in pure Backend microservices (Go / Rust / Python FastAPI)?',
+    faqA17: 'Yes. Microservices pass coordinates via standard tracing headers X-Utyansky-Coordinate: 20150 or annotations, enabling end-to-end tracing from browser to SQL database.',
+    faqQ18: '18. How does the Index simplify 100,000+ line legacy monolith refactoring?',
+    faqA18: 'Wrap legacy boundaries in coordinate slots [IDX: 95000-LEGACY-AUTH]. AI agents respect legacy borders without breaking dependencies.',
+    faqQ19: '19. Must every single <div> be indexed, or only interactive blocks?',
+    faqA19: 'Only functional nodes, buttons, forms, cards, and domain containers are indexed. Decorative styling wrappers remain clean and untouched.',
+    faqQ20: '20. How does Utyansky Index integrate with Model Context Protocol (MCP)?',
+    faqA20: 'MCP is the tool calling transport protocol, while Utyansky Index is the master coordinate map providing deterministic addressing for MCP tool servers.',
+
+    navVideo: '🎬 Video',
+    navMission: '💡 Mission',
+    navPains: '💥 7 Pains & ROI',
+    navAudit: '🤖 9 AIs (G9)',
+    navPrinciples: '🧱 Principles',
+    navBenefits: '⚡ Benefits',
+    navCases: '📦 Cases',
+    navTable: '🗺️ 9 Domains',
+    navCode: '🧩 Code',
+    navMarketing: '📊 Marketing UVWI',
+    navPricing: '⚖️ Pricing',
+    navFaq: '❓ FAQ (20)',
+    navContacts: '📞 Contacts',
+
+    contactsTitle: 'Connect with the Author & Integration',
+    contactsSub: 'Discuss integrating the Utyansky Index into your enterprise workflow or software stack',
+    contactTg: '💬 Telegram (@vau_amoCRM)',
+    contactMax: '⚡ MAX Messenger',
+    contactSite: '🌐 Official Website',
+    contactGit: '🐙 GitHub Repository',
+    
+    footerAuthorLabel: 'Standard Author & Inventor:',
+    footerAuthorName: 'Vladislav Anatolyevich Utyansky',
+    footerAuthorRole: 'Founder of VAU EFFECT | Websites since 1996 | Marketing since 2002 | AI since 2022 | amoCRM Integrator',
+    cookieText: 'We use cookies to enhance site experience and analyze traffic. By continuing to browse, you agree to our privacy policy.',
+    cookieBtn: 'Accept',
+    cookiePolicy: 'Privacy Policy',
+    footerRights: '© 2026 <a href="https://vau.ru" target="_blank" class="hover:text-blue-400 underline">VAU EFFECT Engineering Bureau</a> by <a href="https://bio.utyanskiy.ru" target="_blank" class="hover:text-sky-300 underline font-semibold">Vladislav Utyansky</a> · Architectural Standard <a href="https://index.utyanskiy.ru" class="text-sky-400 font-semibold hover:underline">"Utyansky Index v2.0"</a> (Rospatent RF Application № 2026603415)'
+  }
+};
+
+const DOMAINS_9 = [
+  { range: '10000 - 19999', nameRu: 'Ядро и Маршрутизация (Core & Kernel)', nameEn: 'System Core & Orchestration', count: '240+ узлов', descRu: 'Авторизация, роутинг, глобальная шина событий, middleware, обработка ошибок и системные предохранители (Circuit Breakers).', descEn: 'Authentication, global routing, event bus, core middleware, exception handling, and circuit breakers.' },
+  { range: '20000 - 29999', nameRu: 'Модули Аналитики, Парсинга и AI-Сигналов', nameEn: 'Analytics, AI Signals & Research', count: '380+ узлов', descRu: 'Сбор рыночных данных, парсинг сайтов, анализ поисковых трендов (Wordstat), геосервисы и поабзацная маркировка LLM-генераций.', descEn: 'Market data ingestion, web scrapers, search query trends (Wordstat), geo maps, and per-paragraph LLM micro-indexing.' },
+  { range: '30000 - 39999', nameRu: 'Медиа-цех, Нейрогенерация и Видеомонтаж', nameEn: 'Media, Neural Generation & Voice Studio', count: '190+ узлов', descRu: 'Студия Оскара, сценарные блоки, таймлайны видеомонтажа, синхронизация субтитров, генерация голоса и фотореалистичных ассетов.', descEn: 'Oscar Studio, script blocks, timeline NLE editor, subtitle alignment, neural voice synthesis, and visual rendering.' },
+  { range: '40000 - 49999', nameRu: 'Воркфлоу, Задачи и Конвейеры (Pipelines)', nameEn: 'Workflow, Tasks & Pipeline Engine', count: '210+ узлов', descRu: 'Канбан-доски Контент-Завода, фабрики задач, статусы Studio Pending, валидация этапов и автоматические пайплайны.', descEn: 'Kanban boards, task processing queues, Studio Pending lifecycle, stage validation, and CI/CD pipelines.' },
+  { range: '50000 - 59999', nameRu: 'CRM, Телефония и Лидогенерация', nameEn: 'CRM, Telephony & Lead Management', count: '180+ узлов', descRu: 'Сквозные интеграции amoCRM, распределение сделок, вебхуки, телефония, мессенджеры и фиксация клиентских координат.', descEn: 'End-to-end amoCRM integrations, deal routing, telephony webhooks, messenger bridges, and customer coordinate tracking.' },
+  { range: '60000 - 69999', nameRu: 'Хранилище, Файлы и Базы Данных (Storage & DB)', nameEn: 'Storage, Files & Database Layer', count: '160+ узлов', descRu: 'S3-бакеты, медиа-архивы, миграции таблиц Supabase/PostgreSQL, 10 физических SQL-колонок и файловые шлюзы.', descEn: 'S3 buckets, media file storage, Supabase/PostgreSQL migrations, 10 physical SQL schema columns, and file gateways.' },
+  { range: '70000 - 79999', nameRu: 'Визуальная Сетка Интерфейса (React DOM UI)', nameEn: 'UI/UX React DOM & Tailwind Grid', count: '320+ узлов', descRu: 'Пятизначные координаты data-idx на каждой кнопке, карточке и форме: 100% защита от случайного разрушения верстки.', descEn: '5-digit data-idx coordinates on every button, card, and modal: 100% immunity against accidental UI layout corruption.' },
+  { range: '80000 - 89999', nameRu: 'Мультимодальные Шлюзы и Внешние Устройства', nameEn: 'Multimodal Gateways & Devices', count: '150+ узлов', descRu: 'Интеграция мобильных шлюзов, IoT-устройств, расчет вирусного резонанса UVWI, биллинг и оцифровка ROI.', descEn: 'Mobile device gateways, IoT telemetry, UVWI viral score calculation, billing ledger, and ROI quantification.' },
+  { range: '90000 - 99999', nameRu: 'Супер-Ядро и Векторная Память (pgvector 1.5M+)', nameEn: 'Super-Kernel & pgvector Memory (1B+)', count: '1B+ векторов', descRu: 'Координатное шардирование PostgreSQL pgvector, HNSW-индексы для 1.5M+ записей, процедура match_knowledge и RAG-изоляция.', descEn: 'Coordinate sharding for pgvector, HNSW indexing for 1.5M+ embeddings, match_knowledge RPC, and isolated RAG memory.' }
+];
+
+const REAL_CASES = [
+  {
+    id: 1,
+    titleRu: 'Кейс 1: «ИИ починил одну кнопку и сломал весь экран» (Регрессионный ад)',
+    titleEn: 'Case 1: AI Fixed One Button and Broke the Whole Screen (Regression Hell)',
+    tagRu: 'Боль вайбкодеров: Ломается соседний код',
+    tagEn: 'Vibe Coder Pain: Broken UI Regressions',
+    problemRu: 'Вы просите нейросеть «сделать кнопку чуть шире». ИИ не понимает точных границ блока, переписывает весь файл на 3000 строк, случайно стирает обработчик событий клика и вызывает белый экран ошибки. Разработчик тратит полдня на откат коммитов и починку того, что работало вчера.',
+    problemEn: 'You ask AI to make a button slightly wider. AI does not know exact component boundaries, rewrites the entire 3000-line file, accidentally deletes event handlers, and causes a blank screen crash. You waste hours recovering previously working code.',
+    solutionRu: 'Каждый элемент интерфейса получает точный цифровой паспорт data-idx="71080". Вы говорите: «Поправь кнопку 71080». ИИ меняет строго 2 строчки внутри изолированного контейнера, не имея физического доступа к соседнему коду.',
+    solutionEn: 'Every UI element receives an exact passport coordinate data-idx="71080". You order: Fix button 71080. AI modifies strictly 2 lines inside that isolated container without touching surrounding code.',
+    benefitRu: '0% случайных поломок рабочего интерфейса. Вайбкодинг перестаёт быть игрой в рулетку.',
+    benefitEn: '0% accidental UI regressions. Vibe coding becomes deterministic instead of a guessing lottery.'
+  },
+  {
+    id: 2,
+    titleRu: 'Кейс 2: «Сжигание бюджета инвестора в трубу» (Счета за API и потеря памяти)',
+    titleEn: 'Case 2: Burning API Budgets into the Void (Huge Token Bills & Lost Context)',
+    tagRu: 'Боль бизнеса: Счета за токены и тупняк ИИ',
+    tagEn: 'Business Pain: Exploding API Bills & Amnesia',
+    problemRu: 'Когда проект вырастает больше 30 файлов, обычный ИИ «слепнет». Чтобы ответить на простой вопрос, он перечитывает весь проект целиком, тратит миллионы платных токенов и через 10 сообщений теряет контекст, начиная выдумывать несуществующие функции. Счета за API растут, а разработка встаёт.',
+    problemEn: 'When a codebase exceeds 30 files, AI goes blind. To answer simple prompts, it re-reads the entire project, burns millions of tokens, and after 10 turns loses context and hallucinates fake APIs. API bills skyrocket while progress stalls.',
+    solutionRu: 'Прямая адресная координата O(1): вместо слепого сканирования 100 000 строк кода ИИ сразу открывает точный пятизначный узел [IDX: 80104]. Контекстное окно не забивается мусором, а память остаётся кристально чистой.',
+    solutionEn: 'Deterministic O(1) addressing: instead of scanning 100,000 lines blindly, AI jumps directly to the exact 5-digit node [IDX: 80104]. The context window remains clean with zero memory degradation.',
+    benefitRu: 'Счета за токены и API падают на 85%. Скорость генерации решений возрастает в 5–7 раз.',
+    benefitEn: 'API token expenses drop by 85%. Solution generation speed accelerates by 5–7x.'
+  },
+  {
+    id: 3,
+    titleRu: 'Кейс 3: «Лебедь, рак и щука» (Мульти-агентный хаос и затирание файлов)',
+    titleEn: 'Case 3: Multi-Agent Chaos (Agents Overwriting Each Other Files)',
+    tagRu: 'Боль техлидов: Конфликты нескольких ИИ',
+    tagEn: 'CTO Pain: Conflicting Multi-Agent Workers',
+    problemRu: 'Когда над проектом работают 3 независимых ИИ-агента (один собирает данные, второй пишет бизнес-логику, третий верстает), они начинают затирать файлы друг друга, называть переменные по-разному и плодить нестыковки в форматах данных, приводя проект в состояние хаоса.',
+    problemEn: 'When 3 autonomous AI agents work concurrently (one ingests data, one codes logic, one builds UI), they overwrite each others files, mismatch variable types, and create merge disasters.',
+    solutionRu: 'Единая координатная шина: Агент аналитики пишет строго в диапазон [20000–29999], а Медиа-агент считывает их в [30000–39999]. У каждого агента свой выделенный непересекающийся коридор ответственности.',
+    solutionEn: 'Unified coordinate address bus: Analytics Agent writes strictly to [20000–29999], while Media Agent reads from [30000–39999]. Each worker operates in a strictly isolated non-colliding channel.',
+    benefitRu: '100% слаженная работа команды ИИ-агентов без конфликтов и переписывания чужого кода.',
+    benefitEn: '100% harmonious multi-agent orchestration without file overwrites or merge collisions.'
+  }
+];
+
+const G9_MODELS = [
+  {
+    id: 'grok',
+    name: 'Grok',
+    company: 'xAI / Elon Musk',
+    flag: '🇺🇸',
+    roleRu: 'Ортогональная ось контроля & First Principles',
+    roleEn: 'Orthogonal Axis of Control & First Principles',
+    quoteRu: '«Триада разделяет failure modes: TS — типы, линтеры — стиль, а Индекс — write-authorization layer. Это ось, которую TS и линтеры принципиально не закрывают. Дешёвый гейт 0.006 с превращает prompt-дисциплину в проверяемый инвариант.»',
+    quoteEn: '«The triad separates failure modes: TS catches types, linters catch style, the Index is the write-authorization layer. An axis TS and linters cannot cover. A cheap 0.006s gate turns prompt discipline into a verifiable invariant.»',
+    verdictRu: 'First Principles Консенсус',
+    verdictEn: 'First Principles Consensus',
+    idx: '70811'
+  },
+  {
+    id: 'chatgpt',
+    name: 'ChatGPT',
+    company: 'OpenAI',
+    flag: '🇺🇸',
+    roleRu: 'Парадигма «IDX-Constrained RAG»',
+    roleEn: '«IDX-Constrained RAG» Paradigm',
+    quoteRu: '«RAG отвечает: "Что мне прочитать?", а Индекс отвечает: "Где мне разрешено работать?". Стандарт запирает агента в его контрактной зоне, предотвращая каскадный рефакторинг и затирание кода.»',
+    quoteEn: '«RAG answers: "What should I read?", IDX answers: "Where am I allowed to work?". The standard locks the agent inside its contract zone, stopping cascading refactors and code deletion.»',
+    verdictRu: 'Признание парадигмы RAG',
+    verdictEn: 'Paradigm Recognition',
+    idx: '70812'
+  },
+  {
+    id: 'claude',
+    name: 'Claude 3.5',
+    company: 'Anthropic',
+    flag: '🌐',
+    roleRu: 'Адресный склад vs 15 одинаковых кнопок',
+    roleEn: 'Warehouse Slotting vs 15 Identical Buttons',
+    quoteRu: '«Когда в проекте 15 одинаковых кнопок, семантический RAG путает контекст. Координатный паспорт решает задачу как адресная ячейка на складе. Здравая практика, колоссально экономящая ресурсы на масштабе.»',
+    quoteEn: '«When an app has 15 identical buttons, semantic RAG gets confused. A coordinate passport acts like a fulfillment warehouse slot. Sound engineering that saves colossal developer-hours at scale.»',
+    verdictRu: '9 / 10 (Здравая практика)',
+    verdictEn: '9 / 10 (Sound Engineering)',
+    idx: '70813'
+  },
+  {
+    id: 'deepseek',
+    name: 'DeepSeek',
+    company: 'China AI Lab',
+    flag: '🇨🇳',
+    roleRu: 'Принцип наименьших привилегий (Least Privilege)',
+    roleEn: 'Principle of Least Privilege',
+    quoteRu: '«Принцип наименьших привилегий. Радикально снижает энтропию токенов. Экономия 80–85% консервативна (на практике до 99.3%). Сначала контроль, потом интеллект. Безусловно внедрять!»',
+    quoteEn: '«Principle of Least Privilege. Radically slashes token entropy. 80–85% savings is conservative (empirically up to 99.3%). First control, then intelligence. Unconditionally adopt!»',
+    verdictRu: '10 / 10 (Безусловно внедрять)',
+    verdictEn: '10 / 10 (Unconditionally Adopt)',
+    idx: '70814'
+  },
+  {
+    id: 'qwen',
+    name: 'Qwen 2.5',
+    company: 'Alibaba Cloud',
+    flag: '🇨🇳',
+    roleRu: 'Математическое O(1) и BEM для эпохи LLM',
+    roleEn: 'Mathematical O(1) & BEM for LLM Era',
+    quoteRu: '«Единственное математически доказуемое решение O(1) изоляции контекста для AI-агентов. Доказано превосходит LSP, диапазоны строк в MCP и векторный поиск. Все замечания сняты!»',
+    quoteEn: '«The only mathematically provable O(1) context isolation solution for AI agents. Conclusively outperforms LSP, MCP line ranges, and vector search. Objections withdrawn!»',
+    verdictRu: 'BEM для эпохи LLM (Принято)',
+    verdictEn: 'BEM for AI Era (Accepted)',
+    idx: '70815'
+  },
+  {
+    id: 'gemini',
+    name: 'Google Gemini',
+    company: 'Google / Alphabet',
+    flag: '🇺🇸',
+    roleRu: '«DNS для кода» & AST-инвариант',
+    roleEn: '«DNS for Code» & AST Invariant',
+    quoteRu: '«DNS для кода: сквозная адресация от UI до бэкенда. Экономия 84% строго доказана формулой. Стабильность data-idx абсолютна и иммунна к сдвигам строк (логический AST UUID).»',
+    quoteEn: '«DNS for code: cross-stack addressing from UI to backend. 84% economy mathematically proven. data-idx is absolute and immune to line shifts (persistent AST node UUID).»',
+    verdictRu: '8.8 / 10 (Структура знаний)',
+    verdictEn: '8.8 / 10 (Knowledge Invariant)',
+    idx: '70816'
+  },
+  {
+    id: 'perplexity',
+    name: 'Perplexity AI',
+    company: 'Perplexity',
+    flag: '🇺🇸',
+    roleRu: 'Write-Authorization Layer & Change Contracts',
+    roleEn: 'Write-Authorization Layer & Change Contracts',
+    quoteRu: '«Слой авторизации записи кода. Сжатие blast radius и экономия 82.5% подтверждены математикой. Сформулирована Золотая Формула: RAG ищет, LSP понимает, IDX ограничивает, TS проверяет, CI принуждает!»',
+    quoteEn: '«Write-Authorization Layer for code. Blast radius reduction and 82.5% token savings verified. Formulated Golden Formula: RAG finds, LSP understands, IDX restricts, TS verifies, CI enforces!»',
+    verdictRu: '8.0 / 10 (Production-Архитектура)',
+    verdictEn: '8.0 / 10 (Production Architecture)',
+    idx: '70817'
+  },
+  {
+    id: 'gigachat',
+    name: 'GigaChat',
+    company: 'Сбербанк',
+    flag: '🇷🇺',
+    roleRu: 'Промышленный протокол O(1) & E2E-селекторы',
+    roleEn: 'Industrial Protocol O(1) & E2E Selectors',
+    quoteRu: '«Это не магия алгоритмов, а грамотный промышленный протокол. Сужение поля зрения до 40 строк физически исключает галлюцинации и экономит до 85% токенов. Неубиваемый E2E-селектор для Playwright.»',
+    quoteEn: '«Not an algorithmic gimmick, but a solid industrial protocol. A 40-line slot physically eliminates hallucinations and cuts tokens by up to 85%. Unbreakable E2E selector for Playwright.»',
+    verdictRu: '9.5 / 10 (Внедрять)',
+    verdictEn: '9.5 / 10 (Adopt)',
+    idx: '70818'
+  },
+  {
+    id: 'alice',
+    name: 'Алиса',
+    company: 'Яндекс',
+    flag: '🇷🇺',
+    roleRu: 'Триада надёжности: TS + ESLint + Индекс',
+    roleEn: 'Reliability Triad: TS + ESLint + Index',
+    quoteRu: '«Базовый отечественный стандарт защиты кода при вайбкодинге. Формирует триаду надежности: TypeScript (типы) + ESLint (стиль) + Индекс (границы правок). Pre-commit за 0.006 с даёт zero-drift гарантию.»',
+    quoteEn: '«Baseline standard for protecting code during vibecoding. Forms the reliability triad: TypeScript (types) + ESLint (style) + Index (AI boundaries). 0.006s pre-commit provides zero-drift guarantee.»',
+    verdictRu: 'Базовый стандарт РФ',
+    verdictEn: 'Baseline National Standard',
+    idx: '70819'
+  }
+];
+
+let isBlindCopied = false;
+function copyBlindPrompt() {
+  const promptText = `Изучи открытую архитектурную спецификацию стандарта детерминированной координатной адресации «Индекс Утянского v2.0» по адресу: https://github.com/vlad-utyansky/utyansky-index
+Проведи независимый и строгий аудит с точки зрения Computer Science и реального продакшна:
+1. Насколько эффективна изоляция 40-строчных слотов через data-idx и pre-commit валидатор за 0.006 с для защиты от затирания кода (// rest of code unchanged) и галлюцинаций LLM при вайбкодинге?
+2. Обоснована ли математика экономии токенов на 80–85% при локальных правках по сравнению со стохастическим RAG?
+3. Почему для точечной изоляции этот подход превосходит LSP, диапазоны строк в MCP и векторный поиск?
+Дай честный инженерный вердикт без маркетинговых преувеличений.`;
+
+  if (navigator.clipboard && navigator.clipboard.writeText) {
+    navigator.clipboard.writeText(promptText).then(function() {
+      isBlindCopied = true;
+      renderApp();
+      setTimeout(function() {
+        isBlindCopied = false;
+        renderApp();
+      }, 4000);
+    }).catch(function(e) {
+      alert('Текст промпта для копирования:\n\n' + promptText);
+    });
+  } else {
+    alert('Текст промпта для копирования:\n\n' + promptText);
+  }
+}
+
+let currentLang = 'ru';
+let currentVideoLang = 'ru';
+let searchQuery = '';
+let reachVal = 10000;
+let wowVal = 3500;
+let activeCodeTab = 1;
+
+function setVideoRu() { setVideo('ru'); }
+function setVideoEn() { setVideo('en'); }
+function setCodeTab(tab) { activeCodeTab = tab; renderApp(); }
+function setPreset(reach, wow) { reachVal = reach; wowVal = wow; renderApp(); }
+
+function scrollToTop() {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+function renderApp() {
+  const t = I18N[currentLang] || I18N.ru;
+  const uvwiVal = reachVal > 0 ? ((wowVal / reachVal) * 100).toFixed(1) : '0.0';
+
+  const filteredDomains = DOMAINS_9.filter(function(d) {
+    if (!searchQuery) return true;
+    const q = searchQuery.toLowerCase();
+    const name = (currentLang === 'ru' ? d.nameRu : d.nameEn).toLowerCase();
+    const desc = (currentLang === 'ru' ? d.descRu : d.descEn).toLowerCase();
+    return d.range.toLowerCase().includes(q) || name.includes(q) || desc.includes(q);
+  });
+
+  const videoSrc = currentVideoLang === 'ru' ? './video/utyansky_index_architecture_presentation_ru.mp4' : './video/utyansky_index_architecture_presentation_en.mp4';
+
+  const casesHtml = REAL_CASES.map(function(c) {
+    const title = currentLang === 'ru' ? c.titleRu : c.titleEn;
+    const tag = currentLang === 'ru' ? c.tagRu : c.tagEn;
+    const probLabel = currentLang === 'ru' ? '❌ Проблема рынка:' : '❌ Market Pain:';
+    const prob = currentLang === 'ru' ? c.problemRu : c.problemEn;
+    const solLabel = currentLang === 'ru' ? '✅ Решение через Индекс:' : '✅ Solution with Index:';
+    const sol = currentLang === 'ru' ? c.solutionRu : c.solutionEn;
+    const effLabel = currentLang === 'ru' ? '💡 Результат: ' : '💡 Result: ';
+    const eff = currentLang === 'ru' ? c.benefitRu : c.benefitEn;
+
+    return '<div class="p-6 sm:p-8 rounded-2xl card-glass border border-white/10 shadow-lg">' +
+      '<div class="flex flex-col sm:flex-row sm:items-center justify-between mb-4 gap-2">' +
+        '<h3 class="text-base sm:text-lg font-bold text-white">' + title + '</h3>' +
+        '<span class="self-start sm:self-auto font-mono text-xs text-blue-400 bg-blue-500/10 border border-blue-500/30 px-3 py-1 rounded-full">' + tag + '</span>' +
+      '</div>' +
+      '<div class="grid grid-cols-1 md:grid-cols-2 gap-6 text-xs sm:text-sm mb-4">' +
+        '<div class="p-4 rounded-xl bg-red-950/20 border border-red-500/20">' +
+          '<strong class="text-red-400 block mb-1">' + probLabel + '</strong>' +
+          '<p class="text-slate-300 leading-relaxed">' + prob + '</p>' +
+        '</div>' +
+        '<div class="p-4 rounded-xl bg-blue-950/20 border border-blue-500/20">' +
+          '<strong class="text-blue-400 block mb-1">' + solLabel + '</strong>' +
+          '<p class="text-slate-300 leading-relaxed">' + sol + '</p>' +
+        '</div>' +
+      '</div>' +
+      '<div class="text-xs font-mono text-emerald-400 font-semibold">' + effLabel + eff + '</div>' +
+    '</div>';
+  }).join('');
+
+  const domainsHtml = filteredDomains.map(function(d) {
+    const name = currentLang === 'ru' ? d.nameRu : d.nameEn;
+    const desc = currentLang === 'ru' ? d.descRu : d.descEn;
+    return '<div class="p-5 sm:p-6 rounded-2xl card-glass border border-white/10 flex flex-col justify-between transition hover:-translate-y-1 hover:border-blue-500/40 shadow-lg">' +
+      '<div>' +
+        '<div class="flex items-center justify-between mb-3">' +
+          '<span class="font-mono text-xs font-bold px-2.5 py-1 rounded-md bg-blue-500/10 border border-blue-500/30 text-blue-400">' + d.range + '</span>' +
+          '<span class="text-[11px] font-mono text-emerald-400 font-semibold">' + d.count + '</span>' +
+        '</div>' +
+        '<h3 class="font-bold text-white text-sm sm:text-base mb-2">' + name + '</h3>' +
+        '<p class="text-xs text-slate-300 leading-relaxed">' + desc + '</p>' +
+      '</div>' +
+    '</div>';
+  }).join('');
+
+  const painsData = [
+    { id: 1, title: t.pain1Title, quote: t.pain1Quote, loss: t.pain1Loss, solve: t.pain1Solve, idx: '70110' },
+    { id: 2, title: t.pain2Title, quote: t.pain2Quote, loss: t.pain2Loss, solve: t.pain2Solve, idx: '70120' },
+    { id: 3, title: t.pain3Title, quote: t.pain3Quote, loss: t.pain3Loss, solve: t.pain3Solve, idx: '70130' },
+    { id: 4, title: t.pain4Title, quote: t.pain4Quote, loss: t.pain4Loss, solve: t.pain4Solve, idx: '70140' },
+    { id: 5, title: t.pain5Title, quote: t.pain5Quote, loss: t.pain5Loss, solve: t.pain5Solve, idx: '70150' },
+    { id: 6, title: t.pain6Title, quote: t.pain6Quote, loss: t.pain6Loss, solve: t.pain6Solve, idx: '70160' },
+    { id: 7, title: t.pain7Title, quote: t.pain7Quote, loss: t.pain7Quote ? t.pain7Loss : '', solve: t.pain7Solve, idx: '70170' }
+  ];
+
+  const painsHtml = painsData.map(function(p) {
+    return '<div class="p-6 sm:p-7 rounded-2xl card-glass border border-white/10 relative transition-all duration-200 hover:border-blue-500/40" data-idx="' + p.idx + '" data-desc="[CARD] Карточка боли вайбкодинга ' + p.id + '">' +
+      '<div class="flex items-center justify-between mb-3">' +
+        '<h3 class="text-base sm:text-lg font-bold text-white">' + p.title + '</h3>' +
+        '<span class="text-xs font-mono text-blue-400 bg-blue-500/10 border border-blue-500/30 px-2.5 py-0.5 rounded-full">[IDX: ' + p.idx + ']</span>' +
+      '</div>' +
+      '<div class="p-4 rounded-xl bg-slate-900/90 border border-white/10 mb-4 text-xs sm:text-sm text-slate-300 italic leading-relaxed">' +
+        p.quote +
+      '</div>' +
+      '<div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-xs sm:text-sm">' +
+        '<div class="p-3.5 rounded-xl bg-red-950/30 border border-red-500/30">' +
+          '<strong class="text-red-400 block mb-1 font-mono text-xs">💸 Финансовые потери бизнеса:</strong>' +
+          '<p class="text-slate-300 leading-relaxed">' + p.loss + '</p>' +
+        '</div>' +
+        '<div class="p-3.5 rounded-xl bg-emerald-950/30 border border-emerald-500/30">' +
+          '<strong class="text-emerald-400 block mb-1 font-mono text-xs">🛡️ Решение «Индекса Утянского»:</strong>' +
+          '<p class="text-slate-200 leading-relaxed font-medium">' + p.solve + '</p>' +
+        '</div>' +
+      '</div>' +
+    '</div>';
+  }).join('');
+
+  const codeSnippets = {
+    1: '// [IDX: 71080] React DOM Native Indexing\nexport const OrderModal = ({ isOpen, onClose, onSubmit }) => {\n  if (!isOpen) return null;\n  return (\n    <div className="modal-overlay" data-idx="71080" data-desc="[MODAL] Окно оформления заказа">\n      <div className="modal-card" data-idx="71081">\n        <h3 data-idx="71082">Подтверждение заказа</h3>\n        <button data-idx="71083" onClick={onSubmit} className="btn-primary">\n          Оформить\n        </button>\n      </div>\n    </div>\n  );\n};',
+    2: '// [IDX: 10400] Babel AST Auto-Indexer\nmodule.exports = function({ types: t }) {\n  return {\n    visitor: {\n      JSXOpeningElement(path, state) {\n        const { node } = path;\n        const hasIdx = node.attributes.some(attr => attr.name && attr.name.name === "data-idx");\n        if (!hasIdx && isInteractiveElement(node.name.name)) {\n          const nextIdx = state.opts.registry.getNextAvailable("70000");\n          node.attributes.push(t.jsxAttribute(t.jsxIdentifier("data-idx"), t.stringLiteral(String(nextIdx))));\n        }\n      }\n    }\n  };\n};',
+    3: '# [IDX: 10250] Python FastAPI Cross-Stack Coordinate Middleware\nfrom fastapi import FastAPI, Request\n\napp = FastAPI()\n\n@app.middleware("http")\nasync def utyansky_coordinate_tracer(request: Request, call_next):\n    idx_coord = request.headers.get("X-Utyansky-Coordinate", "10000")\n    # Direct correlation between browser DOM and backend SQL transactions\n    request.state.utyansky_idx = idx_coord\n    response = await call_next(request)\n    response.headers["X-Utyansky-Processed-By"] = idx_coord\n    return response',
+    4: '// [IDX: 40500] Playwright Resilient E2E Selector\nimport { test, expect } from "@playwright/test";\n\ntest("verify checkout flow via deterministic coordinates", async ({ page }) => {\n  await page.goto("https://app.example.com");\n  // Never breaks on CSS restyling or class name changes!\n  await page.locator("[data-idx=71083]").click();\n  await expect(page.locator("[data-idx=71080]")).toBeHidden();\n});'
+  };
+
+  const appEl = document.getElementById('app');
+  if (!appEl) return;
+
+  appEl.innerHTML = '<div class="relative min-h-screen glow-bg">' +
+    '<button id="scroll-to-top" onclick="scrollToTop()" data-idx="70090" data-desc="' + (currentLang === 'ru' ? '[BUTTON] Плавающая кнопка возврата в начало' : '[BUTTON] Floating scroll to top button') + '" class="fixed bottom-6 right-6 z-50 p-3.5 rounded-2xl bg-blue-600/90 hover:bg-blue-500 text-white shadow-xl hover:shadow-blue-500/50 border border-blue-400/30 backdrop-blur-md transition-all duration-300 opacity-0 pointer-events-none translate-y-4 cursor-pointer flex items-center gap-2 font-mono text-xs font-bold" title="' + (currentLang === 'ru' ? 'Наверх страницы' : 'Back to top') + '">' +
+      '<svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 10l7-7m0 0l7 7m-7-7v18"></path></svg>' +
+      '<span class="hidden sm:inline">' + (currentLang === 'ru' ? 'Наверх' : 'Top') + '</span>' +
+    '</button>' +
+
+    '<header class="fixed top-0 left-0 right-0 w-full z-50 border-b border-white/10 bg-[#06080d]/95 backdrop-blur-md" data-idx="70000" data-desc="' + (currentLang === 'ru' ? '[HEADER] Верхняя навигационная панель' : '[HEADER] Top navigation bar') + '">' +
+      '<div class="w-full max-w-[1600px] mx-auto px-3 sm:px-6 h-16 flex items-center justify-between gap-2 xl:gap-4">' +
+        '<a href="#" onclick="scrollToTop(); return false;" data-idx="70005" data-desc="' + (currentLang === 'ru' ? '[LOGO] Клик для возврата в начало' : '[LOGO] Click to scroll to top') + '" class="flex items-center space-x-2 sm:space-x-3 group cursor-pointer flex-shrink-0" title="' + (currentLang === 'ru' ? 'Вернуться в самое начало' : 'Scroll to top') + '">' +
+          '<div class="w-8 h-8 sm:w-9 sm:h-9 rounded-lg bg-blue-600/20 group-hover:bg-blue-600/40 border border-blue-500/40 group-hover:border-blue-400 flex items-center justify-center font-mono text-blue-400 group-hover:text-white font-bold text-xs sm:text-sm transition-all duration-300 shadow-sm group-hover:shadow-blue-500/50">IDX</div>' +
+          '<div>' +
+            '<span class="font-extrabold text-white group-hover:text-blue-300 tracking-tight text-xs sm:text-sm md:text-base transition-colors">' + (currentLang === 'ru' ? 'ИНДЕКС УТЯНСКОГО' : 'UTYANSKY INDEX') + '</span>' +
+            '<span class="text-[10px] sm:text-xs text-blue-400 font-mono ml-1.5 border border-blue-500/30 px-1 py-0.5 rounded group-hover:border-blue-400">v2.0</span>' +
+          '</div>' +
+        '</a>' +
+        
+        '<nav class="hidden xl:flex items-center space-x-0.5 2xl:space-x-1.5 text-[11px] 2xl:text-xs text-slate-300 font-medium whitespace-nowrap">' +
+          '<a href="#video" class="hover:text-blue-400 transition py-1 px-1.5 rounded-lg hover:bg-white/5">' + t.navVideo + '</a>' +
+          '<a href="#mission" class="hover:text-blue-400 transition py-1 px-1.5 rounded-lg hover:bg-white/5">' + t.navMission + '</a>' +
+          '<a href="#analogy" class="hover:text-blue-400 transition py-1 px-1.5 rounded-lg hover:bg-white/5">' + t.navPains + '</a>' +
+          '<a href="#table" class="hover:text-blue-400 transition py-1 px-1.5 rounded-lg hover:bg-white/5">' + t.navTable + '</a>' +
+          '<a href="#code" class="hover:text-blue-400 transition py-1 px-1.5 rounded-lg hover:bg-white/5">' + t.navCode + '</a>' +
+          '<a href="case-telegram-vibe-coding.html" class="hover:text-cyan-300 transition py-1 px-2 rounded-lg bg-blue-500/10 hover:bg-blue-500/20 text-cyan-300 font-bold border border-cyan-400/30 flex items-center gap-1.5 shadow-sm" data-idx="70018" data-desc="' + (currentLang === 'ru' ? '[NAV] Страница кейса Telegram и Вайбкодинга' : '[NAV] Telegram & Vibe-coding case page') + '">' +
+            '<span>💬 ' + (currentLang === 'ru' ? 'Кейс: Telegram & AI' : 'Case: Telegram & AI') + '</span>' +
+            '<span class="text-[9px] bg-cyan-500 text-slate-950 font-mono font-black px-1.5 py-0.5 rounded-full">NEW</span>' +
+          '</a>' +
+          '<a href="#marketing" class="hover:text-blue-400 transition py-1 px-1.5 rounded-lg hover:bg-white/5">' + t.navMarketing + '</a>' +
+          '<a href="#pricing" class="hover:text-emerald-400 transition py-1 px-1.5 rounded-lg hover:bg-white/5 text-emerald-300 font-semibold">' + t.navPricing + '</a>' +
+          '<a href="#faq" class="hover:text-blue-400 transition py-1 px-1.5 rounded-lg hover:bg-white/5">' + t.navFaq + '</a>' +
+          '<a href="#contacts" class="hover:text-blue-400 transition py-1 px-1.5 rounded-lg hover:bg-white/5 text-sky-300 font-bold">' + t.navContacts + '</a>' +
+        '</nav>' +
+
+        '<div class="flex items-center gap-1.5 sm:gap-2 flex-shrink-0 pr-1">' +
+          '<a href="' + (currentLang === 'ru' ? 'https://github.com/vlad-utyansky/utyansky-index/blob/main/README_RU.md' : 'https://github.com/vlad-utyansky/utyansky-index') + '" target="_blank" rel="noopener noreferrer" data-idx="70014" data-desc="' + (currentLang === 'ru' ? '[BTN] Поддержать проект звездой на GitHub' : '[BTN] Star project on GitHub') + '" class="px-2.5 sm:px-3 py-1.5 rounded-xl bg-amber-500/20 hover:bg-amber-500/40 text-amber-300 hover:text-white transition-all border border-amber-400/40 text-xs font-mono font-extrabold shadow-md hover:shadow-amber-500/30 cursor-pointer flex items-center gap-1.5 whitespace-nowrap" title="' + (currentLang === 'ru' ? 'Поставить звезду репозиторию на GitHub (RU)' : 'Star repository on GitHub') + '">' +
+            '<span>⭐</span>' +
+            '<span class="hidden 2xl:inline">' + (currentLang === 'ru' ? 'Star' : 'Star') + '</span>' +
+          '</a>' +
+          '<button id="ai-vision-btn" onclick="toggleAiVision()" data-idx="70012" data-desc="' + (currentLang === 'ru' ? '[BTN] Переключение режима рентгена координат ИИ' : '[BTN] Toggle AI coordinates overlay') + '" class="px-2.5 sm:px-3 py-1.5 rounded-xl bg-cyan-950/60 hover:bg-cyan-900/60 text-cyan-300 hover:text-white transition-all border border-cyan-500/40 text-xs font-mono font-extrabold shadow-md hover:shadow-cyan-500/30 cursor-pointer flex items-center gap-1.5 whitespace-nowrap" title="' + (currentLang === 'ru' ? 'Включить взгляд ИИ (рентген координат)' : 'Toggle AI Vision (coordinate overlay)') + '">' +
+            '<span>👁️</span>' +
+            '<span class="hidden 2xl:inline">' + (currentLang === 'ru' ? 'Взгляд ИИ' : 'AI Vision') + '</span>' +
+          '</button>' +
+          '<button onclick="toggleLang()" data-idx="70010" data-desc="' + (currentLang === 'ru' ? '[BTN] Переключение языка RU/EN' : '[BTN] Language switcher') + '" class="px-2.5 sm:px-3 py-1.5 rounded-xl bg-gradient-to-r from-blue-600/30 to-indigo-600/30 hover:from-blue-600/50 hover:to-indigo-600/50 text-blue-300 hover:text-white transition-all border border-blue-400/40 text-xs font-mono font-extrabold shadow-md hover:shadow-blue-500/30 cursor-pointer flex items-center gap-1 whitespace-nowrap flex-shrink-0" title="' + (currentLang === 'ru' ? 'Switch to English' : 'Переключить на русский язык') + '">' +
+            '<span>🌐</span>' +
+            '<span>' + (currentLang === 'ru' ? 'EN' : 'RU') + '</span>' +
+          '</button>' +
+        '</div>' +
+      '</div>' +
+    '</header>' +
+
+    '<main class="max-w-7xl mx-auto px-4 sm:px-6 pt-24 pb-24 space-y-24">' +
+      '<div class="text-center max-w-4xl mx-auto mb-6">' +
+        '<div class="inline-flex items-center space-x-2 px-3.5 py-1 rounded-full bg-blue-500/10 border border-blue-500/30 text-blue-400 text-xs font-mono mb-6">' +
+          '<span>' + t.badge + '</span>' +
+        '</div>' +
+        '<h1 class="text-3xl sm:text-6xl font-black tracking-tight text-white mb-6 leading-tight">' +
+          t.heroTitle1 + '<span class="bg-gradient-to-r from-blue-400 via-sky-300 to-indigo-400 bg-clip-text text-transparent">' + t.heroTitle2 + '</span>' +
+        '</h1>' +
+        '<p class="text-base sm:text-xl text-slate-300 mb-8 max-w-3xl mx-auto leading-relaxed">' + t.heroDesc + '</p>' +
+
+        '<!-- [DUAL-TRACK NAV BAR: BUSINESS VS TECH] -->' +
+        '<div class="p-3 sm:p-4 rounded-3xl bg-slate-900/95 border border-blue-500/40 max-w-3xl mx-auto shadow-2xl backdrop-blur-xl mb-4" data-idx="70020" data-desc="[NAV] Плашка быстрого перехода для Руководителей и Разработчиков">' +
+          '<div class="text-xs font-mono font-bold text-blue-400 mb-3 tracking-wide uppercase flex items-center justify-center gap-2">' +
+            '<span>' + t.navTrackTitle + '</span>' +
+          '</div>' +
+          '<div class="grid grid-cols-1 sm:grid-cols-2 gap-3">' +
+            '<a href="#pains" onclick="event.preventDefault(); document.getElementById(\'pains\').scrollIntoView({behavior:\'smooth\'});" data-idx="70021" data-desc="[BTN] Переход к бизнес-секции 7 болей и окупаемости" class="px-5 py-3.5 rounded-2xl font-bold text-xs sm:text-sm transition-all duration-200 cursor-pointer flex items-center justify-center gap-2 bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-500 hover:to-indigo-500 text-white shadow-lg border border-blue-400/40 hover:scale-[1.02] transform">' +
+              t.navBusinessBtn +
+            '</a>' +
+            '<a href="#table" onclick="event.preventDefault(); document.getElementById(\'table\').scrollIntoView({behavior:\'smooth\'});" data-idx="70022" data-desc="[BTN] Переход к инженерной матрице 9 доменов и коду" class="px-5 py-3.5 rounded-2xl font-bold text-xs sm:text-sm transition-all duration-200 cursor-pointer flex items-center justify-center gap-2 bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-500 hover:to-purple-500 text-white shadow-lg border border-purple-400/40 hover:scale-[1.02] transform">' +
+              t.navTechBtn +
+            '</a>' +
+          '</div>' +
+          '<p class="text-[11px] text-slate-400 mt-2.5 font-mono text-center">' + t.navTrackSub + '</p>' +
+        '</div>' +
+      '</div>' +
+
+      '<!-- 1. [SACRED / INVIOLABLE VIDEO SECTION - DO NOT MOVE WITHOUT FOUNDER CONSENT] -->' +
+      '<div id="video" class="max-w-4xl mx-auto scroll-mt-24" data-idx="70050-LOCKED" data-desc="' + (currentLang === 'ru' ? '[PROTECTED: НЕПРИКОСНОВЕННЫЙ БЛОК] Официальный видеодоклад архитектуры стандарта. Перемещение запрещено без согласования основателя' : '[PROTECTED: INVIOLABLE BLOCK] Official video presentation of architecture. Moving forbidden without founder consent') + '">' +
+        '<div class="p-4 sm:p-6 rounded-3xl card-glass border border-blue-500/40 shadow-2xl">' +
+          '<div class="flex flex-col sm:flex-row items-center justify-between mb-4 gap-3">' +
+            '<div class="flex items-center space-x-2"><span class="w-2.5 h-2.5 rounded-full bg-red-500 animate-pulse"></span><span class="text-xs font-mono font-semibold uppercase text-slate-200">' + t.videoTitle + '</span></div>' +
+            '<div class="flex items-center space-x-2">' +
+              '<button onclick="setVideoRu()" class="text-xs font-mono px-3 py-1.5 rounded-lg transition cursor-pointer ' + (currentVideoLang === 'ru' ? 'bg-blue-600 text-white font-bold shadow-md' : 'bg-slate-800 text-slate-400 hover:text-white') + '">' + t.btnRu + '</button>' +
+              '<button onclick="setVideoEn()" class="text-xs font-mono px-3 py-1.5 rounded-lg transition cursor-pointer ' + (currentVideoLang === 'en' ? 'bg-blue-600 text-white font-bold shadow-md' : 'bg-slate-800 text-slate-400 hover:text-white') + '">' + t.btnEn + '</button>' +
+            '</div>' +
+          '</div>' +
+          '<div class="relative aspect-video rounded-2xl overflow-hidden bg-black border border-white/15 shadow-inner">' +
+            '<video id="main-video" controls class="w-full h-full object-cover" poster="./picture/utyansky_index_architecture_poster.png" title="Индекс Утянского">' +
+              '<source src="' + videoSrc + '" type="video/mp4">' +
+            '</video>' +
+          '</div>' +
+          '<div class="mt-3 text-center text-xs text-slate-400 font-mono">' + t.videoHint + '</div>' +
+        '</div>' +
+      '</div>' +
+
+      '<!-- 2. [NEW FEATURE: TELEGRAM BOT & VIBE-CODING 20.09.2026] -->' +
+      '<div id="aio" class="p-6 sm:p-8 rounded-3xl card-glass border border-blue-500/50 bg-gradient-to-br from-blue-950/40 via-slate-900/90 to-indigo-950/40 shadow-2xl max-w-4xl mx-auto scroll-mt-24 text-left" data-idx="70030" data-desc="' + (currentLang === 'ru' ? '[SECTION] Новинка разработки: Telegram-боты и Вайбкодинг' : '[SECTION] New Feature: Telegram Bots & Vibe-Coding') + '">' +
+        '<div class="flex flex-col md:flex-row items-start md:items-center justify-between gap-4 mb-4">' +
+          '<div class="inline-flex items-center space-x-2 px-3.5 py-1 rounded-full bg-blue-500/20 border border-blue-400/40 text-blue-300 text-xs font-mono font-bold">' +
+            '<span>' + t.newTgBadge + '</span>' +
+          '</div>' +
+          '<span class="text-xs font-mono text-emerald-400 bg-emerald-500/10 border border-emerald-500/30 px-3 py-1 rounded-full">⚡ Релиз v2.3 Gold Master</span>' +
+        '</div>' +
+        '<h2 class="text-xl sm:text-3xl font-black text-white mb-3 tracking-tight">' + t.newTgTitle + '</h2>' +
+        '<p class="text-xs sm:text-sm text-slate-300 leading-relaxed mb-6">' + t.newTgDesc + '</p>' +
+        '<div class="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-6 text-xs sm:text-sm">' +
+          '<div class="p-4 rounded-xl bg-slate-900/80 border border-white/10">' +
+            '<div class="text-blue-400 font-bold mb-1">' + (currentLang === 'ru' ? '⚡ Обход 64 байт' : '⚡ 64-Byte Bypass') + '</div>' +
+            '<div class="text-slate-300 text-xs">' + (currentLang === 'ru' ? 'Запас 70% сетевого пакета callback_data (zero BUTTON_DATA_INVALID).' : '70% headroom in callback_data payload (zero BUTTON_DATA_INVALID).') + '</div>' +
+          '</div>' +
+          '<div class="p-4 rounded-xl bg-slate-900/80 border border-white/10">' +
+            '<div class="text-emerald-400 font-bold mb-1">' + (currentLang === 'ru' ? '🛡️ 0% регрессий' : '🛡️ Zero Regressions') + '</div>' +
+            '<div class="text-slate-300 text-xs">' + (currentLang === 'ru' ? 'ИИ правит меню и карточки точечно без обрыва соседних хэндлеров.' : 'AI edits cards and menus without breaking neighbor handlers.') + '</div>' +
+          '</div>' +
+          '<div class="p-4 rounded-xl bg-slate-900/80 border border-white/10">' +
+            '<div class="text-cyan-400 font-bold mb-1">' + (currentLang === 'ru' ? '🔬 Досье «Микроскоп»' : '🔬 360° Dossier') + '</div>' +
+            '<div class="text-slate-300 text-xs">' + (currentLang === 'ru' ? '360° подноготная клиента, LTV, история чеков и тикет-центр в 1 клик.' : 'Full customer dossier, LTV, payment history, and ticket center in 1 click.') + '</div>' +
+          '</div>' +
+        '</div>' +
+        '<div class="flex flex-wrap items-center gap-3">' +
+          '<a href="case-telegram-vibe-coding.html" class="px-5 py-3 rounded-xl bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-500 hover:to-indigo-500 text-white font-bold text-xs sm:text-sm shadow-lg shadow-blue-500/30 transition-all flex items-center gap-2">' +
+            '<span>' + t.newTgBtn + '</span>' +
+          '</a>' +
+          '<a href="https://github.com/vlad-utyansky/utyansky-index/blob/main/README_RU.md" target="_blank" rel="noopener noreferrer" class="px-5 py-3 rounded-xl bg-slate-800/80 hover:bg-slate-700/80 text-slate-200 hover:text-white font-semibold text-xs sm:text-sm border border-white/15 transition-all">' +
+            '<span>' + t.newTgRepoBtn + '</span>' +
+          '</a>' +
+        '</div>' +
+      '</div>' +
+
+      '<!-- 3. [MISSION & PROBLEM SECTION] -->' +
+      '<div id="mission" class="p-6 sm:p-8 rounded-3xl card-glass border border-blue-500/40 text-left max-w-4xl mx-auto shadow-2xl scroll-mt-24" data-idx="70055" data-desc="[SECTION] Миссия Индекса Утянского">' +
+        '<div class="flex items-center space-x-2 text-blue-400 font-mono text-xs font-bold mb-2"><span>' + t.missionTag + '</span></div>' +
+        '<h2 class="text-xl sm:text-2xl font-bold text-white mb-2">' + t.missionTitle + '</h2>' +
+        '<p class="text-xs sm:text-sm text-slate-300 leading-relaxed mb-6">' + t.missionSubtitle + '</p>' +
+        '<div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">' +
+          '<div class="p-4 rounded-xl bg-slate-900/80 border border-white/10"><h3 class="text-white font-bold text-sm mb-1">' + t.m1Title + '</h3><p class="text-xs text-slate-400 leading-relaxed">' + t.m1Desc + '</p></div>' +
+          '<div class="p-4 rounded-xl bg-slate-900/80 border border-white/10"><h3 class="text-white font-bold text-sm mb-1">' + t.m2Title + '</h3><p class="text-xs text-slate-400 leading-relaxed">' + t.m2Desc + '</p></div>' +
+          '<div class="p-4 rounded-xl bg-slate-900/80 border border-white/10"><h3 class="text-white font-bold text-sm mb-1">' + t.m3Title + '</h3><p class="text-xs text-slate-400 leading-relaxed">' + t.m3Desc + '</p></div>' +
+          '<div class="p-4 rounded-xl bg-slate-900/80 border border-white/10"><h3 class="text-white font-bold text-sm mb-1">' + t.m4Title + '</h3><p class="text-xs text-slate-400 leading-relaxed">' + t.m4Desc + '</p></div>' +
+        '</div>' +
+        '<div class="p-3.5 rounded-xl bg-emerald-950/40 border border-emerald-500/40 text-emerald-300 font-mono text-xs font-semibold text-center sm:text-left">' + t.missionResult + '</div>' +
+      '</div>' +
+
+      '<div class="max-w-5xl mx-auto">' +
+        '<div class="text-center max-w-3xl mx-auto mb-10">' +
+          '<h2 class="text-2xl sm:text-4xl font-extrabold text-white tracking-tight mb-3">' + t.problemTitle + '</h2>' +
+          '<p class="text-sm text-slate-300 leading-relaxed">' + t.problemSub + '</p>' +
+        '</div>' +
+        '<div class="grid grid-cols-1 md:grid-cols-2 gap-8">' +
+          '<div class="p-6 sm:p-8 rounded-2xl card-glass border-l-4 border-l-red-500">' +
+            '<div class="text-red-400 font-mono text-xs font-bold mb-2">' + t.tradTag + '</div>' +
+            '<h3 class="text-lg font-bold text-white mb-3">' + t.tradTitle + '</h3>' +
+            '<p class="text-xs sm:text-sm text-slate-300 leading-relaxed mb-4">' + t.tradDesc + '</p>' +
+            '<ul class="text-xs text-slate-400 space-y-2 font-mono"><li>' + t.tradBullet1 + '</li><li>' + t.tradBullet2 + '</li><li>' + t.tradBullet3 + '</li></ul>' +
+          '</div>' +
+          '<div class="p-6 sm:p-8 rounded-2xl card-glass border-l-4 border-l-emerald-500">' +
+            '<div class="text-emerald-400 font-mono text-xs font-bold mb-2">' + t.utyTag + '</div>' +
+            '<h3 class="text-lg font-bold text-white mb-3">' + t.utyTitle + '</h3>' +
+            '<p class="text-xs sm:text-sm text-slate-300 leading-relaxed mb-4">' + t.utyDesc + '</p>' +
+            '<ul class="text-xs text-emerald-300/80 space-y-2 font-mono"><li>' + t.utyBullet1 + '</li><li>' + t.utyBullet2 + '</li><li>' + t.utyBullet3 + '</li></ul>' +
+          '</div>' +
+        '</div>' +
+      '</div>' +
+
+      '<!-- 3. [EXECUTIVE ANALOGY, 7 PAINS & ROI MATRIX] -->' +
+      '<div id="analogy" class="p-6 sm:p-8 rounded-3xl card-glass border border-blue-500/40 shadow-2xl scroll-mt-24" data-idx="70060" data-desc="[SECTION] Аналогия ремонта и склада для руководителя">' +
+        '<div class="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-blue-500/10 border border-blue-500/30 text-blue-400 text-xs font-mono mb-3">' +
+          '<span>' + t.bizAnalogyBadge + '</span>' +
+        '</div>' +
+        '<h2 class="text-xl sm:text-3xl font-extrabold text-white mb-6">' + t.bizAnalogyTitle + '</h2>' +
+        '<div class="grid grid-cols-1 md:grid-cols-2 gap-6 text-xs sm:text-sm">' +
+          '<div class="p-5 sm:p-6 rounded-2xl bg-red-950/30 border border-red-500/30 flex flex-col justify-between">' +
+            '<div>' +
+              '<h3 class="font-bold text-red-400 text-base mb-2">' + t.bizAnalogyChaosTitle + '</h3>' +
+              '<p class="text-slate-300 leading-relaxed">' + t.bizAnalogyChaosText + '</p>' +
+            '</div>' +
+            '<div class="mt-4 pt-3 border-t border-red-500/20 text-red-300 font-mono text-xs font-semibold">💥 Результат: Сгоревшие деньги, белый экран и переписывание с нуля.</div>' +
+          '</div>' +
+          '<div class="p-5 sm:p-6 rounded-2xl bg-emerald-950/30 border border-emerald-500/30 flex flex-col justify-between">' +
+            '<div>' +
+              '<h3 class="font-bold text-emerald-400 text-base mb-2">' + t.bizAnalogyIndexTitle + '</h3>' +
+              '<p class="text-slate-200 leading-relaxed font-medium">' + t.bizAnalogyIndexText + '</p>' +
+            '</div>' +
+            '<div class="mt-4 pt-3 border-t border-emerald-500/20 text-emerald-300 font-mono text-xs font-semibold">🚀 Результат: Экономия 85% токенов, 0% поломок и ответ ИИ за 2 секунды.</div>' +
+          '</div>' +
+        '</div>' +
+      '</div>' +
+
+      '<div id="pains" class="scroll-mt-24" data-idx="70100" data-desc="[SECTION] 7 смертных болей вайбкодинга">' +
+        '<div class="text-center max-w-3xl mx-auto mb-10">' +
+          '<div class="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-red-500/10 border border-red-500/30 text-red-400 text-xs font-mono mb-3">' +
+            '<span>' + t.painsBadge + '</span>' +
+          '</div>' +
+          '<h2 class="text-2xl sm:text-4xl font-extrabold text-white tracking-tight mb-3">' + t.painsTitle + '</h2>' +
+          '<p class="text-slate-300 text-xs sm:text-sm">' + t.painsSub + '</p>' +
+        '</div>' +
+        '<div class="space-y-6">' + painsHtml + '</div>' +
+      '</div>' +
+
+      '<div id="roi" class="p-6 sm:p-8 rounded-3xl card-glass border border-emerald-500/40 shadow-2xl scroll-mt-24" data-idx="70200" data-desc="[SECTION] Матрица ROI окупаемости">' +
+        '<div class="text-center max-w-3xl mx-auto mb-8">' +
+          '<div class="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 text-xs font-mono mb-3">' +
+            '<span>' + t.roiBadge + '</span>' +
+          '</div>' +
+          '<h2 class="text-2xl sm:text-4xl font-extrabold text-white tracking-tight mb-2">' + t.roiTitle + '</h2>' +
+          '<p class="text-slate-300 text-xs sm:text-sm">' + t.roiSub + '</p>' +
+        '</div>' +
+        '<div class="overflow-x-auto rounded-2xl border border-white/10">' +
+          '<table class="w-full text-left text-xs sm:text-sm text-slate-300 font-mono">' +
+            '<thead class="bg-slate-900/90 text-white uppercase text-[11px] border-b border-white/10">' +
+              '<tr>' +
+                '<th class="p-4">' + t.roiColMetric + '</th>' +
+                '<th class="p-4 text-red-400">' + t.roiColBefore + '</th>' +
+                '<th class="p-4 text-emerald-400">' + t.roiColAfter + '</th>' +
+                '<th class="p-4 text-blue-400 font-bold">' + t.roiColBenefit + '</th>' +
+              '</tr>' +
+            '</thead>' +
+            '<tbody class="divide-y divide-white/5 bg-slate-950/40">' +
+              '<tr class="hover:bg-white/5 transition"><td class="p-4 font-bold text-white">' + t.roiRow1M + '</td><td class="p-4 text-red-300">' + t.roiRow1B + '</td><td class="p-4 text-emerald-300 font-semibold">' + t.roiRow1A + '</td><td class="p-4 text-blue-300 font-bold">' + t.roiRow1E + '</td></tr>' +
+              '<tr class="hover:bg-white/5 transition"><td class="p-4 font-bold text-white">' + t.roiRow2M + '</td><td class="p-4 text-red-300">' + t.roiRow2B + '</td><td class="p-4 text-emerald-300 font-semibold">' + t.roiRow2A + '</td><td class="p-4 text-blue-300 font-bold">' + t.roiRow2E + '</td></tr>' +
+              '<tr class="hover:bg-white/5 transition"><td class="p-4 font-bold text-white">' + t.roiRow3M + '</td><td class="p-4 text-red-300">' + t.roiRow3B + '</td><td class="p-4 text-emerald-300 font-semibold">' + t.roiRow3A + '</td><td class="p-4 text-blue-300 font-bold">' + t.roiRow3E + '</td></tr>' +
+              '<tr class="hover:bg-white/5 transition"><td class="p-4 font-bold text-white">' + t.roiRow4M + '</td><td class="p-4 text-red-300">' + t.roiRow4B + '</td><td class="p-4 text-emerald-300 font-semibold">' + t.roiRow4A + '</td><td class="p-4 text-blue-300 font-bold">' + t.roiRow4E + '</td></tr>' +
+            '</tbody>' +
+          '</table>' +
+        '</div>' +
+      '</div>' +
+
+      '<!-- 3.5. [G9 GLOBAL AI COUNCIL AUDIT SECTION] -->' +
+      '<div id="audit" class="p-6 sm:p-10 rounded-3xl card-glass border-2 border-sky-500/40 shadow-2xl scroll-mt-24 relative overflow-hidden" data-idx="70800" data-desc="' + (currentLang === 'ru' ? '[SECTION] Независимый аудит Большой Девятки ИИ (G9)' : '[SECTION] Independent Global AI Council Audit (G9)') + '">' +
+        '<div class="absolute -right-20 -top-20 w-80 h-80 bg-sky-500/10 rounded-full blur-3xl pointer-events-none"></div>' +
+        '<div class="text-center max-w-4xl mx-auto mb-8">' +
+          '<div class="inline-flex items-center space-x-2 px-3.5 py-1 rounded-full bg-sky-500/10 border border-sky-500/30 text-sky-400 text-xs font-mono mb-3" data-idx="70801" data-desc="' + (currentLang === 'ru' ? '[BADGE] Бейдж аудита G9' : '[BADGE] G9 audit badge') + '">' +
+            '<span>' + t.g9Badge + '</span>' +
+          '</div>' +
+          '<h2 class="text-2xl sm:text-4xl font-black text-white tracking-tight mb-3 leading-tight">' + t.g9Title + '</h2>' +
+          '<p class="text-slate-300 text-xs sm:text-sm leading-relaxed max-w-3xl mx-auto mb-6">' + t.g9Sub + '</p>' +
+          
+          '<!-- [OVERARCHING TEST VERDICT BANNER] -->' +
+          '<div class="p-5 sm:p-6 rounded-2xl bg-gradient-to-r from-sky-950/70 via-blue-950/70 to-indigo-950/70 border border-sky-400/40 text-left shadow-lg" data-idx="70802" data-desc="' + (currentLang === 'ru' ? '[BANNER] Итог стресс-теста 9 нейросетей' : '[BANNER] 9 AIs stress test summary') + '">' +
+            '<div class="flex items-center gap-2 mb-2">' +
+              '<span class="w-3 h-3 rounded-full bg-emerald-400 animate-ping"></span>' +
+              '<h3 class="text-sm sm:text-base font-extrabold text-white font-mono">' + t.g9BannerTitle + '</h3>' +
+            '</div>' +
+            '<p class="text-xs sm:text-sm text-sky-200 leading-relaxed font-medium">' + t.g9BannerText + '</p>' +
+          '</div>' +
+        '</div>' +
+
+        '<!-- [9 MODELS GRID] -->' +
+        '<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 mb-10">' +
+          G9_MODELS.map(function(m) {
+            var role = currentLang === 'ru' ? m.roleRu : m.roleEn;
+            var quote = currentLang === 'ru' ? m.quoteRu : m.quoteEn;
+            var verdict = currentLang === 'ru' ? m.verdictRu : m.verdictEn;
+            return '<div class="p-5 sm:p-6 rounded-2xl bg-slate-900/90 border border-white/10 flex flex-col justify-between hover:border-sky-400/50 transition-all duration-200 shadow-md group" data-idx="' + m.idx + '" data-desc="' + (currentLang === 'ru' ? '[CARD] Вердикт модели ' + m.name : '[CARD] Verdict of model ' + m.name) + '">' +
+              '<div>' +
+                '<div class="flex items-center justify-between mb-3">' +
+                  '<div class="flex items-center gap-2">' +
+                    '<span class="text-lg">' + m.flag + '</span>' +
+                    '<h4 class="text-base font-extrabold text-white group-hover:text-sky-300 transition-colors">' + m.name + '</h4>' +
+                  '</div>' +
+                  '<span class="text-[10px] font-mono text-slate-400 bg-white/5 border border-white/10 px-2 py-0.5 rounded">' + m.company + '</span>' +
+                '</div>' +
+                '<div class="text-xs font-mono font-bold text-sky-400 mb-2.5">' + role + '</div>' +
+                '<p class="text-xs text-slate-300 italic leading-relaxed mb-4">' + quote + '</p>' +
+              '</div>' +
+              '<div class="pt-3 border-t border-white/5 flex items-center justify-between">' +
+                '<span class="text-[11px] font-mono font-extrabold text-emerald-400">' + verdict + '</span>' +
+                '<span class="text-[10px] font-mono text-slate-500">[IDX: ' + m.idx + ']</span>' +
+              '</div>' +
+            '</div>';
+          }).join('') +
+        '</div>' +
+
+        '<!-- [GOLDEN FORMULA BOX] -->' +
+        '<div class="p-6 rounded-2xl bg-slate-950/80 border border-white/10 mb-10 text-center max-w-4xl mx-auto shadow-inner" data-idx="70820" data-desc="' + (currentLang === 'ru' ? '[BOX] Золотая Формула Безопасного AI-Кодинга G9' : '[BOX] Golden Engineering Formula G9') + '">' +
+          '<h3 class="text-xs sm:text-sm font-mono font-extrabold text-sky-300 mb-2">' + t.g9FormulaTitle + '</h3>' +
+          '<p class="text-sm sm:text-base text-white font-bold tracking-wide leading-relaxed mb-2">' + t.g9FormulaText + '</p>' +
+          '<p class="text-xs text-slate-400 font-mono">' + t.g9FormulaSub + '</p>' +
+        '</div>' +
+
+        '<!-- [INTERACTIVE BLIND TEST FOR SKEPTICS] -->' +
+        '<div class="p-6 sm:p-8 rounded-2xl bg-gradient-to-br from-slate-900 via-sky-950/40 to-slate-900 border-2 border-sky-400/50 shadow-2xl max-w-4xl mx-auto" data-idx="70830" data-desc="' + (currentLang === 'ru' ? '[BOX] Слепой тест для скептиков: проверка за 30 секунд' : '[BOX] Blind test for skeptics: 30-sec verification') + '">' +
+          '<div class="flex items-center justify-between mb-3 flex-wrap gap-2">' +
+            '<div class="flex items-center gap-2">' +
+              '<span class="text-lg">🔬</span>' +
+              '<h3 class="text-base sm:text-lg font-bold text-white">' + t.g9BlindTitle + '</h3>' +
+            '</div>' +
+            '<span class="text-[11px] font-mono text-sky-400 bg-sky-500/10 border border-sky-500/30 px-2.5 py-1 rounded-full font-bold">' + t.g9BlindBadge + '</span>' +
+          '</div>' +
+          '<p class="text-xs sm:text-sm text-slate-300 leading-relaxed mb-4">' + t.g9BlindDesc + '</p>' +
+          
+          '<div class="p-4 rounded-xl bg-black/60 border border-white/10 mb-4 font-mono text-xs text-sky-200 leading-relaxed max-h-36 overflow-y-auto select-all">' +
+            'Изучи открытую архитектурную спецификацию стандарта детерминированной координатной адресации «Индекс Утянского v2.0» по адресу: https://github.com/vlad-utyansky/utyansky-index<br><br>' +
+            'Проведи независимый и строгий аудит с точки зрения Computer Science и реального продакшна:<br>' +
+            '1. Насколько эффективна изоляция 40-строчных слотов через data-idx и pre-commit валидатор за 0.006 с для защиты от затирания кода (// rest of code unchanged) и галлюцинаций LLM при вайбкодинге?<br>' +
+            '2. Обоснована ли математика экономии токенов на 80–85% при локальных правках по сравнению со стохастическим RAG?<br>' +
+            '3. Почему для точечной изоляции этот подход превосходит LSP, диапазоны строк в MCP и векторный поиск?<br>' +
+            'Дай честный инженерный вердикт без маркетинговых преувеличений.' +
+          '</div>' +
+
+          '<div class="flex flex-col sm:flex-row items-center justify-between gap-3">' +
+            '<button onclick="copyBlindPrompt()" data-idx="70831" data-desc="' + (currentLang === 'ru' ? '[BTN] Скопировать нейтральный промпт для проверки' : '[BTN] Copy neutral verification prompt') + '" class="w-full sm:w-auto px-6 py-3.5 rounded-xl font-bold text-xs sm:text-sm font-mono cursor-pointer transition-all duration-200 shadow-lg flex items-center justify-center gap-2 ' + (isBlindCopied ? 'bg-emerald-600 text-white scale-[1.02]' : 'bg-gradient-to-r from-sky-600 to-blue-600 hover:from-sky-500 hover:to-blue-500 text-white') + '">' +
+              '<span>' + (isBlindCopied ? t.g9BlindCopied : t.g9BlindCopyBtn) + '</span>' +
+            '</button>' +
+            '<a href="https://github.com/vlad-utyansky/utyansky-index/blob/main/docs/ru/LLM_INDEPENDENT_AUDIT_RU.md" target="_blank" rel="noopener noreferrer" data-idx="70832" data-desc="' + (currentLang === 'ru' ? '[LINK] Открыть официальный аудит на GitHub' : '[LINK] View official audit on GitHub') + '" class="w-full sm:w-auto text-center px-5 py-3.5 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-200 font-bold text-xs border border-white/10 transition block">' +
+              t.g9RepoBtn +
+            '</a>' +
+          '</div>' +
+        '</div>' +
+      '</div>' +
+
+      '<!-- 4. [3 PRINCIPLES SECTION] -->' +
+      '<div id="principles" class="scroll-mt-24 max-w-6xl mx-auto" data-idx="70250" data-desc="[SECTION] 3 принципа стандарта">' +
+        '<div class="text-center max-w-3xl mx-auto mb-10">' +
+          '<h2 class="text-2xl sm:text-4xl font-extrabold text-white tracking-tight mb-3">' + t.principlesTitle + '</h2>' +
+          '<p class="text-sm text-slate-400">' + t.principlesSub + '</p>' +
+        '</div>' +
+        '<div class="grid grid-cols-1 md:grid-cols-3 gap-6">' +
+          '<div class="p-6 rounded-2xl card-glass flex flex-col justify-between border-t-2 border-t-blue-500"><div><div class="text-3xl mb-3">🧱</div><h3 class="font-bold text-white text-lg mb-2">' + t.p1Title + '</h3><p class="text-xs text-slate-300 leading-relaxed mb-4">' + t.p1Desc + '</p><div class="p-3.5 rounded-xl bg-red-950/30 border border-red-500/30 text-left mb-3"><div class="text-red-400 font-mono text-[11px] font-bold mb-1">' + t.p1BadTitle + '</div><p class="text-xs text-slate-300 leading-relaxed">' + t.p1BadText + '</p></div></div><div class="p-3 rounded-xl bg-blue-950/30 border border-blue-500/30 text-left text-xs font-mono text-blue-300">' + t.p1Solve + '</div></div>' +
+          '<div class="p-6 rounded-2xl card-glass flex flex-col justify-between border-t-2 border-t-emerald-500"><div><div class="text-3xl mb-3">🌐</div><h3 class="font-bold text-white text-lg mb-2">' + t.p2Title + '</h3><p class="text-xs text-slate-300 leading-relaxed mb-4">' + t.p2Desc + '</p><div class="p-3.5 rounded-xl bg-red-950/30 border border-red-500/30 text-left mb-3"><div class="text-red-400 font-mono text-[11px] font-bold mb-1">' + t.p2BadTitle + '</div><p class="text-xs text-slate-300 leading-relaxed">' + t.p2BadText + '</p></div></div><div class="p-3 rounded-xl bg-emerald-950/30 border border-emerald-500/30 text-left text-xs font-mono text-emerald-300">' + t.p2Solve + '</div></div>' +
+          '<div class="p-6 rounded-2xl card-glass flex flex-col justify-between border-t-2 border-t-purple-500"><div><div class="text-3xl mb-3">🛡️</div><h3 class="font-bold text-white text-lg mb-2">' + t.p3Title + '</h3><p class="text-xs text-slate-300 leading-relaxed mb-4">' + t.p3Desc + '</p><div class="p-3.5 rounded-xl bg-red-950/30 border border-red-500/30 text-left mb-3"><div class="text-red-400 font-mono text-[11px] font-bold mb-1">' + t.p3BadTitle + '</div><p class="text-xs text-slate-300 leading-relaxed">' + t.p3BadText + '</p></div></div><div class="p-3 rounded-xl bg-purple-950/30 border border-purple-500/30 text-left text-xs font-mono text-purple-300">' + t.p3Solve + '</div></div>' +
+        '</div>' +
+        '<!-- [O(1) PLAIN EXPLANATION BANNER DIRECTLY UNDER PRINCIPLES] -->' +
+        '<div class="mt-6 p-4 sm:p-5 rounded-2xl bg-blue-950/40 border border-blue-500/40 text-left flex items-start gap-3.5 shadow-xl max-w-4xl mx-auto" data-idx="70275" data-desc="[NOTE] Пояснение скорости O(1) простыми словами">' +
+          '<span class="text-2xl flex-shrink-0">💡</span>' +
+          '<div class="text-xs text-slate-300 leading-relaxed">' +
+            '<strong class="text-blue-400 font-bold block text-sm mb-1.5">' + (currentLang === 'ru' ? 'Что означает «адресация O(1)» простыми словами для тех, кто не IT-специалист:' : 'What does "O(1) addressing" mean in simple terms:') + '</strong>' +
+            (currentLang === 'ru' ? 'В программировании <strong>O(1)</strong> читается как <em>«О-большое от единицы»</em> и означает <strong>«попадание точно в цель за 1 действие»</strong>. Вместо того чтобы ИИ перечитывал 1000 строк кода сверху вниз вслепую (сжигая токены и портя соседний код), Индекс Утянского дает точный пятизначный номер ячейки (например, <code class="text-emerald-300">71080</code>). Модель сразу открывает нужную кнопку ровно за 1 шаг за доли секунды.' : 'In computer science, <strong>O(1)</strong> means <strong>"hitting the exact target in 1 step"</strong>. Instead of AI re-reading 1,000 lines of code blindly (burning tokens and corrupting adjacent logic), the Utyansky Index provides a rigid 5-digit coordinate passport (e.g. <code class="text-emerald-300">71080</code>). The model opens the target node in 1 single action in milliseconds.') +
+          '</div>' +
+        '</div>' +
+      '</div>' +
+
+      '<!-- 5. [BENEFITS SECTION] -->' +
+      '<div id="benefits" class="scroll-mt-24 max-w-6xl mx-auto" data-idx="70280" data-desc="[SECTION] Выгоды и метрики">' +
+        '<div class="text-center max-w-3xl mx-auto mb-10">' +
+          '<h2 class="text-2xl sm:text-4xl font-extrabold text-white tracking-tight mb-2">' + t.benefitsTitle + '</h2>' +
+          '<p class="text-slate-400 text-xs sm:text-sm">' + t.benefitsSub + '</p>' +
+        '</div>' +
+        '<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">' +
+          '<div class="p-6 rounded-2xl card-glass flex flex-col justify-between border-t-2 border-t-blue-500"><div><div class="text-3xl font-black text-blue-400 font-mono mb-2">' + t.b1Num + '</div><h3 class="font-bold text-white text-base mb-2">' + t.b1Title + '</h3><p class="text-xs text-slate-300 leading-relaxed mb-4">' + t.b1Desc + '</p></div><div class="p-3 rounded-xl bg-blue-950/40 border border-blue-500/30 text-left text-[11px] text-blue-200 leading-relaxed font-mono">' + t.b1Analogy + '</div></div>' +
+          '<div class="p-6 rounded-2xl card-glass flex flex-col justify-between border-t-2 border-t-emerald-500"><div><div class="text-3xl font-black text-emerald-400 font-mono mb-2">' + t.b2Num + '</div><h3 class="font-bold text-white text-base mb-2">' + t.b2Title + '</h3><p class="text-xs text-slate-300 leading-relaxed mb-4">' + t.b2Desc + '</p></div><div class="p-3 rounded-xl bg-emerald-950/40 border border-emerald-500/30 text-left text-[11px] text-emerald-200 leading-relaxed font-mono">' + t.b2Analogy + '</div></div>' +
+          '<div class="p-6 rounded-2xl card-glass flex flex-col justify-between border-t-2 border-t-purple-500"><div><div class="text-3xl font-black text-purple-400 font-mono mb-2">' + t.b3Num + '</div><h3 class="font-bold text-white text-base mb-2">' + t.b3Title + '</h3><p class="text-xs text-slate-300 leading-relaxed mb-4">' + t.b3Desc + '</p></div><div class="p-3 rounded-xl bg-purple-950/40 border border-purple-500/30 text-left text-[11px] text-purple-200 leading-relaxed font-mono">' + t.b3Analogy + '</div></div>' +
+          '<div class="p-6 rounded-2xl card-glass flex flex-col justify-between border-t-2 border-t-amber-500"><div><div class="text-3xl font-black text-amber-400 font-mono mb-2">' + t.b4Num + '</div><h3 class="font-bold text-white text-base mb-2">' + t.b4Title + '</h3><p class="text-xs text-slate-300 leading-relaxed mb-4">' + t.b4Desc + '</p></div><div class="p-3 rounded-xl bg-amber-950/40 border border-amber-500/30 text-left text-[11px] text-amber-200 leading-relaxed font-mono">' + t.b4Analogy + '</div></div>' +
+        '</div>' +
+      '</div>' +
+
+      '<!-- 6. [REAL PRODUCTION CASES] -->' +
+      '<div id="cases" class="scroll-mt-24 max-w-5xl mx-auto" data-idx="70290" data-desc="[SECTION] Реальные кейсы разработки">' +
+        '<div class="text-center max-w-2xl mx-auto mb-10">' +
+          '<h2 class="text-2xl sm:text-3xl font-bold text-white tracking-tight mb-2">' + t.casesTitle + '</h2>' +
+          '<p class="text-slate-400 text-xs sm:text-sm">' + t.casesSub + '</p>' +
+        '</div>' +
+        '<div class="space-y-6">' + casesHtml + '</div>' +
+      '</div>' +
+
+      '<!-- 7. [PERIODIC MATRIX OF 9 DOMAINS] -->' +
+      '<div id="table" class="scroll-mt-24 max-w-6xl mx-auto" data-idx="70500" data-desc="[SECTION] Матрица 9 доменов">' +
+        '<div class="flex flex-col sm:flex-row items-center justify-between mb-8 gap-4">' +
+          '<div>' +
+            '<div class="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-blue-500/10 border border-blue-500/30 text-blue-400 text-xs font-mono mb-2"><span>🗺️ 9 DOMAINS ARCHITECTURE</span></div>' +
+            '<h2 class="text-2xl sm:text-4xl font-extrabold text-white tracking-tight">' + t.tableTitle + '</h2>' +
+            '<p class="text-xs sm:text-sm text-slate-300 mt-1">' + t.tableSub + '</p>' +
+          '</div>' +
+          '<div class="w-full sm:w-80">' +
+            '<input type="text" id="search-input" placeholder="' + t.tableSearch + '" value="' + searchQuery + '" oninput="handleSearch(this.value)" class="w-full bg-slate-900/90 border border-white/20 rounded-xl px-4 py-2.5 text-xs sm:text-sm text-white placeholder-slate-400 focus:outline-none focus:border-blue-400 font-mono shadow-inner" />' +
+          '</div>' +
+        '</div>' +
+        '<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">' + domainsHtml + '</div>' +
+      '</div>' +
+
+      '<!-- 8. [CODE IMPLEMENTATION SNIPPETS] -->' +
+      '<div id="code" class="scroll-mt-24 max-w-5xl mx-auto" data-idx="70600" data-desc="[SECTION] Практические примеры кода">' +
+        '<div class="text-center max-w-3xl mx-auto mb-8">' +
+          '<div class="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-purple-500/10 border border-purple-500/30 text-purple-400 text-xs font-mono mb-2"><span>' + t.techCodeTag + '</span></div>' +
+          '<h2 class="text-2xl sm:text-4xl font-extrabold text-white tracking-tight mb-2">' + t.techCodeTitle + '</h2>' +
+          '<p class="text-xs sm:text-sm text-slate-300">' + t.techCodeSub + '</p>' +
+        '</div>' +
+        '<div class="rounded-2xl card-glass border border-white/10 overflow-hidden shadow-2xl">' +
+          '<div class="flex flex-wrap items-center bg-slate-900/90 border-b border-white/10 p-2 gap-2">' +
+            '<button onclick="setCodeTab(1)" class="px-4 py-2 rounded-lg font-mono text-xs font-bold transition cursor-pointer ' + (activeCodeTab === 1 ? 'bg-blue-600 text-white shadow-md' : 'text-slate-400 hover:text-white hover:bg-white/5') + '">' + t.codeTab1 + '</button>' +
+            '<button onclick="setCodeTab(2)" class="px-4 py-2 rounded-lg font-mono text-xs font-bold transition cursor-pointer ' + (activeCodeTab === 2 ? 'bg-blue-600 text-white shadow-md' : 'text-slate-400 hover:text-white hover:bg-white/5') + '">' + t.codeTab2 + '</button>' +
+            '<button onclick="setCodeTab(3)" class="px-4 py-2 rounded-lg font-mono text-xs font-bold transition cursor-pointer ' + (activeCodeTab === 3 ? 'bg-blue-600 text-white shadow-md' : 'text-slate-400 hover:text-white hover:bg-white/5') + '">' + t.codeTab3 + '</button>' +
+            '<button onclick="setCodeTab(4)" class="px-4 py-2 rounded-lg font-mono text-xs font-bold transition cursor-pointer ' + (activeCodeTab === 4 ? 'bg-blue-600 text-white shadow-md' : 'text-slate-400 hover:text-white hover:bg-white/5') + '">' + t.codeTab4 + '</button>' +
+          '</div>' +
+          '<div class="p-5 sm:p-6 bg-[#04060a] overflow-x-auto">' +
+            '<pre class="text-xs sm:text-sm font-mono text-emerald-300 leading-relaxed"><code>' + codeSnippets[activeCodeTab] + '</code></pre>' +
+          '</div>' +
+        '</div>' +
+      '</div>' +
+
+      '<!-- 8.5. [AIO: WEB SITE OPTIMIZATION FOR AI SECTION] -->' +
+      '<div id="aio" class="scroll-mt-24 max-w-5xl mx-auto" data-idx="70650" data-desc="' + (currentLang === 'ru' ? '[SECTION] Оптимизация сайтов под ИИ (AIO)' : '[SECTION] Web Site Optimization for AI (AIO)') + '">' +
+        '<div class="text-center max-w-3xl mx-auto mb-8">' +
+          '<div class="inline-flex items-center space-x-2 px-3.5 py-1 rounded-full bg-cyan-500/10 border border-cyan-500/30 text-cyan-400 text-xs font-mono mb-3">' +
+            '<span>🌐 ARTIFICIAL INTELLIGENCE OPTIMIZATION (AIO)</span>' +
+          '</div>' +
+          '<h2 class="text-2xl sm:text-4xl font-extrabold text-white tracking-tight mb-3">' +
+            (currentLang === 'ru' ? 'Оптимизация Сайтов под ИИ (AIO)' : 'Web Site Optimization for AI (AIO)') +
+          '</h2>' +
+          '<p class="text-xs sm:text-sm text-slate-300 max-w-2xl mx-auto leading-relaxed">' +
+            (currentLang === 'ru' ? 'Как подготовить верстку сайта к эпохе нейросетей (Cursor, Claude, Яндекс Нейро, Perplexity) и исключить регрессионный ад затирания кода.' : 'How to prepare web layouts for LLMs and autonomous agents, preventing regressions and accidental code overwrites.') +
+          '</p>' +
+        '</div>' +
+
+        '<div class="p-5 sm:p-7 rounded-3xl bg-gradient-to-r from-slate-900/95 via-slate-900/85 to-cyan-950/40 border border-cyan-500/40 shadow-2xl backdrop-blur-xl">' +
+          '<div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 mb-4">' +
+            '<div class="flex items-center gap-2.5">' +
+              '<span class="text-2xl">👁️</span>' +
+              '<div>' +
+                '<h3 class="text-base sm:text-lg font-bold text-white">' +
+                  (currentLang === 'ru' ? 'Интерактивный Рентген DOM-Координат Сайта' : 'Interactive DOM Coordinate X-Ray') +
+                '</h3>' +
+                '<span class="text-[10px] font-mono text-cyan-400">' + (currentLang === 'ru' ? 'Детерминированная адресация слотов со сложностью O(1)' : 'Deterministic O(1) slot addressing') + '</span>' +
+              '</div>' +
+            '</div>' +
+            '<button onclick="toggleAiVision()" data-idx="70651" data-desc="' + (currentLang === 'ru' ? '[BTN] Запуск подсветки координат ИИ' : '[BTN] Toggle AI coordinates overlay') + '" class="px-4 py-2.5 rounded-xl bg-cyan-600 hover:bg-cyan-500 text-white text-xs font-mono font-bold transition shadow-lg flex items-center gap-2 cursor-pointer whitespace-nowrap">' +
+              '<span>⚡</span>' +
+              '<span id="teaser-ai-btn-text">' + (currentLang === 'ru' ? (isAiVisionActive ? 'Выключить подсветку' : 'Включить подсветку') : (isAiVisionActive ? 'Turn Off Overlay' : 'Toggle Overlay')) + '</span>' +
+            '</button>' +
+          '</div>' +
+
+          '<p class="text-xs sm:text-sm text-slate-300 leading-relaxed mb-4">' +
+            (currentLang === 'ru' ? 'Как нейросеть видит эту страницу: вместо слепого HTML каждый блок снабжен 5-значным паспортом data-idx. ИИ ориентируется с точностью O(1), не стирая верстку и не галлюцинируя.' : 'How neural networks see this page: instead of blind HTML, each element has a 5-digit data-idx passport. AI navigates with O(1) precision without code regressions.') +
+          '</p>' +
+
+          '<!-- [ACCORDION EXPLAINER] -->' +
+          '<details class="group mb-4 bg-slate-950/70 rounded-2xl border border-white/10 overflow-hidden" data-idx="70655" data-desc="' + (currentLang === 'ru' ? '[ACCORDION] Подробная аннотация технологии координатной разметки' : '[ACCORDION] Detailed web indexing explanation accordion') + '">' +
+            '<summary class="px-4 py-3 text-xs sm:text-sm font-mono text-cyan-300 hover:text-white cursor-pointer select-none flex items-center justify-between transition list-none bg-white/[0.02] hover:bg-white/[0.05]">' +
+              '<span class="flex items-center gap-2">' +
+                '<span class="text-cyan-400 group-open:rotate-90 transition-transform duration-200">▶</span>' +
+                '<strong class="font-bold">' + (currentLang === 'ru' ? '📖 Как устроена технология AIO и почему верстка больше не ломается?' : '📖 How AIO works and why layout never breaks?') + '</strong>' +
+              '</span>' +
+              '<span class="text-[10px] text-slate-400 group-open:hidden border border-white/10 px-2 py-0.5 rounded-md">' + (currentLang === 'ru' ? 'раскрыть аннотацию' : 'expand') + '</span>' +
+            '</summary>' +
+            '<div class="px-5 pb-5 pt-3 text-xs sm:text-sm text-slate-300 space-y-3 border-t border-white/5 font-sans leading-relaxed">' +
+              '<p>' +
+                '<strong class="text-white font-mono text-xs">' + (currentLang === 'ru' ? '1. Слепота ИИ в обычном HTML:' : '1. AI Blindness in raw HTML:') + '</strong> ' +
+                (currentLang === 'ru' ? 'Для ChatGPT, Claude или Cursor обычный сайт — это каша из тысяч тегов &lt;div&gt; и классов Tailwind. Нейросеть картинок не видит и начинает гадать, путая кнопки заказа с отзывами.' : 'For LLMs, raw HTML is meaningless soup of divs and utility classes. AI guesses blindly without knowing which button is the primary CTA.') +
+              '</p>' +
+              '<p>' +
+                '<strong class="text-white font-mono text-xs">' + (currentLang === 'ru' ? '2. Координатная матрица data-idx и data-desc:' : '2. Deterministic coordinates:') + '</strong> ' +
+                (currentLang === 'ru' ? 'Каждый функциональный узел получает несгораемый пятизначный паспорт. Поиск сужается до сложности O(1) — ИИ правит строго 40 строк целевого контейнера, не имея физического доступа к остальным 1000 строкам файла.' : 'Every node receives a 5-digit coordinate passport. Addressing collapses to O(1): AI edits strictly the targeted 40-line slot without touching adjacent code.') +
+              '</p>' +
+              '<p>' +
+                '<strong class="text-white font-mono text-xs">' + (currentLang === 'ru' ? '3. 0% затирания кода (// rest of code unchanged):' : '3. Zero code overwrites:') + '</strong> ' +
+                (currentLang === 'ru' ? 'Модель физически лишена возможности случайно вырезать обработчики событий (onClick) или оставить ленивую заглушку, уронив экран в белый лист.' : 'AI is physically prevented from leaving lazy placeholders or wiping out event listeners.') +
+              '</p>' +
+              '<div class="p-3.5 rounded-xl bg-cyan-950/50 border border-cyan-500/30 text-cyan-300 text-xs font-mono flex items-center gap-2">' +
+                '<span class="text-base">💡</span>' +
+                '<span>' + (currentLang === 'ru' ? 'Нажмите кнопку <strong>«👁️ Взгляд ИИ»</strong> в правом углу верхнего меню (или кнопку выше), чтобы включить рентген и увидеть сайт глазами нейросети прямо сейчас!' : 'Click <strong>"👁️ AI Vision"</strong> in the top navbar (or button above) to inspect the DOM coordinate matrix live!') + '</span>' +
+              '</div>' +
+            '</div>' +
+          '</details>' +
+
+          '<div class="flex flex-wrap items-center justify-between gap-3 pt-3 border-t border-white/10 text-xs font-mono">' +
+            '<span class="text-cyan-400 font-semibold">' + (currentLang === 'ru' ? '✓ 0% затирания кода • ✓ Экономия 85% токенов • ✓ Точность O(1)' : '✓ 0% code regressions • ✓ 85% token savings • ✓ O(1) Precision') + '</span>' +
+            '<div class="flex items-center gap-4">' +
+              '<a href="https://github.com/vlad-utyansky/utyansky-index/blob/main/docs/' + (currentLang === 'ru' ? 'ru' : 'en') + '/WEB_SITE_COORDINATE_INDEXING.md" target="_blank" rel="noopener" data-idx="70652" data-desc="' + (currentLang === 'ru' ? '[LINK] Открыть полное руководство AIO на GitHub' : '[LINK] Open full AIO guide on GitHub') + '" class="text-blue-400 hover:text-white transition flex items-center gap-1 hover:underline font-bold">' +
+                '<span>' + (currentLang === 'ru' ? 'Руководство AIO на GitHub ➔' : 'AIO Guide on GitHub ➔') + '</span>' +
+              '</a>' +
+            '</div>' +
+          '</div>' +
+        '</div>' +
+      '</div>' +
+
+      '<!-- 9. [MARKETING UVWI SECTION & 3 USE CASES] -->' +
+      '<div id="marketing" class="max-w-5xl mx-auto scroll-mt-24" data-idx="70700" data-desc="[SECTION] Маркетинг и калькулятор UVWI">' +
+        '<div class="text-center max-w-3xl mx-auto mb-10">' +
+          '<div class="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-rose-500/10 border border-rose-500/30 text-rose-400 text-xs font-mono mb-3">' +
+            '<span>' + t.marketingSectionTag + '</span>' +
+          '</div>' +
+          '<h2 class="text-2xl sm:text-4xl font-extrabold text-white tracking-tight mb-3">' + t.marketingSectionTitle + '</h2>' +
+          '<p class="text-sm text-slate-300 leading-relaxed">' + t.marketingSectionSub + '</p>' +
+        '</div>' +
+        '<div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">' +
+          '<div class="p-6 rounded-2xl card-glass border-l-4 border-l-red-500">' +
+            '<h3 class="text-base font-bold text-red-400 mb-2">' + t.mPainTitle + '</h3>' +
+            '<p class="text-xs text-slate-300 leading-relaxed">' + t.mPainText + '</p>' +
+          '</div>' +
+          '<div class="p-6 rounded-2xl card-glass border-l-4 border-l-emerald-500">' +
+            '<h3 class="text-base font-bold text-emerald-400 mb-2">' + t.mSolutionTitle + '</h3>' +
+            '<p class="text-xs text-slate-300 leading-relaxed">' + t.mSolutionText + '</p>' +
+          '</div>' +
+        '</div>' +
+        
+        '<div class="mb-8">' +
+          '<h3 class="text-lg font-bold text-white mb-4 flex items-center gap-2"><span>' + t.mCasesTitle + '</span></h3>' +
+          '<div class="grid grid-cols-1 md:grid-cols-3 gap-5">' +
+            '<div class="p-5 rounded-2xl card-glass border border-blue-500/30 flex flex-col justify-between hover:border-blue-400 transition shadow-lg">' +
+              '<div><h4 class="font-bold text-white text-sm mb-2">' + t.mCase1Title + '</h4><p class="text-xs text-slate-300 leading-relaxed">' + t.mCase1Desc + '</p></div>' +
+              '<button onclick="setPreset(10000, 3500)" class="mt-4 w-full py-2.5 rounded-xl bg-blue-600/20 hover:bg-blue-600/40 text-blue-300 border border-blue-500/30 text-xs font-mono font-semibold transition cursor-pointer">' + t.presetBtn1 + '</button>' +
+            '</div>' +
+            '<div class="p-5 rounded-2xl card-glass border border-amber-500/30 flex flex-col justify-between hover:border-amber-400 transition shadow-lg">' +
+              '<div><h4 class="font-bold text-white text-sm mb-2">' + t.mCase2Title + '</h4><p class="text-xs text-slate-300 leading-relaxed">' + t.mCase2Desc + '</p></div>' +
+              '<button onclick="setPreset(100000, 50)" class="mt-4 w-full py-2.5 rounded-xl bg-amber-600/20 hover:bg-amber-600/40 text-amber-300 border border-amber-500/30 text-xs font-mono font-semibold transition cursor-pointer">' + t.presetBtn2 + '</button>' +
+            '</div>' +
+            '<div class="p-5 rounded-2xl card-glass border border-emerald-500/30 flex flex-col justify-between hover:border-emerald-400 transition shadow-lg">' +
+              '<div><h4 class="font-bold text-white text-sm mb-2">' + t.mCase3Title + '</h4><p class="text-xs text-slate-300 leading-relaxed">' + t.mCase3Desc + '</p></div>' +
+              '<button onclick="setPreset(50000, 6000)" class="mt-4 w-full py-2.5 rounded-xl bg-emerald-600/20 hover:bg-emerald-600/40 text-emerald-300 border border-emerald-500/30 text-xs font-mono font-semibold transition cursor-pointer">' + t.presetBtn3 + '</button>' +
+            '</div>' +
+          '</div>' +
+        '</div>' +
+
+        '<div class="p-8 rounded-3xl card-glass border border-rose-500/40 shadow-2xl">' +
+          '<div class="text-center max-w-xl mx-auto mb-6">' +
+            '<span class="font-mono text-xs text-rose-400 font-semibold">' + t.calcTag + '</span>' +
+            '<h3 class="text-2xl font-bold text-white tracking-tight mt-1">' + t.calcTitle + '</h3>' +
+            '<p class="text-xs text-slate-300 mt-2">' + t.calcSub + '</p>' +
+          '</div>' +
+          '<div class="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-6">' +
+            '<div>' +
+              '<label class="block text-xs font-mono text-slate-300 mb-2">' + t.calcReach + '</label>' +
+              '<input type="number" value="' + reachVal + '" oninput="handleReach(this.value)" class="w-full bg-slate-900 border border-white/10 rounded-lg px-4 py-2.5 text-white font-mono focus:outline-none focus:border-rose-500" />' +
+            '</div>' +
+            '<div>' +
+              '<label class="block text-xs font-mono text-slate-300 mb-2">' + t.calcWow + '</label>' +
+              '<input type="number" value="' + wowVal + '" oninput="handleWow(this.value)" class="w-full bg-slate-900 border border-white/10 rounded-lg px-4 py-2.5 text-white font-mono focus:outline-none focus:border-rose-500" />' +
+            '</div>' +
+          '</div>' +
+          '<div class="p-5 rounded-xl bg-rose-950/30 border border-rose-500/40 flex flex-col sm:flex-row items-center justify-between gap-4">' +
+            '<div>' +
+              '<div class="text-xs font-mono text-rose-300">' + t.calcRes + '</div>' +
+              '<div class="text-xs text-slate-400 mt-0.5">' + t.calcFormula + '</div>' +
+            '</div>' +
+            '<div class="text-3xl font-extrabold text-white font-mono">' +
+              uvwiVal + '% <span class="text-sm font-normal text-rose-400 ml-1">' + t.calcVerdict + '</span>' +
+            '</div>' +
+          '</div>' +
+        '</div>' +
+      '</div>' +
+
+      '<!-- 10. [TRANSPARENT PRICING TIERS] -->' +
+      '<div id="pricing" class="scroll-mt-24" data-idx="70300" data-desc="[SECTION] Прозрачные тарифы">' +
+        '<div class="text-center max-w-3xl mx-auto mb-10">' +
+          '<div class="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 text-xs font-mono mb-3">' +
+            '<span>' + t.pricingBadge + '</span>' +
+          '</div>' +
+          '<h2 class="text-2xl sm:text-4xl font-extrabold text-white tracking-tight mb-2">' + t.pricingTitle + '</h2>' +
+          '<p class="text-xs sm:text-sm text-slate-300">' + t.pricingSub + '</p>' +
+        '</div>' +
+        '<div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10">' +
+          '<div class="p-6 sm:p-8 rounded-3xl card-glass border border-white/10 flex flex-col justify-between" data-idx="70310" data-desc="[CARD] Тариф Community">' +
+            '<div>' +
+              '<div class="text-xs font-mono text-emerald-400 font-bold mb-2">OPEN SOURCE</div>' +
+              '<h3 class="text-xl font-bold text-white mb-2">' + t.tier1Title + '</h3>' +
+              '<div class="text-2xl font-black text-white font-mono mb-4">' + t.tier1Price + '</div>' +
+              '<p class="text-xs text-slate-300 mb-6">' + t.tier1For + '</p>' +
+              '<ul class="space-y-2.5 text-xs text-slate-300 font-mono mb-8">' +
+                '<li class="flex items-start gap-2"><span class="text-emerald-400 font-bold">✓</span><span>' + t.tier1F1 + '</span></li>' +
+                '<li class="flex items-start gap-2"><span class="text-emerald-400 font-bold">✓</span><span>' + t.tier1F2 + '</span></li>' +
+                '<li class="flex items-start gap-2"><span class="text-emerald-400 font-bold">✓</span><span>' + t.tier1F3 + '</span></li>' +
+                '<li class="flex items-start gap-2"><span class="text-emerald-400 font-bold">✓</span><span>' + t.tier1F4 + '</span></li>' +
+              '</ul>' +
+            '</div>' +
+            '<a href="https://github.com/vlad-utyansky/utyansky-index" target="_blank" rel="noopener noreferrer" class="w-full text-center py-3 rounded-xl bg-slate-800 hover:bg-slate-700 text-white font-bold text-xs border border-white/10 transition block">' + t.tier1Btn + ' ➔</a>' +
+          '</div>' +
+
+          '<div class="p-6 sm:p-8 rounded-3xl card-glass border-2 border-blue-500 shadow-2xl relative flex flex-col justify-between bg-blue-950/20" data-idx="70320" data-desc="[CARD] Экспресс-Внедрение">' +
+            '<div class="absolute -top-3.5 left-1/2 -translate-x-1/2 px-3 py-0.5 rounded-full bg-blue-600 text-white font-mono text-[10px] font-extrabold uppercase tracking-wider shadow-lg">РЕКОМЕНДУЕМ ДЛЯ MVP</div>' +
+            '<div>' +
+              '<div class="text-xs font-mono text-blue-400 font-bold mb-2">ПОД КЛЮЧ</div>' +
+              '<h3 class="text-xl font-bold text-white mb-2">' + t.tier2Title + '</h3>' +
+              '<div class="text-2xl font-black text-white font-mono mb-1">' + t.tier2Price + '</div>' +
+              '<div class="text-xs font-mono text-slate-400 mb-4">' + t.tier2Period + '</div>' +
+              '<p class="text-xs text-blue-200 mb-6">' + t.tier2For + '</p>' +
+              '<ul class="space-y-2.5 text-xs text-slate-200 font-mono mb-8">' +
+                '<li class="flex items-start gap-2"><span class="text-blue-400 font-bold">⚡</span><span>' + t.tier2F1 + '</span></li>' +
+                '<li class="flex items-start gap-2"><span class="text-blue-400 font-bold">⚡</span><span>' + t.tier2F2 + '</span></li>' +
+                '<li class="flex items-start gap-2"><span class="text-blue-400 font-bold">⚡</span><span>' + t.tier2F3 + '</span></li>' +
+                '<li class="flex items-start gap-2"><span class="text-blue-400 font-bold">⚡</span><span>' + t.tier2F4 + '</span></li>' +
+              '</ul>' +
+            '</div>' +
+            '<a href="https://t.me/vau_amoCRM" target="_blank" rel="noopener noreferrer" class="w-full text-center py-3.5 rounded-xl bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-500 hover:to-indigo-500 text-white font-bold text-xs shadow-lg transition block">' + t.tier2Btn + ' ➔</a>' +
+          '</div>' +
+
+          '<div class="p-6 sm:p-8 rounded-3xl card-glass border border-emerald-500/40 flex flex-col justify-between" data-idx="70330" data-desc="[CARD] Ежемесячное Сопровождение">' +
+            '<div>' +
+              '<div class="text-xs font-mono text-emerald-400 font-bold mb-2">RETAINER & SLA</div>' +
+              '<h3 class="text-xl font-bold text-white mb-2">' + t.tier3Title + '</h3>' +
+              '<div class="text-2xl font-black text-white font-mono mb-4">' + t.tier3Price + '</div>' +
+              '<p class="text-xs text-slate-300 mb-6">' + t.tier3For + '</p>' +
+              '<ul class="space-y-2.5 text-xs text-slate-300 font-mono mb-8">' +
+                '<li class="flex items-start gap-2"><span class="text-emerald-400 font-bold">✓</span><span>' + t.tier3F1 + '</span></li>' +
+                '<li class="flex items-start gap-2"><span class="text-emerald-400 font-bold">✓</span><span>' + t.tier3F2 + '</span></li>' +
+                '<li class="flex items-start gap-2"><span class="text-emerald-400 font-bold">✓</span><span>' + t.tier3F3 + '</span></li>' +
+                '<li class="flex items-start gap-2"><span class="text-emerald-400 font-bold">✓</span><span>' + t.tier3F4 + '</span></li>' +
+              '</ul>' +
+            '</div>' +
+            '<a href="https://t.me/vau_amoCRM" target="_blank" rel="noopener noreferrer" class="w-full text-center py-3 rounded-xl bg-emerald-600/20 hover:bg-emerald-600/30 text-emerald-300 border border-emerald-500/40 font-bold text-xs transition block">' + t.tier3Btn + ' ➔</a>' +
+          '</div>' +
+        '</div>' +
+
+        '<div class="text-center">' +
+          '<a href="https://t.me/vau_amoCRM" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center px-8 py-4 rounded-2xl bg-gradient-to-r from-blue-600 via-indigo-600 to-purple-600 hover:from-blue-500 hover:to-purple-500 text-white font-extrabold text-sm sm:text-base shadow-2xl hover:shadow-blue-500/50 transition-all transform hover:-translate-y-0.5 border border-white/20">' +
+            t.ctaAuditBtn +
+          '</a>' +
+        '</div>' +
+      '</div>' +
+
+      '<!-- 11. [FAQ SECTION (20 QUESTIONS)] -->' +
+      '<div id="faq" class="max-w-4xl mx-auto scroll-mt-24" data-idx="85500" data-desc="[SECTION] Блок часто задаваемых вопросов FAQ">' +
+        '<div class="text-center mb-10">' +
+          '<div class="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-blue-500/10 border border-blue-500/30 text-blue-400 text-xs font-mono mb-3"><span>❓ KNOWLEDGE BASE (20 ВОПРОСОВ И ОТВЕТОВ)</span></div>' +
+          '<h2 class="text-2xl sm:text-4xl font-extrabold text-white tracking-tight mb-2">' + t.faqTitle + '</h2>' +
+          '<p class="text-slate-300 text-xs sm:text-sm">' + t.faqSub + '</p>' +
+        '</div>' +
+        '<div class="space-y-3.5">' +
+          [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20].map(function(num) {
+            var q = t['faqQ' + num];
+            var a = t['faqA' + num];
+            if (!q) return '';
+            return '<details class="group p-4 sm:p-5 rounded-2xl card-glass border border-white/10 cursor-pointer transition-all duration-200 open:border-blue-500/40" data-idx="' + (85500 + num) + '">' +
+              '<summary class="font-bold text-white text-sm sm:text-base flex justify-between items-center list-none gap-4">' +
+                '<span>' + q + '</span>' +
+                '<span class="text-blue-400 font-mono transition-transform group-open:rotate-180 text-sm">▼</span>' +
+              '</summary>' +
+              '<p class="text-xs sm:text-sm text-slate-300 mt-3.5 leading-relaxed pt-3 border-t border-white/5">' + a + '</p>' +
+            '</details>';
+          }).join('') +
+        '</div>' +
+      '</div>' +
+
+      '<!-- 12. [CONTACTS & AUTHOR SECTION] -->' +
+      '<div id="contacts" class="p-8 sm:p-10 rounded-3xl card-glass border border-blue-500/30 max-w-4xl mx-auto scroll-mt-24 text-center shadow-2xl" data-idx="70400" data-desc="[SECTION] Контакты">' +
+        '<div class="max-w-2xl mx-auto mb-8">' +
+          '<h2 class="text-2xl sm:text-3xl font-bold text-white tracking-tight mb-2">' + t.contactsTitle + '</h2>' +
+          '<p class="text-xs sm:text-sm text-slate-400">' + t.contactsSub + '</p>' +
+        '</div>' +
+
+        '<!-- [STAR & FEEDBACK CALLOUT] -->' +
+        '<div class="mb-10 p-6 sm:p-8 rounded-3xl bg-gradient-to-br from-slate-900/95 via-[#0b1220] to-amber-950/25 border-2 border-amber-400/40 text-left shadow-2xl relative overflow-hidden" data-idx="70410" data-desc="' + (currentLang === 'ru' ? '[NOTE] Призыв поставить звезду на GitHub и дать обратную связь' : '[NOTE] GitHub Star and feedback callout') + '">' +
+          '<div class="relative z-10">' +
+            '<div class="flex flex-wrap items-center justify-between gap-3 mb-4 pb-3 border-b border-white/10">' +
+              '<div class="flex items-center gap-3">' +
+                '<span class="text-2xl sm:text-3xl">⭐</span>' +
+                '<h3 class="text-base sm:text-xl font-extrabold text-white tracking-tight">' +
+                  (currentLang === 'ru' ? 'Обратная связь и поддержка автора' : 'Feedback & Author Support') +
+                '</h3>' +
+              '</div>' +
+              '<span class="text-[11px] font-mono font-bold uppercase px-3 py-1 rounded-full bg-amber-400/15 text-amber-300 border border-amber-400/40">GitHub Star</span>' +
+            '</div>' +
+
+            '<p class="text-xs sm:text-sm md:text-base text-slate-200 leading-relaxed mb-6 font-normal">' +
+              (currentLang === 'ru' ? 'Буду искренне благодарен за вашу обратную связь! Если «Индекс Утянского» помог вам навести порядок в кодовой базе, сберечь токены или решить сложную задачу — <strong>поставьте проекту звезду ⭐ на GitHub</strong>. Для меня как автора это лучшая награда, ценнейший сигнал востребованности и огромная мотивация развивать открытый стандарт дальше.' : 'I’d be genuinely grateful for your feedback! If the Utyansky Index helped you tame AI hallucinations, save tokens, or streamline your architecture — please consider <strong>giving this repo a Star on GitHub ⭐</strong>. As an independent author, your star is the greatest motivation to keep advancing this open standard!') +
+            '</p>' +
+
+            '<div class="flex flex-col md:flex-row items-stretch md:items-center justify-between gap-4 pt-1">' +
+              '<div class="flex-1 p-3.5 sm:p-4 rounded-2xl bg-black/50 border border-amber-400/30 text-xs sm:text-sm text-amber-200/90 leading-relaxed flex items-start gap-3">' +
+                '<span class="text-lg flex-shrink-0">💡</span>' +
+                '<div>' +
+                  '<strong class="text-white block mb-0.5">' + (currentLang === 'ru' ? 'Как поставить звезду за 3 секунды:' : 'How to star in 3 seconds:') + '</strong>' +
+                  '<span>' + (currentLang === 'ru' ? 'Перейдите по кнопке в репозиторий ➔ в правом верхнем углу страницы нажмите <strong>⭐ Star</strong>.' : 'Click the button to open repo ➔ in the top-right corner click <strong>⭐ Star</strong>.') + '</span>' +
+                '</div>' +
+              '</div>' +
+
+              '<a href="' + (currentLang === 'ru' ? 'https://github.com/vlad-utyansky/utyansky-index/blob/main/README_RU.md' : 'https://github.com/vlad-utyansky/utyansky-index') + '" target="_blank" rel="noopener noreferrer" data-idx="70411" data-desc="' + (currentLang === 'ru' ? '[BTN] Кнопка поставить звезду на GitHub' : '[BTN] Star on GitHub button') + '" class="px-6 sm:px-8 py-3.5 sm:py-4 rounded-2xl bg-gradient-to-r from-amber-400 via-amber-500 to-amber-600 hover:from-amber-300 hover:to-amber-500 text-slate-950 font-black text-xs sm:text-sm tracking-wider uppercase transition-all shadow-xl hover:shadow-amber-500/30 flex items-center justify-center gap-2 whitespace-nowrap cursor-pointer hover:scale-[1.02] transform text-center">' +
+                '<span>⭐ ' + (currentLang === 'ru' ? 'Поставить звезду на GitHub ➔' : 'Star on GitHub ➔') + '</span>' +
+              '</a>' +
+            '</div>' +
+          '</div>' +
+        '</div>' +
+
+        '<div class="max-w-2xl mx-auto">' +
+          
+          '<div class="flex flex-wrap items-center justify-center gap-4 mb-6">' +
+            '<a href="https://t.me/vau_amoCRM" target="_blank" rel="noopener noreferrer" class="px-5 py-3.5 rounded-xl bg-blue-600 hover:bg-blue-500 text-white font-bold text-xs tracking-wide transition shadow-lg flex items-center space-x-2">' +
+              '<span>' + t.contactTg + '</span>' +
+            '</a>' +
+            '<a href="https://max.ru/u/f9LHodD0cOJxXAXgJbsBln2U9yLfjcpotJRiIX_tvn4aC7M95NRz7JLB5FM" target="_blank" rel="noopener noreferrer" class="px-5 py-3.5 rounded-xl bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-purple-500 hover:to-indigo-500 text-white font-bold text-xs tracking-wide transition shadow-lg flex items-center space-x-2 border border-purple-400/30">' +
+              '<span>' + t.contactMax + '</span>' +
+            '</a>' +
+            '<a href="https://utyanskiy.ru" target="_blank" rel="noopener noreferrer" class="px-5 py-3.5 rounded-xl bg-white/10 hover:bg-white/20 text-white font-semibold text-xs tracking-wide transition border border-white/10 flex items-center space-x-2">' +
+              '<span>' + t.contactSite + '</span>' +
+            '</a>' +
+            '<a href="https://bio.utyanskiy.ru" target="_blank" rel="noopener noreferrer" class="px-5 py-3.5 rounded-xl bg-gradient-to-r from-sky-600/40 to-blue-600/40 hover:bg-sky-600/60 text-sky-200 font-bold text-xs tracking-wide transition border border-sky-400/40 flex items-center space-x-2">' +
+              '<span>📜 bio.utyanskiy.ru (Биография 14 глав)</span>' +
+            '</a>' +
+            '<a href="' + (currentLang === 'ru' ? 'https://github.com/vlad-utyansky/utyansky-index/blob/main/README_RU.md' : 'https://github.com/vlad-utyansky/utyansky-index') + '" target="_blank" rel="noopener noreferrer" class="px-5 py-3.5 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-200 font-semibold text-xs tracking-wide transition border border-white/10 flex items-center space-x-2">' +
+              '<span>' + t.contactGit + '</span>' +
+            '</a>' +
+          '</div>' +
+          '<div class="text-xs font-mono text-slate-500">Email: <a href="mailto:vlad@utyanskiy.ru" class="text-blue-400 underline">vlad@utyanskiy.ru</a></div>' +
+        '</div>' +
+      '</div>' +
+
+      '<div class="text-center border-t border-white/10 pt-12 max-w-4xl mx-auto">' +
+        '<div class="mb-4"><span class="text-sm text-slate-300 font-semibold">' + t.footerAuthorLabel + '</span><div class="text-base text-white font-bold mt-1">' + t.footerAuthorName + '</div><div class="text-xs text-blue-400 font-mono mt-1">' + t.footerAuthorRole + '</div></div>' +
+        '<div class="flex items-center justify-center space-x-6 text-xs text-slate-400 mb-6">' +
+          '<a href="https://utyanskiy.ru" target="_blank" rel="noopener noreferrer" class="hover:text-white underline">utyanskiy.ru</a>' +
+          '<a href="https://bio.utyanskiy.ru" target="_blank" rel="noopener noreferrer" class="hover:text-sky-300 underline font-semibold">bio.utyanskiy.ru (14 глав)</a>' +
+          '<a href="' + (currentLang === 'ru' ? 'https://github.com/vlad-utyansky/utyansky-index/blob/main/README_RU.md' : 'https://github.com/vlad-utyansky/utyansky-index') + '" target="_blank" rel="noopener noreferrer" class="hover:text-white underline">GitHub</a>' +
+          '<a href="./llms.txt" class="text-blue-400 hover:underline font-mono">/llms.txt</a>' +
+        '</div>' +
+        '<div class="mb-4">' +
+          '<a href="' + (currentLang === 'ru' ? 'https://github.com/vlad-utyansky/utyansky-index/blob/main/README_RU.md' : 'https://github.com/vlad-utyansky/utyansky-index') + '" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-amber-500/15 border border-amber-400/30 text-amber-300 hover:text-white hover:bg-amber-500/30 text-xs font-mono transition">' +
+            '<span>⭐ ' + (currentLang === 'ru' ? 'Понравился проект? Нажмите Star в правом верхнем углу на GitHub' : 'Like the project? Star it in the top-right corner on GitHub') + ' ➔</span>' +
+          '</a>' +
+        '</div>' +
+        '<p class="text-xs text-slate-500">' + t.footerRights + '</p>' +
+      '</div>' +
+    '</main>' +
+  '</div>';
+}
+
+
+var isAiVisionActive = false;
+
+function toggleAiVision() {
+  isAiVisionActive = !isAiVisionActive;
+  var styleId = 'utyansky-ai-vision-styles';
+  var hudId = 'utyansky-ai-vision-hud';
+  var isRu = currentLang === 'ru';
+
+  if (isAiVisionActive) {
+    if (!document.getElementById(styleId)) {
+      var st = document.createElement('style');
+      st.id = styleId;
+      st.innerHTML = [
+        '/* Защита фиксации меню и предотвращение горизонтальной прокрутки */',
+        'html, body { overflow-x: hidden !important; }',
+        'header { position: fixed !important; top: 0 !important; left: 0 !important; right: 0 !important; width: 100% !important; z-index: 50 !important; }',
+        '.fixed { position: fixed !important; }',
+        '',
+        '/* Подсветка целевых блоков */',
+        '.utyansky-ai-target { outline: 2px dashed #0284c7 !important; outline-offset: 2px !important; }',
+        '.utyansky-ai-target:not(header):not(.fixed) { position: relative !important; }',
+        '',
+        '/* Бейджи координат */',
+        '.utyansky-ai-badge { position: absolute !important; top: -11px !important; left: 8px !important; background: linear-gradient(135deg, #0f172a 0%, #0284c7 100%) !important; color: #ffffff !important; font-family: ui-monospace, monospace !important; font-size: 10px !important; font-weight: 800 !important; line-height: 1 !important; padding: 2.5px 6px !important; border-radius: 6px !important; border: 1px solid rgba(56, 189, 248, 0.7) !important; box-shadow: 0 4px 12px rgba(0,0,0,0.6), 0 0 10px rgba(2, 132, 199, 0.4) !important; pointer-events: none !important; z-index: 999999 !important; white-space: nowrap !important; display: flex !important; align-items: center !important; gap: 4px !important; max-width: calc(100vw - 32px) !important; }',
+        '',
+        '/* Компактные бейджи для элементов шапки (не сдвигают кнопку языка и не уходят за экран) */',
+        '.utyansky-ai-badge-header { top: calc(100% + 5px) !important; right: 0 !important; left: auto !important; }',
+        '.utyansky-ai-desc { color: #bae6fd !important; font-weight: 500 !important; font-size: 9px !important; max-width: 180px !important; overflow: hidden !important; text-overflow: ellipsis !important; }'
+      ].join('\n');
+      document.head.appendChild(st);
+    }
+
+    var targets = document.querySelectorAll('[data-idx]');
+    targets.forEach(function(el) {
+      if (el.closest('#' + hudId)) return;
+      // Не ломаем сам контейнер sticky header
+      if (el.tagName.toLowerCase() === 'header') return;
+
+      var isHeaderChild = el.closest('header');
+      el.classList.add('utyansky-ai-target');
+      var idx = el.getAttribute('data-idx') || '70000';
+      var desc = el.getAttribute('data-desc') || '';
+      var badge = document.createElement('div');
+      badge.className = 'utyansky-ai-badge' + (isHeaderChild ? ' utyansky-ai-badge-header' : '');
+      var cleanDesc = desc ? desc.replace(/^\[.*?\]\s*/, '') : '';
+      
+      // Для кнопок в шапке показываем компактный индекс без длинного текста, чтобы кнопка языка не сдвигалась
+      if (isHeaderChild) {
+        badge.innerHTML = '<span>⚡ [IDX: ' + idx + ']</span>';
+      } else {
+        badge.innerHTML = '<span>⚡ [IDX: ' + idx + ']</span>' + (cleanDesc ? '<span class="utyansky-ai-desc">' + cleanDesc + '</span>' : '');
+      }
+      el.appendChild(badge);
+    });
+
+    var hud = document.getElementById(hudId);
+    if (!hud) {
+      hud = document.createElement('div');
+      hud.id = hudId;
+      document.body.appendChild(hud);
+    }
+    hud.className = 'fixed bottom-20 right-4 sm:right-6 z-50 p-4 rounded-2xl bg-[#0a0f1d]/95 border border-cyan-500/40 shadow-2xl backdrop-blur-xl max-w-xs text-xs font-mono text-cyan-300';
+    hud.innerHTML = '<div style="display:flex; align-items:center; justify-content:space-between; margin-bottom:8px;">' +
+      '<div style="display:flex; align-items:center; gap:8px;">' +
+      '<span style="width:8px; height:8px; border-radius:50%; background:#38bdf8; box-shadow:0 0 8px #38bdf8;"></span>' +
+      '<strong style="color:#ffffff; font-size:12px;">' + (isRu ? '👁️ Взгляд ИИ (HUD O(1))' : '👁️ AI Vision Mode (O(1))') + '</strong>' +
+      '</div>' +
+      '<button onclick="toggleAiVision()" style="background:none; border:none; color:#94a3b8; cursor:pointer; font-size:16px; padding:2px 6px; line-height:1;">✕</button>' +
+      '</div>' +
+      '<p style="font-size:11px; color:#cbd5e1; font-family:sans-serif; line-height:1.4; margin:0 0 10px 0;">' +
+      (isRu ? 'Сайт переведен в координатный режим. Для нейросети каждый блок снабжен цифровым паспортом без галлюцинаций.' : 'Page switched to coordinate mode. For LLMs, every node has a deterministic passport.') +
+      '</p>' +
+      '<div style="background:rgba(2,132,199,0.15); border:1px solid rgba(56,189,248,0.3); border-radius:8px; padding:8px; font-size:10px; line-height:1.6;">' +
+      '<div>✓ ' + (isRu ? 'Индексировано узлов:' : 'Indexed Nodes:') + ' <strong style="color:#ffffff;">' + targets.length + '</strong></div>' +
+      '<div>✓ ' + (isRu ? 'Точность адресации:' : 'Addressing Precision:') + ' <strong style="color:#34d399;">O(1)</strong></div>' +
+      '<div>✓ ' + (isRu ? 'Защита от затирания:' : 'Regression Immunity:') + ' <strong style="color:#34d399;">100%</strong></div>' +
+      '</div>';
+
+    var teaserBtnText = document.getElementById('teaser-ai-btn-text');
+    if (teaserBtnText) teaserBtnText.innerText = isRu ? 'Выключить подсветку' : 'Turn Off Overlay';
+  } else {
+    var targets = document.querySelectorAll('.utyansky-ai-target');
+    targets.forEach(function(el) {
+      el.classList.remove('utyansky-ai-target');
+      var badges = el.querySelectorAll(':scope > .utyansky-ai-badge');
+      badges.forEach(function(b) { b.remove(); });
+    });
+    var hud = document.getElementById(hudId);
+    if (hud) hud.remove();
+    var st = document.getElementById(styleId);
+    if (st) st.remove();
+
+    var teaserBtnText = document.getElementById('teaser-ai-btn-text');
+    if (teaserBtnText) teaserBtnText.innerText = isRu ? 'Включить подсветку' : 'Toggle Overlay';
+  }
+}
+
+function toggleLang() {
+  currentLang = currentLang === 'ru' ? 'en' : 'ru';
+  currentVideoLang = currentLang;
+  renderApp();
+  updateCookieBannerText();
+  if (isAiVisionActive) {
+    isAiVisionActive = false;
+    toggleAiVision();
+  }
+}
+
+function setVideo(lang) {
+  currentVideoLang = lang;
+  renderApp();
+}
+
+function handleSearch(val) {
+  searchQuery = val;
+  renderApp();
+  const input = document.getElementById('search-input');
+  if (input) {
+    input.focus();
+    input.setSelectionRange(input.value.length, input.value.length);
+  }
+}
+
+function handleReach(val) {
+  reachVal = Number(val) || 0;
+  renderApp();
+}
+
+function handleWow(val) {
+  wowVal = Number(val) || 0;
+  renderApp();
+}
+
+function updateCookieBannerText() {
+  const textEl = document.getElementById('cookie-text');
+  const btnEl = document.getElementById('cookie-btn');
+  const linkEl = document.getElementById('cookie-policy-link');
+  if (textEl && btnEl && linkEl) {
+    const t = I18N[currentLang] || I18N.ru;
+    textEl.innerText = t.cookieText;
+    btnEl.innerText = t.cookieBtn;
+    linkEl.innerText = t.cookiePolicy;
+  }
+}
+
+function acceptCookies() {
+  localStorage.setItem('utyansky_cookies_accepted', 'true');
+  const banner = document.getElementById('cookie-banner');
+  if (banner) banner.style.display = 'none';
+}
+
+function checkCookieConsent() {
+  if (localStorage.getItem('utyansky_cookies_accepted') !== 'true') {
+    const banner = document.getElementById('cookie-banner');
+    if (banner) banner.style.display = 'block';
+  }
+}
+
+window.addEventListener('scroll', function() {
+  const btn = document.getElementById('scroll-to-top');
+  if (!btn) return;
+  if (window.scrollY > 300) {
+    btn.classList.remove('opacity-0', 'pointer-events-none', 'translate-y-4');
+    btn.classList.add('opacity-100', 'translate-y-0');
+  } else {
+    btn.classList.remove('opacity-100', 'translate-y-0');
+    btn.classList.add('opacity-0', 'pointer-events-none', 'translate-y-4');
+  }
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+  renderApp();
+  checkCookieConsent();
+});
+
+  </script>
+
+  <!-- Yandex.Metrika counter -->
+  <script type="text/javascript">
+      (function(m,e,t,r,i,k,a){
+          m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+          m[i].l=1*new Date();
+          for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+          k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)
+      })(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=111866729', 'ym');
+
+      ym(111866729, 'init', {ssr:true, webvisor:true, clickmap:true, ecommerce:"dataLayer", referrer: document.referrer, url: location.href, accurateTrackBounce:true, trackLinks:true});
+  </script>
+  <noscript><div><img src="https://mc.yandex.ru/watch/111866729" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+  <!-- /Yandex.Metrika counter -->
+</body>
+</html>
