@@ -59,7 +59,7 @@
 > * **August 22, 2026 (16:42 MSK)** — Official software registration filed at Rospatent RF (Application № 2026603415, Gosuslugi docket 7927650015).
 > * **September 11, 2026 (11:20 MSK)** — **v2.1 Industrial Edition Release**: implementation of deterministic AST slot isolation engine `utyansky_ast_engine.js` (Babel AST context lock O(1), defensive coordinate validation `[ERR: 10451]`, and dependency tracking `ImportDeclaration`).
 > * **September 12, 2026 (21:55 MSK)** — **v2.2 Web Coordinate Standard & AI Vision Release**: open standard for deterministic DOM coordinate markup (`70000–79999`), interactive HUD DOM Inspector («AI Vision») for instant agent orientation, zero hallucinations, and regression prevention.
-> * **September 20, 2026 (11:00 MSK)** — **v2.3 Telegram Bot & Vibe-Coding Engine Release**: open standard for deterministic slot isolation O(1) in Telegram API and asynchronous bots. Hardware 64-byte `callback_data` payload bypass (zero `BUTTON_DATA_INVALID`), zero context loss during vibe-coding, and end-to-end 360° customer dossier module («Microscope»).
+> * **September 20, 2026 (11:00 MSK)** — **v2.3 Telegram Bot, Zero-Lock & Vibe-Coding Release**: open standard for deterministic slot isolation $O(1)$ in Telegram API and asynchronous bots. Hardware 64-byte `callback_data` payload bypass (zero `BUTTON_DATA_INVALID`), zero context loss during vibe-coding, 360° customer dossier module («Microscope»), establishment of the **Zero-Lock & Conditional Constraint Class (`-00000` … `-00099`)** for deterministic mutation control, and expansion of the Periodic Table to **10 Classes (`00` – `09`)**.
 
 ---
 
