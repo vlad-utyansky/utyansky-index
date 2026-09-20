@@ -12,17 +12,20 @@
    - `[ERR: 40102] INDEX_COLLISION_DUPLICATE` — coordinate collision detected.
    - `[ERR: 40404] COORDINATE_NODE_NOT_FOUND` — coordinate node not found in registry.
    - `[ERR: 50010] LLM_STOCHASTIC_DEVIATION` — LLM drift from architectural constraints.
+5. **Zero-Lock Protection Directive (`-00000` … `-00099`):** When a node contains a zero-prefixed sub-index (e.g. `70050-00000` Master Lock or `70050-00001` TTL Lock), AI MUST read instructions in `data-desc`. Modifying or moving such nodes without direct developer authorization is STRICTLY PROHIBITED.
 
-## 🗺️ 2. UNIVERSAL 9-DOMAIN ARCHITECTURAL MAP (10000–99999):
-- 10000–19999: Core, system routing, event bus & orchestrator
-- 20000–29999: Analytics, search trends, OSINT & market data harvesting
+## 🗺️ 2. UNIVERSAL 10-CLASS ARCHITECTURAL MAP (00000–99999):
+- 00000–00099: 00. Ring-0 Master Locks (Invariants, TTL quarantine, mutation locks, immutable order)
+- 10000–19999: 01. Core, system routing, event bus & orchestrator
+- 20000–29999: 02. Analytics, search trends, OSINT & market data harvesting
 - 21000–21999: LLM micro-output tagging & chunked prompts
-- 30000–39999: Media studio, image generation, video players & timeline NLE
-- 40000–59999: Fault tolerance, error classification matrix & O(1) self-healing
-- 70000–79999: Visual React DOM grid (all UI components, buttons, forms, admin dashboards)
-- 80000–89999: Business metrics, billing, pricing & UVWI viral wow calculation [IDX: 85010]
-- 90000–97999: External integrations, webhooks, CRM & API bridges
-- 98000–99999: Scalable isolated vector memory (1B+ vectors, PostgreSQL pgvector HNSW)
+- 30000–39999: 03. Media studio, image generation, video players & timeline NLE
+- 40000–49999: 04. SMM engine, content calendars, auto-publishing
+- 50000–59999: 05. External integrations, webhooks, amoCRM & Telegram Bot API
+- 60000–69999: 06. Analytics & reports, dashboards, PDF export
+- 70000–79999: 07. Visual React DOM grid (all UI components, buttons, forms, admin dashboards)
+- 80000–89999: 08. Business metrics, billing, pricing & UVWI viral wow calculation [IDX: 85010]
+- 90000–99999: 09. Scalable isolated vector memory (1B+ vectors, pgvector HNSW) & archives
 
 ## 💻 3. GOLDEN STANDARD REACT DOM COMPONENT:
 ```jsx

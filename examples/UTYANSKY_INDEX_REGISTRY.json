@@ -17,6 +17,12 @@
       "desc": "INVALID_INDEX_FORMAT Error Code",
       "file": "examples/error-matrix-handler.js"
     },
+    "70050-00000": {
+      "domain": "RING_0_LOCK",
+      "type": "INVARIANT_VIDEO",
+      "desc": "Official Architecture Video Master Invariant Lock (Developer Consent Required)",
+      "file": "index.html"
+    },
     "71000": {
       "domain": "UI_DOM",
       "type": "CONTAINER",
