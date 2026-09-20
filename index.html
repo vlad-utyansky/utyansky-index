@@ -1412,6 +1412,50 @@ function renderApp() {
         '<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">' + domainsHtml + '</div>' +
       '</div>' +
 
+      '<!-- 7.5. [ZERO-LOCK & CONDITIONAL CONSTRAINTS CLASS] -->' +
+      '<div id="zero-lock" class="scroll-mt-24 max-w-6xl mx-auto mt-12" data-idx="70580" data-desc="' + (currentLang === 'ru' ? '[SECTION] Класс Защиты и Условных Ограничений Нулевого Кольца (-00000..-00099)' : '[SECTION] Zero-Lock & Conditional Constraint Class (-00000..-00099)') + '">' +
+        '<div class="p-6 sm:p-8 rounded-3xl card-glass border border-amber-500/40 bg-gradient-to-br from-amber-950/30 via-slate-900/90 to-slate-900 shadow-2xl text-left">' +
+          '<div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 mb-4">' +
+            '<div class="inline-flex items-center space-x-2 px-3.5 py-1 rounded-full bg-amber-500/20 border border-amber-400/40 text-amber-300 text-xs font-mono font-bold">' +
+              '<span>🛡️ ZERO-LOCK: УСЛОВНЫЕ ОГРАНИЧЕНИЯ И ЗАЩИТА</span>' +
+            '</div>' +
+            '<span class="text-xs font-mono text-amber-400 bg-amber-500/10 border border-amber-500/30 px-3 py-1 rounded-full">' + (currentLang === 'ru' ? 'Спецификация sub-idx [-00000..-00099]' : 'Sub-idx Spec [-00000..-00099]') + '</span>' +
+          '</div>' +
+          '<h3 class="text-xl sm:text-2xl font-black text-white mb-2 tracking-tight">' +
+            (currentLang === 'ru' ? 'Класс Защиты «Нулевое Кольцо»: Сигнал Внимания и Условия Изменения' : 'Zero-Lock Security Class: Attention Triggers & Conditional Mutation Policy') +
+          '</h3>' +
+          '<p class="text-xs sm:text-sm text-slate-300 leading-relaxed mb-6">' +
+            (currentLang === 'ru' ? 'Когда ИИ-ассистент, компилятор или разработчик видит суффикс с ведущими нулями (<code>XXXXX-00000</code>..<code>XXXXX-00099</code>), это жесткий стоп-сигнал: <strong>блок защищен специальным регламентом</strong>. Прежде чем прикасаться к узлу, система ОБЯЗАНА изучить инструкцию в <code>data-desc</code> и проверить условия снятия ограничений.' : 'When an AI agent, compiler, or developer encounters a zero-prefixed sub-index (<code>XXXXX-00000</code>..<code>XXXXX-00099</code>), it serves as a strict STOP trigger: <strong>the node is guarded by invariant rules</strong>. Before touching the node, the system MUST inspect <code>data-desc</code> instructions and verify release conditions.') +
+          '</p>' +
+          '<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 text-xs font-mono">' +
+            '<div class="p-4 rounded-2xl bg-slate-900/90 border border-amber-500/30 flex flex-col justify-between">' +
+              '<div><div class="text-amber-400 font-bold mb-1">🔒 -00000: Master Invariant</div><p class="text-slate-300 text-[11px] font-sans leading-relaxed">' + (currentLang === 'ru' ? 'Абсолютный замок. Запрет любых изменений и перемещений без прямого пошагового согласования разработчика.' : 'Absolute lock. Zero mutations or repositioning allowed without direct developer authorization.') + '</p></div>' +
+              '<div class="mt-3 pt-2 border-t border-white/10 text-[10px] text-amber-300/80">' + (currentLang === 'ru' ? 'Условие: Только ручной приказ' : 'Condition: Manual order only') + '</div>' +
+            '</div>' +
+            '<div class="p-4 rounded-2xl bg-slate-900/90 border border-white/10 flex flex-col justify-between">' +
+              '<div><div class="text-sky-400 font-bold mb-1">⏳ -00001: Temporal / TTL Lock</div><p class="text-slate-300 text-[11px] font-sans leading-relaxed">' + (currentLang === 'ru' ? 'Временной карантин по дате или числу дней (например, до 25.09.2026). Снимается автоматически по истечении срока.' : 'Time quarantine by date or day counter (e.g. until 25.09.2026). Automatically released after expiration.') + '</p></div>' +
+              '<div class="mt-3 pt-2 border-t border-white/10 text-[10px] text-sky-300/80">' + (currentLang === 'ru' ? 'Условие: Истечение срока / даты' : 'Condition: Date / TTL expiry') + '</div>' +
+            '</div>' +
+            '<div class="p-4 rounded-2xl bg-slate-900/90 border border-white/10 flex flex-col justify-between">' +
+              '<div><div class="text-emerald-400 font-bold mb-1">🌐 -00002: External Dependency</div><p class="text-slate-300 text-[11px] font-sans leading-relaxed">' + (currentLang === 'ru' ? 'Запрет правок до наступления внешнего события (релиз API сервиса, модерация сторов, подтверждение партнера).' : 'Blocked until external event occurs (API versioning, store moderation, partner sign-off).') + '</p></div>' +
+              '<div class="mt-3 pt-2 border-t border-white/10 text-[10px] text-emerald-300/80">' + (currentLang === 'ru' ? 'Условие: Внешний сигнал/триггер' : 'Condition: External trigger') + '</div>' +
+            '</div>' +
+            '<div class="p-4 rounded-2xl bg-slate-900/90 border border-white/10 flex flex-col justify-between">' +
+              '<div><div class="text-purple-400 font-bold mb-1">👨‍💻 -00003: Developer Review</div><p class="text-slate-300 text-[11px] font-sans leading-relaxed">' + (currentLang === 'ru' ? 'Режим обязательного ревью: ИИ обязан предложить дифф и ждать одобрения ведущего архитектора.' : 'Mandatory review mode: AI must propose diff and await lead architect approval.') + '</p></div>' +
+              '<div class="mt-3 pt-2 border-t border-white/10 text-[10px] text-purple-300/80">' + (currentLang === 'ru' ? 'Условие: Подтверждение ревью' : 'Condition: Code review pass') + '</div>' +
+            '</div>' +
+            '<div class="p-4 rounded-2xl bg-slate-900/90 border border-white/10 flex flex-col justify-between">' +
+              '<div><div class="text-cyan-400 font-bold mb-1">📐 -00004: Layout Lock</div><p class="text-slate-300 text-[11px] font-sans leading-relaxed">' + (currentLang === 'ru' ? 'Замок иерархии DOM. Позиция неизменна, разрешены только косметические правки текста и стилей.' : 'Hierarchy lock. DOM position immutable; cosmetic styling/copy tweaks allowed.') + '</p></div>' +
+              '<div class="mt-3 pt-2 border-t border-white/10 text-[10px] text-cyan-300/80">' + (currentLang === 'ru' ? 'Условие: Сохранение порядка' : 'Condition: Immutable order') + '</div>' +
+            '</div>' +
+            '<div class="p-4 rounded-2xl bg-slate-900/90 border border-white/10 flex flex-col justify-between">' +
+              '<div><div class="text-pink-400 font-bold mb-1">✍️ -00005: Copywriting Lock</div><p class="text-slate-300 text-[11px] font-sans leading-relaxed">' + (currentLang === 'ru' ? 'Замок смыслов. Офферы и формулировки защищены от изменений, разрешена адаптация верстки.' : 'Meaning lock. Copywriting and brand voice protected; layout refits allowed.') + '</p></div>' +
+              '<div class="mt-3 pt-2 border-t border-white/10 text-[10px] text-pink-300/80">' + (currentLang === 'ru' ? 'Условие: Сохранение текста' : 'Condition: Copy invariant') + '</div>' +
+            '</div>' +
+          '</div>' +
+        '</div>' +
+      '</div>' +
+
       '<!-- 8. [CODE IMPLEMENTATION SNIPPETS] -->' +
       '<div id="code" class="scroll-mt-24 max-w-5xl mx-auto" data-idx="70600" data-desc="[SECTION] Практические примеры кода">' +
         '<div class="text-center max-w-3xl mx-auto mb-8">' +

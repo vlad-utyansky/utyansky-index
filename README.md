@@ -355,6 +355,24 @@ $\text{UVWI [85010]} = \frac{\text{Verified Positive WOW Responses [21303]}}{\te
 
 ---
 
+### 🛡️ 4.2. Zero-Lock & Conditional Constraint Sub-Indices (`-00000` – `-00099`):
+
+When a 5-digit sub-index with leading zeros (`-00000` through `-00099`) is appended to a base coordinate, it serves as a **mandatory architectural constraint trigger for AI agents, compilers, and developers**.
+
+> 🛑 **The Zero-Lock Directive:** Before touching, moving, or refactoring any node with a `-00XXX` suffix, the system **MUST inspect the semantic instructions in `data-desc` or the project Change Contract** to determine the exact restriction level, reason, and conditional unlock criteria.
+
+| Suffix | Security Class | Architectural Constraint & Release Conditions |
+| :--- | :--- | :--- |
+| **`XXXXX-00000`** | 🔒 **Master Invariant (Absolute Lock)** | Total ban on mutations, deletions, or repositioning. Node is sacred. Changes allowed **strictly with direct, step-by-step developer authorization**. |
+| **`XXXXX-00001`** | ⏳ **Temporal / TTL Lock (Time Quarantine)** | Restricted by date, countdown, or TTL period (e.g. *"14-day quarantine"*, *"Do not touch before Release 25.09.2026"*). Automatically unlocked upon expiration. |
+| **`XXXXX-00002`** | 🌐 **External Dependency Lock** | Blocked until verified external event occurs (API version transition, App Store approval, partner contractual sign-off). |
+| **`XXXXX-00003`** | 👨‍💻 **Developer Review Lock** | Mutations permitted only after mandatory pre-flight review with the lead architect. |
+| **`XXXXX-00004`** | 📐 **Layout & Position Lock** | Node position and hierarchy are immutable; localized styling/copy cosmetic edits are permitted. |
+| **`XXXXX-00005`** | ✍️ **Copywriting & Meaning Lock** | Brand voice, offers, and text are protected; technical layout refinements are permitted. |
+| **`XXXXX-00006` – `-00099`** | 📦 **Reserved Safe Slots** | Open expansion range for team-specific governance and dynamic business constraints. |
+
+---
+
 ## 🗄️ 5. Project Index Registry (`UTYANSKY_INDEX_REGISTRY.json`)
 
 ```json
