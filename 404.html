@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ru" class="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>404 — Координата не найдена | Индекс Утянского</title>
+  <meta name="description" content="Ошибка 404: Запрашиваемый координатный слот не найден или находится в процессе развертывания.">
+  <link rel="icon" type="image/svg+xml" href="./favicon.svg">
+  
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      background-color: #06080d;
+      color: #f8fafc;
+      overflow-x: hidden;
+    }
+    .font-mono {
+      font-family: 'JetBrains Mono', monospace;
+    }
+    .glow-bg {
+      background: radial-gradient(circle at 50% 30%, rgba(37, 99, 235, 0.2) 0%, rgba(6, 8, 13, 0) 70%);
+    }
+    .card-glass {
+      background: rgba(15, 23, 42, 0.75);
+      backdrop-filter: blur(16px);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+  </style>
+</head>
+<body class="min-h-screen flex flex-col justify-between selection:bg-blue-600 selection:text-white" data-idx="40400" data-desc="[PAGE] Страница ошибки 404 Координата не найдена">
+
+  <!-- Background Glow -->
+  <div class="fixed inset-0 glow-bg pointer-events-none z-0"></div>
+
+  <!-- Header -->
+  <header class="relative z-10 w-full border-b border-white/10 bg-[#06080d]/80 backdrop-blur-md py-4" data-idx="40401" data-desc="[HEADER] Шапка страницы 404">
+    <div class="max-w-6xl mx-auto px-4 flex items-center justify-between">
+      <a href="index.html" class="flex items-center gap-3 text-white font-bold text-lg hover:text-blue-400 transition-colors" data-idx="40402" data-desc="[LOGO] Возврат на главную">
+        <span class="w-8 h-8 rounded-lg bg-blue-600 flex items-center justify-center font-mono text-sm font-black shadow-lg shadow-blue-500/30">№</span>
+        <span>Индекс Утянского</span>
+        <span class="text-xs font-mono text-blue-400 border border-blue-500/30 px-1.5 py-0.5 rounded">v2.0</span>
+      </a>
+      <a href="index.html" class="text-xs sm:text-sm font-mono text-slate-400 hover:text-white transition-colors flex items-center gap-2" data-idx="40403" data-desc="[LINK] На главную">
+        <span>← На главную портала</span>
+      </a>
+    </div>
+  </header>
+
+  <!-- Main Error Card -->
+  <main class="relative z-10 max-w-2xl mx-auto px-4 py-16 text-center my-auto">
+    <div class="card-glass rounded-3xl p-8 sm:p-12 shadow-2xl border border-blue-500/30">
+      
+      <!-- Coordinate Badge -->
+      <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-rose-500/10 border border-rose-500/30 text-rose-400 font-mono text-xs font-bold mb-6" data-idx="40404" data-desc="[BADGE] Статус ошибки">
+        <span class="w-2 h-2 rounded-full bg-rose-500 animate-ping"></span>
+        <span>[ERR: 40400] КООРДИНАТНЫЙ СЛОТ НЕ НАЙДЕН</span>
+      </div>
+
+      <!-- Giant 404 Code -->
+      <h1 class="text-7xl sm:text-9xl font-black font-mono tracking-tight bg-gradient-to-r from-blue-400 via-sky-300 to-indigo-400 bg-clip-text text-transparent mb-4 leading-none select-none" data-idx="40405" data-desc="[TEXT] Код ошибки 404">
+        404
+      </h1>
+
+      <h2 class="text-xl sm:text-2xl font-bold text-white mb-3" data-idx="40406" data-desc="[TITLE] Заголовок ошибки">
+        Слот пуст или находится в процессе публикации
+      </h2>
+
+      <p class="text-sm sm:text-base text-slate-300 leading-relaxed mb-8 max-w-lg mx-auto" data-idx="40407" data-desc="[DESC] Описание ошибки">
+        Запрашиваемый адрес отсутствует в реестре либо файл обновляется на сервере. Воспользуйтесь детерминированной навигацией:
+      </p>
+
+      <!-- Action Buttons -->
+      <div class="flex flex-col sm:flex-row items-center justify-center gap-3">
+        <a href="index.html" class="w-full sm:w-auto px-6 py-3.5 rounded-xl bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-500 hover:to-indigo-500 text-white font-bold text-sm shadow-lg shadow-blue-500/30 transition-all flex items-center justify-center gap-2" data-idx="40408" data-desc="[BTN] Переход на главную">
+          <span>🏠 Главный портал Индекса</span>
+        </a>
+        <a href="case-telegram-vibe-coding.html" class="w-full sm:w-auto px-6 py-3.5 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-200 hover:text-white font-semibold text-sm border border-white/10 transition-all flex items-center justify-center gap-2" data-idx="40409" data-desc="[BTN] Переход на кейс Telegram">
+          <span>💬 Кейс: Telegram & AI</span>
+        </a>
+      </div>
+
+      <!-- Tech footer in card -->
+      <div class="mt-8 pt-6 border-t border-white/10 text-xs font-mono text-slate-400 flex items-center justify-center gap-4">
+        <span>Статус: O(1) Fallback</span>
+        <span>•</span>
+        <a href="https://github.com/vlad-utyansky/utyansky-index" target="_blank" rel="noopener noreferrer" class="hover:text-blue-400 underline">GitHub Репозиторий</a>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="relative z-10 w-full border-t border-white/10 bg-[#06080d]/80 py-4 text-center text-xs text-slate-500 font-mono" data-idx="40410" data-desc="[FOOTER] Подвал 404">
+    © 2026 Инженерное бюро VAU EFFECT Владислава Утянского · Заявка Роспатент РФ № 2026603415
+  </footer>
+
+</body>
+</html>

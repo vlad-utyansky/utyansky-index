@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="ru" class="dark scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Архитектурный кейс: Стандарт Индекса Утянского в Telegram-ботах и Вайбкодинге</title>
+  <meta name="description" content="Практический кейс применения стандарта «Индекс Утянского» в Telegram API и вайбкодинге. Ускорение разработки в 6 раз, обход лимита 64 байта и устранение галлюцинаций нейросетей.">
+  <meta name="author" content="Утянский Владислав Анатольевич">
+  <link rel="icon" type="image/svg+xml" href="./favicon.svg">
+  
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      background-color: #06080d;
+      color: #f8fafc;
+      overflow-x: hidden;
+    }
+    .font-mono {
+      font-family: 'JetBrains Mono', monospace;
+    }
+    .glow-bg {
+      background: radial-gradient(circle at 50% 0%, rgba(37, 99, 235, 0.18) 0%, rgba(6, 8, 13, 0) 70%);
+    }
+    .card-glass {
+      background: rgba(15, 23, 42, 0.75);
+      backdrop-filter: blur(14px);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+    }
+    .card-glass:hover {
+      border-color: rgba(59, 130, 246, 0.4);
+    }
+  </style>
+</head>
+<body class="min-h-screen bg-[#06080d] text-slate-100 selection:bg-blue-600 selection:text-white" data-idx="75000" data-desc="[PAGE] Страница архитектурного кейса Telegram и Вайбкодинга">
+
+  <!-- Glow effect -->
+  <div class="fixed inset-0 glow-bg pointer-events-none z-0"></div>
+
+  <!-- Multi-Page Header -->
+  <header class="sticky top-0 z-50 bg-[#06080d]/90 backdrop-blur-md border-b border-white/10 py-3.5" data-idx="75001" data-desc="[HEADER] Верхняя навигационная панель кейса">
+    <div class="max-w-6xl mx-auto px-4 flex items-center justify-between gap-4">
+      <a href="index.html" class="flex items-center gap-3 text-white font-bold text-base sm:text-lg hover:text-blue-400 transition-colors flex-shrink-0" data-idx="75002" data-desc="[LOGO] Логотип Индекса">
+        <span class="w-8 h-8 rounded-lg bg-blue-600 flex items-center justify-center font-mono text-sm font-black shadow-lg shadow-blue-500/30">№</span>
+        <span>Индекс Утянского</span>
+        <span class="text-xs font-mono text-blue-400 border border-blue-500/30 px-1.5 py-0.5 rounded hidden sm:inline">v2.3</span>
+      </a>
+
+      <!-- Navigation Links -->
+      <nav class="hidden md:flex items-center space-x-2 text-xs font-medium text-slate-300 font-mono" data-idx="75003" data-desc="[NAV] Навигационные ссылки">
+        <a href="index.html" class="hover:text-blue-400 transition py-1.5 px-3 rounded-lg hover:bg-white/5" data-idx="75004" data-desc="[LINK] Главная страница">
+          <span id="nav-home">🏠 Главный портал</span>
+        </a>
+        <a href="index.html#table" class="hover:text-blue-400 transition py-1.5 px-3 rounded-lg hover:bg-white/5" data-idx="75005" data-desc="[LINK] Реестр доменов">
+          <span id="nav-table">📊 Реестр доменов</span>
+        </a>
+        <span class="px-3 py-1.5 rounded-lg bg-blue-500/20 text-cyan-300 font-bold border border-cyan-400/30 flex items-center gap-1.5" data-idx="75006" data-desc="[BADGE] Активная страница кейса">
+          <span>💬 Кейс: Telegram & AI</span>
+        </span>
+      </nav>
+
+      <!-- Action buttons -->
+      <div class="flex items-center gap-2 flex-shrink-0" data-idx="75007" data-desc="[GROUP] Кнопки действий">
+        <a href="https://github.com/vlad-utyansky/utyansky-index" target="_blank" rel="noopener noreferrer" class="px-3 py-1.5 rounded-xl bg-amber-500/20 hover:bg-amber-500/40 text-amber-300 hover:text-white transition-all border border-amber-400/40 text-xs font-mono font-bold shadow-md flex items-center gap-1.5" data-idx="75008" data-desc="[BTN] Star на GitHub">
+          <span>⭐</span>
+          <span class="hidden sm:inline">Star</span>
+        </a>
+        <button onclick="toggleCaseLang()" class="px-3 py-1.5 rounded-xl bg-gradient-to-r from-blue-600/30 to-indigo-600/30 hover:from-blue-600/50 hover:to-indigo-600/50 text-blue-300 hover:text-white transition-all border border-blue-400/40 text-xs font-mono font-extrabold shadow-md flex items-center gap-1" data-idx="75009" data-desc="[BTN] Переключение языка">
+          <span>🌐</span>
+          <span id="lang-btn-text">EN</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main class="relative z-10 max-w-5xl mx-auto px-4 py-12 lg:py-16" data-idx="75010" data-desc="[MAIN] Основной контент страницы кейса">
+
+    <!-- Hero Section -->
+    <div class="text-center max-w-3xl mx-auto mb-16" data-idx="75011" data-desc="[HERO] Главный заголовок кейса">
+      <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-blue-500/10 border border-blue-500/30 text-blue-400 text-xs font-mono uppercase tracking-wider mb-6">
+        <span id="hero-badge">🚀 Практический кейс • Релиз v2.3 (20.09.2026)</span>
+      </div>
+      <h1 id="hero-title" class="text-3xl sm:text-5xl font-extrabold tracking-tight text-white mb-6 leading-tight">
+        Как перестать ломать Telegram-ботов при масштабировании
+      </h1>
+      <p id="hero-desc" class="text-base sm:text-lg text-slate-300 leading-relaxed">
+        Архитектурный стандарт координатной изоляции слотов O(1) в разработке с ИИ и преодоление аппаратного лимита 64 байта в Telegram API.
+      </p>
+    </div>
+
+    <!-- 3 Analogies Section (For Non-Developers) -->
+    <section class="mb-16" data-idx="75020" data-desc="[SECTION] 3 жизненные аналогии">
+      <div class="border-b border-white/10 pb-4 mb-8">
+        <h2 id="analogies-title" class="text-2xl font-bold text-white flex items-center gap-3">
+          <span class="text-blue-400">💡</span> Объяснение принципа «на пальцах»
+        </h2>
+        <p id="analogies-sub" class="text-slate-400 text-sm mt-1">Почему координатная сетка работает безотказно в любой сфере — от образования до финтеха</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <!-- Card 1 -->
+        <div class="card-glass rounded-2xl p-6 relative flex flex-col justify-between" data-idx="75021" data-desc="[CARD] Аналогия гардероба">
+          <div>
+            <div class="text-3xl mb-4">🧥</div>
+            <h3 id="an1-title" class="text-lg font-bold text-white mb-2">Гардероб и номерок</h3>
+            <p id="an1-desc" class="text-slate-300 text-xs sm:text-sm leading-relaxed mb-4">
+              Вместо пересказа цвета и пуговиц пальто («длинный текст»), вам дают <strong class="text-blue-400">номерок №14</strong> (15 байт). Он мгновенно укладывается в лимит кармана (64 байта Telegram).
+            </p>
+          </div>
+          <div class="text-xs font-mono text-emerald-400 bg-emerald-500/10 border border-emerald-500/20 p-2.5 rounded-lg">
+            ⚡ Поиск пальто за 1 секунду O(1)
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="card-glass rounded-2xl p-6 relative flex flex-col justify-between" data-idx="75022" data-desc="[CARD] Аналогия библиотеки">
+          <div>
+            <div class="text-3xl mb-4">📚</div>
+            <h3 id="an2-title" class="text-lg font-bold text-white mb-2">Библиотечный шифр</h3>
+            <p id="an2-desc" class="text-slate-300 text-xs sm:text-sm leading-relaxed mb-4">
+              Книга ищется не по описанию «в синей обложке», а по <strong class="text-blue-400">шифру УДК/ББК</strong>. Как бы дизайнер ни перекрашивал обложку, по индексу книга берется с той же полки.
+            </p>
+          </div>
+          <div class="text-xs font-mono text-emerald-400 bg-emerald-500/10 border border-emerald-500/20 p-2.5 rounded-lg">
+            🛡 Защита от сбоев при редизайне
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="card-glass rounded-2xl p-6 relative flex flex-col justify-between" data-idx="75023" data-desc="[CARD] Аналогия щитка">
+          <div>
+            <div class="text-3xl mb-4">⚡</div>
+            <h3 id="an3-title" class="text-lg font-bold text-white mb-2">Маркированный щиток</h3>
+            <p id="an3-desc" class="text-slate-300 text-xs sm:text-sm leading-relaxed mb-4">
+              Каждый провод снабжен 5-значной биркой. Электрик (или ИИ-ассистент) может чинить проводку в одной комнате, не боясь обесточить серверную.
+            </p>
+          </div>
+          <div class="text-xs font-mono text-emerald-400 bg-emerald-500/10 border border-emerald-500/20 p-2.5 rounded-lg">
+            🔌 Изоляция связей без галлюцинаций
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Metrics Section -->
+    <section class="mb-16" data-idx="75030" data-desc="[SECTION] Таблица метрик">
+      <div class="border-b border-white/10 pb-4 mb-8">
+        <h2 id="metrics-title" class="text-2xl font-bold text-white flex items-center gap-3">
+          <span class="text-blue-400">📊</span> Реальные метрики эффективности (Бенчмарк)
+        </h2>
+        <p id="metrics-sub" class="text-slate-400 text-sm mt-1">Замеры на разработке сложного сервиса (20+ экранов, 2500+ строк, биллинг, тикеты)</p>
+      </div>
+
+      <div class="card-glass rounded-2xl overflow-hidden shadow-2xl border border-white/10">
+        <div class="overflow-x-auto">
+          <table class="w-full text-left text-sm">
+            <thead class="bg-slate-900/90 text-xs uppercase font-mono text-slate-400 border-b border-white/10">
+              <tr>
+                <th class="p-4">Параметр разработки</th>
+                <th class="p-4">Классический подход</th>
+                <th class="p-4 text-blue-400">Со стандартом Индекса</th>
+                <th class="p-4 text-emerald-400">Выигрыш / ROI</th>
+              </tr>
+            </thead>
+            <tbody class="divide-y divide-white/5 text-slate-300">
+              <tr class="hover:bg-white/[0.02] transition-colors">
+                <td class="p-4 font-semibold text-white">Время внедрения ветки</td>
+                <td class="p-4 text-rose-400">4–6 часов (отладка)</td>
+                <td class="p-4 text-emerald-400 font-bold">30–45 минут</td>
+                <td class="p-4 font-mono font-bold text-emerald-400">Ускорение в 6–8 раз</td>
+              </tr>
+              <tr class="hover:bg-white/[0.02] transition-colors">
+                <td class="p-4 font-semibold text-white">Итераций правок с ИИ</td>
+                <td class="p-4 text-rose-400">5–8 циклов</td>
+                <td class="p-4 text-emerald-400 font-bold">1–2 промпта</td>
+                <td class="p-4 font-mono font-bold text-emerald-400">-75% итераций</td>
+              </tr>
+              <tr class="hover:bg-white/[0.02] transition-colors">
+                <td class="p-4 font-semibold text-white">Расход токенов LLM</td>
+                <td class="p-4 text-rose-400">~120 000 токенов</td>
+                <td class="p-4 text-emerald-400 font-bold">~25 000 токенов</td>
+                <td class="p-4 font-mono font-bold text-emerald-400">-80% затрат на API</td>
+              </tr>
+              <tr class="hover:bg-white/[0.02] transition-colors">
+                <td class="p-4 font-semibold text-white">Лимит 64B Telegram</td>
+                <td class="p-4 text-rose-400">50–65 байт (риск краша)</td>
+                <td class="p-4 text-emerald-400 font-bold">12–22 байта</td>
+                <td class="p-4 font-mono font-bold text-emerald-400">Запас 70% пакета</td>
+              </tr>
+              <tr class="hover:bg-white/[0.02] transition-colors">
+                <td class="p-4 font-semibold text-white">Уровень регрессий</td>
+                <td class="p-4 text-rose-400">~35% правок ломают соседнее</td>
+                <td class="p-4 text-emerald-400 font-bold">0% сбоев</td>
+                <td class="p-4 font-mono font-bold text-emerald-400">Zero Regression</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- Code Comparison Section -->
+    <section class="mb-16" data-idx="75040" data-desc="[SECTION] Сравнение кода">
+      <div class="border-b border-white/10 pb-4 mb-8">
+        <h2 id="code-title" class="text-2xl font-bold text-white flex items-center gap-3">
+          <span class="text-blue-400">🛠</span> Инженерный разбор: ДО и ПОСЛЕ
+        </h2>
+        <p id="code-sub" class="text-slate-400 text-sm mt-1">Как координатные слоты защищают код от переполнения байтов и потери контекста</p>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+        <!-- Bad Code -->
+        <div class="card-glass rounded-2xl p-6 border-rose-500/20 bg-rose-950/10" data-idx="75041" data-desc="[CODE] Антипаттерн">
+          <div class="flex items-center justify-between mb-4">
+            <span class="text-sm font-bold text-rose-400">❌ Без стандарта (Хрупко и аварийно)</span>
+            <span class="text-xs font-mono text-rose-400/80 bg-rose-500/10 px-2 py-1 rounded">Риск падения</span>
+          </div>
+          <pre class="font-mono text-xs text-slate-300 bg-slate-950/90 p-4 rounded-xl overflow-x-auto border border-white/5"><code><span class="text-slate-500"># 1. Переполнение 64 байт (Длина: 56 байт):</span>
+InlineKeyboardButton(
+    text=<span class="text-emerald-300">"Просмотр тикета"</span>, 
+    callback_data=<span class="text-rose-400">"admin_panel_open_user_support_ticket_details_id_824076093"</span>
+)
+<span class="text-slate-500"># Добавили ID ответа — Telegram выдает BUTTON_DATA_INVALID!</span>
+
+<span class="text-slate-500"># 2. Логика завязана на текст:</span>
+@dp.message(F.text == <span class="text-rose-400">"💬 Поддержка"</span>)
+<span class="text-slate-500"># Сменили эмодзи на 🆘 — бот умер.</span></code></pre>
+        </div>
+
+        <!-- Good Code -->
+        <div class="card-glass rounded-2xl p-6 border-emerald-500/20 bg-emerald-950/10" data-idx="75042" data-desc="[CODE] Стандарт Индекса">
+          <div class="flex items-center justify-between mb-4">
+            <span class="text-sm font-bold text-emerald-400">✅ Стандарт Индекса Утянского</span>
+            <span class="text-xs font-mono text-emerald-400/80 bg-emerald-500/10 px-2 py-1 rounded">100% стабильность</span>
+          </div>
+          <pre class="font-mono text-xs text-slate-300 bg-slate-950/90 p-4 rounded-xl overflow-x-auto border border-white/5"><code><span class="text-slate-500"># 1. Слот + Физический ID (Всего 15 байт из 64!):</span>
+InlineKeyboardButton(
+    text=<span class="text-emerald-300">"💬 Обращение #14"</span>, 
+    callback_data=<span class="text-emerald-400">"admin_viewt_14"</span>
+)
+
+<span class="text-slate-500"># 2. Изолированный обработчик слота O(1):</span>
+@dp.callback_query(F.data.startswith(<span class="text-emerald-400">"admin_viewt_"</span>))
+async def cb_view_ticket(callback: CallbackQuery):
+    ticket_id = int(callback.data.replace(<span class="text-emerald-400">"admin_viewt_"</span>, <span class="text-emerald-300">""</span>))
+    render_ticket_screen(ticket_id)</code></pre>
+        </div>
+      </div>
+    </section>
+
+    <!-- Bottom Multi-Page Navigation Bar -->
+    <div class="border-t border-white/10 pt-10 mt-16" data-idx="75050" data-desc="[NAV] Нижняя навигационная панель">
+      <div class="text-xs font-mono text-slate-400 uppercase tracking-wider text-center mb-6">🧭 Сквозная навигация портала</div>
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 max-w-4xl mx-auto">
+        
+        <a href="index.html" class="card-glass p-4 rounded-2xl border border-white/10 hover:border-blue-500/40 text-left transition-all group flex flex-col justify-between" data-idx="75051" data-desc="[LINK] На главную">
+          <div>
+            <span class="text-xs font-mono text-blue-400 block mb-1">← Главная</span>
+            <strong class="text-sm text-white group-hover:text-blue-300 transition">Архитектурный портал</strong>
+          </div>
+          <span class="text-[11px] text-slate-400 mt-2">Миссия, 7 болей и видео ➔</span>
+        </a>
+
+        <a href="index.html#table" class="card-glass p-4 rounded-2xl border border-white/10 hover:border-blue-500/40 text-left transition-all group flex flex-col justify-between" data-idx="75052" data-desc="[LINK] Реестр доменов">
+          <div>
+            <span class="text-xs font-mono text-emerald-400 block mb-1">Матрица</span>
+            <strong class="text-sm text-white group-hover:text-emerald-300 transition">9 Доменов 10000–99999</strong>
+          </div>
+          <span class="text-[11px] text-slate-400 mt-2">1557+ слотов в системе ➔</span>
+        </a>
+
+        <a href="https://github.com/vlad-utyansky/utyansky-index/blob/main/docs/ru/UTYANSKY_INDEX_TELEGRAM_VIBECODING_STANDARD.md" target="_blank" rel="noopener noreferrer" class="card-glass p-4 rounded-2xl border border-white/10 hover:border-blue-500/40 text-left transition-all group flex flex-col justify-between" data-idx="75053" data-desc="[LINK] Спецификация на GitHub">
+          <div>
+            <span class="text-xs font-mono text-amber-400 block mb-1">GitHub</span>
+            <strong class="text-sm text-white group-hover:text-amber-300 transition">Open Specification</strong>
+          </div>
+          <span class="text-[11px] text-slate-400 mt-2">Открыть Markdown-стандарт ➔</span>
+        </a>
+
+      </div>
+    </div>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="relative z-10 w-full border-t border-white/10 bg-[#06080d]/90 py-6 text-center text-xs text-slate-400 font-mono" data-idx="75060" data-desc="[FOOTER] Подвал кейса">
+    © 2026 <a href="https://vau.ru" target="_blank" class="hover:text-blue-400 underline">Инженерное бюро VAU EFFECT</a> Владислава Утянского · Заявка Роспатент РФ № 2026603415
+  </footer>
+
+  <script>
+    let caseLang = 'ru';
+    const CASE_I18N = {
+      ru: {
+        btnText: 'EN',
+        navHome: '🏠 Главный портал',
+        navTable: '📊 Реестр доменов',
+        badge: '🚀 Практический кейс • Релиз v2.3 (20.09.2026)',
+        title: 'Как перестать ломать Telegram-ботов при масштабировании',
+        desc: 'Архитектурный стандарт координатной изоляции слотов O(1) в разработке с ИИ и преодоление аппаратного лимита 64 байта в Telegram API.',
+        anTitle: '💡 Объяснение принципа «на пальцах»',
+        anSub: 'Почему координатная сетка работает безотказно в любой сфере — от образования до финтеха',
+        an1Title: 'Гардероб и номерок',
+        an1Desc: 'Вместо пересказа цвета и пуговиц пальто («длинный текст»), вам дают номер №14 (15 байт). Он мгновенно укладывается в лимит кармана (64 байта Telegram).',
+        an2Title: 'Библиотечный шифр',
+        an2Desc: 'Книга ищется не по описанию «в синей обложке», а по шифру УДК/ББК. Как бы дизайнер ни перекрашивал обложку, по индексу книга берется с той же полки.',
+        an3Title: 'Маркированный щиток',
+        an3Desc: 'Каждый провод снабжен 5-значной биркой. Электрик (или ИИ-ассистент) может чинить проводку в одной комнате, не боясь обесточить серверную.',
+        metTitle: '📊 Реальные метрики эффективности (Бенчмарк)',
+        metSub: 'Замеры на разработке сложного сервиса (20+ экранов, 2500+ строк, биллинг, тикеты)',
+        codeTitle: '🛠 Инженерный разбор: ДО и ПОСЛЕ',
+        codeSub: 'Как координатные слоты защищают код от переполнения байтов и потери контекста'
+      },
+      en: {
+        btnText: 'RU',
+        navHome: '🏠 Main Portal',
+        navTable: '📊 Domain Registry',
+        badge: '🚀 Practical Case Study • Release v2.3 (20.09.2026)',
+        title: 'How to Stop Breaking Telegram Bots at Scale',
+        desc: 'Deterministic O(1) slot isolation standard for AI vibe-coding and hardware 64-byte payload bypass in Telegram API.',
+        anTitle: '💡 In Simple Terms (3 Life Analogies)',
+        anSub: 'Why coordinate slotting works flawlessly across all domains — from education to fintech',
+        an1Title: 'Coat Check & Tag',
+        an1Desc: 'Instead of describing the coat buttons and color ("long text"), you receive tag #14 (15 bytes). It easily fits in any pocket (64-byte limit).',
+        an2Title: 'Library Classification',
+        an2Desc: 'A book is targeted by its rigid UDC index rather than "blue cover". Restyling the book never shifts its location on the shelf.',
+        an3Title: 'Labeled Fuse Box',
+        an3Desc: 'Every wire has a 5-digit tag. The electrician (or AI) can repair room lighting without ever blacking out the server room.',
+        metTitle: '📊 Verified Efficiency Metrics (Benchmark)',
+        metSub: 'Measured on a full-stack system (20+ screens, 2500+ lines, billing, support desk)',
+        codeTitle: '🛠 Engineering Breakdown: BEFORE vs AFTER',
+        codeSub: 'How coordinate slots protect codebase from payload overflows and context degradation'
+      }
+    };
+
+    function toggleCaseLang() {
+      caseLang = caseLang === 'ru' ? 'en' : 'ru';
+      const t = CASE_I18N[caseLang];
+      document.getElementById('lang-btn-text').innerText = t.btnText;
+      document.getElementById('nav-home').innerText = t.navHome;
+      document.getElementById('nav-table').innerText = t.navTable;
+      document.getElementById('hero-badge').innerText = t.badge;
+      document.getElementById('hero-title').innerText = t.title;
+      document.getElementById('hero-desc').innerText = t.desc;
+      document.getElementById('analogies-title').innerHTML = '<span class="text-blue-400">💡</span> ' + t.anTitle;
+      document.getElementById('analogies-sub').innerText = t.anSub;
+      document.getElementById('an1-title').innerText = t.an1Title;
+      document.getElementById('an1-desc').innerText = t.an1Desc;
+      document.getElementById('an2-title').innerText = t.an2Title;
+      document.getElementById('an2-desc').innerText = t.an2Desc;
+      document.getElementById('an3-title').innerText = t.an3Title;
+      document.getElementById('an3-desc').innerText = t.an3Desc;
+      document.getElementById('metrics-title').innerHTML = '<span class="text-blue-400">📊</span> ' + t.metTitle;
+      document.getElementById('metrics-sub').innerText = t.metSub;
+      document.getElementById('code-title').innerHTML = '<span class="text-blue-400">🛠</span> ' + t.codeTitle;
+      document.getElementById('code-sub').innerText = t.codeSub;
+    }
+  </script>
+</body>
+</html>
