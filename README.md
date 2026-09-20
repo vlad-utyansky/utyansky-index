@@ -563,13 +563,27 @@ The **«Utyansky Index»** standard is distributed under a transparent hybrid **
 
 ## 🗺️ Versioning & Engineering Roadmap
 
-* 📦 **v1.0 (Archived):** Foundational 5-digit DOM coordinate navigation (`data-idx="7XXXX"`), CSS style isolation, and BEM architectural mapping.
-* 🚀 **v2.0 (Current Stable Release):**
-  * Deterministic coordinate addressing ($O(1)$) and the Reliability Triad (*TypeScript + ESLint + Utyansky Index*).
-  * Specification of **Change Contracts** (`allowed_idx`, `read_context_idx`, `protected_idx`).
+* 📦 **v1.0 (March 2026 / Alpha):** Baseline 5-digit coordinate DOM navigation (`data-idx="7XXXX"`), semantic styling isolation & BEM structuring.
+* 🏛️ **v2.0 (August 22, 2026 / Foundation Master — Rospatent App № 2026603415):**
+  * Deterministic coordinate addressing $O(1)$ and Reliability Triad (*TypeScript + ESLint + Utyansky Index*).
+  * **Change Contracts** specification (`allowed_idx`, `read_context_idx`, `protected_idx`).
   * **WAL (Write Authorization Layer)** for safe vibecoding and AI agent mutation gating.
   * Sub-millisecond pre-commit validator and cloud **GitHub Actions CI** (0.006–0.010s collision detection).
   * Official consensus of the **G8 Global AI Council** (8 world frontier AI models).
+* ⚙️ **v2.1 (September 11, 2026 / Industrial AST Edition):**
+  * Industrial syntax context isolation engine `utyansky_ast_engine.js`.
+  * Babel AST-lock $O(1)$ and coordinate preservation validation `[ERR: 10451]`.
+  * Automated graph dependency collection via `ImportDeclaration`.
+* 🌐 **v2.2 (September 12, 2026 / Web Standard & AI Vision AIO):**
+  * Open web coordinate standard (`70000–79999`) for AI Search optimization (AIO: ChatGPT Search, Perplexity, Yandex Neuro).
+  * Interactive HUD DOM Inspector (`utyansky-web-inspector.js` / "AI Vision").
+  * Zero AI blindness and 0% UI layout regressions during vibecoding.
+* 🚀 **v2.3 (September 20, 2026 / Telegram Bots & Zero-Lock Engine — Current Stable Release):**
+  * Open coordinate slot isolation standard $O(1)$ for Telegram Bot API and asynchronous bots.
+  * Physical 64-byte payload bypass in `callback_data` (zero `BUTTON_DATA_INVALID`).
+  * 360° Customer Dossier module ("Microscope") with 1-click support ticketing.
+  * **Zero-Lock & Conditional Constraint Class (`-00000` … `-00099`)**: Master Invariants, TTL quarantine, external triggers, and developer review workflows.
+  * Periodic Table expansion to **10 Classes (`00` – `09`)**.
 * 🔮 **v3.0 (Under Active R&D / Preview):**
   * **Autonomous Multi-Agent Swarms:** Zero-conflict concurrent code engineering for swarms of 10–20 autonomous AI agents in monorepos.
   * **DSL (Distributed Slot Locking):** Write-intent coordination via lease-based domain coordinate reservations.
