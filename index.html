@@ -256,7 +256,7 @@ const I18N = {
     casesTitle: 'Реальные Продакшн-Кейсы',
     casesSub: 'Документированные примеры из разработки комплекса VAU-OS Контент-Завод',
 
-    tableTitle: 'Периодическая Таблица Доменов (10000 – 99999)',
+    tableTitle: 'Периодическая Таблица Доменов и Защиты (10 Классов: 00000 – 99999)',
     tableSub: '1557+ физических слотов, зарегистрированных в боевой системе',
     tableSearch: 'Поиск по номеру индекса, названию или описанию...',
 
@@ -578,7 +578,7 @@ const I18N = {
     casesTitle: 'Real Production Case Studies',
     casesSub: 'Documented proofs from the VAU-OS Content Factory development',
 
-    tableTitle: 'Periodic Table of Domains (10000 – 99999)',
+    tableTitle: 'Periodic Table of Domains & Security (10 Classes: 00000 – 99999)',
     tableSub: '1557+ physical slots registered in the live production system',
     tableSearch: 'Search by index or name...',
 
@@ -728,7 +728,8 @@ const I18N = {
 };
 
 const DOMAINS_9 = [
-  { range: '10000 - 19999', nameRu: 'Ядро и Маршрутизация (Core & Kernel)', nameEn: 'System Core & Orchestration', count: '240+ узлов', descRu: 'Авторизация, роутинг, глобальная шина событий, middleware, обработка ошибок и системные предохранители (Circuit Breakers).', descEn: 'Authentication, global routing, event bus, core middleware, exception handling, and circuit breakers.' },
+  { range: '00000 - 00099', nameRu: '00. Нулевое Кольцо (Ring-0 Master Locks & Constraints)', nameEn: '00. Ring-0 Master Locks & Constraints', count: '100 слотов', descRu: 'Класс условных ограничений и защиты: абсолютный Master Lock (-00000), временные TTL-карантины (-00001), внешние триггеры (-00002) и режим согласования разработчика (-00003).', descEn: 'Conditional constraint & security class: Absolute Master Lock (-00000), TTL time quarantine (-00001), external dependencies (-00002), and developer review mode (-00003).' },
+  { range: '10000 - 19999', nameRu: '01. Ядро и Маршрутизация (Core & Kernel)', nameEn: '01. System Core & Orchestration', count: '240+ узлов', descRu: 'Авторизация, роутинг, глобальная шина событий, middleware, обработка ошибок и системные предохранители (Circuit Breakers).', descEn: 'Authentication, global routing, event bus, core middleware, exception handling, and circuit breakers.' },
   { range: '20000 - 29999', nameRu: 'Модули Аналитики, Парсинга и AI-Сигналов', nameEn: 'Analytics, AI Signals & Research', count: '380+ узлов', descRu: 'Сбор рыночных данных, парсинг сайтов, анализ поисковых трендов (Wordstat), геосервисы и поабзацная маркировка LLM-генераций.', descEn: 'Market data ingestion, web scrapers, search query trends (Wordstat), geo maps, and per-paragraph LLM micro-indexing.' },
   { range: '30000 - 39999', nameRu: 'Медиа-цех, Нейрогенерация и Видеомонтаж', nameEn: 'Media, Neural Generation & Voice Studio', count: '190+ узлов', descRu: 'Студия Оскара, сценарные блоки, таймлайны видеомонтажа, синхронизация субтитров, генерация голоса и фотореалистичных ассетов.', descEn: 'Oscar Studio, script blocks, timeline NLE editor, subtitle alignment, neural voice synthesis, and visual rendering.' },
   { range: '40000 - 49999', nameRu: 'Воркфлоу, Задачи и Конвейеры (Pipelines)', nameEn: 'Workflow, Tasks & Pipeline Engine', count: '210+ узлов', descRu: 'Канбан-доски Контент-Завода, фабрики задач, статусы Studio Pending, валидация этапов и автоматические пайплайны.', descEn: 'Kanban boards, task processing queues, Studio Pending lifecycle, stage validation, and CI/CD pipelines.' },
@@ -1401,7 +1402,7 @@ function renderApp() {
       '<div id="table" class="scroll-mt-24 max-w-6xl mx-auto" data-idx="70500" data-desc="[SECTION] Матрица 9 доменов">' +
         '<div class="flex flex-col sm:flex-row items-center justify-between mb-8 gap-4">' +
           '<div>' +
-            '<div class="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-blue-500/10 border border-blue-500/30 text-blue-400 text-xs font-mono mb-2"><span>🗺️ 9 DOMAINS ARCHITECTURE</span></div>' +
+            '<div class="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-blue-500/10 border border-blue-500/30 text-blue-400 text-xs font-mono mb-2"><span>🗺️ 10 DOMAINS & SECURITY ARCHITECTURE</span></div>' +
             '<h2 class="text-2xl sm:text-4xl font-extrabold text-white tracking-tight">' + t.tableTitle + '</h2>' +
             '<p class="text-xs sm:text-sm text-slate-300 mt-1">' + t.tableSub + '</p>' +
           '</div>' +

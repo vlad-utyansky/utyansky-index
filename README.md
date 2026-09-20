@@ -326,10 +326,11 @@ During the stress test, frontier model **ChatGPT (OpenAI)** conceded technical v
 
 ---
 
-## 🧱 4. Periodic Table of Utyansky Index Classification (9 Classes)
+## 🧱 4. Periodic Table of Utyansky Index Classification (10 Classes: 00 – 09)
 
 | Range | Standard Class | Domain Purpose | Coordinate Examples |
 | :--- | :--- | :--- | :--- |
+| **`00000 – 00099`** | **00. Ring-0 Master Locks** | Invariants, mutation locks, quarantine TTL, immutable layout | `70050-00000` (Master Lock), `70050-00001` (TTL) |
 | **`10000 – 19999`** | **01. System Core** | System architecture, initialization, routing, global configs | `10010` (Router), `10050` (Init Engine) |
 | **`20000 – 29999`** | **02. Search & Analytics** | Scrapers, search engines, web crawlers, trend radars | `20100` (Parser), `20150` (Radar) |
 | **`30000 – 39999`** | **03. Media Production** | Script synthesis, AI voiceover, video montage, storyboards | `30010` (Brief), `30100` (Timeline) |
