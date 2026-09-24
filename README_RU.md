@@ -3,15 +3,21 @@
 [![Русский](https://img.shields.io/badge/Язык-Русский%20(RU)-red?style=for-the-badge)](README_RU.md)
 [![English](https://img.shields.io/badge/Language-English%20(EN)-blue?style=for-the-badge)](README.md)
 [![Версия 2.0 (Авторская Спецификация)](https://img.shields.io/badge/Версия-2.0%20(Спецификация)-emerald?style=for-the-badge)](https://github.com/vlad-utyansky/utyansky-index)
-[![Версия 1.0 (Архив Март 2026)](https://img.shields.io/badge/Версия-1.0%20(Март%202026%20Alpha)-orange?style=for-the-badge)](https://github.com/vlad-utyansky/utyansky-index/tree/v1.0-legacy)
+[![Версия 1.0 (Архив Март 2026)](https://img.shields.io/badge/Версия-1.0%20(Март%202026%20Alpha)-orange?style=for-the-badge)](docs/ru/АРХИВ_ВЕРСИЯ_1.0_МАРТ_2026.md)
 
 <br/>
 
-**[ 🇬🇧 Read in English ➔ ](README.md)** &nbsp;&nbsp;|&nbsp;&nbsp; **[ 📜 Открыть архив Первой версии v1.0 (Март 2026) ➔ ](https://github.com/vlad-utyansky/utyansky-index/tree/v1.0-legacy)**
+**[ 🇬🇧 Read in English ➔ ](README.md)** &nbsp;&nbsp;|&nbsp;&nbsp; **[ 📜 Открыть архив Первой версии v1.0 (Март 2026) ➔ ](docs/ru/АРХИВ_ВЕРСИЯ_1.0_МАРТ_2026.md)**
 
 </div>
 
 ---
+
+
+> 📜 **Официальная Международная Регистрация (CERN Zenodo DOI):** [10.5281/zenodo.22934668](https://doi.org/10.5281/zenodo.22934668)  
+> 🛡️ **Заявка Роспатент РФ:** № 2026603415 / 7927650015  
+> 🌐 **Официальный портал стандарта:** [https://index.utyanskiy.ru](https://index.utyanskiy.ru)
+
 
 # 🛡️ Архитектура «Индекс Утянского» (Версия 2.0)
 ### Универсальная детерминированная координатная матрица для кода, ИИ, оцифровки маркетинга (UVWI) и векторной памяти
