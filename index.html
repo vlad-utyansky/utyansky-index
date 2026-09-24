@@ -1791,22 +1791,42 @@ function renderApp() {
             '</div>' +
           '</a>' +
 
+          '<!-- Hacker News (Y Combinator) -->' +
+          '<a href="https://news.ycombinator.com/item?id=49828783" target="_blank" rel="noopener noreferrer" class="group p-6 rounded-3xl card-glass border border-orange-500/30 hover:border-orange-400 transition-all duration-300 shadow-xl flex flex-col justify-between hover:-translate-y-1 relative overflow-hidden" data-idx="70387" data-desc="' + (currentLang === 'ru' ? '[CARD] Обсуждение на Hacker News (Y Combinator)' : '[CARD] Hacker News YC Discussion') + '">' +
+            '<div>' +
+              '<div class="flex items-center justify-between gap-2 mb-4">' +
+                '<span class="text-xs font-mono font-bold px-2.5 py-1 rounded-lg bg-orange-500/15 border border-orange-400/40 text-orange-300">Hacker News (YC)</span>' +
+                '<span class="text-xs font-mono font-bold text-slate-400">Silicon Valley 🇺🇸</span>' +
+              '</div>' +
+              '<h3 class="text-base font-bold text-white group-hover:text-orange-300 transition-colors mb-2">' +
+                'Utyansky Index: Deterministic O(1) slot isolation for AI vibe coding' +
+              '</h3>' +
+              '<p class="text-xs text-slate-300 leading-relaxed mb-4">' +
+                (currentLang === 'ru' ? 'Официальная ветка обсуждения стандарта на главной площадке разработчиков Кремниевой долины (Y Combinator).' : 'Official community discussion thread on the premier Silicon Valley developer hub (Y Combinator).') +
+              '</p>' +
+            '</div>' +
+            '<div class="pt-4 border-t border-white/10 flex items-center justify-between">' +
+              '<span class="text-[11px] font-mono text-orange-400 font-bold">news.ycombinator.com</span>' +
+              '<span class="text-xs text-slate-400 group-hover:text-white transition">Обсуждение ➔</span>' +
+            '</div>' +
+          '</a>' +
+
           '<!-- VC.ru Article -->' +
-          '<a href="https://vc.ru/u/vlad-utyansky" target="_blank" rel="noopener noreferrer" class="group p-6 rounded-3xl card-glass border border-red-500/30 hover:border-red-400 transition-all duration-300 shadow-xl flex flex-col justify-between hover:-translate-y-1 relative overflow-hidden" data-idx="70384" data-desc="' + (currentLang === 'ru' ? '[CARD] Публикации на VC.ru' : '[CARD] VC.ru Business Cases') + '">' +
+          '<a href="https://vc.ru/tribuna/3126880-pochemu-neyroseti-ne-zamenyat-programmistov" target="_blank" rel="noopener noreferrer" class="group p-6 rounded-3xl card-glass border border-red-500/30 hover:border-red-400 transition-all duration-300 shadow-xl flex flex-col justify-between hover:-translate-y-1 relative overflow-hidden" data-idx="70384" data-desc="' + (currentLang === 'ru' ? '[CARD] Публикация на VC.ru' : '[CARD] VC.ru Article') + '">' +
             '<div>' +
               '<div class="flex items-center justify-between gap-2 mb-4">' +
                 '<span class="text-xs font-mono font-bold px-2.5 py-1 rounded-lg bg-red-500/15 border border-red-400/40 text-red-300">VC.ru</span>' +
                 '<span class="text-xs font-mono font-bold text-slate-400">Бизнес & IT 🇷🇺</span>' +
               '</div>' +
               '<h3 class="text-base font-bold text-white group-hover:text-red-300 transition-colors mb-2">' +
-                (currentLang === 'ru' ? 'Вайбкодинг на 48 000 строк: как 5-значные координаты спасают код' : 'Vibe Coding at 48k LOC: How 5-Digit Coordinates Protect Code') +
+                (currentLang === 'ru' ? 'Почему нейросети не заменят программистов' : 'Why AI Will Not Replace Software Engineers') +
               '</h3>' +
               '<p class="text-xs text-slate-300 leading-relaxed mb-4">' +
-                (currentLang === 'ru' ? 'Практический производственный кейс экосистемы VAU-OS: как экономить 85% расходов на токены API и предотвращать поломки продакшна.' : 'Production case study from the VAU-OS ecosystem: slashing 85% of API token costs and preventing regressions.') +
+                (currentLang === 'ru' ? 'Авторский манифест о роли системной архитектуры, детерминированных координат и реального продакшна в эпоху генеративного ИИ.' : 'Founder manifesto on the vital role of deterministic coordinates and engineering architecture in generative AI.') +
               '</p>' +
             '</div>' +
             '<div class="pt-4 border-t border-white/10 flex items-center justify-between">' +
-              '<span class="text-[11px] font-mono text-red-400 font-bold">vc.ru/u/vlad-utyansky</span>' +
+              '<span class="text-[11px] font-mono text-red-400 font-bold">vc.ru/tribuna/3126880</span>' +
               '<span class="text-xs text-slate-400 group-hover:text-white transition">Читать ➔</span>' +
             '</div>' +
           '</a>' +
