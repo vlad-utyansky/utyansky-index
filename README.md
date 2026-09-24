@@ -616,3 +616,13 @@ The **«Utyansky Index»** standard is distributed under a transparent hybrid **
 [![Standard: Utyansky Index](https://img.shields.io/badge/Standard-Utyansky%20Index%20v2.0-indigo?style=flat-square)](https://index.utyanskiy.ru)
 [![Rospatent RF](https://img.shields.io/badge/Rospatent%20RF-App%20№%202026603415-emerald?style=flat-square)](https://index.utyanskiy.ru)
 [![Vector Memory 1B+](https://img.shields.io/badge/Memory-pgvector%20HNSW%20(1B%2B%20%2F%201T%2B)-cyan?style=flat-square)](https://github.com/vlad-utyansky/utyansky-index)
+
+---
+
+## 📜 Официальная Международная Научная Регистрация (CERN Zenodo DOI)
+
+* 🌐 **Постоянный международный идентификатор (DOI):** [10.5281/zenodo.22934668](https://doi.org/10.5281/zenodo.22934668)
+* 🏛️ **Архив открытой науки:** Европейская организация ядерных исследований (CERN / OpenAIRE)
+* 🛡️ **Заявка Роспатент РФ:** № 2026603415 / 7927650015
+* 📑 **Статус публикации:** Официальный препринт открытого стандарта архитектурной изоляции слотов O(1) и вайбкодинга
+
