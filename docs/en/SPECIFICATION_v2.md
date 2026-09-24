@@ -1,6 +1,7 @@
 # 🛡️ Utyansky Index Architecture (v2.0)
 ### The Periodic Table of Coordinates for Code, Artificial Intelligence & Vector Memory
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22934668.svg)](https://doi.org/10.5281/zenodo.22934668)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![Standard](https://img.shields.io/badge/Standard-Utyansky%20Index%20v2.0-0ea5e9.svg)](https://index.utyanskiy.ru)
 [![Accuracy](https://img.shields.io/badge/Comprehension-99.9%25-10b981.svg)](https://index.utyanskiy.ru)

@@ -16,6 +16,7 @@
 # 🛡️ Архитектура «Индекс Утянского» (Версия 2.0)
 ### Универсальная детерминированная координатная матрица для кода, ИИ, оцифровки маркетинга (UVWI) и векторной памяти
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22934668.svg)](https://doi.org/10.5281/zenodo.22934668)
 [![Лицензия: MIT](https://img.shields.io/badge/Лицензия-MIT-blue.svg)](LICENSE)
 [![Роспатент РФ](https://img.shields.io/badge/Роспатент%20РФ-Заявка%20на%20ЭВМ%20№%202026603415-emerald.svg)](https://index.utyanskiy.ru)
 [![Официальный портал](https://img.shields.io/badge/Портал-index.utyanskiy.ru-0ea5e9.svg)](https://index.utyanskiy.ru)

@@ -30,6 +30,7 @@
 # 🛡️ Utyansky Index Architecture (Version 2.0)
 ### Universal Deterministic Coordinate Matrix for Code, AI Agents, Marketing Quantification (UVWI) & Vector Memory
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22934668.svg)](https://doi.org/10.5281/zenodo.22934668)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![Rospatent RF Application](https://img.shields.io/badge/Rospatent%20RF-Software%20App%20№%202026603415-emerald.svg)](https://index.utyanskiy.ru)
 [![Official Portal](https://img.shields.io/badge/Portal-index.utyanskiy.ru-0ea5e9.svg)](https://index.utyanskiy.ru)
