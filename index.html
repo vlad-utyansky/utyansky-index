@@ -386,7 +386,12 @@ const I18N = {
     navMarketing: '📊 Маркетинг UVWI',
     navPricing: '⚖️ Тарифы',
     navFaq: '❓ FAQ (20)',
+    navPublications: '📚 Публикации',
     navContacts: '📞 Контакты',
+
+    publicationsBadge: '📚 НАУЧНЫЕ ПРЕПРИНТЫ И МЕЖДУНАРОДНЫЕ ПУБЛИКАЦИИ',
+    publicationsTitle: 'Официальные Публикации и Научные Регистрации',
+    publicationsSub: 'Международный DOI, научные препринты, публикации в сообществах разработчиков и патентный приоритет стандарта «Индекс Утянского v2.0»',
 
     contactsTitle: 'Связь с Автором и Внедрение',
     contactsSub: 'Обсудить интеграцию Индекса Утянского в ваши проекты, аудит кодовой базы или корпоративное обучение',
@@ -708,7 +713,12 @@ const I18N = {
     navMarketing: '📊 Marketing UVWI',
     navPricing: '⚖️ Pricing',
     navFaq: '❓ FAQ (20)',
+    navPublications: '📚 Publications',
     navContacts: '📞 Contacts',
+
+    publicationsBadge: '📚 SCIENTIFIC PREPRINTS & INTERNATIONAL PAPERS',
+    publicationsTitle: 'Official Publications & Scientific Registrations',
+    publicationsSub: 'International DOI, open scientific preprints, global developer papers, and patent priority for the Utyansky Index v2.0',
 
     contactsTitle: 'Connect with the Author & Integration',
     contactsSub: 'Discuss integrating the Utyansky Index into your enterprise workflow or software stack',
@@ -1072,6 +1082,7 @@ function renderApp() {
           '<a href="#marketing" class="hover:text-blue-400 transition py-1 px-1.5 rounded-lg hover:bg-white/5">' + t.navMarketing + '</a>' +
           '<a href="#pricing" class="hover:text-emerald-400 transition py-1 px-1.5 rounded-lg hover:bg-white/5 text-emerald-300 font-semibold">' + t.navPricing + '</a>' +
           '<a href="#faq" class="hover:text-blue-400 transition py-1 px-1.5 rounded-lg hover:bg-white/5">' + t.navFaq + '</a>' +
+          '<a href="#publications" class="hover:text-cyan-300 transition py-1 px-1.5 rounded-lg hover:bg-white/5 text-cyan-300 font-semibold">' + t.navPublications + '</a>' +
           '<a href="#contacts" class="hover:text-blue-400 transition py-1 px-1.5 rounded-lg hover:bg-white/5 text-sky-300 font-bold">' + t.navContacts + '</a>' +
         '</nav>' +
 
@@ -1706,6 +1717,139 @@ function renderApp() {
               '<p class="text-xs sm:text-sm text-slate-300 mt-3.5 leading-relaxed pt-3 border-t border-white/5">' + a + '</p>' +
             '</details>';
           }).join('') +
+        '</div>' +
+      '</div>' +
+
+      '<!-- 11.5. [PUBLICATIONS & PREPRINTS SECTION] -->' +
+      '<div id="publications" class="scroll-mt-24 space-y-8 max-w-6xl mx-auto" data-idx="70380" data-desc="' + (currentLang === 'ru' ? '[SECTION] Международные научные публикации и статьи' : '[SECTION] International scientific publications & preprints') + '">' +
+        '<div class="text-center max-w-3xl mx-auto">' +
+          '<div class="inline-flex items-center space-x-2 px-3.5 py-1 rounded-full bg-blue-500/10 border border-blue-500/30 text-blue-400 text-xs font-mono mb-3">' +
+            '<span>' + t.publicationsBadge + '</span>' +
+          '</div>' +
+          '<h2 class="text-2xl sm:text-4xl font-black text-white tracking-tight mb-3">' + t.publicationsTitle + '</h2>' +
+          '<p class="text-xs sm:text-sm text-slate-400">' + t.publicationsSub + '</p>' +
+        '</div>' +
+
+        '<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">' +
+          '<!-- CERN Zenodo DOI -->' +
+          '<a href="https://doi.org/10.5281/zenodo.22934668" target="_blank" rel="noopener noreferrer" class="group p-6 rounded-3xl card-glass border border-cyan-500/30 hover:border-cyan-400 transition-all duration-300 shadow-xl flex flex-col justify-between hover:-translate-y-1 relative overflow-hidden" data-idx="70381" data-desc="' + (currentLang === 'ru' ? '[CARD] Международный DOI в CERN Zenodo' : '[CARD] CERN Zenodo DOI Preprint') + '">' +
+            '<div>' +
+              '<div class="flex items-center justify-between gap-2 mb-4">' +
+                '<span class="text-xs font-mono font-bold px-2.5 py-1 rounded-lg bg-cyan-500/15 border border-cyan-400/40 text-cyan-300">CERN Zenodo</span>' +
+                '<span class="text-xs font-mono font-bold text-slate-400">Швейцария 🇨🇭</span>' +
+              '</div>' +
+              '<h3 class="text-base font-bold text-white group-hover:text-cyan-300 transition-colors mb-2">' +
+                'Utyansky Index v2.0: Deterministic O(1) Spatial Addressing' +
+              '</h3>' +
+              '<p class="text-xs text-slate-300 leading-relaxed mb-4">' +
+                (currentLang === 'ru' ? 'Официальный международный научный препринт с открытым рецензированием. Присвоен постоянный неизменяемый DOI от Европейской организации по ядерным исследованиям (CERN).' : 'Official international scientific preprint with open peer review. Permanent immutable DOI issued by CERN.') +
+              '</p>' +
+            '</div>' +
+            '<div class="pt-4 border-t border-white/10 flex items-center justify-between">' +
+              '<span class="text-[11px] font-mono text-cyan-400 font-bold">DOI: 10.5281/zenodo.22934668</span>' +
+              '<span class="text-xs text-slate-400 group-hover:text-white transition">Открыть ➔</span>' +
+            '</div>' +
+          '</a>' +
+
+          '<!-- Dev.to Article -->' +
+          '<a href="https://dev.to/vladutyansky/why-vibe-coding-breaks-at-scale-and-how-5-digit-o1-slot-isolation-fixes-it-1886" target="_blank" rel="noopener noreferrer" class="group p-6 rounded-3xl card-glass border border-purple-500/30 hover:border-purple-400 transition-all duration-300 shadow-xl flex flex-col justify-between hover:-translate-y-1 relative overflow-hidden" data-idx="70382" data-desc="' + (currentLang === 'ru' ? '[CARD] Статья на Dev.to' : '[CARD] Dev.to Global Dev Article') + '">' +
+            '<div>' +
+              '<div class="flex items-center justify-between gap-2 mb-4">' +
+                '<span class="text-xs font-mono font-bold px-2.5 py-1 rounded-lg bg-purple-500/15 border border-purple-400/40 text-purple-300">DEV Community</span>' +
+                '<span class="text-xs font-mono font-bold text-slate-400">Global Dev 🌐</span>' +
+              '</div>' +
+              '<h3 class="text-base font-bold text-white group-hover:text-purple-300 transition-colors mb-2">' +
+                'Why Vibe Coding Breaks at Scale — And How 5-Digit Isolation Fixes It' +
+              '</h3>' +
+              '<p class="text-xs text-slate-300 leading-relaxed mb-4">' +
+                (currentLang === 'ru' ? 'Технический разбор архитектурных причин деградации ИИ-агентов на кодовых базах 20 000+ строк и результаты стресс-теста в 9 мировых нейросетях.' : 'In-depth engineering analysis on context rot in 20,000+ line codebases and 9-LLM benchmark consensus.') +
+              '</p>' +
+            '</div>' +
+            '<div class="pt-4 border-t border-white/10 flex items-center justify-between">' +
+              '<span class="text-[11px] font-mono text-purple-400 font-bold">dev.to/vladutyansky</span>' +
+              '<span class="text-xs text-slate-400 group-hover:text-white transition">Читать ➔</span>' +
+            '</div>' +
+          '</a>' +
+
+          '<!-- Medium Article -->' +
+          '<a href="https://medium.com/@vladutyansky" target="_blank" rel="noopener noreferrer" class="group p-6 rounded-3xl card-glass border border-emerald-500/30 hover:border-emerald-400 transition-all duration-300 shadow-xl flex flex-col justify-between hover:-translate-y-1 relative overflow-hidden" data-idx="70383" data-desc="' + (currentLang === 'ru' ? '[CARD] Статья и профиль на Medium' : '[CARD] Medium Story & Profile') + '">' +
+            '<div>' +
+              '<div class="flex items-center justify-between gap-2 mb-4">' +
+                '<span class="text-xs font-mono font-bold px-2.5 py-1 rounded-lg bg-emerald-500/15 border border-emerald-400/40 text-emerald-300">Medium</span>' +
+                '<span class="text-xs font-mono font-bold text-slate-400">Architecture 🏛️</span>' +
+              '</div>' +
+              '<h3 class="text-base font-bold text-white group-hover:text-emerald-300 transition-colors mb-2">' +
+                'Why Vibe Coding Breaks at Scale (Medium Edition)' +
+              '</h3>' +
+              '<p class="text-xs text-slate-300 leading-relaxed mb-4">' +
+                (currentLang === 'ru' ? 'Официальная авторская колонка Vladislav Utyansky на Medium: архитектурная изоляция слотов O(1) и ликвидация стохастического хаоса.' : 'Official author column by Vladislav Utyansky on Medium: O(1) slot isolation and eliminating stochastic context entropy.') +
+              '</p>' +
+            '</div>' +
+            '<div class="pt-4 border-t border-white/10 flex items-center justify-between">' +
+              '<span class="text-[11px] font-mono text-emerald-400 font-bold">medium.com/@vladutyansky</span>' +
+              '<span class="text-xs text-slate-400 group-hover:text-white transition">Читать ➔</span>' +
+            '</div>' +
+          '</a>' +
+
+          '<!-- VC.ru Article -->' +
+          '<a href="https://vc.ru/u/vlad-utyansky" target="_blank" rel="noopener noreferrer" class="group p-6 rounded-3xl card-glass border border-red-500/30 hover:border-red-400 transition-all duration-300 shadow-xl flex flex-col justify-between hover:-translate-y-1 relative overflow-hidden" data-idx="70384" data-desc="' + (currentLang === 'ru' ? '[CARD] Публикации на VC.ru' : '[CARD] VC.ru Business Cases') + '">' +
+            '<div>' +
+              '<div class="flex items-center justify-between gap-2 mb-4">' +
+                '<span class="text-xs font-mono font-bold px-2.5 py-1 rounded-lg bg-red-500/15 border border-red-400/40 text-red-300">VC.ru</span>' +
+                '<span class="text-xs font-mono font-bold text-slate-400">Бизнес & IT 🇷🇺</span>' +
+              '</div>' +
+              '<h3 class="text-base font-bold text-white group-hover:text-red-300 transition-colors mb-2">' +
+                (currentLang === 'ru' ? 'Вайбкодинг на 48 000 строк: как 5-значные координаты спасают код' : 'Vibe Coding at 48k LOC: How 5-Digit Coordinates Protect Code') +
+              '</h3>' +
+              '<p class="text-xs text-slate-300 leading-relaxed mb-4">' +
+                (currentLang === 'ru' ? 'Практический производственный кейс экосистемы VAU-OS: как экономить 85% расходов на токены API и предотвращать поломки продакшна.' : 'Production case study from the VAU-OS ecosystem: slashing 85% of API token costs and preventing regressions.') +
+              '</p>' +
+            '</div>' +
+            '<div class="pt-4 border-t border-white/10 flex items-center justify-between">' +
+              '<span class="text-[11px] font-mono text-red-400 font-bold">vc.ru/u/vlad-utyansky</span>' +
+              '<span class="text-xs text-slate-400 group-hover:text-white transition">Читать ➔</span>' +
+            '</div>' +
+          '</a>' +
+
+          '<!-- Rospatent RF -->' +
+          '<div class="group p-6 rounded-3xl card-glass border border-amber-500/30 transition-all duration-300 shadow-xl flex flex-col justify-between relative overflow-hidden" data-idx="70385" data-desc="' + (currentLang === 'ru' ? '[CARD] Заявка Роспатент РФ' : '[CARD] Rospatent RF Application') + '">' +
+            '<div>' +
+              '<div class="flex items-center justify-between gap-2 mb-4">' +
+                '<span class="text-xs font-mono font-bold px-2.5 py-1 rounded-lg bg-amber-500/15 border border-amber-400/40 text-amber-300">Роспатент РФ</span>' +
+                '<span class="text-xs font-mono font-bold text-slate-400">Патентный приоритет 🛡️</span>' +
+              '</div>' +
+              '<h3 class="text-base font-bold text-white mb-2">' +
+                (currentLang === 'ru' ? 'Заявка на регистрацию программы для ЭВМ № 2026603415 / 7927650015' : 'Software Copyright Application № 2026603415 / 7927650015') +
+              '</h3>' +
+              '<p class="text-xs text-slate-300 leading-relaxed mb-4">' +
+                (currentLang === 'ru' ? 'Государственная фиксация авторского права и архитектурного регламента пятизначной координатной сетки Индекса Утянского (10000–99999).' : 'Official state registration of software architecture and 5-digit coordinate slotting standard (10000–99999).') +
+              '</p>' +
+            '</div>' +
+            '<div class="pt-4 border-t border-white/10 flex items-center justify-between">' +
+              '<span class="text-[11px] font-mono text-amber-400 font-bold">№ 2026603415</span>' +
+              '<span class="text-xs text-emerald-400 font-semibold">' + (currentLang === 'ru' ? 'Зарегистрировано' : 'Registered') + '</span>' +
+            '</div>' +
+          '</div>' +
+
+          '<!-- GitHub Spec -->' +
+          '<a href="' + (currentLang === 'ru' ? 'https://github.com/vlad-utyansky/utyansky-index/blob/main/README_RU.md' : 'https://github.com/vlad-utyansky/utyansky-index') + '" target="_blank" rel="noopener noreferrer" class="group p-6 rounded-3xl card-glass border border-blue-500/30 hover:border-blue-400 transition-all duration-300 shadow-xl flex flex-col justify-between hover:-translate-y-1 relative overflow-hidden" data-idx="70386" data-desc="' + (currentLang === 'ru' ? '[CARD] Репозиторий GitHub' : '[CARD] GitHub Repository') + '">' +
+            '<div>' +
+              '<div class="flex items-center justify-between gap-2 mb-4">' +
+                '<span class="text-xs font-mono font-bold px-2.5 py-1 rounded-lg bg-blue-500/15 border border-blue-400/40 text-blue-300">GitHub</span>' +
+                '<span class="text-xs font-mono font-bold text-slate-400">Open Source 📦</span>' +
+              '</div>' +
+              '<h3 class="text-base font-bold text-white group-hover:text-blue-300 transition-colors mb-2">' +
+                (currentLang === 'ru' ? 'Открытая спецификация и валидатор' : 'Open Specification & Pre-Commit Validator') +
+              '</h3>' +
+              '<p class="text-xs text-slate-300 leading-relaxed mb-4">' +
+                (currentLang === 'ru' ? 'Репозиторий с открытым кодом: правила для AI-агентов (Cursor / Claude / Copilot), pre-commit валидатор и примеры интеграции.' : 'Open-source repository: rule sets for AI agents (Cursor / Claude / Copilot), pre-commit validator, and integration guides.') +
+              '</p>' +
+            '</div>' +
+            '<div class="pt-4 border-t border-white/10 flex items-center justify-between">' +
+              '<span class="text-[11px] font-mono text-blue-400 font-bold">vlad-utyansky/utyansky-index</span>' +
+              '<span class="text-xs text-slate-400 group-hover:text-white transition">Открыть ➔</span>' +
+            '</div>' +
+          '</a>' +
         '</div>' +
       '</div>' +
 
