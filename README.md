@@ -1,7 +1,7 @@
 <div align="center">
 
-[![English](https://img.shields.io/badge/Language-English%20(EN)-blue?style=for-the-badge)](README.md)
-[![Russian](https://img.shields.io/badge/Language-Russian%20(RU)-red?style=for-the-badge)](README_RU.md)
+[![Language: English (EN)](https://img.shields.io/badge/Language-English%20(EN)-blue?style=for-the-badge)](README.md)
+[![Language: Russian (RU)](https://img.shields.io/badge/Language-Russian%20(RU)-red?style=for-the-badge)](README_RU.md)
 [![Version 2.0 (Author Specification)](https://img.shields.io/badge/Version-2.0%20(Specification)-emerald?style=for-the-badge)](https://github.com/vlad-utyansky/utyansky-index)
 [![Version 1.0 (March 2026 Archive)](https://img.shields.io/badge/Version-1.0%20(March%202026%20Alpha)-orange?style=for-the-badge)](docs/en/VERSION_1.0_MARCH_2026_ARCHIVE.md)
 
@@ -13,23 +13,9 @@
 
 ---
 
-
-> 📜 **Официальная Международная Регистрация (CERN Zenodo DOI):** [10.5281/zenodo.22934668](https://doi.org/10.5281/zenodo.22934668)  
-> 🛡️ **Заявка Роспатент РФ:** № 2026603415 / 7927650015  
-> 🌐 **Официальный портал стандарта:** [https://index.utyanskiy.ru](https://index.utyanskiy.ru)
-
-<div align="center">
-
-[![English](https://img.shields.io/badge/Language-English%20(EN)-blue?style=for-the-badge)](README.md)
-[![Russian](https://img.shields.io/badge/Language-Russian%20(RU)-red?style=for-the-badge)](README_RU.md)
-[![Version 2.0 (Author Specification)](https://img.shields.io/badge/Version-2.0%20(Specification)-emerald?style=for-the-badge)](https://github.com/vlad-utyansky/utyansky-index)
-[![Version 1.0 (March 2026 Archive)](https://img.shields.io/badge/Version-1.0%20(March%202026%20Alpha)-orange?style=for-the-badge)](docs/en/VERSION_1.0_MARCH_2026_ARCHIVE.md)
-
-<br/>
-
-**[ 🇷🇺 Читать на русском ➔ ](README_RU.md)** &nbsp;&nbsp;|&nbsp;&nbsp; **[ 📜 Open Version 1.0 Archive (March 2026) ➔ ](docs/en/VERSION_1.0_MARCH_2026_ARCHIVE.md)**
-
-</div>
+> 📜 **Official CERN Zenodo DOI:** [`10.5281/zenodo.22934668`](https://doi.org/10.5281/zenodo.22934668)  
+> 🛡️ **Rospatent RF Application:** No. 2026603415 / 7927650015  
+> 🌐 **Official Portal:** [https://index.utyanskiy.ru](https://index.utyanskiy.ru)
 
 ---
 
