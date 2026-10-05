@@ -15,8 +15,12 @@
 
 > 📜 **Official CERN Zenodo DOI:** [`10.5281/zenodo.22934668`](https://doi.org/10.5281/zenodo.22934668)  
 > 🎓 **ORCID Global Researcher ID:** [`0009-0005-8768-6707`](https://orcid.org/0009-0005-8768-6707)  
+> 📚 **Academic Preprint (Academia.edu):** [Paper 176346479](https://www.academia.edu/176346479/Utyansky_Index_v2_0_Deterministic_Slot_Isolation_and_O_1_State_Mapping_Protocol_for_Multi_Agent_LLM_Stability_in_Vibe_Coding)  
+> 💻 **Engineering Article (DEV Community):** [dev.to/vladutyansky](https://dev.to/vladutyansky/why-vibe-coding-breaks-at-scale-and-how-5-digit-o1-slot-isolation-fixes-it-1886)  
+> 🚀 **Global AI Directory (NxGn Tools):** [Utyansky Index v2.0](https://www.nxgntools.com/tools/utyansky-index-v2-0)  
 > 🛡️ **Rospatent RF Application:** No. 2026603415 / 7927650015  
 > 🌐 **Official Portal:** [https://index.utyanskiy.ru](https://index.utyanskiy.ru)
+
 
 ---
 
