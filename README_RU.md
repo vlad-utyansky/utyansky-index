@@ -14,23 +14,30 @@
 ---
 
 
-> 📜 **Официальная Международная Регистрация (CERN Zenodo DOI):** [10.5281/zenodo.22934668](https://doi.org/10.5281/zenodo.22934668)  
+> 📜 **Официальная Международная Регистрация (CERN Zenodo DOI):** [`10.5281/zenodo.22934668`](https://doi.org/10.5281/zenodo.22934668)  
+> 🎓 **Международный Паспорт Учёного (ORCID iD):** [`0009-0005-8768-6707`](https://orcid.org/0009-0005-8768-6707)  
 > 🛡️ **Заявка Роспатент РФ:** № 2026603415 / 7927650015  
 > 🌐 **Официальный портал стандарта:** [https://index.utyanskiy.ru](https://index.utyanskiy.ru)
 
+---
 
 # 🛡️ Архитектура «Индекс Утянского» (Версия 2.0)
 ### Универсальная детерминированная координатная матрица для кода, ИИ, оцифровки маркетинга (UVWI) и векторной памяти
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22934668.svg)](https://doi.org/10.5281/zenodo.22934668)
+[![ORCID](https://img.shields.io/badge/ORCID-0009--0005--8768--6707-A6CE39?logo=orcid&logoColor=white)](https://orcid.org/0009-0005-8768-6707)
+[![Academia.edu](https://img.shields.io/badge/Academia.edu-Препринт%20176346479-brown.svg)](https://www.academia.edu/176346479/Utyansky_Index_v2_0_Deterministic_Slot_Isolation_and_O_1_State_Mapping_Protocol_for_Multi_Agent_LLM_Stability_in_Vibe_Coding)
 [![Лицензия: MIT](https://img.shields.io/badge/Лицензия-MIT-blue.svg)](LICENSE)
 [![Роспатент РФ](https://img.shields.io/badge/Роспатент%20РФ-Заявка%20на%20ЭВМ%20№%202026603415-emerald.svg)](https://index.utyanskiy.ru)
 [![Официальный портал](https://img.shields.io/badge/Портал-index.utyanskiy.ru-0ea5e9.svg)](https://index.utyanskiy.ru)
+[![DEV.to Статья](https://img.shields.io/badge/DEV.to-vladutyansky-black?logo=devdotto&logoColor=white)](https://dev.to/vladutyansky/why-vibe-coding-breaks-at-scale-and-how-5-digit-o1-slot-isolation-fixes-it-1886)
+[![NxGn Tools](https://img.shields.io/badge/NxGn%20Tools-Featured%20Tool-indigo.svg)](https://www.nxgntools.com/tools/utyansky-index-v2-0)
 [![Точность](https://img.shields.io/badge/Точность%20понимания-99.9%25-10b981.svg)](https://index.utyanskiy.ru)
 [![Парадигма: IDX-Constrained RAG](https://img.shields.io/badge/Парадигма-IDX--Constrained%20RAG-8b5cf6.svg)](docs/ru/LLM_INDEPENDENT_AUDIT_RU.md)
 [![CI Validation](https://github.com/vlad-utyansky/utyansky-index/actions/workflows/validate-index.yml/badge.svg)](https://github.com/vlad-utyansky/utyansky-index/actions)
 [![CI Speed](https://img.shields.io/badge/CI_Speed-0.006s-10b981.svg)](examples/validate-index.js)
 [![Автор](https://img.shields.io/badge/Автор-Утянский%20Владислав%20Анатольевич-6366f1.svg)](https://utyanskiy.ru)
+
 
 ---
 

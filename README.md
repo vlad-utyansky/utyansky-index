@@ -14,6 +14,7 @@
 ---
 
 > 📜 **Official CERN Zenodo DOI:** [`10.5281/zenodo.22934668`](https://doi.org/10.5281/zenodo.22934668)  
+> 🎓 **ORCID Global Researcher ID:** [`0009-0005-8768-6707`](https://orcid.org/0009-0005-8768-6707)  
 > 🛡️ **Rospatent RF Application:** No. 2026603415 / 7927650015  
 > 🌐 **Official Portal:** [https://index.utyanskiy.ru](https://index.utyanskiy.ru)
 
@@ -23,14 +24,19 @@
 ### Universal Deterministic Coordinate Matrix for Code, AI Agents, Marketing Quantification (UVWI) & Vector Memory
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22934668.svg)](https://doi.org/10.5281/zenodo.22934668)
+[![ORCID](https://img.shields.io/badge/ORCID-0009--0005--8768--6707-A6CE39?logo=orcid&logoColor=white)](https://orcid.org/0009-0005-8768-6707)
+[![Academia.edu](https://img.shields.io/badge/Academia.edu-Preprint%20176346479-brown.svg)](https://www.academia.edu/176346479/Utyansky_Index_v2_0_Deterministic_Slot_Isolation_and_O_1_State_Mapping_Protocol_for_Multi_Agent_LLM_Stability_in_Vibe_Coding)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![Rospatent RF Application](https://img.shields.io/badge/Rospatent%20RF-Software%20App%20№%202026603415-emerald.svg)](https://index.utyanskiy.ru)
 [![Official Portal](https://img.shields.io/badge/Portal-index.utyanskiy.ru-0ea5e9.svg)](https://index.utyanskiy.ru)
+[![DEV.to Article](https://img.shields.io/badge/DEV.to-vladutyansky-black?logo=devdotto&logoColor=white)](https://dev.to/vladutyansky/why-vibe-coding-breaks-at-scale-and-how-5-digit-o1-slot-isolation-fixes-it-1886)
+[![NxGn Tools](https://img.shields.io/badge/NxGn%20Tools-Featured%20Tool-indigo.svg)](https://www.nxgntools.com/tools/utyansky-index-v2-0)
 [![Accuracy](https://img.shields.io/badge/Understanding%20Accuracy-99.9%25-10b981.svg)](https://index.utyanskiy.ru)
 [![Paradigm: IDX-Constrained RAG](https://img.shields.io/badge/Paradigm-IDX--Constrained%20RAG-8b5cf6.svg)](docs/en/LLM_INDEPENDENT_AUDIT_EN.md)
 [![CI Validation](https://github.com/vlad-utyansky/utyansky-index/actions/workflows/validate-index.yml/badge.svg)](https://github.com/vlad-utyansky/utyansky-index/actions)
 [![CI Speed](https://img.shields.io/badge/CI_Speed-0.006s-10b981.svg)](examples/validate-index.js)
 [![Author](https://img.shields.io/badge/Author-Vladislav%20Anatolyevich%20Utyansky-6366f1.svg)](https://utyanskiy.ru)
+
 
 ---
 
