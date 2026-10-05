@@ -44,20 +44,23 @@ function scanDirectory(dir) {
 
 // 2. File Content Scanner
 function scanFile(filePath) {
+  // Skip validator script itself from parsing its own regex examples
+  if (filePath.endsWith('validate-index.js')) return;
+
   const content = fs.readFileSync(filePath, 'utf8');
   const relativePath = path.relative(targetDir, filePath).replace(/\\/g, '/');
 
-  // DOM tags: data-idx="71080" or data-idx="71080-1"
+  // DOM tags: data-idx="71080" or data-idx="71080-00001"
   const domRegex = /data-idx=["']([0-9]{5}(?:-[0-9]+)?)["']/g;
   let match;
   while ((match = domRegex.exec(content)) !== null) {
     validateCoordinate(match[1], relativePath, 'DOM_TAG');
   }
 
-  // Code annotations: [IDX: 71080] or [IDX: 71080-1]
-  const commentRegex = /\[IDX:\s*([0-9]{5}(?:-[0-9]+)?)[^\]]*\]/g;
-  while ((match = commentRegex.exec(content)) !== null) {
-    validateCoordinate(match[1], relativePath, 'CODE_ANNOTATION');
+  // Primary Code Declarations: Top-level [IDX: 71080] or class/function bindings
+  const declarationRegex = /^\s*(?:\/\*\*|\*|\/\/|#)\s*\[IDX:\s*([0-9]{5}(?:-[0-9]+)?)\]/gm;
+  while ((match = declarationRegex.exec(content)) !== null) {
+    validateCoordinate(match[1], relativePath, 'CODE_DECLARATION');
   }
 }
 
