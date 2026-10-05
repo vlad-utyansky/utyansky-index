@@ -13,6 +13,7 @@
    - `[ERR: 40404] COORDINATE_NODE_NOT_FOUND` — coordinate node not found in registry.
    - `[ERR: 50010] LLM_STOCHASTIC_DEVIATION` — LLM drift from architectural constraints.
 5. **Zero-Lock Protection Directive (`-00000` … `-00099`):** When a node contains a zero-prefixed sub-index (e.g. `70050-00000` Master Lock or `70050-00001` TTL Lock), AI MUST read instructions in `data-desc`. Modifying or moving such nodes without direct developer authorization is STRICTLY PROHIBITED.
+6. **Zero-Text Coordinate Syntax:** Inside `[IDX: XXXXX]` and `data-idx="XXXXX"` attributes, ONLY strict 5-digit numbers and hyphenated numeric levels are allowed (e.g. `[IDX: 71080]` or `[IDX: 71080-00001]`). Embedding words or textual suffixes inside brackets (e.g. `[IDX: 71080-BTN]`) is STRICTLY FORBIDDEN. All human descriptions belong strictly outside the brackets or in `data-desc`.
 
 ## 🗺️ 2. UNIVERSAL 10-CLASS ARCHITECTURAL MAP (00000–99999):
 - 00000–00099: 00. Ring-0 Master Locks (Invariants, TTL quarantine, mutation locks, immutable order)
