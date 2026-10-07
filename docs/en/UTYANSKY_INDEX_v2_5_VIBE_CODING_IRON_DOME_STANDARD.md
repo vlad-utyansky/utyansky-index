@@ -8,14 +8,25 @@
 
 ---
 
-## 📌 1. Why v2.5?
+## 📌 1. Evolution History & Engineering Philosophy of v2.5
 
-When developing software using LLM agents (Cursor, Claude Code, Windsurf, Gemini, GPT), developers face three critical bottlenecks:
-1. **Context Attention Degradation (> 500 lines):** Models lose focus, forget earlier variables, and sever dependencies.
-2. **Visual & Style Drift:** Fixing a single button causes adjacent CSS layouts to unintentionally shift pixels.
-3. **Prompt Corruption:** Dialogue assistant system prompts get quietly overwritten during routine feature edits.
-
-**Utyansky Index v2.5** resolves these issues at the physical architecture level.
+> **«Transformer physics and attention entropy cannot be bypassed by wishful thinking»**
+>
+> From its initial inception, the Utyansky Index coordinate system delivered an immediate practical boost: coordinate addressing eradicated context chaos and random model drift.
+>
+> However, across **thousands of continuous test runs, production coding sessions, and autonomous agent executions** on real-world codebases, subtle edge cases emerged from the physical mathematical constraints of LLM attention mechanisms:
+>
+> 1. **Attention Dilution in Monolithic Files:** When a file exceeds 400–500 lines, transformer attention inevitably disperses, causing accidental mutations in neighboring functions.
+> 2. **Collisions in Textual File Names:** In large-scale systems with hundreds of modules, plain text filenames caused LLM hallucinations and routing confusion — models require deterministic machine coordinates right inside filenames.
+> 3. **Stable Code Drift:** Without explicit physical locks, models routinely attempt to "improve" already verified production logic during adjacent feature requests.
+>
+> **Version 2.5 is specifically engineered to resolve these empirically identified failure modes.**
+>
+> It establishes strict physical constraints: hard file ceilings (the 4 A4 Pages Rule), fractal coordinate naming `00000-XXXXX-XXXXX_slug.ext`, and automated Zero-Trust default locks `00000`.
+>
+> Architectural evolution is an active, ongoing effort. As systems scale further, additional nuances will be systematically analyzed and fortified.
+>
+> **We welcome and deeply appreciate developer community feedback and contributions in identifying further edge cases or hidden architectural friction points.**
 
 ---
 
