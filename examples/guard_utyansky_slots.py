@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-🏛️ [IDX: 00000-00003] АВТОНОМНЫЙ СТРАЖ АРХИТЕКТУРЫ ИНДЕКСА УТЯНСКОГО v2.2 (GUARDIAN LINTER)
+🏛️ [IDX: 00000-00003] АВТОНОМНЫЙ СТРАЖ АРХИТЕКТУРЫ ИНДЕКСА УТЯНСКОГО v2.5 (GUARDIAN LINTER)
 Проверка по 5 фундаментальным законам Вайбкодинга:
 1. Контроль Синтаксиса [IDX: XXXXX] (Ноль букв внутри скобок)
 2. Поиск Коллизий и Дубликатов Слотов $O(1)$
@@ -38,6 +38,10 @@ def scan_file(filepath):
             results["line_count"] = len(lines)
             
             for idx, line in enumerate(lines, 1):
+                # Игнорируем строки с примерами ошибок в обучающей документации
+                if any(bad_marker in line for bad_marker in ['❌', 'НЕПРАВИЛЬНО', 'WRONG', 'BAD:']):
+                    continue
+
                 # Проверка невалидных буквенных тегов
                 m_inv1 = INVALID_IDX_PATTERN.findall(line)
                 m_inv2 = INVALID_DATA_IDX_PATTERN.findall(line)
@@ -64,7 +68,7 @@ def scan_file(filepath):
 def main():
     root_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
     print("=" * 75)
-    print("🏛️ [IDX: 00000-00003] СТРАЖ АРХИТЕКТУРЫ ИНДЕКСА УТЯНСКОГО v2.2 (GUARDIAN LINTER)")
+    print("🏛️ [IDX: 00000-00003] СТРАЖ АРХИТЕКТУРЫ ИНДЕКСА УТЯНСКОГО v2.5 (GUARDIAN LINTER)")
     print(f"📁 Сканирование корневой директории: {root_dir}\n")
     
     total_files = 0
@@ -125,7 +129,7 @@ def main():
         print("   ✅ 100% слотов изолированы без пересечений!")
 
     print("\n" + "=" * 75)
-    print(f"🏆 СВОДКА АУДИТА: Проверено {total_files} файлов. Архитектурный каркас v2.2 активен.")
+    print(f"🏆 СВОДКА АУДИТА: Проверено {total_files} файлов. Архитектурный каркас v2.5 активен.")
     print("=" * 75)
 
 if __name__ == "__main__":
