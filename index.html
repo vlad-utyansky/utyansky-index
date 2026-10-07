@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Индекс Утянского (Utyansky Index v2.0) | Официальный Архитектурный Портал</title>
-  <meta name="description" content="Официальный архитектурный портал стандарта «Индекс Утянского» (Заявка Роспатент РФ № 2026603415). Детерминированная координатная навигация для вайбкодинга, мульти-агентных ИИ-систем, React DOM и векторной памяти.">
+  <title>Индекс Утянского (Utyansky Index v2.5) | Официальный Архитектурный Портал</title>
+  <meta name="description" content="Официальный архитектурный портал стандарта «Индекс Утянского v2.5» (Заявка Роспатент РФ № 2026603415). Железный Купол Вайбкодинга, детерминированная координатная навигация O(1), лимит 4 листов А4 и Zero-Trust замки 00000.">
   <meta name="author" content="Утянский Владислав Анатольевич">
   <link rel="canonical" href="https://index.utyanskiy.ru/">
   
@@ -92,7 +92,26 @@ const I18N = {
     navTechBtn: '⚙️ Для Разработчиков (9 Доменов, Код) ➔',
     navTrackSub: '⚡ Нажмите для моментального перехода к интересующему вас разделу архитектуры',
 
-    newTgBadge: '🚀 НОВОЕ: ТЕЛЕГРАМ-БОТЫ И ВАЙБКОДИНГ (20.09.2026)',
+    v25Badge: '🔥 РЕЛИЗ v2.5 (07.10.2026): ЖЕЛЕЗНЫЙ КУПОЛ ВАЙБКОДИНГА',
+    v25Title: 'Стандарт Безопасного Вайбкодинга v2.5 & Скрипт-Страж (Guardian Linter)',
+    v25Desc: 'Решение, выверенное на тысячах практических тестов, отработанных ошибок и устраненных коллизий внимания больших языковых моделей.',
+    v25PreambleTitle: '«Физику работы трансформеров и энтропию внимания нельзя отменить желанием»',
+    v25PreambleText: 'На протяжении тысяч непрерывных рабочих сессий и автономных генераций проявились тонкие краевые моменты: размытие внимания в файлах >400 строк, коллизии текстовых имен и дрейф готового кода. Версия 2.5 методично закрывает эти уязвимости строгими физическими барьерами.',
+    v25Law1Title: '📄 1. Лимит «4 Листа А4» (Attention Ceiling)',
+    v25Law1Desc: 'Файлы и системные промпты строго до 400 строк (~3000 токенов). Удерживает пиковую плотность внимания нейросети.',
+    v25Law2Title: '🛑 2. Замок Zero-Trust [IDX: 00000]',
+    v25Law2Desc: 'data-lock="00000" на родительском контейнере. 100% защита готовых блоков от паразитных правок ИИ.',
+    v25Law3Title: '🔏 3. Фрактальные Имена Файлов',
+    v25Law3Desc: 'Маска 00000-XXXXX-XXXXX_slug.ext дает ИИ детерминированный адрес O(1) и исключает путаницу между модулями.',
+    v25Law4Title: '🪆 4. Архитектурная Матрёшка',
+    v25Law4Desc: 'Иерархическое деление систем от 5000+ строк по тысячным диапазонам (90000, 91000, 92000).',
+    v25LinterBtn: '🛡️ Скачать Скрипт-Страж (guard_utyansky_slots.py) ➔',
+    v25RegistryBtn: '📋 Скачать Реестр (UTYANSKY_INDEX_REGISTRY.json) ➔',
+    v25AstBtn: '⚙️ Скачать AST-движок (utyansky_ast_engine.js) ➔',
+    v25WhitepaperBtn: '📖 Белая Книга v2.5 (White Paper) ➔',
+    v25FeedbackText: '💡 Работа над регламентом идет непрерывно. Мы будем искренне признательны сообществу разработчиков за обратную связь и выявление скрытых подводных камней.',
+
+    newTgBadge: '🚀 ТЕЛЕГРАМ-БОТЫ И ВАЙБКОДИНГ (20.09.2026)',
     newTgTitle: 'Архитектура Telegram-Ботов: Обход Лимита 64 Байт и 0% Поломок',
     newTgDesc: 'Как строить многоэкранные отказоустойчивые Telegram-боты силами одного человека и нейросетей. Компактная адресация слотов (12–22 байта), обход BUTTON_DATA_INVALID и встроенный аналитический модуль «Микроскоп» (360° досье клиента).',
     newTgBtn: '📖 Читать исследование и руководство (RU) ➔',
@@ -124,7 +143,7 @@ const I18N = {
     tradBullet1: '• Гниение контекста по мере роста репозитория',
     tradBullet2: '• Случайные поломки работающего функционала',
     tradBullet3: '• Раздувание счетов за API-токены',
-    utyTag: 'СТАНДАРТ «ИНДЕКС УТЯНСКОГО» v2.0',
+    utyTag: 'СТАНДАРТ «ИНДЕКС УТЯНСКОГО» v2.5',
     utyTitle: '✅ Адресация за 1 шаг (O(1)) и изоляция слота',
     utyDesc: 'Элемент имеет координатный паспорт data-idx="71080". Вы даете команду: «В слоте 71080 измени ширину». ИИ меняет ровно 2 строчки внутри изолированного блока. 0% поломок соседнего кода.',
     utyBullet1: '• Прямой прыжок к нужным строкам за 1 действие (O(1))',
@@ -391,7 +410,7 @@ const I18N = {
 
     publicationsBadge: '📚 НАУЧНЫЕ ПРЕПРИНТЫ И МЕЖДУНАРОДНЫЕ ПУБЛИКАЦИИ',
     publicationsTitle: 'Официальные Публикации и Научные Регистрации',
-    publicationsSub: 'Международный DOI, научные препринты, публикации в сообществах разработчиков и патентный приоритет стандарта «Индекс Утянского v2.0»',
+    publicationsSub: 'Международный DOI, научные препринты, публикации в сообществах разработчиков и патентный приоритет стандарта «Индекс Утянского v2.5»',
 
     contactsTitle: 'Связь с Автором и Внедрение',
     contactsSub: 'Обсудить интеграцию Индекса Утянского в ваши проекты, аудит кодовой базы или корпоративное обучение',
@@ -406,7 +425,7 @@ const I18N = {
     cookieText: 'Мы используем cookie для персонализации и анализа трафика. Продолжая использовать сайт, вы соглашаетесь с политикой конфиденциальности.',
     cookieBtn: 'Принять',
     cookiePolicy: 'Политика конфиденциальности',
-    footerRights: '© 2026 <a href="https://vau.ru" target="_blank" class="hover:text-blue-400 underline">Инженерное бюро VAU EFFECT</a> <a href="https://bio.utyanskiy.ru" target="_blank" class="hover:text-sky-300 underline font-semibold">Владислава Утянского</a> · Архитектурный регламент <a href="https://index.utyanskiy.ru" class="text-sky-400 font-semibold hover:underline">«Индекс Утянского v2.0»</a> (Заявка Роспатент РФ № 2026603415)'
+    footerRights: '© 2026 <a href="https://vau.ru" target="_blank" class="hover:text-blue-400 underline">Инженерное бюро VAU EFFECT</a> <a href="https://bio.utyanskiy.ru" target="_blank" class="hover:text-sky-300 underline font-semibold">Владислава Утянского</a> · Архитектурный регламент <a href="https://index.utyanskiy.ru" class="text-sky-400 font-semibold hover:underline">«Индекс Утянского v2.5»</a> (Заявка Роспатент РФ № 2026603415)'
   },
   en: {
     badge: '🛡️ AUTHOR SPECIFICATION: ROSPATENT RF APPLICATION № 2026603415',
@@ -419,7 +438,26 @@ const I18N = {
     navTechBtn: '⚙️ For Developers & Architects (9 Domains, Code) ➔',
     navTrackSub: '⚡ Click to immediately jump to your preferred architecture section',
 
-    newTgBadge: '🚀 NEW: TELEGRAM BOTS & VIBE-CODING (20.09.2026)',
+    v25Badge: '🔥 RELEASE v2.5 (OCTOBER 07, 2026): VIBE CODING IRON DOME',
+    v25Title: 'Safe Vibe-Coding Standard v2.5 & Guardian Linter',
+    v25Desc: 'An empirical engineering breakthrough verified across thousands of continuous production runs, stress tests, and eliminated LLM attention failure modes.',
+    v25PreambleTitle: '«Transformer physics and attention entropy cannot be bypassed by wishful thinking»',
+    v25PreambleText: 'Across thousands of continuous sessions and autonomous agent runs, subtle edge cases emerged: attention dilution in files >400 lines, textual filename collisions, and finished code drift. Version 2.5 establishes strict physical barriers to solve them.',
+    v25Law1Title: '📄 1. «4 A4 Pages» Limit (Attention Ceiling)',
+    v25Law1Desc: 'Strict file and system prompt cap under 400 lines (~3000 tokens) to maintain peak LLM focus and zero context rot.',
+    v25Law2Title: '🛑 2. Zero-Trust Default Lock [IDX: 00000]',
+    v25Law2Desc: 'data-lock="00000" on parent containers. 100% immune from unauthorized AI mutations.',
+    v25Law3Title: '🔏 3. Fractal Coordinate File Naming',
+    v25Law3Desc: 'Mask 00000-XXXXX-XXXXX_slug.ext grants deterministic O(1) addressing and prevents agent hallucination.',
+    v25Law4Title: '🪆 4. Fractal Matryoshka',
+    v25Law4Desc: 'Hierarchical thousandth-level coordinate partitioning (90000, 91000, 92000) for codebases exceeding 5000+ lines.',
+    v25LinterBtn: '🛡️ Download Guardian Linter (guard_utyansky_slots.py) ➔',
+    v25RegistryBtn: '📋 Download Registry (UTYANSKY_INDEX_REGISTRY.json) ➔',
+    v25AstBtn: '⚙️ Download AST Engine (utyansky_ast_engine.js) ➔',
+    v25WhitepaperBtn: '📖 Read White Paper v2.5 ➔',
+    v25FeedbackText: '💡 Standard evolution is continuous. We warmly welcome developer community feedback and contributions in uncovering hidden architectural bottlenecks.',
+
+    newTgBadge: '🚀 TELEGRAM BOTS & VIBE-CODING (20.09.2026)',
     newTgTitle: 'Telegram Bot Architecture: 64-Byte Bypass & Zero Regression',
     newTgDesc: 'How to build multi-screen resilient Telegram bots with AI and 1 developer. Compact slot addressing (12–22 bytes), bypassing BUTTON_DATA_INVALID, and integrated 360° customer dossier ("Microscope").',
     newTgBtn: '📖 Read Full Research & Case Study ➔',
@@ -451,7 +489,7 @@ const I18N = {
     tradBullet1: '• Context rot as repository grows',
     tradBullet2: '• Accidental code regressions and breakages',
     tradBullet3: '• Exploding API token bills',
-    utyTag: 'UTYANSKY INDEX STANDARD v2.0',
+    utyTag: 'UTYANSKY INDEX STANDARD v2.5',
     utyTitle: '✅ Direct Coordinate Addressing & Isolation',
     utyDesc: 'Element has coordinate passport data-idx="71080". You command: "In slot 71080 adjust width". AI edits strictly 2 lines inside that isolated container. 0% breakages.',
     utyBullet1: '• Direct O(1) jump to target code lines',
@@ -718,7 +756,7 @@ const I18N = {
 
     publicationsBadge: '📚 SCIENTIFIC PREPRINTS & INTERNATIONAL PAPERS',
     publicationsTitle: 'Official Publications & Scientific Registrations',
-    publicationsSub: 'International DOI, open scientific preprints, global developer papers, and patent priority for the Utyansky Index v2.0',
+    publicationsSub: 'International DOI, open scientific preprints, global developer papers, and patent priority for the Utyansky Index v2.5',
 
     contactsTitle: 'Connect with the Author & Integration',
     contactsSub: 'Discuss integrating the Utyansky Index into your enterprise workflow or software stack',
@@ -733,7 +771,7 @@ const I18N = {
     cookieText: 'We use cookies to enhance site experience and analyze traffic. By continuing to browse, you agree to our privacy policy.',
     cookieBtn: 'Accept',
     cookiePolicy: 'Privacy Policy',
-    footerRights: '© 2026 <a href="https://vau.ru" target="_blank" class="hover:text-blue-400 underline">VAU EFFECT Engineering Bureau</a> by <a href="https://bio.utyanskiy.ru" target="_blank" class="hover:text-sky-300 underline font-semibold">Vladislav Utyansky</a> · Architectural Standard <a href="https://index.utyanskiy.ru" class="text-sky-400 font-semibold hover:underline">"Utyansky Index v2.0"</a> (Rospatent RF Application № 2026603415)'
+    footerRights: '© 2026 <a href="https://vau.ru" target="_blank" class="hover:text-blue-400 underline">VAU EFFECT Engineering Bureau</a> by <a href="https://bio.utyanskiy.ru" target="_blank" class="hover:text-sky-300 underline font-semibold">Vladislav Utyansky</a> · Architectural Standard <a href="https://index.utyanskiy.ru" class="text-sky-400 font-semibold hover:underline">"Utyansky Index v2.5"</a> (Rospatent RF Application № 2026603415)'
   }
 };
 
@@ -914,9 +952,9 @@ const G9_MODELS = [
 
 let isBlindCopied = false;
 function copyBlindPrompt() {
-  const promptText = `Изучи открытую архитектурную спецификацию стандарта детерминированной координатной адресации «Индекс Утянского v2.0» по адресу: https://github.com/vlad-utyansky/utyansky-index
+  const promptText = `Изучи открытую архитектурную спецификацию стандарта детерминированной координатной адресации «Индекс Утянского v2.5» по адресу: https://github.com/vlad-utyansky/utyansky-index
 Проведи независимый и строгий аудит с точки зрения Computer Science и реального продакшна:
-1. Насколько эффективна изоляция 40-строчных слотов через data-idx и pre-commit валидатор за 0.006 с для защиты от затирания кода (// rest of code unchanged) и галлюцинаций LLM при вайбкодинге?
+1. Насколько эффективна изоляция слотов через data-idx, потолок «4 листа А4» и Zero-Trust замки [IDX: 00000] для защиты от затирания кода (// rest of code unchanged) и галлюцинаций LLM при вайбкодинге?
 2. Обоснована ли математика экономии токенов на 80–85% при локальных правках по сравнению со стохастическим RAG?
 3. Почему для точечной изоляции этот подход превосходит LSP, диапазоны строк в MCP и векторный поиск?
 Дай честный инженерный вердикт без маркетинговых преувеличений.`;
@@ -1194,13 +1232,64 @@ function renderApp() {
         '</div>' +
       '</div>' +
 
-      '<!-- 2. [NEW FEATURE: TELEGRAM BOT & VIBE-CODING 20.09.2026] -->' +
-      '<div id="aio" class="p-6 sm:p-8 rounded-3xl card-glass border border-blue-500/50 bg-gradient-to-br from-blue-950/40 via-slate-900/90 to-indigo-950/40 shadow-2xl max-w-4xl mx-auto scroll-mt-24 text-left" data-idx="70030" data-desc="' + (currentLang === 'ru' ? '[SECTION] Новинка разработки: Telegram-боты и Вайбкодинг' : '[SECTION] New Feature: Telegram Bots & Vibe-Coding') + '">' +
+      '<!-- 2. [NEW RELEASE v2.5: VIBE CODING IRON DOME 07.10.2026] -->' +
+      '<div id="v25" class="p-6 sm:p-8 rounded-3xl card-glass border-2 border-emerald-500/60 bg-gradient-to-br from-emerald-950/30 via-slate-900/95 to-indigo-950/40 shadow-2xl max-w-4xl mx-auto scroll-mt-24 text-left relative overflow-hidden" data-idx="70020" data-desc="' + (currentLang === 'ru' ? '[SECTION] Релиз v2.5: Железный Купол Вайбкодинга' : '[SECTION] Release v2.5: Vibe Coding Iron Dome') + '">' +
+        '<div class="flex flex-col md:flex-row items-start md:items-center justify-between gap-4 mb-4">' +
+          '<div class="inline-flex items-center space-x-2 px-3.5 py-1 rounded-full bg-emerald-500/20 border border-emerald-400/40 text-emerald-300 text-xs font-mono font-bold">' +
+            '<span>' + t.v25Badge + '</span>' +
+          '</div>' +
+          '<span class="text-xs font-mono text-emerald-400 bg-emerald-500/10 border border-emerald-500/30 px-3 py-1 rounded-full">🔥 Релиз v2.5 Gold Master</span>' +
+        '</div>' +
+        '<h2 class="text-xl sm:text-3xl font-black text-white mb-3 tracking-tight">' + t.v25Title + '</h2>' +
+        '<p class="text-xs sm:text-sm text-slate-300 leading-relaxed mb-4">' + t.v25Desc + '</p>' +
+        '<div class="p-4 rounded-2xl bg-slate-950/70 border border-emerald-500/20 mb-6 text-xs sm:text-sm">' +
+          '<strong class="text-emerald-300 block mb-1.5 font-semibold">' + t.v25PreambleTitle + '</strong>' +
+          '<p class="text-slate-300 leading-relaxed">' + t.v25PreambleText + '</p>' +
+        '</div>' +
+        '<div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6 text-xs sm:text-sm">' +
+          '<div class="p-4 rounded-xl bg-slate-900/90 border border-white/10">' +
+            '<div class="text-emerald-400 font-bold mb-1">' + t.v25Law1Title + '</div>' +
+            '<div class="text-slate-300 text-xs leading-relaxed">' + t.v25Law1Desc + '</div>' +
+          '</div>' +
+          '<div class="p-4 rounded-xl bg-slate-900/90 border border-white/10">' +
+            '<div class="text-cyan-400 font-bold mb-1">' + t.v25Law2Title + '</div>' +
+            '<div class="text-slate-300 text-xs leading-relaxed">' + t.v25Law2Desc + '</div>' +
+          '</div>' +
+          '<div class="p-4 rounded-xl bg-slate-900/90 border border-white/10">' +
+            '<div class="text-blue-400 font-bold mb-1">' + t.v25Law3Title + '</div>' +
+            '<div class="text-slate-300 text-xs leading-relaxed">' + t.v25Law3Desc + '</div>' +
+          '</div>' +
+          '<div class="p-4 rounded-xl bg-slate-900/90 border border-white/10">' +
+            '<div class="text-amber-400 font-bold mb-1">' + t.v25Law4Title + '</div>' +
+            '<div class="text-slate-300 text-xs leading-relaxed">' + t.v25Law4Desc + '</div>' +
+          '</div>' +
+        '</div>' +
+        '<div class="flex flex-wrap items-center gap-2.5 mb-4">' +
+          '<a href="https://github.com/vlad-utyansky/utyansky-index/blob/main/examples/guard_utyansky_slots.py" target="_blank" rel="noopener noreferrer" class="px-4 py-2.5 rounded-xl bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-500 hover:to-teal-500 text-white font-bold text-xs shadow-lg shadow-emerald-500/20 transition-all flex items-center gap-1.5">' +
+            '<span>' + t.v25LinterBtn + '</span>' +
+          '</a>' +
+          '<a href="https://github.com/vlad-utyansky/utyansky-index/blob/main/examples/UTYANSKY_INDEX_REGISTRY.json" target="_blank" rel="noopener noreferrer" class="px-4 py-2.5 rounded-xl bg-slate-800/90 hover:bg-slate-700/90 text-slate-200 hover:text-white font-semibold text-xs border border-white/15 transition-all flex items-center gap-1.5">' +
+            '<span>' + t.v25RegistryBtn + '</span>' +
+          '</a>' +
+          '<a href="https://github.com/vlad-utyansky/utyansky-index/blob/main/src/utyansky_ast_engine.js" target="_blank" rel="noopener noreferrer" class="px-4 py-2.5 rounded-xl bg-slate-800/90 hover:bg-slate-700/90 text-slate-200 hover:text-white font-semibold text-xs border border-white/15 transition-all flex items-center gap-1.5">' +
+            '<span>' + t.v25AstBtn + '</span>' +
+          '</a>' +
+          '<a href="' + (currentLang === 'ru' ? 'https://github.com/vlad-utyansky/utyansky-index/blob/main/docs/ru/UTYANSKY_INDEX_v2_5_VIBE_CODING_IRON_DOME_STANDARD.md' : 'https://github.com/vlad-utyansky/utyansky-index/blob/main/docs/en/UTYANSKY_INDEX_v2_5_VIBE_CODING_IRON_DOME_STANDARD.md') + '" target="_blank" rel="noopener noreferrer" class="px-4 py-2.5 rounded-xl bg-indigo-950/80 hover:bg-indigo-900/80 text-indigo-200 hover:text-white font-bold text-xs border border-indigo-500/30 transition-all flex items-center gap-1.5">' +
+            '<span>' + t.v25WhitepaperBtn + '</span>' +
+          '</a>' +
+        '</div>' +
+        '<div class="pt-3 border-t border-white/10 text-slate-400 font-mono text-[11px] leading-relaxed">' +
+          t.v25FeedbackText +
+        '</div>' +
+      '</div>' +
+
+      '<!-- 2b. [TELEGRAM BOT & VIBE-CODING] -->' +
+      '<div id="aio" class="p-6 sm:p-8 rounded-3xl card-glass border border-blue-500/50 bg-gradient-to-br from-blue-950/40 via-slate-900/90 to-indigo-950/40 shadow-2xl max-w-4xl mx-auto scroll-mt-24 text-left" data-idx="70030" data-desc="' + (currentLang === 'ru' ? '[SECTION] Telegram-боты и Вайбкодинг' : '[SECTION] Telegram Bots & Vibe-Coding') + '">' +
         '<div class="flex flex-col md:flex-row items-start md:items-center justify-between gap-4 mb-4">' +
           '<div class="inline-flex items-center space-x-2 px-3.5 py-1 rounded-full bg-blue-500/20 border border-blue-400/40 text-blue-300 text-xs font-mono font-bold">' +
             '<span>' + t.newTgBadge + '</span>' +
           '</div>' +
-          '<span class="text-xs font-mono text-emerald-400 bg-emerald-500/10 border border-emerald-500/30 px-3 py-1 rounded-full">⚡ Релиз v2.3 Gold Master</span>' +
+          '<span class="text-xs font-mono text-cyan-400 bg-cyan-500/10 border border-cyan-500/30 px-3 py-1 rounded-full">⚡ Релиз v2.3</span>' +
         '</div>' +
         '<h2 class="text-xl sm:text-3xl font-black text-white mb-3 tracking-tight">' + t.newTgTitle + '</h2>' +
         '<p class="text-xs sm:text-sm text-slate-300 leading-relaxed mb-6">' + t.newTgDesc + '</p>' +
@@ -1391,9 +1480,9 @@ function renderApp() {
           '<p class="text-xs sm:text-sm text-slate-300 leading-relaxed mb-4">' + t.g9BlindDesc + '</p>' +
           
           '<div class="p-4 rounded-xl bg-black/60 border border-white/10 mb-4 font-mono text-xs text-sky-200 leading-relaxed max-h-36 overflow-y-auto select-all">' +
-            'Изучи открытую архитектурную спецификацию стандарта детерминированной координатной адресации «Индекс Утянского v2.0» по адресу: https://github.com/vlad-utyansky/utyansky-index<br><br>' +
+            'Изучи открытую архитектурную спецификацию стандарта детерминированной координатной адресации «Индекс Утянского v2.5» по адресу: https://github.com/vlad-utyansky/utyansky-index<br><br>' +
             'Проведи независимый и строгий аудит с точки зрения Computer Science и реального продакшна:<br>' +
-            '1. Насколько эффективна изоляция 40-строчных слотов через data-idx и pre-commit валидатор за 0.006 с для защиты от затирания кода (// rest of code unchanged) и галлюцинаций LLM при вайбкодинге?<br>' +
+            '1. Насколько эффективна изоляция слотов через data-idx, потолок «4 листа А4» и Zero-Trust замки [IDX: 00000] для защиты от затирания кода (// rest of code unchanged) и галлюцинаций LLM при вайбкодинге?<br>' +
             '2. Обоснована ли математика экономии токенов на 80–85% при локальных правках по сравнению со стохастическим RAG?<br>' +
             '3. Почему для точечной изоляции этот подход превосходит LSP, диапазоны строк в MCP и векторный поиск?<br>' +
             'Дай честный инженерный вердикт без маркетинговых преувеличений.' +
