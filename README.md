@@ -64,10 +64,20 @@
 > * **September 12, 2026 (21:55 MSK)** — **v2.2 Web Coordinate Standard & AI Vision Release**: open standard for deterministic DOM coordinate markup (`70000–79999`), interactive HUD DOM Inspector («AI Vision») for instant agent orientation, zero hallucinations, and regression prevention.
 > * **September 20, 2026 (11:00 MSK)** — **v2.3 Telegram Bot, Zero-Lock & Vibe-Coding Release**: open standard for deterministic slot isolation $O(1)$ in Telegram API and asynchronous bots. Hardware 64-byte `callback_data` payload bypass (zero `BUTTON_DATA_INVALID`), zero context loss during vibe-coding, 360° customer dossier module («Microscope»), establishment of the **Zero-Lock & Conditional Constraint Class (`-00000` … `-00099`)** for deterministic mutation control, and expansion of the Periodic Table to **10 Classes (`00` – `09`)**.
 > * **October 05, 2026 (13:00 MSK)** — **v2.4 Strict Numeric Standard & AI Drift Prevention (Zero-Text Syntax)**: enforcement of strict numeric format (only 5-digit coordinates inside `[IDX: 7XXXX]` and `data-idx`, all human descriptions moved strictly outside). Integration of pre-flight file header directives and automated validator `validate_utyansky_indexes.py` to prevent AI syntax drift during vibe-coding.
+> * **🔥 October 07, 2026 (11:00 MSK)** — **v2.5 Safe Vibe-Coding & Iron Dome Context Standard**: implementation of the «4 A4 Pages» physical volume limit (~350–400 lines / ~3000 tokens) to eliminate LLM attention degradation, Zero-Trust Default Lock (`[IDX: 00000]` / `data-lock="00000"`), physical core capsule isolation (`00000_*.json` / `.py`), fractal matryoshka for 5000+ line codebases, and the automated Guardian Linter (`guard_utyansky_slots.py`) with `git diff` auto-revert.
 
 ---
 
-> ## 🚀 NEW: Telegram Bot Architecture, 64-Byte Bypass & Vibe-Coding ($O(1)$ Telegram Bot Standard)
+> ## 🛡️ NEW v2.5: Safe Vibe-Coding, «4 A4 Pages» & Iron Dome Standard
+> **Scale AI-assisted software development without context degradation or visual regressions:**
+> * 📄 **«4 A4 Pages» Rule:** Hard ceiling on file and system prompt size (up to 400 lines) eliminates context loss and severed dependencies.
+> * 🛑 **Zero-Trust Seal (`[IDX: 00000]`):** Finished components receive default locks. AI edits strictly targeted slots `[IDX: 7XXXX]` upon explicit developer instruction.
+> * 🔏 **Core Capsule Isolation:** Critical AI prompts and core algorithmic engines live in isolated files `00000_*.json`, immune to interface changes.
+> * 🤖 **Automated Guardian Linter:** Script `guard_utyansky_slots.py` continuously audits slot integrity, page limits, and diff boundaries.
+
+---
+
+> ## 🚀 Telegram Bot Architecture, 64-Byte Bypass & Vibe-Coding ($O(1)$ Telegram Bot Standard)
 > **How to build multi-screen resilient Telegram bots with AI and 1 developer:**
 > * ⚡ **64-Byte Payload Bypass:** Compact slot addressing (12–22 bytes) permanently prevents fatal `BUTTON_DATA_INVALID` errors.
 > * 🛡️ **Zero Regression During Vibe-Coding:** AI assistants (Cursor, Claude Code, Windsurf) edit cards and menus with surgical precision without breaking neighbor event handlers.
