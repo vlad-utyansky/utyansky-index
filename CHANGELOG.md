@@ -57,5 +57,5 @@
 
 ---
 
-## 🏛️ [v1.0.0] — March 22, 2026 — World Inception & Open Disclosure
-* First public release of the 5-digit coordinate software architecture standard on GitHub (`51584ac`) and Rospatent RF state registration.
+## 🏛️ [v1.0.0] — March 22, 2026 — Initial Open-Source Release on GitHub
+* Initial public release of the 5-digit coordinate software architecture specification on GitHub (`51584ac`).
