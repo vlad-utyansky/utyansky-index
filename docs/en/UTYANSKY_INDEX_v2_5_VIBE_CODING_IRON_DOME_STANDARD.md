@@ -57,9 +57,10 @@ When developing software using LLM agents (Cursor, Claude Code, Windsurf, Gemini
 
 ### 🪆 Rule 4. Fractal Matryoshka for 5000+ Line Codebases
 * Large modules split across thousandth-level coordinate subranges:
-  * `[IDX: 90000] index.py` — Orchestrator (< 80 lines).
-  * `[IDX: 91000] module_a.py` — Functional block (< 300 lines).
-  * `[IDX: 92000] module_b.py` — Functional block (< 300 lines).
+  * `[IDX: 90000]` `00000-90000-00001_main.py` — Orchestrator (< 80 lines).
+  * `[IDX: 91000]` `00000-91000-00001_module_a.py` — Functional block (< 300 lines).
+  * `[IDX: 92000]` `00000-92000-00001_module_b.py` — Functional block (< 300 lines).
+  * `[IDX: 91000]` `00000-91000-00000_rules.json` — Closed subsection rule capsule (never opened when editing neighbor modules).
 
 ---
 
