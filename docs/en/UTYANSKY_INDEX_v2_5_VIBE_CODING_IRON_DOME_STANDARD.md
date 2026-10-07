@@ -40,11 +40,14 @@ When developing software using LLM agents (Cursor, Claude Code, Windsurf, Gemini
 
 ---
 
-### 🔏 Rule 3. Core Capsule Physical Isolation
-* AI system prompts and algorithmic math engines live in physically isolated files:
-  * `config/00000_assistant_core.json` (Prompts)
-  * `core/00000_math_engine.py` (Math)
-* Interface files import them in a single line. When editing UI, core files are never loaded into the edit context.
+### 🔏 Rule 3. Core Capsule Physical Isolation (Composite Prefix `00000_{IDX}`)
+* To eliminate ambiguity across dozens of sub-agents and engines, capsule files follow the deterministic naming format **`00000_{PARENT_IDX}_{file_name}.ext`**:
+  * `00000_70000_scout_prompt.json` — Scout prompt for slot `[IDX: 70000]`
+  * `00000_70200_cloe_prompt.json` — Cloe prompt for slot `[IDX: 70200]`
+  * `00000_70400_oscar_prompt.json` — Oscar prompt for slot `[IDX: 70400]`
+  * `00000_71390_charts_viewport.jsx` — Chart viewport for slot `[IDX: 71390]`
+  * `00000_30050_order_math.py` — Algorithmic math for slot `[IDX: 30050]`
+* **Mechanism:** Prefix `00000` signals the security lock, while `{PARENT_IDX}` unambiguously anchors the capsule to its exact parent system slot. When editing UI, capsule files are never opened.
 
 ---
 
