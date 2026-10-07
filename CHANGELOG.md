@@ -16,8 +16,9 @@
 * **Release Mission:** Fortify the remaining 5% edge vulnerabilities with strict physical isolation barriers and architectural fuses.
 
 ### 🚀 Key Features & Rules:
-1. **📄 Rule of «4 A4 Pages» (Attention Ceiling):**
+1. **🏛️ Utyansky Law: Clean Context Limit — 4 A4 Pages (Oct 07, 2026):**
    * Hard file & system prompt limit: **strictly under 4 A4 pages (~350–400 lines / ~3000 tokens)**.
+   * **Clean Context Physics:** Within this limit, the LLM retains maximum reasoning speed, high accuracy, and intact contextual dependencies. Exceeding 400 lines triggers transformer attention degradation, hallucinations, and context rot.
    * Files exceeding 400 lines must be split into subcomponents under `components/`.
 2. **🛑 Zero-Trust Lock `[IDX: 00000]` (`data-lock="00000"`):**
    * Finalized components receive defensive container locks by default. AI is forbidden from mutating locked blocks without explicit developer instruction.
