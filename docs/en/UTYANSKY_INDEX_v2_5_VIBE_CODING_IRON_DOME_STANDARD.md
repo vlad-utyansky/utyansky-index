@@ -40,14 +40,18 @@ When developing software using LLM agents (Cursor, Claude Code, Windsurf, Gemini
 
 ---
 
-### 🔏 Rule 3. Core Capsule Physical Isolation (Composite Prefix `00000_{IDX}`)
-* To eliminate ambiguity across dozens of sub-agents and engines, capsule files follow the deterministic naming format **`00000_{PARENT_IDX}_{file_name}.ext`**:
-  * `00000_70000_scout_prompt.json` — Scout prompt for slot `[IDX: 70000]`
-  * `00000_70200_cloe_prompt.json` — Cloe prompt for slot `[IDX: 70200]`
-  * `00000_70400_oscar_prompt.json` — Oscar prompt for slot `[IDX: 70400]`
-  * `00000_71390_charts_viewport.jsx` — Chart viewport for slot `[IDX: 71390]`
-  * `00000_30050_order_math.py` — Algorithmic math for slot `[IDX: 30050]`
-* **Mechanism:** Prefix `00000` signals the security lock, while `{PARENT_IDX}` unambiguously anchors the capsule to its exact parent system slot. When editing UI, capsule files are never opened.
+### 🔏 Rule 3. Fractal Coordinate File Naming Standard (`00000-XXXXX-XXXXX_slug.ext`)
+* To prevent collisions across thousands of enterprise modules, files are addressed via deterministic **Fractal Coordinate Octets** with infinite scalability:
+  $$\mathbf{00000} - \mathbf{XXXXX} - \mathbf{XXXXX} [- \mathbf{XXXXX}...] \mathbf{\_slug.ext}$$
+  * `00000-70000-00001_scout_prompt.json` — Scout AI system prompt capsule (`[IDX: 70000]`)
+  * `00000-70200-00001_cloe_prompt.json` — Cloe AI system prompt capsule (`[IDX: 70200]`)
+  * `00000-70400-00001_oscar_prompt.json` — Oscar AI system prompt capsule (`[IDX: 70400]`)
+  * `00000-71390-00002_charts_viewport.jsx` — Chart demonstration viewport capsule (`[IDX: 71390]`)
+  * `00000-30000-00010-00005-00001_sbp_keys.json` — Enterprise/Banking 5-level recursive coordinate
+* **Dual Mechanism:**
+  1. Coordinate Prefix (`00000-XXXXX-XXXXX`) gives LLMs an instantaneous $O(1)$ deterministic hash address and a zero-trust lock signal.
+  2. Human Slug (`_slug.ext` after the underscore) provides clear visual semantics for human developers in IDE file explorers.
+  3. Interface files import capsules in 1 line. During UI development, core files are never loaded into the model's active edit context.
 
 ---
 
