@@ -51,18 +51,31 @@
 
 ---
 
-### 🔏 Rule 3. Fractal Coordinate File Naming Standard (`00000-XXXXX-XXXXX_slug.ext`)
-* To prevent collisions across thousands of enterprise modules, files are addressed via deterministic **Fractal Coordinate Octets** with infinite scalability:
-  $$\mathbf{00000} - \mathbf{XXXXX} - \mathbf{XXXXX} [- \mathbf{XXXXX}...] \mathbf{\_slug.ext}$$
-  * `00000-70000-00001_analytics_agent.json` — Analytics AI system prompt capsule (`[IDX: 70000]`)
-  * `00000-70200-00001_editor_copilot.json` — Editor Copilot system prompt capsule (`[IDX: 70200]`)
-  * `00000-70400-00001_video_render_agent.json` — Render agent system prompt capsule (`[IDX: 70400]`)
-  * `00000-71390-00002_analytics_charts.jsx` — Analytics chart viewport capsule (`[IDX: 71390]`)
-  * `00000-30000-00010-00005-00001_payment_gateway.json` — Enterprise/Banking 5-level recursive coordinate
-* **Dual Mechanism:**
-  1. Coordinate Prefix (`00000-XXXXX-XXXXX`) gives LLMs an instantaneous $O(1)$ deterministic hash address and a zero-trust lock signal.
-  2. Human Slug (`_slug.ext` after the underscore) provides clear visual semantics for human developers in IDE file explorers.
-  3. Interface files import capsules in 1 line. During UI development, core files are never loaded into the model's active edit context.
+### 🔏 Rule 3. Traffic Light Principle & Fractal Coordinate Addressing
+
+Under the Utyansky Index standard, files are strictly divided into **two distinct access tiers**:
+
+#### 🟢 Tier 1. Routine Working Files (Open for Active Feature Work & UI)
+* Prefixed with their **functional domain number (Classes 01–09)**.
+* Format: `XXXXX_slug.ext` or `XXXXX-XXXXX_slug.ext`
+* *Examples:*
+  * `10100_header.jsx` — Header UI component (Class 01)
+  * `20100_editor_canvas.jsx` — Editor canvas view (Class 02)
+  * `30200_payment_form.py` — Payment processing handler (Class 03)
+  * `90000_main_orchestrator.py` — System dispatcher (Class 09)
+* **AI Agent Behavior:** The model recognizes a standard operational module and freely applies requested modifications.
+
+#### 🛑 Tier 2. Critical Infrastructure Capsules (Zero-Trust Lock `00000-`)
+* The `00000-` lock prefix is applied **EXCLUSIVELY** to critical architectural assets (AI system prompts, financial math cores, cryptographic algorithms, constitutional rulebooks).
+* Format: `00000-XXXXX-XXXXX[-XXXXX...]_slug.ext`
+* *Examples:*
+  * `00000-70000-00001_analytics_prompt.json` — Analytics agent system prompt capsule (`[IDX: 70000]`)
+  * `00000-20100-00001_editor_prompt.json` — Editor copilot system prompt capsule (`[IDX: 20100]`)
+  * `00000-30000-00001_crypto_math_core.py` — Untouchable financial calculation engine (`[IDX: 30000]`)
+  * `00000-30000-00010-00005-00001_payment_gateway.json` — 5-tier recursive enterprise coordinate
+* **AI Agent Behavior:** The `00000-` prefix serves as an $O(1)$ physical stop signal. The model knows: "This is critical infrastructure. Direct modification is FORBIDDEN without explicit targeted developer command."
+
+* **Architecture Outcome:** Interface files import capsules in 1 line. During routine UI coding, critical core capsules are never loaded into the model's active mutation context.
 
 ---
 
