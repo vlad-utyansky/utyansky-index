@@ -1,27 +1,46 @@
 {
   "project": "UtyanskyIndexShowcase",
-  "version": "2.0.0",
+  "version": "2.5.0",
   "author": "Vladislav Utyansky",
   "rospatentDocket": "2026603415",
-  "gosuslugiDocket": "2026603415",
+  "gosuslugiDocket": "7927650015",
+  "specification": "v2.5 (Vibe Coding Iron Dome & Fractal Octets Standard)",
   "registry": {
-    "10000": {
-      "domain": "CORE",
-      "type": "ORCHESTRATOR",
-      "desc": "Utyansky Core Orchestrator & Signal Router",
-      "file": "examples/orchestrator-core.js"
+    "00000-00001": {
+      "domain": "CONSTITUTION",
+      "type": "META_RULE",
+      "desc": "Universal Pre-flight Header Directive for LLMs",
+      "file": "00_UTYANSKY_INDEX_CONSTITUTION_RULE_00000.md"
     },
-    "40101": {
-      "domain": "ERROR_MATRIX",
-      "type": "ERROR",
-      "desc": "INVALID_INDEX_FORMAT Error Code",
-      "file": "examples/error-matrix-handler.js"
+    "00000-00003": {
+      "domain": "GUARDIAN",
+      "type": "LINTER",
+      "desc": "Automated 5-Point Slot Guardian Linter (guard_utyansky_slots.py)",
+      "file": "examples/guard_utyansky_slots.py"
     },
-    "70050-00000": {
-      "domain": "RING_0_LOCK",
-      "type": "INVARIANT_VIDEO",
-      "desc": "Official Architecture Video Master Invariant Lock (Developer Consent Required)",
-      "file": "index.html"
+    "00000-70000-00001": {
+      "domain": "AI_CAPSULE",
+      "type": "PROMPT",
+      "desc": "Analytics AI System Prompt Core Capsule",
+      "file": "config/00000-70000-00001_analytics_agent.json"
+    },
+    "00000-70200-00001": {
+      "domain": "AI_CAPSULE",
+      "type": "PROMPT",
+      "desc": "Editor Copilot System Prompt Core Capsule",
+      "file": "config/00000-70200-00001_editor_copilot.json"
+    },
+    "00000-71390-00002": {
+      "domain": "UI_CAPSULE",
+      "type": "VIEWPORT",
+      "desc": "Chart Demonstration Viewport Invariant Capsule",
+      "file": "src/components/00000-71390-00002_charts.jsx"
+    },
+    "00000-30000-00010-00005-00001": {
+      "domain": "ENTERPRISE_GATEWAY",
+      "type": "FINTECH",
+      "desc": "5-Level Recursive Banking SBP Payment Gateway",
+      "file": "gateway/00000-30000-00010-00005-00001_payment_gateway.json"
     },
     "71000": {
       "domain": "UI_DOM",
@@ -35,16 +54,10 @@
       "desc": "Market Scan Action Trigger Button",
       "file": "examples/react-dom-indexing.jsx"
     },
-    "85010": {
-      "domain": "METRICS_ROI",
-      "type": "CALC",
-      "desc": "UVWI Viral Wow Formula Calculator",
-      "file": "examples/uvwi-calculator.js"
-    },
     "98000": {
       "domain": "VECTOR_VAULT",
       "type": "STORAGE",
-      "desc": "Scalable Vector Knowledge Memory Vault (1B+)",
+      "desc": "Scalable Vector Knowledge Memory Vault (pgvector HNSW)",
       "file": "examples/orchestrator-core.js"
     }
   }

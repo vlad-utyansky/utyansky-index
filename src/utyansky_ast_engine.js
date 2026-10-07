@@ -1,6 +1,6 @@
 /**
- * Utyansky Index v2.1 Industrial Edition
- * Module: [IDX: 10450] Deterministic AST Slot Isolation Engine
+ * Utyansky Index v2.5 Industrial Edition (Vibe Coding Iron Dome)
+ * Module: [IDX: 10450] Deterministic AST Slot Isolation & Zero-Trust Engine
  * 
  * Rospatent State Reg. Application: № 2026603415 (Gosuslugi Docket: 7927650015)
  * License: MIT
@@ -10,7 +10,8 @@
  * 2. Top-level ImportDeclaration harvesting for dependency context.
  * 3. [ERR: 10452] Fail-safe check for missing coordinates.
  * 4. [ERR: 10451] Defensive auto-healing & validation of root data-idx coordinate integrity.
- * 5. Deterministic AST replacement via replaceWith (anti-regression lock).
+ * 5. [ERR: 10454] Zero-Trust Lock Guard: blocks unmandated writes to data-lock="00000" sealed slots.
+ * 6. Deterministic AST replacement via replaceWith (anti-regression lock).
  */
 
 const parser = require('@babel/parser');
@@ -22,7 +23,7 @@ const t = require('@babel/types');
  * 1. Extracts strictly the isolated AST subtree of targetIdx along with imports.
  * @param {string} sourceCode - Full source code of the component.
  * @param {string|number} targetIdx - 5-digit Utyansky Index (e.g. 71080).
- * @returns {object} { isolatedSlotCode, imports, targetIdx, ast }
+ * @returns {object} { isolatedSlotCode, imports, targetIdx, isLocked, ast }
  */
 function extractSlotAST(sourceCode, targetIdx) {
   const normalizedIdx = String(targetIdx);
@@ -34,6 +35,7 @@ function extractSlotAST(sourceCode, targetIdx) {
 
   const imports = [];
   let isolatedSlotCode = null;
+  let isLocked = false;
   let found = false;
 
   traverse(ast, {
@@ -51,6 +53,16 @@ function extractSlotAST(sourceCode, targetIdx) {
 
       if (idxAttr) {
         found = true;
+        // Check for Zero-Trust lock
+        const lockAttr = path.node.attributes.find(
+          attr => attr.name && attr.name.name === 'data-lock' &&
+          ((attr.value && attr.value.value === '00000') ||
+           (attr.value && attr.value.expression && attr.value.expression.value === '00000'))
+        );
+        if (lockAttr) {
+          isLocked = true;
+        }
+
         const slotElement = path.parentPath.node;
         isolatedSlotCode = generate(slotElement).code;
         path.stop(); // Immediate O(1) cutoff
@@ -66,19 +78,21 @@ function extractSlotAST(sourceCode, targetIdx) {
     isolatedSlotCode,
     imports,
     targetIdx: normalizedIdx,
+    isLocked,
     ast
   };
 }
 
 /**
  * 2. Injects LLM modified slot deterministically back into source AST.
- * Enforces [ERR: 10451] coordinate retention lock.
+ * Enforces [ERR: 10451] coordinate retention lock & [ERR: 10454] Zero-Trust seal protection.
  * @param {object} ast - Parsed Babel AST.
  * @param {string|number} targetIdx - 5-digit Utyansky Index.
  * @param {string} newSlotCode - LLM response containing modified JSX element.
+ * @param {boolean} allowOverrideLock - Explicit developer consent to edit data-lock="00000" slot.
  * @returns {object} { updatedCode, success: true }
  */
-function injectModifiedSlot(ast, targetIdx, newSlotCode) {
+function injectModifiedSlot(ast, targetIdx, newSlotCode, allowOverrideLock = false) {
   const normalizedIdx = String(targetIdx);
   
   // Expression parser strictly isolates expressions and blocks root statement injections
@@ -119,6 +133,17 @@ function injectModifiedSlot(ast, targetIdx, newSlotCode) {
       );
 
       if (idxAttr) {
+        // [ERR: 10454] Zero-Trust Seal Check
+        const lockAttr = path.node.attributes.find(
+          attr => attr.name && attr.name.name === 'data-lock' &&
+          ((attr.value && attr.value.value === '00000') ||
+           (attr.value && attr.value.expression && attr.value.expression.value === '00000'))
+        );
+
+        if (lockAttr && !allowOverrideLock) {
+          throw new Error(`[ERR: 10454] Slot [IDX: ${normalizedIdx}] is sealed with data-lock="00000". Explicit developer override required.`);
+        }
+
         path.parentPath.replaceWith(newSubAst);
         replaced = true;
         path.stop();
