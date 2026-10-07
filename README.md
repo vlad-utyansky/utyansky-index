@@ -74,6 +74,8 @@
 > * 🛑 **Zero-Trust Seal (`[IDX: 00000]`):** Finished components receive default locks. AI edits strictly targeted slots `[IDX: 7XXXX]` upon explicit developer instruction.
 > * 🔏 **Core Capsule Isolation:** Critical AI prompts and core algorithmic engines live in isolated files `00000_*.json`, immune to interface changes.
 > * 🤖 **Automated Guardian Linter:** Script `guard_utyansky_slots.py` continuously audits slot integrity, page limits, and diff boundaries.
+> 
+> 👉 **[ 📖 READ VIBE-CODING v2.5 PRACTICAL GUIDE (EN) ➔ ](docs/en/UTYANSKY_INDEX_v2_5_VIBE_CODING_IRON_DOME_STANDARD.md)** &nbsp;&nbsp;|&nbsp;&nbsp; **[ 🐍 Download Guardian Linter (Python) ➔ ](examples/guard_utyansky_slots.py)**
 
 ---
 
