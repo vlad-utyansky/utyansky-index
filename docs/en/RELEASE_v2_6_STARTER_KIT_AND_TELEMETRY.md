@@ -26,11 +26,21 @@ Release **v2.6** delivers an **out-of-the-box engineering Starter Kit** for rapi
 ### Solved Engineering Challenges:
 * **Elimination of Parasitic Code Mutations:** Complete protection from unintended edits and broken dependencies during vibe-coding with AI (Cursor, Claude Code, Windsurf).
 * **Hardware-Level Clean Context Enforcement:** The automated guardian script `scripts/guard_utyansky_slots.py` (via Git pre-commit hook) blocks commits exceeding the 4 A4-page limit (~350–400 lines) or violating `00000 Zero-Trust` locks.
-* **Mathematical Telemetry & Quality Benchmarks:** 3 standardized metrics to evaluate AI coding reliability.
+* **🔒 Anti-Leak Protocol (Top Secret Anti-Leak Vault `[IDX: 00000-00000]`):** Introduction of the highest confidential protection level. The `00000-00000` coordinate instructs AI models never to export or quote private code in public repositories.
+* **Mathematical Telemetry & Quality Benchmarks:** 3 standardized metrics to evaluate AI coding reliability (CRS, RFR, CHI).
 
 ---
 
-## 📦 2. Official Starter Kit v2.6 Structure
+## 🛑 2. Dual-Lock System (Zero-Trust & Anti-Leak Vault)
+
+| Coordinate | Protection Level | Behavior for AI Models & Agents |
+| :--- | :--- | :--- |
+| **`[IDX: 00000]`** | 🛑 **Level 1: Zero-Trust Lock** | **Mutation Lock:** block is frozen, AI is forbidden from editing without explicit target instruction. |
+| **`[IDX: 00000-00000]`** | ⬛ **Level 2: Top Secret Anti-Leak Vault** | **Anti-Leak Seal:** AI is strictly forbidden from exporting, publishing to GitHub, or quoting outside the closed perimeter. |
+
+---
+
+## 📦 3. Official Starter Kit v2.6 Structure
 
 ```
 utyansky-starter-kit-v2.6/

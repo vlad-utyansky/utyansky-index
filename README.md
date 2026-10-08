@@ -73,9 +73,10 @@
 <img src="https://api.vcodes.ru/api/beacon?repo=utyansky-index&lang=en" width="1" height="1" alt="" style="display:none;" />
 
 <!-- [IDX: 00126] Announcement Block v2.6 -->
-> ## 🚀 NEW IN v2.6: Official Vibe Coding Starter Kit & Quality Telemetry ($O(1)$ Starter Kit & Telemetry)
-> **Open production starter kit for deterministic vibe-coding and automated reliability auditing:**
+> ## 🚀 NEW IN v2.6: Official Vibe Coding Starter Kit, Anti-Leak Protection & Telemetry ($O(1)$ Starter Kit & Anti-Leak)
+> **Open production starter kit for deterministic vibe-coding, IP protection, and automated reliability auditing:**
 > * 📦 **Official Starter Kit v2.6:** Ready-to-use repository template with slot structure, protected capsules (`capsules/00000-...`), git pre-commit hook, and $O(1)$ slot registry generator (`build_index.js`).
+> * 🔒 **Top Secret Anti-Leak Vault (`[IDX: 00000-00000]`):** Introduction of the Level 2 Lock — an open standard marking proprietary trade secrets, strictly preventing AI models from publishing private files to public repositories.
 > * 🛡️ **Clean Context Guardian Linter:** Automated verification script `guard_utyansky_slots.py` blocks non-compliant commits exceeding 4 A4 pages or violating `00000 Zero-Trust` seals.
 > * 📊 **Standardized Telemetry:** Automated reliability benchmark `telemetry_benchmark.js` assessing 3 core metrics: Context Retention (CRS $\ge 0.90$), Rollback Failure Rate (RFR $\le 10\%$), and Codebase Health (CHI $\ge 90\%$).
 > 
