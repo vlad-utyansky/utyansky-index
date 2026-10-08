@@ -624,12 +624,28 @@ The **«Utyansky Index»** standard is distributed under a transparent hybrid **
   * Open web coordinate standard (`70000–79999`) for AI Search optimization (AIO: ChatGPT Search, Perplexity, Yandex Neuro).
   * Interactive HUD DOM Inspector (`utyansky-web-inspector.js` / "AI Vision").
   * Zero AI blindness and 0% UI layout regressions during vibecoding.
-* 🚀 **v2.3 (September 20, 2026 / Telegram Bots & Zero-Lock Engine — Current Stable Release):**
+* 🚀 **v2.3 (September 20, 2026 / Telegram Bots & Zero-Lock Engine):**
   * Open coordinate slot isolation standard $O(1)$ for Telegram Bot API and asynchronous bots.
   * Physical 64-byte payload bypass in `callback_data` (zero `BUTTON_DATA_INVALID`).
   * 360° Customer Dossier module ("Microscope") with 1-click support ticketing.
   * **Zero-Lock & Conditional Constraint Class (`-00000` … `-00099`)**: Master Invariants, TTL quarantine, external triggers, and developer review workflows.
   * Periodic Table expansion to **10 Classes (`00` – `09`)**.
+* 🛡️ **v2.4 (October 05, 2026 / Zero-Text Syntax & Strict Numeric Standard):**
+  * Strict numeric syntax enforcement (only 5-digit coordinates inside `[IDX: 7XXXX]` and `data-idx`, all text descriptions placed strictly outside).
+  * Integration of pre-flight file header directives and automated validator `validate_utyansky_indexes.py` to prevent AI syntax drift.
+* 🔥 **v2.5 (October 07, 2026 / Vibe Coding Iron Dome & Utyansky Law):**
+  * Official establishment of **Utyansky Law: Clean Context Limit — 4 A4 Pages** (~350–400 lines / ~3000 tokens) to maintain peak speed and eliminate LLM attention degradation.
+  * Introduction of **Zero-Trust Default Lock (`[IDX: 00000]` / `data-lock="00000"`)** for code immutability by default.
+  * Physical kernel encapsulation in `00000_*.json` / `.py` capsules (Traffic Light Principle and hardware circuit breaker).
+  * Autonomous architectural guardian script `guard_utyansky_slots.py`.
+* 📦 **v2.6 (October 08, 2026 / Official Starter Kit & Quality Telemetry):**
+  * Release of the official open **Starter Kit v2.6** with slot isolation, protected capsules, and Git pre-commit hook.
+  * Standardized vibe-coding reliability telemetry: Context Retention CRS $\ge 0.90$, Rollback Failure Rate RFR $\le 10\%$, Codebase Health CHI $\ge 90\%$, and `telemetry_benchmark.js`.
+* 🔒 **v2.6.1 (October 08, 2026 / Sensitive Information Protocol & Air-Gap Vault — Current Stable Release):**
+  * Establishment of Level 2 Lock **Top Secret `[IDX: 00000-00000]` («Black Box Vault»)** protecting proprietary IP and trade secrets.
+  * Air-Gap physical isolation inside `00_SENSITIVE_VAULT_00000_00000/` formatted as `00000-00000-XXXXX_slug.ext`.
+  * Hardware export barriers via `.gitignore` and `guard_utyansky_slots.py` preventing AI models from copying or leaking confidential files.
+  * Corporate specification for Enterprise and Banking monorepos (`[IDX: 00000-00004]`).
 * 🔮 **v3.0 (Under Active R&D / Preview):**
   * **Autonomous Multi-Agent Swarms:** Zero-conflict concurrent code engineering for swarms of 10–20 autonomous AI agents in monorepos.
   * **DSL (Distributed Slot Locking):** Write-intent coordination via lease-based domain coordinate reservations.
