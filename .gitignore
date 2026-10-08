@@ -1,0 +1,13 @@
+# System & Temporary
+node_modules/
+.env
+dist/
+temp/
+*.log
+.gemini/
+
+# Sensitive Vault Protection [IDX: 00000-00000]
+*00_SENSITIVE_VAULT_00000_00000*
+00_SENSITIVE_VAULT_00000_00000/
+*00000-00000*
+*PRIVATE_VAULT*

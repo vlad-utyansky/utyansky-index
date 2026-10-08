@@ -553,7 +553,7 @@ Yes. Microservices pass coordinates via standard tracing headers `X-Utyansky-Coo
 <summary><b>18. How does the Index simplify 100,000+ line legacy monolith refactoring?</b></summary>
 <br/>
 
-Wrap legacy boundaries in coordinate slots `[IDX: 95000-LEGACY-AUTH]`. AI agents respect legacy borders without breaking dependencies.
+Wrap legacy boundaries in coordinate slots `[IDX: 95000-00001]`. AI agents respect legacy borders without breaking dependencies.
 </details>
 
 <details>
