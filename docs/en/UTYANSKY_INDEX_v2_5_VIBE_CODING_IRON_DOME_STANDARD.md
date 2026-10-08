@@ -38,16 +38,16 @@
 
 ---
 
-### 🛑 Rule 2. Zero-Trust Default Lock (`[IDX: 00000]`)
-* All finalized blocks receive defensive container seals:
-  ```html
-  <!-- [IDX: 71390] [IDX: 00000] -->
-  <div data-idx="71390" data-lock="00000" data-desc="Chart demonstration viewport">
-      ...inner component markup...
-  </div>
-  ```
-* Locks are placed strictly on **parent containers** (2–3 seals per file), eliminating visual noise.
-* AI agents are forbidden from modifying `00000` blocks without explicit target instruction from the developer.
+### 🛑 Rule 2. Dual-Lock System: Zero-Trust & Top Secret Anti-Leak Vault
+
+1. **Level 1: Zero-Trust Lock `[IDX: 00000]` (`data-lock="00000"`):**
+   * All finalized blocks receive defensive container seals `[IDX: 00000]`.
+   * Locks are placed strictly on **parent containers** (2–3 seals per file), eliminating visual noise.
+   * AI agents are forbidden from modifying `00000` blocks without explicit target instruction from the developer.
+
+2. **Level 2: Top Secret Anti-Leak Vault `[IDX: 00000-00000]` («Black Box Vault»):**
+   * **Proprietary intellectual property & anti-leak protection:** core business assets, AI coordination topologies, and trade secrets receive the permanent index `[IDX: 00000-00000]`.
+   * **AI Behavior:** Models and autonomous agents are strictly forbidden from exporting, publishing to GitHub, moving into public folders, or quoting entities tagged with `[IDX: 00000-00000]`.
 
 ---
 
