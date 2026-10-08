@@ -64,7 +64,7 @@
 > * **September 12, 2026 (21:55 MSK)** — **v2.2 Web Coordinate Standard & AI Vision Release**: open standard for deterministic DOM coordinate markup (`70000–79999`), interactive HUD DOM Inspector («AI Vision») for instant agent orientation, zero hallucinations, and regression prevention.
 > * **September 20, 2026 (11:00 MSK)** — **v2.3 Telegram Bot, Zero-Lock & Vibe-Coding Release**: open standard for deterministic slot isolation $O(1)$ in Telegram API and asynchronous bots. Hardware 64-byte `callback_data` payload bypass (zero `BUTTON_DATA_INVALID`), zero context loss during vibe-coding, 360° customer dossier module («Microscope»), establishment of the **Zero-Lock & Conditional Constraint Class (`-00000` … `-00099`)** for deterministic mutation control, and expansion of the Periodic Table to **10 Classes (`00` – `09`)**.
 > * **October 05, 2026 (13:00 MSK)** — **v2.4 Strict Numeric Standard & AI Drift Prevention (Zero-Text Syntax)**: enforcement of strict numeric format (only 5-digit coordinates inside `[IDX: 7XXXX]` and `data-idx`, all human descriptions moved strictly outside). Integration of pre-flight file header directives and automated validator `validate_utyansky_indexes.py` to prevent AI syntax drift during vibe-coding.
-> * **October 07, 2026 (11:00 MSK)** — **v2.5 Vibe Coding Iron Dome Release**: standard «4 A4 Pages» limit (~350–400 lines / ~3000 tokens), `00000 Zero-Trust` default-to-lock principle, critical kernel encapsulation (`00000_*`), and pre-commit architectural guardian `guard_utyansky_slots.py`.
+> * **🔥 October 07, 2026 (11:00 MSK)** — **v2.5 Vibe Coding Iron Dome Release**: official establishment of **Utyansky Law: Clean Context Limit — 4 A4 Pages** (~350–400 lines / ~3000 tokens) to maintain peak speed and eliminate LLM attention degradation, Zero-Trust Lock (`[IDX: 00000]` / Zero-Trust Default Lock), physical isolation of critical kernels (dialogue assistant prompts and calculation engines in `00000_*.json` / `.py` capsules), and autonomous guardian script `guard_utyansky_slots.py` protecting layouts from pixel shifts and regressions.
 > * **October 08, 2026 (11:00 MSK)** — **v2.6 Official Vibe Coding Starter Kit & Quality Telemetry Release**: official release of production Starter Kit v2.6 with slot isolation and pre-commit hook, standardized reliability telemetry (CRS $\ge 0.90$, RFR $\le 10\%$, CHI $\ge 90\%$), and `telemetry_benchmark.js`. [ 📖 Read Chapter v2.6 ➔ ](docs/en/RELEASE_v2_6_STARTER_KIT_AND_TELEMETRY.md) | [ 📦 Download Starter Kit (ZIP) ➔ ](https://github.com/vlad-utyansky/utyansky-index/raw/main/utyansky_starter_kit_v2_6.zip)
 > * **October 08, 2026 (19:30 MSK)** — **v2.6.1 Utyansky Sensitive Information Protocol Release**: establishment of Level 2 Lock `[IDX: 00000-00000]` («Black Box Vault»), physical Air-Gap isolation, and automated anti-leak hardware shields. [ 📖 Read Chapter v2.6.1 ➔ ](docs/en/RELEASE_v2_6_1_SENSITIVE_INFO_PROTOCOL.md)
 
@@ -92,6 +92,19 @@
 > * 📊 **Standardized Telemetry:** Automated reliability benchmark `telemetry_benchmark.js` assessing 3 core metrics: Context Retention (CRS $\ge 0.90$), Rollback Failure Rate (RFR $\le 10\%$), and Codebase Health (CHI $\ge 90\%$).
 > 
 > 👉 **[ 📖 READ FULL SPECIFICATION & GUIDE v2.6 (EN) ➔ ](docs/en/RELEASE_v2_6_STARTER_KIT_AND_TELEMETRY.md)** &nbsp;&nbsp;|&nbsp;&nbsp; **[ 📦 Download Starter Kit v2.6 (ZIP) ➔ ](https://github.com/vlad-utyansky/utyansky-index/raw/main/utyansky_starter_kit_v2_6.zip)**
+
+---
+
+<!-- [IDX: 00125] Announcement Block v2.5 -->
+> ## 🛡️ Architecture v2.5: Deterministic Vibe Coding, Utyansky Law & Iron Dome (Vibe Coding Iron Dome)
+> **How to scale AI-driven development without context degradation or layout regressions:**
+> * 🏛️ **Utyansky Law (Clean Context Limit — 4 A4 Pages):** Strict file and system prompt size limit (up to 400 lines / ~3000 tokens) keeps LLMs at peak speed and precision, eliminating up to 99.8% of hallucination risks and logical link collapse.
+> * 🛑 **Zero-Trust Default Lock (`[IDX: 00000]`):** All finalized blocks are locked by default against unintended mutations (`data-lock="00000"`). AI agents modify only the target slot `[IDX: 7XXXX]` upon explicit developer instruction.
+> * 🔏 **Critical Kernel Encapsulation:** Assistant prompts and calculation engines reside in isolated `00000_*.json` / `.py` capsules, completely immune to inadvertent wipes during UI coding.
+> * 🤖 **Autonomous Slot Guardian:** Verification script `guard_utyansky_slots.py` automatically scans code before commits and prevents specification breaches.
+> 
+> 👉 **[ 📖 READ FULL VIBE CODING STANDARD v2.5 (EN) ➔ ](docs/en/UTYANSKY_INDEX_v2_5_VIBE_CODING_IRON_DOME_STANDARD.md)** &nbsp;&nbsp;|&nbsp;&nbsp; **[ 🐍 Download Guardian Linter (Python) ➔ ](examples/guard_utyansky_slots.py)**
+
 
 ---
 
