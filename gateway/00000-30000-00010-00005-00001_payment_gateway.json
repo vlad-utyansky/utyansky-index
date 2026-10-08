@@ -1,0 +1,10 @@
+{
+  "_meta": {
+    "idx": "00000-30000-00010-00005-00001",
+    "lock": "00000",
+    "desc": "5-Level Recursive Banking SBP Payment Gateway"
+  },
+  "gateway": "SBP_CORE",
+  "status": "active",
+  "routing": "O(1)"
+}

@@ -1,62 +1,63 @@
-# 📜 [IDX: 00000] UTYANSKY INDEX: VERSION CHANGELOG & ARCHITECTURAL CHRONICLE
-## COMPLETE EVOLUTION TIMELINE OF THE DETERMINISTIC COORDINATE STANDARD (v1.0 – v2.5)
+# 📜 [IDX: 00000] VERSION CHANGELOG: UTYANSKY INDEX
+## EVOLUTION CHRONOLOGY OF THE ARCHITECTURAL STANDARD (v1.0 – v2.6)
 
 > **Author & System Architect:** Vladislav Anatolyevich Utyansky (AI Architect & Founder)  
-> **Rospatent RF Application:** № 2026119842 / 7927650015 (Reg: 2026603415)  
-> **GitHub Repository:** [github.com/vlad-utyansky/utyansky-index](https://github.com/vlad-utyansky/utyansky-index)  
+> **Rospatent RF Patent Application:** No. 2026119842 / 7927650015 (Reg. 2026603415)  
+> **Repository:** [github.com/vlad-utyansky/utyansky-index](https://github.com/vlad-utyansky/utyansky-index)  
 > **Official Portal:** [index.utyanskiy.ru](https://index.utyanskiy.ru)
 
 ---
 
-## 🏛️ [v2.5.0] — October 07, 2026 (11:00 MSK) — 🔥 «Vibe Coding Iron Dome» Release
+## 🏛️ [v2.6.0] — October 08, 2026 (11:00 MSK) — 🚀 Multi-Agent Starter Kit & Quality Telemetry Release
 
-### 💡 Engineering Philosophy & Background:
-* **Empirical Verification:** Standard v2.5 was forged across thousands of continuous stress tests, production coding sessions, and autonomous agent runs on large real-world codebases.
-* **Transformer Physics:** Proven that LLM attention mathematically degrades when files exceed 400–500 lines, leading to accidental regressions (`// rest of code unchanged`) and filename collisions.
-* **Release Mission:** Fortify the remaining 5% edge vulnerabilities with strict physical isolation barriers and architectural fuses.
+### 💡 Release Philosophy:
+* **Plug-and-play distribution:** Migration from pure specification to a turnkey repository template with pre-configured slots, prompt capsules, and automated guardian scripts.
+* **Multi-agent orchestration:** Deterministic role separation (Router `[90100]` ➔ Planner `[70100]` ➔ Executor `[70200]` ➔ Validator `[90200]`) with 100% context isolation.
+* **Objective reliability metrics:** Standardized quality telemetry benchmark.
 
-### 🚀 Key Features & Rules:
-1. **🏛️ Utyansky Law: Clean Context Limit — 4 A4 Pages (Oct 07, 2026):**
-   * Hard file & system prompt limit: **strictly under 4 A4 pages (~350–400 lines / ~3000 tokens)**.
-   * **Clean Context Physics:** Within this limit, the LLM retains maximum reasoning speed, high accuracy, and intact contextual dependencies. Exceeding 400 lines triggers transformer attention degradation, hallucinations, and context rot.
-   * Files exceeding 400 lines must be split into subcomponents under `components/`.
-2. **🛑 Zero-Trust Lock `[IDX: 00000]` (`data-lock="00000"`):**
-   * Finalized components receive defensive container locks by default. AI is forbidden from mutating locked blocks without explicit developer instruction.
-3. **🚦 Traffic Light Principle & Fractal Coordinate File Addressing:**
-   * 🟢 **Routine Working Files (Classes 01–09):** `XXXXX_slug.ext` (e.g., `10100_header.jsx`, `20100_editor.jsx`, `30200_payment.py`) — open for regular feature development.
-   * 🛑 **Critical Infrastructure Capsules (Class 00 / Zero-Trust):** `00000-XXXXX-XXXXX[-XXXXX...]_slug.ext` (e.g., `00000-70000-00001_analytics_prompt.json`, `00000-30000-00001_crypto_math.py`).
-4. **🛡️ Physical Isolation as Circuit Breaker:**
-   * System prompts, financial computation math, and constitutional rules are physically separated into dedicated capsule files. They are never loaded into the model's active context during UI development, making accidental overwrites physically impossible.
-5. **🪆 Fractal Matryoshka (Codebases 5000+ lines):**
-   * Hierarchical coordinate partitioning: Root Dispatcher `[IDX: 90000]`, Module Nodes `[IDX: 91000]`, `[IDX: 92000]`, Sealed Capsules `[IDX: 91000-00000]`.
-6. **🤖 Autonomous Guardian Linter `[IDX: 00000-00003]` (`guard_utyansky_slots.py`):**
-   * Automated 5-point audit for clean numeric syntax, 4-A4 page limits, $O(1)$ collision prevention, and `git diff` tracking.
-7. **🔒 Anti-Leak Sanitization:**
-   * All public docs and examples use sanitized enterprise placeholders (`analytics_agent`, `editor_copilot`, `video_render_agent`, `payment_gateway`).
+### 🚀 Key Additions & Rules:
+1. **📦 Official Starter Kit (`utyansky-starter-kit-v2.6`):**
+   * Production archive [`utyansky_starter_kit_v2_6.zip`](https://github.com/vlad-utyansky/utyansky-index/raw/main/utyansky_starter_kit_v2_6.zip).
+   * Root orchestrator `10000_app.jsx` (00000 lock), working widget `10100_widget.jsx`, and core capsules `00000-*`.
+2. **🤖 4-Tier Multi-Agent Pipeline:**
+   * Strict $O(1)$ task routing without parsing entire repositories.
+   * Executor loads only the target file (<400 lines), maintaining peak LLM attention density.
+3. **📊 Standardized Telemetry (`telemetry_benchmark.js`):**
+   * **CRS (Context Retention Score) $\ge 0.90$:** Instruction retention without attention drift.
+   * **RFR (Rollback Failure Rate) $\le 10\%$:** Percentage of rejected non-compliant patches.
+   * **CHI (Codebase Health Index) $\ge 90\%$:** Compliance with 4 A4 pages rule.
+4. **🛡️ Pre-commit Guardian Hook:**
+   * Automated verification via `guard_utyansky_slots.py` and `build_index.js`.
 
 ---
 
-## 🏛️ [v2.4.0] — October 05, 2026 — Zero-Text Numeric Standard
-* Strict numeric syntax: strictly 5-digit numbers and hyphens inside `[IDX: XXXXX]` and `data-idx="..."` (zero letters inside brackets).
-* All human descriptions moved strictly outside to `data-desc="..."`.
+## 🏛️ [v2.5.0] — October 07, 2026 (11:00 MSK) — 🔥 Vibe Coding Iron Dome Release
+1. **4 A4 Pages Rule:** Clean context limit (<400 lines).
+2. **00000 Zero-Trust Lock:** Default-to-lock for stable components.
+3. **Capsule Isolation:** Separation of prompt/kernel capsules (`00000-*`).
+4. **Guardian Script:** `guard_utyansky_slots.py`.
 
 ---
 
-## 🏛️ [v2.3.0] — September 20, 2026 — Telegram Bot & Vibe-Coding Engine
-* 64-Byte Bypass in Telegram API `callback_data` (12–22 bytes) with 70% headroom (zero `BUTTON_DATA_INVALID`).
-* 360° Customer Dossier Module ("Microscope") and Ring-0 (`-00000 … -00099`) security classification.
+## 🏛️ [v2.4.0] — October 05, 2026 — Zero-Text Syntax
+* Strict 5-digit numeric indices inside `[IDX: 7XXXX]`.
+
+---
+
+## 🏛️ [v2.3.0] — September 20, 2026 — Telegram Bot Standard
+* 64-byte payload bypass and 360° «Microscope» dossier.
 
 ---
 
 ## 🏛️ [v2.2.0] — September 12, 2026 — Web Coordinate Standard & AI Vision
-* Open Web-DOM grid (`70000–79999`) and interactive HUD inspector ("AI Vision") for zero layout drift during vibecoding.
+* `70000–79999` DOM coordinate grid and HUD inspector.
 
 ---
 
-## 🏛️ [v2.1.0] — September 11, 2026 — Industrial Edition (Babel AST Engine)
-* AST syntactic isolation engine `utyansky_ast_engine.js` with $O(1)$ Babel locks and coordinate preservation validation.
+## 🏛️ [v2.1.0] — September 11, 2026 — Industrial Edition (Babel AST)
+* `utyansky_ast_engine.js` and deterministic $O(1)$ slot locking.
 
 ---
 
-## 🏛️ [v1.0.0] — March 22, 2026 — Initial Open-Source Release on GitHub
-* Initial public release of the 5-digit coordinate software architecture specification on GitHub (`51584ac`).
+## 🏛️ [v1.0.0] — March 22, 2026 — Initial Disclosure
+* Public disclosure on GitHub (`51584ac`).

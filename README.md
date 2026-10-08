@@ -65,10 +65,26 @@
 > * **September 20, 2026 (11:00 MSK)** — **v2.3 Telegram Bot, Zero-Lock & Vibe-Coding Release**: open standard for deterministic slot isolation $O(1)$ in Telegram API and asynchronous bots. Hardware 64-byte `callback_data` payload bypass (zero `BUTTON_DATA_INVALID`), zero context loss during vibe-coding, 360° customer dossier module («Microscope»), establishment of the **Zero-Lock & Conditional Constraint Class (`-00000` … `-00099`)** for deterministic mutation control, and expansion of the Periodic Table to **10 Classes (`00` – `09`)**.
 > * **October 05, 2026 (13:00 MSK)** — **v2.4 Strict Numeric Standard & AI Drift Prevention (Zero-Text Syntax)**: enforcement of strict numeric format (only 5-digit coordinates inside `[IDX: 7XXXX]` and `data-idx`, all human descriptions moved strictly outside). Integration of pre-flight file header directives and automated validator `validate_utyansky_indexes.py` to prevent AI syntax drift during vibe-coding.
 > * **🔥 October 07, 2026 (11:00 MSK)** — **v2.5 Safe Vibe-Coding & Iron Dome Context Standard**: implementation of the «4 A4 Pages» physical volume limit (~350–400 lines / ~3000 tokens) to eliminate LLM attention degradation, Zero-Trust Default Lock (`[IDX: 00000]` / `data-lock="00000"`), physical core capsule isolation (`00000_*.json` / `.py`), fractal matryoshka for 5000+ line codebases, and the automated Guardian Linter (`guard_utyansky_slots.py`) with `git diff` auto-revert.
+> * **🚀 October 08, 2026 (11:00 MSK)** — **v2.6 Multi-Agent Starter Kit & Quality Telemetry Release**: official release of production Starter Kit v2.6 with slot isolation and pre-commit hook, 4-tier multi-agent pipeline with $O(1)$ context routing, standardized reliability telemetry (CRS $\ge 0.90$, RFR $\le 10\%$, CHI $\ge 90\%$), and `telemetry_benchmark.js`. [ 📖 Read Chapter v2.6 ➔ ](docs/en/RELEASE_v2_6_MULTIAGENT_STARTER_KIT.md) | [ 📦 Download Starter Kit (ZIP) ➔ ](https://github.com/vlad-utyansky/utyansky-index/raw/main/utyansky_starter_kit_v2_6.zip)
 
 ---
 
-> ## 🛡️ NEW v2.5: Safe Vibe-Coding, «4 A4 Pages» & Iron Dome Standard
+<!-- [IDX: 00005] VCODES Analytics Beacon -->
+<img src="https://api.vcodes.ru/api/beacon?repo=utyansky-index&lang=en" width="1" height="1" alt="" style="display:none;" />
+
+<!-- [IDX: 00126] Announcement Block v2.6 -->
+> ## 🚀 NEW IN v2.6: Multi-Agent Starter Kit & Quality Telemetry ($O(1)$ Multi-Agent Starter Kit & Telemetry)
+> **Open production starter kit for deterministic vibe-coding and automated reliability auditing:**
+> * 📦 **Official Starter Kit v2.6:** Ready-to-use repository template with slot structure, prompt capsules (`capsules/00000-...`), git pre-commit hook, and $O(1)$ slot registry generator (`build_index.js`).
+> * 🤖 **4-Tier Multi-Agent Pipeline:** Deterministic role separation (Router `[90100]` ➔ Planner `[70100]` ➔ Executor `[70200]` ➔ Validator `[90200]`) with 100% context isolation down to a single slot.
+> * 📊 **Standardized Telemetry:** Automated reliability benchmark `telemetry_benchmark.js` assessing 3 core metrics: Context Retention (CRS $\ge 0.90$), Rollback Failure Rate (RFR $\le 10\%$), and Codebase Health (CHI $\ge 90\%$).
+> 
+> 👉 **[ 📖 READ FULL SPECIFICATION & GUIDE v2.6 (EN) ➔ ](docs/en/RELEASE_v2_6_MULTIAGENT_STARTER_KIT.md)** &nbsp;&nbsp;|&nbsp;&nbsp; **[ 📦 Download Starter Kit v2.6 (ZIP) ➔ ](https://github.com/vlad-utyansky/utyansky-index/raw/main/utyansky_starter_kit_v2_6.zip)**
+
+---
+
+<!-- [IDX: 00125] Announcement Block v2.5 -->
+> ## 🛡️ Architecture v2.5: Safe Vibe-Coding, «4 A4 Pages» & Iron Dome Standard
 > **Scale AI-assisted software development without context degradation or visual regressions:**
 > * 📄 **«4 A4 Pages» Rule:** Hard ceiling on file and system prompt size (up to 400 lines) eliminates context loss and severed dependencies.
 > * 🛑 **Zero-Trust Seal (`[IDX: 00000]`):** Finished components receive default locks. AI edits strictly targeted slots `[IDX: 7XXXX]` upon explicit developer instruction.
