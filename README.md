@@ -66,17 +66,28 @@
 > * **October 05, 2026 (13:00 MSK)** — **v2.4 Strict Numeric Standard & AI Drift Prevention (Zero-Text Syntax)**: enforcement of strict numeric format (only 5-digit coordinates inside `[IDX: 7XXXX]` and `data-idx`, all human descriptions moved strictly outside). Integration of pre-flight file header directives and automated validator `validate_utyansky_indexes.py` to prevent AI syntax drift during vibe-coding.
 > * **October 07, 2026 (11:00 MSK)** — **v2.5 Vibe Coding Iron Dome Release**: standard «4 A4 Pages» limit (~350–400 lines / ~3000 tokens), `00000 Zero-Trust` default-to-lock principle, critical kernel encapsulation (`00000_*`), and pre-commit architectural guardian `guard_utyansky_slots.py`.
 > * **October 08, 2026 (11:00 MSK)** — **v2.6 Official Vibe Coding Starter Kit & Quality Telemetry Release**: official release of production Starter Kit v2.6 with slot isolation and pre-commit hook, standardized reliability telemetry (CRS $\ge 0.90$, RFR $\le 10\%$, CHI $\ge 90\%$), and `telemetry_benchmark.js`. [ 📖 Read Chapter v2.6 ➔ ](docs/en/RELEASE_v2_6_STARTER_KIT_AND_TELEMETRY.md) | [ 📦 Download Starter Kit (ZIP) ➔ ](https://github.com/vlad-utyansky/utyansky-index/raw/main/utyansky_starter_kit_v2_6.zip)
+> * **October 08, 2026 (19:30 MSK)** — **v2.6.1 Utyansky Sensitive Information Protocol Release**: establishment of Level 2 Lock `[IDX: 00000-00000]` («Black Box Vault»), physical Air-Gap isolation, and automated anti-leak hardware shields. [ 📖 Read Chapter v2.6.1 ➔ ](docs/en/RELEASE_v2_6_1_SENSITIVE_INFO_PROTOCOL.md)
 
 ---
 
 <!-- [IDX: 00005] VCODES Analytics Beacon -->
 <img src="https://api.vcodes.ru/api/beacon?repo=utyansky-index&lang=en" width="1" height="1" alt="" style="display:none;" />
 
-<!-- [IDX: 00126] Announcement Block v2.6 -->
-> ## 🚀 NEW IN v2.6: Official Vibe Coding Starter Kit, Anti-Leak Protection & Telemetry ($O(1)$ Starter Kit & Anti-Leak)
-> **Open production starter kit for deterministic vibe-coding, IP protection, and automated reliability auditing:**
+<!-- [IDX: 00127] Announcement Block v2.6.1 Sensitive Info Protocol -->
+> ## 🔒 NEW IN v2.6.1: Utyansky Sensitive Information Protocol ($O(1)$ Sensitive Information Protocol)
+> **Open architectural standard for hardware-level IP protection, trade secrets, and preventing AI data leaks:**
+> * ⬛ **Level 2 Lock `[IDX: 00000-00000]` (Air-Gap Vault):** Introduction of the highest confidential protection level. AI models and agents are strictly forbidden from copying, publishing to GitHub, or quoting private files across external networks.
+> * 📁 **Air-Gap Physical Isolation:** Proprietary assets reside strictly within isolated directory `00_SENSITIVE_VAULT_00000_00000/` formatted as `00000-00000-XXXXX_slug.ext`.
+> * 🛡️ **Hardware Barriers:** Automatic export blocking via `.gitignore` and pre-commit validator `guard_utyansky_slots.py`.
+> 
+> 👉 **[ 📖 READ SENSITIVE INFORMATION PROTOCOL v2.6.1 (EN) ➔ ](docs/en/RELEASE_v2_6_1_SENSITIVE_INFO_PROTOCOL.md)**
+
+---
+
+<!-- [IDX: 00126] Announcement Block v2.6 Starter Kit -->
+> ## 🚀 NEW IN v2.6: Official Vibe Coding Starter Kit & Quality Telemetry ($O(1)$ Starter Kit & Telemetry)
+> **Open production starter kit for deterministic vibe-coding and automated reliability auditing:**
 > * 📦 **Official Starter Kit v2.6:** Ready-to-use repository template with slot structure, protected capsules (`capsules/00000-...`), git pre-commit hook, and $O(1)$ slot registry generator (`build_index.js`).
-> * 🔒 **Top Secret Anti-Leak Vault (`[IDX: 00000-00000]`):** Introduction of the Level 2 Lock — an open standard marking proprietary trade secrets, strictly preventing AI models from publishing private files to public repositories.
 > * 🛡️ **Clean Context Guardian Linter:** Automated verification script `guard_utyansky_slots.py` blocks non-compliant commits exceeding 4 A4 pages or violating `00000 Zero-Trust` seals.
 > * 📊 **Standardized Telemetry:** Automated reliability benchmark `telemetry_benchmark.js` assessing 3 core metrics: Context Retention (CRS $\ge 0.90$), Rollback Failure Rate (RFR $\le 10\%$), and Codebase Health (CHI $\ge 90\%$).
 > 
