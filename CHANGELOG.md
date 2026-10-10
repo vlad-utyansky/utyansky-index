@@ -1,10 +1,30 @@
 # 📜 [IDX: 00000] VERSION CHANGELOG: UTYANSKY INDEX
-## EVOLUTION CHRONOLOGY OF THE ARCHITECTURAL STANDARD (v1.0 – v2.6)
+## EVOLUTION CHRONOLOGY OF THE ARCHITECTURAL STANDARD (v1.0 – v2.6.2)
 
 > **Author & System Architect:** Vladislav Anatolyevich Utyansky (AI Architect & Founder)  
 > **Rospatent RF Patent Application:** No. 2026119842 / 7927650015 (Reg. 2026603415)  
 > **Repository:** [github.com/vlad-utyansky/utyansky-index](https://github.com/vlad-utyansky/utyansky-index)  
 > **Official Portal:** [index.utyanskiy.ru](https://index.utyanskiy.ru)
+
+---
+
+## 🏛️ [v2.6.2] — October 10, 2026 (19:30 MSK) — 🛡️ Hardware Git Pre-Commit Guard & Session Integrity Release
+
+### 💡 Engineering Background:
+* **14-Hour Endurance Marathon Findings:** During continuous development of the V-CODES ecosystem (>3,200 interactive steps within a single session), LLM context saturation limits were benchmarked. Key failure modes (carpet-bombing scripts, unescaped syntax errors, metric hallucinations) were isolated and documented.
+* **System Barrier over Declarative Prompts:** While v2.6.1 relied on textual rules, v2.6.2 introduces deterministic OS-level enforcement via Git pre-commit hooks.
+
+### 🚀 Key Additions:
+1. **🛡️ Hardware Git Pre-Commit Guard (`git_pre_commit_guard.py`):**
+   * **Anti-Carpet-Bombing:** Physical commit abortion if more than 150 lines are removed from a single file (prevents destructive file-slicing scripts).
+   * **Lock Protection:** Immediate rejection if `data-lock="00000"` or capsule directory files are altered.
+2. **⚡ JavaScript Syntax Sentinel (`node --check`):**
+   * Pre-commit validation of staged `.js` files and inline `<script>` blocks in `.html`. Staged code with syntax errors cannot be committed.
+3. **🔒 Sensitive Data Leak Prevention:**
+   * Automated scan for private tokens, master credentials, and internal formulas before git staging.
+4. **⏳ Session Quantization Law (80-Turn Threshold):**
+   * Standardized protocol recommending session renewal every 60–80 turns to maintain maximum LLM attention density.
+* **Full Release Specification:** [RELEASE_v2_6_2_HARDWARE_PRE_COMMIT_AND_SESSION_INTEGRITY.md](docs/en/RELEASE_v2_6_2_HARDWARE_PRE_COMMIT_AND_SESSION_INTEGRITY.md)
 
 ---
 

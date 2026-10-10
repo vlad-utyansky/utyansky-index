@@ -3,6 +3,7 @@
 [![Language: English (EN)](https://img.shields.io/badge/Language-English%20(EN)-blue?style=for-the-badge)](README.md)
 [![Language: Russian (RU)](https://img.shields.io/badge/Language-Russian%20(RU)-red?style=for-the-badge)](README_RU.md)
 [![Version 2.0 (Author Specification)](https://img.shields.io/badge/Version-2.0%20(Specification)-emerald?style=for-the-badge)](https://github.com/vlad-utyansky/utyansky-index)
+[![Release v2.6.2](https://img.shields.io/badge/Release-v2.6.2-emerald?style=for-the-badge)](docs/en/RELEASE_v2_6_2_HARDWARE_PRE_COMMIT_AND_SESSION_INTEGRITY.md)
 [![Release v2.6.1](https://img.shields.io/badge/Release-v2.6.1-blue?style=for-the-badge)](docs/en/RELEASE_v2_6_1_SENSITIVE_INFO_PROTOCOL.md)
 [![Version 1.0 (March 2026 Archive)](https://img.shields.io/badge/Version-1.0%20(March%202026%20Alpha)-orange?style=for-the-badge)](docs/en/VERSION_1.0_MARCH_2026_ARCHIVE.md)
 
