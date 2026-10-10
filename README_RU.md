@@ -2,7 +2,7 @@
 
 [![Русский](https://img.shields.io/badge/Язык-Русский%20(RU)-red?style=for-the-badge)](README_RU.md)
 [![English](https://img.shields.io/badge/Language-English%20(EN)-blue?style=for-the-badge)](README.md)
-[![Версия 2.0 (Авторская Спецификация)](https://img.shields.io/badge/Версия-2.0%20(Спецификация)-emerald?style=for-the-badge)](https://github.com/vlad-utyansky/utyansky-index)
+[![Версия 2.6.1 (Актуальный Релиз)](https://img.shields.io/badge/Версия-2.6.1%20(Релиз)-emerald?style=for-the-badge)](https://github.com/vlad-utyansky/utyansky-index)
 [![Версия 1.0 (Архив Март 2026)](https://img.shields.io/badge/Версия-1.0%20(Март%202026%20Alpha)-orange?style=for-the-badge)](docs/ru/АРХИВ_ВЕРСИЯ_1.0_МАРТ_2026.md)
 
 <br/>
@@ -25,7 +25,7 @@
 
 ---
 
-# 🛡️ Архитектура «Индекс Утянского» (Версия 2.0)
+# 🛡️ Архитектура «Индекс Утянского» (Версия 2.6.1)
 ### Универсальная детерминированная координатная матрица для кода, ИИ, оцифровки маркетинга (UVWI) и векторной памяти
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22934668.svg)](https://doi.org/10.5281/zenodo.22934668)
