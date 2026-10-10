@@ -58,7 +58,7 @@
 
 ### 📺 5-Minute Architecture Video Overview
 
-> 🎬 **[ ▶️ Watch 5-Minute Architecture Video on YouTube ➔ ](https://youtu.be/mwDlyhwUsSE)**  
+> 🎬 **[ ▶️ Watch 5-Minute Architecture Video on YouTube ➔ ](https://youtu.be/qYSJP9rR6vs)**  
 > *5-minute visual walkthrough: how 5-digit slot isolation and deterministic $O(1)$ coordinates eliminate AI hallucinations and preserve 100% code integrity.*
 
 ---
