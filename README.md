@@ -59,7 +59,10 @@
 ### 📺 5-Minute Architecture Video Overview
 
 > 🎬 **[ ▶️ Watch 5-Minute Architecture Video on YouTube ➔ ](https://youtu.be/qYSJP9rR6vs)**  
-> *5-minute visual walkthrough: how 5-digit slot isolation and deterministic $O(1)$ coordinates eliminate AI hallucinations and preserve 100% code integrity.*
+> *5-minute visual walkthrough: how 5-digit slot isolation and deterministic $O(1)$ coordinates eliminate AI hallucinations and preserve 100% code integrity.*  
+> 
+> 💡 **Author's Video Note:**  
+> *This video was recorded during the initial release of the standard (v1.0), so UI layouts and version badges visually differ from the current v2.6 release. However, **the foundational principles and architecture remain 100% identical**: 5-digit coordinate slot isolation, direct $O(1)$ state addressing, and eliminating AI hallucinations.*
 
 ---
 
