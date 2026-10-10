@@ -58,15 +58,8 @@
 
 ### 📺 5-Minute Architecture Video Overview
 
-<a href="https://youtu.be/mwDlyhwUsSE" target="_blank">
-  <img src="docs/images/habr_cover_deterministic_vibecoding.png" alt="Watch 5-Minute Architecture Overview on YouTube" width="100%" style="border-radius: 12px;" />
-</a>
-
-> 🎬 **[ ▶️ Watch 5-Minute Architecture Video on YouTube (opens in new tab) ➔ ](https://youtu.be/mwDlyhwUsSE)**  
-> *5-minute visual walkthrough: how 5-digit slot isolation and deterministic $O(1)$ coordinates eliminate AI hallucinations and preserve 100% code integrity.*  
-> 
-> 💡 **Author's Video Note:**  
-> *This video was recorded during the initial release of the standard (v1.0), so UI layouts and version badges visually differ from the current v2.6 release. However, **the foundational principles and architecture remain 100% identical**: 5-digit coordinate slot isolation, direct $O(1)$ state addressing, and eliminating AI hallucinations.*
+> 🎬 **[ ▶️ Watch 5-Minute Architecture Video on YouTube ➔ ](https://youtu.be/mwDlyhwUsSE)**  
+> *5-minute visual walkthrough: how 5-digit slot isolation and deterministic $O(1)$ coordinates eliminate AI hallucinations and preserve 100% code integrity.*
 
 ---
 
