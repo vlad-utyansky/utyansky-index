@@ -91,11 +91,24 @@
 > * **🔥 October 07, 2026 (11:00 MSK)** — **v2.5 Vibe Coding Iron Dome Release**: official establishment of **Utyansky Law: Clean Context Limit — 4 A4 Pages** (~350–400 lines / ~3000 tokens) to maintain peak speed and eliminate LLM attention degradation, Zero-Trust Lock (`[IDX: 00000]` / Zero-Trust Default Lock), physical isolation of critical kernels (dialogue assistant prompts and calculation engines in `00000_*.json` / `.py` capsules), and autonomous guardian script `guard_utyansky_slots.py` protecting layouts from pixel shifts and regressions.
 > * **October 08, 2026 (11:00 MSK)** — **v2.6 Official Vibe Coding Starter Kit & Quality Telemetry Release**: official release of production Starter Kit v2.6 with slot isolation and pre-commit hook, standardized reliability telemetry (CRS $\ge 0.90$, RFR $\le 10\%$, CHI $\ge 90\%$), and `telemetry_benchmark.js`. [ 📖 Read Chapter v2.6 ➔ ](docs/en/RELEASE_v2_6_STARTER_KIT_AND_TELEMETRY.md) | [ 📦 Download Starter Kit (ZIP) ➔ ](https://github.com/vlad-utyansky/utyansky-index/raw/main/utyansky_starter_kit_v2_6.zip)
 > * **October 08, 2026 (19:30 MSK)** — **v2.6.1 Utyansky Sensitive Information Protocol Release**: establishment of Level 2 Lock `[IDX: 00000-00000]` («Black Box Vault»), physical Air-Gap isolation, and automated anti-leak hardware shields. [ 📖 Read Chapter v2.6.1 ➔ ](docs/en/RELEASE_v2_6_1_SENSITIVE_INFO_PROTOCOL.md)
+> * **October 10, 2026 (19:30 MSK)** — **v2.6.2 Hardware Pre-Commit Guard & Session Integrity Release**: findings of a 14-hour endurance stress marathon (>3,200 interactive turns in a single session), OS-level Git pre-commit barrier against carpet-bombing overwrites (>150 lines), JavaScript syntax sentinel (`node --check`), inviolability of `[IDX: 00000]` locks, and Session Quantization Law (80-turn threshold) `[IDX: 00000-00027]`. [ 📖 Read Chapter v2.6.2 ➔ ](docs/en/RELEASE_v2_6_2_HARDWARE_PRE_COMMIT_AND_SESSION_INTEGRITY.md)
 
 ---
 
 <!-- [IDX: 00005] VCODES Analytics Beacon -->
 <img src="https://api.vcodes.ru/api/beacon?repo=utyansky-index&lang=en" width="1" height="1" alt="" style="display:none;" />
+
+<!-- [IDX: 00129] Announcement Block v2.6.2 Hardware Pre-Commit Guard & Session Integrity -->
+> ## 🛡️ NEW IN v2.6.2: Hardware Git Pre-Commit Guard & Session Integrity ($O(1)$ Hardware Guard & Session Integrity)
+> **Open engineering standard for hardware mutation prevention and LLM context saturation control:**
+> * 🛡️ **Anti-Carpet-Bombing Barrier (> 150 lines):** OS-level pre-commit hook automatically aborts commits when script-based file slicing (`c[:pos] + code + c[pos:]`) deletes over 150 lines of stable code.
+> * ⚡ **JavaScript Syntax Sentinel (`node --check`):** Automated syntax validation of all staged `.js` files and inline `<script>` tags in `.html`, preventing broken click handlers caused by unescaped template literals.
+> * 🔒 **Inviolability of `[IDX: 00000]` Locks:** Immediate commit rejection upon unauthorized removal or mutation of `data-lock="00000"` or sealed capsules in `00000_capsules/`.
+> * ⏳ **Session Quantization Law (80-Turn Threshold):** Standardized protocol recommending session archiving and renewal every 60–80 turns to preserve peak LLM attention density without degradation.
+> 
+> 👉 **[ 📖 READ HARDWARE PRE-COMMIT GUARD & SESSION INTEGRITY SPECIFICATION v2.6.2 (EN) ➔ ](docs/en/RELEASE_v2_6_2_HARDWARE_PRE_COMMIT_AND_SESSION_INTEGRITY.md)** &nbsp;&nbsp;|&nbsp;&nbsp; **[ 🛡️ Git Pre-Commit Hook Script ➔ ](examples/git_pre_commit_guard.py)**
+
+---
 
 <!-- [IDX: 00127] Announcement Block v2.6.1 Sensitive Info Protocol -->
 > ## 🔒 NEW IN v2.6.1: Utyansky Sensitive Information Protocol ($O(1)$ Sensitive Information Protocol)
@@ -670,6 +683,11 @@ The **«Utyansky Index»** standard is distributed under a transparent hybrid **
   * Air-Gap physical isolation inside `00_SENSITIVE_VAULT_00000_00000/` formatted as `00000-00000-XXXXX_slug.ext`.
   * Hardware export barriers via `.gitignore` and `guard_utyansky_slots.py` preventing AI models from copying or leaking confidential files.
   * Corporate specification for Enterprise and Banking monorepos (`[IDX: 00000-00004]`).
+* 🛡️ **v2.6.2 (October 10, 2026 / Hardware Pre-Commit Guard & Session Integrity Protocol — Current Stable):**
+  * **14-Hour Endurance Marathon Findings (>3,200 turns):** Empirical investigation of transformer context degradation and failure modes during prolonged sessions.
+  * **Hardware Git Pre-Commit Guard (`git_pre_commit_guard.py`):** OS-level barrier against destructive carpet-bombing overwrites (>150 lines) and unauthorized mutations of `[IDX: 00000]` locks.
+  * **JavaScript Syntax Sentinel (`node --check`):** Compulsory pre-commit validation of staged scripts and inline blocks to prevent broken DOM handlers.
+  * **Session Quantization Law:** Standardized protocol recommending context archiving and session renewal every 60–80 turns `[IDX: 00000-00027]`.
 * 🔮 **v3.0 (Under Active R&D / Preview):**
   * **Autonomous Multi-Agent Swarms:** Zero-conflict concurrent code engineering for swarms of 10–20 autonomous AI agents in monorepos.
   * **DSL (Distributed Slot Locking):** Write-intent coordination via lease-based domain coordinate reservations.
