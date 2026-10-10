@@ -41,6 +41,18 @@
 [![CI Speed](https://img.shields.io/badge/CI_Speed-0.006s-10b981.svg)](examples/validate-index.js)
 [![Author](https://img.shields.io/badge/Author-Vladislav%20Anatolyevich%20Utyansky-6366f1.svg)](https://utyanskiy.ru)
 
+---
+
+## 🎯 [IDX: 00128] WHO THIS STANDARD IS FOR (TARGET AUDIENCE)
+
+> ⚡ **One-sentence summary:**  
+> **"The Utyansky Index is an architectural safety standard for vibe coding that decomposes codebases into isolated slots under 400 lines (the 4 A4 pages limit) with Zero-Trust hardware locks, guaranteeing AI never silently breaks working project code."**
+
+| Track | Target Audience | Core Problem (Pain Point) | Solution with Utyansky Index |
+| :--- | :--- | :--- | :--- |
+| ⚙️ **For Developers & Vibe Coders** | Engineers using **Cursor AI**, **Claude Code**, **Windsurf**, autonomous AI agents | LLMs hallucinate in files >400 lines ("Lost in the Middle"), mutating working code and breaking UI dependencies | **100% context accuracy & zero hallucinations.** 4 A4 pages limit ($\le$ 400 lines), Zero-Trust `[IDX: 00000]` locks, deterministic $O(1)$ slot updates without layout shifts |
+| 💼 **For CTOs, Tech Leads & Founders** | Startup founders, engineering managers, agency leads, product owners | AI code turns into unmaintainable spaghetti debt; LLM token bills skyrocket with zero predictability | **Up to 85% LLM token cost reduction**, deterministic software engineering standard, proprietary IP protection |
+| 🏢 **For Enterprise & Product Teams** | SaaS platforms, CRM/ERP systems, e-commerce, Fintech, and high-load infrastructures | Unstable multi-agent pipelines, slow RAG retrieval, risk of proprietary code leakage to external AI networks | **Vector sharding via pgvector HNSW (1.5M+ records)**, Air-Gap Vault `[IDX: 00000-00000]` leak prevention, deterministic CI/CD |
 
 ---
 
