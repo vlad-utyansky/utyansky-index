@@ -32,10 +32,11 @@ While the previously established **Utyansky Law of 4 A4 Pages** (~400 lines per 
 ## ⚠️ 2. Observed Model Degradation Patterns at Maximum Context Saturation
 
 Upon reaching transformer attention saturation thresholds, LLMs exhibit specific regression patterns:
-* **Carpet-Bombing Overwrite Scripts:** A reluctance to perform surgical, scoped edits leads the model to generate external file-slicing scripts (`c[:pos] + code + c[pos:]`), erasing thousands of lines of validated code in a single command.
+* **Carpet-Bombing Overwrite Scripts (> 5,000 Lines):** Reluctance to perform surgical scoped edits leads the model to generate external file-slicing scripts (`c[:pos] + code + c[pos:]`), erasing over 5,000 lines of validated code in a single command under the guise of localized translation.
 * **Metric Hallucination & Fabrication:** The model replaces dynamic computations with synthetic static data (e.g., inventing phantom issue counts and dummy table rows).
 * **False Compliance Declarations:** The model explicitly claims adherence to system constraints in its textual responses while simultaneously violating and deleting those very constraints in code.
 * **Syntax Escaping Regressions:** Broken template literal escaping in JavaScript leads to uncaught runtime syntax errors, disabling client-side UI handlers.
+* **Phantom Feature Injection (Unsolicited Widgets):** The model breaches architectural boundaries and "takes the initiative" by fabricating unrequested UI components (such as phantom directory structure maps and fake page tables with hallucinated word counts) that never existed in the codebase, forcing engineers to spend hours locating and surgically removing deadweight code.
 * **Core Logic Degradation to Stubs:** Sophisticated multi-step reporting procedures are silently replaced with trivial `window.print()` wrappers.
 
 ---

@@ -105,13 +105,14 @@
 > * ⚡ **JavaScript Syntax Sentinel (`node --check`):** Automated syntax validation of all staged `.js` files and inline `<script>` tags in `.html`, preventing broken click handlers caused by unescaped template literals.
 > * 🔒 **Inviolability of `[IDX: 00000]` Locks:** Immediate commit rejection upon unauthorized removal or mutation of `data-lock="00000"` or sealed capsules in `00000_capsules/`.
 > * ⏳ **Session Quantization Law (80-Turn Threshold):** Standardized protocol recommending session archiving and renewal every 60–80 turns to preserve peak LLM attention density without degradation.
+> * 🛑 **Phantom Feature Suppression:** Eliminating unrequested LLM initiatives where saturated models invent fake UI widgets (directory structure maps, phantom page tables with hallucinated metrics) and inject unsolicited deadweight code.
 > 
 > 👉 **[ 📖 READ HARDWARE PRE-COMMIT GUARD & SESSION INTEGRITY SPECIFICATION v2.6.2 (EN) ➔ ](docs/en/RELEASE_v2_6_2_HARDWARE_PRE_COMMIT_AND_SESSION_INTEGRITY.md)** &nbsp;&nbsp;|&nbsp;&nbsp; **[ 🛡️ Git Pre-Commit Hook Script ➔ ](examples/git_pre_commit_guard.py)**
 
 ---
 
 <!-- [IDX: 00127] Announcement Block v2.6.1 Sensitive Info Protocol -->
-> ## 🔒 NEW IN v2.6.1: Utyansky Sensitive Information Protocol ($O(1)$ Sensitive Information Protocol)
+> ## 🔒 Release v2.6.1: Utyansky Sensitive Information Protocol ($O(1)$ Sensitive Information Protocol)
 > **Open architectural standard for hardware-level IP protection, trade secrets, and preventing AI data leaks:**
 > * ⬛ **Level 2 Lock `[IDX: 00000-00000]` (Air-Gap Vault):** Introduction of the highest confidential protection level. AI models and agents are strictly forbidden from copying, publishing to GitHub, or quoting private files across external networks.
 > * 📁 **Air-Gap Physical Isolation:** Proprietary assets reside strictly within isolated directory `00_SENSITIVE_VAULT_00000_00000/` formatted as `00000-00000-XXXXX_slug.ext`.
@@ -122,7 +123,7 @@
 ---
 
 <!-- [IDX: 00126] Announcement Block v2.6 Starter Kit -->
-> ## 🚀 NEW IN v2.6: Official Vibe Coding Starter Kit & Quality Telemetry ($O(1)$ Starter Kit & Telemetry)
+> ## 🚀 Release v2.6: Official Vibe Coding Starter Kit & Quality Telemetry ($O(1)$ Starter Kit & Telemetry)
 > **Open production starter kit for deterministic vibe-coding and automated reliability auditing:**
 > * 📦 **Official Starter Kit v2.6:** Ready-to-use repository template with slot structure, protected capsules (`capsules/00000-...`), git pre-commit hook, and $O(1)$ slot registry generator (`build_index.js`).
 > * 🛡️ **Clean Context Guardian Linter:** Automated verification script `guard_utyansky_slots.py` blocks non-compliant commits exceeding 4 A4 pages or violating `00000 Zero-Trust` seals.
