@@ -56,6 +56,17 @@
 
 ---
 
+### 📺 5-Minute Architecture Video Overview
+
+<a href="https://youtu.be/mwDlyhwUsSE" target="_blank">
+  <img src="docs/images/habr_cover_deterministic_vibecoding.png" alt="Watch 5-Minute Architecture Overview on YouTube" width="100%" style="border-radius: 12px;" />
+</a>
+
+> 🎬 **[ ▶️ Watch 5-Minute Architecture Video on YouTube (opens in new tab) ➔ ](https://youtu.be/mwDlyhwUsSE)**  
+> *5-minute visual walkthrough: how 5-digit slot isolation and deterministic $O(1)$ coordinates eliminate AI hallucinations and preserve 100% code integrity.*
+
+---
+
 > [!TIP]
 > ### ⭐ Support & Feedback
 > I’d be genuinely grateful for your feedback! If the Utyansky Index helped you tame AI hallucinations, save tokens, or streamline your architecture — please consider **supporting this project with a ⭐ Star (click the Star button in the top-right corner of this page)**.  
