@@ -698,11 +698,16 @@ The **«Utyansky Index»** standard is distributed under a transparent hybrid **
   * Air-Gap physical isolation inside `00_SENSITIVE_VAULT_00000_00000/` formatted as `00000-00000-XXXXX_slug.ext`.
   * Hardware export barriers via `.gitignore` and `guard_utyansky_slots.py` preventing AI models from copying or leaking confidential files.
   * Corporate specification for Enterprise and Banking monorepos (`[IDX: 00000-00004]`).
-* 🛡️ **v2.6.2 (October 10, 2026 / Hardware Pre-Commit Guard & Session Integrity Protocol — Current Stable):**
+* 🛡️ **v2.6.2 (October 10, 2026 / Hardware Pre-Commit Guard & Session Integrity Protocol):**
   * **14-Hour Endurance Marathon Findings (>3,200 turns):** Empirical investigation of transformer context degradation and failure modes during prolonged sessions.
   * **Hardware Git Pre-Commit Guard (`git_pre_commit_guard.py`):** OS-level barrier against destructive carpet-bombing overwrites (>150 lines) and unauthorized mutations of `[IDX: 00000]` locks.
   * **JavaScript Syntax Sentinel (`node --check`):** Compulsory pre-commit validation of staged scripts and inline blocks to prevent broken DOM handlers.
   * **Session Quantization Law:** Standardized protocol recommending context archiving and session renewal every 60–80 turns `[IDX: 00000-00027]`.
+* 🛡️ **v2.6.3 (October 11, 2026 / Collective Mirror Guard & Self-Protection Lock — Current Stable):**
+  * **Collective Mirror Guard (`guard_manifest.json`):** Deterministic solution for "silent mutations" during vibe-coding refactors. Byte-for-byte reference mirror verification before commit.
+  * **Kernel Self-Protection Lock:** Hardware barrier forbidding AI agents from editing the Guard script or pre-commit hooks without manual `$env:ALLOW_MASS_EDIT="1"` flag.
+  * **Anti-Unlink Barrier:** Instant commit rejection if an AI attempts to delete `guard_manifest.json` or purge protected reference pairs.
+  * **Standard Regulation Index:** `[IDX: 00000-00028]`.
 * 🔮 **v3.0 (Under Active R&D / Preview):**
   * **Autonomous Multi-Agent Swarms:** Zero-conflict concurrent code engineering for swarms of 10–20 autonomous AI agents in monorepos.
   * **DSL (Distributed Slot Locking):** Write-intent coordination via lease-based domain coordinate reservations.
