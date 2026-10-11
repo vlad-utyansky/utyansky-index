@@ -98,7 +98,7 @@ Integration takes 2 minutes:
 2. Configure `guard_manifest.json` in your repository root:
    ```json
    {
-     "version": "2.6.4",
+     "version": "2.6.3",
      "guarded_pairs": [
        {
          "id": "CORE_PROMPT",
@@ -109,4 +109,15 @@ Integration takes 2 minutes:
      ]
    }
    ```
-3. Any attempt by an LLM to alter working code without synchronizing its reference mirror will be instantly blocked at the OS level.
+3. Test protection in your terminal:
+   * Any attempt by an AI agent or engineer to alter the production file without synchronizing its mirror is immediately aborted by Git pre-commit:
+     ```text
+     🛑 [COLLECTIVE GUARD v2.6.3: CORE_PROMPT] File 'src/prompts/system_prompt.json' does not match reference mirror 'capsules/00000-mirror_prompt.json'!
+     Canonical system prompt mirror: unauthorized silent mutation blocked.
+     ```
+4. Legitimate canonical updates:
+   * The developer either commits changes to both the active file and mirror simultaneously, or passes the explicit developer override during global refactoring:
+     ```bash
+     ALLOW_MASS_EDIT=1 git commit -m "feat: authorized canonical update"
+     ```
+   This guarantees that no language model can silently compromise core logic or strip architectural safeguards during vibe-coding sessions.
