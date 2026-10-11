@@ -121,3 +121,19 @@ Integration takes 2 minutes:
      ALLOW_MASS_EDIT=1 git commit -m "feat: authorized canonical update"
      ```
    This guarantees that no language model can silently compromise core logic or strip architectural safeguards during vibe-coding sessions.
+
+---
+
+## 📦 7. Download Production Starter Kit v2.6.3
+
+All source files and templates are packaged for instant one-click deployment:
+
+> ### 📥 [Download Starter Kit v2.6.3 (ZIP Archive) ➔](https://github.com/vlad-utyansky/utyansky-index/raw/main/utyansky_starter_kit_v2_6_3.zip)
+> * **Archive Contents:**
+>   - 🛡️ `scripts/git_pre_commit_guard.py` — Hardware Git Pre-Commit Hook with Kernel Self-Protection Lock.
+>   - 🪞 `guard_manifest.json` — Reference mirror manifest v2.6.3.
+>   - 🐍 `scripts/guard_utyansky_slots.py` — Clean Context Guardian & 4 A4 Pages Linter.
+>   - 📦 `capsules/` — Protected reference capsules with `00000 Zero-Trust` seals.
+>   - ⚡ `scripts/build_index.js` — Automated $O(1)$ coordinate registry builder.
+> 
+> *Standalone source files are also directly inspectable in the repository: [`examples/git_pre_commit_guard.py`](https://github.com/vlad-utyansky/utyansky-index/blob/main/examples/git_pre_commit_guard.py) and [`examples/guard_manifest.json`](https://github.com/vlad-utyansky/utyansky-index/blob/main/examples/guard_manifest.json).*

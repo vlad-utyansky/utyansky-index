@@ -126,3 +126,19 @@ if norm_file in ['scripts/git_pre_commit_guard.py', '.git/hooks/pre-commit']:
      ALLOW_MASS_EDIT=1 git commit -m "feat: санкционированное обновление эталона"
      ```
    Это гарантирует, что ни одна нейросеть не сможет «под шумок» исказить логику или стереть правила безопасности.
+
+---
+
+## 📦 7. Скачать готовый комплект Starter Kit v2.6.3
+
+Все исходные коды и шаблоны упакованы в готовый архив для моментального внедрения:
+
+> ### 📥 [Скачать Starter Kit v2.6.3 (ZIP-архив) ➔](https://github.com/vlad-utyansky/utyansky-index/raw/main/utyansky_starter_kit_v2_6_3.zip)
+> * **Состав архива:**
+>   - 🛡️ `scripts/git_pre_commit_guard.py` — Аппаратный Git Pre-Commit Hook с самозащитой ядра.
+>   - 🪞 `guard_manifest.json` — Реестр канонических пар и эталонных зеркал v2.6.3.
+>   - 🐍 `scripts/guard_utyansky_slots.py` — Страж архитектуры и лимита 4 листов А4.
+>   - 📦 `capsules/` — Защищенные эталонные капсулы с замками `00000 Zero-Trust`.
+>   - ⚡ `scripts/build_index.js` — Автоматический генератор реестра координат $O(1)$.
+> 
+> *Отдельные файлы также доступны для просмотра в репозитории: [`examples/git_pre_commit_guard.py`](https://github.com/vlad-utyansky/utyansky-index/blob/main/examples/git_pre_commit_guard.py) и [`examples/guard_manifest.json`](https://github.com/vlad-utyansky/utyansky-index/blob/main/examples/guard_manifest.json).*
