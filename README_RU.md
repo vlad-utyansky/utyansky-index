@@ -109,7 +109,7 @@
 > * 🔗 **Защита Целостности Связей (Anti-Unlink Barrier):** Автоматическая блокировка коммита при попытке удалить файл связей `guard_manifest.json` или очистить эталонные пары.
 > * ⚡ **Синхронная Двухфакторная Модификация:** Любое обновление канонического файла требует осознанной синхронизации эталона, исключая случайную деградацию кода.
 > 
-> 👉 **[ 📖 ЧИТАТЬ РЕГЛАМЕНТ КОЛЛЕКТИВНОГО СТРАЖА ЗЕРКАЛ v2.6.3 (RU) ➔ ](docs/ru/RELEASE_v2_6_3_COLLECTIVE_MIRROR_GUARD.md)** &nbsp;&nbsp;|&nbsp;&nbsp; **[ 🛡️ Обновленный Скрипт Git Pre-Commit Hook ➔ ](examples/git_pre_commit_guard.py)**
+> 👉 **[ 📖 ЧИТАТЬ РЕГЛАМЕНТ КОЛЛЕКТИВНОГО СТРАЖА ЗЕРКАЛ v2.6.3 (RU) ➔ ](docs/ru/RELEASE_v2_6_3_COLLECTIVE_MIRROR_GUARD.md)** &nbsp;&nbsp;|&nbsp;&nbsp; **[ 📦 Скачать Starter Kit v2.6.3 (ZIP) ➔ ](https://github.com/vlad-utyansky/utyansky-index/raw/main/utyansky_starter_kit_v2_6_3.zip)** &nbsp;&nbsp;|&nbsp;&nbsp; **[ 🛡️ Скрипт Git Pre-Commit Hook ➔ ](examples/git_pre_commit_guard.py)**
 
 ---
 

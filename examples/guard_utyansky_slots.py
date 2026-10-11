@@ -1,197 +1,120 @@
-# -*- coding: utf-8 -*-
+#!/usr/bin/env python3
 """
-🏛️ [IDX: 00000-00003] АВТОНОМНЫЙ СТРАЖ АРХИТЕКТУРЫ ИНДЕКСА УТЯНСКОГО v2.6.1 (GUARDIAN LINTER)
-Проверка по 6 фундаментальным законам Вайбкодинга:
-1. Контроль Синтаксиса [IDX: XXXXX] (Ноль букв внутри скобок)
-2. Поиск Коллизий и Дубликатов Слотов O(1)
-3. Контроль Калибра «4 Листа А4» (Лимит до 400 строк на файл)
-4. Контроль Защитных Пломб [IDX: 00000] (Zero-Trust Default Lock)
-5. Контроль Чувствительной Информации [IDX: 00000-00000] (Top Secret Air-Gap Vault)
-6. Контроль Неизменяемости и Защиты от Утечек в Публичные Директории
+guard_utyansky_slots.py — Страж архитектуры Индекса Утянского
+Запуск: python scripts/guard_utyansky_slots.py
+Pre-commit: подключается в .git/hooks/pre-commit
+
+Проверяет:
+  1. Синтаксис [IDX: XXXXX] — только цифры и тире
+  2. Лимит 4 листов А4 — файлы длиннее 450 строк
+  3. Коллизии IDX — дублирование адресов
+  4. Замок 00000 — попытка правки залоченных капсул
 """
 
-import os
-import re
-import sys
-import hashlib
-import collections
+import os, re, sys, json
 
-if hasattr(sys.stdout, 'reconfigure'):
-    sys.stdout.reconfigure(encoding='utf-8')
+ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+SCAN_DIRS = ['src', 'capsules']
+MAX_LINES = 450
 
-VALID_IDX_PATTERN = re.compile(r'\[IDX:\s*([0-9\-]+)\]')
-INVALID_IDX_PATTERN = re.compile(r'\[IDX:\s*([0-9\-]*[a-zA-Z_]+[0-9a-zA-Z_\-]*)\]')
-INVALID_DATA_IDX_PATTERN = re.compile(r'data-idx=["\']([0-9\-]*[a-zA-Z_]+[0-9a-zA-Z_\-]*)["\']')
-LOCK_PATTERN = re.compile(r'data-lock=["\']00000["\']|\[IDX:\s*00000')
+IDX_RE = re.compile(r'\[IDX:\s*([0-9\-]+)\]', re.IGNORECASE)
+DATA_IDX_RE = re.compile(r'data-idx="([0-9\-]+)"', re.IGNORECASE)
+DATA_LOCK_RE = re.compile(r'data-lock="([0-9]+)"', re.IGNORECASE)
+BAD_IDX_RE = re.compile(r'\[IDX:\s*([0-9\-]*[a-zA-Zа-яА-Я_][0-9a-zA-Zа-яА-Я_\-]*)\]', re.IGNORECASE)
 
-MAX_A4_LINES = 450
+errors = []
+registry = {}
 
-PUBLIC_DIRS_KEYWORDS = ['06_github', 'utyansky_index_def_clone', 'sait', 'site', 'public', 'web']
-VAULT_DIR_NAME = '00_SENSITIVE_VAULT_00000_00000'
+def walk(d):
+    for root, _, files in os.walk(d):
+        for fn in files:
+            yield os.path.join(root, fn)
 
-PLACEHOLDER_TAGS = {'[IDX: XXXXX]', 'data-idx="XXXXX"', 'data-idx="7XXXX"', '[IDX: 7XXXX]', '[IDX: 71080-BTN]'}
+for sub in SCAN_DIRS:
+    scan_path = os.path.join(ROOT, sub)
+    if not os.path.isdir(scan_path):
+        continue
+    for fpath in walk(scan_path):
+        rel = os.path.relpath(fpath, ROOT)
+        with open(fpath, encoding='utf-8') as f:
+            text = f.read()
+        lines = text.count('\n') + 1
 
-def calculate_sha256(filepath):
+        # 1. Буквы в IDX
+        for m in BAD_IDX_RE.finditer(text):
+            errors.append(f'BAD_IDX: {rel} — буквы внутри [IDX: ...] запрещены')
+
+        # 2. Лимит строк
+        if lines > MAX_LINES:
+            errors.append(f'LIMIT: {rel} — {lines} строк > {MAX_LINES}. Декомпозируйте.')
+
+        # 3. Коллизии
+        file_indices = set()
+        for m in IDX_RE.finditer(text):
+            file_indices.add(m.group(1))
+        for m in DATA_IDX_RE.finditer(text):
+            file_indices.add(m.group(1))
+        
+        # Если это JSON капсула с полем "idx"
+        if fpath.endswith('.json'):
+            try:
+                js = json.loads(text)
+                if isinstance(js, dict) and '_meta' in js and 'idx' in js['_meta']:
+                    file_indices.add(str(js['_meta']['idx']))
+            except:
+                pass
+
+        for idx in file_indices:
+            if idx in registry and registry[idx] != rel:
+                errors.append(f'COLLISION: [IDX: {idx}] — {rel} конфликтует с {registry[idx]}')
+            else:
+                registry[idx] = rel
+
+        # 4. Замок на капсулах
+        is_capsule = os.path.basename(fpath).startswith('00000-')
+        has_html_lock = bool(DATA_LOCK_RE.search(text))
+        has_json_lock = '"lock": "00000"' in text or '"lock":"00000"' in text
+        if is_capsule and not (has_html_lock or has_json_lock):
+            errors.append(f'NO_LOCK: {rel} — капсула без data-lock="00000" или "lock": "00000"')
+
+# 5. Закон 4 Индекса Утянского v2.6.3: Коллективный Страж Зеркал (Collective Mirror Guard)
+manifest_file = os.path.join(ROOT, 'guard_manifest.json')
+if not os.path.exists(manifest_file):
+    errors.append(
+        "NO_MANIFEST: Файл связей 'guard_manifest.json' отсутствует или был удален! "
+        "Аппаратный запрет на стирание связей эталонов Индекса Утянского v2.6.3."
+    )
+else:
     try:
-        hasher = hashlib.sha256()
-        with open(filepath, 'rb') as f:
-            for chunk in iter(lambda: f.read(65536), b''):
-                hasher.update(chunk)
-        return hasher.hexdigest()[:16]
-    except Exception:
-        return 'UNKNOWN'
+        with open(manifest_file, encoding='utf-8') as mf:
+            m_data = json.load(mf)
+        pairs = m_data.get('guarded_pairs', [])
+        if not pairs:
+            errors.append("EMPTY_MANIFEST: Манифест связей пуст! Попытка затереть эталонные связи заблокирована.")
+        for pair in pairs:
+            w_file = os.path.join(ROOT, pair.get('working_file', ''))
+            m_file = os.path.join(ROOT, pair.get('mirror_file', ''))
+            if not os.path.exists(w_file):
+                errors.append(f"MISSING_WORKING_FILE: Рабочий файл '{pair.get('working_file')}' отсутствует!")
+            elif not os.path.exists(m_file):
+                errors.append(f"MISSING_MIRROR_FILE: Эталонное зеркало '{pair.get('mirror_file')}' отсутствует!")
+            else:
+                with open(w_file, encoding='utf-8') as f1, open(m_file, encoding='utf-8') as f2:
+                    if f1.read().strip() != f2.read().strip():
+                        errors.append(
+                            f"MIRROR_TAMPER: [{pair.get('id', 'CANON')}] Файл '{pair.get('working_file')}' "
+                            f"не совпадает с эталонным зеркалом '{pair.get('mirror_file')}'! "
+                            f"Несанкционированная мутация заблокирована Стражем Утянского v2.6.3."
+                        )
+    except Exception as ex:
+        errors.append(f"MANIFEST_ERR: Ошибка чтения guard_manifest.json: {ex}")
 
-def scan_file(filepath):
-    results = {
-        "line_count": 0,
-        "invalid_syntax": [],
-        "valid_indexes": [],
-        "has_lock": False
-    }
-    try:
-        with open(filepath, 'r', encoding='utf-8', errors='ignore') as f:
-            lines = f.readlines()
-            results["line_count"] = len(lines)
-            
-            for idx, line in enumerate(lines, 1):
-                if any(bad_marker in line for bad_marker in ['❌', 'НЕПРАВИЛЬНО', 'WRONG', 'BAD:', 'например', 'Example', 'syntax']):
-                    continue
-
-                m_inv1 = INVALID_IDX_PATTERN.findall(line)
-                m_inv2 = INVALID_DATA_IDX_PATTERN.findall(line)
-                if m_inv1:
-                    for v in m_inv1:
-                        tag_str = f"[IDX: {v}]"
-                        if tag_str not in PLACEHOLDER_TAGS and 'XXXX' not in v:
-                            results["invalid_syntax"].append((idx, tag_str, line.strip()))
-                if m_inv2:
-                    for v in m_inv2:
-                        tag_str = f"data-idx=\"{v}\""
-                        if tag_str not in PLACEHOLDER_TAGS and 'XXXX' not in v:
-                            results["invalid_syntax"].append((idx, tag_str, line.strip()))
-                
-                m_val = VALID_IDX_PATTERN.findall(line)
-                if m_val:
-                    for v in m_val:
-                        results["valid_indexes"].append((v, idx))
-                
-                if LOCK_PATTERN.search(line):
-                    results["has_lock"] = True
-    except Exception:
-        pass
-    return results
-
-def main():
-    root_dir = sys.argv[1] if len(sys.argv) > 1 else os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-    root_dir = os.path.abspath(root_dir)
-    print("=" * 75, flush=True)
-    print("🏛️ [IDX: 00000-00003] СТРАЖ АРХИТЕКТУРЫ ИНДЕКСА УТЯНСКОГО v2.6.1 (GUARDIAN LINTER)", flush=True)
-    print(f"📁 Сканирование директории: {root_dir}\n", flush=True)
-    
-    total_files = 0
-    oversized_files = []
-    syntax_violations = []
-    vault_leaks = []
-    vault_files = []
-    all_indexes = collections.defaultdict(list)
-    
-    skip_dirs = {
-        'node_modules', '.git', 'dist', 'build', '__pycache__', '.gemini', 
-        'temp', 'tmp', 'scratch', 'backups', 'video', 'video_originals_backup', 
-        'beget_deploy_package', 'archive', '_archive', '.vscode', '.idea'
-    }
-    
-    vault_path = os.path.join(root_dir, VAULT_DIR_NAME)
-    if not os.path.exists(vault_path):
-        parent_vault = os.path.join(os.path.dirname(root_dir), VAULT_DIR_NAME)
-        if os.path.exists(parent_vault):
-            vault_path = parent_vault
-
-    if os.path.exists(vault_path):
-        for v_file in os.listdir(vault_path):
-            v_full = os.path.join(vault_path, v_file)
-            if os.path.isfile(v_full):
-                v_hash = calculate_sha256(v_full)
-                with open(v_full, 'r', encoding='utf-8', errors='ignore') as f:
-                    v_lines = len(f.readlines())
-                vault_files.append((v_file, v_hash, v_lines))
-
-    for root, dirs, files in os.walk(root_dir):
-        dirs[:] = [d for d in dirs if d.lower() not in skip_dirs and not d.startswith('.')]
-        for file in files:
-            if file.endswith(('.md', '.html', '.jsx', '.js', '.py', '.json')):
-                filepath = os.path.join(root, file)
-                total_files += 1
-                res = scan_file(filepath)
-                rel_path = os.path.relpath(filepath, root_dir).replace('\\', '/')
-                
-                # 1. Синтаксис
-                if res["invalid_syntax"]:
-                    for line_num, tag, line_str in res["invalid_syntax"]:
-                        syntax_violations.append((rel_path, line_num, tag, line_str))
-                
-                # 2. Лимит А4
-                if res["line_count"] > MAX_A4_LINES and not file.endswith(('_MASTER.md', '.json', 'package-lock.json', 'index.html')):
-                    oversized_files.append((rel_path, res["line_count"]))
-                
-                # 3. Индексы
-                for idx_val, line_num in res["valid_indexes"]:
-                    if idx_val != "00000" and not idx_val.startswith("00000"):
-                        all_indexes[idx_val].append((rel_path, line_num))
-                
-                # 4. Проверка утечек Top Secret файлов в публичные зоны
-                is_public_zone = any(k in rel_path.lower() for k in PUBLIC_DIRS_KEYWORDS)
-                if file.startswith('00000-00000-') and is_public_zone:
-                    vault_leaks.append((rel_path, file))
-
-    # Вывод отчетов
-    print("📊 1. КОНТРОЛЬ СИНТАКСИСА [IDX: 00000-00000] (Ноль букв в скобках):", flush=True)
-    if not syntax_violations:
-        print("   ✅ Все 100% индексов строго соответствуют числовому формату!", flush=True)
-    else:
-        print(f"   ⚠️ Найдено буквенных нарушений: {len(syntax_violations)}", flush=True)
-        for rel_path, line_num, tag, _ in syntax_violations[:5]:
-            print(f"      • {rel_path}:{line_num} -> {tag}", flush=True)
-
-    print("\n📊 2. КОНТРОЛЬ КАЛИБРА «4 ЛИСТА А4» (Лимит 400-450 строк):", flush=True)
-    if not oversized_files:
-        print("   ✅ Все файлы находятся в пределах зеленой зоны внимания ИИ!", flush=True)
-    else:
-        print(f"   ⚠️ Обнаружено файлов-великанов (> 450 строк): {len(oversized_files)}")
-        for rel_path, l_count in oversized_files[:5]:
-            print(f"      • {rel_path} -> {l_count} строк (~{round(l_count/100, 1)} листов А4)", flush=True)
-
-    print("\n📊 3. КОНТРОЛЬ КОЛЛИЗИЙ И ДУБЛИКАТОВ СЛОТОВ O(1):", flush=True)
-    duplicates = {k: v for k, v in all_indexes.items() if len(v) > 1}
-    print(f"   ℹ️ Всего уникальных зарегистрированных числовых слотов: {len(all_indexes)}")
-    if duplicates:
-        print(f"   ℹ️ Индексы с кросс-ссылками: {len(duplicates)}")
-    else:
-        print("   ✅ 100% слотов изолированы без пересечений!")
-
-    print("\n📊 4. ЗАЩИТА ЧУВСТВИТЕЛЬНОЙ ИНФОРМАЦИИ [IDX: 00000-00000] (Top Secret Air-Gap Vault):", flush=True)
-    if vault_leaks:
-        print(f"   🚨 КРИТИЧЕСКАЯ УТЕЧКА! Найдено {len(vault_leaks)} закрытых файлов в публичных зонах:", flush=True)
-        for r_path, f_name in vault_leaks:
-            print(f"      ❌ {r_path}", flush=True)
-    else:
-        print("   🛡️ Утечек ноу-хау и закрытых капсул в публичные зоны НЕ ОБНАРУЖЕНО (Чисто).", flush=True)
-
-    print(f"\n📊 5. КОНТРОЛЬ НЕИЗМЕНЯЕМОСТИ И ХЕШЕЙ КАПСУЛ ХРАНИЛИЩА ({VAULT_DIR_NAME}):", flush=True)
-    if vault_files:
-        print(f"   🔒 Зафиксировано закрытых капсул в Air-Gap хранилище: {len(vault_files)}")
-        for v_name, v_hash, v_lines in vault_files:
-            print(f"      • {v_name} [SHA-256: {v_hash}] ({v_lines} строк) — ПОД ЗАМКОМ", flush=True)
-    else:
-        print("   ℹ️ Физическое хранилище пусто или не найдено.", flush=True)
-
-    print("\n" + "=" * 75, flush=True)
-    print(f"🏆 СВОДКА АУДИТА: Проверено {total_files} файлов. Защита Железного Купола v2.6.1 АКТИВНА.", flush=True)
-    print("=" * 75, flush=True)
-    
-    if vault_leaks or syntax_violations:
-        return 1
-    return 0
-
-if __name__ == "__main__":
-    sys.exit(main())
+if errors:
+    print('\n=== 🛡️ Utyansky Guard v2.6.3: нарушения найдены ===\n')
+    for e in errors:
+        print(f'  • {e}')
+    print(f'\nВсего нарушений: {len(errors)}. Коммит заблокирован.\n')
+    sys.exit(1)
+else:
+    print(f'\nGuard: OK. {len(registry)} слотов, нарушений нет.\n')
+    sys.exit(0)

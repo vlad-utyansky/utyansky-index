@@ -1,0 +1,15 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Utyansky Guard Collective Manifest v2.6.3",
+  "author": "Vladislav Utyansky",
+  "version": "2.6.3",
+  "description": "Конфигурация эталонных пар для проверки целостности перед коммитом",
+  "guarded_pairs": [
+    {
+      "id": "CORE_PROMPT_CAPSULE",
+      "working_file": "capsules/00000-70000-00001_agent_planner_prompt.json",
+      "mirror_file": "capsules/00000-70000-00001_agent_planner_prompt.json",
+      "description": "Эталонная капсула системного промпта"
+    }
+  ]
+}

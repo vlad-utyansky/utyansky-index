@@ -108,7 +108,7 @@
 > * 🔗 **Anti-Unlink Barrier:** Instant commit rejection if an AI attempts to delete `guard_manifest.json` or purge protected reference pairs.
 > * ⚡ **Dual-Factor Canon Synchronization:** Modifying a canonical asset requires synchronous mirror updates, eliminating accidental code regression.
 > 
-> 👉 **[ 📖 READ COLLECTIVE MIRROR GUARD SPECIFICATION v2.6.3 (EN) ➔ ](docs/en/RELEASE_v2_6_3_COLLECTIVE_MIRROR_GUARD.md)** &nbsp;&nbsp;|&nbsp;&nbsp; **[ 🛡️ Git Pre-Commit Hook Script ➔ ](examples/git_pre_commit_guard.py)**
+> 👉 **[ 📖 READ COLLECTIVE MIRROR GUARD SPECIFICATION v2.6.3 (EN) ➔ ](docs/en/RELEASE_v2_6_3_COLLECTIVE_MIRROR_GUARD.md)** &nbsp;&nbsp;|&nbsp;&nbsp; **[ 📦 Download Starter Kit v2.6.3 (ZIP) ➔ ](https://github.com/vlad-utyansky/utyansky-index/raw/main/utyansky_starter_kit_v2_6_3.zip)** &nbsp;&nbsp;|&nbsp;&nbsp; **[ 🛡️ Git Pre-Commit Hook Script ➔ ](examples/git_pre_commit_guard.py)**
 
 ---
 
