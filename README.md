@@ -3,6 +3,7 @@
 [![Language: English (EN)](https://img.shields.io/badge/Language-English%20(EN)-blue?style=for-the-badge)](README.md)
 [![Language: Russian (RU)](https://img.shields.io/badge/Language-Russian%20(RU)-red?style=for-the-badge)](README_RU.md)
 [![Version 2.0 (Author Specification)](https://img.shields.io/badge/Version-2.0%20(Specification)-emerald?style=for-the-badge)](https://github.com/vlad-utyansky/utyansky-index)
+[![Release v2.6.3](https://img.shields.io/badge/Release-v2.6.3-emerald?style=for-the-badge)](docs/en/RELEASE_v2_6_3_COLLECTIVE_MIRROR_GUARD.md)
 [![Release v2.6.2](https://img.shields.io/badge/Release-v2.6.2-emerald?style=for-the-badge)](docs/en/RELEASE_v2_6_2_HARDWARE_PRE_COMMIT_AND_SESSION_INTEGRITY.md)
 [![Release v2.6.1](https://img.shields.io/badge/Release-v2.6.1-blue?style=for-the-badge)](docs/en/RELEASE_v2_6_1_SENSITIVE_INFO_PROTOCOL.md)
 [![Version 1.0 (March 2026 Archive)](https://img.shields.io/badge/Version-1.0%20(March%202026%20Alpha)-orange?style=for-the-badge)](docs/en/VERSION_1.0_MARCH_2026_ARCHIVE.md)
@@ -92,14 +93,27 @@
 > * **October 08, 2026 (11:00 MSK)** — **v2.6 Official Vibe Coding Starter Kit & Quality Telemetry Release**: official release of production Starter Kit v2.6 with slot isolation and pre-commit hook, standardized reliability telemetry (CRS $\ge 0.90$, RFR $\le 10\%$, CHI $\ge 90\%$), and `telemetry_benchmark.js`. [ 📖 Read Chapter v2.6 ➔ ](docs/en/RELEASE_v2_6_STARTER_KIT_AND_TELEMETRY.md) | [ 📦 Download Starter Kit (ZIP) ➔ ](https://github.com/vlad-utyansky/utyansky-index/raw/main/utyansky_starter_kit_v2_6.zip)
 > * **October 08, 2026 (19:30 MSK)** — **v2.6.1 Utyansky Sensitive Information Protocol Release**: establishment of Level 2 Lock `[IDX: 00000-00000]` («Black Box Vault»), physical Air-Gap isolation, and automated anti-leak hardware shields. [ 📖 Read Chapter v2.6.1 ➔ ](docs/en/RELEASE_v2_6_1_SENSITIVE_INFO_PROTOCOL.md)
 > * **October 10, 2026 (19:30 MSK)** — **v2.6.2 Hardware Pre-Commit Guard & Session Integrity Release**: findings of a 14-hour endurance stress marathon (>3,200 interactive turns in a single session), OS-level Git pre-commit barrier against carpet-bombing overwrites (>150 lines), JavaScript syntax sentinel (`node --check`), inviolability of `[IDX: 00000]` locks, and Session Quantization Law (80-turn threshold) `[IDX: 00000-00027]`. [ 📖 Read Chapter v2.6.2 ➔ ](docs/en/RELEASE_v2_6_2_HARDWARE_PRE_COMMIT_AND_SESSION_INTEGRITY.md)
+> * **🔥 October 11, 2026 (12:30 MSK)** — **v2.6.3 Collective Mirror Guard & Kernel Self-Protection Release**: deterministic solution for "silent mutations" during vibe-coding refactors. Byte-for-byte reference mirror verification via `guard_manifest.json`, anti-unlink barrier, and Level 0 hardware self-protection preventing AI models from mutating safety guard scripts (`[IDX: 00000-00028]`). [ 📖 Read Chapter v2.6.3 ➔ ](docs/en/RELEASE_v2_6_3_COLLECTIVE_MIRROR_GUARD.md)
 
 ---
 
 <!-- [IDX: 00005] VCODES Analytics Beacon -->
 <img src="https://api.vcodes.ru/api/beacon?repo=utyansky-index&lang=en" width="1" height="1" alt="" style="display:none;" />
 
+<!-- [IDX: 00130] Announcement Block v2.6.3 Collective Mirror Guard & Self-Protection Lock -->
+> ## 🛡️ NEW IN v2.6.3: Collective Mirror Guard & Kernel Self-Protection ($O(1)$ Collective Mirror Guard & Self-Protection Lock)
+> **Open engineering standard preventing silent AI mutations and tampering with safety scripts:**
+> * 🪞 **Collective Mirror Guard (`guard_manifest.json`):** OS-level pre-commit verification ensuring production code matches reference mirrors, preventing silent drift in critical prompts and formulas during refactoring.
+> * 🔒 **Kernel Self-Protection Lock:** Hardware barrier forbidding AI agents from editing the Guard script or pre-commit hooks without an explicit manual `ALLOW_MASS_EDIT="1"` flag.
+> * 🔗 **Anti-Unlink Barrier:** Instant commit rejection if an AI attempts to delete `guard_manifest.json` or purge protected reference pairs.
+> * ⚡ **Dual-Factor Canon Synchronization:** Modifying a canonical asset requires synchronous mirror updates, eliminating accidental code regression.
+> 
+> 👉 **[ 📖 READ COLLECTIVE MIRROR GUARD SPECIFICATION v2.6.3 (EN) ➔ ](docs/en/RELEASE_v2_6_3_COLLECTIVE_MIRROR_GUARD.md)** &nbsp;&nbsp;|&nbsp;&nbsp; **[ 🛡️ Git Pre-Commit Hook Script ➔ ](examples/git_pre_commit_guard.py)**
+
+---
+
 <!-- [IDX: 00129] Announcement Block v2.6.2 Hardware Pre-Commit Guard & Session Integrity -->
-> ## 🛡️ NEW IN v2.6.2: Hardware Git Pre-Commit Guard & Session Integrity ($O(1)$ Hardware Guard & Session Integrity)
+> ## 🛡️ Release v2.6.2: Hardware Git Pre-Commit Guard & Session Integrity ($O(1)$ Hardware Guard & Session Integrity)
 > **Open engineering standard for hardware mutation prevention and LLM context saturation control:**
 > * 🛡️ **Anti-Carpet-Bombing Barrier (> 150 lines):** OS-level pre-commit hook automatically aborts commits when script-based file slicing (`c[:pos] + code + c[pos:]`) deletes over 150 lines of stable code.
 > * ⚡ **JavaScript Syntax Sentinel (`node --check`):** Automated syntax validation of all staged `.js` files and inline `<script>` tags in `.html`, preventing broken click handlers caused by unescaped template literals.

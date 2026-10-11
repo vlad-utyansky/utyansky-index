@@ -3,6 +3,7 @@
 [![Русский](https://img.shields.io/badge/Язык-Русский%20(RU)-red?style=for-the-badge)](README_RU.md)
 [![English](https://img.shields.io/badge/Language-English%20(EN)-blue?style=for-the-badge)](README.md)
 [![Версия 2.0 (Авторская Спецификация)](https://img.shields.io/badge/Версия-2.0%20(Спецификация)-emerald?style=for-the-badge)](https://github.com/vlad-utyansky/utyansky-index)
+[![Релиз v2.6.3](https://img.shields.io/badge/Релиз-v2.6.3-emerald?style=for-the-badge)](docs/ru/RELEASE_v2_6_3_COLLECTIVE_MIRROR_GUARD.md)
 [![Релиз v2.6.2](https://img.shields.io/badge/Релиз-v2.6.2-emerald?style=for-the-badge)](docs/ru/RELEASE_v2_6_2_HARDWARE_PRE_COMMIT_AND_SESSION_INTEGRITY.md)
 [![Релиз v2.6.1](https://img.shields.io/badge/Релиз-v2.6.1-blue?style=for-the-badge)](docs/ru/RELEASE_v2_6_1_SENSITIVE_INFO_PROTOCOL.md)
 [![Версия 1.0 (Архив Март 2026)](https://img.shields.io/badge/Версия-1.0%20(Март%202026%20Alpha)-orange?style=for-the-badge)](docs/ru/АРХИВ_ВЕРСИЯ_1.0_МАРТ_2026.md)
@@ -93,14 +94,27 @@
 > * **08 Октября 2026 г. (11:00 МСК)** — **Релиз v2.6 Официальный Стартер-Кит Вайбкодинга и Телеметрия Качества (Starter Kit & Quality Telemetry)**: официальный релиз готового Starter Kit v2.6 со слотовой структурой и pre-commit хуком, стандартизированная телеметрия надежности (CRS $\ge 0.90$, RFR $\le 10\%$, CHI $\ge 90\%$) и скрипт `telemetry_benchmark.js`. [ 📖 Читать главу v2.6 ➔ ](docs/ru/RELEASE_v2_6_STARTER_KIT_AND_TELEMETRY.md) | [ 📦 Скачать Starter Kit (ZIP) ➔ ](https://github.com/vlad-utyansky/utyansky-index/raw/main/utyansky_starter_kit_v2_6.zip)
 > * **08 Октября 2026 г. (19:30 МСК)** — **Релиз v2.6.1 Регламент Утянского по Защите Чувствительной Информации (Sensitive Information Protocol)**: внедрение Уровня 2 Замка `[IDX: 00000-00000]` («Black Box Vault»), принципа физической изоляции Air-Gap и аппаратного запрета на перемещение и утечку ноу-хау. [ 📖 Читать главу v2.6.1 ➔ ](docs/ru/RELEASE_v2_6_1_SENSITIVE_INFO_PROTOCOL.md)
 > * **10 Октября 2026 г. (19:30 МСК)** — **Релиз v2.6.2 Аппаратный Git Pre-Commit Hook и Контроль Сессий (Hardware Pre-Commit Guard & Session Integrity Protocol)**: итоги 14-часового стресс-марафона (>3 200 интерактивных шагов в единой сессии), системный барьер Git на уровне ОС против ковровых удалений (>150 строк), синтаксический дозор JavaScript (`node --check`), абсолютная неприкосновенность замков `[IDX: 00000]` и Закон квантования сессий (лимит 80 шагов) `[IDX: 00000-00027]`. [ 📖 Читать главу v2.6.2 ➔ ](docs/ru/RELEASE_v2_6_2_HARDWARE_PRE_COMMIT_AND_SESSION_INTEGRITY.md)
+> * **🔥 11 Октября 2026 г. (12:30 МСК)** — **Релиз v2.6.3 Коллективный Страж Зеркал и Аппаратная Самозащита Ядра (Collective Mirror Guard & Self-Protection Lock)**: аппаратное решение проблемы «тихих мутаций» под шумок рефакторинга. Побайтовый контроль канонических пар через манифест `guard_manifest.json`, блокировка стирания эталонных связей и абсолютная защита самого скрипта Стража от попыток нейросетей переписать правила безопасности (`[IDX: 00000-00028]`). [ 📖 Читать главу v2.6.3 ➔ ](docs/ru/RELEASE_v2_6_3_COLLECTIVE_MIRROR_GUARD.md)
 
 ---
 
 <!-- [IDX: 00005] VCODES Analytics Beacon -->
 <img src="https://api.vcodes.ru/api/beacon?repo=utyansky-index&lang=ru" width="1" height="1" alt="" style="display:none;" />
 
+<!-- [IDX: 00130] Announcement Block v2.6.3 Collective Mirror Guard & Self-Protection Lock -->
+> ## 🛡️ НОВОЕ В v2.6.3: Коллективный Страж Зеркал и Аппаратная Самозащита Ядра ($O(1)$ Collective Mirror Guard & Self-Protection Lock)
+> **Открытый инженерный стандарт предотвращения «тихих мутаций» и попыток ИИ переписать сторожевые правила:**
+> * 🪞 **Коллективный Страж Зеркал (`guard_manifest.json`):** Аппаратный контроль соответствия рабочих файлов эталонным зеркалам перед каждым коммитом. Исключает незаметное изменение формул и промптов «под шумок» сопутствующего рефакторинга.
+> * 🔒 **Аппаратная Самозащита Стража (Self-Protection Lock):** Физический запрет на модификацию самого скрипта Стража и pre-commit хука нейросетями. Без явной переменной `ALLOW_MASS_EDIT="1"`, введенной разработчиком, модель не может ослабить правила.
+> * 🔗 **Защита Целостности Связей (Anti-Unlink Barrier):** Автоматическая блокировка коммита при попытке удалить файл связей `guard_manifest.json` или очистить эталонные пары.
+> * ⚡ **Синхронная Двухфакторная Модификация:** Любое обновление канонического файла требует осознанной синхронизации эталона, исключая случайную деградацию кода.
+> 
+> 👉 **[ 📖 ЧИТАТЬ РЕГЛАМЕНТ КОЛЛЕКТИВНОГО СТРАЖА ЗЕРКАЛ v2.6.3 (RU) ➔ ](docs/ru/RELEASE_v2_6_3_COLLECTIVE_MIRROR_GUARD.md)** &nbsp;&nbsp;|&nbsp;&nbsp; **[ 🛡️ Обновленный Скрипт Git Pre-Commit Hook ➔ ](examples/git_pre_commit_guard.py)**
+
+---
+
 <!-- [IDX: 00129] Announcement Block v2.6.2 Hardware Pre-Commit Guard & Session Integrity -->
-> ## 🛡️ НОВОЕ В v2.6.2: Аппаратный Git Pre-Commit Hook и Контроль Сессий ($O(1)$ Hardware Guard & Session Integrity)
+> ## 🛡️ Релиз v2.6.2: Аппаратный Git Pre-Commit Hook и Контроль Сессий ($O(1)$ Hardware Guard & Session Integrity)
 > **Открытый инженерный стандарт защиты от мутаций кода при предельном насыщении контекста нейросетей:**
 > * 🛡️ **Анти-Бомбардировка (> 150 строк):** Физическая блокировка коммита на уровне операционной системы при попытке внешних скриптов сплошного среза файлов (`c[:pos] + code + c[pos:]`) удалить более 150 строк стабильного кода.
 > * ⚡ **Синтаксический Дозор JavaScript (`node --check`):** Автоматическая валидация синтаксиса staged `.js` файлов и встроенных `<script>` блоков в `.html`. Исключает падение DOM-обработчиков из-за незакрытых кавычек и template literals.

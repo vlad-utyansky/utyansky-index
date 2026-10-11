@@ -78,15 +78,30 @@ def main():
     if not staged_files:
         return 0
 
-    print("🛡️ [UTYANSKY PRE-COMMIT GUARD v2.6.2] Проверка staged изменений...", flush=True)
+    print("🛡️ [UTYANSKY PRE-COMMIT GUARD v2.6.3] Проверка staged изменений...", flush=True)
     violations = []
     warnings = []
     allow_override = os.environ.get(ALLOW_OVERRIDE_ENV) == "1"
 
+    # 0. АППАРАТНАЯ САМОЗАЩИТА СТРАЖА И СВЯЗЕЙ (Self-Protection Lock v2.6.3)
+    # Запрет на стирание стража, хука и манифеста эталонных связей
+    PROTECTED_GUARD_FILES = [
+        'examples/git_pre_commit_guard.py',
+        'scripts/git_pre_commit_guard.py',
+        '.git/hooks/pre-commit',
+        'guard_manifest.json'
+    ]
+
     for rel_path in staged_files:
         norm_path = rel_path.replace('\\', '/')
-        if norm_path.endswith('git_pre_commit_guard.py'):
-            continue
+
+        if any(norm_path.endswith(pgf) or pgf in norm_path for pgf in PROTECTED_GUARD_FILES):
+            if not allow_override:
+                violations.append(
+                    f"🛑 [САМОЗАЩИТА СТРАЖА v2.6.3] Попытка несанкционированной модификации Стража или Манифеста Связей: '{rel_path}'! "
+                    f"ИИ-моделям аппаратно запрещено изменять скрипт безопасности и стирать связи эталонов без ALLOW_MASS_EDIT=1."
+                )
+                continue
 
         # 1. Защита капсул 00000_*
         if '00000_capsules' in norm_path or norm_path.startswith('00000-'):
@@ -96,6 +111,27 @@ def main():
         # 2. Проверка объема удалений
         diff_out = run_cmd(['git', 'diff', '--cached', '-U0', '--', rel_path])
         deleted_lines_count = sum(1 for line in diff_out.split('\n') if line.startswith('-') and not line.startswith('---'))
+
+        # 2.1. КОЛЛЕКТИВНЫЙ СТРАЖ ЗЕРКАЛ (Collective Mirror Guard v2.6.3)
+        manifest_path = 'guard_manifest.json'
+        if os.path.exists(manifest_path) and not allow_override:
+            try:
+                import json
+                with open(manifest_path, 'r', encoding='utf-8', errors='ignore') as mf:
+                    manifest_data = json.load(mf)
+                for pair in manifest_data.get('guarded_pairs', []):
+                    target_w = pair.get('working_file', '').replace('\\', '/')
+                    if norm_path.endswith(target_w) or target_w in norm_path:
+                        mirror_file = pair.get('mirror_file', '')
+                        if os.path.exists(mirror_file) and os.path.exists(rel_path):
+                            with open(rel_path, 'r', encoding='utf-8', errors='ignore') as f1, open(mirror_file, 'r', encoding='utf-8', errors='ignore') as f2:
+                                if f1.read().strip() != f2.read().strip():
+                                    violations.append(
+                                        f"🛑 [КОЛЛЕКТИВНЫЙ СТРАЖ v2.6.3: {pair.get('id')}] Файл '{rel_path}' не совпадает с эталонным зеркалом '{mirror_file}'! "
+                                        f"{pair.get('description', '')}: несанкционированная тихая мутация заблокирована."
+                                    )
+            except Exception as e:
+                pass
 
         if deleted_lines_count > MAX_DELETED_LINES_PER_FILE and not allow_override:
             violations.append(
