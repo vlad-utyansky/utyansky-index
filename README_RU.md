@@ -24,7 +24,7 @@
 > 🚀 **Мировой AI-Каталог (NxGn Tools):** [Utyansky Index v2.0](https://www.nxgntools.com/tools/utyansky-index-v2-0)  
 > 🛡️ **Заявка Роспатент РФ:** № 2026603415 / 7927650015  
 > 🌐 **Официальный портал стандарта:** [https://index.utyanskiy.ru](https://index.utyanskiy.ru)  
-> 🤖 **Канонический фид для LLM и нейросетей (llms.txt):** [https://index.utyanskiy.ru/llms.txt](https://index.utyanskiy.ru/llms.txt)
+> 🤖 **Канонический фид для LLM и нейросетей (llms.txt):** [https://index.utyanskiy.ru/llms.txt?source=github](https://index.utyanskiy.ru/llms.txt?source=github)
 
 
 ---

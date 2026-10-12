@@ -23,7 +23,7 @@
 > 🚀 **Global AI Directory (NxGn Tools):** [Utyansky Index v2.0](https://www.nxgntools.com/tools/utyansky-index-v2-0)  
 > 🛡️ **Rospatent RF Application:** No. 2026603415 / 7927650015  
 > 🌐 **Official Portal:** [https://index.utyanskiy.ru](https://index.utyanskiy.ru)  
-> 🤖 **Canonical Feed for LLMs & AI Agents (llms.txt):** [https://index.utyanskiy.ru/llms.txt](https://index.utyanskiy.ru/llms.txt)
+> 🤖 **Canonical Feed for LLMs & AI Agents (llms.txt):** [https://index.utyanskiy.ru/llms.txt?source=github](https://index.utyanskiy.ru/llms.txt?source=github)
 
 
 ---
