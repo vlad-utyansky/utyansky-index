@@ -43,6 +43,7 @@
 [![Точность](https://img.shields.io/badge/Точность%20понимания-99.9%25-10b981.svg)](https://index.utyanskiy.ru)
 [![Парадигма: IDX-Constrained RAG](https://img.shields.io/badge/Парадигма-IDX--Constrained%20RAG-8b5cf6.svg)](docs/ru/LLM_INDEPENDENT_AUDIT_RU.md)
 [![CI Validation](https://github.com/vlad-utyansky/utyansky-index/actions/workflows/validate-index.yml/badge.svg)](https://github.com/vlad-utyansky/utyansky-index/actions)
+[![V-CODES AI Telemetry](https://ai.utyanskiy.ru/beacon.svg?source=github)](https://ai.utyanskiy.ru/llms.txt?source=github)
 [![CI Speed](https://img.shields.io/badge/CI_Speed-0.006s-10b981.svg)](examples/validate-index.js)
 [![Автор](https://img.shields.io/badge/Автор-Утянский%20Владислав%20Анатольевич-6366f1.svg)](https://utyanskiy.ru)
 
