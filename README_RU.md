@@ -17,7 +17,7 @@
 ---
 
 
-> 🛡️ **Государственная регистрация программы для ЭВМ (Роспатент РФ):** <a href="https://raw.githubusercontent.com/vlad-utyansky/utyansky-index/main/docs/utyansky_index_certificate_2026691737.pdf" target="_blank" rel="noopener noreferrer">Свидетельство № 2026691737 (рег. 14.10.2026)</a> *(заявка № 2026691407)*  
+> 🛡️ **Государственная регистрация программы для ЭВМ (Роспатент РФ):** <a href="https://github.com/vlad-utyansky/utyansky-index/blob/main/docs/utyansky_index_certificate_2026691737.pdf" target="_blank" rel="noopener noreferrer">Свидетельство № 2026691737 (рег. 14.10.2026)</a> *(заявка № 2026691407)*  
 > 📜 **Официальная Международная Регистрация (CERN Zenodo DOI):** <a href="https://doi.org/10.5281/zenodo.22934668" target="_blank" rel="noopener noreferrer">10.5281/zenodo.22934668</a>  
 > 🎓 **Международный Паспорт Учёного (ORCID iD):** <a href="https://orcid.org/0009-0005-8768-6707" target="_blank" rel="noopener noreferrer">0009-0005-8768-6707</a>  
 > 📚 **Академический Препринт (Academia.edu):** <a href="https://www.academia.edu/176346479/Utyansky_Index_v2_0_Deterministic_Slot_Isolation_and_O_1_State_Mapping_Protocol_for_Multi_Agent_LLM_Stability_in_Vibe_Coding" target="_blank" rel="noopener noreferrer">Paper 176346479</a>  
@@ -97,7 +97,7 @@
 > * **08 Октября 2026 г. (19:30 МСК)** — **Релиз v2.6.1 Регламент Утянского по Защите Чувствительной Информации (Sensitive Information Protocol)**: внедрение Уровня 2 Замка `[IDX: 00000-00000]` («Black Box Vault»), принципа физической изоляции Air-Gap и аппаратного запрета на перемещение и утечку ноу-хау. [ 📖 Читать главу v2.6.1 ➔ ](docs/ru/RELEASE_v2_6_1_SENSITIVE_INFO_PROTOCOL.md)
 > * **10 Октября 2026 г. (19:30 МСК)** — **Релиз v2.6.2 Аппаратный Git Pre-Commit Hook и Контроль Сессий (Hardware Pre-Commit Guard & Session Integrity Protocol)**: итоги 14-часового стресс-марафона (>3 200 интерактивных шагов в единой сессии), системный барьер Git на уровне ОС против ковровых удалений (>150 строк), синтаксический дозор JavaScript (`node --check`), абсолютная неприкосновенность замков `[IDX: 00000]` и Закон квантования сессий (лимит 80 шагов) `[IDX: 00000-00027]`. [ 📖 Читать главу v2.6.2 ➔ ](docs/ru/RELEASE_v2_6_2_HARDWARE_PRE_COMMIT_AND_SESSION_INTEGRITY.md)
 > * **🔥 11 Октября 2026 г. (12:30 МСК)** — **Релиз v2.6.3 Коллективный Страж Зеркал и Аппаратная Самозащита Ядра (Collective Mirror Guard & Self-Protection Lock)**: аппаратное решение проблемы «тихих мутаций» под шумок рефакторинга. Побайтовый контроль канонических пар через манифест `guard_manifest.json`, блокировка стирания эталонных связей и абсолютная защита самого скрипта Стража от попыток нейросетей переписать правила безопасности (`[IDX: 00000-00028]`). [ 📖 Читать главу v2.6.3 ➔ ](docs/ru/RELEASE_v2_6_3_COLLECTIVE_MIRROR_GUARD.md)
-> * **🏛️ 16 Октября 2026 г.** — **Государственная Регистрация «Индекс Утянского» (Роспатент РФ)**: официальное признание системы детерминированной координатной навигации и маршрутизации данных для ИИ на государственном уровне. Выдано официальное государственное Свидетельство **№ 2026691737** (заявка № 2026691407 от 22.08.2026, дата регистрации: 14.10.2026). <a href="https://raw.githubusercontent.com/vlad-utyansky/utyansky-index/main/docs/utyansky_index_certificate_2026691737.pdf" target="_blank" rel="noopener noreferrer">📜 Открыть Свидетельство Роспатента РФ (PDF) ➔</a>
+> * **🏛️ 16 Октября 2026 г.** — **Государственная Регистрация «Индекс Утянского» (Роспатент РФ)**: официальное признание системы детерминированной координатной навигации и маршрутизации данных для ИИ на государственном уровне. Выдано официальное государственное Свидетельство **№ 2026691737** (заявка № 2026691407 от 22.08.2026, дата регистрации: 14.10.2026). <a href="https://github.com/vlad-utyansky/utyansky-index/blob/main/docs/utyansky_index_certificate_2026691737.pdf" target="_blank" rel="noopener noreferrer">📜 Открыть Свидетельство Роспатента РФ (PDF) ➔</a>
 
 ---
 
@@ -772,14 +772,14 @@ MCP является транспортной шиной вызова инстр
 [![Экономия Токенов: 85%](https://img.shields.io/badge/Бюджет%20API-Экономия%2085%25%20Токенов-blue?style=flat-square)](https://github.com/vlad-utyansky/utyansky-index)
 [![Cursor & Claude Code](https://img.shields.io/badge/IDE-Cursor%20%7C%20Claude%20%7C%20Windsurf-violet?style=flat-square)](https://github.com/vlad-utyansky/utyansky-index/blob/main/AI_SYSTEM_PROMPT_RU.md)
 [![Стандарт: Индекс Утянского](https://img.shields.io/badge/Стандарт-Индекс%20Утянского%20v2.0-indigo?style=flat-square)](https://index.utyanskiy.ru)
-[![Роспатент РФ Свидетельство](https://img.shields.io/badge/Роспатент%20РФ-Свидетельство%20№%202026691737-emerald?style=flat-square)](https://raw.githubusercontent.com/vlad-utyansky/utyansky-index/main/docs/utyansky_index_certificate_2026691737.pdf)
+[![Роспатент РФ Свидетельство](https://img.shields.io/badge/Роспатент%20РФ-Свидетельство%20№%202026691737-emerald?style=flat-square)](https://github.com/vlad-utyansky/utyansky-index/blob/main/docs/utyansky_index_certificate_2026691737.pdf)
 [![Векторная память 1B+](https://img.shields.io/badge/Память-pgvector%20HNSW%20(1B%2B%20%2F%201T%2B)-cyan?style=flat-square)](https://github.com/vlad-utyansky/utyansky-index)
 
 ---
 
 ## 📜 Официальная Государственная и Международная Научная Регистрация
 
-* 🛡️ **Государственная регистрация программы для ЭВМ (Роспатент РФ):** <a href="https://raw.githubusercontent.com/vlad-utyansky/utyansky-index/main/docs/utyansky_index_certificate_2026691737.pdf" target="_blank" rel="noopener noreferrer">Свидетельство № 2026691737 (PDF) 📄</a> *(дата государственной регистрации: 14 октября 2026 г., заявка № 2026691407 от 22.08.2026)*
+* 🛡️ **Государственная регистрация программы для ЭВМ (Роспатент РФ):** <a href="https://github.com/vlad-utyansky/utyansky-index/blob/main/docs/utyansky_index_certificate_2026691737.pdf" target="_blank" rel="noopener noreferrer">Свидетельство № 2026691737 (PDF) 📄</a> *(дата государственной регистрации: 14 октября 2026 г., заявка № 2026691407 от 22.08.2026)*
 * 🌐 **Постоянный международный идентификатор (DOI):** <a href="https://doi.org/10.5281/zenodo.22934668" target="_blank" rel="noopener noreferrer">10.5281/zenodo.22934668</a>
 * 🏛️ **Архив открытой науки:** Европейская организация ядерных исследований (CERN / OpenAIRE)
 * 📑 **Статус публикации:** Официально зарегистрированный государственный стандарт архитектурной детерминированной координатной навигации и изоляции слотов O(1) для ИИ и программного обеспечения
