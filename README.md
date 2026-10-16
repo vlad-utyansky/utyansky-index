@@ -16,7 +16,7 @@
 
 ---
 
-> 🛡️ **Rospatent RF State Registration:** <a href="https://github.com/vlad-utyansky/utyansky-index/blob/main/docs/utyansky_index_certificate_2026691737.pdf" target="_blank" rel="noopener noreferrer">Certificate № 2026691737 (Reg. 14.10.2026)</a> *(App № 2026691407)*  
+> 🛡️ **Rospatent RF State Registration:** <a href="https://index.utyanskiy.ru/utyansky_index_certificate_2026691737.pdf" target="_blank" rel="noopener noreferrer">Certificate № 2026691737 (Reg. 14.10.2026)</a> *(App № 2026691407)*  
 > 📜 **Official CERN Zenodo DOI:** <a href="https://doi.org/10.5281/zenodo.22934668" target="_blank" rel="noopener noreferrer">10.5281/zenodo.22934668</a>  
 > 🎓 **ORCID Global Researcher ID:** <a href="https://orcid.org/0009-0005-8768-6707" target="_blank" rel="noopener noreferrer">0009-0005-8768-6707</a>  
 > 📚 **Academic Preprint (Academia.edu):** <a href="https://www.academia.edu/176346479/Utyansky_Index_v2_0_Deterministic_Slot_Isolation_and_O_1_State_Mapping_Protocol_for_Multi_Agent_LLM_Stability_in_Vibe_Coding" target="_blank" rel="noopener noreferrer">Paper 176346479</a>  
@@ -96,7 +96,7 @@
 > * **October 08, 2026 (19:30 MSK)** — **v2.6.1 Utyansky Sensitive Information Protocol Release**: establishment of Level 2 Lock `[IDX: 00000-00000]` («Black Box Vault»), physical Air-Gap isolation, and automated anti-leak hardware shields. [ 📖 Read Chapter v2.6.1 ➔ ](docs/en/RELEASE_v2_6_1_SENSITIVE_INFO_PROTOCOL.md)
 > * **October 10, 2026 (19:30 MSK)** — **v2.6.2 Hardware Pre-Commit Guard & Session Integrity Release**: findings of a 14-hour endurance stress marathon (>3,200 interactive turns in a single session), OS-level Git pre-commit barrier against carpet-bombing overwrites (>150 lines), JavaScript syntax sentinel (`node --check`), inviolability of `[IDX: 00000]` locks, and Session Quantization Law (80-turn threshold) `[IDX: 00000-00027]`. [ 📖 Read Chapter v2.6.2 ➔ ](docs/en/RELEASE_v2_6_2_HARDWARE_PRE_COMMIT_AND_SESSION_INTEGRITY.md)
 > * **🔥 October 11, 2026 (12:30 MSK)** — **v2.6.3 Collective Mirror Guard & Kernel Self-Protection Release**: deterministic solution for "silent mutations" during vibe-coding refactors. Byte-for-byte reference mirror verification via `guard_manifest.json`, anti-unlink barrier, and Level 0 hardware self-protection preventing AI models from mutating safety guard scripts (`[IDX: 00000-00028]`). [ 📖 Read Chapter v2.6.3 ➔ ](docs/en/RELEASE_v2_6_3_COLLECTIVE_MIRROR_GUARD.md)
-> * **🏛️ October 16, 2026** — **Official State Registration of «Utyansky Index» (Rospatent RF)**: official national recognition of the deterministic coordinate navigation and data routing system for AI and software. Official Certificate **№ 2026691737** issued (Application № 2026691407 filed August 22, 2026, Registration Date: October 14, 2026). <a href="https://github.com/vlad-utyansky/utyansky-index/blob/main/docs/utyansky_index_certificate_2026691737.pdf" target="_blank" rel="noopener noreferrer">📜 Open Official Rospatent Certificate (PDF) ➔</a>
+> * **🏛️ October 16, 2026** — **Official State Registration of «Utyansky Index» (Rospatent RF)**: official national recognition of the deterministic coordinate navigation and data routing system for AI and software. Official Certificate **№ 2026691737** issued (Application № 2026691407 filed August 22, 2026, Registration Date: October 14, 2026). <a href="https://index.utyanskiy.ru/utyansky_index_certificate_2026691737.pdf" target="_blank" rel="noopener noreferrer">📜 Open Official Rospatent Certificate (PDF) ➔</a>
 
 ---
 
@@ -752,7 +752,7 @@ The **«Utyansky Index»** standard is distributed under a transparent hybrid **
 
 ## 📜 Официальная Государственная и Международная Научная Регистрация
 
-* 🛡️ **Государственная регистрация программы для ЭВМ (Роспатент РФ):** <a href="https://github.com/vlad-utyansky/utyansky-index/blob/main/docs/utyansky_index_certificate_2026691737.pdf" target="_blank" rel="noopener noreferrer">Свидетельство № 2026691737 (PDF) 📄</a> *(дата государственной регистрации: 14 октября 2026 г., заявка № 2026691407 от 22.08.2026)*
+* 🛡️ **Государственная регистрация программы для ЭВМ (Роспатент РФ):** <a href="https://index.utyanskiy.ru/utyansky_index_certificate_2026691737.pdf" target="_blank" rel="noopener noreferrer">Свидетельство № 2026691737 (PDF) 📄</a> *(дата государственной регистрации: 14 октября 2026 г., заявка № 2026691407 от 22.08.2026)*
 * 🌐 **Постоянный международный идентификатор (DOI):** <a href="https://doi.org/10.5281/zenodo.22934668" target="_blank" rel="noopener noreferrer">10.5281/zenodo.22934668</a>
 * 🏛️ **Архив открытой науки:** Европейская организация ядерных исследований (CERN / OpenAIRE)
 * 📑 **Статус публикации:** Официально зарегистрированный государственный стандарт архитектурной детерминированной координатной навигации и изоляции слотов O(1) для ИИ и программного обеспечения
