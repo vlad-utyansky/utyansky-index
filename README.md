@@ -16,10 +16,6 @@
 
 ---
 
-> **October 11, 2026 (12:30 MSK) — Release v2.6.3 Collective Mirror Guard & Kernel Self-Protection Lock:** Deterministic OS-level barrier against "silent code mutations" during refactoring. Byte-by-byte canonical pairing via `guard_manifest.json`, unlinking prevention, and hardware self-protection of the Guard script itself (`[IDX: 00000-00028]`). [**📖 Read Chapter v2.6.3 ➔**](<docs/en/RELEASE_v2_6_3_COLLECTIVE_MIRROR_GUARD.md>)  
-> 
-> 🏛️ **October 16, 2026 — Official State Registration of «Utyansky Index» (Rospatent RF):** National recognition of the deterministic coordinate navigation and data routing system for AI and software. Official Certificate **№ 2026691737** issued (Application № 2026691407 filed Aug 22, 2026, Registration Date: Oct 14, 2026). [**📜 Open Official Rospatent Certificate (PDF) ➔**](docs/utyansky_index_certificate_2026691737.pdf)  
-> 
 > 🛡️ **Rospatent RF State Registration:** <a href="docs/utyansky_index_certificate_2026691737.pdf" target="_blank" rel="noopener noreferrer">Certificate № 2026691737 (Reg. 14.10.2026)</a> *(App № 2026691407)*  
 > 📜 **Official CERN Zenodo DOI:** <a href="https://doi.org/10.5281/zenodo.22934668" target="_blank" rel="noopener noreferrer">10.5281/zenodo.22934668</a>  
 > 🎓 **ORCID Global Researcher ID:** <a href="https://orcid.org/0009-0005-8768-6707" target="_blank" rel="noopener noreferrer">0009-0005-8768-6707</a>  
@@ -100,6 +96,7 @@
 > * **October 08, 2026 (19:30 MSK)** — **v2.6.1 Utyansky Sensitive Information Protocol Release**: establishment of Level 2 Lock `[IDX: 00000-00000]` («Black Box Vault»), physical Air-Gap isolation, and automated anti-leak hardware shields. [ 📖 Read Chapter v2.6.1 ➔ ](docs/en/RELEASE_v2_6_1_SENSITIVE_INFO_PROTOCOL.md)
 > * **October 10, 2026 (19:30 MSK)** — **v2.6.2 Hardware Pre-Commit Guard & Session Integrity Release**: findings of a 14-hour endurance stress marathon (>3,200 interactive turns in a single session), OS-level Git pre-commit barrier against carpet-bombing overwrites (>150 lines), JavaScript syntax sentinel (`node --check`), inviolability of `[IDX: 00000]` locks, and Session Quantization Law (80-turn threshold) `[IDX: 00000-00027]`. [ 📖 Read Chapter v2.6.2 ➔ ](docs/en/RELEASE_v2_6_2_HARDWARE_PRE_COMMIT_AND_SESSION_INTEGRITY.md)
 > * **🔥 October 11, 2026 (12:30 MSK)** — **v2.6.3 Collective Mirror Guard & Kernel Self-Protection Release**: deterministic solution for "silent mutations" during vibe-coding refactors. Byte-for-byte reference mirror verification via `guard_manifest.json`, anti-unlink barrier, and Level 0 hardware self-protection preventing AI models from mutating safety guard scripts (`[IDX: 00000-00028]`). [ 📖 Read Chapter v2.6.3 ➔ ](docs/en/RELEASE_v2_6_3_COLLECTIVE_MIRROR_GUARD.md)
+> * **🏛️ October 16, 2026** — **Official State Registration of «Utyansky Index» (Rospatent RF)**: official national recognition of the deterministic coordinate navigation and data routing system for AI and software. Official Certificate **№ 2026691737** issued (Application № 2026691407 filed August 22, 2026, Registration Date: October 14, 2026). [ 📜 Open Official Rospatent Certificate (PDF) ➔ ](docs/utyansky_index_certificate_2026691737.pdf)
 
 ---
 
