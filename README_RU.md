@@ -17,14 +17,16 @@
 ---
 
 
+> **11 Октября 2026 г. (12:30 МСК) — Релиз v2.6.3 Коллективный Страж Зеркал и Аппаратная Самозащита Ядра (Collective Mirror Guard & Self-Protection Lock):** аппаратное решение проблемы «тихих мутаций» под шумок рефакторинга. Побайтовый контроль канонических пар через манифест `guard_manifest.json`, блокировка стирания эталонных связей и абсолютная защита самого скрипта Стража от попыток нейросетей переписать правила безопасности (`[IDX: 00000-00028]`). [**📖 Читать главу v2.6.3 ➔**](<docs/ru/RELEASE_v2_6_3_COLLECTIVE_MIRROR_GUARD.md>)  
+> 
 > 🏛️ **16 Октября 2026 г. — Государственная Регистрация «Индекс Утянского» (Роспатент РФ):** официальное признание системы детерминированной координатной навигации и маршрутизации данных для ИИ на государственном уровне. Выдано официальное государственное Свидетельство **№ 2026691737** (заявка № 2026691407 от 22.08.2026, дата регистрации: 14.10.2026). [**📜 Открыть Свидетельство Роспатента РФ (PDF) ➔**](docs/utyansky_index_certificate_2026691737.pdf)  
 > 
+> 🛡️ **Государственная регистрация программы для ЭВМ (Роспатент РФ):** <a href="docs/utyansky_index_certificate_2026691737.pdf" target="_blank" rel="noopener noreferrer">Свидетельство № 2026691737 (рег. 14.10.2026)</a> *(заявка № 2026691407)*  
 > 📜 **Официальная Международная Регистрация (CERN Zenodo DOI):** <a href="https://doi.org/10.5281/zenodo.22934668" target="_blank" rel="noopener noreferrer">10.5281/zenodo.22934668</a>  
 > 🎓 **Международный Паспорт Учёного (ORCID iD):** <a href="https://orcid.org/0009-0005-8768-6707" target="_blank" rel="noopener noreferrer">0009-0005-8768-6707</a>  
 > 📚 **Академический Препринт (Academia.edu):** <a href="https://www.academia.edu/176346479/Utyansky_Index_v2_0_Deterministic_Slot_Isolation_and_O_1_State_Mapping_Protocol_for_Multi_Agent_LLM_Stability_in_Vibe_Coding" target="_blank" rel="noopener noreferrer">Paper 176346479</a>  
 > 💻 **Инженерная Публикация (DEV Community):** <a href="https://dev.to/vladutyansky/why-vibe-coding-breaks-at-scale-and-how-5-digit-o1-slot-isolation-fixes-it-1886" target="_blank" rel="noopener noreferrer">dev.to/vladutyansky</a>  
 > 🚀 **Мировой AI-Каталог (NxGn Tools):** <a href="https://www.nxgntools.com/tools/utyansky-index-v2-0" target="_blank" rel="noopener noreferrer">Utyansky Index v2.0</a>  
-> 🛡️ **Государственная регистрация программы для ЭВМ (Роспатент РФ):** <a href="docs/utyansky_index_certificate_2026691737.pdf" target="_blank" rel="noopener noreferrer">Свидетельство № 2026691737 (рег. 14.10.2026)</a> *(заявка № 2026691407)*  
 > 🌐 **Официальный портал стандарта:** <a href="https://index.utyanskiy.ru" target="_blank" rel="noopener noreferrer">https://index.utyanskiy.ru</a>  
 > 🤖 **Канонический фид для LLM и нейросетей (llms.txt):** <a href="https://ai.utyanskiy.ru/llms.txt?source=github" target="_blank" rel="noopener noreferrer">https://ai.utyanskiy.ru/llms.txt?source=github</a>
 
