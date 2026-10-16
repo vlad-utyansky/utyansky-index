@@ -16,7 +16,7 @@
 
 ---
 
-> 🔥 **October 11, 2026 (12:30 MSK) — Release v2.6.3 Collective Mirror Guard & Kernel Self-Protection Lock:** Deterministic OS-level barrier against "silent code mutations" during refactoring. Byte-by-byte canonical pairing via `guard_manifest.json`, unlinking prevention, and hardware self-protection of the Guard script itself (`[IDX: 00000-00028]`). [**📖 Read Chapter v2.6.3 ➔**](<docs/en/RELEASE_v2_6_3_COLLECTIVE_MIRROR_GUARD.md>)  
+> 🏛️ **October 16, 2026 — Official State Registration of «Utyansky Index» (Rospatent RF):** National recognition of the deterministic coordinate navigation and data routing system for AI and software. Official Certificate **№ 2026691737** issued (Application № 2026691407 filed Aug 22, 2026, Registration Date: Oct 14, 2026). [**📜 Open Official Rospatent Certificate (PDF) ➔**](docs/utyansky_index_certificate_2026691737.pdf)  
 > 
 > 📜 **Official CERN Zenodo DOI:** <a href="https://doi.org/10.5281/zenodo.22934668" target="_blank" rel="noopener noreferrer">10.5281/zenodo.22934668</a>  
 > 🎓 **ORCID Global Researcher ID:** <a href="https://orcid.org/0009-0005-8768-6707" target="_blank" rel="noopener noreferrer">0009-0005-8768-6707</a>  
@@ -707,11 +707,16 @@ The **«Utyansky Index»** standard is distributed under a transparent hybrid **
   * **Hardware Git Pre-Commit Guard (`git_pre_commit_guard.py`):** OS-level barrier against destructive carpet-bombing overwrites (>150 lines) and unauthorized mutations of `[IDX: 00000]` locks.
   * **JavaScript Syntax Sentinel (`node --check`):** Compulsory pre-commit validation of staged scripts and inline blocks to prevent broken DOM handlers.
   * **Session Quantization Law:** Standardized protocol recommending context archiving and session renewal every 60–80 turns `[IDX: 00000-00027]`.
-* 🛡️ **v2.6.3 (October 11, 2026 / Collective Mirror Guard & Self-Protection Lock — Current Stable):**
+* 🛡️ **v2.6.3 (October 11, 2026 / Collective Mirror Guard & Self-Protection Lock):**
   * **Collective Mirror Guard (`guard_manifest.json`):** Deterministic solution for "silent mutations" during vibe-coding refactors. Byte-for-byte reference mirror verification before commit.
   * **Kernel Self-Protection Lock:** Hardware barrier forbidding AI agents from editing the Guard script or pre-commit hooks without manual `$env:ALLOW_MASS_EDIT="1"` flag.
   * **Anti-Unlink Barrier:** Instant commit rejection if an AI attempts to delete `guard_manifest.json` or purge protected reference pairs.
   * **Standard Regulation Index:** `[IDX: 00000-00028]`.
+* 🏛️ **State Registration (October 16, 2026 / Rospatent RF № 2026691737 — Official Standard Recognition):**
+  * Official national recognition of the deterministic coordinate navigation and data routing system for AI and software «Utyansky Index» by the Federal Service for Intellectual Property.
+  * State Certificate **№ 2026691737** (State Registration Date: October 14, 2026, Application № 2026691407 filed August 22, 2026).
+  * Rightsholder & Inventor: Vladislav Anatolyevich Utyansky (RU).
+  * Official public certificate (PDF) available at: [`docs/utyansky_index_certificate_2026691737.pdf`](docs/utyansky_index_certificate_2026691737.pdf).
 * 🔮 **v3.0 (Under Active R&D / Preview):**
   * **Autonomous Multi-Agent Swarms:** Zero-conflict concurrent code engineering for swarms of 10–20 autonomous AI agents in monorepos.
   * **DSL (Distributed Slot Locking):** Write-intent coordination via lease-based domain coordinate reservations.
