@@ -21,7 +21,7 @@
 > 📚 **Academic Preprint (Academia.edu):** [Paper 176346479](https://www.academia.edu/176346479/Utyansky_Index_v2_0_Deterministic_Slot_Isolation_and_O_1_State_Mapping_Protocol_for_Multi_Agent_LLM_Stability_in_Vibe_Coding)  
 > 💻 **Engineering Article (DEV Community):** [dev.to/vladutyansky](https://dev.to/vladutyansky/why-vibe-coding-breaks-at-scale-and-how-5-digit-o1-slot-isolation-fixes-it-1886)  
 > 🚀 **Global AI Directory (NxGn Tools):** [Utyansky Index v2.0](https://www.nxgntools.com/tools/utyansky-index-v2-0)  
-> 🛡️ **Rospatent RF Application:** No. 2026603415 / 7927650015  
+> 🛡️ **Rospatent RF State Registration:** [Certificate № 2026691737 (Reg. 14.10.2026)](docs/utyansky_index_certificate_2026691737.pdf) *(App № 2026691407)*  
 > 🌐 **Official Portal:** [https://index.utyanskiy.ru](https://index.utyanskiy.ru)  
 > 🤖 **Canonical Feed for LLMs & AI Agents (llms.txt):** [https://ai.utyanskiy.ru/llms.txt?source=github](https://ai.utyanskiy.ru/llms.txt?source=github)
 
@@ -35,7 +35,7 @@
 [![ORCID](https://img.shields.io/badge/ORCID-0009--0005--8768--6707-A6CE39?logo=orcid&logoColor=white)](https://orcid.org/0009-0005-8768-6707)
 [![Academia.edu](https://img.shields.io/badge/Academia.edu-Preprint%20176346479-brown.svg)](https://www.academia.edu/176346479/Utyansky_Index_v2_0_Deterministic_Slot_Isolation_and_O_1_State_Mapping_Protocol_for_Multi_Agent_LLM_Stability_in_Vibe_Coding)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
-[![Rospatent RF Application](https://img.shields.io/badge/Rospatent%20RF-Software%20App%20№%202026603415-emerald.svg)](https://index.utyanskiy.ru)
+[![Rospatent RF Registered](https://img.shields.io/badge/Rospatent%20RF-Registered%20№%202026691737-emerald.svg)](docs/utyansky_index_certificate_2026691737.pdf)
 [![Official Portal](https://img.shields.io/badge/Portal-index.utyanskiy.ru-0ea5e9.svg)](https://index.utyanskiy.ru)
 [![DEV.to Article](https://img.shields.io/badge/DEV.to-vladutyansky-black?logo=devdotto&logoColor=white)](https://dev.to/vladutyansky/why-vibe-coding-breaks-at-scale-and-how-5-digit-o1-slot-isolation-fixes-it-1886)
 [![NxGn Tools](https://img.shields.io/badge/NxGn%20Tools-Featured%20Tool-indigo.svg)](https://www.nxgntools.com/tools/utyansky-index-v2-0)
@@ -739,15 +739,15 @@ The **«Utyansky Index»** standard is distributed under a transparent hybrid **
 [![Token Savings: 85%](https://img.shields.io/badge/API%20Budget-85%25%20Token%20Savings-blue?style=flat-square)](https://github.com/vlad-utyansky/utyansky-index)
 [![Cursor & Claude Code](https://img.shields.io/badge/IDE-Cursor%20%7C%20Claude%20%7C%20Windsurf-violet?style=flat-square)](https://github.com/vlad-utyansky/utyansky-index/blob/main/AI_SYSTEM_PROMPT.md)
 [![Standard: Utyansky Index](https://img.shields.io/badge/Standard-Utyansky%20Index%20v2.0-indigo?style=flat-square)](https://index.utyanskiy.ru)
-[![Rospatent RF](https://img.shields.io/badge/Rospatent%20RF-App%20№%202026603415-emerald?style=flat-square)](https://index.utyanskiy.ru)
+[![Rospatent RF State Registration](https://img.shields.io/badge/Rospatent%20RF-Registered%20№%202026691737-emerald?style=flat-square)](docs/utyansky_index_certificate_2026691737.pdf)
 [![Vector Memory 1B+](https://img.shields.io/badge/Memory-pgvector%20HNSW%20(1B%2B%20%2F%201T%2B)-cyan?style=flat-square)](https://github.com/vlad-utyansky/utyansky-index)
 
 ---
 
-## 📜 Официальная Международная Научная Регистрация (CERN Zenodo DOI)
+## 📜 Официальная Государственная и Международная Научная Регистрация
 
+* 🛡️ **Государственная регистрация программы для ЭВМ (Роспатент РФ):** [Свидетельство № 2026691737](docs/utyansky_index_certificate_2026691737.pdf) *(дата государственной регистрации: 14 октября 2026 г., заявка № 2026691407 от 22.08.2026)*
 * 🌐 **Постоянный международный идентификатор (DOI):** [10.5281/zenodo.22934668](https://doi.org/10.5281/zenodo.22934668)
 * 🏛️ **Архив открытой науки:** Европейская организация ядерных исследований (CERN / OpenAIRE)
-* 🛡️ **Заявка Роспатент РФ:** № 2026603415 / 7927650015
-* 📑 **Статус публикации:** Официальный препринт открытого стандарта архитектурной изоляции слотов O(1) и вайбкодинга
+* 📑 **Статус публикации:** Официально зарегистрированный государственный стандарт архитектурной детерминированной координатной навигации и изоляции слотов O(1) для ИИ и программного обеспечения
 

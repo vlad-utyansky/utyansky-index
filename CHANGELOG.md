@@ -1,10 +1,21 @@
 # 📜 [IDX: 00000] VERSION CHANGELOG: UTYANSKY INDEX
-## EVOLUTION CHRONOLOGY OF THE ARCHITECTURAL STANDARD (v1.0 – v2.6.2)
+## EVOLUTION CHRONOLOGY OF THE ARCHITECTURAL STANDARD (v1.0 – v2.6.3 / State Registration)
 
 > **Author & System Architect:** Vladislav Anatolyevich Utyansky (AI Architect & Founder)  
-> **Rospatent RF Patent Application:** No. 2026119842 / 7927650015 (Reg. 2026603415)  
+> **Rospatent RF State Registration:** [Certificate № 2026691737 (Reg. Oct 14, 2026)](docs/utyansky_index_certificate_2026691737.pdf) *(App No. 2026691407)*  
 > **Repository:** [github.com/vlad-utyansky/utyansky-index](https://github.com/vlad-utyansky/utyansky-index)  
 > **Official Portal:** [index.utyanskiy.ru](https://index.utyanskiy.ru)
+
+---
+
+## 🏛️ [State Registration] — October 16, 2026 — 🇷🇺 Official Rospatent Certificate № 2026691737
+
+### 🏆 Historic Milestone & National Recognition:
+* **Official Paradigm Recognition:** The Federal Service for Intellectual Property (Rospatent) has officially registered the architectural system in the State Register of Computer Programs.
+* **Registered Software Title:** *"Deterministic Coordinate Navigation and Data Routing System for Artificial Intelligence and Software «Utyansky Index» (Utyansky Index v2.0)"*.
+* **Official Registry Data:** Certificate **№ 2026691737**, State Registration Date: **October 14, 2026** (Application № 2026691407 filed August 22, 2026).
+* **Rightsholder & Inventor:** Vladislav Anatolyevich Utyansky (RU).
+* **Official Public Certificate (PDF):** Permanently available in the repository at [`docs/utyansky_index_certificate_2026691737.pdf`](docs/utyansky_index_certificate_2026691737.pdf).
 
 ---
 

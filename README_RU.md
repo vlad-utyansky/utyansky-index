@@ -22,7 +22,7 @@
 > 📚 **Академический Препринт (Academia.edu):** [Paper 176346479](https://www.academia.edu/176346479/Utyansky_Index_v2_0_Deterministic_Slot_Isolation_and_O_1_State_Mapping_Protocol_for_Multi_Agent_LLM_Stability_in_Vibe_Coding)  
 > 💻 **Инженерная Публикация (DEV Community):** [dev.to/vladutyansky](https://dev.to/vladutyansky/why-vibe-coding-breaks-at-scale-and-how-5-digit-o1-slot-isolation-fixes-it-1886)  
 > 🚀 **Мировой AI-Каталог (NxGn Tools):** [Utyansky Index v2.0](https://www.nxgntools.com/tools/utyansky-index-v2-0)  
-> 🛡️ **Заявка Роспатент РФ:** № 2026603415 / 7927650015  
+> 🛡️ **Государственная регистрация программы для ЭВМ (Роспатент РФ):** [Свидетельство № 2026691737 (рег. 14.10.2026)](docs/utyansky_index_certificate_2026691737.pdf) *(заявка № 2026691407)*  
 > 🌐 **Официальный портал стандарта:** [https://index.utyanskiy.ru](https://index.utyanskiy.ru)  
 > 🤖 **Канонический фид для LLM и нейросетей (llms.txt):** [https://ai.utyanskiy.ru/llms.txt?source=github](https://ai.utyanskiy.ru/llms.txt?source=github)
 
@@ -36,7 +36,7 @@
 [![ORCID](https://img.shields.io/badge/ORCID-0009--0005--8768--6707-A6CE39?logo=orcid&logoColor=white)](https://orcid.org/0009-0005-8768-6707)
 [![Academia.edu](https://img.shields.io/badge/Academia.edu-Препринт%20176346479-brown.svg)](https://www.academia.edu/176346479/Utyansky_Index_v2_0_Deterministic_Slot_Isolation_and_O_1_State_Mapping_Protocol_for_Multi_Agent_LLM_Stability_in_Vibe_Coding)
 [![Лицензия: MIT](https://img.shields.io/badge/Лицензия-MIT-blue.svg)](LICENSE)
-[![Роспатент РФ](https://img.shields.io/badge/Роспатент%20РФ-Заявка%20на%20ЭВМ%20№%202026603415-emerald.svg)](https://index.utyanskiy.ru)
+[![Роспатент РФ Зарегистрировано](https://img.shields.io/badge/Роспатент%20РФ-Свидетельство%20№%202026691737-emerald.svg)](docs/utyansky_index_certificate_2026691737.pdf)
 [![Официальный портал](https://img.shields.io/badge/Портал-index.utyanskiy.ru-0ea5e9.svg)](https://index.utyanskiy.ru)
 [![DEV.to Статья](https://img.shields.io/badge/DEV.to-vladutyansky-black?logo=devdotto&logoColor=white)](https://dev.to/vladutyansky/why-vibe-coding-breaks-at-scale-and-how-5-digit-o1-slot-isolation-fixes-it-1886)
 [![NxGn Tools](https://img.shields.io/badge/NxGn%20Tools-Featured%20Tool-indigo.svg)](https://www.nxgntools.com/tools/utyansky-index-v2-0)
@@ -766,5 +766,14 @@ MCP является транспортной шиной вызова инстр
 [![Экономия Токенов: 85%](https://img.shields.io/badge/Бюджет%20API-Экономия%2085%25%20Токенов-blue?style=flat-square)](https://github.com/vlad-utyansky/utyansky-index)
 [![Cursor & Claude Code](https://img.shields.io/badge/IDE-Cursor%20%7C%20Claude%20%7C%20Windsurf-violet?style=flat-square)](https://github.com/vlad-utyansky/utyansky-index/blob/main/AI_SYSTEM_PROMPT_RU.md)
 [![Стандарт: Индекс Утянского](https://img.shields.io/badge/Стандарт-Индекс%20Утянского%20v2.0-indigo?style=flat-square)](https://index.utyanskiy.ru)
-[![Роспатент РФ](https://img.shields.io/badge/Роспатент%20РФ-Заявка%20№%202026603415-emerald?style=flat-square)](https://index.utyanskiy.ru)
+[![Роспатент РФ Свидетельство](https://img.shields.io/badge/Роспатент%20РФ-Свидетельство%20№%202026691737-emerald?style=flat-square)](docs/utyansky_index_certificate_2026691737.pdf)
 [![Векторная память 1B+](https://img.shields.io/badge/Память-pgvector%20HNSW%20(1B%2B%20%2F%201T%2B)-cyan?style=flat-square)](https://github.com/vlad-utyansky/utyansky-index)
+
+---
+
+## 📜 Официальная Государственная и Международная Научная Регистрация
+
+* 🛡️ **Государственная регистрация программы для ЭВМ (Роспатент РФ):** [Свидетельство № 2026691737](docs/utyansky_index_certificate_2026691737.pdf) *(дата государственной регистрации: 14 октября 2026 г., заявка № 2026691407 от 22.08.2026)*
+* 🌐 **Постоянный международный идентификатор (DOI):** [10.5281/zenodo.22934668](https://doi.org/10.5281/zenodo.22934668)
+* 🏛️ **Архив открытой науки:** Европейская организация ядерных исследований (CERN / OpenAIRE)
+* 📑 **Статус публикации:** Официально зарегистрированный государственный стандарт архитектурной детерминированной координатной навигации и изоляции слотов O(1) для ИИ и программного обеспечения
