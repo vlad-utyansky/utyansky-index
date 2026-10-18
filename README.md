@@ -141,7 +141,7 @@
 <img src="https://api.vcodes.ru/api/beacon?repo=utyansky-index&lang=en" width="1" height="1" alt="" style="display:none;" />
 
 <!-- [IDX: 00130] Announcement Block v2.6.3 Collective Mirror Guard & Self-Protection Lock -->
-> ## 🛡️ NEW IN v2.6.3: Collective Mirror Guard & Kernel Self-Protection ($O(1)$ Collective Mirror Guard & Self-Protection Lock)
+> ## 🛡️ Release v2.6.3: Collective Mirror Guard & Kernel Self-Protection ($O(1)$ Collective Mirror Guard & Self-Protection Lock)
 > **Open engineering standard preventing silent AI mutations and tampering with safety scripts:**
 > * 🪞 **Collective Mirror Guard (`guard_manifest.json`):** OS-level pre-commit verification ensuring production code matches reference mirrors, preventing silent drift in critical prompts and formulas during refactoring.
 > * 🔒 **Kernel Self-Protection Lock:** Hardware barrier forbidding AI agents from editing the Guard script or pre-commit hooks without an explicit manual `ALLOW_MASS_EDIT="1"` flag.
