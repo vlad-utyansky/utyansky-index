@@ -3,7 +3,8 @@
 [![Language: English (EN)](https://img.shields.io/badge/Language-English%20(EN)-blue?style=for-the-badge)](README.md)
 [![Language: Russian (RU)](https://img.shields.io/badge/Language-Russian%20(RU)-red?style=for-the-badge)](README_RU.md)
 [![Version 2.0 (Author Specification)](https://img.shields.io/badge/Version-2.0%20(Specification)-emerald?style=for-the-badge)](https://github.com/vlad-utyansky/utyansky-index)
-[![Release v2.6.3](https://img.shields.io/badge/Release-v2.6.3-emerald?style=for-the-badge)](docs/en/RELEASE_v2_6_3_COLLECTIVE_MIRROR_GUARD.md)
+[![Release v2.6.7](https://img.shields.io/badge/Release-v2.6.7-emerald?style=for-the-badge)](docs/ru/RELEASE_v2_6_7_ZOMBIE_PURGE_AND_PORT_LOCK.md)
+[![Release v2.6.3](https://img.shields.io/badge/Release-v2.6.3-blue?style=for-the-badge)](docs/en/RELEASE_v2_6_3_COLLECTIVE_MIRROR_GUARD.md)
 [![Release v2.6.2](https://img.shields.io/badge/Release-v2.6.2-emerald?style=for-the-badge)](docs/en/RELEASE_v2_6_2_HARDWARE_PRE_COMMIT_AND_SESSION_INTEGRITY.md)
 [![Release v2.6.1](https://img.shields.io/badge/Release-v2.6.1-blue?style=for-the-badge)](docs/en/RELEASE_v2_6_1_SENSITIVE_INFO_PROTOCOL.md)
 [![Version 1.0 (March 2026 Archive)](https://img.shields.io/badge/Version-1.0%20(March%202026%20Alpha)-orange?style=for-the-badge)](docs/en/VERSION_1.0_MARCH_2026_ARCHIVE.md)
@@ -95,8 +96,44 @@
 > * **October 08, 2026 (11:00 MSK)** — **v2.6 Official Vibe Coding Starter Kit & Quality Telemetry Release**: official release of production Starter Kit v2.6 with slot isolation and pre-commit hook, standardized reliability telemetry (CRS $\ge 0.90$, RFR $\le 10\%$, CHI $\ge 90\%$), and `telemetry_benchmark.js`. [ 📖 Read Chapter v2.6 ➔ ](docs/en/RELEASE_v2_6_STARTER_KIT_AND_TELEMETRY.md) | [ 📦 Download Starter Kit (ZIP) ➔ ](https://github.com/vlad-utyansky/utyansky-index/raw/main/utyansky_starter_kit_v2_6.zip)
 > * **October 08, 2026 (19:30 MSK)** — **v2.6.1 Utyansky Sensitive Information Protocol Release**: establishment of Level 2 Lock `[IDX: 00000-00000]` («Black Box Vault»), physical Air-Gap isolation, and automated anti-leak hardware shields. [ 📖 Read Chapter v2.6.1 ➔ ](docs/en/RELEASE_v2_6_1_SENSITIVE_INFO_PROTOCOL.md)
 > * **October 10, 2026 (19:30 MSK)** — **v2.6.2 Hardware Pre-Commit Guard & Session Integrity Release**: findings of a 14-hour endurance stress marathon (>3,200 interactive turns in a single session), OS-level Git pre-commit barrier against carpet-bombing overwrites (>150 lines), JavaScript syntax sentinel (`node --check`), inviolability of `[IDX: 00000]` locks, and Session Quantization Law (80-turn threshold) `[IDX: 00000-00027]`. [ 📖 Read Chapter v2.6.2 ➔ ](docs/en/RELEASE_v2_6_2_HARDWARE_PRE_COMMIT_AND_SESSION_INTEGRITY.md)
-> * **🔥 October 11, 2026 (12:30 MSK)** — **v2.6.3 Collective Mirror Guard & Kernel Self-Protection Release**: deterministic solution for "silent mutations" during vibe-coding refactors. Byte-for-byte reference mirror verification via `guard_manifest.json`, anti-unlink barrier, and Level 0 hardware self-protection preventing AI models from mutating safety guard scripts (`[IDX: 00000-00028]`). [ 📖 Read Chapter v2.6.3 ➔ ](docs/en/RELEASE_v2_6_3_COLLECTIVE_MIRROR_GUARD.md)
+> * **October 11, 2026 (12:30 MSK)** — **v2.6.3 Collective Mirror Guard & Kernel Self-Protection Release**: deterministic solution for "silent mutations" during vibe-coding refactors. Byte-for-byte reference mirror verification via `guard_manifest.json`, anti-unlink barrier, and Level 0 hardware self-protection preventing AI models from mutating safety guard scripts (`[IDX: 00000-00028]`). [ 📖 Read Chapter v2.6.3 ➔ ](docs/en/RELEASE_v2_6_3_COLLECTIVE_MIRROR_GUARD.md)
+> * **October 12, 2026** — **v2.6.4 Armored Vital Data Cables & Silicon Baseline Release**: physical decoupling of mission-critical telemetry feeds from visual layouts, immutable non-zero snapshot `getFailSafeSnapshot()`, and cable monopoly (`[IDX: 00000-00029]`). [ 📖 Read Chapter v2.6.4 ➔ ](docs/ru/RELEASE_v2_6_4_ARMORED_CABLES_AND_SILICON_BASELINE.md)
+> * **October 13, 2026** — **v2.6.5 Unbreakable Navigation & DOM-First Pulse Release**: step 0 physical DOM switching, protective `try/catch` shield for heavy analytics, and end-to-end pulse event wiring (`[IDX: 00000-00030]`). [ 📖 Read Chapter v2.6.5 ➔ ](docs/ru/RELEASE_v2_6_5_UNBREAKABLE_NAVIGATION_AND_DOM_PULSE.md)
+> * **October 14, 2026** — **v2.6.6 Structural Integrity & Syntax Sentinel Law**: zero-tolerance symbol imbalance ($\Delta = 0$), automated pre-commit V8 AST compilation validator (`[IDX: 00000-00031]`). [ 📖 Read Chapter v2.6.6 ➔ ](docs/ru/RELEASE_v2_6_6_SYNTAX_SENTINEL_STRUCTURAL_INTEGRITY.md)
+> * **October 15, 2026** — **v2.6.7 Zombie Purge & Strict Port Lock Release**: elimination of dev-server drift (`strictPort: true`), automated port cleaner `scripts/utyansky_zombie_killer.js`, and NTFS descriptor unlock (`[IDX: 00000-00032]`). [ 📖 Read Chapter v2.6.7 ➔ ](docs/ru/RELEASE_v2_6_7_ZOMBIE_PURGE_AND_PORT_LOCK.md)
 > * **🏛️ October 16, 2026** — **Official State Registration of «Utyansky Index» (Rospatent RF)**: official national recognition of the deterministic coordinate navigation and data routing system for AI and software. Official Certificate **№ 2026691737** issued (Application № 2026691407 filed August 22, 2026, Registration Date: October 14, 2026). [ 📜 Open Official Rospatent Certificate (PDF) ➔ ](docs/utyansky_index_certificate_2026691737.pdf)
+> * **🔥 October 18, 2026** — **Official Release of Industrial Resilience Suite (v2.6.4 – v2.6.7) & Starter Kit v2.6.7**: full open engineering armor suite for production vibe-coding reliability. [ 📦 Download Starter Kit v2.6.7 (ZIP) ➔ ](https://github.com/vlad-utyansky/utyansky-index/raw/main/utyansky_starter_kit_v2_6_7.zip)
+
+---
+
+<!-- [IDX: 00005] VCODES Analytics Beacon -->
+<img src="https://api.vcodes.ru/api/beacon?repo=utyansky-index&lang=en" width="1" height="1" alt="" style="display:none;" />
+
+<!-- [IDX: 00135] Announcement Block v2.6.7 Industrial Resilience Suite -->
+> ## 🛡️ NEW IN v2.6.7: Industrial Resilience Suite (v2.6.4 – v2.6.7)
+> **Open engineering armor standard for robust vibe-coding and autonomous AI agents:**
+> 
+> * 🔌 **v2.6.4 — Armored Vital Data Cables & Silicon Baseline:**
+>   * *Pain Solved:* When styling dashboard cards, LLMs frequently wipe socket subscriptions, and an empty cache or network delay crashes the interface into a white screen of death.
+>   * *Solution:* Critical state is decoupled into isolated cables with an immutable Silicon Baseline snapshot. The UI is guaranteed never to drop to zero on cold start.  
+>   👉 **[ 📖 READ SPECIFICATION v2.6.4 ➔ ](docs/ru/RELEASE_v2_6_4_ARMORED_CABLES_AND_SILICON_BASELINE.md)** &nbsp;|&nbsp; **[ 💻 Cable Example ➔ ](examples/armored_cable_template.js)**
+> 
+> * 🧭 **v2.6.5 — Unbreakable Navigation & DOM-First Pulse:**
+>   * *Pain Solved:* Clicking tabs freezes the entire UI because the model bundled heavy chart rendering into the click handler, or a background error freezes global listeners.
+>   * *Solution:* Physical DOM screen switching executes on Step 0 before math calculations, while telemetry renders inside an isolated protective shield.  
+>   👉 **[ 📖 READ SPECIFICATION v2.6.5 ➔ ](docs/ru/RELEASE_v2_6_5_UNBREAKABLE_NAVIGATION_AND_DOM_PULSE.md)** &nbsp;|&nbsp; **[ 💻 Navigation Example ➔ ](examples/safe_navigation_pattern.js)**
+> 
+> * ⚡ **v2.6.6 — Structural Integrity & Syntax Sentinel:**
+>   * *Pain Solved:* During refactoring, LLMs frequently lose a closing bracket `}` or quote, causing silent build failures on production.
+>   * *Solution:* Absolute symbol balance law ($\Delta = 0$) and automated V8 AST syntax compilation prior to commit.  
+>   👉 **[ 📖 READ SPECIFICATION v2.6.6 ➔ ](docs/ru/RELEASE_v2_6_6_SYNTAX_SENTINEL_STRUCTURAL_INTEGRITY.md)** &nbsp;|&nbsp; **[ ⚡ Syntax Guard Script ➔ ](scripts/utyansky_syntax_guard.js)**
+> 
+> * 🧹 **v2.6.7 — Zombie Purge & Strict Port Lock:**
+>   * *Pain Solved:* Developer applies prompt edits but browser sees nothing ("nothing changed") due to orphan node zombie processes locking port 5173.
+>   * *Solution:* Strict port enforcement (`strictPort: true`), automated zombie process killer, and OS file descriptor liberation.  
+>   👉 **[ 📖 READ SPECIFICATION v2.6.7 ➔ ](docs/ru/RELEASE_v2_6_7_ZOMBIE_PURGE_AND_PORT_LOCK.md)** &nbsp;|&nbsp; **[ 🧹 Zombie Killer Script ➔ ](scripts/utyansky_zombie_killer.js)**
+> 
+> 👉 **[ 📦 DOWNLOAD STARTER KIT v2.6.7 (ZIP) ➔ ](https://github.com/vlad-utyansky/utyansky-index/raw/main/utyansky_starter_kit_v2_6_7.zip)**
 
 ---
 
@@ -716,6 +753,28 @@ The **«Utyansky Index»** standard is distributed under a transparent hybrid **
   * State Certificate **№ 2026691737** (State Registration Date: October 14, 2026, Application № 2026691407 filed August 22, 2026).
   * Rightsholder & Inventor: Vladislav Anatolyevich Utyansky (RU).
   * Official public certificate (PDF) available at: [`docs/utyansky_index_certificate_2026691737.pdf`](docs/utyansky_index_certificate_2026691737.pdf).
+* 🔌 **v2.6.4 (October 12, 2026 / Armored Vital Data Cables & Silicon Baseline):**
+  * **Data Stream Decoupling:** Physical isolation of mission-critical telemetry feeds from visual layout templates (`00000-XXXXX-XXXXX_cable.ext`).
+  * **Hardware Silicon Baseline (`getFailSafeSnapshot()`):** Immutable reference snapshot ensuring zero-drop resilience against clean cache and cold starts.
+  * **Cable Monopoly:** Secondary scripts strictly forbidden from overwriting core data channels.
+  * **Regulation Index:** `[IDX: 00000-00029]`. [ 📖 Read Chapter v2.6.4 ➔ ](docs/ru/RELEASE_v2_6_4_ARMORED_CABLES_AND_SILICON_BASELINE.md) | [ 💻 Cable Template ➔ ](examples/armored_cable_template.js)
+* 🧭 **v2.6.5 (October 13, 2026 / Unbreakable Navigation & DOM-First Pulse):**
+  * **DOM-First Switch Principle:** Instant Step 0 physical screen switching prior to invoking heavy math calculations.
+  * **Protective Execution Shield:** Isolated `try/catch` wrapper for charts and analytics, preventing UI lockups.
+  * **End-to-End Pulse:** Synchronous state distribution across all dependent cables via system events.
+  * **Regulation Index:** `[IDX: 00000-00030]`. [ 📖 Read Chapter v2.6.5 ➔ ](docs/ru/RELEASE_v2_6_5_UNBREAKABLE_NAVIGATION_AND_DOM_PULSE.md) | [ 💻 Navigation Template ➔ ](examples/safe_navigation_pattern.js)
+* ⚡ **v2.6.6 (October 14, 2026 / Structural Integrity & Syntax Sentinel Law):**
+  * **Zero Imbalance Law ($\Delta = 0$):** Mandatory pre-commit rejection for any unbalanced brackets `{}`, `()`, `[]`, quotes, or unclosed HTML tags.
+  * **V8 AST Validation:** Automated pre-commit syntax compilation using the V8 engine (`scripts/utyansky_syntax_guard.js`).
+  * **Regulation Index:** `[IDX: 00000-00031]`. [ 📖 Read Chapter v2.6.6 ➔ ](docs/ru/RELEASE_v2_6_6_SYNTAX_SENTINEL_STRUCTURAL_INTEGRITY.md) | [ ⚡ Syntax Guard Script ➔ ](scripts/utyansky_syntax_guard.js)
+* 🧹 **v2.6.7 (October 15, 2026 / Zombie Purge & Strict Port Lock):**
+  * **Strict Port Enforcement (`strictPort: true`):** Forbidding silent dev-server migration to random ports.
+  * **Automated Zombie Purge:** `scripts/utyansky_zombie_killer.js` utility ensuring instant release of ports 5173 and 3001.
+  * **NTFS Permission Liberation:** Automated removal of bogus Read-Only locks and file descriptor liberation.
+  * **Regulation Index:** `[IDX: 00000-00032]`. [ 📖 Read Chapter v2.6.7 ➔ ](docs/ru/RELEASE_v2_6_7_ZOMBIE_PURGE_AND_PORT_LOCK.md) | [ 🧹 Zombie Killer Script ➔ ](scripts/utyansky_zombie_killer.js)
+* 📦 **v2.6.7-SUITE (October 18, 2026 / Official Industrial Resilience Suite):**
+  * Complete open distribution bundle containing all 4 new standards, examples, and scripts out of the box.
+  * [ 📦 Download Starter Kit v2.6.7 (ZIP) ➔ ](https://github.com/vlad-utyansky/utyansky-index/raw/main/utyansky_starter_kit_v2_6_7.zip)
 * 🔮 **(Under Active R&D / Preview):**
   * **Autonomous Multi-Agent Swarms:** Zero-conflict concurrent code engineering for swarms of 10–20 autonomous AI agents in monorepos.
   * **DSL (Distributed Slot Locking):** Write-intent coordination via lease-based domain coordinate reservations.
