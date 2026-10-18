@@ -716,7 +716,7 @@ The **«Utyansky Index»** standard is distributed under a transparent hybrid **
   * State Certificate **№ 2026691737** (State Registration Date: October 14, 2026, Application № 2026691407 filed August 22, 2026).
   * Rightsholder & Inventor: Vladislav Anatolyevich Utyansky (RU).
   * Official public certificate (PDF) available at: [`docs/utyansky_index_certificate_2026691737.pdf`](docs/utyansky_index_certificate_2026691737.pdf).
-* 🔮 **v3.0 (Under Active R&D / Preview):**
+* 🔮 **(Under Active R&D / Preview):**
   * **Autonomous Multi-Agent Swarms:** Zero-conflict concurrent code engineering for swarms of 10–20 autonomous AI agents in monorepos.
   * **DSL (Distributed Slot Locking):** Write-intent coordination via lease-based domain coordinate reservations.
   * **MFT (Monotonic Fencing Tokens):** Mathematical elimination of race conditions and protection against stale "woken-up" agents during parallel PR merges.
