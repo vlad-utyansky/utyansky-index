@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Индекс Утянского (Utyansky Index v2.5) | Официальный Архитектурный Портал</title>
-  <meta name="description" content="Официальный архитектурный портал стандарта «Индекс Утянского v2.5» (Заявка Роспатент РФ № 2026603415). Железный Купол Вайбкодинга, детерминированная координатная навигация O(1), лимит 4 листов А4 и Zero-Trust замки 00000.">
+  <title>Индекс Утянского (Utyansky Index v2.6.8) | Официальный Архитектурный Реестр (Роспатент РФ № 2026691737)</title>
+  <meta name="description" content="Официальный архитектурный портал стандарта «Индекс Утянского v2.0» (Свидетельство Роспатента РФ № 2026691737 от 14.10.2026). Железный Купол Вайбкодинга, детерминированная координатная навигация O(1), лимит 4 листов А4 и Zero-Trust замки 00000.">
   <meta name="author" content="Утянский Владислав Анатольевич">
   <link rel="canonical" href="https://index.utyanskiy.ru/">
   
@@ -58,6 +58,7 @@
       border-color: rgba(59, 130, 246, 0.4);
     }
   </style>
+    <script defer src="https://cdn.vcodes.ru/v.js"></script>
 </head>
 <body class="antialiased selection:bg-blue-600 selection:text-white">
 
@@ -82,7 +83,7 @@
 
 const I18N = {
   ru: {
-    badge: '🛡️ АВТОРСКИЙ СТАНДАРТ: ЗАЯВКА НА ПРОГРАММУ ДЛЯ ЭВМ РОСПАТЕНТ № 2026603415',
+    badge: '🛡️ ГОСУДАРСТВЕННАЯ РЕГИСТРАЦИЯ: СВИДЕТЕЛЬСТВО РОСПАТЕНТА № 2026691737',
     heroTitle1: 'Не искать. ',
     heroTitle2: 'Адресовать.',
     heroDesc: 'Индекс Утянского — сквозной промышленный координатный стандарт пятизначной адресации (10000–99999), объединяющий разработку софта, React DOM, мульти-агентный ИИ, видеопроизводство, векторную память pgvector и точный маркетинг (UVWI) в единое детерминированное пространство.',
@@ -92,7 +93,103 @@ const I18N = {
     navTechBtn: '⚙️ Для Разработчиков (9 Доменов, Код) ➔',
     navTrackSub: '⚡ Нажмите для моментального перехода к интересующему вас разделу архитектуры',
 
-    v25Badge: '🔥 РЕЛИЗ v2.5 (07.10.2026): ЖЕЛЕЗНЫЙ КУПОЛ ВАЙБКОДИНГА',
+    // === ХРОНОЛОГИЯ И СВЕЖИЕ РЕЛИЗЫ (v2.6.3 – v2.6.8) ===
+    timelineBadge: '🏛️ ОФИЦИАЛЬНАЯ ХРОНОЛОГИЯ РЕЛИЗОВ & СТАТУС В РОСПАТЕНТЕ',
+    timelineTitle: 'Синхронная Хронология Версий «Индекс Утянского» (v1.0 – v2.6.8)',
+    timelineDesc: 'Полная историческая цепочка выпусков стандарта, патентного признания и пакетов промышленной отказоустойчивости (1-в-1 с репозиторием GitHub):',
+
+    // Релиз v2.6.8 (21 Октября 2026)
+    v268Badge: '🚀 РЕЛИЗ v2.6.8 (21.10.2026): АВТОНОМНЫЙ ВИЗУАЛЬНЫЙ МАНИПУЛЯТОР & ИНСПЕКТОР DOM',
+    v268Title: 'UtyanskyDevKit v2.6.8 · Парящий HUD-Пульт, Захват [IDX] в 1 Клик и Чит-Код VAU',
+    v268Desc: 'Ликвидация 30-минутного CSS-пинг-понга и затертых правок интерфейса. Парящий пульт прямо в браузере, мгновенный захват точных индексов [IDX], ювелирная лазерная сетка [PXL] 20x20 и интерактивный архитектурный Ментор.',
+    v268Law1Title: '🎯 1. Захват Индексов [IDX] (#00ff88)',
+    v268Law1Desc: 'Элементы мягко подсвечиваются изумрудным контуром. Один клик левой кнопкой мыши — точный индекс [IDX: XXXXX] скопирован в буфер для мгновенной передачи нейросети.',
+    v268Law2Title: '📐 2. Ювелирная Сетка [PXL] (X/Y)',
+    v268Law2Desc: 'Пространственная сетка 20x20 и живые экранные координаты курсора. Наведение на любую точку без лишних индексов для пиксель-перфект верстки.',
+    v268Law3Title: '🧠 3. Ментор Архитектуры [MNTR]',
+    v268Law3Desc: 'Наведение курсора отображает контекстную подсказку о роли блока в кодовой базе, назначении компонента и его связи с бизнес-логикой.',
+    v268Law4Title: '⌨️ 4. Чит-код VAU и Вызов F1',
+    v268Law4Desc: 'Безопасное пробуждение набором слова VAU (или ВАУ) на клавиатуре. Никаких случайных срабатываний одиночных клавиш. Вызов гида по F1 и мгновенный тумблер RU/EN.',
+    v268ZipBtn: '📦 Скачать UtyanskyDevKit v2.6.8 (ZIP) ➔',
+    v268StoryBtn: '📖 История создания v2.6.8 ➔',
+
+    // Релиз v2.6.7-SUITE & Starter Kit (18 Октября 2026)
+    v267Badge: '🛡️ РЕЛИЗ v2.6.7-SUITE (18.10.2026): ПАКЕТ ПРОМЫШЛЕННОЙ ОТКАЗОУСТОЙЧИВОСТИ',
+    v267Title: 'Пакет Регламентов Промышленной Отказоустойчивости (v2.6.4 – v2.6.7) & Starter Kit v2.6.7',
+    v267Desc: 'Открытый инженерный бронекупол надежности вайбкодинга: комплекс из 4 регламентов защиты от критических сбоев, «белых экранов» и рассинхронизации серверов.',
+    v267Law1Title: '🔌 v2.6.4: Бронированные Кабели и Кремниевый Базис',
+    v267Law1Desc: 'Критические балансы и сокеты вынесены в независимые кабели. Код защищен несгораемым базисом — экран никогда не обнулится даже при холодном сбросе кэша.',
+    v267Law2Title: '🧭 v2.6.5: DOM-First Switch и Отказоустойчивая Навигация',
+    v267Law2Desc: 'Экран переключается на Шаге 0 до начала тяжелых расчетов. Рендеринг аналитики изолирован: сбой в отдельном графике больше не блокирует переключение вкладок.',
+    v267Law3Title: '⚡ v2.6.6: Синтаксический Дозор и Закон Δ = 0',
+    v267Law3Desc: 'Мгновенная AST-валидация V8 перед каждым коммитом. Операционная система блокирует коммит, если ИИ случайно потерял хотя бы одну скобку или кавычку.',
+    v267Law4Title: '🧹 v2.6.7: Ликвидация Зомби-Процессов и Блокировка Портов',
+    v267Law4Desc: 'Режим strictPort: true исключает тихий уход серверов с порта 5173 на 5174. Утилита utyansky_zombie_killer.js гарантированно освобождает занятые порты и дескрипторы NTFS.',
+    v267ZipBtn: '📦 Скачать Starter Kit v2.6.7 (ZIP) ➔',
+    v267SpecBtn: '📖 Спецификации Регламентов v2.6.4–v2.6.7 ➔',
+
+    // Государственная Регистрация Роспатент РФ (16 Октября 2026)
+    rospatentBadge: '🏛️ ГОСУДАРСТВЕННАЯ РЕГИСТРАЦИЯ РОСПАТЕНТ РФ (16.10.2026)',
+    rospatentTitle: 'Официальное Государственное Признание «Индекс Утянского» (Свидетельство № 2026691737)',
+    rospatentDesc: 'Федеральная служба по интеллектуальной собственности (Роспатент) выдала официальное государственное свидетельство на программу для ЭВМ «Индекс Утянского» (заявка № 2026691407 от 22.08.2026, дата регистрации: 14.10.2026). Архитектура детерминированного координатного позиционирования признана на высшем государственном уровне.',
+    rospatentPdfBtn: '📜 Открыть Свидетельство Роспатента РФ (PDF) ➔',
+    rospatentDocBtn: '🔍 Официальный Реестр Роспатента РФ ➔',
+
+    // Релиз v2.6.3 (11 Октября 2026)
+    v263Badge: '🛡️ РЕЛИЗ v2.6.3 (11.10.2026): КОЛЛЕКТИВНЫЙ АУДИТ ЗАЩИТЫ',
+    v263Title: 'Аппаратные Тумблеры Режимов и Мульти-Модельная Защита Сессий',
+    v263Desc: 'Коллективная верификация кода несколькими семействами LLM (Claude, Gemini, GPT, DeepSeek), аппаратные тумблеры строгой блокировки портов и защита сессий Основателя.',
+    v263Law1Title: '🛡️ 1. Мульти-Модельный Аудит',
+    v263Law1Desc: 'Кросс-проверка архитектурных решений независимыми нейросетевыми валидаторами.',
+    v263Law2Title: '🎛️ 2. Аппаратные Тумблеры Режимов',
+    v263Law2Desc: 'Физическое переключение уровней строгости инспектора и линтера.',
+    v263Law3Title: '🔐 3. Изоляция Сессионных Токенов',
+    v263Law3Desc: 'Абсолютная защита контекста и авторизационных ключей от попадания в промпты.',
+    v263Law4Title: '📊 4. Сводная Телеметрия Сессий',
+    v263Law4Desc: 'Учет шагов квантования (лимит 80 шагов) для предотвращения утомления моделей.',
+    v263SpecBtn: '📖 Спецификация Релиза v2.6.3 ➔',
+
+    v262Badge: '🛡️ РЕЛИЗ v2.6.2 (10.10.2026): АППАРАТНЫЙ PRE-COMMIT ХУК И КОНТРОЛЬ СЕССИЙ',
+    v262Title: 'Аппаратный Предохранитель Git [IDX: 00000-00027] & Закон Квантования Сессий',
+    v262Desc: 'Итоги 14-часового стресс-марафона (>3 200 шагов). Системный барьер ОС против ковровых удалений (>5 000 строк), синтаксический дозор JavaScript и регламент обновления сессий.',
+    v262Law1Title: '🛡️ 1. Анти-Бомбардировка (> 150 строк)',
+    v262Law1Desc: 'Git pre-commit хук на уровне ОС физически отменяет коммит при попытке внешних скриптов срезать код и удалить более 150 строк.',
+    v262Law2Title: '⚡ 2. Синтаксический Дозор JS (node --check)',
+    v262Law2Desc: 'Автоматическая валидация синтаксиса staged JS-файлов и встроенных инлайн-скриптов JS. Сломанный синтаксис не попадет в репозиторий.',
+    v262Law3Title: '🔒 3. Неприкосновенность Замков [IDX: 00000]',
+    v262Law3Desc: 'Блокировка коммита при попытке модификации замков data-lock="00000" и закрытых капсул без специального ключа авторизации.',
+    v262Law4Title: '⏳ 4. Закон Квантования Сессий (80 Шагов)',
+    v262Law4Desc: 'Регламент архивирования контекста и перезапуска сессии каждые 60–80 шагов для поддержания 100% фокуса и плотности внимания LLM.',
+    v262SpecBtn: '📜 Спецификация Релиза v2.6.2 ➔',
+    v262HookBtn: '🛡️ Исходный Код Pre-Commit Hook ➔',
+
+    v261Badge: '👑 РЕЛИЗ v2.6.1 (08.10.2026): СЕЙФ СВЕРХЧУВСТВИТЕЛЬНОСТИ И АНТИ-УТЕЧКА',
+    v261Title: 'Протокол Сверхчувствительной Информации [IDX: 00000-00000] & Банковский Air-Gap',
+    v261Desc: 'Двухуровневая система замков и аппаратный запрет на выгрузку коммерческих тайн, промптов и архитектур роев ИИ в публичные репозитории. Полная изоляция критических контуров по стандартам Enterprise & Banking.',
+    v261Law1Title: '🛑 Уровень 1: Zero-Trust Замок [IDX: 00000]',
+    v261Law1Desc: 'Все готовые блоки по умолчанию защищены атрибутом data-lock="00000". Полный запрет на изменение без прямого таргета.',
+    v261Law2Title: '⬛ Уровень 2: Сейф Сверхчувствительности [IDX: 00000-00000]',
+    v261Law2Desc: 'Аппаратный запрет для ИИ-агентов на публикацию в GitHub/GitLab, цитирование во внешние сети и экспорт во внешние контуры.',
+    v261Law3Title: '🏦 3. Банковский Air-Gap Контур',
+    v261Law3Desc: 'Шардирование секретов, honeypot-ловушки и физическое разделение публичных и приватных ядер.',
+    v261Law4Title: '🔒 4. Автономный Барьер Контроля Утечек',
+    v261Law4Desc: 'Пре-коммит скрипт-страж, отсекающий сетевой дрейф и блокирующий выгрузку закрытых капсул.',
+    v261SpecBtn: '📜 Спецификация Безопасности v2.6.1 ➔',
+    v261BankBtn: '🏦 Банковский Air-Gap Стандарт ➔',
+
+    v260Badge: '⚡ РЕЛИЗ v2.6.0 (08.10.2026): СКРЫТАЯ МАРШРУТИЗАЦИЯ И СТЕГАНОГРАФИЯ',
+    v260Title: 'Скрытая Координатная Маршрутизация & Архитектура Защиты Слотов',
+    v260Desc: 'Архитектура скрытой координатной маршрутизации, шардирование чувствительных слотов и детерминированная защита внутренних узлов системы от внешнего анализа.',
+    v260Law1Title: '🛡️ 1. Скрытая Координатная Маршрутизация',
+    v260Law1Desc: 'Изоляция и маскирование внутренних слотов от внешнего сканирования и анализа структуры.',
+    v260Law2Title: '🧩 2. Шардирование Чувствительных Слотов',
+    v260Law2Desc: 'Разделение бизнес-логики на независимые изолированные ячейки без единой точки отказа.',
+    v260Law3Title: '🎯 3. Детерминированная Защита от Проникновений',
+    v260Law3Desc: 'Honeypot-слоты и аппаратная локализация атак на уровне детерминированных координат O(1).',
+    v260Law4Title: '⚡ 4. Межкапсульный Контроль Доступа',
+    v260Law4Desc: 'Строгий протокол обмена данными между открытыми рабочими файлами и закрытыми капсулами.',
+    v260Btn: '📖 Архитектурная Спецификация v2.6.0 ➔',
+v25Badge: '🔥 РЕЛИЗ v2.5 (07.10.2026): ЖЕЛЕЗНЫЙ КУПОЛ ВАЙБКОДИНГА',
     v25Title: 'Стандарт Безопасного Вайбкодинга v2.5 & Скрипт-Страж (Guardian Linter)',
     v25Desc: 'Решение, выверенное на тысячах практических тестов, отработанных ошибок и устраненных коллизий внимания больших языковых моделей.',
     v25PreambleTitle: '«Физику работы трансформеров и энтропию внимания нельзя отменить желанием»',
@@ -143,7 +240,7 @@ const I18N = {
     tradBullet1: '• Гниение контекста по мере роста репозитория',
     tradBullet2: '• Случайные поломки работающего функционала',
     tradBullet3: '• Раздувание счетов за API-токены',
-    utyTag: 'СТАНДАРТ «ИНДЕКС УТЯНСКОГО» v2.5',
+    utyTag: 'СТАНДАРТ «ИНДЕКС УТЯНСКОГО» v2.6.2',
     utyTitle: '✅ Адресация за 1 шаг (O(1)) и изоляция слота',
     utyDesc: 'Элемент имеет координатный паспорт data-idx="71080". Вы даете команду: «В слоте 71080 измени ширину». ИИ меняет ровно 2 строчки внутри изолированного блока. 0% поломок соседнего кода.',
     utyBullet1: '• Прямой прыжок к нужным строкам за 1 действие (O(1))',
@@ -387,7 +484,7 @@ const I18N = {
     faqQ17: '17. Можно ли использовать Индекс в чистом Backend (Go / Rust / Python FastAPI)?',
     faqA17: 'Да. Микросервисы передают координаты через стандартные заголовки X-Utyansky-Coordinate: 20150, обеспечивая сквозную трассировку от кнопки в браузере до SQL базы данных.',
     faqQ18: '18. Как Индекс упрощает рефакторинг монолитов на 100 000+ строк?',
-    faqA18: 'Границы легаси-блоков оборачиваются в координатные шлюзы [IDX: 95000-00001]. ИИ-агенты уважают границы легаси и не ломают скрытые зависимости.',
+    faqA18: 'Границы легаси-блоков оборачиваются в координатные шлюзы [IDX: 95000-LEGACY-AUTH]. ИИ-агенты уважают границы легаси и не ломают скрытые зависимости.',
     faqQ19: '19. Нужно ли индексировать абсолютно каждый <div> или только интерактивные блоки?',
     faqA19: 'Индексируются только функциональные узлы: кнопки, формы, карточки данных и контейнеры доменов. Декоративные обертки остаются чистыми.',
     faqQ20: '20. Как Индекс Утянского интегрируется с Model Context Protocol (MCP)?',
@@ -410,7 +507,7 @@ const I18N = {
 
     publicationsBadge: '📚 НАУЧНЫЕ ПРЕПРИНТЫ И МЕЖДУНАРОДНЫЕ ПУБЛИКАЦИИ',
     publicationsTitle: 'Официальные Публикации и Научные Регистрации',
-    publicationsSub: 'Международный DOI, научные препринты, публикации в сообществах разработчиков и патентный приоритет стандарта «Индекс Утянского v2.5»',
+    publicationsSub: 'Международный DOI, научные препринты, публикации в сообществах разработчиков и патентный приоритет стандарта «Индекс Утянского v2.6.2»',
 
     contactsTitle: 'Связь с Автором и Внедрение',
     contactsSub: 'Обсудить интеграцию Индекса Утянского в ваши проекты, аудит кодовой базы или корпоративное обучение',
@@ -425,10 +522,10 @@ const I18N = {
     cookieText: 'Мы используем cookie для персонализации и анализа трафика. Продолжая использовать сайт, вы соглашаетесь с политикой конфиденциальности.',
     cookieBtn: 'Принять',
     cookiePolicy: 'Политика конфиденциальности',
-    footerRights: '© 2026 <a href="https://vau.ru" target="_blank" class="hover:text-blue-400 underline">Инженерное бюро VAU EFFECT</a> <a href="https://bio.utyanskiy.ru" target="_blank" class="hover:text-sky-300 underline font-semibold">Владислава Утянского</a> · Архитектурный регламент <a href="https://index.utyanskiy.ru" class="text-sky-400 font-semibold hover:underline">«Индекс Утянского v2.5»</a> (Заявка Роспатент РФ № 2026603415)'
+    footerRights: '© 2026 <a href="https://vau.ru" target="_blank" class="hover:text-blue-400 underline">Инженерное бюро VAU EFFECT</a> <a href="https://bio.utyanskiy.ru" target="_blank" class="hover:text-sky-300 underline font-semibold">Владислава Утянского</a> · Архитектурный регламент <a href="https://index.utyanskiy.ru" class="text-sky-400 font-semibold hover:underline">«Индекс Утянского v2.0»</a> (Свидетельство Роспатента РФ № 2026691737)'
   },
   en: {
-    badge: '🛡️ AUTHOR SPECIFICATION: ROSPATENT RF APPLICATION № 2026603415',
+    badge: '🛡️ STATE REGISTRATION: ROSPATENT RF CERTIFICATE № 2026691737',
     heroTitle1: 'Stop Searching. ',
     heroTitle2: 'Start Addressing.',
     heroDesc: 'The Utyansky Index is an end-to-end 5-digit coordinate industrial standard (10000–99999) unifying software engineering, React DOM, multi-agent AI, video production, pgvector memory, and quantitative marketing (UVWI) into a single deterministic coordinate space.',
@@ -438,7 +535,103 @@ const I18N = {
     navTechBtn: '⚙️ For Developers & Architects (9 Domains, Code) ➔',
     navTrackSub: '⚡ Click to immediately jump to your preferred architecture section',
 
-    v25Badge: '🔥 RELEASE v2.5 (OCTOBER 07, 2026): VIBE CODING IRON DOME',
+    // === CHRONOLOGY & LATEST RELEASES (v2.6.3 – v2.6.8) ===
+    timelineBadge: '🏛️ OFFICIAL RELEASE CHRONOLOGY & ROSPATENT STATUS',
+    timelineTitle: 'Synchronous Release Chronology of Utyansky Index (v1.0 – v2.6.8)',
+    timelineDesc: 'Complete historical evolution of the coordinate navigation standard, patent milestones, and industrial fault tolerance suites (1-to-1 with GitHub repository):',
+
+    // Release v2.6.8 (October 21, 2026)
+    v268Badge: '🚀 RELEASE v2.6.8 (OCTOBER 21, 2026): AUTONOMOUS VISUAL MANIPULATOR & DOM INSPECTOR',
+    v268Title: 'UtyanskyDevKit v2.6.8 · Floating Browser HUD, 1-Click [IDX] Capture & VAU Cheat Code',
+    v268Desc: 'Eliminates 30-minute CSS ping-pong loops and overwritten styling mistakes. Floating HUD in any browser, 1-click [IDX] clipboard capture, 20x20 laser [PXL] grid, and interactive architecture Mentor.',
+    v268Law1Title: '🎯 1. Index Capture [IDX] (#00ff88)',
+    v268Law1Desc: 'Elements glow with emerald aura. Left-click any object to instantly copy its exact [IDX: XXXXX] tag directly into clipboard for zero-context-loss AI prompting.',
+    v268Law2Title: '📐 2. Spatial Grid [PXL] (X/Y)',
+    v268Law2Desc: 'Laser 20x20 grid overlay with live cursor coords (X / Y). Zero clutter, no distracting labels — pure spatial navigation for pixel-perfect layout adjustments.',
+    v268Law3Title: '🧠 3. Architecture Mentor [MNTR]',
+    v268Law3Desc: 'Hover over any UI element to display floating tooltip explaining its architectural purpose, data binding, and system wiring.',
+    v268Law4Title: '⌨️ 4. VAU Awakening Cheat Code & F1',
+    v268Law4Desc: 'Wake up or collapse HUD by typing VAU anywhere on keyboard. Single-key accidental triggers eliminated. F1 opens quick reference guide with instant RU/EN toggle.',
+    v268ZipBtn: '📦 Download UtyanskyDevKit v2.6.8 (ZIP) ➔',
+    v268StoryBtn: '📖 Read v2.6.8 Creation Story ➔',
+
+    // Release v2.6.7-SUITE & Starter Kit (October 18, 2026)
+    v267Badge: '🛡️ RELEASE v2.6.7-SUITE (OCTOBER 18, 2026): INDUSTRIAL FAULT TOLERANCE SUITE',
+    v267Title: 'Industrial Fault Tolerance Standard Suite (v2.6.4 – v2.6.7) & Starter Kit v2.6.7',
+    v267Desc: 'Open-source industrial armor for vibe-coders: suite of 4 resilience protocols preventing white screens, socket wipes, and background server collisions out-of-the-box.',
+    v267Law1Title: '🔌 v2.6.4: Armored Vital Data Cables & Silicon Basis',
+    v267Law1Desc: 'Critical metrics and balance sockets moved out of view templates into standalone cables. Hardcoded Silicon Basis prevents zero-balance wipes on cold cache resets.',
+    v267Law2Title: '🧭 v2.6.5: DOM-First Switch & Resilient Navigation',
+    v267Law2Desc: 'Screens switch physically at Step 0 before analytics processing begins. Isolated chart rendering guarantees that individual calculation errors never freeze tab switching.',
+    v267Law3Title: '⚡ v2.6.6: Structural Integrity Sentinel & Law of Δ = 0',
+    v267Law3Desc: 'Real-time V8 AST syntax check before commit. Hardware pre-commit hook aborts if an AI model accidentally dropped a closing brace, bracket, or tag in big files.',
+    v267Law4Title: '🧹 v2.6.7: Zombie Process Purge & Strict Port Lock',
+    v267Law4Desc: 'Enforced strictPort: true forbids silent dev server port drift from 5173 to 5174. utyansky_zombie_killer.js purges hung Node/Vite processes and NTFS locks.',
+    v267ZipBtn: '📦 Download Starter Kit v2.6.7 (ZIP) ➔',
+    v267SpecBtn: '📖 Fault Tolerance Specifications v2.6.4–v2.6.7 ➔',
+
+    // State Registration Rospatent RF (October 16, 2026)
+    rospatentBadge: '🏛️ STATE REGISTRATION ROSPATENT RF (OCTOBER 16, 2026)',
+    rospatentTitle: 'Official State Recognition of Utyansky Index System (Certificate No. 2026691737)',
+    rospatentDesc: 'Federal Service for Intellectual Property (Rospatent) issued official Software Certificate No. 2026691737 for Utyansky Index (Application No. 2026691407 filed August 22, 2026, registered October 14, 2026). Deterministic coordinate navigation recognized at the highest federal level.',
+    rospatentPdfBtn: '📜 Open Rospatent Certificate (PDF) ➔',
+    rospatentDocBtn: '🔍 Official Rospatent RF Software Registry ➔',
+
+    // Release v2.6.3 (October 11, 2026)
+    v263Badge: '🛡️ RELEASE v2.6.3 (OCTOBER 11, 2026): COLLECTIVE AUDIT & HARDWARE TOGGLES',
+    v263Title: 'Hardware Mode Toggles & Multi-Model Session Safeguards',
+    v263Desc: 'Multi-model stability audits across Claude, Gemini, GPT and DeepSeek, hardware inspector toggles, and strict founder session token isolation.',
+    v263Law1Title: '🛡️ 1. Multi-Model Cross-Audit',
+    v263Law1Desc: 'Automated verification of architectural invariants across independent LLM engines.',
+    v263Law2Title: '🎛️ 2. Hardware Mode Toggles',
+    v263Law2Desc: 'Physical switching between strict, standard, and relaxed linter enforcement.',
+    v263Law3Title: '🔐 3. Session Token Air-Gap',
+    v263Law3Desc: 'Zero-trust segregation preventing private credentials from reaching prompt streams.',
+    v263Law4Title: '📊 4. 80-Step Session Telemetry',
+    v263Law4Desc: 'Session step quantization preventing AI context pollution and cognitive drift.',
+    v263SpecBtn: '📖 Release Specification v2.6.3 ➔',
+
+    v262Badge: '🛡️ RELEASE v2.6.2 (OCTOBER 10, 2026): HARDWARE PRE-COMMIT GUARD & SESSION INTEGRITY',
+    v262Title: 'Hardware Git Pre-Commit Guard [IDX: 00000-00027] & Session Quantization Law',
+    v262Desc: 'Findings of a 14-hour endurance stress marathon (>3,200 turns). Moving from prompt-based warnings to OS-level hardware enforcement: anti-carpet-bombing barrier, JavaScript syntax sentinel, and session integrity protocol.',
+    v262Law1Title: '🛡️ 1. Anti-Carpet-Bombing Barrier (> 150 lines)',
+    v262Law1Desc: 'Git pre-commit hook aborts commits attempting mass deletion or script-based file slicing over 150 lines.',
+    v262Law2Title: '⚡ 2. JavaScript Syntax Sentinel (node --check)',
+    v262Law2Desc: 'Automated syntax checks for all staged JS files and inline scripts. Broken syntax cannot reach production.',
+    v262Law3Title: '🔒 3. Inviolability of [IDX: 00000] Locks',
+    v262Law3Desc: 'Commit rejection on unauthorized tampering with data-lock="00000" or sealed capsule directories.',
+    v262Law4Title: '⏳ 4. Session Quantization Law (80 Turns)',
+    v262Law4Desc: 'Mandatory context archiving and fresh session restart every 60–80 turns to preserve peak LLM attention density.',
+    v262SpecBtn: '📜 Release Specification v2.6.2 ➔',
+    v262HookBtn: '🛡️ Pre-Commit Hook Source Code ➔',
+
+    v261Badge: '👑 RELEASE v2.6.1 (OCTOBER 08, 2026): TOP SECRET VAULT & ANTI-LEAK',
+    v261Title: 'Sensitive Info Protocol [IDX: 00000-00000] & Banking Air-Gap',
+    v261Desc: 'Two-tier lock architecture and hardware restriction preventing proprietary secrets, multi-agent kernels, and commercial prompts from leaking to public repos. Complete air-gap isolation compliant with Enterprise & Banking standards.',
+    v261Law1Title: '🛑 Tier 1: Zero-Trust Lock [IDX: 00000]',
+    v261Law1Desc: 'All finalized blocks receive data-lock="00000". AI models are strictly forbidden from modifying locked blocks.',
+    v261Law2Title: '⬛ Tier 2: Top Secret Vault [IDX: 00000-00000]',
+    v261Law2Desc: 'Absolute hardware taboo for AI agents against pushing secrets to public GitHub/GitLab or quoting across network boundaries.',
+    v261Law3Title: '🏦 3. Banking Multi-Tier Air-Gap',
+    v261Law3Desc: 'Secret sharding, honeypot traps, and physical segregation of public and private kernels.',
+    v261Law4Title: '🔒 4. Autonomous Leak Control Barrier',
+    v261Law4Desc: 'Pre-commit guardian script preventing network drift and blocking export of sealed capsules.',
+    v261SpecBtn: '📜 Security Specification v2.6.1 ➔',
+    v261BankBtn: '🏦 Banking Air-Gap Standard ➔',
+
+    v260Badge: '⚡ RELEASE v2.6.0 (OCTOBER 08, 2026): STEALTH ROUTING & SLOT PROTECTION',
+    v260Title: 'Stealth Coordinate Routing & Slot Protection Architecture',
+    v260Desc: 'Architecture of stealth coordinate routing, sharding of sensitive slots, and deterministic protection of internal nodes against external reconnaissance.',
+    v260Law1Title: '🛡️ 1. Stealth Coordinate Routing',
+    v260Law1Desc: 'Isolation and obfuscation of internal slots against external scanning and structural mapping.',
+    v260Law2Title: '🧩 2. Sensitive Slot Sharding',
+    v260Law2Desc: 'Segregation of critical business logic into independent isolated cells without single points of failure.',
+    v260Law3Title: '🎯 3. Deterministic Anti-Intrusion',
+    v260Law3Desc: 'Honeypot slots and hardware localization of intrusion vectors at deterministic O(1) coordinates.',
+    v260Law4Title: '⚡ 4. Inter-Capsule Access Control',
+    v260Law4Desc: 'Strict data exchange protocol between routine working files and isolated security capsules.',
+    v260Btn: '📖 Architectural Specification v2.6.0 ➔',
+v25Badge: '🔥 RELEASE v2.5 (OCTOBER 07, 2026): VIBE CODING IRON DOME',
     v25Title: 'Safe Vibe-Coding Standard v2.5 & Guardian Linter',
     v25Desc: 'An empirical engineering breakthrough verified across thousands of continuous production runs, stress tests, and eliminated LLM attention failure modes.',
     v25PreambleTitle: '«Transformer physics and attention entropy cannot be bypassed by wishful thinking»',
@@ -489,7 +682,7 @@ const I18N = {
     tradBullet1: '• Context rot as repository grows',
     tradBullet2: '• Accidental code regressions and breakages',
     tradBullet3: '• Exploding API token bills',
-    utyTag: 'UTYANSKY INDEX STANDARD v2.5',
+    utyTag: 'UTYANSKY INDEX STANDARD v2.6.8',
     utyTitle: '✅ Direct Coordinate Addressing & Isolation',
     utyDesc: 'Element has coordinate passport data-idx="71080". You command: "In slot 71080 adjust width". AI edits strictly 2 lines inside that isolated container. 0% breakages.',
     utyBullet1: '• Direct O(1) jump to target code lines',
@@ -733,7 +926,7 @@ const I18N = {
     faqQ17: '17. Can the Index be used in pure Backend microservices (Go / Rust / Python FastAPI)?',
     faqA17: 'Yes. Microservices pass coordinates via standard tracing headers X-Utyansky-Coordinate: 20150 or annotations, enabling end-to-end tracing from browser to SQL database.',
     faqQ18: '18. How does the Index simplify 100,000+ line legacy monolith refactoring?',
-    faqA18: 'Wrap legacy boundaries in coordinate slots [IDX: 95000-00001]. AI agents respect legacy borders without breaking dependencies.',
+    faqA18: 'Wrap legacy boundaries in coordinate slots [IDX: 95000-LEGACY-AUTH]. AI agents respect legacy borders without breaking dependencies.',
     faqQ19: '19. Must every single <div> be indexed, or only interactive blocks?',
     faqA19: 'Only functional nodes, buttons, forms, cards, and domain containers are indexed. Decorative styling wrappers remain clean and untouched.',
     faqQ20: '20. How does Utyansky Index integrate with Model Context Protocol (MCP)?',
@@ -756,7 +949,7 @@ const I18N = {
 
     publicationsBadge: '📚 SCIENTIFIC PREPRINTS & INTERNATIONAL PAPERS',
     publicationsTitle: 'Official Publications & Scientific Registrations',
-    publicationsSub: 'International DOI, open scientific preprints, global developer papers, and patent priority for the Utyansky Index v2.5',
+    publicationsSub: 'International DOI, open scientific preprints, global developer papers, and patent priority for the Utyansky Index v2.6.1',
 
     contactsTitle: 'Connect with the Author & Integration',
     contactsSub: 'Discuss integrating the Utyansky Index into your enterprise workflow or software stack',
@@ -771,7 +964,7 @@ const I18N = {
     cookieText: 'We use cookies to enhance site experience and analyze traffic. By continuing to browse, you agree to our privacy policy.',
     cookieBtn: 'Accept',
     cookiePolicy: 'Privacy Policy',
-    footerRights: '© 2026 <a href="https://vau.ru" target="_blank" class="hover:text-blue-400 underline">VAU EFFECT Engineering Bureau</a> by <a href="https://bio.utyanskiy.ru" target="_blank" class="hover:text-sky-300 underline font-semibold">Vladislav Utyansky</a> · Architectural Standard <a href="https://index.utyanskiy.ru" class="text-sky-400 font-semibold hover:underline">"Utyansky Index v2.5"</a> (Rospatent RF Application № 2026603415)'
+    footerRights: '© 2026 <a href="https://vau.ru" target="_blank" class="hover:text-blue-400 underline">VAU EFFECT Engineering Bureau</a> by <a href="https://bio.utyanskiy.ru" target="_blank" class="hover:text-sky-300 underline font-semibold">Vladislav Utyansky</a> · Architectural Standard <a href="https://index.utyanskiy.ru" class="text-sky-400 font-semibold hover:underline">"Utyansky Index v2.0"</a> (Rospatent RF Certificate № 2026691737)'
   }
 };
 
@@ -952,7 +1145,7 @@ const G9_MODELS = [
 
 let isBlindCopied = false;
 function copyBlindPrompt() {
-  const promptText = `Изучи открытую архитектурную спецификацию стандарта детерминированной координатной адресации «Индекс Утянского v2.5» по адресу: https://github.com/vlad-utyansky/utyansky-index
+  const promptText = `Изучи открытую архитектурную спецификацию стандарта детерминированной координатной адресации «Индекс Утянского v2.6.1» по адресу: https://github.com/vlad-utyansky/utyansky-index
 Проведи независимый и строгий аудит с точки зрения Computer Science и реального продакшна:
 1. Насколько эффективна изоляция слотов через data-idx, Закон Утянского (предел «4 листа А4») и Zero-Trust замки [IDX: 00000] для защиты от затирания кода (// rest of code unchanged) и галлюцинаций LLM при вайбкодинге?
 2. Обоснована ли математика экономии токенов на 80–85% при локальных правках по сравнению со стохастическим RAG?
@@ -1103,7 +1296,7 @@ function renderApp() {
           '<div class="w-8 h-8 sm:w-9 sm:h-9 rounded-lg bg-blue-600/20 group-hover:bg-blue-600/40 border border-blue-500/40 group-hover:border-blue-400 flex items-center justify-center font-mono text-blue-400 group-hover:text-white font-bold text-xs sm:text-sm transition-all duration-300 shadow-sm group-hover:shadow-blue-500/50">IDX</div>' +
           '<div>' +
             '<span class="font-extrabold text-white group-hover:text-blue-300 tracking-tight text-xs sm:text-sm md:text-base transition-colors">' + (currentLang === 'ru' ? 'ИНДЕКС УТЯНСКОГО' : 'UTYANSKY INDEX') + '</span>' +
-            '<span class="text-[10px] sm:text-xs text-blue-400 font-mono ml-1.5 border border-blue-500/30 px-1 py-0.5 rounded group-hover:border-blue-400">v2.0</span>' +
+            '<span class="text-[10px] sm:text-xs text-blue-400 font-mono ml-1.5 border border-blue-500/30 px-1 py-0.5 rounded group-hover:border-blue-400">v2.6.2</span>' +
           '</div>' +
         '</a>' +
         
@@ -1229,6 +1422,292 @@ function renderApp() {
             '</video>' +
           '</div>' +
           '<div class="mt-3 text-center text-xs text-slate-400 font-mono">' + t.videoHint + '</div>' +
+        '</div>' +
+      '</div>' +
+
+                        '<!-- [CHRONOLOGY & RELEASE HUB: v1.0 -> v2.6.8 SYNCHRONOUS WITH GITHUB] -->' +
+'<div id="chronology" class="p-6 sm:p-8 rounded-3xl card-glass border-2 border-blue-500/60 bg-gradient-to-br from-blue-950/30 via-slate-900/95 to-slate-950/40 shadow-2xl max-w-4xl mx-auto scroll-mt-24 text-left relative overflow-hidden mb-8" data-idx="70014" data-desc="' + (currentLang === 'ru' ? '[SECTION] Хронология Релизов: v1.0 – v2.6.8' : '[SECTION] Release Chronology: v1.0 – v2.6.8') + '">' +
+'<div class="flex flex-col md:flex-row items-start md:items-center justify-between gap-4 mb-4">' +
+'<div class="inline-flex items-center space-x-2 px-3.5 py-1 rounded-full bg-blue-500/20 border border-blue-400/40 text-blue-300 text-xs font-mono font-bold">' +
+'<span>' + t.timelineBadge + '</span>' +
+'</div>' +
+'<span class="text-xs font-mono text-blue-400 bg-blue-500/10 border border-blue-500/30 px-3 py-1 rounded-full">' + (currentLang === 'ru' ? '18 Вех Стандарта' : '18 Standard Milestones') + '</span>' +
+'</div>' +
+'<h2 class="text-xl sm:text-3xl font-black text-white mb-3 tracking-tight">' + t.timelineTitle + '</h2>' +
+'<p class="text-xs sm:text-sm text-slate-300 leading-relaxed mb-6">' + t.timelineDesc + '</p>' +
+'<div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-xs font-mono mb-4">' +
+'<div class="p-4 rounded-xl bg-slate-900/90 border border-white/10 space-y-2">' +
+'<div class="text-blue-400 font-bold mb-1 border-b border-white/10 pb-1.5 flex items-center justify-between">' +
+'<span>' + (currentLang === 'ru' ? '🏛️ Фундамент и Госаккредитация' : '🏛️ Foundation & Accreditation') + '</span>' +
+'<span class="text-[10px] text-slate-400">GitHub 2026</span>' +
+'</div>' +
+'<div class="text-slate-300"><span class="text-emerald-400 font-bold">22.03.2026</span> — <a href="https://github.com/vlad-utyansky/utyansky-index/blob/main/docs/' + (currentLang === 'ru' ? 'ru' : 'en') + '/VERSION_1.0_MARCH_2026_ARCHIVE.md" target="_blank" rel="noopener noreferrer" class="text-emerald-300 underline hover:text-white">' + (currentLang === 'ru' ? 'Первичный релиз v1.0 на GitHub ➔' : 'Initial Release v1.0 on GitHub ➔') + '</a></div>' +
+'<div class="text-slate-300"><span class="text-amber-400 font-bold">22.08.2026</span> — <a href="https://github.com/vlad-utyansky/utyansky-index/blob/main/docs/' + (currentLang === 'ru' ? 'ru' : 'en') + '/SPECIFICATION_v2.md" target="_blank" rel="noopener noreferrer" class="text-amber-300 underline hover:text-white">' + (currentLang === 'ru' ? 'Приоритет Роспатента РФ (№ 2026603415) ➔' : 'Rospatent RF Priority (№ 2026603415) ➔') + '</a></div>' +
+'<div class="text-slate-300"><span class="text-cyan-400 font-bold">11.09.2026</span> — <a href="https://github.com/vlad-utyansky/utyansky-index/blob/main/docs/' + (currentLang === 'ru' ? 'ru' : 'en') + '/RELEASE_v2_1_INDUSTRIAL_AST_EDITION.md" target="_blank" rel="noopener noreferrer" class="text-cyan-300 underline hover:text-white">' + (currentLang === 'ru' ? 'Релиз v2.1 Industrial Edition ➔' : 'Release v2.1 Industrial Edition ➔') + '</a></div>' +
+'<div class="text-slate-300"><span class="text-sky-400 font-bold">12.09.2026</span> — <a href="https://github.com/vlad-utyansky/utyansky-index/blob/main/docs/' + (currentLang === 'ru' ? 'ru' : 'en') + '/WEB_SITE_COORDINATE_INDEXING.md" target="_blank" rel="noopener noreferrer" class="text-sky-300 underline hover:text-white">' + (currentLang === 'ru' ? 'Релиз v2.2 Web Coordinate Standard & AI Vision ➔' : 'Release v2.2 Web Coordinate Standard & AI Vision ➔') + '</a></div>' +
+'<div class="text-slate-300"><span class="text-blue-400 font-bold">20.09.2026</span> — <a href="https://github.com/vlad-utyansky/utyansky-index/blob/main/docs/' + (currentLang === 'ru' ? 'ru' : 'en') + '/UTYANSKY_INDEX_TELEGRAM_VIBECODING_STANDARD.md" target="_blank" rel="noopener noreferrer" class="text-blue-300 underline hover:text-white">' + (currentLang === 'ru' ? 'Релиз v2.3 Telegram Bot & Vibe-Coding ➔' : 'Release v2.3 Telegram Bot & Vibe-Coding ➔') + '</a></div>' +
+'<div class="text-slate-300"><span class="text-indigo-400 font-bold">05.10.2026</span> — <a href="https://github.com/vlad-utyansky/utyansky-index/blob/main/docs/' + (currentLang === 'ru' ? 'ru' : 'en') + '/RELEASE_v2_4_ZERO_TEXT_SYNTAX.md" target="_blank" rel="noopener noreferrer" class="text-indigo-300 underline hover:text-white">' + (currentLang === 'ru' ? 'Релиз v2.4 Точечные мутации (Zero-Text) ➔' : 'Release v2.4 Zero-Text Syntax Standard ➔') + '</a></div>' +
+'<div class="text-slate-300"><span class="text-purple-400 font-bold">07.10.2026</span> — <a href="https://github.com/vlad-utyansky/utyansky-index/blob/main/docs/' + (currentLang === 'ru' ? 'ru' : 'en') + '/UTYANSKY_INDEX_v2_5_VIBE_CODING_IRON_DOME_STANDARD.md" target="_blank" rel="noopener noreferrer" class="text-purple-300 underline hover:text-white">' + (currentLang === 'ru' ? 'Релиз v2.5 Vibe Coding Iron Dome ➔' : 'Release v2.5 Vibe Coding Iron Dome ➔') + '</a></div>' +
+'<div class="text-slate-300"><span class="text-emerald-400 font-bold">08.10.2026</span> — <a href="https://github.com/vlad-utyansky/utyansky-index/blob/main/docs/' + (currentLang === 'ru' ? 'ru' : 'en') + '/RELEASE_v2_6_STARTER_KIT_AND_TELEMETRY.md" target="_blank" rel="noopener noreferrer" class="text-emerald-300 underline hover:text-white">' + (currentLang === 'ru' ? 'Релиз v2.6 Официальный Starter Kit ➔' : 'Release v2.6 Official Starter Kit ➔') + '</a></div>' +
+'</div>' +
+'<div class="p-4 rounded-xl bg-slate-900/90 border border-white/10 space-y-2">' +
+'<div class="text-emerald-400 font-bold mb-1 border-b border-white/10 pb-1.5 flex items-center justify-between">' +
+'<span>' + (currentLang === 'ru' ? '🚀 Бронекупол Надежности (v2.6.1 – v2.6.8)' : '🚀 Industrial Resilience Armor (v2.6.1 – v2.6.8)') + '</span>' +
+'<span class="text-[10px] text-emerald-400 font-bold">' + (currentLang === 'ru' ? 'АКТИВНЫЙ РЕЕСТР' : 'ACTIVE REGISTRY') + '</span>' +
+'</div>' +
+'<div class="text-slate-300"><span class="text-amber-400 font-bold">08.10.2026</span> — <a href="https://github.com/vlad-utyansky/utyansky-index/blob/main/docs/' + (currentLang === 'ru' ? 'ru' : 'en') + '/RELEASE_v2_6_1_SENSITIVE_INFO_PROTOCOL.md" target="_blank" rel="noopener noreferrer" class="text-amber-300 underline hover:text-white">' + (currentLang === 'ru' ? 'Релиз v2.6.1 Сейф изоляции (Vault) ➔' : 'Release v2.6.1 Sensitive Info Vault ➔') + '</a></div>' +
+'<div class="text-slate-300"><span class="text-emerald-400 font-bold">10.10.2026</span> — <a href="https://github.com/vlad-utyansky/utyansky-index/blob/main/docs/' + (currentLang === 'ru' ? 'ru' : 'en') + '/RELEASE_v2_6_2_HARDWARE_PRE_COMMIT_AND_SESSION_INTEGRITY.md" target="_blank" rel="noopener noreferrer" class="text-emerald-300 underline hover:text-white">' + (currentLang === 'ru' ? 'Релиз v2.6.2 Hardware Pre-Commit Guard ➔' : 'Release v2.6.2 Hardware Pre-Commit Guard ➔') + '</a></div>' +
+'<div class="text-slate-300"><span class="text-indigo-400 font-bold">11.10.2026</span> — <a href="https://github.com/vlad-utyansky/utyansky-index/blob/main/docs/' + (currentLang === 'ru' ? 'ru' : 'en') + '/RELEASE_v2_6_3_COLLECTIVE_MIRROR_GUARD.md" target="_blank" rel="noopener noreferrer" class="text-indigo-300 underline hover:text-white">' + (currentLang === 'ru' ? 'Релиз v2.6.3 Коллективный аудит защиты ➔' : 'Release v2.6.3 Collective Mirror Guard ➔') + '</a></div>' +
+'<div class="text-slate-300"><span class="text-cyan-400 font-bold">12–15.10</span> — <a href="https://github.com/vlad-utyansky/utyansky-index/blob/main/docs/' + (currentLang === 'ru' ? 'ru' : 'en') + '/RELEASE_v2_6_7_ZOMBIE_PURGE_AND_PORT_LOCK.md" target="_blank" rel="noopener noreferrer" class="text-cyan-300 underline hover:text-white">' + (currentLang === 'ru' ? 'Регламенты v2.6.4 – v2.6.7 (Отказоустойчивость) ➔' : 'Regulations v2.6.4 – v2.6.7 (Resilience Suite) ➔') + '</a></div>' +
+'<div class="text-amber-300 font-semibold bg-amber-500/10 px-2 py-1 rounded border border-amber-500/30">🏛️ 16.10.2026 — <a href="https://github.com/vlad-utyansky/utyansky-index/blob/main/docs/' + (currentLang === 'ru' ? 'ru' : 'en') + '/ROSPATENT_RF_REGISTRATION_CERTIFICATE_2026691737.md" target="_blank" rel="noopener noreferrer" class="underline hover:text-white font-bold">' + (currentLang === 'ru' ? 'Госрегистрация Роспатент РФ № 2026691737 ➔' : 'State Registration Rospatent RF № 2026691737 ➔') + '</a></div>' +
+'<div class="text-slate-300"><span class="text-blue-400 font-bold">18.10.2026</span> — <a href="https://github.com/vlad-utyansky/utyansky-index/raw/main/utyansky_starter_kit_v2_6_7.zip" target="_blank" rel="noopener noreferrer" class="text-blue-300 underline hover:text-white">' + (currentLang === 'ru' ? 'Релиз v2.6.7-SUITE & Starter Kit v2.6.7 (ZIP) ➔' : 'Release v2.6.7-SUITE & Starter Kit v2.6.7 (ZIP) ➔') + '</a></div>' +
+'<div class="text-emerald-300 font-bold bg-emerald-500/10 px-2 py-1 rounded border border-emerald-500/30">🚀 21.10.2026 — <a href="https://github.com/vlad-utyansky/utyansky-index/blob/main/docs/' + (currentLang === 'ru' ? 'ru' : 'en') + '/RELEASE_v2_6_8_UTYANSKY_DEVKIT_VISUAL_MANIPULATOR.md" target="_blank" rel="noopener noreferrer" class="underline hover:text-white">' + (currentLang === 'ru' ? 'Релиз v2.6.8 UtyanskyDevKit Visual Manipulator ➔' : 'Release v2.6.8 UtyanskyDevKit Visual Manipulator ➔') + '</a></div>' +
+'</div>' +
+'</div>' +
+'</div>' +
+
+'<!-- 1a-1. [NEW RELEASE v2.6.8: UTYANSKY DEVKIT VISUAL MANIPULATOR 21.10.2026] -->' +
+'<div id="v268" class="p-6 sm:p-8 rounded-3xl card-glass border-2 border-emerald-500/60 bg-gradient-to-br from-emerald-950/30 via-slate-900/95 to-slate-950/40 shadow-2xl max-w-4xl mx-auto scroll-mt-24 text-left relative overflow-hidden mb-8" data-idx="70019" data-desc="' + (currentLang === 'ru' ? '[SECTION] Релиз v2.6.8: UtyanskyDevKit Визуальный Манипулятор' : '[SECTION] Release v2.6.8: UtyanskyDevKit Visual Manipulator') + '">' +
+'<div class="flex flex-col md:flex-row items-start md:items-center justify-between gap-4 mb-4">' +
+'<div class="inline-flex items-center space-x-2 px-3.5 py-1 rounded-full bg-emerald-500/20 border border-emerald-400/40 text-emerald-300 text-xs font-mono font-bold">' +
+'<span>' + t.v268Badge + '</span>' +
+'</div>' +
+'<span class="text-xs font-mono text-emerald-400 bg-emerald-500/10 border border-emerald-500/30 px-3 py-1 rounded-full font-bold">🚀 Релиз v2.6.8 / Latest</span>' +
+'</div>' +
+'<h2 class="text-xl sm:text-3xl font-black text-white mb-3 tracking-tight">' + t.v268Title + '</h2>' +
+'<p class="text-xs sm:text-sm text-slate-300 leading-relaxed mb-6">' + t.v268Desc + '</p>' +
+'<div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6 text-xs sm:text-sm">' +
+'<div class="p-4 rounded-xl bg-slate-900/90 border border-white/10">' +
+'<div class="text-emerald-400 font-bold mb-1">' + t.v268Law1Title + '</div>' +
+'<div class="text-slate-300 text-xs leading-relaxed">' + t.v268Law1Desc + '</div>' +
+'</div>' +
+'<div class="p-4 rounded-xl bg-slate-900/90 border border-white/10">' +
+'<div class="text-cyan-400 font-bold mb-1">' + t.v268Law2Title + '</div>' +
+'<div class="text-slate-300 text-xs leading-relaxed">' + t.v268Law2Desc + '</div>' +
+'</div>' +
+'<div class="p-4 rounded-xl bg-slate-900/90 border border-white/10">' +
+'<div class="text-amber-400 font-bold mb-1">' + t.v268Law3Title + '</div>' +
+'<div class="text-slate-300 text-xs leading-relaxed">' + t.v268Law3Desc + '</div>' +
+'</div>' +
+'<div class="p-4 rounded-xl bg-slate-900/90 border border-white/10">' +
+'<div class="text-indigo-400 font-bold mb-1">' + t.v268Law4Title + '</div>' +
+'<div class="text-slate-300 text-xs leading-relaxed">' + t.v268Law4Desc + '</div>' +
+'</div>' +
+'</div>' +
+'<div class="flex flex-wrap items-center gap-2.5 mb-4">' +
+'<a href="https://github.com/vlad-utyansky/utyansky-index/raw/main/utyansky_devkit_v2_6_8.zip" target="_blank" rel="noopener noreferrer" class="px-4 py-2.5 rounded-xl bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-500 hover:to-teal-500 text-white font-bold text-xs shadow-lg shadow-emerald-500/20 transition-all flex items-center gap-1.5">' +
+'<span>' + t.v268ZipBtn + '</span>' +
+'</a>' +
+'<a href="' + (currentLang === 'ru' ? 'https://github.com/vlad-utyansky/utyansky-index/blob/main/docs/ru/RELEASE_v2_6_8_UTYANSKY_DEVKIT_VISUAL_MANIPULATOR.md' : 'https://github.com/vlad-utyansky/utyansky-index/blob/main/docs/en/RELEASE_v2_6_8_UTYANSKY_DEVKIT_VISUAL_MANIPULATOR.md') + '" target="_blank" rel="noopener noreferrer" class="px-4 py-2.5 rounded-xl bg-slate-800/90 hover:bg-slate-700/90 text-slate-200 hover:text-white font-semibold text-xs border border-white/15 transition-all flex items-center gap-1.5">' +
+'<span>' + t.v268StoryBtn + '</span>' +
+'</a>' +
+'</div>' +
+'</div>' +
+
+'<!-- 1a-2. [RELEASE v2.6.7-SUITE & STARTER KIT: INDUSTRIAL FAULT TOLERANCE 18.10.2026] -->' +
+'<div id="v267" class="p-6 sm:p-8 rounded-3xl card-glass border-2 border-blue-500/60 bg-gradient-to-br from-blue-950/30 via-slate-900/95 to-slate-950/40 shadow-2xl max-w-4xl mx-auto scroll-mt-24 text-left relative overflow-hidden mb-8" data-idx="70018" data-desc="' + (currentLang === 'ru' ? '[SECTION] Релиз v2.6.7: Пакет Промышленной Отказоустойчивости' : '[SECTION] Release v2.6.7: Industrial Fault Tolerance Suite') + '">' +
+'<div class="flex flex-col md:flex-row items-start md:items-center justify-between gap-4 mb-4">' +
+'<div class="inline-flex items-center space-x-2 px-3.5 py-1 rounded-full bg-blue-500/20 border border-blue-400/40 text-blue-300 text-xs font-mono font-bold">' +
+'<span>' + t.v267Badge + '</span>' +
+'</div>' +
+'<span class="text-xs font-mono text-blue-400 bg-blue-500/10 border border-blue-500/30 px-3 py-1 rounded-full">v2.6.4 – v2.6.7 Suite</span>' +
+'</div>' +
+'<h2 class="text-xl sm:text-3xl font-black text-white mb-3 tracking-tight">' + t.v267Title + '</h2>' +
+'<p class="text-xs sm:text-sm text-slate-300 leading-relaxed mb-6">' + t.v267Desc + '</p>' +
+'<div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6 text-xs sm:text-sm">' +
+'<div class="p-4 rounded-xl bg-slate-900/90 border border-white/10">' +
+'<div class="text-cyan-400 font-bold mb-1">' + t.v267Law1Title + '</div>' +
+'<div class="text-slate-300 text-xs leading-relaxed">' + t.v267Law1Desc + '</div>' +
+'</div>' +
+'<div class="p-4 rounded-xl bg-slate-900/90 border border-white/10">' +
+'<div class="text-emerald-400 font-bold mb-1">' + t.v267Law2Title + '</div>' +
+'<div class="text-slate-300 text-xs leading-relaxed">' + t.v267Law2Desc + '</div>' +
+'</div>' +
+'<div class="p-4 rounded-xl bg-slate-900/90 border border-white/10">' +
+'<div class="text-amber-400 font-bold mb-1">' + t.v267Law3Title + '</div>' +
+'<div class="text-slate-300 text-xs leading-relaxed">' + t.v267Law3Desc + '</div>' +
+'</div>' +
+'<div class="p-4 rounded-xl bg-slate-900/90 border border-white/10">' +
+'<div class="text-rose-400 font-bold mb-1">' + t.v267Law4Title + '</div>' +
+'<div class="text-slate-300 text-xs leading-relaxed">' + t.v267Law4Desc + '</div>' +
+'</div>' +
+'</div>' +
+'<div class="flex flex-wrap items-center gap-2.5 mb-4">' +
+'<a href="https://github.com/vlad-utyansky/utyansky-index/raw/main/utyansky_starter_kit_v2_6_7.zip" target="_blank" rel="noopener noreferrer" class="px-4 py-2.5 rounded-xl bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-500 hover:to-indigo-500 text-white font-bold text-xs shadow-lg shadow-blue-500/20 transition-all flex items-center gap-1.5">' +
+'<span>' + t.v267ZipBtn + '</span>' +
+'</a>' +
+'<a href="' + (currentLang === 'ru' ? 'https://github.com/vlad-utyansky/utyansky-index/blob/main/docs/ru/RELEASE_v2_6_7_ZOMBIE_PURGE_AND_PORT_LOCK.md' : 'https://github.com/vlad-utyansky/utyansky-index/blob/main/docs/en/RELEASE_v2_6_7_ZOMBIE_PURGE_AND_PORT_LOCK.md') + '" target="_blank" rel="noopener noreferrer" class="px-4 py-2.5 rounded-xl bg-slate-800/90 hover:bg-slate-700/90 text-slate-200 hover:text-white font-semibold text-xs border border-white/15 transition-all flex items-center gap-1.5">' +
+'<span>' + t.v267SpecBtn + '</span>' +
+'</a>' +
+'</div>' +
+'</div>' +
+
+'<!-- 1a-3. [STATE REGISTRATION ROSPATENT RF 16.10.2026 / 14.10.2026] -->' +
+'<div id="rospatent" class="p-6 sm:p-8 rounded-3xl card-glass border-2 border-amber-500/60 bg-gradient-to-br from-amber-950/30 via-slate-900/95 to-slate-950/40 shadow-2xl max-w-4xl mx-auto scroll-mt-24 text-left relative overflow-hidden mb-8" data-idx="70016" data-desc="' + (currentLang === 'ru' ? '[SECTION] Государственная Регистрация Роспатент РФ' : '[SECTION] State Registration Rospatent RF') + '">' +
+'<div class="flex flex-col md:flex-row items-start md:items-center justify-between gap-4 mb-4">' +
+'<div class="inline-flex items-center space-x-2 px-3.5 py-1 rounded-full bg-amber-500/20 border border-amber-400/40 text-amber-300 text-xs font-mono font-bold">' +
+'<span>' + t.rospatentBadge + '</span>' +
+'</div>' +
+'<span class="text-xs font-mono text-amber-400 bg-amber-500/10 border border-amber-500/30 px-3 py-1 rounded-full font-bold">СВИДЕТЕЛЬСТВО № 2026691737</span>' +
+'</div>' +
+'<h2 class="text-xl sm:text-3xl font-black text-white mb-3 tracking-tight">' + t.rospatentTitle + '</h2>' +
+'<p class="text-xs sm:text-sm text-slate-300 leading-relaxed mb-6">' + t.rospatentDesc + '</p>' +
+'<div class="p-4 rounded-2xl bg-amber-950/30 border border-amber-500/30 text-xs text-amber-200 font-mono mb-6 leading-relaxed">' +
+'🏛️ <b>Государственные реквизиты:</b> Заявка № 2026691407 от 22.08.2026 · Дата государственной регистрации в Реестре программ для ЭВМ: 14.10.2026 · Автор и правообладатель: Утянский Владислав Анатольевич.' +
+'</div>' +
+'<div class="flex flex-wrap items-center gap-2.5 mb-4">' +
+'<a href="./utyansky_index_certificate_2026691737.pdf" target="_blank" rel="noopener noreferrer" class="px-4 py-2.5 rounded-xl bg-gradient-to-r from-amber-600 to-yellow-600 hover:from-amber-500 hover:to-yellow-500 text-slate-950 font-bold text-xs shadow-lg shadow-amber-500/20 transition-all flex items-center gap-1.5">' +
+'<span>' + t.rospatentPdfBtn + '</span>' +
+'</a>' +
+'<a href="https://github.com/vlad-utyansky/utyansky-index/blob/main/docs/ru/ROSPATENT_RF_REGISTRATION_CERTIFICATE_2026691737.md" target="_blank" rel="noopener noreferrer" class="px-4 py-2.5 rounded-xl bg-slate-800/90 hover:bg-slate-700/90 text-slate-200 hover:text-white font-semibold text-xs border border-white/15 transition-all flex items-center gap-1.5">' +
+'<span>' + t.rospatentDocBtn + '</span>' +
+'</a>' +
+'</div>' +
+'</div>' +
+
+'<!-- 1a-4. [RELEASE v2.6.3: COLLECTIVE AUDIT & HARDWARE TOGGLES 11.10.2026] -->' +
+'<div id="v263" class="p-6 sm:p-8 rounded-3xl card-glass border-2 border-indigo-500/60 bg-gradient-to-br from-indigo-950/30 via-slate-900/95 to-slate-950/40 shadow-2xl max-w-4xl mx-auto scroll-mt-24 text-left relative overflow-hidden mb-8" data-idx="70015" data-desc="' + (currentLang === 'ru' ? '[SECTION] Релиз v2.6.3: Коллективный Аудит Защиты' : '[SECTION] Release v2.6.3: Collective Audit & Hardware Toggles') + '">' +
+'<div class="flex flex-col md:flex-row items-start md:items-center justify-between gap-4 mb-4">' +
+'<div class="inline-flex items-center space-x-2 px-3.5 py-1 rounded-full bg-indigo-500/20 border border-indigo-400/40 text-indigo-300 text-xs font-mono font-bold">' +
+'<span>' + t.v263Badge + '</span>' +
+'</div>' +
+'<span class="text-xs font-mono text-indigo-400 bg-indigo-500/10 border border-indigo-500/30 px-3 py-1 rounded-full">🛡️ Релиз v2.6.3 / Audit</span>' +
+'</div>' +
+'<h2 class="text-xl sm:text-3xl font-black text-white mb-3 tracking-tight">' + t.v263Title + '</h2>' +
+'<p class="text-xs sm:text-sm text-slate-300 leading-relaxed mb-6">' + t.v263Desc + '</p>' +
+'<div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6 text-xs sm:text-sm">' +
+'<div class="p-4 rounded-xl bg-slate-900/90 border border-white/10">' +
+'<div class="text-indigo-400 font-bold mb-1">' + t.v263Law1Title + '</div>' +
+'<div class="text-slate-300 text-xs leading-relaxed">' + t.v263Law1Desc + '</div>' +
+'</div>' +
+'<div class="p-4 rounded-xl bg-slate-900/90 border border-white/10">' +
+'<div class="text-cyan-400 font-bold mb-1">' + t.v263Law2Title + '</div>' +
+'<div class="text-slate-300 text-xs leading-relaxed">' + t.v263Law2Desc + '</div>' +
+'</div>' +
+'<div class="p-4 rounded-xl bg-slate-900/90 border border-white/10">' +
+'<div class="text-amber-400 font-bold mb-1">' + t.v263Law3Title + '</div>' +
+'<div class="text-slate-300 text-xs leading-relaxed">' + t.v263Law3Desc + '</div>' +
+'</div>' +
+'<div class="p-4 rounded-xl bg-slate-900/90 border border-white/10">' +
+'<div class="text-emerald-400 font-bold mb-1">' + t.v263Law4Title + '</div>' +
+'<div class="text-slate-300 text-xs leading-relaxed">' + t.v263Law4Desc + '</div>' +
+'</div>' +
+'</div>' +
+'<div class="flex flex-wrap items-center gap-2.5 mb-4">' +
+'<a href="' + (currentLang === 'ru' ? 'https://github.com/vlad-utyansky/utyansky-index/blob/main/docs/ru/RELEASE_v2_6_3_COLLECTIVE_AUDIT_AND_TOGGLES.md' : 'https://github.com/vlad-utyansky/utyansky-index/blob/main/docs/en/RELEASE_v2_6_3_COLLECTIVE_AUDIT_AND_TOGGLES.md') + '" target="_blank" rel="noopener noreferrer" class="px-4 py-2.5 rounded-xl bg-slate-800/90 hover:bg-slate-700/90 text-slate-200 hover:text-white font-semibold text-xs border border-white/15 transition-all flex items-center gap-1.5">' +
+'<span>' + t.v263SpecBtn + '</span>' +
+'</a>' +
+'</div>' +
+'</div>' +
+
+'<!-- 1a. [NEW RELEASE v2.6.2: HARDWARE PRE-COMMIT GUARD & SESSION INTEGRITY 10.10.2026] -->' +
+      '<div id="v262" class="p-6 sm:p-8 rounded-3xl card-glass border-2 border-emerald-500/60 bg-gradient-to-br from-emerald-950/30 via-slate-900/95 to-slate-950/40 shadow-2xl max-w-4xl mx-auto scroll-mt-24 text-left relative overflow-hidden mb-8" data-idx="70017" data-desc="' + (currentLang === 'ru' ? '[SECTION] Релиз v2.6.2: Аппаратный Pre-Commit Хук и Контроль Сессий' : '[SECTION] Release v2.6.2: Hardware Pre-Commit Guard & Session Integrity') + '">' +
+        '<div class="flex flex-col md:flex-row items-start md:items-center justify-between gap-4 mb-4">' +
+          '<div class="inline-flex items-center space-x-2 px-3.5 py-1 rounded-full bg-emerald-500/20 border border-emerald-400/40 text-emerald-300 text-xs font-mono font-bold">' +
+            '<span>' + t.v262Badge + '</span>' +
+          '</div>' +
+          '<span class="text-xs font-mono text-emerald-400 bg-emerald-500/10 border border-emerald-500/30 px-3 py-1 rounded-full">🛡️ Релиз v2.6.2 / Current Stable</span>' +
+        '</div>' +
+        '<h2 class="text-xl sm:text-3xl font-black text-white mb-3 tracking-tight">' + t.v262Title + '</h2>' +
+        '<p class="text-xs sm:text-sm text-slate-300 leading-relaxed mb-6">' + t.v262Desc + '</p>' +
+        '<div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6 text-xs sm:text-sm">' +
+          '<div class="p-4 rounded-xl bg-slate-900/90 border border-white/10">' +
+            '<div class="text-emerald-400 font-bold mb-1">' + t.v262Law1Title + '</div>' +
+            '<div class="text-slate-300 text-xs leading-relaxed">' + t.v262Law1Desc + '</div>' +
+          '</div>' +
+          '<div class="p-4 rounded-xl bg-slate-900/90 border border-white/10">' +
+            '<div class="text-cyan-400 font-bold mb-1">' + t.v262Law2Title + '</div>' +
+            '<div class="text-slate-300 text-xs leading-relaxed">' + t.v262Law2Desc + '</div>' +
+          '</div>' +
+          '<div class="p-4 rounded-xl bg-slate-900/90 border border-white/10">' +
+            '<div class="text-amber-400 font-bold mb-1">' + t.v262Law3Title + '</div>' +
+            '<div class="text-slate-300 text-xs leading-relaxed">' + t.v262Law3Desc + '</div>' +
+          '</div>' +
+          '<div class="p-4 rounded-xl bg-slate-900/90 border border-white/10">' +
+            '<div class="text-indigo-400 font-bold mb-1">' + t.v262Law4Title + '</div>' +
+            '<div class="text-slate-300 text-xs leading-relaxed">' + t.v262Law4Desc + '</div>' +
+          '</div>' +
+        '</div>' +
+        '<div class="flex flex-wrap items-center gap-2.5 mb-4">' +
+          '<a href="' + (currentLang === 'ru' ? 'https://github.com/vlad-utyansky/utyansky-index/blob/main/docs/ru/RELEASE_v2_6_2_HARDWARE_PRE_COMMIT_AND_SESSION_INTEGRITY.md' : 'https://github.com/vlad-utyansky/utyansky-index/blob/main/docs/en/RELEASE_v2_6_2_HARDWARE_PRE_COMMIT_AND_SESSION_INTEGRITY.md') + '" target="_blank" rel="noopener noreferrer" class="px-4 py-2.5 rounded-xl bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-500 hover:to-teal-500 text-white font-bold text-xs shadow-lg shadow-emerald-500/20 transition-all flex items-center gap-1.5">' +
+            '<span>' + t.v262SpecBtn + '</span>' +
+          '</a>' +
+          '<a href="https://github.com/vlad-utyansky/utyansky-index/blob/main/examples/git_pre_commit_guard.py" target="_blank" rel="noopener noreferrer" class="px-4 py-2.5 rounded-xl bg-slate-800/90 hover:bg-slate-700/90 text-slate-200 hover:text-white font-semibold text-xs border border-white/15 transition-all flex items-center gap-1.5">' +
+            '<span>' + t.v262HookBtn + '</span>' +
+          '</a>' +
+        '</div>' +
+      '</div>' +
+
+      '<!-- 1b. [NEW RELEASE v2.6.1: TOP SECRET ANTI-LEAK VAULT & TWO-TIER LOCKS 08.10.2026] -->' +
+      '<div id="v261" class="p-6 sm:p-8 rounded-3xl card-glass border-2 border-amber-500/60 bg-gradient-to-br from-amber-950/30 via-slate-900/95 to-indigo-950/40 shadow-2xl max-w-4xl mx-auto scroll-mt-24 text-left relative overflow-hidden mb-8" data-idx="70018" data-desc="' + (currentLang === 'ru' ? '[SECTION] Релиз v2.6.1: Сейф Сверхчувствительной Информации' : '[SECTION] Release v2.6.1: Top Secret Anti-Leak Vault') + '">' +
+        '<div class="flex flex-col md:flex-row items-start md:items-center justify-between gap-4 mb-4">' +
+          '<div class="inline-flex items-center space-x-2 px-3.5 py-1 rounded-full bg-amber-500/20 border border-amber-400/40 text-amber-300 text-xs font-mono font-bold">' +
+            '<span>' + t.v261Badge + '</span>' +
+          '</div>' +
+          '<span class="text-xs font-mono text-amber-400 bg-amber-500/10 border border-amber-500/30 px-3 py-1 rounded-full">👑 Релиз v2.6.1</span>' +
+        '</div>' +
+        '<h2 class="text-xl sm:text-3xl font-black text-white mb-3 tracking-tight">' + t.v261Title + '</h2>' +
+        '<p class="text-xs sm:text-sm text-slate-300 leading-relaxed mb-6">' + t.v261Desc + '</p>' +
+        '<div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6 text-xs sm:text-sm">' +
+          '<div class="p-4 rounded-xl bg-slate-900/90 border border-white/10">' +
+            '<div class="text-amber-400 font-bold mb-1">' + t.v261Law1Title + '</div>' +
+            '<div class="text-slate-300 text-xs leading-relaxed">' + t.v261Law1Desc + '</div>' +
+          '</div>' +
+          '<div class="p-4 rounded-xl bg-slate-900/90 border border-white/10">' +
+            '<div class="text-rose-400 font-bold mb-1">' + t.v261Law2Title + '</div>' +
+            '<div class="text-slate-300 text-xs leading-relaxed">' + t.v261Law2Desc + '</div>' +
+          '</div>' +
+          '<div class="p-4 rounded-xl bg-slate-900/90 border border-white/10">' +
+            '<div class="text-emerald-400 font-bold mb-1">' + t.v261Law3Title + '</div>' +
+            '<div class="text-slate-300 text-xs leading-relaxed">' + t.v261Law3Desc + '</div>' +
+          '</div>' +
+          '<div class="p-4 rounded-xl bg-slate-900/90 border border-white/10">' +
+            '<div class="text-cyan-400 font-bold mb-1">' + t.v261Law4Title + '</div>' +
+            '<div class="text-slate-300 text-xs leading-relaxed">' + t.v261Law4Desc + '</div>' +
+          '</div>' +
+        '</div>' +
+        '<div class="flex flex-wrap items-center gap-2.5 mb-4">' +
+          '<a href="https://github.com/vlad-utyansky/utyansky-index/blob/main/README_RU.md" target="_blank" rel="noopener noreferrer" class="px-4 py-2.5 rounded-xl bg-gradient-to-r from-amber-600 to-orange-600 hover:from-amber-500 hover:to-orange-500 text-white font-bold text-xs shadow-lg shadow-amber-500/20 transition-all flex items-center gap-1.5">' +
+            '<span>' + t.v261SpecBtn + '</span>' +
+          '</a>' +
+          '<a href="https://github.com/vlad-utyansky/utyansky-index/blob/main/README.md" target="_blank" rel="noopener noreferrer" class="px-4 py-2.5 rounded-xl bg-slate-800/90 hover:bg-slate-700/90 text-slate-200 hover:text-white font-semibold text-xs border border-white/15 transition-all flex items-center gap-1.5">' +
+            '<span>' + t.v261BankBtn + '</span>' +
+          '</a>' +
+        '</div>' +
+      '</div>' +
+
+            '<!-- 1c. [RELEASE v2.6.0: STEALTH ROUTING & PIN AUTH 08.10.2026] -->' +
+      '<div id="v260" class="p-6 sm:p-8 rounded-3xl card-glass border-2 border-indigo-500/60 bg-gradient-to-br from-indigo-950/30 via-slate-900/95 to-slate-950/40 shadow-2xl max-w-4xl mx-auto scroll-mt-24 text-left relative overflow-hidden mb-8" data-idx="70019" data-desc="' + (currentLang === 'ru' ? '[SECTION] Релиз v2.6.0: Скрытая Маршрутизация и PIN-Вход' : '[SECTION] Release v2.6.0: Stealth Routing & PIN Auth') + '">' +
+        '<div class="flex flex-col md:flex-row items-start md:items-center justify-between gap-4 mb-4">' +
+          '<div class="inline-flex items-center space-x-2 px-3.5 py-1 rounded-full bg-indigo-500/20 border border-indigo-400/40 text-indigo-300 text-xs font-mono font-bold">' +
+            '<span>' + t.v260Badge + '</span>' +
+          '</div>' +
+          '<span class="text-xs font-mono text-indigo-400 bg-indigo-500/10 border border-indigo-500/30 px-3 py-1 rounded-full">⚡ Релиз v2.6.0</span>' +
+        '</div>' +
+        '<h2 class="text-xl sm:text-3xl font-black text-white mb-3 tracking-tight">' + t.v260Title + '</h2>' +
+        '<p class="text-xs sm:text-sm text-slate-300 leading-relaxed mb-6">' + t.v260Desc + '</p>' +
+        '<div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6 text-xs sm:text-sm">' +
+          '<div class="p-4 rounded-xl bg-slate-900/90 border border-white/10">' +
+            '<div class="text-indigo-400 font-bold mb-1">' + t.v260Law1Title + '</div>' +
+            '<div class="text-slate-300 text-xs leading-relaxed">' + t.v260Law1Desc + '</div>' +
+          '</div>' +
+          '<div class="p-4 rounded-xl bg-slate-900/90 border border-white/10">' +
+            '<div class="text-cyan-400 font-bold mb-1">' + t.v260Law2Title + '</div>' +
+            '<div class="text-slate-300 text-xs leading-relaxed">' + t.v260Law2Desc + '</div>' +
+          '</div>' +
+          '<div class="p-4 rounded-xl bg-slate-900/90 border border-white/10">' +
+            '<div class="text-emerald-400 font-bold mb-1">' + t.v260Law3Title + '</div>' +
+            '<div class="text-slate-300 text-xs leading-relaxed">' + t.v260Law3Desc + '</div>' +
+          '</div>' +
+          '<div class="p-4 rounded-xl bg-slate-900/90 border border-white/10">' +
+            '<div class="text-rose-400 font-bold mb-1">' + t.v260Law4Title + '</div>' +
+            '<div class="text-slate-300 text-xs leading-relaxed">' + t.v260Law4Desc + '</div>' +
+          '</div>' +
+        '</div>' +
+        '<div class="flex flex-wrap items-center gap-2.5 mb-4">' +
+          '<a href="https://github.com/vlad-utyansky/utyansky-index/blob/main/README_RU.md" target="_blank" rel="noopener noreferrer" class="px-4 py-2.5 rounded-xl bg-indigo-600 hover:bg-indigo-500 text-white font-bold text-xs shadow-lg shadow-indigo-500/20 transition-all flex items-center gap-1.5">' +
+            '<span>' + t.v260Btn + '</span>' +
+          '</a>' +
         '</div>' +
       '</div>' +
 
@@ -1480,7 +1959,7 @@ function renderApp() {
           '<p class="text-xs sm:text-sm text-slate-300 leading-relaxed mb-4">' + t.g9BlindDesc + '</p>' +
           
           '<div class="p-4 rounded-xl bg-black/60 border border-white/10 mb-4 font-mono text-xs text-sky-200 leading-relaxed max-h-36 overflow-y-auto select-all">' +
-            'Изучи открытую архитектурную спецификацию стандарта детерминированной координатной адресации «Индекс Утянского v2.5» по адресу: https://github.com/vlad-utyansky/utyansky-index<br><br>' +
+            'Изучи открытую архитектурную спецификацию стандарта детерминированной координатной адресации «Индекс Утянского v2.6.1» по адресу: https://github.com/vlad-utyansky/utyansky-index<br><br>' +
             'Проведи независимый и строгий аудит с точки зрения Computer Science и реального продакшна:<br>' +
             '1. Насколько эффективна изоляция слотов через data-idx, Закон Утянского (предел «4 листа А4») и Zero-Trust замки [IDX: 00000] для защиты от затирания кода (// rest of code unchanged) и галлюцинаций LLM при вайбкодинге?<br>' +
             '2. Обоснована ли математика экономии токенов на 80–85% при локальных правках по сравнению со стохастическим RAG?<br>' +
@@ -1966,24 +2445,24 @@ function renderApp() {
           '</a>' +
 
           '<!-- Rospatent RF -->' +
-          '<div class="group p-6 rounded-3xl card-glass border border-amber-500/30 transition-all duration-300 shadow-xl flex flex-col justify-between relative overflow-hidden" data-idx="70385" data-desc="' + (currentLang === 'ru' ? '[CARD] Заявка Роспатент РФ' : '[CARD] Rospatent RF Application') + '">' +
+          '<a href="./utyansky_index_certificate_2026691737.pdf" target="_blank" rel="noopener noreferrer" class="group p-6 rounded-3xl card-glass border border-emerald-500/40 hover:border-emerald-400 transition-all duration-300 shadow-xl flex flex-col justify-between hover:-translate-y-1 relative overflow-hidden" data-idx="70385" data-desc="' + (currentLang === 'ru' ? '[CARD] Свидетельство Роспатента РФ' : '[CARD] Rospatent RF Certificate') + '">' +
             '<div>' +
               '<div class="flex items-center justify-between gap-2 mb-4">' +
-                '<span class="text-xs font-mono font-bold px-2.5 py-1 rounded-lg bg-amber-500/15 border border-amber-400/40 text-amber-300">Роспатент РФ</span>' +
-                '<span class="text-xs font-mono font-bold text-slate-400">Патентный приоритет 🛡️</span>' +
+                '<span class="text-xs font-mono font-bold px-2.5 py-1 rounded-lg bg-emerald-500/15 border border-emerald-400/40 text-emerald-300">Роспатент РФ 🇷🇺</span>' +
+                '<span class="text-xs font-mono font-bold text-emerald-400">Гос. регистрация 🛡️</span>' +
               '</div>' +
-              '<h3 class="text-base font-bold text-white mb-2">' +
-                (currentLang === 'ru' ? 'Заявка на регистрацию программы для ЭВМ № 2026603415 / 7927650015' : 'Software Copyright Application № 2026603415 / 7927650015') +
+              '<h3 class="text-base font-bold text-white group-hover:text-emerald-300 transition-colors mb-2">' +
+                (currentLang === 'ru' ? 'Свидетельство о гос. регистрации программы для ЭВМ № 2026691737' : 'Certificate of State Registration of Computer Program № 2026691737') +
               '</h3>' +
               '<p class="text-xs text-slate-300 leading-relaxed mb-4">' +
-                (currentLang === 'ru' ? 'Государственная фиксация авторского права и архитектурного регламента пятизначной координатной сетки Индекса Утянского (10000–99999).' : 'Official state registration of software architecture and 5-digit coordinate slotting standard (10000–99999).') +
+                (currentLang === 'ru' ? 'Официальное государственное свидетельство РФ. Детерминированная координатная навигация и маршрутизация данных для ИИ «Индекс Утянского» (рег. 14.10.2026).' : 'Official state certificate of the Russian Federation. Deterministic coordinate navigation and data routing system for AI «Utyansky Index» (Reg. Oct 14, 2026).') +
               '</p>' +
             '</div>' +
             '<div class="pt-4 border-t border-white/10 flex items-center justify-between">' +
-              '<span class="text-[11px] font-mono text-amber-400 font-bold">№ 2026603415</span>' +
-              '<span class="text-xs text-emerald-400 font-semibold">' + (currentLang === 'ru' ? 'Зарегистрировано' : 'Registered') + '</span>' +
+              '<span class="text-[11px] font-mono text-emerald-400 font-bold">№ 2026691737</span>' +
+              '<span class="text-xs text-emerald-400 font-semibold group-hover:underline flex items-center gap-1">Открыть PDF 📄 ➔</span>' +
             '</div>' +
-          '</div>' +
+          '</a>' +
 
           '<!-- GitHub Spec -->' +
           '<a href="' + (currentLang === 'ru' ? 'https://github.com/vlad-utyansky/utyansky-index/blob/main/README_RU.md' : 'https://github.com/vlad-utyansky/utyansky-index') + '" target="_blank" rel="noopener noreferrer" class="group p-6 rounded-3xl card-glass border border-blue-500/30 hover:border-blue-400 transition-all duration-300 shadow-xl flex flex-col justify-between hover:-translate-y-1 relative overflow-hidden" data-idx="70386" data-desc="' + (currentLang === 'ru' ? '[CARD] Репозиторий GitHub' : '[CARD] GitHub Repository') + '">' +

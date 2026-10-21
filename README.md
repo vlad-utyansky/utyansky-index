@@ -170,6 +170,17 @@
 
 ---
 
+<!-- [IDX: 00134] Announcement Block Rospatent State Registration -->
+> ## 🏛️ Official State Registration Certificate (Rospatent RF № 2026691737)
+> **Official Federal accreditation and exclusive intellectual property rights:**
+> * 🏛️ **Federal Software Registration:** Certificate of State Registration № **2026691737** (Application № 2026691407 filed August 22, 2026; registered October 14, 2026).
+> * 🛡️ **Author and Rightsholder:** Vladislav Anatolyevich Utyansky.
+> * 📑 **Legal and Architectural Priority:** Guarantees intellectual property protection for 5-digit coordinate indexing, DOM coordinate maps, Zero-Trust locks, and hardware-level session integrity guards.
+> 
+> 👉 **[ 📖 READ REGISTRATION ACT SPECIFICATION (EN) ➔ ](docs/en/ROSPATENT_RF_REGISTRATION_CERTIFICATE_2026691737.md)** &nbsp;&nbsp;|&nbsp;&nbsp; **[ 📜 View Official Certificate (PDF) ➔ ](docs/utyansky_index_certificate_2026691737.pdf)**
+
+---
+
 <!-- [IDX: 00129] Announcement Block v2.6.2 Hardware Pre-Commit Guard & Session Integrity -->
 > ## 🛡️ Release v2.6.2: Hardware Git Pre-Commit Guard & Session Integrity ($O(1)$ Hardware Guard & Session Integrity)
 > **Open engineering standard for hardware mutation prevention and LLM context saturation control:**
@@ -217,6 +228,17 @@
 
 
 ---
+
+---
+
+<!-- [IDX: 00124] Announcement Block v2.4 Zero-Text Syntax -->
+> ## 🛡️ Release v2.4: Strict Numeric Syntax & Tokenization Error Prevention ($O(1)$ Zero-Text Syntax)
+> **Eliminating text inside index brackets in favor of strict numerical coordinate standards:**
+> * 🛑 **Prohibition of text labels inside `[IDX]`:** Solves tokenizer splitting and bilingual hallucination bugs. Only numbers and hyphens are permitted: `[IDX: XXXXX]` or `[IDX: XXXXX-YYYYY]`.
+> * 💬 **Moving descriptions to `data-desc`:** All human-readable semantics are separated into `data-desc="..."` with clean bilingual toggles `isRu ? '...' : '...'`.
+> * 🎯 **100% commit diff stability:** Prevents LLM context corruption during AST mutations and multi-step refactoring.
+> 
+> 👉 **[ 📖 READ v2.4 SPECIFICATION (EN) ➔ ](docs/en/RELEASE_v2_4_ZERO_TEXT_SYNTAX.md)** &nbsp;&nbsp;|&nbsp;&nbsp; **[ 🇷🇺 Читать на русском ➔ ](docs/ru/RELEASE_v2_4_ZERO_TEXT_SYNTAX.md)**
 
 <!-- [IDX: 00123] Announcement Block v2.3 Telegram -->
 > ## 🚀 NEW: Telegram Bot Architecture, 64-Byte Bypass & Vibe-Coding ($O(1)$ Telegram Bot Standard)
@@ -836,4 +858,127 @@ The **«Utyansky Index»** standard is distributed under a transparent hybrid **
 * 🌐 **Постоянный международный идентификатор (DOI):** <a href="https://doi.org/10.5281/zenodo.22934668" target="_blank" rel="noopener noreferrer">10.5281/zenodo.22934668</a>
 * 🏛️ **Архив открытой науки:** Европейская организация ядерных исследований (CERN / OpenAIRE)
 * 📑 **Статус публикации:** Официально зарегистрированный государственный стандарт архитектурной детерминированной координатной навигации и изоляции слотов O(1) для ИИ и программного обеспечения
+---
+
+<!-- [IDX: 00121] Announcement Block v2.1 Industrial AST Edition -->
+> ## ⚙️ Release v2.1: Industrial AST Parsing & Architectural Framework ($O(1)$ Industrial AST Edition)
+> **Deterministic syntax tree analysis and industrial coordinate mapping:**
+> * 🌲 **Abstract Syntax Tree (AST) Parsing:** Automated scanning of codebases to map functions and components directly to five-digit slots `10000–99999`.
+> * 🗄️ **Structured Registry `UTYANSKY_INDEX_REGISTRY.json`:** Machine-readable architectural map defining cross-component dependencies and domain boundaries.
+> * 🛡️ **Architectural Degradation Prevention:** Context-saturation limits and circular dependency detection enforced directly during AST traversal.
+> 
+> 👉 **[ 📖 READ v2.1 RELEASE SPECIFICATION (EN) ➔ ](docs/en/RELEASE_v2_1_INDUSTRIAL_AST_EDITION.md)** &nbsp;&nbsp;|&nbsp;&nbsp; **[ 🇷🇺 Читать на русском ➔ ](docs/ru/RELEASE_v2_1_INDUSTRIAL_AST_EDITION.md)** &nbsp;&nbsp;|&nbsp;&nbsp; **[ ⚙️ AST Engine Source ➔ ](src/utyansky_ast_engine.js)**
+
+---
+
+<!-- [IDX: 00120] Announcement Block v2.0 Foundation Master -->
+> ## 🏛️ Release v2.0: Foundation Master Standard & Rospatent Priority (Application № 2026603415)
+> **Comprehensive expansion into 10 industrial classes and federal intellectual property filing:**
+> * 📜 **Rospatent RF Priority (August 22, 2026):** Official filing of State Registration Application № 2026603415 for "Utyansky Index".
+> * 🧱 **10 Architectural Classes (00000–99999):** Introduction of the full periodic table: from security kernel `00000` and databases `20000` to UI DOM `70000` and telemetry `80000`.
+> * 🔏 **Zero-Trust Lock & Encapsulation:** Formalized standard preventing AI agents from modifying locked foundation modules.
+> 
+> 👉 **[ 📖 READ MASTER SPECIFICATION v2.0 (EN) ➔ ](docs/en/SPECIFICATION_v2.md)** &nbsp;&nbsp;|&nbsp;&nbsp; **[ 🇷🇺 Читать на русском ➔ ](docs/ru/SPECIFICATION_v2.md)**
+
+---
+
+<!-- [IDX: 00110] Announcement Block v1.0 Alpha Archive -->
+> ## 📦 Release v1.0: Foundation Archive (March 2026)
+> **The initial public disclosure of five-digit coordinate DOM navigation on GitHub:**
+> * ⚡ **Five-Digit DOM Addressing:** First prototype mapping DOM elements to deterministic slots `70000–79999`.
+> * 🛡️ **Zero-Regression Proof of Concept:** Proving that AI-assisted frontend development achieves 100% precision with coordinate IDs.
+> * 📜 **Historical Archive:** Preserving original March 2026 documentation ensuring full provenance.
+> 
+> 👉 **[ 📖 READ v1.0 FOUNDATION ARCHIVE (EN) ➔ ](docs/en/VERSION_1.0_MARCH_2026_ARCHIVE.md)** &nbsp;&nbsp;|&nbsp;&nbsp; **[ 🇷🇺 Читать на русском ➔ ](docs/ru/VERSION_1.0_MARCH_2026_ARCHIVE.md)**
+
+---
+
+## 🗺️ Versioning & Roadmap
+
+* 📦 **v1.0 (March 2026 / Alpha):** Fundamental five-digit DOM coordinate navigation (`data-idx="7XXXX"`), semantic styling isolation, and BEM structuring.
+  * [ 📖 Read v1.0 Foundation Archive ➔ ](docs/en/VERSION_1.0_MARCH_2026_ARCHIVE.md)
+* 🏛️ **v2.0 (August 22, 2026 / Foundation Master — Rospatent Application № 2026603415):**
+  * Deterministic coordinate addressing $O(1)$ and Reliability Triad (*TypeScript + ESLint + Utyansky Index*).
+  * Specification of **Change Contracts** (`allowed_idx`, `read_context_idx`, `protected_idx`).
+  * Architectural layer **WAL (Write Authorization Layer)** for safe vibe-coding.
+  * Hardware pre-commit hook and cloud **GitHub Actions CI** checking collisions in 0.006–0.010 s.
+  * Official consensus of the **G8 Global AI Council** (8 leading frontier AI models).
+  * [ 📖 Read Master Specification v2.0 ➔ ](docs/en/SPECIFICATION_v2.md)
+* ⚙️ **v2.1 (September 11, 2026 / Industrial AST Edition):**
+  * Introduction of industrial syntax isolation engine `utyansky_ast_engine.js`.
+  * Babel AST lock $O(1)$, defensive validation of coordinate integrity `[ERR: 10451]`.
+  * Automated graph collection of `ImportDeclaration` dependencies.
+  * [ 📖 Read v2.1 Specification ➔ ](docs/en/RELEASE_v2_1_INDUSTRIAL_AST_EDITION.md) | [ ⚙️ AST Engine ➔ ](src/utyansky_ast_engine.js)
+* 🌐 **v2.2 (September 12, 2026 / Web Standard & AI Vision AIO):**
+  * Open standard for coordinate website markup (`70000–79999`) optimizing for AI search agents (AIO: Perplexity, ChatGPT Search, Yandex Neuro).
+  * Interactive DOM HUD inspector (`utyansky-web-inspector.js` / "AI Vision").
+  * Elimination of AI blindness and 0% layout regression during vibe-coding.
+  * [ 📖 Read Web Coordinate Indexing Guide ➔ ](docs/en/WEB_SITE_COORDINATE_INDEXING.md) | [ 💻 HTML Example ➔ ](examples/website-coordinate-markup.html)
+* 🚀 **v2.3 (September 20, 2026 / Telegram Bots & Zero-Lock Engine):**
+  * Open standard for $O(1)$ coordinate slot isolation for Telegram Bot API.
+  * Hardware bypass of 64-byte `callback_data` limit (zero `BUTTON_DATA_INVALID`).
+  * End-to-end 360° client dossier module ("Microscope") with 1-click ticket desk.
+  * **Zero-Ring Protection Class (`-00000` … `-00099`)**: Master Invariants, TTL quarantines, external triggers, and developer review mode.
+  * Expansion of the Periodic Table to **10 Classes (`00` – `09`)**.
+  * [ 📖 Read Telegram Bot Standard Guide ➔ ](docs/en/UTYANSKY_INDEX_TELEGRAM_VIBECODING_STANDARD.md)
+* 🛡️ **v2.4 (October 05, 2026 / Zero-Text Syntax & Strict Numeric Standard):**
+  * Strict numerical markup rule (only 5-digit numbers allowed inside `[IDX: 7XXXX]` brackets and `data-idx`, all text moved outside).
+  * Integration of file-header directive and automated validator `validate_utyansky_indexes.py` preventing AI syntax corruption.
+  * [ 📖 Read v2.4 Specification ➔ ](docs/en/RELEASE_v2_4_ZERO_TEXT_SYNTAX.md)
+* 🔥 **v2.5 (October 07, 2026 / Vibe Coding Iron Dome & Utyansky Law):**
+  * Official enactment of **Utyansky's Law: Clean Context Limit — 4 A4 Pages** (~350–400 lines / ~3,000 tokens) maintaining peak speed and eliminating attention drift.
+  * Introduction of the **Zero-Trust Default Lock (`[IDX: 00000]` / `data-lock="00000"`)** presuming complete immunity for finished components.
+  * Physical isolation of critical kernels and system prompts in `00000_*.json` / `.py` capsules.
+  * Autonomous architecture sentinel `guard_utyansky_slots.py`.
+  * [ 📖 Read Iron Dome Standard v2.5 ➔ ](docs/en/UTYANSKY_INDEX_v2_5_VIBE_CODING_IRON_DOME_STANDARD.md) | [ 📦 Download Starter Kit v2.5 (ZIP) ➔ ](https://github.com/vlad-utyansky/utyansky-index/raw/main/utyansky_starter_kit_v2_5.zip)
+* 📦 **v2.6 (October 08, 2026 / Official Starter Kit & Quality Telemetry):**
+  * Official release of **Starter Kit v2.6** with slot directory layout, isolated capsules (`capsules/00000-...`), git pre-commit hook, and $O(1)$ registry generator (`build_index.js`).
+  * Automated script **`guard_utyansky_slots.py`** blocking commits on Zero-Trust lock violations.
+  * Objective quality telemetry standard **`telemetry_benchmark.js`** (metrics CRS $\ge 0.90$, RFR $\le 10\%$, CHI $\ge 90\%$).
+  * [ 📖 Read v2.6 Specification ➔ ](docs/en/RELEASE_v2_6_STARTER_KIT_AND_TELEMETRY.md) | [ 📦 Download Starter Kit v2.6 (ZIP) ➔ ](https://github.com/vlad-utyansky/utyansky-index/raw/main/utyansky_starter_kit_v2_6.zip)
+* 🔒 **v2.6.1 (October 08, 2026 / Sensitive Information Protocol & Air-Gap Vault):**
+  * Utyansky Sensitive Information Protocol: 4-tier secret classification (L1–L4).
+  * Strict prohibition against feeding API keys, master passwords, customer databases, or proprietary formulas into LLM contexts.
+  * Air-gapped vault directory `00_SENSITIVE_VAULT/` with `.gitignore` enforcement.
+  * Public templating (`.env.example`, `.vault.example.json`) with sanitized mock values.
+  * [ 📖 Read v2.6.1 Chapter ➔ ](docs/en/RELEASE_v2_6_1_SENSITIVE_INFO_PROTOCOL.md)
+* 🛡️ **v2.6.2 (October 10, 2026 / Hardware Pre-Commit Guard & Session Integrity Protocol):**
+  * **Hardware Git Pre-Commit Hook (`git_pre_commit_guard.py`):** physical barrier against carpet-bomb file wipes (deleting >150 lines at once) and tampering with `00000` locks.
+  * **JavaScript Syntax Sentinel:** automated V8 compilation check on staged files via `node --check` before commit creation.
+  * **Session Quantization Law (80-Step Limit):** mandatory context archiving and chat reset every 60–80 turns to prevent attention degradation.
+  * [ 📖 Read v2.6.2 Chapter ➔ ](docs/en/RELEASE_v2_6_2_HARDWARE_PRE_COMMIT_AND_SESSION_INTEGRITY.md) | [ 🐍 Download Pre-Commit Hook ➔ ](examples/git_pre_commit_guard.py)
+* 🛡️ **v2.6.3 (October 11, 2026 / Collective Mirror Guard & Self-Protection Lock):**
+  * **Kernel Self-Protection ($O(1)$ Self-Protection):** integrity guardian `guard_manifest.json` and `git_pre_commit_guard.py` verify their own code via SHA-256 hashes. Any AI attempt to alter guard scripts triggers a hardware commit abort.
+  * **Collective Mirror Guard:** automated audit of multi-repository distributed code replicas preventing repository drift.
+  * [ 📖 Read v2.6.3 Chapter ➔ ](docs/en/RELEASE_v2_6_3_COLLECTIVE_MIRROR_GUARD.md) | [ 📦 Download Starter Kit v2.6.3 (ZIP) ➔ ](https://github.com/vlad-utyansky/utyansky-index/raw/main/utyansky_starter_kit_v2_6_3.zip)
+* 🏛️ **Official State Registration (October 16, 2026 / Rospatent RF № 2026691737 — National Legal Standing):**
+  * State Certificate **№ 2026691737** (registration date: October 14, 2026; application № 2026691407 filed August 22, 2026).
+  * Author & Rightsholder: **Vladislav Anatolyevich Utyansky**.
+  * Official electronic protection document available in repository: [`docs/utyansky_index_certificate_2026691737.pdf`](docs/utyansky_index_certificate_2026691737.pdf).
+  * [ 📖 Read State Registration Act ➔ ](docs/en/ROSPATENT_RF_REGISTRATION_CERTIFICATE_2026691737.md)
+* 🔌 **v2.6.4 (October 12, 2026 / Armored Vital Data Cables & Silicon Baseline):**
+  * **Armored Cable Standard:** strict `*cable*.js` naming convention for all cross-slot data conduits.
+  * **Silicon Baseline:** prohibition of synthetic clocks; direct binding to operating system hardware timestamps (`Date.now()`).
+  * **Regulation:** `[IDX: 00000-00029]`. [ 📖 Read v2.6.4 Chapter ➔ ](docs/en/RELEASE_v2_6_4_ARMORED_CABLES_AND_SILICON_BASELINE.md) | [ 💻 Armored Cable Template ➔ ](examples/armored_cable_template.js)
+* 🧭 **v2.6.5 (October 13, 2026 / Unbreakable Navigation & DOM-First Pulse):**
+  * **DOM-First Principle:** synchronous DOM screen switching at Step 0 before invoking computationally heavy routines.
+  * **Isolated Shield Screen:** analytical and charting routines execute within isolated `try/catch` wrappers, preventing UI freezes.
+  * **Cross-Conduit Emission:** synchronization across dependent cables via native system events.
+  * **Regulation:** `[IDX: 00000-00030]`. [ 📖 Read v2.6.5 Chapter ➔ ](docs/en/RELEASE_v2_6_5_UNBREAKABLE_NAVIGATION_AND_DOM_PULSE.md) | [ 💻 Safe Navigation Pattern ➔ ](examples/safe_navigation_pattern.js)
+* ⚡ **v2.6.6 (October 14, 2026 / Structural Integrity & Syntax Sentinel Law):**
+  * **Zero-Imbalance Law ($\Delta = 0$):** hardware commit abort on unclosed brackets `{}`, `()`, `[]`, quotes, or unclosed JSX/HTML tags.
+  * **V8 AST Compilation Guard:** hardware pre-commit validation by V8 engine (`scripts/utyansky_syntax_guard.js`).
+  * **Regulation:** `[IDX: 00000-00031]`. [ 📖 Read v2.6.6 Chapter ➔ ](docs/en/RELEASE_v2_6_6_SYNTAX_SENTINEL_STRUCTURAL_INTEGRITY.md) | [ ⚡ Syntax Guard Script ➔ ](scripts/utyansky_syntax_guard.js)
+* 🧹 **v2.6.7 (October 15, 2026 / Zombie Purge & Strict Port Lock):**
+  * **Strict Port Lock (`strictPort: true`):** strict ban on dev servers silently jumping to arbitrary random ports.
+  * **Hardware Zombie Killer:** utility `scripts/utyansky_zombie_killer.js` ensuring immediate release of ports 5173 and 3001.
+  * **NTFS Lock Release:** automated clearing of spurious Windows Read-Only flags and stuck file descriptors.
+  * **Regulation:** `[IDX: 00000-00032]`. [ 📖 Read v2.6.7 Chapter ➔ ](docs/en/RELEASE_v2_6_7_ZOMBIE_PURGE_AND_PORT_LOCK.md) | [ 🧹 Zombie Killer Script ➔ ](scripts/utyansky_zombie_killer.js)
+* 📦 **v2.6.7-SUITE (October 18, 2026 / Official Industrial Resilience Suite):**
+  * Complete open distribution including all 4 new safety regulations, templates, and automated tooling out of the box.
+  * [ 📦 Download Starter Kit v2.6.7 (ZIP) ➔ ](https://github.com/vlad-utyansky/utyansky-index/raw/main/utyansky_starter_kit_v2_6_7.zip)
+* 📦 **v2.6.8-DEVKIT (October 21, 2026 / Standalone Visual Manipulator & DOM Inspector):**
+  * Floating browser HUD toolbar, 1-click `[IDX]` element capture, laser grid `[PXL]`, `VAU` hotkey cheat code, eliminating 30-minute CSS ping-pong.
+  * [ 📖 Read Origin Story ➔ ](docs/en/RELEASE_v2_6_8_UTYANSKY_DEVKIT_VISUAL_MANIPULATOR.md) | [ 📦 Download UtyanskyDevKit v2.6.8 (ZIP) ➔ ](https://github.com/vlad-utyansky/utyansky-index/raw/main/utyansky_devkit_v2_6_8.zip)
+
 
