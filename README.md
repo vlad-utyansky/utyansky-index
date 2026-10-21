@@ -241,7 +241,7 @@
 > 👉 **[ 📖 READ v2.4 SPECIFICATION (EN) ➔ ](docs/en/RELEASE_v2_4_ZERO_TEXT_SYNTAX.md)** &nbsp;&nbsp;|&nbsp;&nbsp; **[ 🇷🇺 Читать на русском ➔ ](docs/ru/RELEASE_v2_4_ZERO_TEXT_SYNTAX.md)**
 
 <!-- [IDX: 00123] Announcement Block v2.3 Telegram -->
-> ## 🚀 NEW: Telegram Bot Architecture, 64-Byte Bypass & Vibe-Coding ($O(1)$ Telegram Bot Standard)
+> ## 🚀 Release v2.3: Telegram Bot Architecture, 64-Byte Bypass & Vibe-Coding ($O(1)$ Telegram Bot Standard)
 > **How to build multi-screen resilient Telegram bots with AI and 1 developer:**
 > * ⚡ **64-Byte Payload Bypass:** Compact slot addressing (12–22 bytes) permanently prevents fatal `BUTTON_DATA_INVALID` errors.
 > * 🛡️ **Zero Regression During Vibe-Coding:** AI assistants (Cursor, Claude Code, Windsurf) edit cards and menus with surgical precision without breaking neighbor event handlers.
@@ -252,7 +252,8 @@
 
 ---
 
-> ## 🌐 Web Coordinate Standard & AI Vision ($O(1)$ DOM Navigation)
+<!-- [IDX: 00122] Announcement Block v2.2 Web Coordinate Standard -->
+> ## 🌐 Release v2.2: Web Coordinate Standard & AI Vision ($O(1)$ Web Navigation & AI Vision)
 > **Turn any website layout into a deterministic coordinate map for AI agents:**
 > * 🚫 **Eliminate AI Blindness:** Neural networks no longer drown in chaotic Tailwind `<div>` structures.
 > * 🛡️ **Zero Regression:** AI assistants (Cursor, Claude Code, Windsurf) target the exact node `data-idx="7XXXX"` without corrupting adjacent markup.
