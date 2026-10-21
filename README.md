@@ -51,8 +51,6 @@
 
 ---
 
----
-
 <!-- [IDX: 00101] Target Audience & Solution Matrix -->
 ## 🎯 [IDX: 00128] WHO THIS STANDARD IS FOR (TARGET AUDIENCE)
 
@@ -131,10 +129,6 @@
 
 ---
 
-> 🏛️ **COMING SOON (OCTOBER 22, 2026):** **Official Premier of Utyansky Index v3.0 / v3.1 Enterprise Edition!**
-
----
-
 <!-- [IDX: 00103] Fast Quickstart in 30 Seconds -->
 ## 🚀 3. QUICKSTART & FAST DEPLOYMENT (30-Second Guide)
 
@@ -156,8 +150,6 @@
 2. **Deterministic Errors:** On any issue, AI returns exact deterministic $O(1)$ error codes:  
    👉 *`[ERR: 40101] Invalid Index Format`*, *`[ERR: 40102] Coordinate Collision`*, *`[ERR: 50010] LLM Deviation`*.
 3. **Safe Surgical Edits:** When you say "fix button 71080", AI modifies **strictly 2 lines inside slot 71080** without touching surrounding UI!
-
----
 
 ---
 
@@ -184,8 +176,6 @@ Instead of forcing AI to "guess" functions via imprecise keywords in stochastic 
 > * **Without the Index (Blind Search):** The AI reads through 1,000+ lines of code from top to bottom just to find one button (like looking for a needle in a haystack). It gets confused, hallucinates, and burns expensive tokens.  
 > * **With Utyansky Index O(1):** Every element receives a rigid 5-digit coordinate passport (e.g., `71080`). The AI jumps directly to the targeted node in 1 action (in 0.05s) without re-reading or corrupting adjacent code.
 
-
----
 
 ---
 
@@ -759,8 +749,6 @@ MCP is the tool calling transport protocol, while Utyansky Index is the master c
 
 ---
 
----
-
 <!-- [IDX: 00124] Announcement Block v2.4 Zero-Text Syntax -->
 > ## 🛡️ Release v2.4: Strict Numeric Syntax & Tokenization Error Prevention ($O(1)$ Zero-Text Syntax)
 > **Eliminating text inside index brackets in favor of strict numerical coordinate standards:**
@@ -914,8 +902,6 @@ The **«Utyansky Index»** standard is distributed under a transparent hybrid **
   * **CCG (Cryptographic Capability Grants):** Tamper-proof code mutation tokens powered by **Ed25519** cryptographic signatures.
   * **HVS (Hierarchical Vector Sharding):** Pre-routing of embedding vector spaces for **pgvector / HNSW** ($1.5\text{M}+$ vectors) with 15x retrieval noise compression.
   * **Non-Bypassable Enterprise Protected Surface:** Kernel protection of the policy envelope (`ProtectedSurface`) via CODEOWNERS and GitHub Rulesets.
-
----
 
 ---
 
