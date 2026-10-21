@@ -3,6 +3,7 @@
 [![Русский](https://img.shields.io/badge/Язык-Русский%20(RU)-red?style=for-the-badge)](README_RU.md)
 [![English](https://img.shields.io/badge/Language-English%20(EN)-blue?style=for-the-badge)](README.md)
 [![Версия 2.0 (Авторская Спецификация)](https://img.shields.io/badge/Версия-2.0%20(Спецификация)-emerald?style=for-the-badge)](https://github.com/vlad-utyansky/utyansky-index)
+[![Релиз v2.6.8](https://img.shields.io/badge/Релиз-v2.6.8%20(DevKit)-emerald?style=for-the-badge)](docs/ru/RELEASE_v2_6_8_UTYANSKY_DEVKIT_VISUAL_MANIPULATOR.md)
 [![Релиз v2.6.7](https://img.shields.io/badge/Релиз-v2.6.7-emerald?style=for-the-badge)](docs/ru/RELEASE_v2_6_7_ZOMBIE_PURGE_AND_PORT_LOCK.md)
 [![Релиз v2.6.3](https://img.shields.io/badge/Релиз-v2.6.3-blue?style=for-the-badge)](docs/ru/RELEASE_v2_6_3_COLLECTIVE_MIRROR_GUARD.md)
 [![Релиз v2.6.2](https://img.shields.io/badge/Релиз-v2.6.2-emerald?style=for-the-badge)](docs/ru/RELEASE_v2_6_2_HARDWARE_PRE_COMMIT_AND_SESSION_INTEGRITY.md)
@@ -104,6 +105,23 @@
 > * **15 Октября 2026 г.** — **Релиз v2.6.7 Ликвидация Зомби-Процессов и Блокировка Портов (Zombie Purge & Strict Port Lock)**: запрет тихого дрейфа серверов (`strictPort: true`), утилита очистки портов `utyansky_zombie_killer.js` и сброс блокировок NTFS (`[IDX: 00000-00032]`). [ 📖 Читать главу v2.6.7 ➔ ](docs/ru/RELEASE_v2_6_7_ZOMBIE_PURGE_AND_PORT_LOCK.md)
 > * **🏛️ 16 Октября 2026 г.** — **Государственная Регистрация «Индекс Утянского» (Роспатент РФ)**: официальное признание системы детерминированной координатной навигации и маршрутизации данных для ИИ на государственном уровне. Выдано официальное государственное Свидетельство **№ 2026691737** (заявка № 2026691407 от 22.08.2026, дата регистрации: 14.10.2026). [ 📜 Открыть Свидетельство Роспатента РФ (PDF) ➔ ](docs/utyansky_index_certificate_2026691737.pdf)
 > * **🔥 18 Октября 2026 г.** — **Официальный Выпуск Пакета Промышленной Отказоустойчивости (v2.6.4 – v2.6.7) и Starter Kit v2.6.7**: открытый инженерный бронекупол надежности вайбкодинга с готовыми шаблонами и утилитами «из коробки». [ 📦 Скачать Starter Kit v2.6.7 (ZIP) ➔ ](https://github.com/vlad-utyansky/utyansky-index/raw/main/utyansky_starter_kit_v2_6_7.zip)
+> * **🚀 21 Октября 2026 г.** — **Официальный Выпуск UtyanskyDevKit v2.6.8 (Автономный Визуальный Манипулятор и Инспектор DOM)**: точка отсчёта и практический инструмент вайб-кодинга без потери контекста (8+ месяцев практики). Захват слотов [IDX] в 1 клик для исключения галлюцинаций LLM, лазерная сетка [PXL] 20×20, чит-код VAU и архитектурный Ментор [MNTR]. [ 📖 Читать Историю Создания ➔ ](docs/ru/RELEASE_v2_6_8_UTYANSKY_DEVKIT_VISUAL_MANIPULATOR.md) | [ 📦 Скачать UtyanskyDevKit v2.6.8 (ZIP) ➔ ](utyansky_devkit_v2_6_8.zip)
+
+---
+
+<!-- [IDX: 00005] VCODES Analytics Beacon -->
+<img src="https://api.vcodes.ru/api/beacon?repo=utyansky-index&lang=ru" width="1" height="1" alt="" style="display:none;" />
+
+<!-- [IDX: 00136] Announcement Block v2.6.8 UtyanskyDevKit -->
+> ## 🚀 НОВОЕ В v2.6.8: UtyanskyDevKit — Автономный Визуальный Манипулятор и Инспектор DOM
+> **Точка отсчёта и практический инструмент вайб-кодинга без потери контекста (8+ месяцев ежедневной боевой практики):**
+> 
+> * 🎯 **Захват слотов в 1 клик `[IDX]`:** Кликнули по блоку на экране ➔ точный числовой слот `[IDX: XXXXX]` скопирован в буфер ➔ нажали `Ctrl + V` в чате с ИИ. Модель за 1 секунду правит ровно 5 нужных строк, не смея трогать соседей и не затирая кнопки оплаты.
+> * 📐 **Пространственная сетка 20×20 `[PXL]`:** Лазерная координатная сетка с трекингом курсора мыши для идеального позиционирования без открытия тяжелых DevTools браузера.
+> * 🎮 **Управление:** Чит-код `VAU` / `ВАУ` для мгновенного пробуждения пульта на странице, `F1` для быстрой справки и мгновенное переключение `RU / EN`.
+> * 🧠 **Архитектурный Ментор `[MNTR]`:** Интерактивные подсказки о системной роли каждого компонента прямо в браузере.
+> 
+> 👉 **[ 📖 ЧИТАТЬ ИСТОРИЮ СОЗДАНИЯ И РУКОВОДСТВО (RU) ➔ ](docs/ru/RELEASE_v2_6_8_UTYANSKY_DEVKIT_VISUAL_MANIPULATOR.md)** &nbsp;|&nbsp; **[ 📦 СКАЧАТЬ UTYANSKY DEVKIT v2.6.8 (ZIP) ➔ ](utyansky_devkit_v2_6_8.zip)**
 
 ---
 
@@ -798,6 +816,9 @@ MCP является транспортной шиной вызова инстр
   * **Аппаратный ликвидатор зомби-процессов:** утилита `scripts/utyansky_zombie_killer.js` для гарантированного освобождения портов 5173 и 3001.
   * **Разблокировка NTFS:** автоматический сброс ложных блокировок Read-Only и дескрипторов файлов.
   * **Регламент:** `[IDX: 00000-00032]`. [ 📖 Читать главу v2.6.7 ➔ ](docs/ru/RELEASE_v2_6_7_ZOMBIE_PURGE_AND_PORT_LOCK.md) | [ 🧹 Скрипт Zombie Killer ➔ ](scripts/utyansky_zombie_killer.js)
+* 📦 **v2.6.8-DEVKIT (21 Октября 2026 / Автономный Визуальный Манипулятор и Инспектор DOM):**
+  * Парящий HUD-пульт браузера, захват индексов `[IDX]` в один клик, лазерная сетка `[PXL]`, чит-код `VAU` и устранение 30-минутного CSS-пинг-понга.
+  * [ 📖 Читать историю создания ➔ ](docs/ru/RELEASE_v2_6_8_UTYANSKY_DEVKIT_VISUAL_MANIPULATOR.md) | [ 📦 Скачать UtyanskyDevKit v2.6.8 (ZIP) ➔ ](utyansky_devkit_v2_6_8.zip)
 * 📦 **v2.6.7-SUITE (18 Октября 2026 / Официальный Пакет Промышленной Отказоустойчивости):**
   * Полный открытый дистрибутив со всеми 4 новыми регламентами, шаблонами и скриптами «из коробки».
   * [ 📦 Скачать Starter Kit v2.6.7 (ZIP) ➔ ](https://github.com/vlad-utyansky/utyansky-index/raw/main/utyansky_starter_kit_v2_6_7.zip)

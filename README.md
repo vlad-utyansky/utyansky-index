@@ -3,6 +3,7 @@
 [![Language: English (EN)](https://img.shields.io/badge/Language-English%20(EN)-blue?style=for-the-badge)](README.md)
 [![Language: Russian (RU)](https://img.shields.io/badge/Language-Russian%20(RU)-red?style=for-the-badge)](README_RU.md)
 [![Version 2.0 (Author Specification)](https://img.shields.io/badge/Version-2.0%20(Specification)-emerald?style=for-the-badge)](https://github.com/vlad-utyansky/utyansky-index)
+[![Release v2.6.8](https://img.shields.io/badge/Release-v2.6.8%20(DevKit)-emerald?style=for-the-badge)](docs/ru/RELEASE_v2_6_8_UTYANSKY_DEVKIT_VISUAL_MANIPULATOR.md)
 [![Release v2.6.7](https://img.shields.io/badge/Release-v2.6.7-emerald?style=for-the-badge)](docs/ru/RELEASE_v2_6_7_ZOMBIE_PURGE_AND_PORT_LOCK.md)
 [![Release v2.6.3](https://img.shields.io/badge/Release-v2.6.3-blue?style=for-the-badge)](docs/en/RELEASE_v2_6_3_COLLECTIVE_MIRROR_GUARD.md)
 [![Release v2.6.2](https://img.shields.io/badge/Release-v2.6.2-emerald?style=for-the-badge)](docs/en/RELEASE_v2_6_2_HARDWARE_PRE_COMMIT_AND_SESSION_INTEGRITY.md)
@@ -103,6 +104,23 @@
 > * **October 15, 2026** — **v2.6.7 Zombie Purge & Strict Port Lock Release**: elimination of dev-server drift (`strictPort: true`), automated port cleaner `scripts/utyansky_zombie_killer.js`, and NTFS descriptor unlock (`[IDX: 00000-00032]`). [ 📖 Read Chapter v2.6.7 ➔ ](docs/ru/RELEASE_v2_6_7_ZOMBIE_PURGE_AND_PORT_LOCK.md)
 > * **🏛️ October 16, 2026** — **Official State Registration of «Utyansky Index» (Rospatent RF)**: official national recognition of the deterministic coordinate navigation and data routing system for AI and software. Official Certificate **№ 2026691737** issued (Application № 2026691407 filed August 22, 2026, Registration Date: October 14, 2026). [ 📜 Open Official Rospatent Certificate (PDF) ➔ ](docs/utyansky_index_certificate_2026691737.pdf)
 > * **🔥 October 18, 2026** — **Official Release of Industrial Resilience Suite (v2.6.4 – v2.6.7) & Starter Kit v2.6.7**: full open engineering armor suite for production vibe-coding reliability. [ 📦 Download Starter Kit v2.6.7 (ZIP) ➔ ](https://github.com/vlad-utyansky/utyansky-index/raw/main/utyansky_starter_kit_v2_6_7.zip)
+> * **🚀 October 21, 2026** — **Official Release of UtyanskyDevKit v2.6.8 (Autonomous Visual Manipulator & DOM Inspector)**: the genesis tool of slot-based vibe-coding without context loss (8+ months battle-tested). 1-click [IDX] slot capture, 20x20 [PXL] spatial grid, VAU cheat code, and Mentor [MNTR]. [ 📖 Read Founder Story ➔ ](docs/ru/RELEASE_v2_6_8_UTYANSKY_DEVKIT_VISUAL_MANIPULATOR.md) | [ 📦 Download UtyanskyDevKit v2.6.8 (ZIP) ➔ ](utyansky_devkit_v2_6_8.zip)
+
+---
+
+<!-- [IDX: 00005] VCODES Analytics Beacon -->
+<img src="https://api.vcodes.ru/api/beacon?repo=utyansky-index&lang=en" width="1" height="1" alt="" style="display:none;" />
+
+<!-- [IDX: 00136] Announcement Block v2.6.8 UtyanskyDevKit -->
+> ## 🚀 NEW IN v2.6.8: UtyanskyDevKit — Standalone Visual Manipulator & DOM Inspector
+> **The origin story and practical tooling for vibe-coding with zero context degradation (8+ months daily battle practice):**
+> 
+> * 🎯 **1-Click Slot Capture `[IDX]`:** Click any screen element ➔ exact coordinate slot `[IDX: XXXXX]` copied to clipboard ➔ paste (`Ctrl + V`) into AI chat. LLM modifies strictly 5 target lines with zero CSS regressions and zero missing payment buttons.
+> * 📐 **Spatial Grid 20×20 `[PXL]`:** Laser coordinate grid with live cursor tracking for pixel-perfect layout without opening heavy browser DevTools.
+> * 🎮 **Controls:** Type `VAU` anywhere on keyboard to toggle dock, `F1` for quick reference guide, instant `RU / EN` switch.
+> * 🧠 **Architecture Mentor `[MNTR]`:** Floating system insights explaining component roles and data wiring.
+> 
+> 👉 **[ 📖 READ FOUNDER GENESIS STORY (RU) ➔ ](docs/ru/RELEASE_v2_6_8_UTYANSKY_DEVKIT_VISUAL_MANIPULATOR.md)** &nbsp;|&nbsp; **[ 📦 DOWNLOAD UTYANSKY DEVKIT v2.6.8 (ZIP) ➔ ](utyansky_devkit_v2_6_8.zip)**
 
 ---
 

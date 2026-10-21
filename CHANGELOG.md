@@ -19,6 +19,16 @@
 
 ---
 
+## 🏛️ [v2.6.8] — October 21, 2026 — 🚀 UtyanskyDevKit: Visual Manipulator & DOM Inspector Release
+* **The Genesis Tool:** Open release of the core production tool built from scratch and refined across 8+ months of daily AI vibe-coding.
+* **1-Click Slot Capture (`[IDX]`):** Click element in browser ➔ copies `[IDX: XXXXX]` to clipboard. Eliminates LLM hallucinations and accidental deletion of payment buttons.
+* **Laser Grid 20×20 (`[PXL]`):** Alphanumeric coordinate grid with live cursor tracking for pixel-perfect positioning without DevTools.
+* **Cheat Code `VAU`:** Instant awakening of the floating neon dock anywhere on the screen.
+* **Specification:** [RELEASE_v2_6_8_UTYANSKY_DEVKIT_VISUAL_MANIPULATOR.md](docs/ru/RELEASE_v2_6_8_UTYANSKY_DEVKIT_VISUAL_MANIPULATOR.md)
+* **Bundle:** [utyansky_devkit_v2_6_8.zip](utyansky_devkit_v2_6_8.zip)
+
+---
+
 ## 🏛️ [v2.6.2] — October 10, 2026 (19:30 MSK) — 🛡️ Hardware Git Pre-Commit Guard & Session Integrity Release
 
 ### 💡 Engineering Background:
