@@ -20,7 +20,7 @@
       dockPxl: 'Пиксели и Сетка (Координаты X/Y)',
       dockMntr: 'Ментор (Архитектура блоков)',
       dockHelp: 'Справка по инструменту (F1)',
-      dockClose: 'Свернуть (клавиши U / V / код VAU)',
+      dockClose: 'Свернуть (код VAU / ВАУ)',
       dockLang: 'Переключить язык (RU / EN)',
       noIdx: 'НЕТ ИНДЕКСА',
       uiElem: 'Элемент интерфейса',
@@ -36,9 +36,9 @@
       helpMntrTitle: '3. Режим [MNTR] — Ментор архитектуры',
       helpMntrDesc: 'Показывает плавающее окно разъяснений функционала и роли компонента в системе.',
       helpKeysTitle: 'Фирменные горячие клавиши Основателя:',
-      helpKey1: '<b>U</b> (<b>У</b>тянский) или <b>V</b> (<b>В</b>ладислав) — Быстро свернуть / развернуть панель',
-      helpKey2: 'Секретный код <b>V-A-U</b> / <b>В-А-У</b> / <b>U-V-A</b> — Набор прямо на клавиатуре для мгновенного пробуждения DevKit',
-      helpKey3: '<b>F1</b> — Вызов этой справки',
+      helpKey1: 'Активация: наберите <b>VAU</b> или <b>ВАУ</b> прямо на клавиатуре',
+      helpKey2: '<b>F1</b> — Интерактивная справка и быстрый гид',
+      helpKey3: 'Кнопка на пульте — временно свернуть панель',
       helpCloseBtn: 'Понятно, закрыть справку'
     },
     en: {
@@ -46,7 +46,7 @@
       dockPxl: 'Pixels & Grid (Coords X/Y)',
       dockMntr: 'Mentor (Component Insights)',
       dockHelp: 'Quick Reference Guide (F1)',
-      dockClose: 'Collapse (Keys U / V / VAU code)',
+      dockClose: 'Collapse (type VAU code)',
       dockLang: 'Switch Language (RU / EN)',
       noIdx: 'NO INDEX',
       uiElem: 'UI Element',
@@ -62,9 +62,9 @@
       helpMntrTitle: '3. Mode [MNTR] — Architecture Mentor',
       helpMntrDesc: 'Displays floating card detailing the component purpose and system wiring.',
       helpKeysTitle: 'Founder Signature Hotkeys:',
-      helpKey1: '<b>U</b> (<b>U</b>tyansky) or <b>V</b> (<b>V</b>ladislav) — Toggle panel visibility',
-      helpKey2: 'Secret cheat code <b>V-A-U</b> / <b>U-V-A</b> — Type anywhere on keyboard to awaken DevKit',
-      helpKey3: '<b>F1</b> — Open this reference guide',
+      helpKey1: 'Awaken: type <b>VAU</b> anywhere on keyboard',
+      helpKey2: '<b>F1</b> — Interactive reference guide',
+      helpKey3: 'Minimize button on dock — collapse the panel',
       helpCloseBtn: 'Got it, close guide'
     }
   };
@@ -91,16 +91,10 @@
     if (window._utyanskyDevUnlocked) return true;
     try {
       const host = window.location.hostname;
-      if (host === 'localhost' || host === '127.0.0.1') return true;
+      if (host === 'localhost' || host === '127.0.0.1' || host === '') return true;
 
       const urlParams = new URLSearchParams(window.location.search);
-      if (urlParams.get('dev') === '1' || urlParams.get('pin') === '2514') return true;
-
-      const sessionStr = localStorage.getItem('vcodes_user_session');
-      if (sessionStr) {
-        const session = JSON.parse(sessionStr);
-        if (session && (session.isFounder || session.email === 'info@vau.ru')) return true;
-      }
+      if (urlParams.get('dev') === '1' || urlParams.get('devkit') === '1') return true;
     } catch(e) {}
     return false;
   }
@@ -565,10 +559,7 @@
       clearTimeout(sequenceTimer);
       sequenceTimer = setTimeout(() => { keySequence = ''; }, 2000);
 
-      if (keySequence.endsWith('vau') || keySequence.endsWith('вау') || 
-          keySequence.endsWith('uva') || keySequence.endsWith('ува') || 
-          keySequence.endsWith('мфг') || keySequence.endsWith('гмф') ||
-          keySequence.endsWith('dfe') || keySequence.endsWith('edf')) {
+      if (keySequence.endsWith('vau') || keySequence.endsWith('вау') || keySequence.endsWith('мфг')) {
         e.preventDefault();
         keySequence = '';
         window._utyanskyDevUnlocked = true;
@@ -578,15 +569,7 @@
       }
     }
 
-    // Одиночные горячие клавиши: 'U' (Утянский) или 'V' (Владислав)
-    const isU = e.key === 'u' || e.key === 'U' || e.code === 'KeyU' || e.key === 'у' || e.key === 'У' || e.key === 'г' || e.key === 'Г';
-    const isV = e.key === 'v' || e.key === 'V' || e.code === 'KeyV' || e.key === 'в' || e.key === 'В' || e.key === 'м' || e.key === 'М';
-    const isD = e.key === 'd' || e.key === 'D';
-
-    if (isU || isV || isD) {
-      e.preventDefault();
-      toggleDevPanel();
-    }
+    // Пробуждение строго по набору секретного слова VAU / ВАУ
   });
 
   // Автоинициализация при загрузке
