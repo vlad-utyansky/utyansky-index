@@ -121,39 +121,17 @@
 <!-- [IDX: 00102-00001] Flagship Card v2.6.8 -->
 > ## 🚀 FLAGSHIP RELEASE: v2.6.8 (October 21, 2026) — UtyanskyDevKit (Visual Manipulator & DOM Inspector)
 > **Practical tooling for vibe-coding with zero context degradation (8+ months daily battle practice):**
-> * 🚀 **Floating Browser HUD Toolbar:** Single `<script>` tag injection, zero build tools required, instant compatibility.
-> * 🎯 **1-Click `[IDX]` Element Capture:** Copies ready-to-prompt coordinate coordinates to clipboard for Cursor / Claude.
-> * 📐 **Laser Grid & Measurements `[PXL]`:** Real-time on-screen spacing and margin inspection.
-> * ⌨️ **VAU Cheat Code Activation:** Instant toggle by typing `vau` anywhere on the page.
+> * 🎯 **1-Click Slot Capture `[IDX]`:** Click any block on screen ➔ exact numerical coordinate `[IDX: XXXXX]` copied to clipboard ➔ paste into chat with AI. The LLM edits strictly the targeted 5 lines without breaking neighbor nodes.
+> * 📐 **Laser Grid 20×20 `[PXL]`:** Real-time on-screen spacing and margin inspection without opening heavy browser DevTools.
+> * 🎮 **Controls & `VAU` Cheat Code:** Silent instant activation by typing `vau` anywhere on page, `F1` for quick help, and instant `RU / EN` switch.
+> * 🧠 **Architectural Mentor `[MNTR]`:** Real-time interactive hints explaining the system role of each DOM component.
+> * 🔌 **Autonomous $O(1)$ Setup:** Injected via a single `<script>` tag, zero build step required, works across React, Vue, HTML, Next.js.
 > 
 > 👉 **[ 📖 READ DEVKIT v2.6.8 SPECIFICATION & ORIGIN STORY (EN) ➔ ](docs/en/RELEASE_v2_6_8_UTYANSKY_DEVKIT_VISUAL_MANIPULATOR.md)** &nbsp;&nbsp;|&nbsp;&nbsp; **[ 📦 Download UtyanskyDevKit v2.6.8 (ZIP) ➔ ](https://github.com/vlad-utyansky/utyansky-index/raw/main/utyansky_devkit_v2_6_8.zip)**
-> 
-> <details>
-> <summary><b>🔍 Expand full architecture & technical background of DevKit v2.6.8...</b></summary>
-> <br/>
-
-<!-- [IDX: 00136] Announcement Block v2.6.8 UtyanskyDevKit -->
-> ## 🚀 NEW IN v2.6.8: UtyanskyDevKit — Standalone Visual Manipulator & DOM Inspector
-> **The origin story and practical tooling for vibe-coding with zero context degradation (8+ months daily battle practice):**
-> 
-> * 🎯 **1-Click Slot Capture `[IDX]`:** Click any screen element ➔ exact coordinate slot `[IDX: XXXXX]` copied to clipboard ➔ paste (`Ctrl + V`) into AI chat. LLM modifies strictly 5 target lines with zero CSS regressions and zero missing payment buttons.
-> * 📐 **Spatial Grid 20×20 `[PXL]`:** Laser coordinate grid with live cursor tracking for pixel-perfect layout without opening heavy browser DevTools.
-> * 🎮 **Controls:** Type `VAU` anywhere on keyboard to toggle dock, `F1` for quick reference guide, instant `RU / EN` switch.
-> * 🧠 **Architecture Mentor `[MNTR]`:** Floating system insights explaining component roles and data wiring.
-> 
-> 👉 **[ 📖 READ FOUNDER GENESIS STORY (RU) ➔ ](docs/ru/RELEASE_v2_6_8_UTYANSKY_DEVKIT_VISUAL_MANIPULATOR.md)** &nbsp;|&nbsp; **[ 📦 DOWNLOAD UTYANSKY DEVKIT v2.6.8 (ZIP) ➔ ](https://github.com/vlad-utyansky/utyansky-index/raw/main/utyansky_devkit_v2_6_8.zip)**
-
----
-
-<!-- [IDX: 00005] VCODES Analytics Beacon -->
-<img src="https://api.vcodes.ru/api/beacon?repo=utyansky-index&lang=en" width="1" height="1" alt="" style="display:none;" />
-
-</details>
 
 ---
 
 > 🏛️ **COMING SOON (OCTOBER 22, 2026):** **Official Premier of Utyansky Index v3.0 / v3.1 Enterprise Edition!**
-
 
 ---
 
