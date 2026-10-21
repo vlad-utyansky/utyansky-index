@@ -128,7 +128,7 @@
 <img src="https://api.vcodes.ru/api/beacon?repo=utyansky-index&lang=en" width="1" height="1" alt="" style="display:none;" />
 
 <!-- [IDX: 00135] Announcement Block v2.6.7 Industrial Resilience Suite -->
-> ## 🛡️ NEW IN v2.6.7: Industrial Resilience Suite (v2.6.4 – v2.6.7)
+> ## 🛡️ Industrial Resilience Suite (v2.6.4 – v2.6.7)
 > **Open engineering armor standard for robust vibe-coding and autonomous AI agents:**
 > 
 > * 🔌 **v2.6.4 — Armored Vital Data Cables & Silicon Baseline:**
@@ -793,6 +793,9 @@ The **«Utyansky Index»** standard is distributed under a transparent hybrid **
 * 📦 **v2.6.7-SUITE (October 18, 2026 / Official Industrial Resilience Suite):**
   * Complete open distribution bundle containing all 4 new standards, examples, and scripts out of the box.
   * [ 📦 Download Starter Kit v2.6.7 (ZIP) ➔ ](https://github.com/vlad-utyansky/utyansky-index/raw/main/utyansky_starter_kit_v2_6_7.zip)
+* 📦 **v2.6.8-DEVKIT (October 21, 2026 / Standalone Visual Manipulator & DOM Inspector):**
+  * Floating browser HUD dock, 1-click slot capture [IDX], laser grid [PXL], VAU cheat code, and elimination of 30-min CSS ping-pong.
+  * [ 📖 Read Founder Story ➔ ](docs/ru/RELEASE_v2_6_8_UTYANSKY_DEVKIT_VISUAL_MANIPULATOR.md) | [ 📦 Download UtyanskyDevKit v2.6.8 (ZIP) ➔ ](utyansky_devkit_v2_6_8.zip)
 * 🔮 **(Under Active R&D / Preview):**
   * **Autonomous Multi-Agent Swarms:** Zero-conflict concurrent code engineering for swarms of 10–20 autonomous AI agents in monorepos.
   * **DSL (Distributed Slot Locking):** Write-intent coordination via lease-based domain coordinate reservations.
