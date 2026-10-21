@@ -25,7 +25,7 @@
 * **Лазерная сетка 20×20 (`[PXL]`):** Координатная сетка с трекингом курсора мыши для идеального позиционирования без открытия DevTools браузера.
 * **Чит-код `VAU` / `ВАУ`:** Мгновенный вызов парящего пульта прямо на странице.
 * **Спецификация:** [RELEASE_v2_6_8_UTYANSKY_DEVKIT_VISUAL_MANIPULATOR.md](docs/ru/RELEASE_v2_6_8_UTYANSKY_DEVKIT_VISUAL_MANIPULATOR.md)
-* **Дистрибутив:** [utyansky_devkit_v2_6_8.zip](utyansky_devkit_v2_6_8.zip)
+* **Дистрибутив:** [utyansky_devkit_v2_6_8.zip](https://github.com/vlad-utyansky/utyansky-index/raw/main/utyansky_devkit_v2_6_8.zip)
 
 ---
 

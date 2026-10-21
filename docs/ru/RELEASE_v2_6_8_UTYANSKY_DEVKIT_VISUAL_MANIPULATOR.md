@@ -97,4 +97,4 @@
 
 ---
 
-👉 **[ 📦 Скачать UtyanskyDevKit v2.6.8 (ZIP) ➔ ](../../utyansky_devkit_v2_6_8.zip)**
+👉 **[ 📦 Скачать UtyanskyDevKit v2.6.8 (ZIP) ➔ ](https://github.com/vlad-utyansky/utyansky-index/raw/main/utyansky_devkit_v2_6_8.zip)**

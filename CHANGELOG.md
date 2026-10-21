@@ -25,7 +25,7 @@
 * **Laser Grid 20×20 (`[PXL]`):** Alphanumeric coordinate grid with live cursor tracking for pixel-perfect positioning without DevTools.
 * **Cheat Code `VAU`:** Instant awakening of the floating neon dock anywhere on the screen.
 * **Specification:** [RELEASE_v2_6_8_UTYANSKY_DEVKIT_VISUAL_MANIPULATOR.md](docs/ru/RELEASE_v2_6_8_UTYANSKY_DEVKIT_VISUAL_MANIPULATOR.md)
-* **Bundle:** [utyansky_devkit_v2_6_8.zip](utyansky_devkit_v2_6_8.zip)
+* **Bundle:** [utyansky_devkit_v2_6_8.zip](https://github.com/vlad-utyansky/utyansky-index/raw/main/utyansky_devkit_v2_6_8.zip)
 
 ---
 

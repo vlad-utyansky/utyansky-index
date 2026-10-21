@@ -104,7 +104,7 @@
 > * **October 15, 2026** — **v2.6.7 Zombie Purge & Strict Port Lock Release**: elimination of dev-server drift (`strictPort: true`), automated port cleaner `scripts/utyansky_zombie_killer.js`, and NTFS descriptor unlock (`[IDX: 00000-00032]`). [ 📖 Read Chapter v2.6.7 ➔ ](docs/ru/RELEASE_v2_6_7_ZOMBIE_PURGE_AND_PORT_LOCK.md)
 > * **🏛️ October 16, 2026** — **Official State Registration of «Utyansky Index» (Rospatent RF)**: official national recognition of the deterministic coordinate navigation and data routing system for AI and software. Official Certificate **№ 2026691737** issued (Application № 2026691407 filed August 22, 2026, Registration Date: October 14, 2026). [ 📜 Open Official Rospatent Certificate (PDF) ➔ ](docs/utyansky_index_certificate_2026691737.pdf)
 > * **🔥 October 18, 2026** — **Official Release of Industrial Resilience Suite (v2.6.4 – v2.6.7) & Starter Kit v2.6.7**: full open engineering armor suite for production vibe-coding reliability. [ 📦 Download Starter Kit v2.6.7 (ZIP) ➔ ](https://github.com/vlad-utyansky/utyansky-index/raw/main/utyansky_starter_kit_v2_6_7.zip)
-> * **🚀 October 21, 2026** — **Official Release of UtyanskyDevKit v2.6.8 (Autonomous Visual Manipulator & DOM Inspector)**: the genesis tool of slot-based vibe-coding without context loss (8+ months battle-tested). 1-click [IDX] slot capture, 20x20 [PXL] spatial grid, VAU cheat code, and Mentor [MNTR]. [ 📖 Read Founder Story ➔ ](docs/ru/RELEASE_v2_6_8_UTYANSKY_DEVKIT_VISUAL_MANIPULATOR.md) | [ 📦 Download UtyanskyDevKit v2.6.8 (ZIP) ➔ ](utyansky_devkit_v2_6_8.zip)
+> * **🚀 October 21, 2026** — **Official Release of UtyanskyDevKit v2.6.8 (Autonomous Visual Manipulator & DOM Inspector)**: the genesis tool of slot-based vibe-coding without context loss (8+ months battle-tested). 1-click [IDX] slot capture, 20x20 [PXL] spatial grid, VAU cheat code, and Mentor [MNTR]. [ 📖 Read Founder Story ➔ ](docs/ru/RELEASE_v2_6_8_UTYANSKY_DEVKIT_VISUAL_MANIPULATOR.md) | [ 📦 Download UtyanskyDevKit v2.6.8 (ZIP) ➔ ](https://github.com/vlad-utyansky/utyansky-index/raw/main/utyansky_devkit_v2_6_8.zip)
 
 ---
 
@@ -120,7 +120,7 @@
 > * 🎮 **Controls:** Type `VAU` anywhere on keyboard to toggle dock, `F1` for quick reference guide, instant `RU / EN` switch.
 > * 🧠 **Architecture Mentor `[MNTR]`:** Floating system insights explaining component roles and data wiring.
 > 
-> 👉 **[ 📖 READ FOUNDER GENESIS STORY (RU) ➔ ](docs/ru/RELEASE_v2_6_8_UTYANSKY_DEVKIT_VISUAL_MANIPULATOR.md)** &nbsp;|&nbsp; **[ 📦 DOWNLOAD UTYANSKY DEVKIT v2.6.8 (ZIP) ➔ ](utyansky_devkit_v2_6_8.zip)**
+> 👉 **[ 📖 READ FOUNDER GENESIS STORY (RU) ➔ ](docs/ru/RELEASE_v2_6_8_UTYANSKY_DEVKIT_VISUAL_MANIPULATOR.md)** &nbsp;|&nbsp; **[ 📦 DOWNLOAD UTYANSKY DEVKIT v2.6.8 (ZIP) ➔ ](https://github.com/vlad-utyansky/utyansky-index/raw/main/utyansky_devkit_v2_6_8.zip)**
 
 ---
 
@@ -795,7 +795,7 @@ The **«Utyansky Index»** standard is distributed under a transparent hybrid **
   * [ 📦 Download Starter Kit v2.6.7 (ZIP) ➔ ](https://github.com/vlad-utyansky/utyansky-index/raw/main/utyansky_starter_kit_v2_6_7.zip)
 * 📦 **v2.6.8-DEVKIT (October 21, 2026 / Standalone Visual Manipulator & DOM Inspector):**
   * Floating browser HUD dock, 1-click slot capture [IDX], laser grid [PXL], VAU cheat code, and elimination of 30-min CSS ping-pong.
-  * [ 📖 Read Founder Story ➔ ](docs/ru/RELEASE_v2_6_8_UTYANSKY_DEVKIT_VISUAL_MANIPULATOR.md) | [ 📦 Download UtyanskyDevKit v2.6.8 (ZIP) ➔ ](utyansky_devkit_v2_6_8.zip)
+  * [ 📖 Read Founder Story ➔ ](docs/ru/RELEASE_v2_6_8_UTYANSKY_DEVKIT_VISUAL_MANIPULATOR.md) | [ 📦 Download UtyanskyDevKit v2.6.8 (ZIP) ➔ ](https://github.com/vlad-utyansky/utyansky-index/raw/main/utyansky_devkit_v2_6_8.zip)
 * 🔮 **(Under Active R&D / Preview):**
   * **Autonomous Multi-Agent Swarms:** Zero-conflict concurrent code engineering for swarms of 10–20 autonomous AI agents in monorepos.
   * **DSL (Distributed Slot Locking):** Write-intent coordination via lease-based domain coordinate reservations.

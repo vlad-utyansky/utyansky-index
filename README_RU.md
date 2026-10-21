@@ -105,7 +105,7 @@
 > * **15 Октября 2026 г.** — **Релиз v2.6.7 Ликвидация Зомби-Процессов и Блокировка Портов (Zombie Purge & Strict Port Lock)**: запрет тихого дрейфа серверов (`strictPort: true`), утилита очистки портов `utyansky_zombie_killer.js` и сброс блокировок NTFS (`[IDX: 00000-00032]`). [ 📖 Читать главу v2.6.7 ➔ ](docs/ru/RELEASE_v2_6_7_ZOMBIE_PURGE_AND_PORT_LOCK.md)
 > * **🏛️ 16 Октября 2026 г.** — **Государственная Регистрация «Индекс Утянского» (Роспатент РФ)**: официальное признание системы детерминированной координатной навигации и маршрутизации данных для ИИ на государственном уровне. Выдано официальное государственное Свидетельство **№ 2026691737** (заявка № 2026691407 от 22.08.2026, дата регистрации: 14.10.2026). [ 📜 Открыть Свидетельство Роспатента РФ (PDF) ➔ ](docs/utyansky_index_certificate_2026691737.pdf)
 > * **🔥 18 Октября 2026 г.** — **Официальный Выпуск Пакета Промышленной Отказоустойчивости (v2.6.4 – v2.6.7) и Starter Kit v2.6.7**: открытый инженерный бронекупол надежности вайбкодинга с готовыми шаблонами и утилитами «из коробки». [ 📦 Скачать Starter Kit v2.6.7 (ZIP) ➔ ](https://github.com/vlad-utyansky/utyansky-index/raw/main/utyansky_starter_kit_v2_6_7.zip)
-> * **🚀 21 Октября 2026 г.** — **Официальный Выпуск UtyanskyDevKit v2.6.8 (Автономный Визуальный Манипулятор и Инспектор DOM)**: точка отсчёта и практический инструмент вайб-кодинга без потери контекста (8+ месяцев практики). Захват слотов [IDX] в 1 клик для исключения галлюцинаций LLM, лазерная сетка [PXL] 20×20, чит-код VAU и архитектурный Ментор [MNTR]. [ 📖 Читать Историю Создания ➔ ](docs/ru/RELEASE_v2_6_8_UTYANSKY_DEVKIT_VISUAL_MANIPULATOR.md) | [ 📦 Скачать UtyanskyDevKit v2.6.8 (ZIP) ➔ ](utyansky_devkit_v2_6_8.zip)
+> * **🚀 21 Октября 2026 г.** — **Официальный Выпуск UtyanskyDevKit v2.6.8 (Автономный Визуальный Манипулятор и Инспектор DOM)**: точка отсчёта и практический инструмент вайб-кодинга без потери контекста (8+ месяцев практики). Захват слотов [IDX] в 1 клик для исключения галлюцинаций LLM, лазерная сетка [PXL] 20×20, чит-код VAU и архитектурный Ментор [MNTR]. [ 📖 Читать Историю Создания ➔ ](docs/ru/RELEASE_v2_6_8_UTYANSKY_DEVKIT_VISUAL_MANIPULATOR.md) | [ 📦 Скачать UtyanskyDevKit v2.6.8 (ZIP) ➔ ](https://github.com/vlad-utyansky/utyansky-index/raw/main/utyansky_devkit_v2_6_8.zip)
 
 ---
 
@@ -121,7 +121,7 @@
 > * 🎮 **Управление:** Чит-код `VAU` / `ВАУ` для мгновенного пробуждения пульта на странице, `F1` для быстрой справки и мгновенное переключение `RU / EN`.
 > * 🧠 **Архитектурный Ментор `[MNTR]`:** Интерактивные подсказки о системной роли каждого компонента прямо в браузере.
 > 
-> 👉 **[ 📖 ЧИТАТЬ ИСТОРИЮ СОЗДАНИЯ И РУКОВОДСТВО (RU) ➔ ](docs/ru/RELEASE_v2_6_8_UTYANSKY_DEVKIT_VISUAL_MANIPULATOR.md)** &nbsp;|&nbsp; **[ 📦 СКАЧАТЬ UTYANSKY DEVKIT v2.6.8 (ZIP) ➔ ](utyansky_devkit_v2_6_8.zip)**
+> 👉 **[ 📖 ЧИТАТЬ ИСТОРИЮ СОЗДАНИЯ И РУКОВОДСТВО (RU) ➔ ](docs/ru/RELEASE_v2_6_8_UTYANSKY_DEVKIT_VISUAL_MANIPULATOR.md)** &nbsp;|&nbsp; **[ 📦 СКАЧАТЬ UTYANSKY DEVKIT v2.6.8 (ZIP) ➔ ](https://github.com/vlad-utyansky/utyansky-index/raw/main/utyansky_devkit_v2_6_8.zip)**
 
 ---
 
@@ -821,7 +821,7 @@ MCP является транспортной шиной вызова инстр
   * [ 📦 Скачать Starter Kit v2.6.7 (ZIP) ➔ ](https://github.com/vlad-utyansky/utyansky-index/raw/main/utyansky_starter_kit_v2_6_7.zip)
 * 📦 **v2.6.8-DEVKIT (21 Октября 2026 / Автономный Визуальный Манипулятор и Инспектор DOM):**
   * Парящий HUD-пульт браузера, захват индексов `[IDX]` в один клик, лазерная сетка `[PXL]`, чит-код `VAU` и устранение 30-минутного CSS-пинг-понга.
-  * [ 📖 Читать историю создания ➔ ](docs/ru/RELEASE_v2_6_8_UTYANSKY_DEVKIT_VISUAL_MANIPULATOR.md) | [ 📦 Скачать UtyanskyDevKit v2.6.8 (ZIP) ➔ ](utyansky_devkit_v2_6_8.zip)
+  * [ 📖 Читать историю создания ➔ ](docs/ru/RELEASE_v2_6_8_UTYANSKY_DEVKIT_VISUAL_MANIPULATOR.md) | [ 📦 Скачать UtyanskyDevKit v2.6.8 (ZIP) ➔ ](https://github.com/vlad-utyansky/utyansky-index/raw/main/utyansky_devkit_v2_6_8.zip)
 * 🔮 **(В разработке / R&D Preview):**
   * **Autonomous Multi-Agent Swarms:** Архитектура бесконфликтной разработки для роя из 10–20 автономных AI-агентов в одном монорепозитории.
   * **DSL (Distributed Slot Locking):** Распределённая координация намерений записи (write-intent) по временным лизам (leases) на уровне пятизначных координат.
