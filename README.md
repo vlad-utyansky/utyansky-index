@@ -63,7 +63,7 @@
 ## 🎯 [IDX: 00128] WHO THIS STANDARD IS FOR (TARGET AUDIENCE)
 
 > ⚡ **One-sentence summary:**  
-> **"The Utyansky Index is an architectural safety standard for vibe coding that decomposes codebases into isolated slots under 400 lines (the 4 A4 pages limit) with Zero-Trust hardware locks, guaranteeing AI never silently breaks working project code."**
+> **"The Utyansky Index is an open standard for coordinate addressing of software nodes, enabling controlled AI-agent interaction with codebases."**
 
 | Track | Target Audience | Core Problem (Pain Point) | Solution with Utyansky Index |
 | :--- | :--- | :--- | :--- |
