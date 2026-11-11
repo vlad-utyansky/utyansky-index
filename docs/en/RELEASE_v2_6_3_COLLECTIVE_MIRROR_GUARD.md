@@ -58,19 +58,9 @@ The Utyansky Index v2.6.3 establishes a deterministic **reference mirror mechani
 
 ## 🔒 4. Kernel Self-Protection Lock
 
-A Level-0 hardware check is enforced in the pre-commit workflow:
+A Level-0 hardware check is enforced in the pre-commit workflow: AI models and autonomous agents are strictly forbidden from modifying guard scripts or pre-commit configurations.
 
-```python
-# Hardware kernel self-protection lock v2.6.3
-if norm_file in ['scripts/git_pre_commit_guard.py', '.git/hooks/pre-commit']:
-    if not allow_override:
-        violations.append(
-            f"🛑 [SELF-PROTECTION LOCK] Unauthorized attempt to modify Guard script: '{rel_path}'! "
-            f"AI models are strictly forbidden from modifying safety code without explicit developer flag."
-        )
-```
-
-Without an explicit environment override (`ALLOW_MASS_EDIT="1"`) entered manually by the human engineer in the terminal, **no LLM or agent can weaken or disable safety checks**.
+Without explicit session authorization initiated by a human engineer directly in the terminal, **no LLM or agent can weaken or disable safety checks**.
 
 ---
 
@@ -86,16 +76,9 @@ Without an explicit environment override (`ALLOW_MASS_EDIT="1"`) entered manuall
 
 ---
 
-## 🚀 6. Practical Integration Guide
+## 🚀 6. Architectural Mirroring Principle
 
-Integration takes 2 minutes:
-
-1. Install the latest pre-commit guard into `.git/hooks/pre-commit`:
-   ```bash
-   cp examples/git_pre_commit_guard.py .git/hooks/pre-commit
-   chmod +x .git/hooks/pre-commit
-   ```
-2. Configure `guard_manifest.json` in your repository root:
+1. Configuration in `guard_manifest.json`:
    ```json
    {
      "version": "2.6.3",
@@ -109,31 +92,20 @@ Integration takes 2 minutes:
      ]
    }
    ```
-3. Test protection in your terminal:
-   * Any attempt by an AI agent or engineer to alter the production file without synchronizing its mirror is immediately aborted by Git pre-commit:
+2. Unsanctioned mutation prevention:
+   * Any attempt by an AI agent or developer to alter the active file without synchronizing its mirror is immediately aborted by Git pre-commit:
      ```text
      🛑 [COLLECTIVE GUARD v2.6.3: CORE_PROMPT] File 'src/prompts/system_prompt.json' does not match reference mirror 'capsules/00000-mirror_prompt.json'!
      Canonical system prompt mirror: unauthorized silent mutation blocked.
      ```
-4. Legitimate canonical updates:
-   * The developer either commits changes to both the active file and mirror simultaneously, or passes the explicit developer override during global refactoring:
-     ```bash
-     ALLOW_MASS_EDIT=1 git commit -m "feat: authorized canonical update"
-     ```
-   This guarantees that no language model can silently compromise core logic or strip architectural safeguards during vibe-coding sessions.
+3. Legitimate canonical updates require deliberate synchronous mirror synchronization, ensuring AI agents cannot silently compromise core logic or wipe safeguards.
 
 ---
 
-## 📦 7. Download Production Starter Kit v2.6.3
+## 🏛️ 7. Transition Protocol & Enterprise Runtime
 
-All source files and templates are packaged for instant one-click deployment:
+Effective November 11, 2026, the public repository operates as an open architectural specification (Read-Only).
 
-> ### 📥 [Download Starter Kit v2.6.3 (ZIP Archive) ➔](https://github.com/vlad-utyansky/utyansky-index/raw/main/utyansky_starter_kit_v2_6_3.zip)
-> * **Archive Contents:**
->   - 🛡️ `scripts/git_pre_commit_guard.py` — Hardware Git Pre-Commit Hook with Kernel Self-Protection Lock.
->   - 🪞 `guard_manifest.json` — Reference mirror manifest v2.6.3.
->   - 🐍 `scripts/guard_utyansky_slots.py` — Clean Context Guardian & 4 A4 Pages Linter.
->   - 📦 `capsules/` — Protected reference capsules with `00000 Zero-Trust` seals.
->   - ⚡ `scripts/build_index.js` — Automated $O(1)$ coordinate registry builder.
-> 
-> *Standalone source files are also directly inspectable in the repository: [`examples/git_pre_commit_guard.py`](https://github.com/vlad-utyansky/utyansky-index/blob/main/examples/git_pre_commit_guard.py) and [`examples/guard_manifest.json`](https://github.com/vlad-utyansky/utyansky-index/blob/main/examples/guard_manifest.json).*
+* **Open Architectural Specification:** Five-digit coordinate addressing `[IDX: XXXXX]` principles and architectural whitepapers remain freely inspectable in this repository.
+* **Enterprise Runtime Components:** Production AST engines, IDE rulesets (Cursor, Windsurf), and automated continuous auditing suites are supplied via commercial enterprise licensing.
+* **Inquiries & Architecture Audit:** Inquiries are handled via [info@vau.ru](mailto:info@vau.ru) (details in [docs/ANNOUNCEMENT.md](https://github.com/vlad-utyansky/utyansky-index/blob/main/docs/ANNOUNCEMENT.md)).

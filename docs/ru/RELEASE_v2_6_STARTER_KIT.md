@@ -11,7 +11,7 @@
 > **Патентная заявка Роспатент РФ:** № 2026119842 / 7927650015 (вх. 2026603415)  
 > **CERN Zenodo DOI:** [`10.5281/zenodo.22934668`](https://doi.org/10.5281/zenodo.22934668) | **ORCID:** [`0009-0005-8768-6707`](https://orcid.org/0009-0005-8768-6707)  
 > **Статус:** Официальный релиз архитектурного дистрибутива v2.6  
-> **Пакет дистрибутива:** [`utyansky_starter_kit_v2_6.zip`](https://github.com/vlad-utyansky/utyansky-index/raw/main/utyansky_starter_kit_v2_6.zip)
+> **Статус поставки:** Переведён в состав закрытого Enterprise Runtime с 11.11.2026 ([Регламент перехода](../ANNOUNCEMENT.md))
 
 ---
 
@@ -99,25 +99,13 @@ utyansky-starter-kit-v2.6/
 
 ---
 
-## ⚡ 5. Пошаговый быстрый старт за 5 минут
+## ⚡ 5. Порядок архитектурного внедрения
 
-```bash
-# 1. Скачайте и распакуйте стартер-кит
-unzip utyansky_starter_kit_v2_6.zip -d my-vibe-project
-cd my-vibe-project
+С 11 ноября 2026 года публичный репозиторий переведён в статус открытой архитектурной спецификации (Read-Only).
 
-# 2. Инициализируйте Git и подключите стража
-git init
-cp hooks/pre-commit .git/hooks/pre-commit
-chmod +x .git/hooks/pre-commit
-
-# 3. Запустите аудит и соберите реестр
-python scripts/guard_utyansky_slots.py
-node scripts/build_index.js
-
-# 4. Проверьте телеметрию надежности
-node scripts/telemetry_benchmark.js
-```
+* **Архитектурная спецификация:** доступна для изучения в данном репозитории.
+* **Исполнительные компоненты Enterprise Runtime:** скрипты стража, сборщики реестра и телеметрии поставляются по лицензионному договору ([docs/ANNOUNCEMENT.md](../ANNOUNCEMENT.md)).
+* **Заказ внедрения:** официальный запрос направляется на [info@vau.ru](mailto:info@vau.ru).
 
 ---
 

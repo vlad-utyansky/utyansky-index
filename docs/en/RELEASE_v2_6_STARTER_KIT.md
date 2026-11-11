@@ -11,7 +11,7 @@
 > **Rospatent RF Patent Application:** No. 2026119842 / 7927650015 (Reg. 2026603415)  
 > **CERN Zenodo DOI:** [`10.5281/zenodo.22934668`](https://doi.org/10.5281/zenodo.22934668) | **ORCID:** [`0009-0005-8768-6707`](https://orcid.org/0009-0005-8768-6707)  
 > **Status:** Official Architecture Distribution Release v2.6  
-> **Distribution Package:** [`utyansky_starter_kit_v2_6.zip`](https://github.com/vlad-utyansky/utyansky-index/raw/main/utyansky_starter_kit_v2_6.zip)
+> **Commercial Availability:** Transitioned to Enterprise Runtime on 11.11.2026 ([Transition Manifesto](../ANNOUNCEMENT.md))
 
 ---
 
@@ -77,25 +77,13 @@ utyansky-starter-kit-v2.6/
 
 ---
 
-## ⚡ 4. 5-Minute Quick Start Guide
+## ⚡ 4. Enterprise Architecture Implementation
 
-```bash
-# 1. Download & extract starter kit
-unzip utyansky_starter_kit_v2_6.zip -d my-vibe-project
-cd my-vibe-project
+Effective November 11, 2026, the public repository operates as an open architectural specification (Read-Only).
 
-# 2. Initialize Git & configure guardian hook
-git init
-cp hooks/pre-commit .git/hooks/pre-commit
-chmod +x .git/hooks/pre-commit
-
-# 3. Run audit & generate slot registry
-python scripts/guard_utyansky_slots.py
-node scripts/build_index.js
-
-# 4. Measure reliability telemetry
-node scripts/telemetry_benchmark.js
-```
+* **Open Architectural Specification:** Freely inspectable in this repository.
+* **Enterprise Runtime Components:** Guardian scripts, registry generators, and automated telemetry suites are delivered via enterprise licensing ([docs/ANNOUNCEMENT.md](../ANNOUNCEMENT.md)).
+* **Implementation Inquiries:** Official requests should be addressed to [info@vau.ru](mailto:info@vau.ru).
 
 ---
 

@@ -11,7 +11,7 @@
 
 [![Language: English (EN)](https://img.shields.io/badge/Language-English%20(EN)-blue?style=for-the-badge)](README.md)
 [![Language: Russian (RU)](https://img.shields.io/badge/Language-Russian%20(RU)-red?style=for-the-badge)](README_RU.md)
-[![Version 2.0 (Author Specification)](https://img.shields.io/badge/Version-2.0%20(Specification)-emerald?style=for-the-badge)](https://github.com/vlad-utyansky/utyansky-index)
+[![Architectural Specification](https://img.shields.io/badge/Status-Architectural%20Specification-emerald?style=for-the-badge)](https://github.com/vlad-utyansky/utyansky-index)
 [![Release v2.6.8](https://img.shields.io/badge/Release-v2.6.8%20(DevKit)-emerald?style=for-the-badge)](docs/ru/RELEASE_v2_6_8_UTYANSKY_DEVKIT_VISUAL_MANIPULATOR.md)
 [![Release v2.6.7](https://img.shields.io/badge/Release-v2.6.7-emerald?style=for-the-badge)](docs/ru/RELEASE_v2_6_7_ZOMBIE_PURGE_AND_PORT_LOCK.md)
 [![Release v2.6.3](https://img.shields.io/badge/Release-v2.6.3-blue?style=for-the-badge)](docs/en/RELEASE_v2_6_3_COLLECTIVE_MIRROR_GUARD.md)
@@ -39,7 +39,7 @@
 
 ---
 
-# 🛡️ Utyansky Index Architecture (Version 2.0)
+# 🛡️ Utyansky Index Architecture
 ### Universal Deterministic Coordinate Matrix for Code, AI Agents, Marketing Quantification (UVWI) & Vector Memory
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22934668.svg)](https://doi.org/10.5281/zenodo.22934668)
@@ -104,7 +104,7 @@
 > * **September 20, 2026 (11:00 MSK)** — **v2.3 Telegram Bot, Zero-Lock & Vibe-Coding Release**: open standard for deterministic slot isolation $O(1)$ in Telegram API and asynchronous bots. Hardware 64-byte `callback_data` payload bypass (zero `BUTTON_DATA_INVALID`), zero context loss during vibe-coding, 360° customer dossier module («Microscope»), establishment of the **Zero-Lock & Conditional Constraint Class (`-00000` … `-00099`)** for deterministic mutation control, and expansion of the Periodic Table to **10 Classes (`00` – `09`)**.
 > * **October 05, 2026 (13:00 MSK)** — **v2.4 Strict Numeric Standard & AI Drift Prevention (Zero-Text Syntax)**: enforcement of strict numeric format (only 5-digit coordinates inside `[IDX: 7XXXX]` and `data-idx`, all human descriptions moved strictly outside). Integration of pre-flight file header directives and automated validator `validate_utyansky_indexes.py` to prevent AI syntax drift during vibe-coding.
 > * **October 07, 2026 (11:00 MSK)** — **v2.5 Vibe Coding Iron Dome Release**: official establishment of **Utyansky Law: Clean Context Limit — 4 A4 Pages** (~350–400 lines / ~3000 tokens) to maintain peak speed and eliminate LLM attention degradation, Zero-Trust Lock (`[IDX: 00000]` / Zero-Trust Default Lock), physical isolation of critical kernels (dialogue assistant prompts and calculation engines in `00000_*.json` / `.py` capsules), and autonomous guardian script `guard_utyansky_slots.py` protecting layouts from pixel shifts and regressions.
-> * **October 08, 2026 (11:00 MSK)** — **v2.6 Official Vibe Coding Starter Kit & Quality Telemetry Release**: official release of production Starter Kit v2.6 with slot isolation and pre-commit hook, standardized reliability telemetry (CRS $\ge 0.90$, RFR $\le 10\%$, CHI $\ge 90\%$), and `telemetry_benchmark.js`. [ 📖 Read Chapter v2.6 ➔ ](docs/en/RELEASE_v2_6_STARTER_KIT_AND_TELEMETRY.md) | [ 📦 Download Starter Kit (ZIP) ➔ ](https://github.com/vlad-utyansky/utyansky-index/raw/main/utyansky_starter_kit_v2_6.zip)
+> * **October 08, 2026 (11:00 MSK)** — **v2.6 Official Vibe Coding Starter Kit & Quality Telemetry Release**: official release of production Starter Kit v2.6 with slot isolation and pre-commit hook, standardized reliability telemetry (CRS $\ge 0.90$, RFR $\le 10\%$, CHI $\ge 90\%$), and `telemetry_benchmark.js`. [ 📖 Read Chapter v2.6 ➔ ](docs/en/RELEASE_v2_6_STARTER_KIT_AND_TELEMETRY.md)
 > * **October 08, 2026 (19:30 MSK)** — **v2.6.1 Utyansky Sensitive Information Protocol Release**: establishment of Level 2 Lock `[IDX: 00000-00000]` («Black Box Vault»), physical Air-Gap isolation, and automated anti-leak hardware shields. [ 📖 Read Chapter v2.6.1 ➔ ](docs/en/RELEASE_v2_6_1_SENSITIVE_INFO_PROTOCOL.md)
 > * **October 10, 2026 (19:30 MSK)** — **v2.6.2 Hardware Pre-Commit Guard & Session Integrity Release**: findings of a 14-hour endurance stress marathon (>3,200 interactive turns in a single session), OS-level Git pre-commit barrier against carpet-bombing overwrites (>150 lines), JavaScript syntax sentinel (`node --check`), inviolability of `[IDX: 00000]` locks, and Session Quantization Law (80-turn threshold) `[IDX: 00000-00027]`. [ 📖 Read Chapter v2.6.2 ➔ ](docs/en/RELEASE_v2_6_2_HARDWARE_PRE_COMMIT_AND_SESSION_INTEGRITY.md)
 > * **October 11, 2026 (12:30 MSK)** — **v2.6.3 Collective Mirror Guard & Kernel Self-Protection Release**: deterministic solution for "silent mutations" during vibe-coding refactors. Byte-for-byte reference mirror verification via `guard_manifest.json`, anti-unlink barrier, and Level 0 hardware self-protection preventing AI models from mutating safety guard scripts (`[IDX: 00000-00028]`). [ 📖 Read Chapter v2.6.3 ➔ ](docs/en/RELEASE_v2_6_3_COLLECTIVE_MIRROR_GUARD.md)
@@ -113,8 +113,8 @@
 > * **October 14, 2026** — **v2.6.6 Structural Integrity & Syntax Sentinel Law**: zero-tolerance symbol imbalance ($\Delta = 0$), automated pre-commit V8 AST compilation validator (`[IDX: 00000-00031]`). [ 📖 Read Chapter v2.6.6 ➔ ](docs/ru/RELEASE_v2_6_6_SYNTAX_SENTINEL_STRUCTURAL_INTEGRITY.md)
 > * **October 15, 2026** — **v2.6.7 Zombie Purge & Strict Port Lock Release**: elimination of dev-server drift (`strictPort: true`), automated port cleaner `scripts/utyansky_zombie_killer.js`, and NTFS descriptor unlock (`[IDX: 00000-00032]`). [ 📖 Read Chapter v2.6.7 ➔ ](docs/ru/RELEASE_v2_6_7_ZOMBIE_PURGE_AND_PORT_LOCK.md)
 > * **🏛️ October 16, 2026** — **Official State Registration of «Utyansky Index» (Rospatent RF)**: official national recognition of the deterministic coordinate navigation and data routing system for AI and software. Official Certificate **№ 2026691737** issued (Application № 2026691407 filed August 22, 2026, Registration Date: October 14, 2026). [ 📜 Open Official Rospatent Certificate (PDF) ➔ ](docs/utyansky_index_certificate_2026691737.pdf)
-> * **🔥 October 18, 2026** — **Official Release of Industrial Resilience Suite (v2.6.4 – v2.6.7) & Starter Kit v2.6.7**: full open engineering armor suite for production vibe-coding reliability. [ 📦 Download Starter Kit v2.6.7 (ZIP) ➔ ](https://github.com/vlad-utyansky/utyansky-index/raw/main/utyansky_starter_kit_v2_6_7.zip)
-> * **🚀 October 21, 2026** — **Official Release of UtyanskyDevKit v2.6.8 (Autonomous Visual Manipulator & DOM Inspector)**: the genesis tool of slot-based vibe-coding without context loss (8+ months battle-tested). 1-click [IDX] slot capture, 20x20 [PXL] spatial grid, VAU cheat code, and Mentor [MNTR]. [ 📖 Read Founder Story ➔ ](docs/ru/RELEASE_v2_6_8_UTYANSKY_DEVKIT_VISUAL_MANIPULATOR.md) | [ 📦 Download UtyanskyDevKit v2.6.8 (ZIP) ➔ ](https://github.com/vlad-utyansky/utyansky-index/raw/main/utyansky_devkit_v2_6_8.zip)
+> * **🔥 October 18, 2026** — **Official Release of Industrial Resilience Suite (v2.6.4 – v2.6.7)**: full open engineering armor suite for production vibe-coding reliability. [ 📖 Read v2.6.7 Specification ➔ ](docs/ru/RELEASE_v2_6_7_ZOMBIE_PURGE_AND_PORT_LOCK.md)
+> * **🚀 October 21, 2026** — **Official Release of UtyanskyDevKit v2.6.8 (Autonomous Visual Manipulator & DOM Inspector)**: the genesis tool of slot-based vibe-coding without context loss (8+ months battle-tested). 1-click [IDX] slot capture, 20x20 [PXL] spatial grid, VAU cheat code, and Mentor [MNTR]. [ 📖 Read Founder Story ➔ ](docs/ru/RELEASE_v2_6_8_UTYANSKY_DEVKIT_VISUAL_MANIPULATOR.md)
 
 ---
 
@@ -640,19 +640,19 @@ MCP is the tool calling transport protocol, while Utyansky Index is the master c
 > * 🧭 **v2.6.5 — Unbreakable Navigation & DOM-First Pulse:**
 >   * *Pain Solved:* Clicking tabs freezes the entire UI because the model bundled heavy chart rendering into the click handler, or a background error freezes global listeners.
 >   * *Solution:* Physical DOM screen switching executes on Step 0 before math calculations, while telemetry renders inside an isolated protective shield.  
->   👉 **[ 📖 READ SPECIFICATION v2.6.5 ➔ ](docs/ru/RELEASE_v2_6_5_UNBREAKABLE_NAVIGATION_AND_DOM_PULSE.md)** &nbsp;|&nbsp; **[ 💻 Navigation Example ➔ ](examples/safe_navigation_pattern.js)**
+>   👉 **[ 📖 READ SPECIFICATION v2.6.5 ➔ ](docs/ru/RELEASE_v2_6_5_UNBREAKABLE_NAVIGATION_AND_DOM_PULSE.md)**
 > 
 > * ⚡ **v2.6.6 — Structural Integrity & Syntax Sentinel:**
 >   * *Pain Solved:* During refactoring, LLMs frequently lose a closing bracket `}` or quote, causing silent build failures on production.
 >   * *Solution:* Absolute symbol balance law ($\Delta = 0$) and automated V8 AST syntax compilation prior to commit.  
->   👉 **[ 📖 READ SPECIFICATION v2.6.6 ➔ ](docs/ru/RELEASE_v2_6_6_SYNTAX_SENTINEL_STRUCTURAL_INTEGRITY.md)** &nbsp;|&nbsp; **[ ⚡ Syntax Guard Script ➔ ](scripts/utyansky_syntax_guard.js)**
+>   👉 **[ 📖 READ SPECIFICATION v2.6.6 ➔ ](docs/ru/RELEASE_v2_6_6_SYNTAX_SENTINEL_STRUCTURAL_INTEGRITY.md)**
 > 
 > * 🧹 **v2.6.7 — Zombie Purge & Strict Port Lock:**
 >   * *Pain Solved:* Developer applies prompt edits but browser sees nothing ("nothing changed") due to orphan node zombie processes locking port 5173.
 >   * *Solution:* Strict port enforcement (`strictPort: true`), automated zombie process killer, and OS file descriptor liberation.  
->   👉 **[ 📖 READ SPECIFICATION v2.6.7 ➔ ](docs/ru/RELEASE_v2_6_7_ZOMBIE_PURGE_AND_PORT_LOCK.md)** &nbsp;|&nbsp; **[ 🧹 Zombie Killer Script ➔ ](scripts/utyansky_zombie_killer.js)**
+>   👉 **[ 📖 READ SPECIFICATION v2.6.7 ➔ ](docs/ru/RELEASE_v2_6_7_ZOMBIE_PURGE_AND_PORT_LOCK.md)**
 > 
-> 👉 **[ 📦 DOWNLOAD STARTER KIT v2.6.7 (ZIP) ➔ ](https://github.com/vlad-utyansky/utyansky-index/raw/main/utyansky_starter_kit_v2_6_7.zip)**
+> 👉 **[ 📋 Transition Announcement & Enterprise Runtime ➔ ](docs/ANNOUNCEMENT.md)**
 
 ---
 
@@ -663,11 +663,11 @@ MCP is the tool calling transport protocol, while Utyansky Index is the master c
 > ## 🛡️ Release v2.6.3: Collective Mirror Guard & Kernel Self-Protection ($O(1)$ Collective Mirror Guard & Self-Protection Lock)
 > **Open engineering standard preventing silent AI mutations and tampering with safety scripts:**
 > * 🪞 **Collective Mirror Guard (`guard_manifest.json`):** OS-level pre-commit verification ensuring production code matches reference mirrors, preventing silent drift in critical prompts and formulas during refactoring.
-> * 🔒 **Kernel Self-Protection Lock:** Hardware barrier forbidding AI agents from editing the Guard script or pre-commit hooks without an explicit manual `ALLOW_MASS_EDIT="1"` flag.
+> * 🔒 **Kernel Self-Protection Lock:** Hardware barrier forbidding AI agents from editing the Guard script or pre-commit hooks without explicit developer terminal authorization.
 > * 🔗 **Anti-Unlink Barrier:** Instant commit rejection if an AI attempts to delete `guard_manifest.json` or purge protected reference pairs.
 > * ⚡ **Dual-Factor Canon Synchronization:** Modifying a canonical asset requires synchronous mirror updates, eliminating accidental code regression.
 > 
-> 👉 **[ 📖 READ COLLECTIVE MIRROR GUARD SPECIFICATION v2.6.3 (EN) ➔ ](docs/en/RELEASE_v2_6_3_COLLECTIVE_MIRROR_GUARD.md)** &nbsp;&nbsp;|&nbsp;&nbsp; **[ 📦 Download Starter Kit v2.6.3 (ZIP) ➔ ](https://github.com/vlad-utyansky/utyansky-index/raw/main/utyansky_starter_kit_v2_6_3.zip)** &nbsp;&nbsp;|&nbsp;&nbsp; **[ 🛡️ Git Pre-Commit Hook Script ➔ ](examples/git_pre_commit_guard.py)**
+> 👉 **[ 📖 READ COLLECTIVE MIRROR GUARD SPECIFICATION v2.6.3 (EN) ➔ ](docs/en/RELEASE_v2_6_3_COLLECTIVE_MIRROR_GUARD.md)** &nbsp;&nbsp;|&nbsp;&nbsp; **[ 📋 Transition Announcement ➔ ](docs/ANNOUNCEMENT.md)**
 
 ---
 
@@ -691,7 +691,7 @@ MCP is the tool calling transport protocol, while Utyansky Index is the master c
 > * ⏳ **Session Quantization Law (80-Turn Threshold):** Standardized protocol recommending session archiving and renewal every 60–80 turns to preserve peak LLM attention density without degradation.
 > * 🛑 **Phantom Feature Suppression:** Eliminating unrequested LLM initiatives where saturated models invent fake UI widgets (directory structure maps, phantom page tables with hallucinated metrics) and inject unsolicited deadweight code.
 > 
-> 👉 **[ 📖 READ HARDWARE PRE-COMMIT GUARD & SESSION INTEGRITY SPECIFICATION v2.6.2 (EN) ➔ ](docs/en/RELEASE_v2_6_2_HARDWARE_PRE_COMMIT_AND_SESSION_INTEGRITY.md)** &nbsp;&nbsp;|&nbsp;&nbsp; **[ 🛡️ Git Pre-Commit Hook Script ➔ ](examples/git_pre_commit_guard.py)**
+> 👉 **[ 📖 READ HARDWARE PRE-COMMIT GUARD & SESSION INTEGRITY SPECIFICATION v2.6.2 (EN) ➔ ](docs/en/RELEASE_v2_6_2_HARDWARE_PRE_COMMIT_AND_SESSION_INTEGRITY.md)**
 
 ---
 
@@ -709,11 +709,11 @@ MCP is the tool calling transport protocol, while Utyansky Index is the master c
 <!-- [IDX: 00126] Announcement Block v2.6 Starter Kit -->
 > ## 🚀 Release v2.6: Official Vibe Coding Starter Kit & Quality Telemetry ($O(1)$ Starter Kit & Telemetry)
 > **Open production starter kit for deterministic vibe-coding and automated reliability auditing:**
-> * 📦 **Official Starter Kit v2.6:** Ready-to-use repository template with slot structure, protected capsules (`capsules/00000-...`), git pre-commit hook, and $O(1)$ slot registry generator (`build_index.js`).
-> * 🛡️ **Clean Context Guardian Linter:** Automated verification script `guard_utyansky_slots.py` blocks non-compliant commits exceeding 4 A4 pages or violating `00000 Zero-Trust` seals.
-> * 📊 **Standardized Telemetry:** Automated reliability benchmark `telemetry_benchmark.js` assessing 3 core metrics: Context Retention (CRS $\ge 0.90$), Rollback Failure Rate (RFR $\le 10\%$), and Codebase Health (CHI $\ge 90\%$).
+> * 📦 **Official Starter Kit v2.6:** Architectural specification with slot structure, protected capsules (`capsules/00000-...`), and $O(1)$ slot registry layout.
+> * 🛡️ **Clean Context Guardian Linter:** Automated verification preventing non-compliant commits exceeding 4 A4 pages or violating `00000 Zero-Trust` seals.
+> * 📊 **Standardized Telemetry:** Automated reliability benchmark assessing 3 core metrics: Context Retention (CRS $\ge 0.90$), Rollback Failure Rate (RFR $\le 10\%$), and Codebase Health (CHI $\ge 90\%$).
 > 
-> 👉 **[ 📖 READ FULL SPECIFICATION & GUIDE v2.6 (EN) ➔ ](docs/en/RELEASE_v2_6_STARTER_KIT_AND_TELEMETRY.md)** &nbsp;&nbsp;|&nbsp;&nbsp; **[ 📦 Download Starter Kit v2.6 (ZIP) ➔ ](https://github.com/vlad-utyansky/utyansky-index/raw/main/utyansky_starter_kit_v2_6.zip)**
+> 👉 **[ 📖 READ FULL SPECIFICATION & GUIDE v2.6 (EN) ➔ ](docs/en/RELEASE_v2_6_STARTER_KIT_AND_TELEMETRY.md)**
 
 ---
 
@@ -723,9 +723,9 @@ MCP is the tool calling transport protocol, while Utyansky Index is the master c
 > * 🏛️ **Utyansky Law (Clean Context Limit — 4 A4 Pages):** Strict file and system prompt size limit (up to 400 lines / ~3000 tokens) keeps LLMs at peak speed and precision, eliminating up to 99.8% of hallucination risks and logical link collapse.
 > * 🛑 **Zero-Trust Default Lock (`[IDX: 00000]`):** All finalized blocks are locked by default against unintended mutations (`data-lock="00000"`). AI agents modify only the target slot `[IDX: 7XXXX]` upon explicit developer instruction.
 > * 🔏 **Critical Kernel Encapsulation:** Assistant prompts and calculation engines reside in isolated `00000_*.json` / `.py` capsules, completely immune to inadvertent wipes during UI coding.
-> * 🤖 **Autonomous Slot Guardian:** Verification script `guard_utyansky_slots.py` automatically scans code before commits and prevents specification breaches.
+> * 🤖 **Autonomous Slot Guardian:** Architecture sentinel protocol automatically validating specifications before commits.
 > 
-> 👉 **[ 📖 READ FULL VIBE CODING STANDARD v2.5 (EN) ➔ ](docs/en/UTYANSKY_INDEX_v2_5_VIBE_CODING_IRON_DOME_STANDARD.md)** &nbsp;&nbsp;|&nbsp;&nbsp; **[ 🐍 Download Guardian Linter (Python) ➔ ](examples/guard_utyansky_slots.py)**
+> 👉 **[ 📖 READ FULL VIBE CODING STANDARD v2.5 (EN) ➔ ](docs/en/UTYANSKY_INDEX_v2_5_VIBE_CODING_IRON_DOME_STANDARD.md)**
 
 
 ---
@@ -843,7 +843,7 @@ The **«Utyansky Index»** standard is distributed under a transparent hybrid **
   * **Session Quantization Law:** Standardized protocol recommending context archiving and session renewal every 60–80 turns `[IDX: 00000-00027]`.
 * 🛡️ **v2.6.3 (October 11, 2026 / Collective Mirror Guard & Self-Protection Lock):**
   * **Collective Mirror Guard (`guard_manifest.json`):** Deterministic solution for "silent mutations" during vibe-coding refactors. Byte-for-byte reference mirror verification before commit.
-  * **Kernel Self-Protection Lock:** Hardware barrier forbidding AI agents from editing the Guard script or pre-commit hooks without manual `$env:ALLOW_MASS_EDIT="1"` flag.
+  * **Kernel Self-Protection Lock:** Hardware barrier forbidding AI agents from editing the Guard script or pre-commit hooks without manual developer authorization.
   * **Anti-Unlink Barrier:** Instant commit rejection if an AI attempts to delete `guard_manifest.json` or purge protected reference pairs.
   * **Standard Regulation Index:** `[IDX: 00000-00028]`.
 * 🏛️ **State Registration (October 16, 2026 / Rospatent RF № 2026691737 — Official Standard Recognition):**
@@ -864,18 +864,18 @@ The **«Utyansky Index»** standard is distributed under a transparent hybrid **
 * ⚡ **v2.6.6 (October 14, 2026 / Structural Integrity & Syntax Sentinel Law):**
   * **Zero Imbalance Law ($\Delta = 0$):** Mandatory pre-commit rejection for any unbalanced brackets `{}`, `()`, `[]`, quotes, or unclosed HTML tags.
   * **V8 AST Validation:** Automated pre-commit syntax compilation using the V8 engine (`scripts/utyansky_syntax_guard.js`).
-  * **Regulation Index:** `[IDX: 00000-00031]`. [ 📖 Read Chapter v2.6.6 ➔ ](docs/ru/RELEASE_v2_6_6_SYNTAX_SENTINEL_STRUCTURAL_INTEGRITY.md) | [ ⚡ Syntax Guard Script ➔ ](scripts/utyansky_syntax_guard.js)
+  * **Regulation Index:** `[IDX: 00000-00031]`. [ 📖 Read Chapter v2.6.6 ➔ ](docs/ru/RELEASE_v2_6_6_SYNTAX_SENTINEL_STRUCTURAL_INTEGRITY.md)
 * 🧹 **v2.6.7 (October 15, 2026 / Zombie Purge & Strict Port Lock):**
   * **Strict Port Enforcement (`strictPort: true`):** Forbidding silent dev-server migration to random ports.
-  * **Automated Zombie Purge:** `scripts/utyansky_zombie_killer.js` utility ensuring instant release of ports 5173 and 3001.
+  * **Automated Zombie Purge:** Utility ensuring instant release of ports 5173 and 3001.
   * **NTFS Permission Liberation:** Automated removal of bogus Read-Only locks and file descriptor liberation.
-  * **Regulation Index:** `[IDX: 00000-00032]`. [ 📖 Read Chapter v2.6.7 ➔ ](docs/ru/RELEASE_v2_6_7_ZOMBIE_PURGE_AND_PORT_LOCK.md) | [ 🧹 Zombie Killer Script ➔ ](scripts/utyansky_zombie_killer.js)
+  * **Regulation Index:** `[IDX: 00000-00032]`. [ 📖 Read Chapter v2.6.7 ➔ ](docs/ru/RELEASE_v2_6_7_ZOMBIE_PURGE_AND_PORT_LOCK.md)
 * 📦 **v2.6.7-SUITE (October 18, 2026 / Official Industrial Resilience Suite):**
-  * Complete open distribution bundle containing all 4 new standards, examples, and scripts out of the box.
-  * [ 📦 Download Starter Kit v2.6.7 (ZIP) ➔ ](https://github.com/vlad-utyansky/utyansky-index/raw/main/utyansky_starter_kit_v2_6_7.zip)
+  * Industrial resilience specifications containing all 4 new standards out of the box.
+  * [ 📋 Transition Announcement & Enterprise Runtime ➔ ](docs/ANNOUNCEMENT.md)
 * 📦 **v2.6.8-DEVKIT (October 21, 2026 / Standalone Visual Manipulator & DOM Inspector):**
   * Floating browser HUD dock, 1-click slot capture [IDX], laser grid [PXL], VAU cheat code, and elimination of 30-min CSS ping-pong.
-  * [ 📖 Read Founder Story ➔ ](docs/ru/RELEASE_v2_6_8_UTYANSKY_DEVKIT_VISUAL_MANIPULATOR.md) | [ 📦 Download UtyanskyDevKit v2.6.8 (ZIP) ➔ ](https://github.com/vlad-utyansky/utyansky-index/raw/main/utyansky_devkit_v2_6_8.zip)
+  * [ 📖 Read Founder Story ➔ ](docs/ru/RELEASE_v2_6_8_UTYANSKY_DEVKIT_VISUAL_MANIPULATOR.md) | [ 📋 Enterprise Runtime ➔ ](docs/ANNOUNCEMENT.md)
 * 🔮 **(Under Active R&D / Preview):**
   * **Autonomous Multi-Agent Swarms:** Zero-conflict concurrent code engineering for swarms of 10–20 autonomous AI agents in monorepos.
   * **DSL (Distributed Slot Locking):** Write-intent coordination via lease-based domain coordinate reservations.
@@ -905,7 +905,7 @@ The **«Utyansky Index»** standard is distributed under a transparent hybrid **
 [![Code Regressions: 0%](https://img.shields.io/badge/Code%20Regressions-0%25%20(Zero%20Breakdown)-success?style=flat-square)](https://github.com/vlad-utyansky/utyansky-index)
 [![Token Savings: 85%](https://img.shields.io/badge/API%20Budget-85%25%20Token%20Savings-blue?style=flat-square)](https://github.com/vlad-utyansky/utyansky-index)
 [![Cursor & Claude Code](https://img.shields.io/badge/IDE-Cursor%20%7C%20Claude%20%7C%20Windsurf-violet?style=flat-square)](https://github.com/vlad-utyansky/utyansky-index/blob/main/AI_SYSTEM_PROMPT.md)
-[![Standard: Utyansky Index](https://img.shields.io/badge/Standard-Utyansky%20Index%20v2.0-indigo?style=flat-square)](https://index.utyanskiy.ru)
+[![Standard: Utyansky Index](https://img.shields.io/badge/Standard-Utyansky%20Index-indigo?style=flat-square)](https://index.utyanskiy.ru)
 [![Rospatent RF State Registration](https://img.shields.io/badge/Rospatent%20RF-Registered%20№%202026691737-emerald?style=flat-square)](docs/utyansky_index_certificate_2026691737.pdf)
 [![Vector Memory 1B+](https://img.shields.io/badge/Memory-pgvector%20HNSW%20(1B%2B%20%2F%201T%2B)-cyan?style=flat-square)](https://github.com/vlad-utyansky/utyansky-index)
 
@@ -926,7 +926,7 @@ The **«Utyansky Index»** standard is distributed under a transparent hybrid **
 > * 🗄️ **Structured Registry `UTYANSKY_INDEX_REGISTRY.json`:** Machine-readable architectural map defining cross-component dependencies and domain boundaries.
 > * 🛡️ **Architectural Degradation Prevention:** Context-saturation limits and circular dependency detection enforced directly during AST traversal.
 > 
-> 👉 **[ 📖 READ v2.1 RELEASE SPECIFICATION (EN) ➔ ](docs/en/RELEASE_v2_1_INDUSTRIAL_AST_EDITION.md)** &nbsp;&nbsp;|&nbsp;&nbsp; **[ 🇷🇺 Читать на русском ➔ ](docs/ru/RELEASE_v2_1_INDUSTRIAL_AST_EDITION.md)** &nbsp;&nbsp;|&nbsp;&nbsp; **[ ⚙️ AST Engine Source ➔ ](src/utyansky_ast_engine.js)**
+> 👉 **[ 📖 READ v2.1 RELEASE SPECIFICATION (EN) ➔ ](docs/en/RELEASE_v2_1_INDUSTRIAL_AST_EDITION.md)** &nbsp;&nbsp;|&nbsp;&nbsp; **[ 🇷🇺 Читать на русском ➔ ](docs/ru/RELEASE_v2_1_INDUSTRIAL_AST_EDITION.md)**
 
 ---
 
@@ -967,12 +967,12 @@ The **«Utyansky Index»** standard is distributed under a transparent hybrid **
   * Introduction of industrial syntax isolation engine `utyansky_ast_engine.js`.
   * Babel AST lock $O(1)$, defensive validation of coordinate integrity `[ERR: 10451]`.
   * Automated graph collection of `ImportDeclaration` dependencies.
-  * [ 📖 Read v2.1 Specification ➔ ](docs/en/RELEASE_v2_1_INDUSTRIAL_AST_EDITION.md) | [ ⚙️ AST Engine ➔ ](src/utyansky_ast_engine.js)
+  * [ 📖 Read v2.1 Specification ➔ ](docs/en/RELEASE_v2_1_INDUSTRIAL_AST_EDITION.md)
 * 🌐 **v2.2 (September 12, 2026 / Web Standard & AI Vision AIO):**
   * Open standard for coordinate website markup (`70000–79999`) optimizing for AI search agents (AIO: Perplexity, ChatGPT Search, Yandex Neuro).
   * Interactive DOM HUD inspector (`utyansky-web-inspector.js` / "AI Vision").
   * Elimination of AI blindness and 0% layout regression during vibe-coding.
-  * [ 📖 Read Web Coordinate Indexing Guide ➔ ](docs/en/WEB_SITE_COORDINATE_INDEXING.md) | [ 💻 HTML Example ➔ ](examples/website-coordinate-markup.html)
+  * [ 📖 Read Web Coordinate Indexing Guide ➔ ](docs/en/WEB_SITE_COORDINATE_INDEXING.md)
 * 🚀 **v2.3 (September 20, 2026 / Telegram Bots & Zero-Lock Engine):**
   * Open standard for $O(1)$ coordinate slot isolation for Telegram Bot API.
   * Hardware bypass of 64-byte `callback_data` limit (zero `BUTTON_DATA_INVALID`).
@@ -982,19 +982,19 @@ The **«Utyansky Index»** standard is distributed under a transparent hybrid **
   * [ 📖 Read Telegram Bot Standard Guide ➔ ](docs/en/UTYANSKY_INDEX_TELEGRAM_VIBECODING_STANDARD.md)
 * 🛡️ **v2.4 (October 05, 2026 / Zero-Text Syntax & Strict Numeric Standard):**
   * Strict numerical markup rule (only 5-digit numbers allowed inside `[IDX: 7XXXX]` brackets and `data-idx`, all text moved outside).
-  * Integration of file-header directive and automated validator `validate_utyansky_indexes.py` preventing AI syntax corruption.
+  * Integration of file-header directive and automated validator preventing AI syntax corruption.
   * [ 📖 Read v2.4 Specification ➔ ](docs/en/RELEASE_v2_4_ZERO_TEXT_SYNTAX.md)
 * 🔥 **v2.5 (October 07, 2026 / Vibe Coding Iron Dome & Utyansky Law):**
   * Official enactment of **Utyansky's Law: Clean Context Limit — 4 A4 Pages** (~350–400 lines / ~3,000 tokens) maintaining peak speed and eliminating attention drift.
   * Introduction of the **Zero-Trust Default Lock (`[IDX: 00000]` / `data-lock="00000"`)** presuming complete immunity for finished components.
   * Physical isolation of critical kernels and system prompts in `00000_*.json` / `.py` capsules.
   * Autonomous architecture sentinel `guard_utyansky_slots.py`.
-  * [ 📖 Read Iron Dome Standard v2.5 ➔ ](docs/en/UTYANSKY_INDEX_v2_5_VIBE_CODING_IRON_DOME_STANDARD.md) | [ 📦 Download Starter Kit v2.5 (ZIP) ➔ ](https://github.com/vlad-utyansky/utyansky-index/raw/main/utyansky_starter_kit_v2_5.zip)
+  * [ 📖 Read Iron Dome Standard v2.5 ➔ ](docs/en/UTYANSKY_INDEX_v2_5_VIBE_CODING_IRON_DOME_STANDARD.md)
 * 📦 **v2.6 (October 08, 2026 / Official Starter Kit & Quality Telemetry):**
   * Official release of **Starter Kit v2.6** with slot directory layout, isolated capsules (`capsules/00000-...`), git pre-commit hook, and $O(1)$ registry generator (`build_index.js`).
   * Automated script **`guard_utyansky_slots.py`** blocking commits on Zero-Trust lock violations.
   * Objective quality telemetry standard **`telemetry_benchmark.js`** (metrics CRS $\ge 0.90$, RFR $\le 10\%$, CHI $\ge 90\%$).
-  * [ 📖 Read v2.6 Specification ➔ ](docs/en/RELEASE_v2_6_STARTER_KIT_AND_TELEMETRY.md) | [ 📦 Download Starter Kit v2.6 (ZIP) ➔ ](https://github.com/vlad-utyansky/utyansky-index/raw/main/utyansky_starter_kit_v2_6.zip)
+  * [ 📖 Read v2.6 Specification ➔ ](docs/en/RELEASE_v2_6_STARTER_KIT_AND_TELEMETRY.md)
 * 🔒 **v2.6.1 (October 08, 2026 / Sensitive Information Protocol & Air-Gap Vault):**
   * Utyansky Sensitive Information Protocol: 4-tier secret classification (L1–L4).
   * Strict prohibition against feeding API keys, master passwords, customer databases, or proprietary formulas into LLM contexts.
@@ -1005,11 +1005,11 @@ The **«Utyansky Index»** standard is distributed under a transparent hybrid **
   * **Hardware Git Pre-Commit Hook (`git_pre_commit_guard.py`):** physical barrier against carpet-bomb file wipes (deleting >150 lines at once) and tampering with `00000` locks.
   * **JavaScript Syntax Sentinel:** automated V8 compilation check on staged files via `node --check` before commit creation.
   * **Session Quantization Law (80-Step Limit):** mandatory context archiving and chat reset every 60–80 turns to prevent attention degradation.
-  * [ 📖 Read v2.6.2 Chapter ➔ ](docs/en/RELEASE_v2_6_2_HARDWARE_PRE_COMMIT_AND_SESSION_INTEGRITY.md) | [ 🐍 Download Pre-Commit Hook ➔ ](examples/git_pre_commit_guard.py)
+  * [ 📖 Read v2.6.2 Chapter ➔ ](docs/en/RELEASE_v2_6_2_HARDWARE_PRE_COMMIT_AND_SESSION_INTEGRITY.md)
 * 🛡️ **v2.6.3 (October 11, 2026 / Collective Mirror Guard & Self-Protection Lock):**
   * **Kernel Self-Protection ($O(1)$ Self-Protection):** integrity guardian `guard_manifest.json` and `git_pre_commit_guard.py` verify their own code via SHA-256 hashes. Any AI attempt to alter guard scripts triggers a hardware commit abort.
   * **Collective Mirror Guard:** automated audit of multi-repository distributed code replicas preventing repository drift.
-  * [ 📖 Read v2.6.3 Chapter ➔ ](docs/en/RELEASE_v2_6_3_COLLECTIVE_MIRROR_GUARD.md) | [ 📦 Download Starter Kit v2.6.3 (ZIP) ➔ ](https://github.com/vlad-utyansky/utyansky-index/raw/main/utyansky_starter_kit_v2_6_3.zip)
+  * [ 📖 Read v2.6.3 Chapter ➔ ](docs/en/RELEASE_v2_6_3_COLLECTIVE_MIRROR_GUARD.md)
 * 🏛️ **Official State Registration (October 16, 2026 / Rospatent RF № 2026691737 — National Legal Standing):**
   * State Certificate **№ 2026691737** (registration date: October 14, 2026; application № 2026691407 filed August 22, 2026).
   * Author & Rightsholder: **Vladislav Anatolyevich Utyansky**.
@@ -1018,24 +1018,24 @@ The **«Utyansky Index»** standard is distributed under a transparent hybrid **
 * 🔌 **v2.6.4 (October 12, 2026 / Armored Vital Data Cables & Silicon Baseline):**
   * **Armored Cable Standard:** strict `*cable*.js` naming convention for all cross-slot data conduits.
   * **Silicon Baseline:** prohibition of synthetic clocks; direct binding to operating system hardware timestamps (`Date.now()`).
-  * **Regulation:** `[IDX: 00000-00029]`. [ 📖 Read v2.6.4 Chapter ➔ ](docs/en/RELEASE_v2_6_4_ARMORED_CABLES_AND_SILICON_BASELINE.md) | [ 💻 Armored Cable Template ➔ ](examples/armored_cable_template.js)
+  * **Regulation:** `[IDX: 00000-00029]`. [ 📖 Read v2.6.4 Chapter ➔ ](docs/en/RELEASE_v2_6_4_ARMORED_CABLES_AND_SILICON_BASELINE.md)
 * 🧭 **v2.6.5 (October 13, 2026 / Unbreakable Navigation & DOM-First Pulse):**
   * **DOM-First Principle:** synchronous DOM screen switching at Step 0 before invoking computationally heavy routines.
   * **Isolated Shield Screen:** analytical and charting routines execute within isolated `try/catch` wrappers, preventing UI freezes.
   * **Cross-Conduit Emission:** synchronization across dependent cables via native system events.
-  * **Regulation:** `[IDX: 00000-00030]`. [ 📖 Read v2.6.5 Chapter ➔ ](docs/en/RELEASE_v2_6_5_UNBREAKABLE_NAVIGATION_AND_DOM_PULSE.md) | [ 💻 Safe Navigation Pattern ➔ ](examples/safe_navigation_pattern.js)
+  * **Regulation:** `[IDX: 00000-00030]`. [ 📖 Read v2.6.5 Chapter ➔ ](docs/en/RELEASE_v2_6_5_UNBREAKABLE_NAVIGATION_AND_DOM_PULSE.md)
 * ⚡ **v2.6.6 (October 14, 2026 / Structural Integrity & Syntax Sentinel Law):**
   * **Zero-Imbalance Law ($\Delta = 0$):** hardware commit abort on unclosed brackets `{}`, `()`, `[]`, quotes, or unclosed JSX/HTML tags.
   * **V8 AST Compilation Guard:** hardware pre-commit validation by V8 engine (`scripts/utyansky_syntax_guard.js`).
-  * **Regulation:** `[IDX: 00000-00031]`. [ 📖 Read v2.6.6 Chapter ➔ ](docs/en/RELEASE_v2_6_6_SYNTAX_SENTINEL_STRUCTURAL_INTEGRITY.md) | [ ⚡ Syntax Guard Script ➔ ](scripts/utyansky_syntax_guard.js)
+  * **Regulation:** `[IDX: 00000-00031]`. [ 📖 Read v2.6.6 Chapter ➔ ](docs/en/RELEASE_v2_6_6_SYNTAX_SENTINEL_STRUCTURAL_INTEGRITY.md)
 * 🧹 **v2.6.7 (October 15, 2026 / Zombie Purge & Strict Port Lock):**
   * **Strict Port Lock (`strictPort: true`):** strict ban on dev servers silently jumping to arbitrary random ports.
-  * **Hardware Zombie Killer:** utility `scripts/utyansky_zombie_killer.js` ensuring immediate release of ports 5173 and 3001.
+  * **Hardware Zombie Killer:** utility ensuring immediate release of ports 5173 and 3001.
   * **NTFS Lock Release:** automated clearing of spurious Windows Read-Only flags and stuck file descriptors.
-  * **Regulation:** `[IDX: 00000-00032]`. [ 📖 Read v2.6.7 Chapter ➔ ](docs/en/RELEASE_v2_6_7_ZOMBIE_PURGE_AND_PORT_LOCK.md) | [ 🧹 Zombie Killer Script ➔ ](scripts/utyansky_zombie_killer.js)
+  * **Regulation:** `[IDX: 00000-00032]`. [ 📖 Read v2.6.7 Chapter ➔ ](docs/ru/RELEASE_v2_6_7_ZOMBIE_PURGE_AND_PORT_LOCK.md)
 * 📦 **v2.6.7-SUITE (October 18, 2026 / Official Industrial Resilience Suite):**
-  * Complete open distribution including all 4 new safety regulations, templates, and automated tooling out of the box.
-  * [ 📦 Download Starter Kit v2.6.7 (ZIP) ➔ ](https://github.com/vlad-utyansky/utyansky-index/raw/main/utyansky_starter_kit_v2_6_7.zip)
+  * Industrial resilience specifications containing all 4 new standards out of the box.
+  * [ 📋 Transition Announcement & Enterprise Runtime ➔ ](docs/ANNOUNCEMENT.md)
 * 📦 **v2.6.8-DEVKIT (October 21, 2026 / Standalone Visual Manipulator & DOM Inspector):**
   * Floating browser HUD toolbar, 1-click `[IDX]` element capture, laser grid `[PXL]`, `VAU` hotkey cheat code, eliminating 30-minute CSS ping-pong.
-  * [ 📖 Read Origin Story ➔ ](docs/en/RELEASE_v2_6_8_UTYANSKY_DEVKIT_VISUAL_MANIPULATOR.md) | [ 📦 Download UtyanskyDevKit v2.6.8 (ZIP) ➔ ](https://github.com/vlad-utyansky/utyansky-index/raw/main/utyansky_devkit_v2_6_8.zip)
+  * [ 📖 Read Origin Story ➔ ](docs/en/RELEASE_v2_6_8_UTYANSKY_DEVKIT_VISUAL_MANIPULATOR.md) | [ 📋 Enterprise Runtime ➔ ](docs/ANNOUNCEMENT.md)

@@ -28,7 +28,7 @@ This document tracks all changes, releases, architectural specifications, and pa
 3. **📐 Laser Grid & Measurements `[PXL]`:** Real-time on-screen spacing and margin inspection.
 4. **⌨️ VAU Cheat Code Activation:** Instant toggle by typing `vau` anywhere on the page.
 * **Specification & Origin Story:** [RELEASE_v2_6_8_UTYANSKY_DEVKIT_VISUAL_MANIPULATOR.md](docs/en/RELEASE_v2_6_8_UTYANSKY_DEVKIT_VISUAL_MANIPULATOR.md)
-* **Standalone Distribution:** [Download UtyanskyDevKit v2.6.8 (ZIP)](https://github.com/vlad-utyansky/utyansky-index/raw/main/utyansky_devkit_v2_6_8.zip)
+* **Transition Announcement:** [docs/ANNOUNCEMENT.md](docs/ANNOUNCEMENT.md)
 
 ---
 
@@ -39,11 +39,9 @@ This document tracks all changes, releases, architectural specifications, and pa
 
 ### 🚀 Key Additions:
 1. **🔒 Strict Port Lock (`strictPort: true`):** Vite and Next.js dev servers are locked to designated ports, preventing silent port jumps.
-2. **🧹 Hardware Zombie Killer (`utyansky_zombie_killer.js`):** Automated utility forcefully killing orphan node/python processes and freeing network sockets.
+2. **🧹 Hardware Zombie Killer:** Automated protocol forcefully killing orphan node/python processes and freeing network sockets.
 3. **🔓 Windows NTFS Read-Only Reset:** Automated unfreezing of stuck file handles and spurious permissions locks.
 * **Specification:** [RELEASE_v2_6_7_ZOMBIE_PURGE_AND_PORT_LOCK.md](docs/en/RELEASE_v2_6_7_ZOMBIE_PURGE_AND_PORT_LOCK.md)
-* **Tooling:** [scripts/utyansky_zombie_killer.js](scripts/utyansky_zombie_killer.js)
-* **Resilience Suite Distribution:** [Download Starter Kit v2.6.7 (ZIP)](https://github.com/vlad-utyansky/utyansky-index/raw/main/utyansky_starter_kit_v2_6_7.zip)
 
 ---
 
@@ -56,7 +54,6 @@ This document tracks all changes, releases, architectural specifications, and pa
 1. **⚖️ Zero-Imbalance Law ($\Delta = 0$):** Hardware-level commit blocker aborting git commits if bracket parity (`{}`, `()`, `[]`) is disrupted.
 2. **⚡ V8 AST Compilation Guard:** Staged JavaScript files are compiled via Node V8 engine before commit acceptance.
 * **Specification:** [RELEASE_v2_6_6_SYNTAX_SENTINEL_STRUCTURAL_INTEGRITY.md](docs/en/RELEASE_v2_6_6_SYNTAX_SENTINEL_STRUCTURAL_INTEGRITY.md)
-* **Tooling:** [scripts/utyansky_syntax_guard.js](scripts/utyansky_syntax_guard.js)
 
 ---
 
@@ -70,7 +67,6 @@ This document tracks all changes, releases, architectural specifications, and pa
 2. **🛡️ Isolated Try/Catch Shields:** Complex calculations and telemetry graphs wrapped in isolated sandboxes preventing button freezes.
 3. **📡 Cross-Conduit Event Emission:** Synchronizing dependent components via clean custom DOM events.
 * **Specification:** [RELEASE_v2_6_5_UNBREAKABLE_NAVIGATION_AND_DOM_PULSE.md](docs/en/RELEASE_v2_6_5_UNBREAKABLE_NAVIGATION_AND_DOM_PULSE.md)
-* **Template:** [examples/safe_navigation_pattern.js](examples/safe_navigation_pattern.js)
 
 ---
 
@@ -83,7 +79,6 @@ This document tracks all changes, releases, architectural specifications, and pa
 1. **🔌 Armored Cable Standard:** Strict `*cable*.js` naming for all inter-slot communication pipelines.
 2. **⏱️ Silicon Baseline:** Prohibition against synthetic timers; direct synchronization to hardware timestamps (`Date.now()`).
 * **Specification:** [RELEASE_v2_6_4_ARMORED_CABLES_AND_SILICON_BASELINE.md](docs/en/RELEASE_v2_6_4_ARMORED_CABLES_AND_SILICON_BASELINE.md)
-* **Template:** [examples/armored_cable_template.js](examples/armored_cable_template.js)
 
 ---
 
@@ -96,7 +91,7 @@ This document tracks all changes, releases, architectural specifications, and pa
 1. **🛡️ Kernel Self-Protection:** Sentinel scripts verify their own SHA-256 hashes against `guard_manifest.json` before any commit.
 2. **🪞 Collective Mirror Guard:** Automated synchronization checks across distributed repository replicas.
 * **Specification:** [RELEASE_v2_6_3_COLLECTIVE_MIRROR_GUARD.md](docs/en/RELEASE_v2_6_3_COLLECTIVE_MIRROR_GUARD.md)
-* **Distribution:** [Download Starter Kit v2.6.3 (ZIP)](https://github.com/vlad-utyansky/utyansky-index/raw/main/utyansky_starter_kit_v2_6_3.zip)
+* **Transition Announcement:** [docs/ANNOUNCEMENT.md](docs/ANNOUNCEMENT.md)
 
 ---
 
@@ -106,13 +101,12 @@ This document tracks all changes, releases, architectural specifications, and pa
 * Transitioning from prompt-based recommendations to OS-level hardware enforcement against code carpet-bombing.
 
 ### 🚀 Key Additions:
-1. **🛡️ Hardware Pre-Commit Guard (`git_pre_commit_guard.py`):**
+1. **🛡️ Hardware Pre-Commit Guard:**
    * Physically aborts commits deleting >150 lines from a file at once.
    * Enforces total immunity for `data-lock="00000"` nodes and `00000_capsules/`.
 2. **⚡ JavaScript Syntax Verification:** Automated compile checks on staged `.js` files via `node --check`.
 3. **⏳ Session Quantization Law (80-Step Limit):** Context archiving recommendation every 60–80 turns to prevent attention drift.
 * **Specification:** [RELEASE_v2_6_2_HARDWARE_PRE_COMMIT_AND_SESSION_INTEGRITY.md](docs/en/RELEASE_v2_6_2_HARDWARE_PRE_COMMIT_AND_SESSION_INTEGRITY.md)
-* **Tooling:** [examples/git_pre_commit_guard.py](examples/git_pre_commit_guard.py)
 
 ---
 
@@ -136,7 +130,7 @@ This document tracks all changes, releases, architectural specifications, and pa
 
 ### 🚀 Key Additions & Rules:
 1. **📦 Official Starter Kit (`utyansky-starter-kit-v2.6`):**
-   * Complete architectural bundle [`utyansky_starter_kit_v2_6.zip`](https://github.com/vlad-utyansky/utyansky-index/raw/main/utyansky_starter_kit_v2_6.zip).
+   * Complete architectural bundle specifications.
 2. **🤖 4-Tier Multi-Agent Pipeline:**
    * Strict $O(1)$ routing: Router `[90100]` ➔ Planner `[70100]` ➔ Executor `[70200]` ➔ Validator `[90200]`.
 3. **📊 Standardized Telemetry (`telemetry_benchmark.js`):**
@@ -160,7 +154,7 @@ This document tracks all changes, releases, architectural specifications, and pa
 4. **🤖 Architecture Sentinel (`guard_utyansky_slots.py`):**
    * Automated verification of line limits, lock integrity, and diff sanity.
 * **Specification:** [UTYANSKY_INDEX_v2_5_VIBE_CODING_IRON_DOME_STANDARD.md](docs/en/UTYANSKY_INDEX_v2_5_VIBE_CODING_IRON_DOME_STANDARD.md)
-* **Distribution:** [Download Starter Kit v2.5 (ZIP)](https://github.com/vlad-utyansky/utyansky-index/raw/main/utyansky_starter_kit_v2_5.zip)
+* **Transition Announcement:** [docs/ANNOUNCEMENT.md](docs/ANNOUNCEMENT.md)
 
 ---
 
@@ -209,7 +203,6 @@ This document tracks all changes, releases, architectural specifications, and pa
 3. **🎯 0% Layout Regressions:**
    * AI agents target exact nodes without disrupting neighboring elements.
 * **Specification:** [WEB_SITE_COORDINATE_INDEXING.md](docs/en/WEB_SITE_COORDINATE_INDEXING.md)
-* **Live HTML Example:** [website-coordinate-markup.html](examples/website-coordinate-markup.html)
 
 ---
 
@@ -226,7 +219,6 @@ This document tracks all changes, releases, architectural specifications, and pa
 3. **🛡️ Architectural Degradation Guards:**
    * Circular dependency detection and line cap enforcement at compile time.
 * **Specification:** [RELEASE_v2_1_INDUSTRIAL_AST_EDITION.md](docs/en/RELEASE_v2_1_INDUSTRIAL_AST_EDITION.md)
-* **AST Engine Source:** [src/utyansky_ast_engine.js](src/utyansky_ast_engine.js)
 
 ---
 

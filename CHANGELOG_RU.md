@@ -25,14 +25,13 @@
 * **Лазерная сетка 20×20 (`[PXL]`):** Координатная сетка с трекингом курсора мыши для идеального позиционирования без открытия DevTools браузера.
 * **Чит-код `VAU` / `ВАУ`:** Мгновенный вызов парящего пульта прямо на странице.
 * **Спецификация:** [RELEASE_v2_6_8_UTYANSKY_DEVKIT_VISUAL_MANIPULATOR.md](docs/ru/RELEASE_v2_6_8_UTYANSKY_DEVKIT_VISUAL_MANIPULATOR.md)
-* **Дистрибутив:** [utyansky_devkit_v2_6_8.zip](https://github.com/vlad-utyansky/utyansky-index/raw/main/utyansky_devkit_v2_6_8.zip)
+* **Регламент перехода:** [docs/ANNOUNCEMENT.md](docs/ANNOUNCEMENT.md)
 
 ---
 
 ## 🏛️ [v2.6.7] — 15 Октября 2026 г. — 🛡️ Релиз «Ликвидация Зомби-Процессов и Блокировка Портов»
 * **Изоляция окружения:** Аппаратная ликвидация зависших процессов на портах разработки (`5173`, `3001`), строгий запрет тихого ухода серверов (`strictPort: true`).
 * **Разблокировка NTFS:** Автоматическое снятие ложных блокировок Read-Only и дескрипторов файлов.
-* **Утилита:** `scripts/utyansky_zombie_killer.js`.
 * **Спецификация:** [RELEASE_v2_6_7_ZOMBIE_PURGE_AND_PORT_LOCK.md](docs/ru/RELEASE_v2_6_7_ZOMBIE_PURGE_AND_PORT_LOCK.md)
 
 ---
@@ -40,7 +39,6 @@
 ## 🏛️ [v2.6.6] — 14 Октября 2026 г. — ⚡ Релиз «Страж Структурной Целостности и Синтаксический Дозор»
 * **Закон нулевого дисбаланса ($\Delta = 0$):** Физический запрет коммита при потере парных скобок `{}`, `()`, `[]`, кавычек или незакрытых тегов.
 * **V8 AST-валидация:** Аппаратная проверка компиляции скриптов движком V8 перед фиксацией изменений.
-* **Утилита:** `scripts/utyansky_syntax_guard.js`.
 * **Спецификация:** [RELEASE_v2_6_6_SYNTAX_SENTINEL_STRUCTURAL_INTEGRITY.md](docs/ru/RELEASE_v2_6_6_SYNTAX_SENTINEL_STRUCTURAL_INTEGRITY.md)
 
 ---
@@ -49,7 +47,6 @@
 * **Принцип «DOM-First Switch»:** Физическое переключение экрана на Шаге 0 до вызова тяжелых расчетов.
 * **Изолированный экран защиты:** Отрисовка графиков и аналитики в безопасном try/catch экране без риска зависания пользовательского интерфейса.
 * **Сквозная эмиссия:** Синхронизация состояния всех зависимых кабелей через события.
-* **Шаблон:** [safe_navigation_pattern.js](examples/safe_navigation_pattern.js).
 * **Спецификация:** [RELEASE_v2_6_5_UNBREAKABLE_NAVIGATION_AND_DOM_PULSE.md](docs/ru/RELEASE_v2_6_5_UNBREAKABLE_NAVIGATION_AND_DOM_PULSE.md)
 
 ---
@@ -58,7 +55,6 @@
 * **Изоляция каналов данных:** Разделение критических шин телеметрии и шаблонов интерфейса (`00000-XXXXX-XXXXX_cable.ext`).
 * **Кремниевый Аппаратный Базис (`getFailSafeSnapshot()`):** Неснижаемый эталонный снимок данных, гарантирующий устойчивость к холодному старту и сбросу кэша.
 * **Монополия кабеля:** Запрет вторичным скриптам обнулять шину данных.
-* **Шаблон:** [armored_cable_template.js](examples/armored_cable_template.js).
 * **Спецификация:** [RELEASE_v2_6_4_ARMORED_CABLES_AND_SILICON_BASELINE.md](docs/ru/RELEASE_v2_6_4_ARMORED_CABLES_AND_SILICON_BASELINE.md)
 
 ---
@@ -119,7 +115,7 @@
 
 ### 🚀 Ключевые нововведения и правила:
 1. **📦 Официальный Starter Kit (`utyansky-starter-kit-v2.6`):**
-   * Готовый архив [`utyansky_starter_kit_v2_6.zip`](https://github.com/vlad-utyansky/utyansky-index/raw/main/utyansky_starter_kit_v2_6.zip) с полной архитектурной структурой.
+   * Архитектурный регламент с полной координатной структурой слотов.
    * Шаблоны корневого оркестратора `10000_app.jsx` (замок 00000), рабочего виджета `10100_widget.jsx` и капсул `00000-*`.
 2. **🤖 4-Уровневый Мультиагентный Пайплайн:**
    * Строгая O(1) маршрутизация задач без чтения всего проекта.
@@ -129,7 +125,7 @@
    * **RFR (Rollback Failure Rate) $\le 10\%$:** Процент заблокированных некорректных правок.
    * **CHI (Codebase Health Index) $\ge 90\%$:** Чистота слотов и соблюдение лимита 4 листов А4.
 4. **🛡️ Пре-коммит хук и генератор реестра:**
-   * Git pre-commit хук автоматического запуска `guard_utyansky_slots.py` и `build_index.js`.
+   * Автоматический контроль целостности и соответствия замков `00000`.
 
 ---
 
@@ -148,7 +144,7 @@
 4. **🤖 Автономный Скрипт-Страж (`guard_utyansky_slots.py`):**
    * Автоматический контроль лимитов строк, неизменности замков `00000` и целостности кодовой базы.
 * **Подробная спецификация:** [UTYANSKY_INDEX_v2_5_VIBE_CODING_IRON_DOME_STANDARD.md](docs/ru/UTYANSKY_INDEX_v2_5_VIBE_CODING_IRON_DOME_STANDARD.md)
-* **Дистрибутив:** [Скачать Starter Kit v2.5 (ZIP)](https://github.com/vlad-utyansky/utyansky-index/raw/main/utyansky_starter_kit_v2_5.zip)
+* **Регламент перехода:** [docs/ANNOUNCEMENT.md](docs/ANNOUNCEMENT.md)
 
 ---
 
@@ -197,7 +193,6 @@
 3. **🎯 0% регрессий при верстке:**
    * ИИ-ассистенты правят строго целевой узел без затрагивания соседних контейнеров.
 * **Подробная спецификация:** [WEB_SITE_COORDINATE_INDEXING.md](docs/ru/WEB_SITE_COORDINATE_INDEXING.md)
-* **Живой пример разметки:** [website-coordinate-markup.html](examples/website-coordinate-markup.html)
 
 ---
 
@@ -214,7 +209,6 @@
 3. **🛡️ Защита от архитектурных деградаций:**
    * Обнаружение циклических связей и контроль лимитов строк на этапе компиляции.
 * **Подробная спецификация:** [RELEASE_v2_1_INDUSTRIAL_AST_EDITION.md](docs/ru/RELEASE_v2_1_INDUSTRIAL_AST_EDITION.md)
-* **Исходный код движка:** [src/utyansky_ast_engine.js](src/utyansky_ast_engine.js)
 
 ---
 
