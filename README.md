@@ -123,41 +123,14 @@
 
 ---
 
-<!-- [IDX: 00102] Latest Flagship Release Banner: v2.6.8 UtyanskyDevKit -->
-<!-- [IDX: 00102-00001] Flagship Card v2.6.8 -->
-> ## 🚀 FLAGSHIP RELEASE: v2.6.8 (October 21, 2026) — UtyanskyDevKit (Visual Manipulator & DOM Inspector)
-> **Practical tooling for vibe-coding with zero context degradation (8+ months daily battle practice):**
-> * 🎯 **1-Click Slot Capture `[IDX]`:** Click any block on screen ➔ exact numerical coordinate `[IDX: XXXXX]` copied to clipboard ➔ paste into chat with AI. The LLM edits strictly the targeted 5 lines without breaking neighbor nodes.
-> * 📐 **Laser Grid 20×20 `[PXL]`:** Real-time on-screen spacing and margin inspection without opening heavy browser DevTools.
-> * 🎮 **Controls & `VAU` Cheat Code:** Silent instant activation by typing `vau` anywhere on page, `F1` for quick help, and instant `RU / EN` switch.
-> * 🧠 **Architectural Mentor `[MNTR]`:** Real-time interactive hints explaining the system role of each DOM component.
-> * 🔌 **Autonomous $O(1)$ Setup:** Injected via a single `<script>` tag, zero build step required, works across React, Vue, HTML, Next.js.
-> 
-> 👉 **[ 📖 READ DEVKIT v2.6.8 SPECIFICATION & ORIGIN STORY (EN) ➔ ](docs/en/RELEASE_v2_6_8_UTYANSKY_DEVKIT_VISUAL_MANIPULATOR.md)** &nbsp;&nbsp;|&nbsp;&nbsp; **[ 📦 Download UtyanskyDevKit v2.6.8 (ZIP) ➔ ](https://github.com/vlad-utyansky/utyansky-index/raw/main/utyansky_devkit_v2_6_8.zip)**
+<!-- [IDX: 00103] Architecture & Enterprise Integration -->
+## 3. Architecture & Enterprise Integration
 
----
-
-<!-- [IDX: 00103] Fast Quickstart in 30 Seconds -->
-## 🚀 3. QUICKSTART & FAST DEPLOYMENT (30-Second Guide)
-
-### 📦 Starter Kit (3 Ready Files):
-* 📜 **[`CURSOR_RULES_INTEGRATION.md`](./CURSOR_RULES_INTEGRATION.md)** / **[`AI_SYSTEM_PROMPT.md`](./AI_SYSTEM_PROMPT.md)** *(or [in Russian](./AI_SYSTEM_PROMPT_RU.md) / [`docs/ru/CURSOR_RULES_INTEGRATION.md`](./docs/ru/CURSOR_RULES_INTEGRATION.md))* — ready system prompt and `.cursorrules` blueprint for your AI assistant.
-* 🗄️ **[`examples/UTYANSKY_INDEX_REGISTRY.json`](./examples/UTYANSKY_INDEX_REGISTRY.json)** — coordinate registry file for storing project slots.
-* 🛠️ **[`examples/validate-index.js`](./examples/validate-index.js)** — CLI validator script checking index uniqueness in 0.1s.
-
-### 📌 2-Click Setup:
-* **For Cursor AI:** Create a **`.cursorrules`** file in your project root and paste the contents of **[`CURSOR_RULES_INTEGRATION.md`](./CURSOR_RULES_INTEGRATION.md)** (or `AI_SYSTEM_PROMPT.md`).
-* **For Antigravity, Claude Code, Windsurf, or ChatGPT:** Create an **`AGENTS.md`** file (or paste into your custom system instructions).
-* **For 1-Click Link Ingestion:** Send your AI the direct URL:  
-  `https://raw.githubusercontent.com/vlad-utyansky/utyansky-index/main/AI_SYSTEM_PROMPT.md`  
-  *(and prompt: "Write all code strictly following the Utyansky Index standard")*.
-
-### 💬 How AI Assistant Names and Edits Components:
-1. **Component Naming:** AI must label every element with its digital passport:  
-   👉 *`[IDX: 71080] [BTN] Launch Analysis Button`*, *`[IDX: 72100] [FORM] Admin Panel Form`*.
-2. **Deterministic Errors:** On any issue, AI returns exact deterministic $O(1)$ error codes:  
-   👉 *`[ERR: 40101] Invalid Index Format`*, *`[ERR: 40102] Coordinate Collision`*, *`[ERR: 50010] LLM Deviation`*.
-3. **Safe Surgical Edits:** When you say "fix button 71080", AI modifies **strictly 2 lines inside slot 71080** without touching surrounding UI!
+### Component Status & Delivery Model:
+As of November 11, 2026, this public repository serves as an open architectural specification (Read-Only Overview).
+* **Open Specification:** 5-digit coordinate addressing principles (`[IDX: XXXXX]`) and architectural documentation remain available for study in this repository.
+* **Enterprise Runtime Tooling:** Production-grade rule packs, automated AST parsers, session guards, and CI/CD validation scripts are delivered under commercial licensing agreements.
+* **Commercial Inquiries & Audits:** Send formal inquiries to **info@vau.ru** (details in [docs/ANNOUNCEMENT.md](docs/ANNOUNCEMENT.md)).
 
 ---
 
