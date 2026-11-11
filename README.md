@@ -1,3 +1,11 @@
+> **Announcement (November 11, 2026):** The public evaluation pilot of the Utyansky Index has formally concluded. The final pilot reference release is **v2.6.8** (UtyanskyDevKit).
+>
+> Advanced production releases (**v3.0 – v4.x+**, "Enterprise Runtime") are supplied strictly on a commercial basis under contract. This repository remains the public home of the open architectural specification. Previously published evaluation materials are protected by intellectual property laws and Rospatent Certificate No. 2026691737; commercial exploitation, unauthorized modification, and redistribution are strictly prohibited.
+>
+> [Full Announcement](docs/ANNOUNCEMENT.md) · Commercial Licensing & Audit: info@vau.ru
+
+---
+
 <!-- [IDX: 00100] Header, Regalia & State Priority Accreditation -->
 <div align="center">
 
