@@ -9,6 +9,10 @@
 <!-- [IDX: 00100] Header, Regalia & State Priority Accreditation -->
 <div align="center">
 
+### [ 🤝 Обсудить применение и внедрение Enterprise v5.0 ➔ ](https://index.utyanskiy.ru/#contacts)
+
+<br/>
+
 [![Русский](https://img.shields.io/badge/Язык-Русский%20(RU)-red?style=for-the-badge)](README_RU.md)
 [![English](https://img.shields.io/badge/Language-English%20(EN)-blue?style=for-the-badge)](README.md)
 [![Архитектурная Спецификация](https://img.shields.io/badge/Статус-Архитектурная%20Спецификация-emerald?style=for-the-badge)](https://github.com/vlad-utyansky/utyansky-index)
@@ -21,7 +25,7 @@
 
 <br/>
 
-**[ 🇬🇧 Read in English ➔ ](README.md)** &nbsp;&nbsp;|&nbsp;&nbsp; **[ 📜 Открыть архив Первой версии v1.0 (Март 2026) ➔ ](docs/ru/АРХИВ_ВЕРСИЯ_1.0_МАРТ_2026.md)** &nbsp;&nbsp;|&nbsp;&nbsp; **[ 🤝 Обсудить применение (Enterprise v5.0) ➔ ](https://index.utyanskiy.ru/#contacts)**
+**[ 🇬🇧 Read in English ➔ ](README.md)** &nbsp;&nbsp;|&nbsp;&nbsp; **[ 📜 Открыть архив Первой версии v1.0 (Март 2026) ➔ ](docs/ru/АРХИВ_ВЕРСИЯ_1.0_МАРТ_2026.md)**
 
 </div>
 
