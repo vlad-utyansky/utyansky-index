@@ -21,7 +21,7 @@
 
 <br/>
 
-**[ 🇷🇺 Читать на русском ➔ ](README_RU.md)** &nbsp;&nbsp;|&nbsp;&nbsp; **[ 📜 Open Version 1.0 Archive (March 2026) ➔ ](docs/en/VERSION_1.0_MARCH_2026_ARCHIVE.md)**
+**[ 🇷🇺 Читать на русском ➔ ](README_RU.md)** &nbsp;&nbsp;|&nbsp;&nbsp; **[ 📜 Open Version 1.0 Archive (March 2026) ➔ ](docs/en/VERSION_1.0_MARCH_2026_ARCHIVE.md)** &nbsp;&nbsp;|&nbsp;&nbsp; **[ 🤝 Discuss Integration (Enterprise v5.0) ➔ ](https://index.utyanskiy.ru/#contacts?utm_source=github&utm_medium=readme_en&utm_campaign=integration)**
 
 </div>
 
@@ -115,6 +115,7 @@
 > * **🏛️ October 16, 2026** — **Official State Registration of «Utyansky Index» (Rospatent RF)**: official national recognition of the deterministic coordinate navigation and data routing system for AI and software. Official Certificate **№ 2026691737** issued (Application № 2026691407 filed August 22, 2026, Registration Date: October 14, 2026). [ 📜 Open Official Rospatent Certificate (PDF) ➔ ](docs/utyansky_index_certificate_2026691737.pdf)
 > * **🔥 October 18, 2026** — **Official Release of Industrial Resilience Suite (v2.6.4 – v2.6.7)**: full open engineering armor suite for production vibe-coding reliability. [ 📖 Read v2.6.7 Specification ➔ ](docs/ru/RELEASE_v2_6_7_ZOMBIE_PURGE_AND_PORT_LOCK.md)
 > * **🚀 October 21, 2026** — **Official Release of UtyanskyDevKit v2.6.8 (Autonomous Visual Manipulator & DOM Inspector)**: the genesis tool of slot-based vibe-coding without context loss (8+ months battle-tested). 1-click [IDX] slot capture, 20x20 [PXL] spatial grid, VAU cheat code, and Mentor [MNTR]. [ 📖 Read Founder Story ➔ ](docs/ru/RELEASE_v2_6_8_UTYANSKY_DEVKIT_VISUAL_MANIPULATOR.md)
+> * **🛡️ November 15, 2026** — **Transition of v3.0 — v5.0 Line to Enterprise Runtime**: establishing industrial-grade code protection standards. Closed production testing of the minimum viable coordination service prior to its formal public unveiling.
 
 ---
 
@@ -777,8 +778,8 @@ The **«Utyansky Index»** standard is distributed under a transparent hybrid **
 
 | Edition / Tier | Pricing | Target Audience | What is Included |
 | :--- | :---: | :--- | :--- |
-| 🆓 **Community Edition** | **100% Free** (MIT) | Vibe coders, indie hackers, open-source projects, students | • Open 5-digit coordinate grid (`10000–99999`)<br/>• React DOM markup (`data-idx="7XXXX"`)<br/>• Ready rule templates for Cursor AI, Claude Code, Windsurf<br/>• CLI collision validator script `validate-index.js` |
-| 🛠️ **Turnkey Express Setup & Audit** | **from 120,000 ₽** *(one-time)* | Startups, digital agencies, businesses with existing vibe-coding MVPs | • Express codebase audit for hidden regressions and hallucinated leaks<br/>• End-to-end 5-digit DOM and backend indexing<br/>• Generation of `UTYANSKY_INDEX_REGISTRY.json` master map<br/>• Git Pre-commit hook & CI/CD pipeline integration<br/>• Team training and customized AI prompt rules |
+| 📖 **Open Specification** | **Read-Only** | Engineers, architects, students, researchers | • Open 5-digit coordinate grid (`10000–99999`)<br/>• React DOM markup methodology (`data-idx="7XXXX"`)<br/>• Architectural reliability regulations and telemetry formulas<br/>• Scientific documentation and open architectural standards |
+| 🔒 **Enterprise Runtime & Turnkey Setup** | **from 120,000 ₽** *(one-time)* | Startups, digital agencies, businesses with existing vibe-coding MVPs | • Tailored rule packages for IDEs (Cursor AI, Claude Code, Windsurf)<br/>• Automated validators, AST parsers, and Git pre-commit hooks<br/>• Codebase audit, slot mapping, and `UTYANSKY_INDEX_REGISTRY.json` generation<br/>• Team training and customized AI prompt rules |
 | 💼 **Monthly Retainer (Small Business)** | **5,000 – 10,000 ₽** / mo | Niche SaaS, local services, e-commerce stores | • Monthly coordinate registry updates for new features<br/>• Context cleanliness audit and commit verification<br/>• Priority AI agent integration consultations |
 | 🏢 **Monthly Retainer (Mid-Market)** | **25,000 – 45,000 ₽** / mo | Product IT companies, CRM/ERP ecosystems, high-volume e-commerce | • Multi-agent system architecture supervision<br/>• LLM token cost optimization and invoice monitoring<br/>• Vector memory isolation setup (`pgvector`)<br/>• VAU EFFECT Engineering Group supervision & architecture board under the author guidance |
 | 🏛️ **Enterprise & Corporations** | **90,000 – 150,000 ₽** / mo | Banks, fintech, closed corporate holdings, enterprise brands | • Personal architecture supervision by Vladislav Utyansky + priority SLA of VAU EFFECT Engineering Center<br/>• Proprietary API access for viral resonance calculation (UVWI `[IDX: 85010]`)<br/>• High-scale vector sharding for 1B+ records<br/>• Official AI Precision Brand-Certificate |
@@ -788,7 +789,7 @@ The **«Utyansky Index»** standard is distributed under a transparent hybrid **
 ### 📞 Contact for Integration & Express Audit:
 * 🌐 **Official Portal:** [https://index.utyanskiy.ru](https://index.utyanskiy.ru)
 * 💬 **Direct Telegram:** [@vau_amoCRM](https://t.me/vau_amoCRM)
-* 📧 **Email:** [vlad@utyanskiy.ru](mailto:vlad@utyanskiy.ru)
+* 📧 **Email:** [info@vau.ru](mailto:info@vau.ru)
 
 ---
 
@@ -876,6 +877,10 @@ The **«Utyansky Index»** standard is distributed under a transparent hybrid **
 * 📦 **v2.6.8-DEVKIT (October 21, 2026 / Standalone Visual Manipulator & DOM Inspector):**
   * Floating browser HUD dock, 1-click slot capture [IDX], laser grid [PXL], VAU cheat code, and elimination of 30-min CSS ping-pong.
   * [ 📖 Read Founder Story ➔ ](docs/ru/RELEASE_v2_6_8_UTYANSKY_DEVKIT_VISUAL_MANIPULATOR.md) | [ 📋 Enterprise Runtime ➔ ](docs/ANNOUNCEMENT.md)
+* 🏛️ **v3.0 — v5.0 ENTERPRISE (November 15, 2026 / Industrial Protection Runtime):**
+  * **Line Status:** Versions v3.0 through v5.0 are designated to the proprietary commercial Enterprise Runtime. Delivering hardware-level codebase integrity control, mission-critical kernel isolation, and architecture protection against destructive autonomous AI mutations.
+  * **Coordination Service (Closed Testing):** The author is currently conducting live calibration and refinement of the platform's minimum viable coordination service. Formal unveiling and access availability will follow after internal test cycles conclude.
+  * [ 🤝 Request Audit & Enterprise v5.0 Integration (info@vau.ru) ➔ ](https://index.utyanskiy.ru/#contacts?utm_source=github&utm_medium=readme_en&utm_campaign=integration)
 * 🔮 **(Under Active R&D / Preview):**
   * **Autonomous Multi-Agent Swarms:** Zero-conflict concurrent code engineering for swarms of 10–20 autonomous AI agents in monorepos.
   * **DSL (Distributed Slot Locking):** Write-intent coordination via lease-based domain coordinate reservations.
@@ -1039,3 +1044,7 @@ The **«Utyansky Index»** standard is distributed under a transparent hybrid **
 * 📦 **v2.6.8-DEVKIT (October 21, 2026 / Standalone Visual Manipulator & DOM Inspector):**
   * Floating browser HUD toolbar, 1-click `[IDX]` element capture, laser grid `[PXL]`, `VAU` hotkey cheat code, eliminating 30-minute CSS ping-pong.
   * [ 📖 Read Origin Story ➔ ](docs/en/RELEASE_v2_6_8_UTYANSKY_DEVKIT_VISUAL_MANIPULATOR.md) | [ 📋 Enterprise Runtime ➔ ](docs/ANNOUNCEMENT.md)
+* 🏛️ **v3.0 — v5.0 ENTERPRISE (November 15, 2026 / Industrial Protection Runtime):**
+  * **Line Status:** Versions v3.0 through v5.0 are designated to the proprietary commercial Enterprise Runtime. Delivering hardware-level codebase integrity control, mission-critical kernel isolation, and architecture protection against destructive autonomous AI mutations.
+  * **Coordination Service (Closed Testing):** The author is currently conducting live calibration and refinement of the platform's minimum viable coordination service. Formal unveiling and access availability will follow after internal test cycles conclude.
+  * [ 🤝 Request Audit & Enterprise v5.0 Integration (info@vau.ru) ➔ ](https://index.utyanskiy.ru/#contacts?utm_source=github&utm_medium=readme_en&utm_campaign=integration)

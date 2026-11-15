@@ -126,7 +126,7 @@ This document tracks all changes, releases, architectural specifications, and pa
 ## 🏛️ [v2.6.0] — October 08, 2026 (11:00 MSK) — 🚀 Release: Multi-Agent Starter Kit & Quality Telemetry
 
 ### 💡 Release Philosophy:
-* Turnkey distribution of ready-to-use directory templates and automated reliability telemetry.
+* Architectural repository specification and standardized reliability telemetry framework.
 
 ### 🚀 Key Additions & Rules:
 1. **📦 Official Starter Kit (`utyansky-starter-kit-v2.6`):**
