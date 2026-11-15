@@ -21,7 +21,7 @@
 
 <br/>
 
-**[ 🇷🇺 Читать на русском ➔ ](README_RU.md)** &nbsp;&nbsp;|&nbsp;&nbsp; **[ 📜 Open Version 1.0 Archive (March 2026) ➔ ](docs/en/VERSION_1.0_MARCH_2026_ARCHIVE.md)** &nbsp;&nbsp;|&nbsp;&nbsp; **[ 🤝 Discuss Integration (Enterprise v5.0) ➔ ](https://index.utyanskiy.ru/#contacts?utm_source=github&utm_medium=readme_en&utm_campaign=integration)**
+**[ 🇷🇺 Читать на русском ➔ ](README_RU.md)** &nbsp;&nbsp;|&nbsp;&nbsp; **[ 📜 Open Version 1.0 Archive (March 2026) ➔ ](docs/en/VERSION_1.0_MARCH_2026_ARCHIVE.md)** &nbsp;&nbsp;|&nbsp;&nbsp; **[ 🤝 Discuss Integration (Enterprise v5.0) ➔ ](https://index.utyanskiy.ru/#contacts)**
 
 </div>
 
@@ -880,7 +880,7 @@ The **«Utyansky Index»** standard is distributed under a transparent hybrid **
 * 🏛️ **v3.0 — v5.0 ENTERPRISE (November 15, 2026 / Industrial Protection Runtime):**
   * **Line Status:** Versions v3.0 through v5.0 are designated to the proprietary commercial Enterprise Runtime. Delivering hardware-level codebase integrity control, mission-critical kernel isolation, and architecture protection against destructive autonomous AI mutations.
   * **Coordination Service (Closed Testing):** The author is currently conducting live calibration and refinement of the platform's minimum viable coordination service. Formal unveiling and access availability will follow after internal test cycles conclude.
-  * [ 🤝 Request Audit & Enterprise v5.0 Integration (info@vau.ru) ➔ ](https://index.utyanskiy.ru/#contacts?utm_source=github&utm_medium=readme_en&utm_campaign=integration)
+  * [ 🤝 Request Audit & Enterprise v5.0 Integration (info@vau.ru) ➔ ](https://index.utyanskiy.ru/#contacts)
 * 🔮 **(Under Active R&D / Preview):**
   * **Autonomous Multi-Agent Swarms:** Zero-conflict concurrent code engineering for swarms of 10–20 autonomous AI agents in monorepos.
   * **DSL (Distributed Slot Locking):** Write-intent coordination via lease-based domain coordinate reservations.
@@ -1047,4 +1047,4 @@ The **«Utyansky Index»** standard is distributed under a transparent hybrid **
 * 🏛️ **v3.0 — v5.0 ENTERPRISE (November 15, 2026 / Industrial Protection Runtime):**
   * **Line Status:** Versions v3.0 through v5.0 are designated to the proprietary commercial Enterprise Runtime. Delivering hardware-level codebase integrity control, mission-critical kernel isolation, and architecture protection against destructive autonomous AI mutations.
   * **Coordination Service (Closed Testing):** The author is currently conducting live calibration and refinement of the platform's minimum viable coordination service. Formal unveiling and access availability will follow after internal test cycles conclude.
-  * [ 🤝 Request Audit & Enterprise v5.0 Integration (info@vau.ru) ➔ ](https://index.utyanskiy.ru/#contacts?utm_source=github&utm_medium=readme_en&utm_campaign=integration)
+  * [ 🤝 Request Audit & Enterprise v5.0 Integration (info@vau.ru) ➔ ](https://index.utyanskiy.ru/#contacts)
