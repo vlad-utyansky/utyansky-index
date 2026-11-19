@@ -1,6 +1,12 @@
+> 🚀 **Major Enterprise Update (November 19, 2026):** Production Architecture Standard **v5.1 Enterprise** has been deployed. Key architectural updates include Smart DNA Wire Slicing along execution traces, End-to-End Alarm Signaling circuits, and Multi-Agent Lease Locks.
+>
+> In parallel, we officially showcase the new production system engineered 100% on top of the Utyansky Index Enterprise standard: **[V-CODES AI-Metrika (Utyansky AI Observatory)](https://github.com/vlad-utyansky/ai-metrika)** — autonomous AI bot and crawler telemetry platform for the Generative Engine Optimization (GEO) era *(Rospatent RF App № 2026696205 | FIPS EA-207479)*.
+>
+> ---
+>
 > **Announcement (November 11, 2026):** The public evaluation pilot of the Utyansky Index has formally concluded. The final pilot reference release is **v2.6.8** (UtyanskyDevKit).
 >
-> Advanced production releases (**v3.0 – v4.x+**, "Enterprise Runtime") are supplied strictly on a commercial basis under contract. This repository remains the public home of the open architectural specification. Previously published evaluation materials are protected by intellectual property laws and Rospatent Certificate No. 2026691737; commercial exploitation, unauthorized modification, and redistribution are strictly prohibited.
+> Advanced production releases (**v3.0 – v5.x+**, "Enterprise Runtime") are supplied strictly on a commercial basis under contract. This repository remains the public home of the open architectural specification. Previously published evaluation materials are protected by intellectual property laws and Rospatent Certificate No. 2026691737; commercial exploitation, unauthorized modification, and redistribution are strictly prohibited.
 >
 > [Full Announcement](docs/ANNOUNCEMENT.md) · Commercial Licensing & Audit: info@vau.ru
 
@@ -9,9 +15,11 @@
 <!-- [IDX: 00100] Header, Regalia & State Priority Accreditation -->
 <div align="center">
 
-### [ 🤝 Discuss Integration & Enterprise v5.0 Audit ➔ ](https://index.utyanskiy.ru/#contacts)
+### [ 🤝 Discuss Integration & Enterprise v5.1 Audit ➔ ](https://index.utyanskiy.ru/#contacts)
 
 <br/>
+
+[![Release v5.1](https://img.shields.io/badge/Release-v5.1%20(Enterprise)-emerald?style=for-the-badge)](README.md)
 
 [![Language: English (EN)](https://img.shields.io/badge/Language-English%20(EN)-blue?style=for-the-badge)](README.md)
 [![Language: Russian (RU)](https://img.shields.io/badge/Language-Russian%20(RU)-red?style=for-the-badge)](README_RU.md)
