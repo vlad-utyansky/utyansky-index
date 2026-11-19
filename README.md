@@ -1,14 +1,8 @@
-> 🚀 **Major Enterprise Update (November 19, 2026):** Production Architecture Standard **v5.1 Enterprise** has been deployed. Key architectural updates include Smart DNA Wire Slicing along execution traces, End-to-End Alarm Signaling circuits, and Multi-Agent Lease Locks.
->
-> In parallel, we officially showcase the new production system engineered 100% on top of the Utyansky Index Enterprise standard: **[V-CODES AI-Metrika (Utyansky AI Observatory)](https://github.com/vlad-utyansky/ai-metrika)** — autonomous AI bot and crawler telemetry platform for the Generative Engine Optimization (GEO) era *(Rospatent RF App № 2026696205 | FIPS EA-207479)*.
->
-> ---
->
 > **Announcement (November 11, 2026):** The public evaluation pilot of the Utyansky Index has formally concluded. The final pilot reference release is **v2.6.8** (UtyanskyDevKit).
 >
 > Advanced production releases (**v3.0 – v5.x+**, "Enterprise Runtime") are supplied strictly on a commercial basis under contract. This repository remains the public home of the open architectural specification. Previously published evaluation materials are protected by intellectual property laws and Rospatent Certificate No. 2026691737; commercial exploitation, unauthorized modification, and redistribution are strictly prohibited.
 >
-> [Full Announcement](docs/ANNOUNCEMENT.md) · Commercial Licensing & Audit: info@vau.ru
+> [Full Announcement](docs/ANNOUNCEMENT.md) · Commercial Licensing & Audit: info@vau.ru · Production Showcase: [V-CODES AI-Metrika](https://github.com/vlad-utyansky/ai-metrika)
 
 ---
 
@@ -18,8 +12,6 @@
 ### [ 🤝 Discuss Integration & Enterprise v5.1 Audit ➔ ](https://index.utyanskiy.ru/#contacts)
 
 <br/>
-
-[![Release v5.1](https://img.shields.io/badge/Release-v5.1%20(Enterprise)-emerald?style=for-the-badge)](README.md)
 
 [![Language: English (EN)](https://img.shields.io/badge/Language-English%20(EN)-blue?style=for-the-badge)](README.md)
 [![Language: Russian (RU)](https://img.shields.io/badge/Language-Russian%20(RU)-red?style=for-the-badge)](README_RU.md)
@@ -128,6 +120,7 @@
 > * **🔥 October 18, 2026** — **Official Release of Industrial Resilience Suite (v2.6.4 – v2.6.7)**: full open engineering armor suite for production vibe-coding reliability. [ 📖 Read v2.6.7 Specification ➔ ](docs/ru/RELEASE_v2_6_7_ZOMBIE_PURGE_AND_PORT_LOCK.md)
 > * **🚀 October 21, 2026** — **Official Release of UtyanskyDevKit v2.6.8 (Autonomous Visual Manipulator & DOM Inspector)**: the genesis tool of slot-based vibe-coding without context loss (8+ months battle-tested). 1-click [IDX] slot capture, 20x20 [PXL] spatial grid, VAU cheat code, and Mentor [MNTR]. [ 📖 Read Founder Story ➔ ](docs/ru/RELEASE_v2_6_8_UTYANSKY_DEVKIT_VISUAL_MANIPULATOR.md)
 > * **🛡️ November 15, 2026** — **Transition of v3.0 — v5.0 Line to Enterprise Runtime**: establishing industrial-grade code protection standards. Closed production testing of the minimum viable coordination service prior to its formal public unveiling.
+> * **🚀 November 19, 2026** — **Deployment of Enterprise Runtime v5.1**: industrial-grade protection standards and production deployment with [V-CODES AI-Metrika](https://github.com/vlad-utyansky/ai-metrika).
 
 ---
 
@@ -889,10 +882,10 @@ The **«Utyansky Index»** standard is distributed under a transparent hybrid **
 * 📦 **v2.6.8-DEVKIT (October 21, 2026 / Standalone Visual Manipulator & DOM Inspector):**
   * Floating browser HUD dock, 1-click slot capture [IDX], laser grid [PXL], VAU cheat code, and elimination of 30-min CSS ping-pong.
   * [ 📖 Read Founder Story ➔ ](docs/ru/RELEASE_v2_6_8_UTYANSKY_DEVKIT_VISUAL_MANIPULATOR.md) | [ 📋 Enterprise Runtime ➔ ](docs/ANNOUNCEMENT.md)
-* 🏛️ **v3.0 — v5.0 ENTERPRISE (November 15, 2026 / Industrial Protection Runtime):**
-  * **Line Status:** Versions v3.0 through v5.0 are designated to the proprietary commercial Enterprise Runtime. Delivering hardware-level codebase integrity control, mission-critical kernel isolation, and architecture protection against destructive autonomous AI mutations.
-  * **Coordination Service (Closed Testing):** The author is currently conducting live calibration and refinement of the platform's minimum viable coordination service. Formal unveiling and access availability will follow after internal test cycles conclude.
-  * [ 🤝 Request Audit & Enterprise v5.0 Integration (info@vau.ru) ➔ ](https://index.utyanskiy.ru/#contacts)
+* 🏛️ **v3.0 — v5.1 ENTERPRISE (November 19, 2026 / Industrial Protection Runtime):**
+  * **Line Status:** Versions v3.0 through v5.1 are designated to the proprietary commercial Enterprise Runtime. Delivering hardware-level codebase integrity control, mission-critical kernel isolation, and architecture protection against destructive autonomous AI mutations.
+  * **Battle Deployment:** Engineered 100% on the Enterprise v5.1 standard, the [V-CODES AI-Metrika](https://github.com/vlad-utyansky/ai-metrika) platform is deployed in active closed R&D *(Rospatent RF App № 2026696205)*.
+  * [ 🤝 Request Audit & Enterprise v5.1 Integration (info@vau.ru) ➔ ](https://index.utyanskiy.ru/#contacts)
 * 🔮 **(Under Active R&D / Preview):**
   * **Autonomous Multi-Agent Swarms:** Zero-conflict concurrent code engineering for swarms of 10–20 autonomous AI agents in monorepos.
   * **DSL (Distributed Slot Locking):** Write-intent coordination via lease-based domain coordinate reservations.
@@ -1056,7 +1049,7 @@ The **«Utyansky Index»** standard is distributed under a transparent hybrid **
 * 📦 **v2.6.8-DEVKIT (October 21, 2026 / Standalone Visual Manipulator & DOM Inspector):**
   * Floating browser HUD toolbar, 1-click `[IDX]` element capture, laser grid `[PXL]`, `VAU` hotkey cheat code, eliminating 30-minute CSS ping-pong.
   * [ 📖 Read Origin Story ➔ ](docs/en/RELEASE_v2_6_8_UTYANSKY_DEVKIT_VISUAL_MANIPULATOR.md) | [ 📋 Enterprise Runtime ➔ ](docs/ANNOUNCEMENT.md)
-* 🏛️ **v3.0 — v5.0 ENTERPRISE (November 15, 2026 / Industrial Protection Runtime):**
-  * **Line Status:** Versions v3.0 through v5.0 are designated to the proprietary commercial Enterprise Runtime. Delivering hardware-level codebase integrity control, mission-critical kernel isolation, and architecture protection against destructive autonomous AI mutations.
-  * **Coordination Service (Closed Testing):** The author is currently conducting live calibration and refinement of the platform's minimum viable coordination service. Formal unveiling and access availability will follow after internal test cycles conclude.
-  * [ 🤝 Request Audit & Enterprise v5.0 Integration (info@vau.ru) ➔ ](https://index.utyanskiy.ru/#contacts)
+* 🏛️ **v3.0 — v5.1 ENTERPRISE (November 19, 2026 / Industrial Protection Runtime):**
+  * **Line Status:** Versions v3.0 through v5.1 are designated to the proprietary commercial Enterprise Runtime. Delivering hardware-level codebase integrity control, mission-critical kernel isolation, and architecture protection against destructive autonomous AI mutations.
+  * **Battle Deployment:** Engineered 100% on the Enterprise v5.1 standard, the [V-CODES AI-Metrika](https://github.com/vlad-utyansky/ai-metrika) platform is deployed in active closed R&D *(Rospatent RF App № 2026696205)*.
+  * [ 🤝 Request Audit & Enterprise v5.1 Integration (info@vau.ru) ➔ ](https://index.utyanskiy.ru/#contacts)

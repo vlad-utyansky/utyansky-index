@@ -5,18 +5,11 @@ This document tracks all changes, releases, architectural specifications, and pa
 
 ---
 
-## 🏛️ [v5.1 Enterprise] — November 19, 2026 — 🚀 Enterprise v5.1 Deployment & V-CODES AI-Metrika Showcase
+## 🏛️ [v5.1 Enterprise] — November 19, 2026 — 🚀 Enterprise v5.1 Deployment
 
-### 💡 Engineering Background & Purpose:
-* Transition of high-load multi-agent clusters to the deterministic **Enterprise Runtime v5.1** standard.
-* Real-world battle validation: launching the **[V-CODES AI-Metrika](https://github.com/vlad-utyansky/ai-metrika)** platform, engineered 100% on the foundation of the Utyansky Index Enterprise architecture.
-
-### 🚀 Key Architectural Additions:
-1. **🧬 Smart DNA Wire Slicing:** Code modularization strictly along runtime execution paths (`Source ➔ API Bus ➔ Handler ➔ DOM`), encapsulated into isolated closures with immutable `@dna-upstream` and `@dna-downstream` coordinate passports.
-2. **🚨 End-to-End Alarm Circuit Signaling (`75899`):** Continuous physical circuit verification from origin to DOM with automated visual and acoustic alerts upon link failure.
-3. **📐 3D Planning & Elasticity Gaps:** 100-step expansion intervals allowing seamless code evolution without re-indexing existing five-digit slot coordinates.
-4. **🔒 Multi-Agent Lease Locks (`ACTIVE_LOCKS`):** Deterministic anti-collision locks preventing race conditions across concurrent multi-agent development sessions.
-5. **🌐 Showcase Implementation:** [V-CODES AI-Metrika](https://github.com/vlad-utyansky/ai-metrika) — patent-pending autonomous telemetry platform (*Rospatent RF App № 2026696205 | FIPS EA-207479*).
+* **Enterprise Runtime Status:** Transition of mission-critical systems to the deterministic commercial Enterprise v5.1 standard.
+* **Production Deployment:** Engineered 100% on the Enterprise v5.1 standard, the [V-CODES AI-Metrika](https://github.com/vlad-utyansky/ai-metrika) telemetry platform is live in production *(Rospatent RF App № 2026696205 | FIPS EA-207479)*.
+* **Access Terms:** Supplied strictly on a commercial basis under audit and deployment agreements (info@vau.ru).
 
 ---
 
